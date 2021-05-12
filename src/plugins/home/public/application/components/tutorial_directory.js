@@ -147,7 +147,7 @@ class TutorialDirectoryUi extends React.Component {
       }),
       description: this.props.intl.formatMessage({
         id: 'home.tutorial.card.sampleDataDescription',
-        defaultMessage: 'Get started exploring Kibana with these "one click" data sets.',
+        defaultMessage: 'Get started exploring HyperSec Kibana with these "one click" data sets.',
       }),
       url: this.props.addBasePath('#/tutorial_directory/sampleData'),
       elasticCloud: true,

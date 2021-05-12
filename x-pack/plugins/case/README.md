@@ -10,7 +10,7 @@ HyperSec is developing a Case Management Workflow. Follow our progress:
 # Action types
 
 
-See [Kibana Actions](https://github.com/elastic/kibana/tree/master/x-pack/plugins/actions) for more information.
+See [HyperSec Kibana Actions](https://github.com/elastic/kibana/tree/master/x-pack/plugins/actions) for more information.
 
 ## Case 
 

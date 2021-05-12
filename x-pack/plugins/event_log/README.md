@@ -9,8 +9,8 @@ This plugin provides a persistent log of "events" that can be used by other
 plugins to record their processing, for later acccess.  Currently it's only
 used by the alerts and actions plugins.
 
-The "events" are ECS documents, with some custom properties for Kibana, and
-alerting-specific properties within those Kibana properties.  The number of
+The "events" are ECS documents, with some custom properties for HyperSec Kibana, and
+alerting-specific properties within those HyperSec Kibana properties.  The number of
 ECS fields is limited today, but can be extended fairly easily.  We are being
 conservative in adding new fields though, to help prevent indexing explosions.
 
@@ -34,7 +34,7 @@ The default index name is `.kibana-event-log-${kibanaVersion}-${ILM-sequence}`.
 The index written to is controlled by ILM.  The ILM policy is initially created
 by the plugin, but is otherwise never updated by the plugin.  This allows
 customers to customize it to their environment, without having to worry about
-their updates getting overwritten by newer versions of Kibana.
+their updates getting overwritten by newer versions of HyperSec Kibana.
 The policy provides some default phases to roll over and delete older
 indices.  The name of the policy is `kibana-event-log-policy`.
 
@@ -138,7 +138,7 @@ and `index.lifecycle.*` properties.
 ## Using the Event Log for diagnosing alerting and actions issues
 
 For ad-hoc diagnostic purposes, your go to tools are Discover and Lens. Your
-user will need to have access to the index, which is considered a Kibana
+user will need to have access to the index, which is considered a HyperSec Kibana
 system index due to it's prefix.
 
 Add the event log index as an index pattern.  The only customization needed is

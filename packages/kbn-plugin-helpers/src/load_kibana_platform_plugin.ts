@@ -25,6 +25,6 @@ export function loadKibanaPlatformPlugin(pluginDir: string) {
   }
 
   throw createFailError(
-    `Plugin located at [${pluginDir}] must be moved to the plugins directory at the root of the Kibana repo`
+    `Plugin located at [${pluginDir}] must be moved to the plugins directory at the root of the HyperSec Kibana repo`
   );
 }

@@ -13,7 +13,7 @@ exports[`EmptyState should render normally 1`] = `
         <EuiTitle>
           <h2>
             <FormattedMessage
-              defaultMessage="Ready to try Kibana? First, you need data."
+              defaultMessage="Ready to try HyperSec Kibana? First, you need data."
               id="indexPatternManagement.createIndexPattern.emptyState.noDataTitle"
               values={Object {}}
             />
@@ -91,7 +91,7 @@ exports[`EmptyState should render normally 1`] = `
             className="inpEmptyState__card"
             description={
               <FormattedMessage
-                defaultMessage="Load a data set and a Kibana dashboard."
+                defaultMessage="Load a data set and a HyperSec Kibana dashboard."
                 id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardDescription"
                 values={Object {}}
               />
@@ -167,7 +167,7 @@ exports[`EmptyState should render normally 1`] = `
                         id="indexPatternManagement.createIndexPattern.emptyState.checkDataButton"
                         values={Object {}}
                       />
-                       
+
                       <EuiIcon
                         size="s"
                         type="refresh"

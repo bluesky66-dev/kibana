@@ -50,7 +50,7 @@ export const ErrorStrings = {
     getTooLargeErrorMessage: () =>
       i18n.translate('xpack.canvas.error.esPersist.tooLargeErrorMessage', {
         defaultMessage:
-          'The server gave a response that the workpad data was too large. This usually means uploaded image assets that are too large for Kibana or a proxy. Try removing some assets in the asset manager.',
+          'The server gave a response that the workpad data was too large. This usually means uploaded image assets that are too large for HyperSec Kibana or a proxy. Try removing some assets in the asset manager.',
       }),
     getUpdateFailureTitle: () =>
       i18n.translate('xpack.canvas.error.esPersist.updateFailureTitle', {

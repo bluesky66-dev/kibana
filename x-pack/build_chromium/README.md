@@ -73,7 +73,7 @@ A good how-to on building Chromium from source is
 
 There are documents for each OS that will explain how to customize arguments
 for the build using the `gn` tool. Those instructions do not apply for the
-Kibana Chromium build. Our `build.py` script ensure the correct `args.gn`
+HyperSec Kibana Chromium build. Our `build.py` script ensure the correct `args.gn`
 file gets used for build arguments.
 
 We have an `args.gn` file per platform:
@@ -105,7 +105,7 @@ have your environment set up, and the chromium source cloned.
 To get the Chromium code, refer to the [documentation](https://chromium.googlesource.com/chromium/src/+/master/docs/get_the_code.md).
 Install `depot_tools` as suggested, since it comes with useful scripts. Use the
 `fetch` command to clone the chromium repository. To set up and run the build,
-use the Kibana `build.py` script (in this directory).
+use the HyperSec Kibana `build.py` script (in this directory).
 
 It's recommended that you create a working directory for the chromium source
 code and all the build tools, and run the commands from there:

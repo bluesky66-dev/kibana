@@ -134,7 +134,7 @@ class ReportingPanelContentUi extends Component<Props, State> {
           <p>
             <FormattedMessage
               id="xpack.reporting.panelContent.howToCallGenerationDescription"
-              defaultMessage="Alternatively, copy this POST URL to call generation from outside Kibana or from Watcher."
+              defaultMessage="Alternatively, copy this POST URL to call generation from outside HyperSec Kibana or from Watcher."
             />
           </p>
         </EuiText>

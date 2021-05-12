@@ -213,7 +213,7 @@ describe('execute()', () => {
           "event_action": "trigger",
           "payload": Object {
             "severity": "info",
-            "source": "Kibana Action some-action-id",
+            "source": "HyperSec Kibana Action some-action-id",
             "summary": "No summary provided.",
           },
         },

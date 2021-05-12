@@ -54,13 +54,13 @@ export function initTimelionHelpDirective(app) {
             notValidAdvancedSettingsPath: i18n.translate(
               'timelion.help.configuration.notValid.advancedSettingsPathText',
               {
-                defaultMessage: 'Management / Kibana / Advanced Settings',
+                defaultMessage: 'Management / HyperSec Kibana / Advanced Settings',
               }
             ),
             validAdvancedSettingsPath: i18n.translate(
               'timelion.help.configuration.valid.advancedSettingsPathText',
               {
-                defaultMessage: 'Management/Kibana/Advanced Settings',
+                defaultMessage: 'Management/HyperSec Kibana/Advanced Settings',
               }
             ),
             esAsteriskQueryDescription: i18n.translate(

@@ -26,7 +26,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       sensitive: true,
       deprecation: {
         message: i18n.translate('xpack.dashboardMode.uiSettings.dashboardsOnlyRolesDeprecation', {
-          defaultMessage: 'This setting is deprecated and will be removed in Kibana 8.0.',
+          defaultMessage: 'This setting is deprecated and will be removed in HyperSec Kibana 8.0.',
         }),
         docLinksKey: 'dashboardSettings',
       },

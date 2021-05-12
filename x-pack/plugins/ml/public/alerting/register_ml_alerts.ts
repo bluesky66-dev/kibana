@@ -85,7 +85,7 @@ Alerts are raised based on real-time scores. Remember that scores may be adjuste
   \\{\\{/context.topRecords\\}\\}
 \\{\\{/context.topRecords.length\\}\\}
 
-\\{\\{! Replace kibanaBaseUrl if not configured in Kibana \\}\\}
+\\{\\{! Replace kibanaBaseUrl if not configured in HyperSec Kibana \\}\\}
 [Open in Anomaly Explorer](\\{\\{\\{kibanaBaseUrl\\}\\}\\}\\{\\{\\{context.anomalyExplorerUrl\\}\\}\\})
 `,
       }

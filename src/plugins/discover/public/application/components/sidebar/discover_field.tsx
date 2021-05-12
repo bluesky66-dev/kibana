@@ -234,7 +234,7 @@ export function DiscoverField({
         content={i18n.translate('discover.field.mappingConflict', {
           defaultMessage:
             'This field is defined as several types (string, integer, etc) across the indices that match this pattern.' +
-            'You may still be able to use this conflicting field, but it will be unavailable for functions that require Kibana to know their type. Correcting this issue will require reindexing your data.',
+            'You may still be able to use this conflicting field, but it will be unavailable for functions that require HyperSec Kibana to know their type. Correcting this issue will require reindexing your data.',
         })}
       >
         <EuiIcon

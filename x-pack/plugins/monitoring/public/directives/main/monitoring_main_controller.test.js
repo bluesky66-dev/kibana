@@ -194,7 +194,7 @@ describe('Monitoring Main Directive Controller', () => {
   /**
    * <monitoring-main product="kibana" name="overview">
    */
-  it('in Kibana Overview', () => {
+  it('in HyperSec Kibana Overview', () => {
     const controller = new MonitoringMainController();
     controller.setup({
       clusterName: 'test-cluster-foo',

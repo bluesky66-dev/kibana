@@ -212,7 +212,7 @@ export const StepCreateForm: FC<StepCreateFormProps> = React.memo(
 
         toastNotifications.addSuccess(
           i18n.translate('xpack.transform.stepCreateForm.createIndexPatternSuccessMessage', {
-            defaultMessage: 'Kibana index pattern {indexPatternName} created successfully.',
+            defaultMessage: 'HyperSec Kibana index pattern {indexPatternName} created successfully.',
             values: { indexPatternName },
           })
         );
@@ -225,7 +225,7 @@ export const StepCreateForm: FC<StepCreateFormProps> = React.memo(
           toastNotifications.addDanger(
             i18n.translate('xpack.transform.stepCreateForm.duplicateIndexPatternErrorMessage', {
               defaultMessage:
-                'An error occurred creating the Kibana index pattern {indexPatternName}: The index pattern already exists.',
+                'An error occurred creating the HyperSec Kibana index pattern {indexPatternName}: The index pattern already exists.',
               values: { indexPatternName },
             })
           );
@@ -233,7 +233,7 @@ export const StepCreateForm: FC<StepCreateFormProps> = React.memo(
           toastNotifications.addDanger({
             title: i18n.translate('xpack.transform.stepCreateForm.createIndexPatternErrorMessage', {
               defaultMessage:
-                'An error occurred creating the Kibana index pattern {indexPatternName}:',
+                'An error occurred creating the HyperSec Kibana index pattern {indexPatternName}:',
               values: { indexPatternName },
             }),
             text: toMountPoint(
@@ -408,7 +408,7 @@ export const StepCreateForm: FC<StepCreateFormProps> = React.memo(
                   'xpack.transform.stepCreateForm.copyTransformConfigToClipboardDescription',
                   {
                     defaultMessage:
-                      'Copies to the clipboard the Kibana Dev Console command for creating the transform.',
+                      'Copies to the clipboard the HyperSec Kibana Dev Console command for creating the transform.',
                   }
                 )}
               </EuiText>
@@ -469,7 +469,7 @@ export const StepCreateForm: FC<StepCreateFormProps> = React.memo(
                           {i18n.translate(
                             'xpack.transform.stepCreateForm.creatingIndexPatternMessage',
                             {
-                              defaultMessage: 'Creating Kibana index pattern ...',
+                              defaultMessage: 'Creating HyperSec Kibana index pattern ...',
                             }
                           )}
                         </p>

@@ -570,12 +570,12 @@ export const EditRolePage: FunctionComponent<Props> = ({
   const description = spaces.enabled ? (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaSpacesDescription"
-      defaultMessage="Set privileges on your HyperSec data and control access to your Kibana spaces."
+      defaultMessage="Set privileges on your HyperSec data and control access to your HyperSec Kibana spaces."
     />
   ) : (
     <FormattedMessage
       id="xpack.security.management.editRole.setPrivilegesToKibanaDescription"
-      defaultMessage="Set privileges on your HyperSec data and control access to Kibana."
+      defaultMessage="Set privileges on your HyperSec data and control access to HyperSec Kibana."
     />
   );
 

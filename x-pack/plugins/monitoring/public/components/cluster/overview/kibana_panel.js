@@ -81,7 +81,7 @@ export function KibanaPanel(props) {
       statusIndicator={statusIndicator}
       url="kibana"
       title={i18n.translate('xpack.monitoring.cluster.overview.kibanaPanel.kibanaTitle', {
-        defaultMessage: 'Kibana',
+        defaultMessage: 'HyperSec Kibana',
       })}
     >
       <EuiFlexGrid columns={4}>
@@ -96,7 +96,7 @@ export function KibanaPanel(props) {
                   aria-label={i18n.translate(
                     'xpack.monitoring.cluster.overview.kibanaPanel.overviewLinkAriaLabel',
                     {
-                      defaultMessage: 'Kibana Overview',
+                      defaultMessage: 'HyperSec Kibana Overview',
                     }
                   )}
                   data-test-subj="kbnOverview"
@@ -151,7 +151,7 @@ export function KibanaPanel(props) {
                       aria-label={i18n.translate(
                         'xpack.monitoring.cluster.overview.kibanaPanel.instancesCountLinkAriaLabel',
                         {
-                          defaultMessage: 'Kibana Instances: {instancesCount}',
+                          defaultMessage: 'HyperSec Kibana Instances: {instancesCount}',
                           values: { instancesCount: props.count },
                         }
                       )}

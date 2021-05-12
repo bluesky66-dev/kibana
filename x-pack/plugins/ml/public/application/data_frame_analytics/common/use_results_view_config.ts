@@ -136,7 +136,7 @@ export const useResultsViewConfig = (jobId: string) => {
                   'xpack.ml.dataframe.analytics.results.indexPatternsMissingErrorMessage',
                   {
                     defaultMessage:
-                      'To view this page, a Kibana index pattern is necessary for either the destination or source index of this analytics job.',
+                      'To view this page, a HyperSec Kibana index pattern is necessary for either the destination or source index of this analytics job.',
                   }
                 )
               );

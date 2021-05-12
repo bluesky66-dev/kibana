@@ -215,7 +215,7 @@ describe('#topologicallyBatchProjects', () => {
 });
 
 describe('#includeTransitiveProjects', () => {
-  test('includes transitive dependencies for Kibana package', async () => {
+  test('includes transitive dependencies for HyperSec Kibana package', async () => {
     const projects = await getProjects(rootPath, ['.', 'packages/*']);
 
     const kibana = projects.get('kibana')!;

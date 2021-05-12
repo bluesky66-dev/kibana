@@ -90,7 +90,7 @@ export class KibanaOverviewPlugin
       home.featureCatalogue.registerSolution({
         id: 'kibana',
         title: i18n.translate('kibanaOverview.kibana.solution.title', {
-          defaultMessage: 'Kibana',
+          defaultMessage: 'HyperSec Kibana',
         }),
         subtitle: i18n.translate('kibanaOverview.kibana.solution.subtitle', {
           defaultMessage: 'Visualize & analyze',

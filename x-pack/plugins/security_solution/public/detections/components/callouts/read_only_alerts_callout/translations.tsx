@@ -29,7 +29,7 @@ export const readOnlyAlertsCallOutBody = () => (
         <p>
           <FormattedMessage
             id="xpack.securitySolution.detectionEngine.readOnlyAlertsCallOut.messageBody.essenceDescription"
-            defaultMessage="You only have permissions to view alerts. If you need to update alert states (open or close alerts), contact your Kibana administrator."
+            defaultMessage="You only have permissions to view alerts. If you need to update alert states (open or close alerts), contact your HyperSec Kibana administrator."
           />
         </p>
       ),

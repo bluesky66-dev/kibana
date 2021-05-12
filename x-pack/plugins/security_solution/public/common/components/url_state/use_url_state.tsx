@@ -230,7 +230,7 @@ export const useUrlStateHooks = ({
   }, [isInitializing, history, pathName, pageName, prevProps, urlState]);
 
   useEffect(() => {
-    document.title = `${getTitle(pageName, detailName, navTabs)} - Kibana`;
+    document.title = `${getTitle(pageName, detailName, navTabs)} - HyperSec Kibana`;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageName]);
 

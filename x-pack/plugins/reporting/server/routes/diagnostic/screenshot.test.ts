@@ -115,7 +115,7 @@ describe('POST /diagnose/screenshot', () => {
       .post('/api/reporting/diagnose/screenshot')
       .expect(200)
       .then(({ body }) => {
-        expect(body.help).toContain(`We couldn't screenshot your Kibana install.`);
+        expect(body.help).toContain(`We couldn't screenshot your HyperSec Kibana install.`);
         expect(body.logs).toContain(`Failure to start chromium!`);
       });
   });

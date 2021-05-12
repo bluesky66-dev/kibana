@@ -32,7 +32,7 @@ export default function typeNotEnabledTests({ getService }: FtrProviderContext) 
         statusCode: 403,
         error: 'Forbidden',
         message:
-          'action type "test.not-enabled" is not enabled in the Kibana config xpack.actions.enabledActionTypes',
+          'action type "test.not-enabled" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes',
       });
     });
 
@@ -49,7 +49,7 @@ export default function typeNotEnabledTests({ getService }: FtrProviderContext) 
         statusCode: 403,
         error: 'Forbidden',
         message:
-          'action type "test.not-enabled" is not enabled in the Kibana config xpack.actions.enabledActionTypes',
+          'action type "test.not-enabled" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes',
       });
     });
 
@@ -79,7 +79,7 @@ export default function typeNotEnabledTests({ getService }: FtrProviderContext) 
         statusCode: 403,
         error: 'Forbidden',
         message:
-          'action type "test.not-enabled" is not enabled in the Kibana config xpack.actions.enabledActionTypes',
+          'action type "test.not-enabled" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes',
       });
 
       const response = await supertest.get(`/api/actions/action/${PREWRITTEN_ACTION_ID}`);

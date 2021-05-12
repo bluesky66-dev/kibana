@@ -2,7 +2,7 @@ functional test server slack simulator
 ================================================================================
 
 The code in this directory includes external service simulators for testing
-Kibana actions.  The simulators are available when running the function test
+HyperSec Kibana actions.  The simulators are available when running the function test
 server.
 
 They are used during function testing for actions; an action will be created

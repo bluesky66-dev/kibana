@@ -53,7 +53,7 @@ export const SetupGuide: React.FC = () => (
       <p>
         <FormattedMessage
           id="xpack.enterpriseSearch.enterpriseSearch.setupGuide.notConfigured"
-          defaultMessage="Enterprise Search is not configured in your Kibana instance yet."
+          defaultMessage="Enterprise Search is not configured in your HyperSec Kibana instance yet."
         />
       </p>
     </EuiText>

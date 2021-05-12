@@ -21,7 +21,7 @@ export function LegacyMapDeprecationMessage(props: Props) {
   const getMapsMessage = !props.isMapsAvailable ? (
     <FormattedMessage
       id="maps_legacy.defaultDistributionMessage"
-      defaultMessage="To get Maps, upgrade to the {defaultDistribution} of HyperSec and Kibana."
+      defaultMessage="To get Maps, upgrade to the {defaultDistribution} of HyperSec and HyperSec Kibana."
       values={{
         defaultDistribution: (
           <EuiLink

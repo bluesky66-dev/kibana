@@ -134,7 +134,7 @@ describe('home', () => {
     test('should render solutions in the "solution section"', async () => {
       const solutionEntry1 = {
         id: 'kibana',
-        title: 'Kibana',
+        title: 'HyperSec Kibana',
         subtitle: 'Visualize & analyze',
         appDescriptions: ['Analyze data in dashboards'],
         icon: 'logoKibana',

@@ -22,12 +22,12 @@ export const getGlobalVariableList = (
       label: 'kibanaUrl',
       sortText: sortPrefix + 'kibanaUrl',
       title: i18n.translate('xpack.urlDrilldown.global.kibanaUrl.documentation.title', {
-        defaultMessage: 'Link to Kibana homepage.',
+        defaultMessage: 'Link to HyperSec Kibana homepage.',
       }),
       documentation:
         i18n.translate('xpack.urlDrilldown.global.kibanaUrl.documentation', {
           defaultMessage:
-            'Kibana base URL. Useful for creating URL drilldowns that navigate within Kibana.',
+            'HyperSec Kibana base URL. Useful for creating URL drilldowns that navigate within HyperSec Kibana.',
         }) +
         '\n\n' +
         txtValue(values.kibanaUrl),

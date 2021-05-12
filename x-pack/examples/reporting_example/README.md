@@ -1,11 +1,11 @@
 # Example Reporting integration!
 
 Use this example code to understand how to add a "Generate Report" button to a
-Kibana page. This simple example shows that the end-to-end functionality of
+HyperSec Kibana page. This simple example shows that the end-to-end functionality of
 generating a screenshot report of a page just requires you to render a React
 component that you import from the Reportinng plugin.
 
-A "reportable" Kibana page is one that has an **alternate version to show the data in a "screenshot-friendly" way**. The alternate version can be reached at a variation of the page's URL that the App team builds.
+A "reportable" HyperSec Kibana page is one that has an **alternate version to show the data in a "screenshot-friendly" way**. The alternate version can be reached at a variation of the page's URL that the App team builds.
 
 A "screenshot-friendly" page has **all interactive features turned off**. These are typically notifications, popups, tooltips, controls, autocomplete libraries, etc.
 

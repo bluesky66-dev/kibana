@@ -67,7 +67,7 @@ uiRoutes.when('/kibana/instances/:uuid', {
   controller: class extends MonitoringViewBaseController {
     constructor($injector, $scope) {
       super({
-        title: `Kibana - ${get($scope.pageData, 'kibanaSummary.name')}`,
+        title: `HyperSec Kibana - ${get($scope.pageData, 'kibanaSummary.name')}`,
         telemetryPageViewTitle: 'kibana_instance',
         defaultData: {},
         getPageData,
@@ -88,10 +88,10 @@ uiRoutes.when('/kibana/instances/:uuid', {
           if (!data || !data.metrics) {
             return;
           }
-          this.setTitle(`Kibana - ${get(data, 'kibanaSummary.name')}`);
+          this.setTitle(`HyperSec Kibana - ${get(data, 'kibanaSummary.name')}`);
           this.setPageTitle(
             i18n.translate('xpack.monitoring.kibana.instance.pageTitle', {
-              defaultMessage: 'Kibana instance: {instance}',
+              defaultMessage: 'HyperSec Kibana instance: {instance}',
               values: {
                 instance: get($scope.pageData, 'kibanaSummary.name'),
               },

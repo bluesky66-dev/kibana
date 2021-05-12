@@ -91,7 +91,7 @@ describe('External Url Service', () => {
             expect(result?.toString()).toEqual(`${kibanaRoot}${urlCandidate}`);
           });
 
-          it('allows absolute URLs to Kibana that start with the server base path', () => {
+          it('allows absolute URLs to HyperSec Kibana that start with the server base path', () => {
             const { setup } = setupService({ location, serverBasePath, policy });
             const urlCandidate = `${kibanaRoot}/some/path?foo=bar`;
             const result = setup.validateUrl(urlCandidate);
@@ -101,7 +101,7 @@ describe('External Url Service', () => {
           });
 
           if (allowExternal) {
-            it('allows absolute URLs to Kibana that do not start with the server base path', () => {
+            it('allows absolute URLs to HyperSec Kibana that do not start with the server base path', () => {
               const { setup } = setupService({ location, serverBasePath, policy });
               const urlCandidate = `${serverRoot}/some/path?foo=bar`;
               const result = setup.validateUrl(urlCandidate);
@@ -128,7 +128,7 @@ describe('External Url Service', () => {
               expect(result?.toString()).toEqual(`${serverRoot}/some/path?foo=bar`);
             });
           } else {
-            it('disallows absolute URLs to Kibana that do not start with the server base path', () => {
+            it('disallows absolute URLs to HyperSec Kibana that do not start with the server base path', () => {
               const { setup } = setupService({ location, serverBasePath, policy });
               const urlCandidate = `${serverRoot}/some/path?foo=bar`;
               const result = setup.validateUrl(urlCandidate);
@@ -203,7 +203,7 @@ describe('External Url Service', () => {
             expect(result?.toString()).toEqual(`${kibanaRoot}${urlCandidate}`);
           });
 
-          it('allows absolute URLs to Kibana', () => {
+          it('allows absolute URLs to HyperSec Kibana', () => {
             const { setup } = setupService({ location, serverBasePath, policy });
             const urlCandidate = `${kibanaRoot}/some/path?foo=bar`;
             const result = setup.validateUrl(urlCandidate);

@@ -20,7 +20,7 @@ A headless browser is a browser simulation program that does not have a user int
 
 #### FTR (CI)
 
-This is the configuration used by CI. It uses the FTR to spawn both a Kibana instance (http://localhost:5620) and an HyperSec instance (http://localhost:9220) with a preloaded minimum set of data (see preceding "Test data" section), and then executes cypress against this stack. You can find this configuration in `x-pack/test/security_solution_cypress`
+This is the configuration used by CI. It uses the FTR to spawn both a HyperSec Kibana instance (http://localhost:5620) and an HyperSec instance (http://localhost:9220) with a preloaded minimum set of data (see preceding "Test data" section), and then executes cypress against this stack. You can find this configuration in `x-pack/test/security_solution_cypress`
 
 #### Custom Targets
 
@@ -188,7 +188,7 @@ Remember that minimizing the number of times the web page is loaded, we minimize
 ## Test Artifacts
 
 When Cypress tests are run headless on the command line, artifacts
-are generated under the `target` directory in the root of Kibana as follows:
+are generated under the `target` directory in the root of HyperSec Kibana as follows:
 
 - HTML Reports
   - location: `target/kibana-security-solution/cypress/results/output.html`

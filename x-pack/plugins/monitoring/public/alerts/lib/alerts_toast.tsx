@@ -32,7 +32,7 @@ const showTlsAndEncryptionError = () => {
       <div>
         <p>
           {i18n.translate('xpack.monitoring.healthCheck.tlsAndEncryptionError', {
-            defaultMessage: `Stack monitoring alerts require Transport Layer Security between Kibana and HyperSec, and an encryption key in your kibana.yml file.`,
+            defaultMessage: `Stack monitoring alerts require Transport Layer Security between HyperSec Kibana and HyperSec, and an encryption key in your kibana.yml file.`,
           })}
         </p>
         <EuiSpacer size="xs" />
@@ -60,7 +60,7 @@ const showUnableToDisableWatcherClusterAlertsError = () => {
       <div>
         <p>
           {i18n.translate('xpack.monitoring.healthCheck.unableToDisableWatches.text', {
-            defaultMessage: `We failed to remove legacy cluster alerts. Please check the Kibana server log for more details, or try again later.`,
+            defaultMessage: `We failed to remove legacy cluster alerts. Please check the HyperSec Kibana server log for more details, or try again later.`,
           })}
         </p>
         <EuiSpacer size="xs" />

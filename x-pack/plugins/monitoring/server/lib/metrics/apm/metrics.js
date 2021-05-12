@@ -543,7 +543,7 @@ export const metrics = {
       'xpack.monitoring.metrics.apm.acmResponse.errors.unavailableDescription',
       {
         defaultMessage:
-          'Unavailable HTTP response count. Possible misconfiguration or unsupported version of Kibana',
+          'Unavailable HTTP response count. Possible misconfiguration or unsupported version of HyperSec Kibana',
       }
     ),
   }),

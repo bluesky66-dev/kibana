@@ -33,7 +33,7 @@ import { enterpriseSearchTitle, appSearchTitle, workplaceSearchTitle } from './g
 
 import { SetEnterpriseSearchChrome, SetAppSearchChrome, SetWorkplaceSearchChrome } from './';
 
-describe('Set Kibana Chrome helpers', () => {
+describe('Set HyperSec Kibana Chrome helpers', () => {
   const mockCurrentPath = (pathname: string) =>
     setMockValues({ history: { location: { pathname } } });
 

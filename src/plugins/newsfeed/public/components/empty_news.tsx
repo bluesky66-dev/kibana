@@ -25,7 +25,7 @@ export const NewsEmptyPrompt = () => {
         <p>
           <FormattedMessage
             id="newsfeed.emptyPrompt.noNewsText"
-            defaultMessage="If your Kibana instance doesn’t have internet access, ask your administrator to disable this feature. Otherwise, we’ll keep trying to fetch the news."
+            defaultMessage="If your HyperSec Kibana instance doesn’t have internet access, ask your administrator to disable this feature. Otherwise, we’ll keep trying to fetch the news."
           />
         </p>
       }

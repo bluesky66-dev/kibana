@@ -53,7 +53,7 @@ export const outlinkEncoders: OutlinkEncoder[] = [
     }),
     description: i18n.translate('xpack.graph.outlinkEncoders.esqRisonLooseDescription', {
       defaultMessage:
-        'rison-encoded JSON, minimum_should_match=1, compatible with most Kibana URLs',
+        'rison-encoded JSON, minimum_should_match=1, compatible with most HyperSec Kibana URLs',
     }),
     encode(workspace) {
       return encodeURIComponent(
@@ -69,7 +69,7 @@ export const outlinkEncoders: OutlinkEncoder[] = [
     }),
     description: i18n.translate('xpack.graph.outlinkEncoders.esqRisonDescription', {
       defaultMessage:
-        'rison-encoded JSON, minimum_should_match=2, compatible with most Kibana URLs',
+        'rison-encoded JSON, minimum_should_match=2, compatible with most HyperSec Kibana URLs',
     }),
     encode(workspace) {
       return encodeURIComponent(

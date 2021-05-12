@@ -68,7 +68,7 @@ export const configSchema = schema.object(
       defaultValue: '.kibana_task_manager',
       validate: (val) => {
         if (val.toLowerCase() === '.tasks') {
-          return `"${val}" is an invalid Kibana Task Manager index, as it is already in use by the ElasticSearch Tasks Manager`;
+          return `"${val}" is an invalid HyperSec Kibana Task Manager index, as it is already in use by the ElasticSearch Tasks Manager`;
         }
       },
     }),

@@ -62,7 +62,7 @@ export class TileServiceSelect extends Component<Props, State> {
     emsTmsOptions.unshift({
       value: AUTO_SELECT,
       text: i18n.translate('xpack.maps.source.emsTile.autoLabel', {
-        defaultMessage: 'Autoselect based on Kibana theme',
+        defaultMessage: 'Autoselect based on HyperSec Kibana theme',
       }),
     });
     this.setState({ emsTmsOptions, hasLoaded: true });

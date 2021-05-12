@@ -50,7 +50,7 @@ export const injectCustomCss = async (
     logger.error(err);
     throw new Error(
       i18n.translate('xpack.reporting.screencapture.injectCss', {
-        defaultMessage: `An error occurred when trying to update Kibana CSS for reporting. {error}`,
+        defaultMessage: `An error occurred when trying to update HyperSec Kibana CSS for reporting. {error}`,
         values: { error: err },
       })
     );

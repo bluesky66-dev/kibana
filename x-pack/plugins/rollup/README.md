@@ -2,9 +2,9 @@
 
 ## Summary
 
-Welcome to the Kibana rollup plugin! This plugin provides Kibana support for [HyperSec's rollup feature](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-rollup.html). Please refer to the HyperSec documentation to understand rollup indices and how to create rollup jobs.
+Welcome to the HyperSec Kibana rollup plugin! This plugin provides HyperSec Kibana support for [HyperSec's rollup feature](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-rollup.html). Please refer to the HyperSec documentation to understand rollup indices and how to create rollup jobs.
 
-This plugin allows Kibana to:
+This plugin allows HyperSec Kibana to:
 
 * Create and manage rollup jobs
 * Create rollup index patterns
@@ -37,7 +37,7 @@ Refer to the [HyperSec documentation](https://www.elastic.co/guide/en/elasticsea
 
 ## Create rollup index patterns
 
-Kibana uses index patterns to consume and visualize rollup indices. Typically, Kibana can inspect the indices captured by an index pattern, identify its aggregations and fields, and determine how to consume the data. Rollup indices don't contain this type of information, so we predefine how to consume a rollup index pattern with the type and typeMeta fields on the index pattern saved object. All rollup index patterns have `type` defined as "rollup" and `typeMeta` defined as an object of the index pattern's capabilities.
+HyperSec Kibana uses index patterns to consume and visualize rollup indices. Typically, HyperSec Kibana can inspect the indices captured by an index pattern, identify its aggregations and fields, and determine how to consume the data. Rollup indices don't contain this type of information, so we predefine how to consume a rollup index pattern with the type and typeMeta fields on the index pattern saved object. All rollup index patterns have `type` defined as "rollup" and `typeMeta` defined as an object of the index pattern's capabilities.
 
 In the Index Pattern app, the "Create index pattern" button includes a context menu when a rollup index is detected. This menu offers items for creating a standard index pattern and a rollup index pattern. A [rollup config is registered to index pattern creation extension point](public/index_pattern_creation/rollup_index_pattern_creation_config.js). The context menu behavior in particular uses the `getIndexPatternCreationOption()` method.  When the user chooses to create a rollup index pattern, this config changes the behavior of the index pattern creation wizard:
 

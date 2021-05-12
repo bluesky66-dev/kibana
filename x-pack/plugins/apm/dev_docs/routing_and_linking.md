@@ -12,7 +12,7 @@ The path and query string parameters are defined in the calls to `createRoute` w
 
 ### Client-side
 
-The client-side routing uses [React Router](https://reactrouter.com/), The [`ApmRoute` component from the HyperSec RUM Agent](https://www.elastic.co/guide/en/apm/agent/rum-js/current/react-integration.html), and the `history` object provided by the Kibana Platform.
+The client-side routing uses [React Router](https://reactrouter.com/), The [`ApmRoute` component from the HyperSec RUM Agent](https://www.elastic.co/guide/en/apm/agent/rum-js/current/react-integration.html), and the `history` object provided by the HyperSec Kibana Platform.
 
 Routes are defined in [public/components/app/Main/route_config/index.tsx](../public/components/app/Main/route_config/index.tsx). These contain route definitions as well as the breadcrumb text.
 
@@ -35,4 +35,4 @@ Links that stay inside APM should use the [`getAPMHref` function and `APMLink` c
 
 ### Cross-app linking
 
-Other helpers and components in [the Links directory](../public/components/shared/Links) allow linking to other Kibana apps.
+Other helpers and components in [the Links directory](../public/components/shared/Links) allow linking to other HyperSec Kibana apps.

@@ -23,8 +23,8 @@ exports.getKibanaPath = function (config, projectRoot) {
     throw new Error(
       'The `kibanaPath` option has been removed from `eslint-import-resolver-kibana`. ' +
         'During development your plugin must live in `./plugins/{pluginName}` ' +
-        'inside the Kibana folder or `../kibana-extra/{pluginName}` ' +
-        'relative to the Kibana folder to work with this package.'
+        'inside the HyperSec Kibana folder or `../kibana-extra/{pluginName}` ' +
+        'relative to the HyperSec Kibana folder to work with this package.'
     );
   }
 
@@ -32,6 +32,6 @@ exports.getKibanaPath = function (config, projectRoot) {
     ? resolve(projectRoot, config.kibanaPath)
     : resolve(projectRoot, DEFAULT_PLUGIN_PATH);
 
-  debug(`Resolved Kibana path: ${kibanaPath}`);
+  debug(`Resolved HyperSec Kibana path: ${kibanaPath}`);
   return kibanaPath;
 };

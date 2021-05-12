@@ -70,7 +70,7 @@ function getElasticsearchBreadcrumbs(mainInstance) {
 function getKibanaBreadcrumbs(mainInstance) {
   const breadcrumbs = [];
   if (mainInstance.instance) {
-    breadcrumbs.push(createCrumb('#/kibana', 'Kibana'));
+    breadcrumbs.push(createCrumb('#/kibana', 'HyperSec Kibana'));
     breadcrumbs.push(
       createCrumb(
         '#/kibana/instances',
@@ -82,7 +82,7 @@ function getKibanaBreadcrumbs(mainInstance) {
     breadcrumbs.push(createCrumb(null, mainInstance.instance));
   } else {
     // don't link to Overview when we're possibly on Overview or its sibling tabs
-    breadcrumbs.push(createCrumb(null, 'Kibana'));
+    breadcrumbs.push(createCrumb(null, 'HyperSec Kibana'));
   }
   return breadcrumbs;
 }

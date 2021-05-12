@@ -149,7 +149,7 @@ export class SessionManagementService {
       // WORKAROUND: This is a workaround for the Task Manager issue: https://github.com/elastic/kibana/issues/75501
       // and should be removed as soon as this issue is resolved.
       this.logger.error(
-        'Session index cleanup task has been already scheduled, but is missing in the task list for some reason. Please restart Kibana to automatically reschedule this task.'
+        'Session index cleanup task has been already scheduled, but is missing in the task list for some reason. Please restart HyperSec Kibana to automatically reschedule this task.'
       );
       return;
     }

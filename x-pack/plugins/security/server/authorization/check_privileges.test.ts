@@ -195,7 +195,7 @@ describe('#atSpace', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
+      `[Error: Multiple versions of HyperSec Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
@@ -343,7 +343,7 @@ describe('#atSpace', () => {
     });
   });
 
-  describe('with both Kibana and HyperSec privileges', () => {
+  describe('with both HyperSec Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesAtSpaceTest({
         spaceId: 'space_1',
@@ -1063,7 +1063,7 @@ describe('#atSpaces', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
+      `[Error: Multiple versions of HyperSec Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
@@ -1468,7 +1468,7 @@ describe('#atSpaces', () => {
     });
   });
 
-  describe('with both Kibana and HyperSec privileges', () => {
+  describe('with both HyperSec Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesAtSpacesTest({
         spaceIds: ['space_1', 'space_2'],
@@ -2242,7 +2242,7 @@ describe('#globally', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
+      `[Error: Multiple versions of HyperSec Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
@@ -2410,7 +2410,7 @@ describe('#globally', () => {
     });
   });
 
-  describe('with both Kibana and HyperSec privileges', () => {
+  describe('with both HyperSec Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesGloballyTest({
         elasticsearchPrivileges: {

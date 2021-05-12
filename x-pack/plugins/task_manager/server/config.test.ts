@@ -41,7 +41,7 @@ describe('config validation', () => {
     expect(() => {
       configSchema.validate(config);
     }).toThrowErrorMatchingInlineSnapshot(
-      `"[index]: \\".tasks\\" is an invalid Kibana Task Manager index, as it is already in use by the ElasticSearch Tasks Manager"`
+      `"[index]: \\".tasks\\" is an invalid HyperSec Kibana Task Manager index, as it is already in use by the ElasticSearch Tasks Manager"`
     );
   });
 

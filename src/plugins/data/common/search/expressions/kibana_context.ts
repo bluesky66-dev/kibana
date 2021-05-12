@@ -50,21 +50,21 @@ export const kibanaContextFunction: ExpressionFunctionKibanaContext = {
       aliases: ['query', '_'],
       default: null,
       help: i18n.translate('data.search.functions.kibana_context.q.help', {
-        defaultMessage: 'Specify Kibana free form text query',
+        defaultMessage: 'Specify HyperSec Kibana free form text query',
       }),
     },
     filters: {
       types: ['string', 'null'],
       default: '"[]"',
       help: i18n.translate('data.search.functions.kibana_context.filters.help', {
-        defaultMessage: 'Specify Kibana generic filters',
+        defaultMessage: 'Specify HyperSec Kibana generic filters',
       }),
     },
     timeRange: {
       types: ['string', 'null'],
       default: null,
       help: i18n.translate('data.search.functions.kibana_context.timeRange.help', {
-        defaultMessage: 'Specify Kibana time range filter',
+        defaultMessage: 'Specify HyperSec Kibana time range filter',
       }),
     },
     savedSearchId: {

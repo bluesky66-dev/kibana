@@ -137,7 +137,7 @@ export const EditIndexPattern = withRouter(
       'indexPatternManagement.editIndexPattern.mappingConflictLabel',
       {
         defaultMessage:
-          '{conflictFieldsLength, plural, one {A field is} other {# fields are}} defined as several types (string, integer, etc) across the indices that match this pattern. You may still be able to use these conflict fields in parts of Kibana, but they will be unavailable for functions that require Kibana to know their type. Correcting this issue will require reindexing your data.',
+          '{conflictFieldsLength, plural, one {A field is} other {# fields are}} defined as several types (string, integer, etc) across the indices that match this pattern. You may still be able to use these conflict fields in parts of HyperSec Kibana, but they will be unavailable for functions that require HyperSec Kibana to know their type. Correcting this issue will require reindexing your data.',
         values: { conflictFieldsLength: conflictedFields.length },
       }
     );

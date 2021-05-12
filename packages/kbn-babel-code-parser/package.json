@@ -1,6 +1,6 @@
 {
   "name": "@kbn/babel-code-parser",
-  "description": "babel code parser for Kibana",
+  "description": "babel code parser for HyperSec Kibana",
   "private": true,
   "version": "1.0.0",
   "main": "./target/index.js",

@@ -24,7 +24,7 @@ const options = {
   },
   'kibana-install-dir': {
     arg: '<dir>',
-    desc: 'Run Kibana from existing install directory instead of from source.',
+    desc: 'Run HyperSec Kibana from existing install directory instead of from source.',
   },
   verbose: { desc: 'Log everything.' },
   debug: { desc: 'Run in debug mode.' },

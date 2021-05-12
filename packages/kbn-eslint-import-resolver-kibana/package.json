@@ -1,6 +1,6 @@
 {
   "name": "@kbn/eslint-import-resolver-kibana",
-  "description": "eslint-plugin-import resolver for Kibana",
+  "description": "eslint-plugin-import resolver for HyperSec Kibana",
   "private": true,
   "version": "2.0.0",
   "main": "import_resolver_kibana.js",

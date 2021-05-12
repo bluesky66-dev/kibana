@@ -164,7 +164,7 @@ run(
         --focus            just like --filter, except dependencies are automatically included, --filter applies to result
         --filter           comma-separated list of bundle id filters, results from multiple flags are merged, * and ! are supported
         --no-examples      don't build the example plugins
-        --dist             create bundles that are suitable for inclusion in the Kibana distributable, enabled when running with --update-limits
+        --dist             create bundles that are suitable for inclusion in the HyperSec Kibana distributable, enabled when running with --update-limits
         --scan-dir         add a directory to the list of directories scanned for plugins (specify as many times as necessary)
         --no-inspect-workers  when inspecting the parent process, don't inspect the workers
         --validate-limits  validate the limits.yml config to ensure that there are limits defined for every bundle

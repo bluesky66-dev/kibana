@@ -22,11 +22,11 @@ const KNOWN_ERROR_STATUS_CODE = 503;
 const mapTypeMessage = {
   ConnectionFault: i18n.translate('xpack.monitoring.errors.connectionFaultErrorMessage', {
     defaultMessage:
-      'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.',
+      'Check the HyperSec Monitoring cluster network connection and refer to the HyperSec Kibana logs for more information.',
   }),
   NoConnections: i18n.translate('xpack.monitoring.errors.noConnectionsErrorMessage', {
     defaultMessage:
-      'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.',
+      'Check the HyperSec Monitoring cluster network connection and refer to the HyperSec Kibana logs for more information.',
   }),
   StatusCodeError: i18n.translate('xpack.monitoring.errors.statusCodeErrorMessage', {
     defaultMessage:

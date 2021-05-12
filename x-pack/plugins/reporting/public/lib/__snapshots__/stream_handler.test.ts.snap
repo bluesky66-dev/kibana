@@ -99,7 +99,7 @@ Array [
                   href="/#management"
                 >
                   <FormattedMessage
-                    defaultMessage="Management > Kibana > Reporting"
+                    defaultMessage="Management > HyperSec Kibana > Reporting"
                     id="xpack.reporting.publicNotifier.error.reportingSectionUrlLinkLabel"
                     values={Object {}}
                   />

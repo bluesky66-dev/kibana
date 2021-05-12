@@ -106,7 +106,7 @@ a customer could set the `message` param in the action to a much more
 complex message, using other context variables made available by the
 alert type.
 
-Here's the message you should see in the Kibana console, if everything is
+Here's the message you should see in the HyperSec Kibana console, if everything is
 working:
 
 ```

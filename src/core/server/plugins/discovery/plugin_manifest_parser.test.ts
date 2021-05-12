@@ -112,19 +112,19 @@ test('return error when plugin version is missing', async () => {
   });
 });
 
-test('return error when plugin expected Kibana version is lower than actual version', async () => {
+test('return error when plugin expected HyperSec Kibana version is lower than actual version', async () => {
   mockReadFile.mockImplementation((path, cb) => {
     cb(null, Buffer.from(JSON.stringify({ id: 'someId', version: '6.4.2' })));
   });
 
   await expect(parseManifest(pluginPath, packageInfo)).rejects.toMatchObject({
-    message: `Plugin "someId" is only compatible with Kibana version "6.4.2", but used Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
+    message: `Plugin "someId" is only compatible with HyperSec Kibana version "6.4.2", but used HyperSec Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
     type: PluginDiscoveryErrorType.IncompatibleVersion,
     path: pluginManifestPath,
   });
 });
 
-test('return error when plugin expected Kibana version cannot be interpreted as semver', async () => {
+test('return error when plugin expected HyperSec Kibana version cannot be interpreted as semver', async () => {
   mockReadFile.mockImplementation((path, cb) => {
     cb(
       null,
@@ -133,7 +133,7 @@ test('return error when plugin expected Kibana version cannot be interpreted as 
   });
 
   await expect(parseManifest(pluginPath, packageInfo)).rejects.toMatchObject({
-    message: `Plugin "someId" is only compatible with Kibana version "non-sem-ver", but used Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
+    message: `Plugin "someId" is only compatible with HyperSec Kibana version "non-sem-ver", but used HyperSec Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
     type: PluginDiscoveryErrorType.IncompatibleVersion,
     path: pluginManifestPath,
   });
@@ -166,13 +166,13 @@ test('return error when plugin config path is an array that contains non-string 
   });
 });
 
-test('return error when plugin expected Kibana version is higher than actual version', async () => {
+test('return error when plugin expected HyperSec Kibana version is higher than actual version', async () => {
   mockReadFile.mockImplementation((path, cb) => {
     cb(null, Buffer.from(JSON.stringify({ id: 'someId', version: '7.0.1' })));
   });
 
   await expect(parseManifest(pluginPath, packageInfo)).rejects.toMatchObject({
-    message: `Plugin "someId" is only compatible with Kibana version "7.0.1", but used Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
+    message: `Plugin "someId" is only compatible with HyperSec Kibana version "7.0.1", but used HyperSec Kibana version is "7.0.0-alpha1". (incompatible-version, ${pluginManifestPath})`,
     type: PluginDiscoveryErrorType.IncompatibleVersion,
     path: pluginManifestPath,
   });
@@ -323,7 +323,7 @@ test('return all set optional fields as they are in manifest', async () => {
   });
 });
 
-test('return manifest when plugin expected Kibana version matches actual version', async () => {
+test('return manifest when plugin expected HyperSec Kibana version matches actual version', async () => {
   mockReadFile.mockImplementation((path, cb) => {
     cb(
       null,
@@ -353,7 +353,7 @@ test('return manifest when plugin expected Kibana version matches actual version
   });
 });
 
-test('return manifest when plugin expected Kibana version is `kibana`', async () => {
+test('return manifest when plugin expected HyperSec Kibana version is `kibana`', async () => {
   mockReadFile.mockImplementation((path, cb) => {
     cb(
       null,

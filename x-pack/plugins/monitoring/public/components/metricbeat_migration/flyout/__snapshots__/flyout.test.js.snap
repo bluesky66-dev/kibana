@@ -1056,7 +1056,7 @@ exports[`Flyout kibana part one should render normally 1`] = `
       <h2
         id="flyoutTitle"
       >
-        Monitor \`Kibana\` instance with Metricbeat
+        Monitor \`HyperSec Kibana\` instance with Metricbeat
       </h2>
     </EuiTitle>
   </EuiFlyoutHeader>
@@ -1174,7 +1174,7 @@ exports[`Flyout kibana part two should show instructions to disable internal col
               </p>
             </EuiText>
           </React.Fragment>,
-          "title": "Disable self monitoring of Kibana monitoring metrics",
+          "title": "Disable self monitoring of HyperSec Kibana monitoring metrics",
         },
         Object {
           "children": <EuiCallOut
@@ -1218,7 +1218,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
               </EuiLink>
             </p>
           </EuiText>,
-          "title": "Install Metricbeat on the same server as Kibana",
+          "title": "Install Metricbeat on the same server as HyperSec Kibana",
         },
         Object {
           "children": <React.Fragment>
@@ -1234,7 +1234,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
             <EuiText>
               <p>
                 <FormattedMessage
-                  defaultMessage="By default the module will collect Kibana monitoring metrics from http://localhost:5601. If the local Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
+                  defaultMessage="By default the module will collect HyperSec Kibana monitoring metrics from http://localhost:5601. If the local HyperSec Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
                   id="xpack.monitoring.metricbeatMigration.kibanaInstructions.enableMetricbeatModuleDescription"
                   values={
                     Object {
@@ -1284,7 +1284,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
               />
             </React.Fragment>
           </React.Fragment>,
-          "title": "Enable and configure the Kibana x-pack module in Metricbeat",
+          "title": "Enable and configure the HyperSec Kibana x-pack module in Metricbeat",
         },
         Object {
           "children": <React.Fragment>
@@ -2027,7 +2027,7 @@ exports[`Flyout should render the beat type for beats for the enabling metricbea
 </EuiFlyoutBody>
 `;
 
-exports[`Flyout should show a restart warning for restarting the primary Kibana 1`] = `
+exports[`Flyout should show a restart warning for restarting the primary HyperSec Kibana 1`] = `
 <EuiFlyoutBody>
   <EuiSteps
     steps={
@@ -2086,7 +2086,7 @@ exports[`Flyout should show a restart warning for restarting the primary Kibana 
               <EuiCallOut
                 color="warning"
                 iconType="help"
-                title="This step requires you to restart the Kibana server"
+                title="This step requires you to restart the HyperSec Kibana server"
               >
                 <EuiText>
                   <p>
@@ -2100,7 +2100,7 @@ exports[`Flyout should show a restart warning for restarting the primary Kibana 
               </EuiCallOut>
             </React.Fragment>
           </React.Fragment>,
-          "title": "Disable self monitoring of Kibana monitoring metrics",
+          "title": "Disable self monitoring of HyperSec Kibana monitoring metrics",
         },
         Object {
           "children": <EuiCallOut

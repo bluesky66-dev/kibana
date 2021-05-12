@@ -116,7 +116,7 @@ describe('core deprecations', () => {
       });
       expect(messages).toMatchInlineSnapshot(`
         Array [
-          "Support for setting server.host to \\"0\\" in kibana.yml is deprecated and will be removed in Kibana version 8.0.0. Instead use \\"0.0.0.0\\" to bind to all interfaces.",
+          "Support for setting server.host to \\"0\\" in kibana.yml is deprecated and will be removed in HyperSec Kibana version 8.0.0. Instead use \\"0.0.0.0\\" to bind to all interfaces.",
         ]
       `);
     });
@@ -138,7 +138,7 @@ describe('core deprecations', () => {
       });
       expect(messages).toMatchInlineSnapshot(`
         Array [
-          "You should set server.basePath along with server.rewriteBasePath. Starting in 7.0, Kibana will expect that all requests start with server.basePath rather than expecting you to rewrite the requests in your reverse proxy. Set server.rewriteBasePath to false to preserve the current behavior and silence this warning.",
+          "You should set server.basePath along with server.rewriteBasePath. Starting in 7.0, HyperSec Kibana will expect that all requests start with server.basePath rather than expecting you to rewrite the requests in your reverse proxy. Set server.rewriteBasePath to false to preserve the current behavior and silence this warning.",
         ]
       `);
     });

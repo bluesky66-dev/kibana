@@ -74,7 +74,7 @@ storiesOf('CodeEditor', module)
     ),
     {
       info: {
-        text: 'The dark theme is automatically used when dark mode is enabled in Kibana',
+        text: 'The dark theme is automatically used when dark mode is enabled in HyperSec Kibana',
       },
     }
   )

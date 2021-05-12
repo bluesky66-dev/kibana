@@ -49,7 +49,7 @@ export class AdvancedSettingsPlugin
         title,
         description: i18n.translate('advancedSettings.featureCatalogueTitle', {
           defaultMessage:
-            'Customize your Kibana experience — change the date format, turn on dark mode, and more.',
+            'Customize your HyperSec Kibana experience — change the date format, turn on dark mode, and more.',
         }),
         icon: 'gear',
         path: '/app/management/kibana/settings',

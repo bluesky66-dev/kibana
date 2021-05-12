@@ -13,7 +13,7 @@ export async function create(keystore, command, options) {
   const logger = new Logger(options);
 
   if (keystore.exists()) {
-    const overwrite = await confirm('A Kibana keystore already exists. Overwrite?');
+    const overwrite = await confirm('A HyperSec Kibana keystore already exists. Overwrite?');
 
     if (!overwrite) {
       return logger.log('Exiting without modifying keystore.');
@@ -23,13 +23,13 @@ export async function create(keystore, command, options) {
   keystore.reset();
   keystore.save();
 
-  logger.log(`Created Kibana keystore in ${keystore.path}`);
+  logger.log(`Created HyperSec Kibana keystore in ${keystore.path}`);
 }
 
 export function createCli(program, keystore) {
   program
     .command('create')
-    .description('Creates a new Kibana keystore')
+    .description('Creates a new HyperSec Kibana keystore')
     .option('-s, --silent', 'prevent all logging')
     .action(create.bind(null, keystore));
 }

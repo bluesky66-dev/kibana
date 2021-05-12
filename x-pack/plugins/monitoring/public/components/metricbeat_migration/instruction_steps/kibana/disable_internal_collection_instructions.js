@@ -22,7 +22,7 @@ export function getKibanaInstructionsForDisablingInternalCollection(product, met
           title={i18n.translate(
             'xpack.monitoring.metricbeatMigration.kibanaInstructions.disableInternalCollection.restartWarningTitle',
             {
-              defaultMessage: 'This step requires you to restart the Kibana server',
+              defaultMessage: 'This step requires you to restart the HyperSec Kibana server',
             }
           )}
           color="warning"
@@ -45,7 +45,7 @@ export function getKibanaInstructionsForDisablingInternalCollection(product, met
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.kibanaInstructions.disableInternalCollection.title',
       {
-        defaultMessage: 'Disable self monitoring of Kibana monitoring metrics',
+        defaultMessage: 'Disable self monitoring of HyperSec Kibana monitoring metrics',
       }
     ),
     children: (

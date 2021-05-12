@@ -308,7 +308,7 @@ export function createConfig(
   if (!isTLSEnabled) {
     if (secureCookies) {
       logger.warn(
-        'Using secure cookies, but SSL is not enabled inside Kibana. SSL must be configured outside of Kibana to ' +
+        'Using secure cookies, but SSL is not enabled inside HyperSec Kibana. SSL must be configured outside of HyperSec Kibana to ' +
           'function properly.'
       );
     } else {

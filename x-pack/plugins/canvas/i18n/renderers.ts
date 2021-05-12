@@ -52,7 +52,7 @@ export const RendererStrings = {
       }),
     getHelpDescription: () =>
       i18n.translate('xpack.canvas.renderer.embeddable.helpDescription', {
-        defaultMessage: 'Renders an embeddable Saved Object from other parts of Kibana',
+        defaultMessage: 'Renders an embeddable Saved Object from other parts of HyperSec Kibana',
       }),
   },
   error: {

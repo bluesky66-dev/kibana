@@ -1,3 +1,3 @@
-# Custom ESLint rules for Kibana
+# Custom ESLint rules for HyperSec Kibana
 
-This package contains custom ESLint rules used for Kibana development.
+This package contains custom ESLint rules used for HyperSec Kibana development.

@@ -12,7 +12,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
       >
         <p>
           <FormattedMessage
-            defaultMessage="Specifies the Kibana privilege for this role."
+            defaultMessage="Specifies the HyperSec Kibana privilege for this role."
             id="xpack.security.management.editRole.simplePrivilegeForm.specifyPrivilegeForRoleDescription"
             values={Object {}}
           />
@@ -28,7 +28,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
         hasEmptyLabelSpace={false}
         label={
           <FormattedMessage
-            defaultMessage="Kibana privileges"
+            defaultMessage="HyperSec Kibana privileges"
             id="xpack.security.management.editRole.simplePrivilegeForm.kibanaPrivilegesTitle"
             values={Object {}}
           />
@@ -56,7 +56,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
                   </strong>
                   <p>
                     <FormattedMessage
-                      defaultMessage="No access to Kibana"
+                      defaultMessage="No access to HyperSec Kibana"
                       id="xpack.security.management.editRole.simplePrivilegeForm.noPrivilegeDropdownDescription"
                       values={Object {}}
                     />
@@ -82,7 +82,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
                   </strong>
                   <p>
                     <FormattedMessage
-                      defaultMessage="Customize access to Kibana"
+                      defaultMessage="Customize access to HyperSec Kibana"
                       id="xpack.security.management.editRole.simplePrivilegeForm.customPrivilegeDropdownDescription"
                       values={Object {}}
                     />
@@ -108,7 +108,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
                   </strong>
                   <p>
                     <FormattedMessage
-                      defaultMessage="Grants read-only access to all of Kibana"
+                      defaultMessage="Grants read-only access to all of HyperSec Kibana"
                       id="xpack.security.management.editRole.simplePrivilegeForm.readPrivilegeDropdownDescription"
                       values={Object {}}
                     />
@@ -134,7 +134,7 @@ exports[`<SimplePrivilegeForm> renders without crashing 1`] = `
                   </strong>
                   <p>
                     <FormattedMessage
-                      defaultMessage="Grants full access to all of Kibana"
+                      defaultMessage="Grants full access to all of HyperSec Kibana"
                       id="xpack.security.management.editRole.simplePrivilegeForm.allPrivilegeDropdownDescription"
                       values={Object {}}
                     />

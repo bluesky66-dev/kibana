@@ -188,7 +188,7 @@ function GuidancePanelComponent(props: GuidancePanelProps) {
           <p>
             <FormattedMessage
               id="xpack.graph.listing.noDataSource.newToKibanaDescription"
-              defaultMessage="New to Kibana? You can also use our {sampleDataInstallLink}."
+              defaultMessage="New to HyperSec Kibana? You can also use our {sampleDataInstallLink}."
               values={{
                 sampleDataInstallLink: (
                   <EuiLink href={sampleDataUrl}>

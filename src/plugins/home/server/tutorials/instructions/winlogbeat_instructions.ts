@@ -57,7 +57,7 @@ export const createWinlogbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.winlogbeatInstructions.start.windowsTextPre', {
         defaultMessage:
-          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['.\\winlogbeat.exe setup', 'Start-Service winlogbeat'],
     },
@@ -90,7 +90,7 @@ export const createWinlogbeatInstructions = (context?: TutorialContext) => ({
         {
           defaultMessage:
             'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',

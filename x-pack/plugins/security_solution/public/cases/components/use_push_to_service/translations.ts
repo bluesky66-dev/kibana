@@ -63,7 +63,7 @@ export const PUSH_DISABLE_BECAUSE_CASE_CLOSED_TITLE = i18n.translate(
 export const PUSH_DISABLE_BY_KIBANA_CONFIG_TITLE = i18n.translate(
   'xpack.securitySolution.case.caseView.pushToServiceDisableByConfigTitle',
   {
-    defaultMessage: 'Enable external service in Kibana configuration file',
+    defaultMessage: 'Enable external service in HyperSec Kibana configuration file',
   }
 );
 

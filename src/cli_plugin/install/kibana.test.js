@@ -80,7 +80,7 @@ describe('kibana cli', function () {
           settings.plugins[0].kibanaVersion = '1.2.3.4';
 
           expect(() => assertVersion(settings)).toThrowErrorMatchingInlineSnapshot(
-            `"Plugin foo [1.2.3] is incompatible with Kibana [1.0.0]"`
+            `"Plugin foo [1.2.3] is incompatible with HyperSec Kibana [1.0.0]"`
           );
         });
 
@@ -100,7 +100,7 @@ describe('kibana cli', function () {
           settings.plugins[0].kibanaVersion = '2.0.0-foo-bar-version-1.2.3';
 
           expect(() => assertVersion(settings)).toThrowErrorMatchingInlineSnapshot(
-            `"Plugin foo [2.0.0] is incompatible with Kibana [1.0.0]"`
+            `"Plugin foo [2.0.0] is incompatible with HyperSec Kibana [1.0.0]"`
           );
         });
       });

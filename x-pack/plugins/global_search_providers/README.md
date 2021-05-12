@@ -1,6 +1,6 @@
-# Kibana `GlobalSearchProviders` plugin
+# HyperSec Kibana `GlobalSearchProviders` plugin
 
-The globalSearchProviders plugin provides Kibana default search providers for the `GlobalSearch` plugin.
+The globalSearchProviders plugin provides HyperSec Kibana default search providers for the `GlobalSearch` plugin.
 
 ## Server-side providers
 

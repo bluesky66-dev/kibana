@@ -80,7 +80,7 @@ exports[`TelemetryManagementSectionComponent renders as expected 1`] = `
                 Object {
                   "allOfKibanaText": <strong>
                     <FormattedMessage
-                      defaultMessage="all of Kibana"
+                      defaultMessage="all of HyperSec Kibana"
                       id="telemetry.callout.appliesSettingTitle.allOfKibanaText"
                       values={Object {}}
                     />

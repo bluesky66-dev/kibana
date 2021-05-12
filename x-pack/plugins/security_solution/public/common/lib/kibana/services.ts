@@ -42,7 +42,7 @@ export class KibanaServices {
 
   private static throwUninitializedError(): never {
     throw new Error(
-      'Kibana services not initialized - are you trying to import this module from outside of the SIEM app?'
+      'HyperSec Kibana services not initialized - are you trying to import this module from outside of the SIEM app?'
     );
   }
 }

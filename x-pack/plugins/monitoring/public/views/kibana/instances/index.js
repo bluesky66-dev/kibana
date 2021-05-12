@@ -35,10 +35,10 @@ uiRoutes.when('/kibana/instances', {
     constructor($injector, $scope) {
       super({
         title: i18n.translate('xpack.monitoring.kibana.instances.routeTitle', {
-          defaultMessage: 'Kibana - Instances',
+          defaultMessage: 'HyperSec Kibana - Instances',
         }),
         pageTitle: i18n.translate('xpack.monitoring.kibana.instances.pageTitle', {
-          defaultMessage: 'Kibana instances',
+          defaultMessage: 'HyperSec Kibana instances',
         }),
         storageKey: 'kibana.instances',
         getPageData,

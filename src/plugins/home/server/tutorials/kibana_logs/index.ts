@@ -24,15 +24,15 @@ export function kibanaLogsSpecProvider(context: TutorialContext): TutorialSchema
   return {
     id: 'kibanaLogs',
     name: i18n.translate('home.tutorials.kibanaLogs.nameTitle', {
-      defaultMessage: 'Kibana Logs',
+      defaultMessage: 'HyperSec Kibana Logs',
     }),
     moduleName,
     category: TutorialsCategory.LOGGING,
     shortDescription: i18n.translate('home.tutorials.kibanaLogs.shortDescription', {
-      defaultMessage: 'Collect Kibana logs.',
+      defaultMessage: 'Collect HyperSec Kibana logs.',
     }),
     longDescription: i18n.translate('home.tutorials.kibanaLogs.longDescription', {
-      defaultMessage: 'This is the Kibana module. \
+      defaultMessage: 'This is the HyperSec Kibana module. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.filebeat}/filebeat-module-kibana.html',

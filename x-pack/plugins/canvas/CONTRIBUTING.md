@@ -1,6 +1,6 @@
 # Contributing to Canvas
 
-Canvas is a plugin for Kibana, therefore its [contribution guidelines](../../../CONTRIBUTING.md) apply to Canvas development, as well.  This document contains Canvas-specific guidelines that extend from the Kibana guidelines.
+Canvas is a plugin for HyperSec Kibana, therefore its [contribution guidelines](../../../CONTRIBUTING.md) apply to Canvas development, as well.  This document contains Canvas-specific guidelines that extend from the HyperSec Kibana guidelines.
 
 - [Active Migrations](#active_migrations)
 - [i18n](#i18n)
@@ -20,7 +20,7 @@ When editing code in Canvas, be aware of the following active migrations, (gener
 
 ## i18n
 
-i18n syntax in Kibana can be a bit verbose in code:
+i18n syntax in HyperSec Kibana can be a bit verbose in code:
 
 ```js
   i18n('pluginNamespace.messageId', {
@@ -107,8 +107,8 @@ The problem we've run into is when you have sub-components which are also connec
 
 Canvas uses [Storybook](https://storybook.js.org) to test and develop components.  This has a number of benefits:
 
-- Developing components without needing to start ES + Kibana.
-- Testing components interactively without starting ES + Kibana.
+- Developing components without needing to start ES + HyperSec Kibana.
+- Testing components interactively without starting ES + HyperSec Kibana.
 - Automatic Storyshot integration with Jest
 
 ### Using Storybook
@@ -134,6 +134,6 @@ node scripts/storybook
 
 ### What about `kbn-storybook`?
 
-Canvas wants to move to the Kibana Storybook instance as soon as feasible.  There are few tweaks Canvas makes to Storybook, so we're actively working with the maintainers to make that migration successful.
+Canvas wants to move to the HyperSec Kibana Storybook instance as soon as feasible.  There are few tweaks Canvas makes to Storybook, so we're actively working with the maintainers to make that migration successful.
 
 In the meantime, people can test our progress by running `node scripts/storybook_new` from the Canvas root.

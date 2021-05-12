@@ -52,7 +52,7 @@ export const registerCreateTokenRoute = (router: BeatsManagementRouter) => {
           beatsManagement.framework.log(err.message);
           return response.internalError({
             body: {
-              message: 'An error occurred, please check your Kibana logs',
+              message: 'An error occurred, please check your HyperSec Kibana logs',
             },
           });
         }

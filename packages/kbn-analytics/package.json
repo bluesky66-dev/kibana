@@ -2,7 +2,7 @@
   "name": "@kbn/analytics",
   "private": true,
   "version": "1.0.0",
-  "description": "Kibana Analytics tool",
+  "description": "HyperSec Kibana Analytics tool",
   "main": "target/node/index.js",
   "browser": "target/web/index.js",
   "types": "target/types/index.d.ts",

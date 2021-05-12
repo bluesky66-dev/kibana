@@ -37,7 +37,7 @@ export const SetupInstructions: React.FC<Props> = ({
       steps={[
         {
           title: i18n.translate('xpack.enterpriseSearch.setupGuide.step1.title', {
-            defaultMessage: 'Add your {productName} host URL to your Kibana configuration',
+            defaultMessage: 'Add your {productName} host URL to your HyperSec Kibana configuration',
             values: { productName },
           }),
           children: (
@@ -61,20 +61,20 @@ export const SetupInstructions: React.FC<Props> = ({
         },
         {
           title: i18n.translate('xpack.enterpriseSearch.setupGuide.step2.title', {
-            defaultMessage: 'Reload your Kibana instance',
+            defaultMessage: 'Reload your HyperSec Kibana instance',
           }),
           children: (
             <EuiText>
               <p>
                 <FormattedMessage
                   id="xpack.enterpriseSearch.setupGuide.step2.instruction1"
-                  defaultMessage="Restart Kibana to pick up the configuration changes from the previous step."
+                  defaultMessage="Restart HyperSec Kibana to pick up the configuration changes from the previous step."
                 />
               </p>
               <p>
                 <FormattedMessage
                   id="xpack.enterpriseSearch.setupGuide.step2.instruction2"
-                  defaultMessage="If you’re using {elasticsearchNativeAuthLink} in {productName}, you’re all set. Your users can now access {productName} in Kibana with their current {productName} access and permissions."
+                  defaultMessage="If you’re using {elasticsearchNativeAuthLink} in {productName}, you’re all set. Your users can now access {productName} in HyperSec Kibana with their current {productName} access and permissions."
                   values={{
                     productName,
                     elasticsearchNativeAuthLink: elasticsearchNativeAuthLink ? (
@@ -101,7 +101,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   'xpack.enterpriseSearch.troubleshooting.differentEsClusters.title',
                   {
                     defaultMessage:
-                      '{productName} and Kibana are on different HyperSec clusters',
+                      '{productName} and HyperSec Kibana are on different HyperSec clusters',
                     values: { productName },
                   }
                 )}
@@ -112,7 +112,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   <p>
                     <FormattedMessage
                       id="xpack.enterpriseSearch.troubleshooting.differentEsClusters.description"
-                      defaultMessage="This plugin does not currently support {productName} and Kibana running on different clusters."
+                      defaultMessage="This plugin does not currently support {productName} and HyperSec Kibana running on different clusters."
                       values={{ productName }}
                     />
                   </p>
@@ -124,7 +124,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   'xpack.enterpriseSearch.troubleshooting.differentAuth.title',
                   {
                     defaultMessage:
-                      '{productName} and Kibana are on different authentication methods',
+                      '{productName} and HyperSec Kibana are on different authentication methods',
                     values: { productName },
                   }
                 )}
@@ -135,7 +135,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   <p>
                     <FormattedMessage
                       id="xpack.enterpriseSearch.troubleshooting.differentAuth.description"
-                      defaultMessage="This plugin does not currently support {productName} and Kibana operating on different authentication methods, for example, {productName} using a different SAML provider than Kibana."
+                      defaultMessage="This plugin does not currently support {productName} and HyperSec Kibana operating on different authentication methods, for example, {productName} using a different SAML provider than HyperSec Kibana."
                       values={{ productName }}
                     />
                   </p>
@@ -157,7 +157,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   <p>
                     <FormattedMessage
                       id="xpack.enterpriseSearch.troubleshooting.standardAuth.description"
-                      defaultMessage="This plugin does not fully support {productName} on {standardAuthLink}. Users created in {productName} must have Kibana access. Users created in Kibana will not see {productName} in the navigation menu."
+                      defaultMessage="This plugin does not fully support {productName} on {standardAuthLink}. Users created in {productName} must have HyperSec Kibana access. Users created in HyperSec Kibana will not see {productName} in the navigation menu."
                       values={{
                         productName,
                         standardAuthLink: standardAuthLink ? (

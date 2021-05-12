@@ -62,7 +62,7 @@ export const SetupGuide: React.FC = () => {
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.workplaceSearch.setupGuide.notConfigured"
-            defaultMessage="Workplace Search isn't configured in Kibana. Follow the instructions on this page."
+            defaultMessage="Workplace Search isn't configured in HyperSec Kibana. Follow the instructions on this page."
           />
         </p>
       </EuiText>

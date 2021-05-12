@@ -20,7 +20,7 @@ export function AddRoleAlert() {
       </strong>
       <FormattedMessage
         id="xpack.logstash.addRoleAlert.grantAdditionalPrivilegesDescription"
-        defaultMessage="In Kibana Management, assign the {role} role to your Kibana user."
+        defaultMessage="In HyperSec Kibana Management, assign the {role} role to your HyperSec Kibana user."
         values={{
           role: <EuiCode>monitoring_user</EuiCode>,
         }}

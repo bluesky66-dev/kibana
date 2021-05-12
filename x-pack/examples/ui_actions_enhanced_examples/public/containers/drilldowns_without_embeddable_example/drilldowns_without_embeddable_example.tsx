@@ -89,7 +89,7 @@ export const DrilldownsWithoutEmbeddableExample: React.FC = () => {
       <EuiText>
         <h3>Without embeddable example (app 1)</h3>
         <p>
-          <em>Drilldown Manager</em> can be integrated into any app in Kibana. This example shows
+          <em>Drilldown Manager</em> can be integrated into any app in HyperSec Kibana. This example shows
           that drilldown manager can be used in an app which does not use embeddables and executes
           its custom UI Actions triggers.
         </p>

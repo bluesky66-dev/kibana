@@ -96,7 +96,7 @@ export async function runDockerGenerator(
   } catch (e) {
     if (e && e.code === 'ENOENT' && e.syscall === 'access') {
       throw new Error(
-        `Kibana linux target (${artifactTarball}) is needed in order to build ${''}the docker image. None was found at ${artifactsDir}`
+        `HyperSec Kibana linux target (${artifactTarball}) is needed in order to build ${''}the docker image. None was found at ${artifactsDir}`
       );
     }
   }

@@ -172,7 +172,7 @@ describe('Flyout', () => {
     expect(component.find('EuiFlyoutBody')).toMatchSnapshot();
   });
 
-  it('should show a restart warning for restarting the primary Kibana', () => {
+  it('should show a restart warning for restarting the primary HyperSec Kibana', () => {
     const component = shallow(
       <Flyout
         onClose={() => {}}

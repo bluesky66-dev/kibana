@@ -98,7 +98,7 @@ export function checkPrivilegesWithRequestFactory(
 
       if (hasIncompatibleVersion(applicationPrivilegesResponse)) {
         throw new Error(
-          'Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.'
+          'Multiple versions of HyperSec Kibana are running against the same HyperSec cluster, unable to authorize user.'
         );
       }
 

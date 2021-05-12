@@ -164,10 +164,10 @@ export default function (program) {
 
   if (!IS_KIBANA_DISTRIBUTABLE) {
     command
-      .option('--oss', 'Start Kibana without X-Pack')
+      .option('--oss', 'Start HyperSec Kibana without X-Pack')
       .option(
         '--run-examples',
-        'Adds plugin paths for all the Kibana example plugins and runs with no base path'
+        'Adds plugin paths for all the HyperSec Kibana example plugins and runs with no base path'
       );
   }
 

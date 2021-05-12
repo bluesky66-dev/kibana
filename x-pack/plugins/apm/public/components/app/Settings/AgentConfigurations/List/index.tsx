@@ -65,7 +65,7 @@ export function AgentConfigurationList({ status, data, refetch }: Props) {
         <p>
           {i18n.translate('xpack.apm.agentConfig.configTable.emptyPromptText', {
             defaultMessage:
-              "Let's change that! You can fine-tune agent configuration directly from Kibana without having to redeploy. Get started by creating your first configuration.",
+              "Let's change that! You can fine-tune agent configuration directly from HyperSec Kibana without having to redeploy. Get started by creating your first configuration.",
           })}
         </p>
       }

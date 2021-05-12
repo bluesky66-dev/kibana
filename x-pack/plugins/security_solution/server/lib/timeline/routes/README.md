@@ -10,8 +10,8 @@
 #### POST /api/timeline
 ##### Authorization
 Type: Basic Auth
-username: Your Kibana username
-password: Your Kibana password
+username: Your HyperSec Kibana username
+password: Your HyperSec Kibana password
 
 
 ##### Request header
@@ -86,8 +86,8 @@ kbn-version: 8.0.0
 #### PATCH /api/timeline
 ##### Authorization
 Type: Basic Auth
-username: Your Kibana username
-password: Your Kibana password
+username: Your HyperSec Kibana username
+password: Your HyperSec Kibana password
 
 
 ##### Request header
@@ -166,8 +166,8 @@ kbn-version: 8.0.0
 #### POST /api/timeline
 ##### Authorization
 Type: Basic Auth
-username: Your Kibana username
-password: Your Kibana password
+username: Your HyperSec Kibana username
+password: Your HyperSec Kibana password
 
 
 ##### Request header
@@ -247,8 +247,8 @@ kbn-version: 8.0.0
 #### PATCH /api/timeline
 ##### Authorization
 Type: Basic Auth
-username: Your Kibana username
-password: Your Kibana password
+username: Your HyperSec Kibana username
+password: Your HyperSec Kibana password
 
 
 ##### Request header
@@ -333,9 +333,9 @@ kbn-version: 8.0.0
 
 Type: Basic Auth
 
-username: Your Kibana username
+username: Your HyperSec Kibana username
 
-password: Your Kibana password
+password: Your HyperSec Kibana password
 
 
 
@@ -373,9 +373,9 @@ file_name:	${filename}.ndjson
 
 Type: Basic Auth
 
-username: Your Kibana username
+username: Your HyperSec Kibana username
 
-password: Your Kibana password
+password: Your HyperSec Kibana password
 
 
 
@@ -418,9 +418,9 @@ example:
 
 Type: Basic Auth
 
-username: Your Kibana username
+username: Your HyperSec Kibana username
 
-password: Your Kibana password
+password: Your HyperSec Kibana password
 
 
 ##### Request header
@@ -521,9 +521,9 @@ timelineType: `default` or `template`
 
 Type: Basic Auth
 
-username: Your Kibana username
+username: Your HyperSec Kibana username
 
-password: Your Kibana password
+password: Your HyperSec Kibana password
 
 
 ##### Request header

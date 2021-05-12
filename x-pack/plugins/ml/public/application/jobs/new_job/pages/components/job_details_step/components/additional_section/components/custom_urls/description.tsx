@@ -30,7 +30,7 @@ export const Description: FC = memo(({ children }) => {
       description={
         <FormattedMessage
           id="xpack.ml.newJob.wizard.jobDetailsStep.additionalSection.customUrlsSelection.description"
-          defaultMessage="Provide links from anomalies to Kibana dashboards, the Discovery page, or other web pages. {learnMoreLink}"
+          defaultMessage="Provide links from anomalies to HyperSec Kibana dashboards, the Discovery page, or other web pages. {learnMoreLink}"
           values={{
             learnMoreLink: (
               <EuiLink href={docsUrl} target="_blank">

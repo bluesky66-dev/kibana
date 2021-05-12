@@ -1,6 +1,6 @@
 # Graph app
 
-This is the main source folder of the Graph plugin. It contains all of the Kibana server and client source code. `x-pack/test/functional/apps/graph` contains additional functional tests.
+This is the main source folder of the Graph plugin. It contains all of the HyperSec Kibana server and client source code. `x-pack/test/functional/apps/graph` contains additional functional tests.
 
 Graph shows only up in the side bar if your server is running on a platinum or trial license. You can activate a trial license in `Management > License Management`.
 
@@ -21,7 +21,7 @@ Currently most of the state handling is done by a central angular controller. Th
 
 * `angular/` contains all code using javascript and angular. Rewriting this code in typescript and react is currently ongoing. When the migration is finished, this folder will go away
 * `components/` contains react components for various parts of the interface. Components can hold local UI state (e.g. current form data), everything else should be passed in from the caller. Styles should reside in a component-specific stylesheet
-* `services/` contains functions that encapsule other parts of Kibana. Stateful dependencies are passed in from the outside. Components should not rely on services directly but have callbacks passed in. Once the migration to redux/saga is complete, only sagas will use services.
+* `services/` contains functions that encapsule other parts of HyperSec Kibana. Stateful dependencies are passed in from the outside. Components should not rely on services directly but have callbacks passed in. Once the migration to redux/saga is complete, only sagas will use services.
 * `helpers/` contains side effect free helper functions that can be imported and used from components and services
 * `state_management/` contains reducers, action creators, selectors and sagas. It also exports the central store creator
   * Each file covers one functional area (e.g. handling of fields, handling of url templates...)

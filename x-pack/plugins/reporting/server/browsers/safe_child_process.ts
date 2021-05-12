@@ -27,7 +27,7 @@ export function safeChildProcess(
 
   const ownTerminateMapToKill$ = ownTerminateSignal$.pipe(
     tap((signal) => {
-      logger.debug(`Kibana process received terminate signal: ${signal}`);
+      logger.debug(`HyperSec Kibana process received terminate signal: ${signal}`);
     }),
     mapTo('SIGKILL')
   );
@@ -35,7 +35,7 @@ export function safeChildProcess(
   const kibanaForceExit$ = Rx.fromEvent(process as NodeJS.EventEmitter, 'exit').pipe(
     take(1),
     tap((signal) => {
-      logger.debug(`Kibana process forcefully exited with signal: ${signal}`);
+      logger.debug(`HyperSec Kibana process forcefully exited with signal: ${signal}`);
     }),
     mapTo('SIGKILL')
   );
@@ -54,7 +54,7 @@ export function safeChildProcess(
     ownTerminateSignal$.pipe(
       delay(1),
       tap((signal) => {
-        logger.debug(`Kibana process terminate signal was: ${signal}. Closing the browser...`);
+        logger.debug(`HyperSec Kibana process terminate signal was: ${signal}. Closing the browser...`);
         return process.kill(process.pid, signal);
       })
     )

@@ -1,6 +1,6 @@
-# Kibana alerting
+# HyperSec Kibana alerting
 
-The Kibana alerting plugin provides a common place to set up alerts. You can:
+The HyperSec Kibana alerting plugin provides a common place to set up alerts. You can:
 
 - Register types of alerts
 - List the types of registered alerts
@@ -10,7 +10,7 @@ The Kibana alerting plugin provides a common place to set up alerts. You can:
 
 Table of Contents
 
-- [Kibana alerting](#kibana-alerting)
+- [HyperSec Kibana alerting](#kibana-alerting)
 	- [Terminology](#terminology)
 	- [Usage](#usage)
 	- [Alerts API keys](#alerts-api-keys)
@@ -42,7 +42,7 @@ Table of Contents
 
 **Alert Instance**: The instance(s) created from an alert type execution.
 
-A Kibana alert detects a condition and executes one or more actions when that condition occurs.  Alerts work by going through the followings steps:
+A HyperSec Kibana alert detects a condition and executes one or more actions when that condition occurs.  Alerts work by going through the followings steps:
 
 1. Run a periodic check to detect a condition (the check is provided by an Alert Type) 
 2. Convert that condition into one or more stateful Alert Instances
@@ -116,7 +116,7 @@ This is the primary function for an alert type. Whenever the alert needs to exec
 
 |Property|Description|
 |---|---|
-|services.callCluster(path, opts)|Use this to do HyperSec queries on the cluster Kibana connects to. This function is the same as any other `callCluster` in Kibana but in the context of the user who created the alert when security is enabled.|
+|services.callCluster(path, opts)|Use this to do HyperSec queries on the cluster HyperSec Kibana connects to. This function is the same as any other `callCluster` in HyperSec Kibana but in the context of the user who created the alert when security is enabled.|
 |services.savedObjectsClient|This is an instance of the saved objects client. This provides the ability to do CRUD on any saved objects within the same space the alert lives in.<br><br>The scope of the saved objects client is tied to the user who created the alert (only when security isenabled).|
 |services.getLegacyScopedClusterClient|This function returns an instance of the LegacyScopedClusterClient scoped to the user who created the alert when security is enabled.|
 |services.alertInstanceFactory(id)|This [alert instance factory](#alert-instance-factory) creates instances of alerts and must be used in order to execute actions. The id you give to the alert instance factory is a unique identifier to the alert instance.|
@@ -288,7 +288,7 @@ server.newPlatform.setup.plugins.alerts.registerType(myAlertType);
 
 ## Role Based Access-Control
 Once you have registered your AlertType, you need to grant your users privileges to use it.
-When registering a feature in Kibana you can specify multiple types of privileges which are granted to users when they're assigned certain roles.
+When registering a feature in HyperSec Kibana you can specify multiple types of privileges which are granted to users when they're assigned certain roles.
 
 Assuming your feature introduces its own AlertTypes, you'll want to control which roles have all/read privileges for these AlertTypes when they're inside the feature.
 In addition, when users are inside your feature you might want to grant them access to AlertTypes from other features, such as built-in AlertTypes or AlertTypes provided by other features.

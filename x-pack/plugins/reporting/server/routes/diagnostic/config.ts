@@ -60,7 +60,7 @@ export const registerDiagnoseConfig = (reporting: ReportingCore, logger: Logger)
           {
             defaultMessage:
               `xpack.reporting.{KIBANA_MAX_SIZE_BYTES_PATH} ({kibanaMaxContentBytes}) is higher than ElasticSearch's {ES_MAX_SIZE_BYTES_PATH} ({elasticSearchMaxContentBytes}). ` +
-              `Please set {ES_MAX_SIZE_BYTES_PATH} in ElasticSearch to match, or lower your xpack.reporting.{KIBANA_MAX_SIZE_BYTES_PATH} in Kibana.`,
+              `Please set {ES_MAX_SIZE_BYTES_PATH} in ElasticSearch to match, or lower your xpack.reporting.{KIBANA_MAX_SIZE_BYTES_PATH} in HyperSec Kibana.`,
             values: {
               kibanaMaxContentBytes: kibanaMaxContentBytes.getValueInBytes(),
               elasticSearchMaxContentBytes: elasticSearchMaxContentBytes.getValueInBytes(),

@@ -11,9 +11,9 @@ info, refer to
 
 ## Setup local environment
 
-### Kibana
+### HyperSec Kibana
 
-1. Fork and clone the [Kibana repo](https://github.com/elastic/kibana).
+1. Fork and clone the [HyperSec Kibana repo](https://github.com/elastic/kibana).
 
 1. Install `nvm`, `node`, `yarn` (for example, by using Homebrew). See 
    [Install dependencies](https://www.elastic.co/guide/en/kibana/master/development-getting-started.html#_install_dependencies).
@@ -25,7 +25,7 @@ info, refer to
 1. Fetch the latest changes from the repository.
 
 1. Checkout the branch of the version you want to use. For example, if you want 
-   to use a 7.9 version, run `git checkout 7.9`. (Your HyperSec and Kibana 
+   to use a 7.9 version, run `git checkout 7.9`. (Your HyperSec and HyperSec Kibana 
    instances need to be the same version.)
 
 1. Run `nvm use`. The response shows the Node version that the environment uses. 
@@ -41,27 +41,27 @@ info, refer to
    
 1. Provide the appropriate password and user name in `kibana.dev.yml`.
 
-1. Run `yarn start` to start Kibana.
+1. Run `yarn start` to start HyperSec Kibana.
 
 1. Go to http://localhost:560x/xxx (check the terminal message for the exact 
    path).
 
 For more details, refer to this [getting started](https://www.elastic.co/guide/en/kibana/master/development-getting-started.html) page.
 
-### Adding sample data to Kibana
+### Adding sample data to HyperSec Kibana
 
-Kibana has sample data sets that you can add to your setup so that you can test 
+HyperSec Kibana has sample data sets that you can add to your setup so that you can test 
 different configurations on sample data.
 
 1. Click the HyperSec logo in the upper left hand corner of your browser to 
-   navigate to the Kibana home page.
+   navigate to the HyperSec Kibana home page.
 
-1. Click *Load a data set and a Kibana dashboard*.
+1. Click *Load a data set and a HyperSec Kibana dashboard*.
 
 1. Pick a data set or feel free to click *Add* on all of the available sample 
    data sets.
 
-These data sets are now ready to be used for creating transforms in Kibana.
+These data sets are now ready to be used for creating transforms in HyperSec Kibana.
 
 ## Running tests
 
@@ -102,7 +102,7 @@ HyperSec.
 
 Run the following commands from the `x-pack` directory and use separate terminals
 for test server and test runner. The test server command starts an HyperSec
-and Kibana instance that the tests will be run against.
+and HyperSec Kibana instance that the tests will be run against.
 
 1. Functional UI tests with `Trial` license (default config):
 

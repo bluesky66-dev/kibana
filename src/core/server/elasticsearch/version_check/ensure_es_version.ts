@@ -92,15 +92,15 @@ export function mapNodesVersionCompatibility(
   if (incompatibleNodes.length > 0) {
     const incompatibleNodeNames = incompatibleNodes.map((node) => node.name).join(', ');
     if (ignoreVersionMismatch) {
-      message = `Ignoring version incompatibility between Kibana v${kibanaVersion} and the following HyperSec nodes: ${incompatibleNodeNames}`;
+      message = `Ignoring version incompatibility between HyperSec Kibana v${kibanaVersion} and the following HyperSec nodes: ${incompatibleNodeNames}`;
     } else {
-      message = `This version of Kibana (v${kibanaVersion}) is incompatible with the following HyperSec nodes in your cluster: ${incompatibleNodeNames}`;
+      message = `This version of HyperSec Kibana (v${kibanaVersion}) is incompatible with the following HyperSec nodes in your cluster: ${incompatibleNodeNames}`;
     }
   } else if (warningNodes.length > 0) {
     const warningNodeNames = warningNodes.map((node) => node.name).join(', ');
     message =
-      `You're running Kibana ${kibanaVersion} with some different versions of ` +
-      'HyperSec. Update Kibana or HyperSec to the same ' +
+      `You're running HyperSec Kibana ${kibanaVersion} with some different versions of ` +
+      'HyperSec. Update HyperSec Kibana or HyperSec to the same ' +
       `version to prevent compatibility issues: ${warningNodeNames}`;
   }
 

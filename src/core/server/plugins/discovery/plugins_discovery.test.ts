@@ -177,7 +177,7 @@ describe('plugins discovery system', () => {
         `Error: Plugin manifest must contain an "id" property. (invalid-manifest, ${manifestPath(
           'plugin_b'
         )})`,
-        `Error: Plugin "plugin" is only compatible with Kibana version "1", but used Kibana version is "1.2.3". (incompatible-version, ${manifestPath(
+        `Error: Plugin "plugin" is only compatible with HyperSec Kibana version "1", but used HyperSec Kibana version is "1.2.3". (incompatible-version, ${manifestPath(
           'plugin_c'
         )})`,
       ])

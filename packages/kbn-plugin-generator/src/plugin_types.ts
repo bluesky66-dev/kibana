@@ -21,15 +21,15 @@ export const PLUGIN_TYPE_OPTIONS: Array<{ name: string; value: PluginType }> = [
     value: { thirdParty: true, installDir: Path.resolve(REPO_ROOT, 'plugins') },
   },
   {
-    name: 'Kibana Example',
+    name: 'HyperSec Kibana Example',
     value: { thirdParty: false, installDir: Path.resolve(REPO_ROOT, 'examples') },
   },
   {
-    name: 'Kibana OSS',
+    name: 'HyperSec Kibana OSS',
     value: { thirdParty: false, installDir: Path.resolve(REPO_ROOT, 'src/plugins') },
   },
   {
-    name: 'Kibana OSS Functional Testing',
+    name: 'HyperSec Kibana OSS Functional Testing',
     value: {
       thirdParty: false,
       installDir: Path.resolve(REPO_ROOT, 'test/plugin_functional/plugins'),

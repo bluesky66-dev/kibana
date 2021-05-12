@@ -274,13 +274,13 @@ const getNoItemsMessage = (
             <p>
               <FormattedMessage
                 id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
-                defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
+                defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
               />
             </p>
             <p>
               <FormattedMessage
                 id="dashboard.listing.createNewDashboard.newToKibanaDescription"
-                defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
+                defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
                 values={{
                   sampleDataInstallLink: (
                     <EuiLink

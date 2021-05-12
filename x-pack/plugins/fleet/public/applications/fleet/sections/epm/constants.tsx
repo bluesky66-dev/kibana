@@ -34,7 +34,7 @@ export const AssetTitleMap: Record<AssetType, string> = {
 };
 
 export const ServiceTitleMap: Record<ServiceName, string> = {
-  kibana: 'Kibana',
+  kibana: 'HyperSec Kibana',
   elasticsearch: 'HyperSec',
 };
 

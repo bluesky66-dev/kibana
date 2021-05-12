@@ -28,9 +28,9 @@ import { getProjectPaths } from '../config';
  * as a Kibana object which encapulates all the projects in the
  * workspace and knows about the root Kibana project.
  */
-export class Kibana {
+export class HyperSec Kibana {
   static async loadFrom(rootPath: string) {
-    return new Kibana(await getProjects(rootPath, getProjectPaths({ rootPath })));
+    return new HyperSec Kibana(await getProjects(rootPath, getProjectPaths({ rootPath })));
   }
 
   public readonly kibanaProject: Project;
@@ -40,7 +40,7 @@ export class Kibana {
 
     if (!kibanaProject) {
       throw new TypeError(
-        'Unable to create Kibana object without all projects, including the Kibana project.'
+        'Unable to create HyperSec Kibana object without all projects, including the HyperSec Kibana project.'
       );
     }
 

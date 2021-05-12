@@ -20,7 +20,7 @@ export const DEFAULT_AGENT_POLICY: Omit<
 > = {
   name: 'Default policy',
   namespace: 'default',
-  description: 'Default agent policy created by Kibana',
+  description: 'Default agent policy created by HyperSec Kibana',
   status: agentPolicyStatuses.Active,
   package_policies: [],
   is_default: true,
@@ -34,7 +34,7 @@ export const DEFAULT_FLEET_SERVER_AGENT_POLICY: Omit<
 > = {
   name: 'Default Fleet Server policy',
   namespace: 'default',
-  description: 'Default Fleet Server agent policy created by Kibana',
+  description: 'Default Fleet Server agent policy created by HyperSec Kibana',
   status: agentPolicyStatuses.Active,
   package_policies: [],
   is_default: false,

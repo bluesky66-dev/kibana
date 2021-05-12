@@ -54,7 +54,7 @@ export const AREAS: Area[] = [
       'Feature:Search Profiler',
       'Feature:watcher',
       'Feature:Index Patterns',
-      'Feature:Kibana Management',
+      'Feature:HyperSec Kibana Management',
       'Feature:Dev Tools',
       'Feature:Inspector',
       'Feature:Index Management',
@@ -75,8 +75,8 @@ export const AREAS: Area[] = [
     labels: ['Team:Operations', 'Feature:License'],
   },
   {
-    title: 'Kibana UI',
-    labels: ['Kibana UI', 'Team:Core UI', 'Feature:Header'],
+    title: 'HyperSec Kibana UI',
+    labels: ['HyperSec Kibana UI', 'Team:Core UI', 'Feature:Header'],
   },
   {
     title: 'Platform',
@@ -136,7 +136,7 @@ export const AREAS: Area[] = [
     labels: ['Feature:Discover'],
   },
   {
-    title: 'Kibana Home & Add Data',
+    title: 'HyperSec Kibana Home & Add Data',
     labels: ['Feature:Add Data', 'Feature:Home'],
   },
   {

@@ -16,7 +16,7 @@ export const ComponentStrings = {
       }),
     getTitleText: () =>
       i18n.translate('xpack.canvas.embedObject.titleText', {
-        defaultMessage: 'Add from Kibana',
+        defaultMessage: 'Add from HyperSec Kibana',
       }),
   },
   AdvancedFilter: {
@@ -1326,7 +1326,7 @@ export const ComponentStrings = {
       }),
     getEmbedObjectMenuItemLabel: () =>
       i18n.translate('xpack.canvas.workpadHeaderElementMenu.embedObjectMenuItemLabel', {
-        defaultMessage: 'Add from Kibana',
+        defaultMessage: 'Add from HyperSec Kibana',
       }),
     getFilterMenuItemLabel: () =>
       i18n.translate('xpack.canvas.workpadHeaderElementMenu.filterMenuItemLabel', {

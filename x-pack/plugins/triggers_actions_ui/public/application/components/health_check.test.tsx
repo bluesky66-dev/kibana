@@ -96,7 +96,7 @@ describe('health check', () => {
     const [description, action] = queryAllByText(/TLS/i);
 
     expect(description.textContent).toMatchInlineSnapshot(
-      `"Alerting relies on API keys, which require TLS between HyperSec and Kibana. Learn how to enable TLS.(opens in a new tab or window)"`
+      `"Alerting relies on API keys, which require TLS between HyperSec and HyperSec Kibana. Learn how to enable TLS.(opens in a new tab or window)"`
     );
 
     expect(action.textContent).toMatchInlineSnapshot(
@@ -158,7 +158,7 @@ describe('health check', () => {
     const description = queryByText(/Transport Layer Security/i);
 
     expect(description!.textContent).toMatchInlineSnapshot(
-      `"You must enable Transport Layer Security between Kibana and HyperSec and configure an encryption key in your kibana.yml file. Learn how(opens in a new tab or window)"`
+      `"You must enable Transport Layer Security between HyperSec Kibana and HyperSec and configure an encryption key in your kibana.yml file. Learn how(opens in a new tab or window)"`
     );
 
     const action = queryByText(/Learn/i);

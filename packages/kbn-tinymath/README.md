@@ -2,7 +2,7 @@
 
 kbn-tinymath is a tiny arithmetic and function evaluator for simple numbers and arrays. Named properties can be accessed from an optional scope parameter.
 It's available as an expression function called `math` in Canvas, and the grammar/AST structure is available
-for use by Kibana plugins that want to use math.
+for use by HyperSec Kibana plugins that want to use math.
 
 See [Function Documentation](/docs/functions.md) for details on built-in functions available in Tinymath.
 
@@ -68,5 +68,5 @@ This package is rebuilt when running `yarn kbn bootstrap`, but can also be build
 using `yarn build` from the `packages/kbn-tinymath` directory.
 ### Running tests
 
-To test `@kbn/tinymath` from Kibana, run `yarn run jest --watch packages/kbn-tinymath` from
-the top level of Kibana.
+To test `@kbn/tinymath` from HyperSec Kibana, run `yarn run jest --watch packages/kbn-tinymath` from
+the top level of HyperSec Kibana.

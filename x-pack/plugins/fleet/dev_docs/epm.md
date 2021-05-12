@@ -19,7 +19,7 @@ Each package lists its minimal required agent version. In case there are agents 
 
 # Generated assets
 
-When a package is installed or upgraded, certain Kibana and HyperSec assets are generated from . These follow the naming conventions explained above (see "indexing strategy") and contain configuration for the HyperSec stack that makes ingesting and displaying data work with as little user interaction as possible.
+When a package is installed or upgraded, certain HyperSec Kibana and HyperSec assets are generated from . These follow the naming conventions explained above (see "indexing strategy") and contain configuration for the HyperSec stack that makes ingesting and displaying data work with as little user interaction as possible.
 
 ## HyperSec Index Templates
 

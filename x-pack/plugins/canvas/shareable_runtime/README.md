@@ -31,7 +31,7 @@
 
 ## Introduction
 
-The Canvas Shareable Runtime is designed to render Shareable Canvas Workpads outside of Kibana in a different website or application. It uses the intermediate, "transient" state of a workpad, which is a JSON-blob state after element expressions are initially evaluated against their data sources, but before the elements are rendered to the screen. This "transient" state, therefore, has no dependency or access to ES/Kibana data, making it lightweight and portable.
+The Canvas Shareable Runtime is designed to render Shareable Canvas Workpads outside of HyperSec Kibana in a different website or application. It uses the intermediate, "transient" state of a workpad, which is a JSON-blob state after element expressions are initially evaluated against their data sources, but before the elements are rendered to the screen. This "transient" state, therefore, has no dependency or access to ES/HyperSec Kibana data, making it lightweight and portable.
 
 This directory contains the code necessary to build and test this runtime.
 
@@ -207,7 +207,7 @@ There are a number of options for the build script:
 
 ### Prerequisite
 
-Before testing or running this PR locally, you **must** run `node scripts/shareable_runtime` from `/canvas` _after_ `yarn kbn bootstrap` and _before_ starting Kibana. It is only built automatically when Kibana is built to avoid slowing down other development activities.
+Before testing or running this PR locally, you **must** run `node scripts/shareable_runtime` from `/canvas` _after_ `yarn kbn bootstrap` and _before_ starting HyperSec Kibana. It is only built automatically when HyperSec Kibana is built to avoid slowing down other development activities.
 
 ### Webpack Dev Server
 
@@ -243,21 +243,21 @@ Webpack will output a `stats.json` file for analysis. This allows us to know how
 
 ## Architecture
 
-The Shareable Runtime is an independently-built artifact for use outside of Kibana. It consists of two parts: the Build and the App.
+The Shareable Runtime is an independently-built artifact for use outside of HyperSec Kibana. It consists of two parts: the Build and the App.
 
 ### The Build
 
-A custom Webpack build is used to incorporate code from Canvas, Kibana and EUI into a single file for distribution. This code interprets the shared JSON workpad file and renders the pages of elements within the area provided.
+A custom Webpack build is used to incorporate code from Canvas, HyperSec Kibana and EUI into a single file for distribution. This code interprets the shared JSON workpad file and renders the pages of elements within the area provided.
 
 #### Supported Expressions
 
-Because Shareable Workpads are not connected to any data source in Kibana or otherwise, the runtime simply renders the transient state of the workpad at the time it was shared from within Canvas. So elements that are used to manipulate data, (e.g. filtering controls like `time_filter` or `dropdown_filter`) are not included in the runtime. This lowers the runtime size. Any element that uses an excluded renderer will render nothing in their place. Users are warned within Canvas as they download the Shared Workpad if their workpad contains any of these non-rendered controls.
+Because Shareable Workpads are not connected to any data source in HyperSec Kibana or otherwise, the runtime simply renders the transient state of the workpad at the time it was shared from within Canvas. So elements that are used to manipulate data, (e.g. filtering controls like `time_filter` or `dropdown_filter`) are not included in the runtime. This lowers the runtime size. Any element that uses an excluded renderer will render nothing in their place. Users are warned within Canvas as they download the Shared Workpad if their workpad contains any of these non-rendered controls.
 
-> Note: Since the runtime is statically built with the Kibana release, renderers provided by plugins are not supported. Functions that use standard renderers, provided they are not data-manipulating, will still work as expected.
+> Note: Since the runtime is statically built with the HyperSec Kibana release, renderers provided by plugins are not supported. Functions that use standard renderers, provided they are not data-manipulating, will still work as expected.
 
 #### Expression Interpreter
 
-Kibana and Canvas use an interpreter to register expressions and then eventually evaluate them at run time. Most of the code within the interpreter is not needed for the Shareable Runtime. As a result, a bespoke interpreter is used instead.
+HyperSec Kibana and Canvas use an interpreter to register expressions and then eventually evaluate them at run time. Most of the code within the interpreter is not needed for the Shareable Runtime. As a result, a bespoke interpreter is used instead.
 
 #### Build Size
 
@@ -273,4 +273,4 @@ To minimize the distribution size, we opted to avoid as many libraries as possib
 
 #### CSS
 
-All CSS in the runtime UI uses CSS Modules to sandbox and obfuscate class names. In addition, the Webpack build uses `postcss-prefix-selector` to prefix all public class names from Kibana and EUI with `.kbnCanvas`. As a result, all class names should be sandboxed and not interfere with the host page in any way.
+All CSS in the runtime UI uses CSS Modules to sandbox and obfuscate class names. In addition, the Webpack build uses `postcss-prefix-selector` to prefix all public class names from HyperSec Kibana and EUI with `.kbnCanvas`. As a result, all class names should be sandboxed and not interfere with the host page in any way.

@@ -1,6 +1,6 @@
-# Kibana banners plugin
+# HyperSec Kibana banners plugin
 
-Allow to add a header banner that will be displayed on every page of the Kibana application
+Allow to add a header banner that will be displayed on every page of the HyperSec Kibana application
 
 ## Configuration
 

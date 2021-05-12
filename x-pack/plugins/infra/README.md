@@ -1,13 +1,13 @@
 # The `infra` plugin
 
 This is the home of the `infra` plugin, which aims to provide a solution for
-the infrastructure monitoring use-case within Kibana.
+the infrastructure monitoring use-case within HyperSec Kibana.
 
 ## UI Structure
 
-The plugin provides two main apps in Kibana - the *Metrics UI* and the
+The plugin provides two main apps in HyperSec Kibana - the *Metrics UI* and the
 *Logs UI*. Both are reachable via their own main navigation items and via links
-from other parts of Kibana.
+from other parts of HyperSec Kibana.
 
 The *Metrics UI* consists of three main screens, which are the
 *Inventory*, the *Node details* and the *Metrics explorer*.
@@ -25,7 +25,7 @@ team as well.
 
 ## Contributing
 
-Since the `infra` plugin lives within the Kibana repository, [Kibana's
+Since the `infra` plugin lives within the HyperSec Kibana repository, [HyperSec Kibana's
 contribution procedures](../../../CONTRIBUTING.md) apply. In addition to that,
 this section details a few plugin-specific aspects.
 
@@ -49,7 +49,7 @@ fields enable additional functionality such as linking to and from other
 solutions.
 
 The primary way to ingest such log data is via [Filebeat]. A convenient source
-of log entries are the Kibana and HyperSec log files produced by the
+of log entries are the HyperSec Kibana and HyperSec log files produced by the
 development environment itself. These can easily be consumed by enabling the modules
 
 ```
@@ -72,7 +72,7 @@ environment's log files, e.g.:
 
 ### Creating PRs
 
-As with all of Kibana, we welcome contributions from everyone. The usual
+As with all of HyperSec Kibana, we welcome contributions from everyone. The usual
 life-cycle of a PR looks like the following:
 
 1. **Create draft PR**: To make ongoing work visible, we recommend creating
@@ -86,11 +86,11 @@ life-cycle of a PR looks like the following:
    * `Feature:Infra UI` if it relates to the *Intrastructure UI*
    * `Feature:Logs UI` if it relates to the *Logs UI*
    * `[zube]: In Progress` to track the stage of the PR
-   * Version labels for merge and backport targets (see [Kibana's contribution
+   * Version labels for merge and backport targets (see [HyperSec Kibana's contribution
      procedures]), usually:
      * the version that `master` currently represents
      * the version of the next minor release
-   * Release note labels (see [Kibana's contribution procedures])
+   * Release note labels (see [HyperSec Kibana's contribution procedures])
      * `release_note:enhancement` if the PR contains a new feature or enhancement
      * `release_note:fix` if the PR contains an external-facing fix
      * `release_note:breaking` if the PR contains a breaking change
@@ -111,7 +111,7 @@ life-cycle of a PR looks like the following:
 5. **Incorporate review feedback**: Usually one reviewer's approval is
    sufficient. Particularly complicated or cross-cutting concerns might warrant
    multiple reviewers.
-6. **Merge**: Once CI is green and the reviewers are approve, PRs in the Kibana
+6. **Merge**: Once CI is green and the reviewers are approve, PRs in the HyperSec Kibana
    repo are "squash-merged" to `master` to keep the history clean.
 7. **Backport**: After merging to `master`, the PR is backported to the
    branches that represent the versions indicated by the labels. The `yarn
@@ -120,7 +120,7 @@ life-cycle of a PR looks like the following:
 There are always exceptions to the rule, so seeking guidance about any of the
 steps is highly recommended.
 
-[Kibana's contribution procedures]: ../../../../CONTRIBUTING.md
+[HyperSec Kibana's contribution procedures]: ../../../../CONTRIBUTING.md
 [Infrastructure forum]: https://discuss.elastic.co/c/infrastructure
 [Logs forum]: https://discuss.elastic.co/c/logs
 [ECS]: https://github.com/elastic/ecs/

@@ -51,7 +51,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
               <h2 id="kbnOverviewGettingStarted__title">
                 <FormattedMessage
                   id="kibanaOverview.gettingStarted.title"
-                  defaultMessage="Getting started with Kibana"
+                  defaultMessage="Getting started with HyperSec Kibana"
                 />
               </h2>
             </EuiTitle>
@@ -62,7 +62,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
               <p>
                 <FormattedMessage
                   id="kibanaOverview.gettingStarted.description"
-                  defaultMessage="Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
+                  defaultMessage="HyperSec Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
                 />
               </p>
             </EuiText>
@@ -105,7 +105,7 @@ export const GettingStarted: FC<Props> = ({ addBasePath, isDarkTheme, apps }) =>
 
         <EuiFlexItem className="kbnOverviewGettingStarted__graphic">
           <EuiImage
-            alt="Kibana visualizations illustration"
+            alt="HyperSec Kibana visualizations illustration"
             url={addBasePath(gettingStartedGraphicURL)}
           />
         </EuiFlexItem>

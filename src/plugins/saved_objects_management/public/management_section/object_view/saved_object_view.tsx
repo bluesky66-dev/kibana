@@ -129,7 +129,7 @@ export class SavedObjectEdition extends Component<
 
     const confirmed = await overlays.openConfirm(
       i18n.translate('savedObjectsManagement.deleteConfirm.modalDescription', {
-        defaultMessage: 'This action permanently removes the object from Kibana.',
+        defaultMessage: 'This action permanently removes the object from HyperSec Kibana.',
       }),
       {
         confirmButtonText: i18n.translate(
@@ -141,7 +141,7 @@ export class SavedObjectEdition extends Component<
         title: i18n.translate('savedObjectsManagement.deleteConfirm.modalTitle', {
           defaultMessage: `Delete '{title}'?`,
           values: {
-            title: object?.attributes?.title || 'saved Kibana object',
+            title: object?.attributes?.title || 'saved HyperSec Kibana object',
           },
         }),
         buttonColor: 'danger',

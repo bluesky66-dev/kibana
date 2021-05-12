@@ -140,7 +140,7 @@ export const TemplateDeleteModal = ({
             title={
               <FormattedMessage
                 id="xpack.idxMgmt.deleteTemplatesModal.proceedWithCautionCallOutTitle"
-                defaultMessage="Deleting a system template can break Kibana"
+                defaultMessage="Deleting a system template can break HyperSec Kibana"
               />
             }
             color="danger"

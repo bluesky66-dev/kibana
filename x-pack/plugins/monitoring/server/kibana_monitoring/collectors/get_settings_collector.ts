@@ -37,7 +37,7 @@ export async function getDefaultAdminEmail(config: MonitoringConfig, log?: Logge
     loggedDeprecationWarning = true;
     const message =
       `Monitoring is using "${XPACK_DEFAULT_ADMIN_EMAIL_UI_SETTING}" for cluster alert notifications, ` +
-      `which will not be supported in Kibana 8.0. Please configure ${emailAddressConfigKey} in your kibana.yml settings`;
+      `which will not be supported in HyperSec Kibana 8.0. Please configure ${emailAddressConfigKey} in your kibana.yml settings`;
     log.warn(message);
   }
 

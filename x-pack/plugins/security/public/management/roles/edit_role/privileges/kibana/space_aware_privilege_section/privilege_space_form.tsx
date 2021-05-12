@@ -97,7 +97,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
               <h2>
                 <FormattedMessage
                   id="xpack.security.management.editRole.spacePrivilegeForm.modalTitle"
-                  defaultMessage="Kibana privileges"
+                  defaultMessage="HyperSec Kibana privileges"
                 />
               </h2>
             </EuiTitle>
@@ -170,7 +170,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
             'xpack.security.management.editRole.spacePrivilegeForm.spaceSelectorFormHelpText',
             {
               defaultMessage:
-                'Select one or more Kibana spaces to which you wish to assign privileges.',
+                'Select one or more HyperSec Kibana spaces to which you wish to assign privileges.',
             }
           )}
         >
@@ -295,7 +295,7 @@ export class PrivilegeSpaceForm extends Component<Props, State> {
           buttonText = (
             <FormattedMessage
               id="xpack.security.management.editRolespacePrivilegeForm.createPrivilegeButton"
-              defaultMessage="Add Kibana privilege"
+              defaultMessage="Add HyperSec Kibana privilege"
             />
           );
         }

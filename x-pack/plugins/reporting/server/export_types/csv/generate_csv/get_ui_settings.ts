@@ -33,7 +33,7 @@ export const getUiSettings = async (
       logger.warn(
         i18n.translate('xpack.reporting.exportTypes.csv.executeJob.dateFormateSetting', {
           defaultMessage:
-            'Kibana Advanced Setting "{dateFormatTimezone}" is set to "Browser". Dates will be formatted as UTC to avoid ambiguity.',
+            'HyperSec Kibana Advanced Setting "{dateFormatTimezone}" is set to "Browser". Dates will be formatted as UTC to avoid ambiguity.',
           values: { dateFormatTimezone: 'dateFormat:tz' },
         })
       );

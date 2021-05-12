@@ -128,7 +128,7 @@ describe('plain_column_renderer', () => {
       expect(wrapper.text()).toEqual('Action');
     });
 
-    test('should return the time formatted as per Kibana advanced settings if timestamp has a valid value', () => {
+    test('should return the time formatted as per HyperSec Kibana advanced settings if timestamp has a valid value', () => {
       const column = plainColumnRenderer.renderColumn({
         columnName: '@timestamp',
         eventId: _id,

@@ -72,7 +72,7 @@ export function NoServicesMessage({ historicalDataFound, status }: Props) {
             <EuiLink href={upgradeAssistantHref}>
               {i18n.translate('xpack.apm.servicesTable.UpgradeAssistantLink', {
                 defaultMessage:
-                  'Learn more by visiting the Kibana Upgrade Assistant',
+                  'Learn more by visiting the HyperSec Kibana Upgrade Assistant',
               })}
             </EuiLink>
             .

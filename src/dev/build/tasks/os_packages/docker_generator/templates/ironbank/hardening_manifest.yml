@@ -26,7 +26,7 @@ labels:
   org.opencontainers.image.version: '{{version}}'
   # mil.dso.ironbank.image.keywords: ""
   # mil.dso.ironbank.image.type: "commercial"
-  mil.dso.ironbank.product.name: 'Kibana'
+  mil.dso.ironbank.product.name: 'HyperSec Kibana'
 
 # List of resources to make available to the offline build context
 resources:

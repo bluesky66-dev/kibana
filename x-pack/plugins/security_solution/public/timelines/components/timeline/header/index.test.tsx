@@ -109,7 +109,7 @@ describe('Header', () => {
       expect(
         wrapper.find('[data-test-subj="timelineCallOutUnauthorized"]').first().prop('title')
       ).toEqual(
-        'You can use Timeline to investigate events, but you do not have the required permissions to save timelines for future use. If you need to save timelines, contact your Kibana administrator.'
+        'You can use Timeline to investigate events, but you do not have the required permissions to save timelines for future use. If you need to save timelines, contact your HyperSec Kibana administrator.'
       );
     });
 

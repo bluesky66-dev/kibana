@@ -170,7 +170,7 @@ curl -k  "https://elastic:changeme@localhost:5601/api/triggers_actions_ui/data/_
 
 A single service function is available that provides the functionality
 of the http endpoint `POST /api/triggers_actions_ui/data/_time_series_query`,
-but as an API for Kibana plugins.  The function is available as
+but as an API for HyperSec Kibana plugins.  The function is available as
 `triggersActionsUi.data.timeSeriesQuery()` on the plugin's _Start_ contract
 
 The parameters and return value for the function are the same as for the HTTP

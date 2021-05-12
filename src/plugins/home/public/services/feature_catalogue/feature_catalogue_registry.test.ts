@@ -25,7 +25,7 @@ const DASHBOARD_FEATURE: FeatureCatalogueEntry = {
 
 const KIBANA_SOLUTION: FeatureCatalogueSolution = {
   id: 'kibana',
-  title: 'Kibana',
+  title: 'HyperSec Kibana',
   subtitle: 'Visualize & analyze',
   appDescriptions: ['Analyze data in dashboards.', 'Search and find insights.'],
   icon: 'kibanaApp',

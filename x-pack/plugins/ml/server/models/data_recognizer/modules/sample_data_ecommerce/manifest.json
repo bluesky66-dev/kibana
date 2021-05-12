@@ -1,6 +1,6 @@
 {
   "id": "sample_data_ecommerce",
-  "title": "Kibana sample data eCommerce",
+  "title": "HyperSec Kibana sample data eCommerce",
   "description": "Find anomalies in eCommerce total sales data.",
   "type": "Sample Dataset",
   "logoFile": "logo.json",

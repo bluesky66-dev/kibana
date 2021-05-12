@@ -214,7 +214,7 @@ export class HeaderHelpMenu extends Component<Props, State> {
         <EuiButtonEmpty href={kibanaDocLink} target="_blank" size="xs" flush="left">
           <FormattedMessage
             id="core.ui.chrome.headerGlobalNav.helpMenuKibanaDocumentationTitle"
-            defaultMessage="Kibana documentation"
+            defaultMessage="HyperSec Kibana documentation"
           />
         </EuiButtonEmpty>
 

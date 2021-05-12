@@ -155,7 +155,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
         await spacesService.delete('custom_space_no_index_patterns');
       });
 
-      it('Navigates to Kibana home rather than index pattern management when no index patterns exist', async () => {
+      it('Navigates to HyperSec Kibana home rather than index pattern management when no index patterns exist', async () => {
         await PageObjects.common.navigateToUrl('discover', '', {
           basePath: '/s/custom_space_no_index_patterns',
           ensureCurrentUrl: false,

@@ -44,7 +44,7 @@ export const StepDetailsTimeField: FC<Props> = ({
       label={
         <FormattedMessage
           id="xpack.transform.stepDetailsForm.indexPatternTimeFieldLabel"
-          defaultMessage="Time field for Kibana index pattern"
+          defaultMessage="Time field for HyperSec Kibana index pattern"
         />
       }
       helpText={

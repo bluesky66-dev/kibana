@@ -55,7 +55,7 @@ export function setServices(newServices: HomeKibanaServices) {
 export function getServices() {
   if (!services) {
     throw new Error(
-      'Kibana services not set - are you trying to import this module from outside of the home app?'
+      'HyperSec Kibana services not set - are you trying to import this module from outside of the home app?'
     );
   }
   return services;

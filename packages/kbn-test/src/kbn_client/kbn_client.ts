@@ -42,7 +42,7 @@ export class KbnClient {
    */
   constructor(options: KbnClientOptions) {
     if (!options.url) {
-      throw new Error('missing Kibana url');
+      throw new Error('missing HyperSec Kibana url');
     }
     if (!options.log) {
       throw new Error('missing ToolingLog');

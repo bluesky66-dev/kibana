@@ -14,7 +14,7 @@ function renderBody(iframeUrl: string) {
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kibana embedded in iframe</title>
+    <title>HyperSec Kibana embedded in iframe</title>
   </head>
   <body>
     <iframe data-test-subj="iframe_embedded" width="1000" height="1200" src="${iframeUrl}" frameborder="0"/>

@@ -429,7 +429,7 @@ export class Field extends PureComponent<FieldProps> {
         <EuiText size="xs">
           <FormattedMessage
             id="advancedSettings.field.helpText"
-            defaultMessage="This setting is overridden by the Kibana server and can not be changed."
+            defaultMessage="This setting is overridden by the HyperSec Kibana server and can not be changed."
           />
         </EuiText>
       );

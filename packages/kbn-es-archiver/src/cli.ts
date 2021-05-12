@@ -35,9 +35,9 @@ export function runCli() {
         --config           path to an FTR config file that sets --es-url, --kibana-url, and --dir
                              default: ${defaultConfigPath}
         --es-url           url for HyperSec, prefer the --config flag
-        --kibana-url       url for Kibana, prefer the --config flag
+        --kibana-url       url for HyperSec Kibana, prefer the --config flag
         --dir              where arechives are stored, prefer the --config flag
-        --kibana-ca        if Kibana url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
+        --kibana-ca        if HyperSec Kibana url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
         --es-ca            if HyperSec url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
       `,
     },
@@ -272,7 +272,7 @@ export function runCli() {
     .command({
       name: 'empty-kibana-index',
       description:
-        '[internal] Delete any Kibana indices, and initialize the Kibana index as Kibana would do on startup.',
+        '[internal] Delete any HyperSec Kibana indices, and initialize the HyperSec Kibana index as HyperSec Kibana would do on startup.',
       async run({ esArchiver }) {
         await esArchiver.emptyKibanaIndex();
       },

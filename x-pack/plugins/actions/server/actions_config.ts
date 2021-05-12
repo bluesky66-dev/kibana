@@ -43,7 +43,7 @@ export interface ActionsConfigurationUtilities {
 function allowListErrorMessage(field: AllowListingField, value: string) {
   return i18n.translate('xpack.actions.urlAllowedHostsConfigurationError', {
     defaultMessage:
-      'target {field} "{value}" is not added to the Kibana config xpack.actions.allowedHosts',
+      'target {field} "{value}" is not added to the HyperSec Kibana config xpack.actions.allowedHosts',
     values: {
       value,
       field,
@@ -54,7 +54,7 @@ function allowListErrorMessage(field: AllowListingField, value: string) {
 function disabledActionTypeErrorMessage(actionType: string) {
   return i18n.translate('xpack.actions.disabledActionTypeError', {
     defaultMessage:
-      'action type "{actionType}" is not enabled in the Kibana config xpack.actions.enabledActionTypes',
+      'action type "{actionType}" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes',
     values: {
       actionType,
     },

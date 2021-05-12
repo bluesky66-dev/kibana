@@ -53,7 +53,7 @@ export async function registerPrivilegesWithCluster(
 
   const expectedPrivileges = serializePrivileges(application, privileges.get());
 
-  logger.debug(`Registering Kibana Privileges with HyperSec for ${application}`);
+  logger.debug(`Registering HyperSec Kibana Privileges with HyperSec for ${application}`);
 
   try {
     // we only want to post the privileges when they're going to change as Elasticsearch has
@@ -62,14 +62,14 @@ export async function registerPrivilegesWithCluster(
       Record<string, object>
     >({ application });
     if (arePrivilegesEqual(existingPrivileges, expectedPrivileges)) {
-      logger.debug(`Kibana Privileges already registered with HyperSec for ${application}`);
+      logger.debug(`HyperSec Kibana Privileges already registered with HyperSec for ${application}`);
       return;
     }
 
     const privilegesToDelete = getPrivilegesToDelete(existingPrivileges, expectedPrivileges);
     for (const privilegeToDelete of privilegesToDelete) {
       logger.debug(
-        `Deleting Kibana Privilege ${privilegeToDelete} from HyperSec for ${application}`
+        `Deleting HyperSec Kibana Privilege ${privilegeToDelete} from HyperSec for ${application}`
       );
       try {
         await clusterClient.asInternalUser.security.deletePrivileges({
@@ -77,16 +77,16 @@ export async function registerPrivilegesWithCluster(
           name: privilegeToDelete,
         });
       } catch (err) {
-        logger.error(`Error deleting Kibana Privilege ${privilegeToDelete}`);
+        logger.error(`Error deleting HyperSec Kibana Privilege ${privilegeToDelete}`);
         throw err;
       }
     }
 
     await clusterClient.asInternalUser.security.putPrivileges({ body: expectedPrivileges });
-    logger.debug(`Updated Kibana Privileges with HyperSec for ${application}`);
+    logger.debug(`Updated HyperSec Kibana Privileges with HyperSec for ${application}`);
   } catch (err) {
     logger.error(
-      `Error registering Kibana Privileges with HyperSec for ${application}: ${err.message}`
+      `Error registering HyperSec Kibana Privileges with HyperSec for ${application}: ${err.message}`
     );
     throw err;
   }

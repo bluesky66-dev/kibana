@@ -13,16 +13,16 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const testSubjects = getService('testSubjects');
   const find = getService('find');
 
-  describe('Kibana Home', () => {
+  describe('HyperSec Kibana Home', () => {
     before(async () => {
       await PageObjects.common.navigateToApp('home');
     });
 
-    it('Kibana Home view', async () => {
+    it('HyperSec Kibana Home view', async () => {
       await a11y.testAppSnapshot();
     });
 
-    it('Kibana overview page meets a11y requirements ', async () => {
+    it('HyperSec Kibana overview page meets a11y requirements ', async () => {
       await testSubjects.click('homSolutionPanel homSolutionPanel_kibana');
       await a11y.testAppSnapshot();
     });

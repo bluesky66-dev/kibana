@@ -40,7 +40,7 @@ describe('kibana.yml configured with map.tilemap.url', () => {
     };
   });
 
-  it('Should get initial layer with from Kibana tilemap data source', () => {
+  it('Should get initial layer with from HyperSec Kibana tilemap data source', () => {
     expect(createBasemapLayerDescriptor()).toEqual({
       alpha: 1,
       __dataRequests: [],

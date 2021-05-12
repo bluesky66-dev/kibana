@@ -14,13 +14,13 @@
 - [Logging config migration](#logging-config-migration)
 - [Log record format changes](#log-record-format-changes)
 
-The way logging works in Kibana is inspired by `log4j 2` logging framework used by [HyperSec](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
+The way logging works in HyperSec Kibana is inspired by `log4j 2` logging framework used by [HyperSec](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
 The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire HyperSec Stack 
 where possible.
 
 ## Loggers, Appenders and Layouts
 
-Kibana logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
+HyperSec Kibana logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
 messages according to message type and level, and to control how these messages are formatted and where the final logs
 will be displayed or stored.
 
@@ -267,7 +267,7 @@ The default value is `7`
 ## Configuration
 
 As any configuration in the platform, logging configuration is validated against the predefined schema and if there are
-any issues with it, Kibana will fail to start with the detailed error message.
+any issues with it, HyperSec Kibana will fail to start with the detailed error message.
 
 Once the code acquired a logger instance it should not care about any runtime changes in the configuration that may
 happen: all changes will be applied to existing logger instances under the hood.
@@ -371,7 +371,7 @@ The minimum interval is 100ms and defaults to 5000ms.
 **Request and Response Logs**
 
 The `http.server.response` logger is configured with `debug` level and will automatically output
-data about http requests and responses occurring on the Kibana server.
+data about http requests and responses occurring on the HyperSec Kibana server.
 The message contains some high-level information, and the corresponding log meta contains the following:
 
 | Meta property | Description | Format
@@ -437,7 +437,7 @@ root appenders, make sure that it contains `default` appender to provide backwar
 `root` context anymore and not forwarded to the legacy logging service.
  
 #### logging.dest
-By default logs in *stdout*. With new Kibana logging you can use pre-existing `console` appender or
+By default logs in *stdout*. With new HyperSec Kibana logging you can use pre-existing `console` appender or
 define a custom one.
 ```yaml
 logging:

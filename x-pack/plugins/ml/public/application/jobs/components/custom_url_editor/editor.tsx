@@ -36,7 +36,7 @@ function getLinkToOptions() {
     {
       id: URL_TYPE.KIBANA_DASHBOARD,
       label: i18n.translate('xpack.ml.customUrlEditor.kibanaDashboardLabel', {
-        defaultMessage: 'Kibana dashboard',
+        defaultMessage: 'HyperSec Kibana dashboard',
       }),
     },
     {

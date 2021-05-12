@@ -29,11 +29,11 @@ export async function interactive(keys, docs, logger) {
   logger.log(`The following key${plural} generated:`);
   logger.log(Object.keys(setKeys).join('\n'));
   logger.log('');
-  const write = await confirm('Save generated keys to a sample Kibana configuration file?');
+  const write = await confirm('Save generated keys to a sample HyperSec Kibana configuration file?');
   if (write) {
     const defaultSaveLocation = join(getConfigDirectory(), 'kibana.sample.yml');
     const promptedSaveLocation = await question(
-      `What filename should be used for the sample Kibana config file? [${defaultSaveLocation}])`
+      `What filename should be used for the sample HyperSec Kibana config file? [${defaultSaveLocation}])`
     );
     const saveLocation = promptedSaveLocation || defaultSaveLocation;
     writeFileSync(saveLocation, docs + safeDump(setKeys));

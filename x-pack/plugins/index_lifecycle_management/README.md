@@ -89,7 +89,7 @@ you'll be able to filter by the various lifecycle phases and statuses.
 
 ![image](https://user-images.githubusercontent.com/1238659/78087831-29ee3180-7377-11ea-8e24-14cdc4035bb2.png)
 
-Next, add the Kibana sample data and attach the `full` policy to the index that gets created.
+Next, add the HyperSec Kibana sample data and attach the `full` policy to the index that gets created.
 After about a minute, there should be an error on this index. When you click the index you'll see
 ILM information in the detail panel as well as an error. You can dismiss the error by clicking
 `Manage > Retry lifecycle step`.

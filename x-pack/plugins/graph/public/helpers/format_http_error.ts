@@ -13,7 +13,7 @@ export function formatHttpError(error: IHttpFetchError) {
     return i18n.translate('xpack.graph.fatalError.unavailableServerErrorMessage', {
       defaultMessage:
         'An HTTP request has failed to connect. ' +
-        'Please check if the Kibana server is running and that your browser has a working connection, ' +
+        'Please check if the HyperSec Kibana server is running and that your browser has a working connection, ' +
         'or contact your system administrator.',
     });
   }

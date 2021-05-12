@@ -4,7 +4,7 @@
 
 Follow the [Functional Test Runner instructions](https://www.elastic.co/guide/en/kibana/current/development-functional-tests.html#_running_functional_tests).
 
-There are two suites available to run, a suite that requires a Kibana instance without an `enterpriseSearch.host`
+There are two suites available to run, a suite that requires a HyperSec Kibana instance without an `enterpriseSearch.host`
 configured, and one that does. The later also [requires a running Enterprise Search instance](#enterprise-search-requirement), and a Private API key
 from that instance set in an Environment variable.
 

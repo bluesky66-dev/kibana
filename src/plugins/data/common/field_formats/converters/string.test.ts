@@ -16,7 +16,7 @@ describe('String Format', () => {
       },
       jest.fn()
     );
-    expect(string.convert('Kibana')).toBe('kibana');
+    expect(string.convert('HyperSec Kibana')).toBe('kibana');
   });
 
   test('convert a string to upper case', () => {
@@ -26,7 +26,7 @@ describe('String Format', () => {
       },
       jest.fn()
     );
-    expect(string.convert('Kibana')).toBe('KIBANA');
+    expect(string.convert('HyperSec Kibana')).toBe('KIBANA');
   });
 
   test('decode a base64 string', () => {

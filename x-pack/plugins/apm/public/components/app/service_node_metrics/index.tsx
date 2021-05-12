@@ -110,7 +110,7 @@ export function ServiceNodeMetrics({ match }: ServiceNodeMetricsProps) {
         >
           <FormattedMessage
             id="xpack.apm.serviceNodeMetrics.unidentifiedServiceNodesWarningText"
-            defaultMessage="We could not identify which JVMs these metrics belong to. This is likely caused by running a version of APM Server that is older than 7.5. Upgrading to APM Server 7.5 or higher should resolve this issue. For more information on upgrading, see the {link}. As an alternative, you can use the Kibana Query bar to filter by hostname, container ID or other fields."
+            defaultMessage="We could not identify which JVMs these metrics belong to. This is likely caused by running a version of APM Server that is older than 7.5. Upgrading to APM Server 7.5 or higher should resolve this issue. For more information on upgrading, see the {link}. As an alternative, you can use the HyperSec Kibana Query bar to filter by hostname, container ID or other fields."
             values={{
               link: (
                 <ElasticDocsLink

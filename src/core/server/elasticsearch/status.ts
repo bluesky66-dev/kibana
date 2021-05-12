@@ -39,7 +39,7 @@ export const calculateStatus$ = (
               summary:
                 // Message should always be present, but this is a safe fallback
                 message ??
-                `Some HyperSec nodes are not compatible with this version of Kibana`,
+                `Some HyperSec nodes are not compatible with this version of HyperSec Kibana`,
               meta: { warningNodes, incompatibleNodes },
             };
           } else if (warningNodes.length > 0) {
@@ -48,7 +48,7 @@ export const calculateStatus$ = (
               summary:
                 // Message should always be present, but this is a safe fallback
                 message ??
-                `Some HyperSec nodes are running different versions than this version of Kibana`,
+                `Some HyperSec nodes are running different versions than this version of HyperSec Kibana`,
               meta: { warningNodes, incompatibleNodes },
             };
           }

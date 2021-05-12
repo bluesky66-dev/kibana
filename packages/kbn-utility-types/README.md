@@ -1,6 +1,6 @@
 # `@kbn/utility-types`
 
-TypeScript utility types for usage in Kibana.
+TypeScript utility types for usage in HyperSec Kibana.
 
 - This package re-exports a subset of the items in [`utility-types`](https://github.com/piotrwitek/utility-types)
 - You can also add more utility types here.

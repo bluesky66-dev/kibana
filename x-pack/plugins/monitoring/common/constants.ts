@@ -280,10 +280,10 @@ export const LEGACY_ALERT_DETAILS = {
   },
   [ALERT_KIBANA_VERSION_MISMATCH]: {
     label: i18n.translate('xpack.monitoring.alerts.kibanaVersionMismatch.label', {
-      defaultMessage: 'Kibana version mismatch',
+      defaultMessage: 'HyperSec Kibana version mismatch',
     }),
     description: i18n.translate('xpack.monitoring.alerts.kibanaVersionMismatch.description', {
-      defaultMessage: 'Alert when the cluser has multiple versions of Kibana.',
+      defaultMessage: 'Alert when the cluser has multiple versions of HyperSec Kibana.',
     }),
   },
   [ALERT_LICENSE_EXPIRATION]: {

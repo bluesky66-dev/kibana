@@ -24,7 +24,7 @@ export type ExpressionFunctionVarSet = ExpressionFunctionDefinition<
 export const variableSet: ExpressionFunctionVarSet = {
   name: 'var_set',
   help: i18n.translate('expressions.functions.varset.help', {
-    defaultMessage: 'Updates the Kibana global context.',
+    defaultMessage: 'Updates the HyperSec Kibana global context.',
   }),
   args: {
     name: {

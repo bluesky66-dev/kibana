@@ -1,21 +1,21 @@
-# `@kbn/pm` — The Kibana project management tool
+# `@kbn/pm` — The HyperSec Kibana project management tool
 
 `@kbn/pm` is a project management tool inspired by Lerna, which enables sharing
-code between Kibana and Kibana plugins.
+code between HyperSec Kibana and HyperSec Kibana plugins.
 
-To run `@kbn/pm`, go to Kibana root and run `yarn kbn`.
+To run `@kbn/pm`, go to HyperSec Kibana root and run `yarn kbn`.
 
 ## Why `@kbn/pm`?
 
 Long-term we want to get rid of Webpack from production (basically, it's causing
 a lot of problems, using a lot of memory and adding a lot of complexity).
 Ideally we want each plugin to build its own separate production bundles for
-both server and UI. To get there all Kibana plugins (including x-pack) need to
-be able to build their production bundles separately from Kibana, which means
-they need to be able to depend on code from Kibana without `import`-ing random
-files directly from the Kibana source code.
+both server and UI. To get there all HyperSec Kibana plugins (including x-pack) need to
+be able to build their production bundles separately from HyperSec Kibana, which means
+they need to be able to depend on code from HyperSec Kibana without `import`-ing random
+files directly from the HyperSec Kibana source code.
 
-From a plugin perspective there are two different types of Kibana dependencies:
+From a plugin perspective there are two different types of HyperSec Kibana dependencies:
 runtime and static dependencies. Runtime dependencies are things that are
 instantiated at runtime and that are injected into the plugin, for example
 config and elasticsearch clients. Static dependencies are those dependencies
@@ -24,29 +24,29 @@ it's actually needed because eslint requires it to be a separate package. But we
 also have dependencies like `datemath`, `flot`, `eui` and others that we
 control, but where we want to `import` them in plugins instead of injecting them
 (because injecting them would be painful to work with). (Btw, these examples
-aren't necessarily a part of the Kibana repo today, they are just meant as
+aren't necessarily a part of the HyperSec Kibana repo today, they are just meant as
 examples of code that we might at some point want to include in the repo while
-having them be `import`able in Kibana plugins like any other npm package)
+having them be `import`able in HyperSec Kibana plugins like any other npm package)
 
 Another reason we need static dependencies is that we're starting to introduce
-TypeScript into Kibana, and to work nicely with TypeScript across plugins we
+TypeScript into HyperSec Kibana, and to work nicely with TypeScript across plugins we
 need to be able to statically import dependencies. We have for example built an
-observable library for Kibana in TypeScript and we need to expose both the
+observable library for HyperSec Kibana in TypeScript and we need to expose both the
 functionality and the TypeScript types to plugins (so other plugins built with
 TypeScript can depend on the types for the lib).
 
 However, even though we have multiple packages we don't necessarily want to
 `npm publish` them. The ideal solution for us is being able to work on code
-locally in the Kibana repo and have a nice workflow that doesn't require
+locally in the HyperSec Kibana repo and have a nice workflow that doesn't require
 publishing, but where we still get the value of having "packages" that are
 available to plugins, without these plugins having to import files directly from
-the Kibana folder.
+the HyperSec Kibana folder.
 
 Basically, we just want to be able to share "static code" (aka being able to
-`import`) between Kibana and Kibana plugins. To get there we need tooling.
+`import`) between HyperSec Kibana and HyperSec Kibana plugins. To get there we need tooling.
 
 `@kbn/pm` is a tool that helps us manage these static dependencies, and it
-enables us to share these packages between Kibana and Kibana plugins. It also
+enables us to share these packages between HyperSec Kibana and HyperSec Kibana plugins. It also
 enables these packages to have their own dependencies and their own build
 scripts, while still having a nice developer experience.
 
@@ -54,22 +54,22 @@ scripts, while still having a nice developer experience.
 
 ### Internal usage
 
-For packages that are referenced within the Kibana repo itself (for example,
+For packages that are referenced within the HyperSec Kibana repo itself (for example,
 using the `@kbn/i18n` package from an `x-pack` plugin), we are leveraging
 Yarn's workspaces feature. This allows yarn to optimize node_modules within
 the entire repo to avoid duplicate modules by hoisting common packages as high
 in the dependency tree as possible.
 
-To reference a package from within the Kibana repo, simply use the current
+To reference a package from within the HyperSec Kibana repo, simply use the current
 version number from that package's package.json file. Then, running `yarn kbn
 bootstrap` will symlink that package into your dependency tree. That means
 you can make changes to `@kbn/i18n` and immediately have them available
-in Kibana itself. No `npm publish` needed anymore — Kibana will always rely
+in HyperSec Kibana itself. No `npm publish` needed anymore — HyperSec Kibana will always rely
 directly on the code that's in the local packages.
 
 ### External Plugins
 
-For external plugins, referencing packages in Kibana relies on
+For external plugins, referencing packages in HyperSec Kibana relies on
 `link:` style dependencies in Yarn. With `link:` dependencies you specify the
 relative location to a package instead of a version when adding it to
 `package.json`. For example:
@@ -80,16 +80,16 @@ relative location to a package instead of a version when adding it to
 
 Now when you run `yarn` it will set up a symlink to this folder instead of
 downloading code from the npm registry. This allows external plugins to always
-use the versions of the package that is bundled with the Kibana version they
+use the versions of the package that is bundled with the HyperSec Kibana version they
 are running inside of.
 
 ```
 "@kbn/i18n": "link:../../kibana/packages/kbn-date-math"
 ```
 
-This works because we moved to a strict location of Kibana plugins,
-`./plugins/{pluginName}` inside of Kibana, or `../kibana-extra/{pluginName}`
-relative to Kibana. This is one of the reasons we wanted to move towards a setup
+This works because we moved to a strict location of HyperSec Kibana plugins,
+`./plugins/{pluginName}` inside of HyperSec Kibana, or `../kibana-extra/{pluginName}`
+relative to HyperSec Kibana. This is one of the reasons we wanted to move towards a setup
 that looks like this:
 
 ```
@@ -101,9 +101,9 @@ elastic
 ```
 
 Relying on `link:` style dependencies means we no longer need to `npm publish`
-our Kibana specific packages. It also means that plugin authors no longer need
-to worry about the versions of the Kibana packages, as they will always use the
-packages from their local Kibana.
+our HyperSec Kibana specific packages. It also means that plugin authors no longer need
+to worry about the versions of the HyperSec Kibana packages, as they will always use the
+packages from their local HyperSec Kibana.
 
 ## The `kbn` use-cases
 
@@ -113,15 +113,15 @@ Now, instead of installing all the dependencies with just running `yarn` you use
 the `@kbn/pm` tool, which can install dependencies (and set up symlinks) in
 all the packages using one command (aka "bootstrap" the setup).
 
-To bootstrap Kibana:
+To bootstrap HyperSec Kibana:
 
 ```
 yarn kbn bootstrap
 ```
 
-By default, `@kbn/pm` will bootstrap all packages within Kibana, plus all
-Kibana plugins located in `./plugins` or `../kibana-extra`. There are several
-options for skipping parts of this, e.g. to skip bootstrapping of Kibana
+By default, `@kbn/pm` will bootstrap all packages within HyperSec Kibana, plus all
+HyperSec Kibana plugins located in `./plugins` or `../kibana-extra`. There are several
+options for skipping parts of this, e.g. to skip bootstrapping of HyperSec Kibana
 plugins:
 
 ```
@@ -169,7 +169,7 @@ package should define `kbn:watch` script in the `package.json`:
 yarn kbn watch
 ``` 
 
-By default `kbn watch` will sort all packages within Kibana into batches based on
+By default `kbn watch` will sort all packages within HyperSec Kibana into batches based on
 their mutual dependencies and run watch script for all packages in the correct order.
 
 As with any other `kbn` command, you can use `--include` and `--exclude` filters to watch
@@ -182,12 +182,12 @@ yarn kbn watch --include @kbn/pm --include kibana
 ## Building packages for production
 
 The production build process relies on both the Grunt setup at the root of the
-Kibana project and code in `@kbn/pm`. The full process is described in
+HyperSec Kibana project and code in `@kbn/pm`. The full process is described in
 `tasks/build/packages.js`.
 
 ## Development
 
-This package is run from Kibana root, using `yarn kbn`. This will run the
+This package is run from HyperSec Kibana root, using `yarn kbn`. This will run the
 "pre-built" (aka built and committed to git) version of this tool, which is
 located in the `dist/` folder. This will also use the included version of Yarn
 instead of using your local install of Yarn.
@@ -195,7 +195,7 @@ instead of using your local install of Yarn.
 If you need to build a new version of this package, run `yarn build` in this
 folder.
 
-Even though this file is generated we commit it to Kibana, because it's used
+Even though this file is generated we commit it to HyperSec Kibana, because it's used
 _before_ dependencies are fetched (as this is the tool actually responsible for
 fetching dependencies).
 
@@ -247,7 +247,7 @@ dependencies for these workspaces and hoist the dependencies to the root (to
 > filesystem hierarchy.
 
 So Yarn workspaces requires a shared root, which (at least currently) doesn't
-fit Kibana, and it's therefore a no-go for now.
+fit HyperSec Kibana, and it's therefore a no-go for now.
 
 #### Lerna
 

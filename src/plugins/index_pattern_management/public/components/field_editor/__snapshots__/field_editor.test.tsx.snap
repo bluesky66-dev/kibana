@@ -859,7 +859,7 @@ exports[`FieldEditor should show deprecated lang warning 1`] = `
           </strong>
            
           <FormattedMessage
-            defaultMessage="{language} is deprecated and support will be removed in the next major version of Kibana and HyperSec. We recommend using {painlessLink} for new scripted fields."
+            defaultMessage="{language} is deprecated and support will be removed in the next major version of HyperSec Kibana and HyperSec. We recommend using {painlessLink} for new scripted fields."
             id="indexPatternManagement.warningLabel.warningDetail"
             values={
               Object {

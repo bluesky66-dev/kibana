@@ -78,7 +78,7 @@ export const CloneTransformSection: FC<Props> = ({ match, location }) => {
       if (indexPatternId === undefined) {
         throw new Error(
           i18n.translate('xpack.transform.clone.fetchErrorPromptText', {
-            defaultMessage: 'Could not fetch the Kibana index pattern ID.',
+            defaultMessage: 'Could not fetch the HyperSec Kibana index pattern ID.',
           })
         );
       }

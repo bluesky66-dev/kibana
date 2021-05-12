@@ -1,6 +1,6 @@
 # Resolver Generator Script
 
-This script makes it easy to create the endpoint metadata, alert, and event documents needed to test Resolver in Kibana.
+This script makes it easy to create the endpoint metadata, alert, and event documents needed to test Resolver in HyperSec Kibana.
 The default behavior is to create 1 endpoint with 1 alert and a moderate number of events (random, typically on the order of 20).
 A seed value can be provided as a string for the random number generator for repeatable behavior, useful for demos etc.
 Use the `-d` option if you want to delete and remake the indices, otherwise it will add documents to existing indices.

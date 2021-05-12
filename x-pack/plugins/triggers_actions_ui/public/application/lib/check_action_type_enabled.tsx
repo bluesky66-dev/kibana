@@ -71,13 +71,13 @@ const configurationCheckResult = {
   isEnabled: false,
   message: i18n.translate(
     'xpack.triggersActionsUI.checkActionTypeEnabled.actionTypeDisabledByConfigMessage',
-    { defaultMessage: 'This connector is disabled by the Kibana configuration.' }
+    { defaultMessage: 'This connector is disabled by the HyperSec Kibana configuration.' }
   ),
   messageCard: (
     <EuiCard
       title={i18n.translate(
         'xpack.triggersActionsUI.sections.alertForm.actionTypeDisabledByConfigMessageTitle',
-        { defaultMessage: 'This feature is disabled by the Kibana configuration.' }
+        { defaultMessage: 'This feature is disabled by the HyperSec Kibana configuration.' }
       )}
       description=""
       className="actCheckActionTypeEnabled__disabledActionWarningCard"

@@ -50,7 +50,7 @@ export const getFailureToast = (
                 <a href={getManagmenetLink()}>
                   <FormattedMessage
                     id="xpack.reporting.publicNotifier.error.reportingSectionUrlLinkLabel"
-                    defaultMessage="Management &gt; Kibana &gt; Reporting"
+                    defaultMessage="Management &gt; HyperSec Kibana &gt; Reporting"
                   />
                 </a>
               ),

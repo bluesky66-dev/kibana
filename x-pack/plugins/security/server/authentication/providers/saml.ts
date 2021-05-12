@@ -339,7 +339,7 @@ export class SAMLAuthenticationProvider extends BaseAuthenticationProvider {
     const isIdPInitiatedLogin = !stateRequestId;
     this.logger.debug(
       !isIdPInitiatedLogin
-        ? 'Login has been previously initiated by Kibana.'
+        ? 'Login has been previously initiated by HyperSec Kibana.'
         : 'Login has been initiated by Identity Provider.'
     );
 
@@ -388,11 +388,11 @@ export class SAMLAuthenticationProvider extends BaseAuthenticationProvider {
         );
       } else if (!isInternalURL(relayState, this.options.basePath.serverBasePath)) {
         this.options.logger.debug(
-          `"RelayState" is provided, but it is not a valid Kibana internal URL.`
+          `"RelayState" is provided, but it is not a valid HyperSec Kibana internal URL.`
         );
       } else {
         this.options.logger.debug(
-          `User will be redirected to the Kibana internal URL specified in "RelayState".`
+          `User will be redirected to the HyperSec Kibana internal URL specified in "RelayState".`
         );
         redirectURLFromRelayState = relayState;
       }

@@ -19,7 +19,7 @@ interface DocumentTitleState {
 
 const wrapWithSharedState = () => {
   const titles: string[] = [];
-  const TITLE_SUFFIX = ' - Kibana';
+  const TITLE_SUFFIX = ' - HyperSec Kibana';
 
   return class extends React.Component<DocumentTitleProps, DocumentTitleState> {
     public componentDidMount() {

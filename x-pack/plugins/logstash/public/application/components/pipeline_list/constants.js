@@ -18,7 +18,7 @@ export const PIPELINE_LIST = {
   ),
   INFO_ALERTS: {
     CALL_OUT_TITLE: i18n.translate('xpack.logstash.kibanaManagementPipelinesTitle', {
-      defaultMessage: 'Only pipelines created in Kibana Management appear here',
+      defaultMessage: 'Only pipelines created in HyperSec Kibana Management appear here',
     }),
   },
 };

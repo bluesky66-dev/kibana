@@ -123,7 +123,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
         addBasePath={addBasePath}
         hideToolbar={isNewKibanaInstance}
         iconType="logoKibana"
-        title={<FormattedMessage defaultMessage="Kibana" id="kibanaOverview.header.title" />}
+        title={<FormattedMessage defaultMessage="HyperSec Kibana" id="kibanaOverview.header.title" />}
       />
 
       <div className="kbnOverviewContent">

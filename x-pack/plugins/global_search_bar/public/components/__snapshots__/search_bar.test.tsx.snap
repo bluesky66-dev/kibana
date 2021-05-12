@@ -2,30 +2,30 @@
 
 exports[`SearchBar correctly filters and sorts results 1`] = `
 Array [
-  "Canvas • Kibana",
-  "Discover • Kibana",
-  "Graph • Kibana",
+  "Canvas • HyperSec Kibana",
+  "Discover • HyperSec Kibana",
+  "Graph • HyperSec Kibana",
 ]
 `;
 
 exports[`SearchBar correctly filters and sorts results 2`] = `
 Array [
-  "Discover • Kibana",
+  "Discover • HyperSec Kibana",
   "My Dashboard • Test",
 ]
 `;
 
 exports[`SearchBar only display results from the last search 1`] = `
 Array [
-  "Visualize • Kibana",
-  "Map • Kibana",
+  "Visualize • HyperSec Kibana",
+  "Map • HyperSec Kibana",
 ]
 `;
 
 exports[`SearchBar only display results from the last search 2`] = `
 Array [
-  "Visualize • Kibana",
-  "Map • Kibana",
+  "Visualize • HyperSec Kibana",
+  "Map • HyperSec Kibana",
 ]
 `;
 

@@ -111,7 +111,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.metricbeatInstructions.start.osxTextPre', {
         defaultMessage:
-          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['./metricbeat setup', './metricbeat -e'],
     },
@@ -121,7 +121,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.metricbeatInstructions.start.debTextPre', {
         defaultMessage:
-          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo metricbeat setup', 'sudo service metricbeat start'],
     },
@@ -131,7 +131,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.metricbeatInstructions.start.rpmTextPre', {
         defaultMessage:
-          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo metricbeat setup', 'sudo service metricbeat start'],
     },
@@ -141,7 +141,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.metricbeatInstructions.start.windowsTextPre', {
         defaultMessage:
-          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['.\\metricbeat.exe setup', 'Start-Service metricbeat'],
     },
@@ -169,7 +169,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.osxTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -199,7 +199,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.debTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -229,7 +229,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.rpmTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -264,7 +264,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         {
           defaultMessage:
             'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',

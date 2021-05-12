@@ -25,8 +25,8 @@ test('returns value for valid URI as per RFC3986', () => {
   expect(uriSchema.validate('ftp://ftp.ietf.org/rfc/rfc3986.txt')).toBe(
     'ftp://ftp.ietf.org/rfc/rfc3986.txt'
   );
-  expect(uriSchema.validate('mailto:Platform.Kibana@elastic.co')).toBe(
-    'mailto:Platform.Kibana@elastic.co'
+  expect(uriSchema.validate('mailto:Platform.HyperSec Kibana@elastic.co')).toBe(
+    'mailto:Platform.HyperSec Kibana@elastic.co'
   );
   expect(uriSchema.validate('tel:+500-111-222-333')).toBe('tel:+500-111-222-333');
   expect(uriSchema.validate('file:///kibana.log')).toBe('file:///kibana.log');

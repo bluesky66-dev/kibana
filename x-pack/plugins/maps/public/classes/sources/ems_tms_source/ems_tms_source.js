@@ -59,7 +59,7 @@ export class EMSTMSSource extends AbstractTMSSource {
   async getImmutableProperties() {
     const displayName = await this.getDisplayName();
     const autoSelectMsg = i18n.translate('xpack.maps.source.emsTile.isAutoSelectLabel', {
-      defaultMessage: 'autoselect based on Kibana theme',
+      defaultMessage: 'autoselect based on HyperSec Kibana theme',
     });
 
     const props = [

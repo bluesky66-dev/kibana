@@ -139,7 +139,7 @@ export const useCreateAnalyticsForm = (): CreateAnalyticsFormProps => {
         message: i18n.translate(
           'xpack.ml.dataframe.analytics.create.createIndexPatternSuccessMessage',
           {
-            defaultMessage: 'Kibana index pattern {indexPatternName} created.',
+            defaultMessage: 'HyperSec Kibana index pattern {indexPatternName} created.',
             values: { indexPatternName },
           }
         ),
@@ -157,7 +157,7 @@ export const useCreateAnalyticsForm = (): CreateAnalyticsFormProps => {
           message: i18n.translate(
             'xpack.ml.dataframe.analytics.create.duplicateIndexPatternErrorMessage',
             {
-              defaultMessage: 'An error occurred creating the Kibana index pattern:',
+              defaultMessage: 'An error occurred creating the HyperSec Kibana index pattern:',
             }
           ),
         });
@@ -167,7 +167,7 @@ export const useCreateAnalyticsForm = (): CreateAnalyticsFormProps => {
           message: i18n.translate(
             'xpack.ml.dataframe.analytics.create.createIndexPatternErrorMessage',
             {
-              defaultMessage: 'An error occurred creating the Kibana index pattern:',
+              defaultMessage: 'An error occurred creating the HyperSec Kibana index pattern:',
             }
           ),
         });

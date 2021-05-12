@@ -105,7 +105,7 @@ export const ChecklistFlyoutStep: React.FunctionComponent<{
           <p>
             <FormattedMessage
               id="xpack.upgradeAssistant.checkupTab.reindexing.flyout.checklistStep.readonlyCallout.backgroundResumeDetail"
-              defaultMessage="Reindexing will continue in the background, but if Kibana shuts down or restarts you will
+              defaultMessage="Reindexing will continue in the background, but if HyperSec Kibana shuts down or restarts you will
                 need to return to this page to resume reindexing."
             />
           </p>
@@ -142,7 +142,7 @@ export const ChecklistFlyoutStep: React.FunctionComponent<{
               title={
                 <FormattedMessage
                   id="xpack.upgradeAssistant.checkupTab.reindexing.flyout.checklistStep.apmIndexPatternCallout.calloutTitle"
-                  defaultMessage="After reindexing APM indices, return to the {apmSetupLink} to reload Kibana objects. You only need to do this once."
+                  defaultMessage="After reindexing APM indices, return to the {apmSetupLink} to reload HyperSec Kibana objects. You only need to do this once."
                   values={{
                     apmSetupLink: (
                       <EuiLink

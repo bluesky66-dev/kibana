@@ -23,7 +23,7 @@ function renderBody(kibanaUrl: string) {
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Request to CORS Kibana</title>
+    <title>Request to CORS HyperSec Kibana</title>
   </head>
   <script>
 fetch('${url}', {

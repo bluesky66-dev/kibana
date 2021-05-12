@@ -111,7 +111,7 @@ const ParamsSchema = schema.object(
       path: schema.string({ defaultValue: '/' }),
       text: schema.string({
         defaultValue: i18n.translate('xpack.actions.builtin.email.kibanaFooterLinkText', {
-          defaultMessage: 'Go to Kibana',
+          defaultMessage: 'Go to HyperSec Kibana',
         }),
       }),
     }),
@@ -282,12 +282,12 @@ function getFooterMessage({
 }) {
   if (!publicBaseUrl) {
     return i18n.translate('xpack.actions.builtin.email.sentByKibanaMessage', {
-      defaultMessage: 'This message was sent by Kibana.',
+      defaultMessage: 'This message was sent by HyperSec Kibana.',
     });
   }
 
   return i18n.translate('xpack.actions.builtin.email.customViewInKibanaMessage', {
-    defaultMessage: 'This message was sent by Kibana. [{kibanaFooterLinkText}]({link}).',
+    defaultMessage: 'This message was sent by HyperSec Kibana. [{kibanaFooterLinkText}]({link}).',
     values: {
       kibanaFooterLinkText: kibanaFooterLink.text,
       link: `${publicBaseUrl}${kibanaFooterLink.path === '/' ? '' : kibanaFooterLink.path}`,

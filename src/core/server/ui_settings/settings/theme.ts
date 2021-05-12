@@ -18,7 +18,7 @@ export const getThemeSettings = (): Record<string, UiSettingsParams> => {
       }),
       value: false,
       description: i18n.translate('core.ui_settings.params.darkModeText', {
-        defaultMessage: `Enable a dark mode for the Kibana UI. A page refresh is required for the setting to be applied.`,
+        defaultMessage: `Enable a dark mode for the HyperSec Kibana UI. A page refresh is required for the setting to be applied.`,
       }),
       requiresPageReload: true,
       schema: schema.boolean(),
@@ -31,7 +31,7 @@ export const getThemeSettings = (): Record<string, UiSettingsParams> => {
       type: 'select',
       options: ['v7', 'v8 (beta)'],
       description: i18n.translate('core.ui_settings.params.themeVersionText', {
-        defaultMessage: `Switch between the theme used for the current and next version of Kibana. A page refresh is required for the setting to be applied.`,
+        defaultMessage: `Switch between the theme used for the current and next version of HyperSec Kibana. A page refresh is required for the setting to be applied.`,
       }),
       requiresPageReload: true,
       schema: schema.oneOf([schema.literal('v7'), schema.literal('v8 (beta)')]),

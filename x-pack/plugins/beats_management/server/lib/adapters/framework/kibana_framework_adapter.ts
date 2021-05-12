@@ -96,7 +96,7 @@ export class KibanaBackendFrameworkAdapter implements BackendFrameworkAdapter {
         },
       };
     } catch (e) {
-      this.logger.error(`Error accessing required xPackInfo in ${this.PLUGIN_ID} Kibana adapter`);
+      this.logger.error(`Error accessing required xPackInfo in ${this.PLUGIN_ID} HyperSec Kibana adapter`);
       throw e;
     }
 

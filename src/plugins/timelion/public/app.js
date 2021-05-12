@@ -114,7 +114,7 @@ export function initTimelionApp(app, deps) {
     timefilter.enableAutoRefreshSelector();
     timefilter.enableTimeRangeSelector();
 
-    deps.core.chrome.docTitle.change('Timelion - Kibana');
+    deps.core.chrome.docTitle.change('Timelion - HyperSec Kibana');
 
     // starts syncing `_g` portion of url with query services
     const { stop: stopSyncingQueryServiceStateWithUrl } = syncQueryStateWithUrl(

@@ -162,7 +162,7 @@ const TlsError = ({ docLinks, className }: PromptErrorProps) => (
         <p role="banner">
           {i18n.translate('xpack.triggersActionsUI.components.healthCheck.tlsError', {
             defaultMessage:
-              'Alerting relies on API keys, which require TLS between HyperSec and Kibana. ',
+              'Alerting relies on API keys, which require TLS between HyperSec and HyperSec Kibana. ',
           })}
           <EuiLink href={docLinks.links.security.kibanaTLS} external target="_blank">
             {i18n.translate('xpack.triggersActionsUI.components.healthCheck.tlsErrorAction', {
@@ -225,7 +225,7 @@ const TlsAndEncryptionError = ({ docLinks, className }: PromptErrorProps) => (
         <p role="banner">
           {i18n.translate('xpack.triggersActionsUI.components.healthCheck.tlsAndEncryptionError', {
             defaultMessage:
-              'You must enable Transport Layer Security between Kibana and HyperSec and configure an encryption key in your kibana.yml file. ',
+              'You must enable Transport Layer Security between HyperSec Kibana and HyperSec and configure an encryption key in your kibana.yml file. ',
           })}
           <EuiLink href={docLinks.links.alerting.setupPrerequisites} external target="_blank">
             {i18n.translate(

@@ -6,7 +6,7 @@
  */
 
 export default function ({ loadTestFile }) {
-  describe('Kibana', () => {
+  describe('HyperSec Kibana', () => {
     loadTestFile(require.resolve('./overview'));
     loadTestFile(require.resolve('./listing'));
     loadTestFile(require.resolve('./instance'));

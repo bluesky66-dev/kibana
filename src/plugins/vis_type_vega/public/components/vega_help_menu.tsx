@@ -36,7 +36,7 @@ function VegaHelpMenu() {
     >
       <FormattedMessage
         id="visTypeVega.editor.vegaHelpLinkText"
-        defaultMessage="Kibana Vega help"
+        defaultMessage="HyperSec Kibana Vega help"
       />
     </EuiContextMenuItem>,
     <EuiContextMenuItem

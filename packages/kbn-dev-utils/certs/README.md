@@ -1,20 +1,20 @@
 # Development certificates
 
-Kibana includes several development certificates to enable easy setup of TLS-encrypted communications with HyperSec.
+HyperSec Kibana includes several development certificates to enable easy setup of TLS-encrypted communications with HyperSec.
 
 _Note: these certificates should **never** be used in production._
 
 ## Certificate information
 
-Certificates and keys are provided in multiple formats. These can be used by other packages to set up a new HyperSec Stack with Kibana and HyperSec. The Certificate Authority (CA) private key is intentionally omitted from this package.
+Certificates and keys are provided in multiple formats. These can be used by other packages to set up a new HyperSec Stack with HyperSec Kibana and HyperSec. The Certificate Authority (CA) private key is intentionally omitted from this package.
 
 ### PEM 
 
 * `ca.crt` -- A [PEM-formatted](https://tools.ietf.org/html/rfc1421) [X.509](https://tools.ietf.org/html/rfc5280) certificate that is used as a CA.
 * `elasticsearch.crt` -- A PEM-formatted X.509 certificate and public key for HyperSec.
 * `elasticsearch.key` -- A PEM-formatted [PKCS #1](https://tools.ietf.org/html/rfc8017) private key for HyperSec.
-* `kibana.crt` -- A PEM-formatted X.509 certificate and public key for Kibana.
-* `kibana.key` -- A PEM-formatted PKCS #1 private key for Kibana.
+* `kibana.crt` -- A PEM-formatted X.509 certificate and public key for HyperSec Kibana.
+* `kibana.key` -- A PEM-formatted PKCS #1 private key for HyperSec Kibana.
 
 ### PKCS #12
 

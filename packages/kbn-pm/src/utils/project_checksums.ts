@@ -16,7 +16,7 @@ import execa from 'execa';
 import { YarnLock, resolveDepsForProject } from './yarn_lock';
 import { ProjectMap } from '../utils/projects';
 import { Project } from '../utils/project';
-import { Kibana } from '../utils/kibana';
+import { HyperSec Kibana } from '../utils/kibana';
 import { Log } from '../utils/log';
 
 export type ChecksumMap = Map<string, string | undefined>;
@@ -27,7 +27,7 @@ const statAsync = promisify(Fs.stat);
 const projectBySpecificitySorter = (a: Project, b: Project) => b.path.length - a.path.length;
 
 /** Get the changed files for a set of projects */
-async function getChangesForProjects(projects: ProjectMap, kbn: Kibana, log: Log) {
+async function getChangesForProjects(projects: ProjectMap, kbn: HyperSec Kibana, log: Log) {
   log.verbose('getting changed files');
 
   const { stdout } = await execa(
@@ -118,7 +118,7 @@ async function getChangesForProjects(projects: ProjectMap, kbn: Kibana, log: Log
 }
 
 /** Get the latest commit sha for a project */
-async function getLatestSha(project: Project, kbn: Kibana) {
+async function getLatestSha(project: Project, kbn: HyperSec Kibana) {
   if (kbn.isOutsideRepo(project)) {
     return;
   }
@@ -141,7 +141,7 @@ async function getChecksum(
   project: Project,
   changes: Changes | undefined,
   yarnLock: YarnLock,
-  kbn: Kibana,
+  kbn: HyperSec Kibana,
   log: Log
 ) {
   const sha = await getLatestSha(project, kbn);
@@ -211,7 +211,7 @@ async function getChecksum(
  *  - un-committed changes
  *  - resolved dependencies from yarn.lock referenced by project package.json
  */
-export async function getAllChecksums(kbn: Kibana, log: Log, yarnLock: YarnLock) {
+export async function getAllChecksums(kbn: HyperSec Kibana, log: Log, yarnLock: YarnLock) {
   const projects = kbn.getAllProjects();
   const changesByProject = await getChangesForProjects(projects, kbn, log);
 

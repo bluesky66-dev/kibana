@@ -91,7 +91,7 @@ export const registerDiagnoseScreenshot = (reporting: ReportingCore, logger: Log
               success: false,
               help: [
                 i18n.translate('xpack.reporting.diagnostic.screenshotFailureMessage', {
-                  defaultMessage: `We couldn't screenshot your Kibana install.`,
+                  defaultMessage: `We couldn't screenshot your HyperSec Kibana install.`,
                 }),
               ],
               logs: error.message,

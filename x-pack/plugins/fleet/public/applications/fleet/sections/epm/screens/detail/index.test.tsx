@@ -679,7 +679,7 @@ On Windows, the module was tested with Nginx installed from the Chocolatey repos
         id: '521c1b70-3976-11eb-ad1c-3baa423084d9',
         name: 'Default',
         namespace: 'default',
-        description: 'Default agent policy created by Kibana',
+        description: 'Default agent policy created by HyperSec Kibana',
         status: 'active',
         package_policies: [
           '4d09bd78-b0ad-4238-9fa3-d87d3c887c73',

@@ -42,11 +42,11 @@ const sectionTip = i18n.translate('management.sections.section.tip', {
 });
 
 const kibanaTitle = i18n.translate('management.sections.kibanaTitle', {
-  defaultMessage: 'Kibana',
+  defaultMessage: 'HyperSec Kibana',
 });
 
 const kibanaTip = i18n.translate('management.sections.kibanaTip', {
-  defaultMessage: 'Customize Kibana and manage saved objects',
+  defaultMessage: 'Customize HyperSec Kibana and manage saved objects',
 });
 
 const stackTitle = i18n.translate('management.sections.stackTitle', {
@@ -86,7 +86,7 @@ export const SecuritySection = {
 };
 
 export const KibanaSection = {
-  id: ManagementSectionId.Kibana,
+  id: ManagementSectionId.HyperSec Kibana,
   title: kibanaTitle,
   tip: kibanaTip,
   order: 4,

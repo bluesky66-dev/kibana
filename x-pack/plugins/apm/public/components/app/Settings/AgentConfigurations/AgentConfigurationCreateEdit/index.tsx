@@ -124,7 +124,7 @@ export function AgentConfigurationCreateEdit({
       <EuiText size="s">
         {i18n.translate('xpack.apm.agentConfig.newConfig.description', {
           defaultMessage: `This allows you to fine-tune your agent configuration directly in
-        Kibana. Best of all, changes are automatically propagated to your APM
+        HyperSec Kibana. Best of all, changes are automatically propagated to your APM
         agents so there’s no need to redeploy.`,
         })}
       </EuiText>

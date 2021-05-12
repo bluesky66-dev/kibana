@@ -56,7 +56,7 @@ export class EncryptedSavedObjectsPlugin
     const canEncrypt = config.encryptionKey !== undefined;
     if (!canEncrypt) {
       this.logger.warn(
-        'Saved objects encryption key is not set. This will severely limit Kibana functionality. ' +
+        'Saved objects encryption key is not set. This will severely limit HyperSec Kibana functionality. ' +
           'Please set xpack.encryptedSavedObjects.encryptionKey in the kibana.yml or use the bin/kibana-encryption-keys command.'
       );
     }

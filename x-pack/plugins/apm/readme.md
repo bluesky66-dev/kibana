@@ -2,7 +2,7 @@
 
 ## Local environment setup
 
-### Kibana
+### HyperSec Kibana
 
 ```
 git clone git@github.com:elastic/kibana.git
@@ -37,7 +37,7 @@ _Docker Compose is required_
 node x-pack/plugins/apm/scripts/ftr_e2e/cypress_run.js
 ```
 
-_Starts Kibana (:5701), APM Server (:8201) and HyperSec (:9201). Ingests sample data into HyperSec via APM Server and runs the Cypress tests_
+_Starts HyperSec Kibana (:5701), APM Server (:8201) and HyperSec (:9201). Ingests sample data into HyperSec via APM Server and runs the Cypress tests_
 
 ### Jest tests
 
@@ -160,7 +160,7 @@ The users will be created with the password specified in kibana.dev.yml for `ela
 
 ## Debugging HyperSec queries
 
-All APM api endpoints accept `_debug=true` as a query param that will result in the underlying ES query being outputted in the Kibana backend process.
+All APM api endpoints accept `_debug=true` as a query param that will result in the underlying ES query being outputted in the HyperSec Kibana backend process.
 
 Example:
 `/api/apm/services/my_service?_debug=true`
@@ -184,7 +184,7 @@ if (core.uiSettings.get(myFeatureEnabled)) {
 }
 ```
 
-Settings can be managed in Kibana under Stack Management > Advanced Settings > Observability.
+Settings can be managed in HyperSec Kibana under Stack Management > Advanced Settings > Observability.
 
 ## Further resources
 

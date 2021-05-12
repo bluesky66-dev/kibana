@@ -175,7 +175,7 @@ export class TelemetryManagementSection extends Component<Props, State> {
                   <strong>
                     <FormattedMessage
                       id="telemetry.callout.appliesSettingTitle.allOfKibanaText"
-                      defaultMessage="all of Kibana"
+                      defaultMessage="all of HyperSec Kibana"
                     />
                   </strong>
                 ),

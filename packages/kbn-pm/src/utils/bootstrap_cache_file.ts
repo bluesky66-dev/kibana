@@ -11,13 +11,13 @@ import Path from 'path';
 
 import { ChecksumMap } from './project_checksums';
 import { Project } from '../utils/project';
-import { Kibana } from '../utils/kibana';
+import { HyperSec Kibana } from '../utils/kibana';
 
 export class BootstrapCacheFile {
   private readonly path: string;
   private readonly expectedValue: string | undefined;
 
-  constructor(kbn: Kibana, project: Project, checksums: ChecksumMap | false) {
+  constructor(kbn: HyperSec Kibana, project: Project, checksums: ChecksumMap | false) {
     this.path = Path.resolve(project.targetLocation, '.bootstrap-cache');
 
     if (!checksums) {

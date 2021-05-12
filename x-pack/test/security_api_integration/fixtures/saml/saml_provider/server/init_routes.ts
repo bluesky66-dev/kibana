@@ -25,7 +25,7 @@ export function initRoutes(core: CoreSetup) {
       return response.renderHtml({
         body: `
           <!DOCTYPE html>
-          <title>Kibana SAML Login</title>
+          <title>HyperSec Kibana SAML Login</title>
           <link rel="icon" href="data:,">
           <script defer src="/saml_provider/login/submit.js"></script>
           <body>

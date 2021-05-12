@@ -256,7 +256,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.fleet.settings.kibanaUrlLabel', {
-            defaultMessage: 'Kibana URL',
+            defaultMessage: 'HyperSec Kibana URL',
           })}
           {...inputs.kibanaUrls.formRowProps}
         >

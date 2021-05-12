@@ -12,14 +12,14 @@ export const certificateFormTranslations = {
     'xpack.uptime.sourceConfiguration.ageLimitThresholdInput.ariaLabel',
     {
       defaultMessage:
-        'An input that controls the maximum number of days for which a TLS certificate may be valid before Kibana will show a warning.',
+        'An input that controls the maximum number of days for which a TLS certificate may be valid before HyperSec Kibana will show a warning.',
     }
   ),
   expirationInputAriaLabel: i18n.translate(
     'xpack.uptime.sourceConfiguration.certificateExpirationThresholdInput.ariaLabel',
     {
       defaultMessage:
-        'An input that controls the minimum number of days remaining for TLS certificate expiration before Kibana will show a warning.',
+        'An input that controls the minimum number of days remaining for TLS certificate expiration before HyperSec Kibana will show a warning.',
     }
   ),
 };

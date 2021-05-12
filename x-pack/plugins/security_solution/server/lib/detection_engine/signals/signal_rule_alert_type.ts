@@ -249,7 +249,7 @@ export const signalRulesAlertType = ({
         const gapString = remainingGap.humanize();
         const gapMessage = buildRuleMessage(
           `${gapString} (${remainingGap.asMilliseconds()}ms) were not queried between this rule execution and the last execution, so signals may have been missed.`,
-          'Consider increasing your look behind time or adding more Kibana instances.'
+          'Consider increasing your look behind time or adding more HyperSec Kibana instances.'
         );
         logger.warn(gapMessage);
         hasError = true;

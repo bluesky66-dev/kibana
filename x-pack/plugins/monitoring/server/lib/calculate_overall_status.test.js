@@ -7,7 +7,7 @@
 
 import { calculateOverallStatus } from './calculate_overall_status';
 
-describe('Calculate Kibana Cluster Helath', () => {
+describe('Calculate HyperSec Kibana Cluster Helath', () => {
   it('health status combined from multiple instances', () => {
     const greens = [['green', 'green', null], ['green', 'green'], ['green']];
     const yellows = [

@@ -51,7 +51,7 @@ const isLikelyIrrelevant = (name: string, failure: string) => {
     return true;
   }
 
-  if (failure.includes('Unable to fetch Kibana status API response from Kibana')) {
+  if (failure.includes('Unable to fetch HyperSec Kibana status API response from HyperSec Kibana')) {
     return true;
   }
 

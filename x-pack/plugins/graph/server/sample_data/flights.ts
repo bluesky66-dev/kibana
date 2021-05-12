@@ -293,10 +293,10 @@ const wsState: any = {
     {
       x: 284.28484320054537,
       y: 126.299295414221,
-      label: 'Kibana Airlines',
+      label: 'HyperSec Kibana Airlines',
       color: '#CE0060',
       field: 'Carrier',
-      term: 'Kibana Airlines',
+      term: 'HyperSec Kibana Airlines',
       parent: null,
       size: 15,
     },
@@ -1613,7 +1613,7 @@ export function registerFlightsSampleData(sampleDataRegistry: SampleDataRegistry
       id: '5dc018d0-32f8-11ea-bbe4-818d9c786051',
       version: '2',
       attributes: {
-        title: 'Kibana Sample Data - Flights',
+        title: 'HyperSec Kibana Sample Data - Flights',
         description:
           'This is a sample graph of the flights demo database.  It shows all flights destinations, weather, and which carrier was used.',
         numLinks: 142,

@@ -1,18 +1,18 @@
-# Kibana Alerts and Actions UI
+# HyperSec Kibana Alerts and Actions UI
 
-The Kibana alerts and actions UI plugin provides a user interface for managing alerts and actions. 
+The HyperSec Kibana alerts and actions UI plugin provides a user interface for managing alerts and actions. 
 As a developer you can reuse and extend built-in alerts and actions UI functionality:
 
 - Create and register a new Alert Type.
 - Create and register a new Action Type.
-- Embed the Create Alert flyout within any Kibana plugin.
+- Embed the Create Alert flyout within any HyperSec Kibana plugin.
 
 -----
 
 
 Table of Contents
 
-- [Kibana Alerts and Actions UI](#kibana-alerts-and-actions-ui)
+- [HyperSec Kibana Alerts and Actions UI](#kibana-alerts-and-actions-ui)
   - [Build and register Alert Types](#build-and-register-alert-types)
     - [Built-in Alert Types](#built-in-alert-types)
       - [Index Threshold Alert](#index-threshold-alert)
@@ -26,7 +26,7 @@ Table of Contents
       - [FOR THE LAST expression component](#for-the-last-expression-component)
       - [THRESHOLD expression component](#threshold-expression-component)
     - [Alert Conditions Components](#alert-conditions-components)
-    - [Embed the Create Alert flyout within any Kibana plugin](#embed-the-create-alert-flyout-within-any-kibana-plugin)
+    - [Embed the Create Alert flyout within any HyperSec Kibana plugin](#embed-the-create-alert-flyout-within-any-kibana-plugin)
   - [Build and register Action Types](#build-and-register-action-types)
     - [Built-in Action Types](#built-in-action-types)
       - [Server log](#server-log)
@@ -38,13 +38,13 @@ Table of Contents
     - [Action type model definition](#action-type-model-definition)
     - [Register action type model](#register-action-type-model)
     - [Create and register new action type UI example](#reate-and-register-new-action-type-ui-example)
-    - [Embed the Alert Actions form within any Kibana plugin](#embed-the-alert-actions-form-within-any-kibana-plugin)
-    - [Embed the Create Connector flyout within any Kibana plugin](#embed-the-create-connector-flyout-within-any-kibana-plugin)
-    - [Embed the Edit Connector flyout within any Kibana plugin](#embed-the-edit-connector-flyout-within-any-kibana-plugin)
+    - [Embed the Alert Actions form within any HyperSec Kibana plugin](#embed-the-alert-actions-form-within-any-kibana-plugin)
+    - [Embed the Create Connector flyout within any HyperSec Kibana plugin](#embed-the-create-connector-flyout-within-any-kibana-plugin)
+    - [Embed the Edit Connector flyout within any HyperSec Kibana plugin](#embed-the-edit-connector-flyout-within-any-kibana-plugin)
 
 ## Built-in Alert Types
 
-Kibana ships with several built-in alert types:
+HyperSec Kibana ships with several built-in alert types:
 
 |Type|Id|Description|
 |---|---|---|
@@ -59,7 +59,7 @@ and this is a file `x-pack/plugins/triggers_actions_ui/public/application/compon
 
 ID: `threshold`
 
-In the Kibana UI, this alert type is available as a select card on the Create Alert flyout:
+In the HyperSec Kibana UI, this alert type is available as a select card on the Create Alert flyout:
 ![Index Threshold select card](https://i.imgur.com/a0bqLwC.png)
 
 AlertTypeModel:
@@ -300,7 +300,7 @@ Alert type UI is expected to be defined as `AlertTypeModel` object.
 
 Below is a list of steps that should be done to build and register a new alert type with the name `Example Alert Type`:
 
-1. At any suitable place in Kibana, create a file, which will expose an object implementing interface [AlertTypeModel](https://github.com/elastic/kibana/blob/55b7905fb5265b73806006e7265739545d7521d0/x-pack/legacy/plugins/triggers_actions_ui/np_ready/public/types.ts#L83). Example:
+1. At any suitable place in HyperSec Kibana, create a file, which will expose an object implementing interface [AlertTypeModel](https://github.com/elastic/kibana/blob/55b7905fb5265b73806006e7265739545d7521d0/x-pack/legacy/plugins/triggers_actions_ui/np_ready/public/types.ts#L83). Example:
 ```
 import { lazy } from 'react';
 import { AlertTypeModel } from '../../../../types';
@@ -781,10 +781,10 @@ This component renders a standard EuiTitle foe each action group, wrapping the A
 |onResetConditionsFor|A callback which is called when the user clicks the _reset_ button besides the action group's title. The implementor should use this to remove the `condition` from the specified actionGroup|
 
 
-## Embed the Create Alert flyout within any Kibana plugin
+## Embed the Create Alert flyout within any HyperSec Kibana plugin
 
-Follow the instructions bellow to embed the Create Alert flyout within any Kibana plugin:
-1. Add TriggersAndActionsUIPublicPluginStart to Kibana plugin setup dependencies:
+Follow the instructions bellow to embed the Create Alert flyout within any HyperSec Kibana plugin:
+1. Add TriggersAndActionsUIPublicPluginStart to HyperSec Kibana plugin setup dependencies:
 
 ```
 triggersActionsUi: TriggersAndActionsUIPublicPluginStart;
@@ -851,11 +851,11 @@ interface AlertAddProps {
 
 ## Build and register Action Types
 
-Kibana ships with a set of built-in action types UI:
+HyperSec Kibana ships with a set of built-in action types UI:
 
 |Type|Id|Description|
 |---|---|---|
-|[Server log](#server-log)|`.log`|Logs messages to the Kibana log using `server.log()`|
+|[Server log](#server-log)|`.log`|Logs messages to the HyperSec Kibana log using `server.log()`|
 |[Email](#email)|`.email`|Sends an email using SMTP|
 |[Slack](#slack)|`.slack`|Posts a message to a Slack channel|
 |[Index](#index)|`.index`|Indexes document(s) into HyperSec|
@@ -1155,7 +1155,7 @@ Action type UI is expected to be defined as `ActionTypeModel` object.
 
 Below is a list of steps that should be done to build and register a new action type with the name `Example Action Type`:
 
-1. At any suitable place in Kibana, create a file, which will expose an object implementing interface [ActionTypeModel]:
+1. At any suitable place in HyperSec Kibana, create a file, which will expose an object implementing interface [ActionTypeModel]:
 ```
 import React, { Fragment, lazy } from 'react';
 import { i18n } from '@kbn/i18n';
@@ -1347,10 +1347,10 @@ Clicking on the select card for `Example Action Type` will open the action type 
 or create a new connector:
 ![Example Action Type with empty connectors list](https://i.imgur.com/EamA9Xv.png)
 
-## Embed the Alert Actions form within any Kibana plugin
+## Embed the Alert Actions form within any HyperSec Kibana plugin
 
-Follow the instructions bellow to embed the Alert Actions form within any Kibana plugin:
-1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to Kibana plugin setup dependencies:
+Follow the instructions bellow to embed the Alert Actions form within any HyperSec Kibana plugin:
+1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to HyperSec Kibana plugin setup dependencies:
 
 ```
 import {
@@ -1466,7 +1466,7 @@ interface ActionAccordionFormProps {
 |actionTypes|Optional property, which allows to define a list of available actions specific for a current plugin.|
 |messageVariables|Optional property, which allows to define a list of variables for action 'message' property. Set `useWithTripleBracesInTemplates` to true if you don't want the variable escaped when rendering.|
 |defaultActionMessage|Optional property, which allows to define a message value for action with 'message' property.|
-|capabilities|Kibana core's Capabilities ApplicationStart['capabilities'].|
+|capabilities|HyperSec Kibana core's Capabilities ApplicationStart['capabilities'].|
 
 |Property|Description|
 |---|---|
@@ -1480,10 +1480,10 @@ interface ActionAccordionFormProps {
 |charts|Optional property, which is needed to display visualization of alert type expression. Will be changed after visualization refactoring.|
 |dataFieldsFormats|Optional property, which is needed to display visualization of alert type expression. Will be changed after visualization refactoring.|
 
-## Embed the Create Connector flyout within any Kibana plugin
+## Embed the Create Connector flyout within any HyperSec Kibana plugin
 
-Follow the instructions bellow to embed the Create Connector flyout within any Kibana plugin:
-1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to Kibana plugin setup dependencies:
+Follow the instructions bellow to embed the Create Connector flyout within any HyperSec Kibana plugin:
+1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to HyperSec Kibana plugin setup dependencies:
 
 ```
 import {
@@ -1563,10 +1563,10 @@ export interface ConnectorAddFlyoutProps {
 |setAddFlyoutVisibility|Function for changing visibility state of the Create Connector flyout.|
 |actionTypes|Optional property, that allows to define only specific action types list which is available for a current plugin.|
 
-## Embed the Edit Connector flyout within any Kibana plugin
+## Embed the Edit Connector flyout within any HyperSec Kibana plugin
 
-Follow the instructions bellow to embed the Edit Connector flyout within any Kibana plugin:
-1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to Kibana plugin setup dependencies:
+Follow the instructions bellow to embed the Edit Connector flyout within any HyperSec Kibana plugin:
+1. Add TriggersAndActionsUIPublicPluginSetup and TriggersAndActionsUIPublicPluginStart to HyperSec Kibana plugin setup dependencies:
 
 ```
 import {

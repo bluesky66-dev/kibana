@@ -84,14 +84,14 @@ describe('DocumentMigrator', () => {
         expect(migrationObj.prepareMigrations).toThrow(/Expected all properties to be semvers/i);
       });
 
-      it('validates individual migrations are not greater than the current Kibana version', () => {
+      it('validates individual migrations are not greater than the current HyperSec Kibana version', () => {
         const withGreaterVersion = {
           '3.2.4': (doc: any) => doc,
         };
         const migrationFn = new DocumentMigrator(createDefinition(() => withGreaterVersion));
         const migrationObj = new DocumentMigrator(createDefinition(withGreaterVersion));
 
-        const expectedError = `Invalid migration for type foo. Property '3.2.4' cannot be greater than the current Kibana version '3.2.3'.`;
+        const expectedError = `Invalid migration for type foo. Property '3.2.4' cannot be greater than the current HyperSec Kibana version '3.2.3'.`;
         expect(migrationFn.prepareMigrations).toThrowError(expectedError);
         expect(migrationObj.prepareMigrations).toThrowError(expectedError);
       });
@@ -190,7 +190,7 @@ describe('DocumentMigrator', () => {
       );
     });
 
-    it('validates convertToMultiNamespaceTypeVersion is not greater than the current Kibana version', () => {
+    it('validates convertToMultiNamespaceTypeVersion is not greater than the current HyperSec Kibana version', () => {
       const invalidDefinition = {
         kibanaVersion: '3.2.3',
         typeRegistry: createRegistry({
@@ -202,7 +202,7 @@ describe('DocumentMigrator', () => {
         log: mockLogger,
       };
       expect(() => new DocumentMigrator(invalidDefinition)).toThrowError(
-        `Invalid convertToMultiNamespaceTypeVersion for type foo. Value '3.2.4' cannot be greater than the current Kibana version '3.2.3'.`
+        `Invalid convertToMultiNamespaceTypeVersion for type foo. Value '3.2.4' cannot be greater than the current HyperSec Kibana version '3.2.3'.`
       );
     });
 
@@ -428,7 +428,7 @@ describe('DocumentMigrator', () => {
           migrationVersion: { dog: '10.2.0' },
         })
       ).toThrow(
-        /Document "smelly" has property "dog" which belongs to a more recent version of Kibana \[10\.2\.0\]\. The last known version is \[undefined\]/i
+        /Document "smelly" has property "dog" which belongs to a more recent version of HyperSec Kibana \[10\.2\.0\]\. The last known version is \[undefined\]/i
       );
     });
 
@@ -451,7 +451,7 @@ describe('DocumentMigrator', () => {
           migrationVersion: { dawg: '1.2.4' },
         })
       ).toThrow(
-        /Document "fleabag" has property "dawg" which belongs to a more recent version of Kibana \[1\.2\.4\]\. The last known version is \[1\.2\.3\]/i
+        /Document "fleabag" has property "dawg" which belongs to a more recent version of HyperSec Kibana \[1\.2\.4\]\. The last known version is \[1\.2\.3\]/i
       );
     });
 
@@ -473,7 +473,7 @@ describe('DocumentMigrator', () => {
       );
     });
 
-    it('rejects docs that have a coreMigrationVersion higher than the current Kibana version', () => {
+    it('rejects docs that have a coreMigrationVersion higher than the current HyperSec Kibana version', () => {
       const migrator = new DocumentMigrator({
         ...testOpts(),
         kibanaVersion: '8.0.1',
@@ -487,7 +487,7 @@ describe('DocumentMigrator', () => {
           coreMigrationVersion: '8.0.2',
         })
       ).toThrowErrorMatchingInlineSnapshot(
-        `"Document \\"wet\\" has a \\"coreMigrationVersion\\" which belongs to a more recent version of Kibana [8.0.2]. The current version is [8.0.1]."`
+        `"Document \\"wet\\" has a \\"coreMigrationVersion\\" which belongs to a more recent version of HyperSec Kibana [8.0.2]. The current version is [8.0.1]."`
       );
     });
 

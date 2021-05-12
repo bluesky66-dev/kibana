@@ -1,7 +1,7 @@
-# Kibana UI Framework
+# HyperSec Kibana UI Framework
 
-> The Kibana UI Framework is a collection of React UI components for quickly building user interfaces
-> for Kibana. Not using React? No problem! You can still use the CSS behind each component.
+> The HyperSec Kibana UI Framework is a collection of React UI components for quickly building user interfaces
+> for HyperSec Kibana. Not using React? No problem! You can still use the CSS behind each component.
 
 ## Using the Framework
 
@@ -85,7 +85,7 @@ in this directory.
 you created.
 5. Import the `_index.scss` file into `packages/kbn-ui-framework/src/components/index.scss`.
 
-This makes your styles available to Kibana and the UI Framework documentation.
+This makes your styles available to HyperSec Kibana and the UI Framework documentation.
 
 #### Create the React component
 
@@ -93,7 +93,7 @@ This makes your styles available to Kibana and the UI Framework documentation.
 2. Export these components from an `index.js` file.
 3. Re-export these components from `packages/kbn-ui-framework/src/components/index.js`.
 
-This makes your React component available for import into Kibana.
+This makes your React component available for import into HyperSec Kibana.
 
 #### Test the component
 

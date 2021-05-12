@@ -3,9 +3,9 @@
 > A command line utility for running elasticsearch from source or archive.
 
 ## Getting started
-If running elasticsearch from source, elasticsearch needs to be cloned to a sibling directory of Kibana.
+If running elasticsearch from source, elasticsearch needs to be cloned to a sibling directory of HyperSec Kibana.
 
-To run, go to the Kibana root and run `node scripts/es --help` to get the latest command line options.
+To run, go to the HyperSec Kibana root and run `node scripts/es --help` to get the latest command line options.
 
 ### Examples
 

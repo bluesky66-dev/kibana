@@ -120,7 +120,7 @@ export const TemplateEdit: React.FunctionComponent<RouteComponentProps<MatchPara
                 title={
                   <FormattedMessage
                     id="xpack.idxMgmt.templateEdit.systemTemplateWarningTitle"
-                    defaultMessage="Editing a system template can break Kibana"
+                    defaultMessage="Editing a system template can break HyperSec Kibana"
                   />
                 }
                 color="danger"

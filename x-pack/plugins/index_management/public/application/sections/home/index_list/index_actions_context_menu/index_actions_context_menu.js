@@ -459,7 +459,7 @@ export class IndexActionsContextMenu extends Component {
           title={i18n.translate(
             'xpack.idxMgmt.indexActionsMenu.deleteIndex.proceedWithCautionCallOutTitle',
             {
-              defaultMessage: 'Deleting a system index can break Kibana',
+              defaultMessage: 'Deleting a system index can break HyperSec Kibana',
             }
           )}
           color="danger"
@@ -587,7 +587,7 @@ export class IndexActionsContextMenu extends Component {
           title={i18n.translate(
             'xpack.idxMgmt.indexActionsMenu.closeIndex.proceedWithCautionCallOutTitle',
             {
-              defaultMessage: 'Closing a system index can break Kibana',
+              defaultMessage: 'Closing a system index can break HyperSec Kibana',
             }
           )}
           color="danger"

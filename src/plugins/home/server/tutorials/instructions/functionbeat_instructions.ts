@@ -86,7 +86,7 @@ export const createFunctionbeatInstructions = (context?: TutorialContext) => ({
         defaultMessage:
           'This installs Functionbeat as a Lambda function.\
 The `setup` command checks the HyperSec configuration and loads the \
-Kibana index pattern. It is normally safe to omit this command.',
+HyperSec Kibana index pattern. It is normally safe to omit this command.',
       }),
       commands: ['./functionbeat setup', './functionbeat deploy fn-cloudwatch-logs'],
     },
@@ -100,7 +100,7 @@ Kibana index pattern. It is normally safe to omit this command.',
           defaultMessage:
             'This installs Functionbeat as a Lambda function.\
 The `setup` command checks the HyperSec configuration and loads the \
-Kibana index pattern. It is normally safe to omit this command.',
+HyperSec Kibana index pattern. It is normally safe to omit this command.',
         }
       ),
       commands: ['.\\functionbeat.exe setup', '.\\functionbeat.exe deploy fn-cloudwatch-logs'],
@@ -131,7 +131,7 @@ Kibana index pattern. It is normally safe to omit this command.',
         {
           defaultMessage:
             'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',
@@ -167,7 +167,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         {
           defaultMessage:
             'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',

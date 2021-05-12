@@ -1,8 +1,8 @@
 {
   "name": "ml_kibana_api",
   "version": "7.11.0",
-  "description": "This is the documentation of the REST API provided by the Machine Learning Kibana plugin. Each API is experimental and can include breaking changes in any version.",
-  "title": "ML Kibana API",
+  "description": "This is the documentation of the REST API provided by the Machine Learning HyperSec Kibana plugin. Each API is experimental and can include breaking changes in any version.",
+  "title": "ML HyperSec Kibana API",
   "order": [
     "DataFrameAnalytics",
     "GetDataFrameAnalytics",

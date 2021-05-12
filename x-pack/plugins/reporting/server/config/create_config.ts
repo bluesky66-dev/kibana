@@ -51,7 +51,7 @@ export function createConfig$(
         logger.warn(
           i18n.translate('xpack.reporting.serverConfig.invalidServerHostname', {
             defaultMessage:
-              `Found 'server.host: "0"' in Kibana configuration. This is incompatible with Reporting. ` +
+              `Found 'server.host: "0"' in HyperSec Kibana configuration. This is incompatible with Reporting. ` +
               `To enable Reporting to work, '{configKey}: 0.0.0.0' is being automatically to the configuration. ` +
               `You can change the setting to 'server.host: 0.0.0.0' or add '{configKey}: 0.0.0.0' in kibana.yml to prevent this message.`,
             values: { configKey: 'xpack.reporting.kibanaServer.hostname' },

@@ -34,7 +34,7 @@ export const DISABLED_INDEX_PATTERNS = i18n.translate(
   'xpack.securitySolution.indexPatterns.disabled',
   {
     defaultMessage:
-      'Disabled index patterns are recommended on this page, but first need to be configured in your Kibana index pattern settings',
+      'Disabled index patterns are recommended on this page, but first need to be configured in your HyperSec Kibana index pattern settings',
   }
 );
 

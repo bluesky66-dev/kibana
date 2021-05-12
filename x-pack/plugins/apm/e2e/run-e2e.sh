@@ -31,7 +31,7 @@ KIBANA_VERSION=$(node -p "require('../../../package.json').version")
 # Ask user to start Kibana
 ##################################################
 echo "" # newline
-echo "${bold}To start Kibana please run the following command:${normal}
+echo "${bold}To start HyperSec Kibana please run the following command:${normal}
 node ./scripts/kibana --no-base-path --dev --no-dev-config --config x-pack/plugins/apm/e2e/ci/kibana.e2e.yml"
 
 #
@@ -140,17 +140,17 @@ fi
 # Wait for Kibana to start
 ##################################################
 echo "" # newline
-echo "${bold}Waiting for Kibana to start...${normal}"
-echo "Note: you need to start Kibana manually. Find the instructions at the top."
+echo "${bold}Waiting for HyperSec Kibana to start...${normal}"
+echo "Note: you need to start HyperSec Kibana manually. Find the instructions at the top."
 $WAIT_ON_BIN -i 500 -w 500 http-get://admin:changeme@localhost:$KIBANA_PORT/api/status > /dev/null
 
 ## Workaround to wait for the http server running
 ## See: https://github.com/elastic/kibana/issues/66326
 if [ -e kibana.log ] ; then
     grep -m 1 "http server running" <(tail -f -n +1 kibana.log)
-    echo "✅ Kibana server running..."
+    echo "✅ HyperSec Kibana server running..."
     grep -m 1 "bundles compiled successfully" <(tail -f -n +1 kibana.log)
-    echo "✅ Kibana bundles have been compiled..."
+    echo "✅ HyperSec Kibana bundles have been compiled..."
 fi
 
 

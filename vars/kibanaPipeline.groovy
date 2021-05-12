@@ -288,7 +288,7 @@ def doSetup() {
 def buildOss(maxWorkers = '') {
   notifyOnError {
     withEnv(["KBN_OPTIMIZER_MAX_WORKERS=${maxWorkers}"]) {
-      runbld("./test/scripts/jenkins_build_kibana.sh", "Build OSS/Default Kibana")
+      runbld("./test/scripts/jenkins_build_kibana.sh", "Build OSS/Default HyperSec Kibana")
     }
   }
 }
@@ -296,7 +296,7 @@ def buildOss(maxWorkers = '') {
 def buildXpack(maxWorkers = '') {
   notifyOnError {
     withEnv(["KBN_OPTIMIZER_MAX_WORKERS=${maxWorkers}"]) {
-      runbld("./test/scripts/jenkins_xpack_build_kibana.sh", "Build X-Pack Kibana")
+      runbld("./test/scripts/jenkins_xpack_build_kibana.sh", "Build X-Pack HyperSec Kibana")
     }
   }
 }
@@ -323,7 +323,7 @@ def runErrorReporter(workspaces) {
 def call(Map params = [:], Closure closure) {
   def config = [timeoutMinutes: 135, checkPrChanges: false, setCommitStatus: false] + params
 
-  stage("Kibana Pipeline") {
+  stage("HyperSec Kibana Pipeline") {
     timeout(time: config.timeoutMinutes, unit: 'MINUTES') {
       timestamps {
         ansiColor('xterm') {

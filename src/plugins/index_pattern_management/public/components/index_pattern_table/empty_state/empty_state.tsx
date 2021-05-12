@@ -115,7 +115,7 @@ export const EmptyState = ({
               <h2>
                 <FormattedMessage
                   id="indexPatternManagement.createIndexPattern.emptyState.noDataTitle"
-                  defaultMessage="Ready to try Kibana? First, you need data."
+                  defaultMessage="Ready to try HyperSec Kibana? First, you need data."
                 />
               </h2>
             </EuiTitle>
@@ -158,7 +158,7 @@ export const EmptyState = ({
                 description={
                   <FormattedMessage
                     id="indexPatternManagement.createIndexPattern.emptyState.sampleDataCardDescription"
-                    defaultMessage="Load a data set and a Kibana dashboard."
+                    defaultMessage="Load a data set and a HyperSec Kibana dashboard."
                   />
                 }
               />

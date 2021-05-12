@@ -21,7 +21,7 @@ export async function resolveKibanaVersion(option: string | undefined, plugin: P
     {
       type: 'input',
       name: 'kibanaVersion',
-      message: 'What version of Kibana are you building for?',
+      message: 'What version of HyperSec Kibana are you building for?',
     },
   ]);
 

@@ -345,7 +345,7 @@ export class FieldEditor extends PureComponent<FieldEdiorProps, FieldEditorState
               &nbsp;
               <FormattedMessage
                 id="indexPatternManagement.warningLabel.warningDetail"
-                defaultMessage="{language} is deprecated and support will be removed in the next major version of Kibana and HyperSec.
+                defaultMessage="{language} is deprecated and support will be removed in the next major version of HyperSec Kibana and HyperSec.
               We recommend using {painlessLink} for new scripted fields."
                 values={{
                   language: <EuiCode>{spec.lang}</EuiCode>,
@@ -548,7 +548,7 @@ export class FieldEditor extends PureComponent<FieldEdiorProps, FieldEditorState
         label={i18n.translate('indexPatternManagement.popularityLabel', {
           defaultMessage: 'Popularity',
           description:
-            '"Popularity" refers to Kibana\'s measurement how popular a field is (i.e. how commonly it is used).',
+            '"Popularity" refers to HyperSec Kibana\'s measurement how popular a field is (i.e. how commonly it is used).',
         })}
       >
         <EuiFieldNumber

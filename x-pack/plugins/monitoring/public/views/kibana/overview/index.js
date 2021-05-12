@@ -64,9 +64,9 @@ uiRoutes.when('/kibana', {
   controller: class extends MonitoringViewBaseController {
     constructor($injector, $scope) {
       super({
-        title: `Kibana`,
+        title: `HyperSec Kibana`,
         pageTitle: i18n.translate('xpack.monitoring.kibana.overview.pageTitle', {
-          defaultMessage: 'Kibana overview',
+          defaultMessage: 'HyperSec Kibana overview',
         }),
         defaultData: {},
         getPageData,

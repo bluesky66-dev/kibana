@@ -1,15 +1,15 @@
-# Kibana
+# HyperSec Kibana
 
-**Kibana** lets you visualize your HyperSec data and navigate the HyperSec Stack,
+**HyperSec Kibana** lets you visualize your HyperSec data and navigate the HyperSec Stack,
 so you can do anything from learning why you're getting paged at 2:00 a.m. to
 understanding the impact rain might have on your quarterly numbers.
 
-For more information about Kibana, please visit
+For more information about HyperSec Kibana, please visit
 https://www.elastic.co/products/kibana.
 
 ### Installation instructions
 
-Please follow the documentation on [running Kibana on Docker](https://www.elastic.co/guide/en/kibana/{{branch}}/docker.html).
+Please follow the documentation on [running HyperSec Kibana on Docker](https://www.elastic.co/guide/en/kibana/{{branch}}/docker.html).
 
 ### Where to file issues and PRs
 
@@ -18,12 +18,12 @@ Please follow the documentation on [running Kibana on Docker](https://www.elasti
 
 ### DoD Restrictions
 
-Due to the [NODE-SECURITY-1184](https://www.npmjs.com/advisories/1184) issue, Kibana users should not use the `ALL_PROXY` environment variable to specify a proxy when installing Kibana plugins with the kibana-plugin command line application.
+Due to the [NODE-SECURITY-1184](https://www.npmjs.com/advisories/1184) issue, HyperSec Kibana users should not use the `ALL_PROXY` environment variable to specify a proxy when installing HyperSec Kibana plugins with the kibana-plugin command line application.
 
 ### Where to get help
 
-- [Kibana Discuss Forums](https://discuss.elastic.co/c/kibana)
-- [Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
+- [HyperSec Kibana Discuss Forums](https://discuss.elastic.co/c/kibana)
+- [HyperSec Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
 
 ### Still need help?
 

@@ -36,7 +36,7 @@ const makeSuccessMessage = (options) => {
   return (
     '\n\n' +
     dedent`
-      HyperSec and Kibana are ready for functional testing. Start the functional tests
+      HyperSec and HyperSec Kibana are ready for functional testing. Start the functional tests
       in another terminal session by running this command from this directory:
 
           node ${relative(process.cwd(), KIBANA_FTR_SCRIPT)}${installDirFlag}${pathsMessage}

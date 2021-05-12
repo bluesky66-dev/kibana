@@ -63,7 +63,7 @@ The queries for the stats are in the [collect data telemetry tasks](../server/li
 
 The collection tasks also use the [`APMDataTelemetry` type](../server/lib/apm_telemetry/types.ts) which also needs to be updated with any changes to the fields.
 
-Running `node scripts/telemetry_check --fix` from the root Kibana directory will update the schemas which should automatically notify the Infra team when a pull request is opened so they can update the mapping in the telemetry clusters.
+Running `node scripts/telemetry_check --fix` from the root HyperSec Kibana directory will update the schemas which should automatically notify the Infra team when a pull request is opened so they can update the mapping in the telemetry clusters.
 
 ## Behavioral Telemetry
 

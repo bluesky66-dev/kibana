@@ -37,7 +37,7 @@ export default async function ({ readConfigFile }: FtrConfigProviderContext) {
       acceptInsecureCerts: true,
     },
     junit: {
-      reportName: 'Kibana Embedded in iframe with X-Pack Security',
+      reportName: 'HyperSec Kibana Embedded in iframe with X-Pack Security',
     },
 
     esTestCluster: kibanaFunctionalConfig.get('esTestCluster'),

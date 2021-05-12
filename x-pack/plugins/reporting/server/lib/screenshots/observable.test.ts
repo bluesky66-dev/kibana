@@ -331,7 +331,7 @@ describe('Screenshot Observable Pipeline', () => {
       await expect(getScreenshot()).rejects.toMatchInlineSnapshot(`"Instant timeout has fired!"`);
     });
 
-    it(`uses defaults for element positions and size when Kibana page is not ready`, async () => {
+    it(`uses defaults for element positions and size when HyperSec Kibana page is not ready`, async () => {
       // mocks
       const mockBrowserEvaluate = jest.fn();
       mockBrowserEvaluate.mockImplementation(() => {

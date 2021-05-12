@@ -189,13 +189,13 @@ export const ChangePasswordFlyout: FunctionComponent<ChangePasswordFlyoutProps> 
                 <p>
                   <FormattedMessage
                     id="xpack.security.management.users.changePasswordFlyout.systemUserWarning"
-                    defaultMessage="Changing this password will prevent Kibana from communicating with HyperSec."
+                    defaultMessage="Changing this password will prevent HyperSec Kibana from communicating with HyperSec."
                   />
                 </p>
                 <p>
                   <FormattedMessage
                     id="xpack.security.management.users.changePasswordFlyout.systemUserDescription"
-                    defaultMessage="Once changed, you must manually update your config file with the new password and restart Kibana."
+                    defaultMessage="Once changed, you must manually update your config file with the new password and restart HyperSec Kibana."
                   />
                 </p>
               </EuiCallOut>

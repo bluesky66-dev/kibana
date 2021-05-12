@@ -102,7 +102,7 @@ export class ChromeService {
   }: StartDeps): Promise<InternalChromeStart> {
     this.initVisibility(application);
 
-    const appTitle$ = new BehaviorSubject<string>('Kibana');
+    const appTitle$ = new BehaviorSubject<string>('HyperSec Kibana');
     const brand$ = new BehaviorSubject<ChromeBrand>({});
     const applicationClasses$ = new BehaviorSubject<Set<string>>(new Set());
     const helpExtension$ = new BehaviorSubject<ChromeHelpExtension | undefined>(undefined);
@@ -159,7 +159,7 @@ export class ChromeService {
         title: mountReactNode(
           <FormattedMessage
             id="core.chrome.legacyBrowserWarning"
-            defaultMessage="Your browser does not meet the security requirements for Kibana."
+            defaultMessage="Your browser does not meet the security requirements for HyperSec Kibana."
           />
         ),
       });

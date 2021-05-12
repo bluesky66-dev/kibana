@@ -170,7 +170,7 @@ const getColumns = (
     },
     {
       name: i18n.translate('xpack.monitoring.cluster.listing.kibanaColumnTitle', {
-        defaultMessage: 'Kibana',
+        defaultMessage: 'HyperSec Kibana',
       }),
       field: 'kibana.count',
       'data-test-subj': 'kibanaCount',

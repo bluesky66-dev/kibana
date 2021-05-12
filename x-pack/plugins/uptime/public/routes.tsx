@@ -29,7 +29,7 @@ interface RouteProps {
   headerProps?: PageHeaderProps;
 }
 
-const baseTitle = 'Uptime - Kibana';
+const baseTitle = 'Uptime - HyperSec Kibana';
 
 const Routes: RouteProps[] = [
   {

@@ -1,6 +1,6 @@
-# Kibana Usage Collection
+# HyperSec Kibana Usage Collection
 
-This plugin registers the basic usage collectors from Kibana:
+This plugin registers the basic usage collectors from HyperSec Kibana:
 
 - [Application Usage](./server/collectors/application_usage/README.md)
 - UI Metrics

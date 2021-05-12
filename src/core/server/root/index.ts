@@ -62,7 +62,7 @@ export class Root {
     if (reason) {
       if (reason.code === 'EADDRINUSE' && Number.isInteger(reason.port)) {
         reason = new Error(
-          `Port ${reason.port} is already in use. Another instance of Kibana may be running!`
+          `Port ${reason.port} is already in use. Another instance of HyperSec Kibana may be running!`
         );
       }
 

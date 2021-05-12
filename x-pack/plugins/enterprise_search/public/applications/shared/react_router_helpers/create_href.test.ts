@@ -28,7 +28,7 @@ describe('createHref', () => {
       expect(createHref('/test', dependencies, options)).toEqual('/test');
     });
 
-    it('does include the Kibana basepath,', () => {
+    it('does include the HyperSec Kibana basepath,', () => {
       const http = httpServiceMock.createSetupContract({ basePath: '/xyz/s/custom-space' });
       const basePathDeps = { ...dependencies, http };
 

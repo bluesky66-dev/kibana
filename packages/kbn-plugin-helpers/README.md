@@ -4,7 +4,7 @@ Just some helpers for kibana plugin devs.
 
 ## Installation
 
-You don't actually need to install the plugin helpers, they are automatically inherited from the Kibana project by building your plugin within the Kibana repo. To use the plugin helpers just create the needed npm scripts on your plugin's `package.json` (as exemplified below) which 
+You don't actually need to install the plugin helpers, they are automatically inherited from the HyperSec Kibana project by building your plugin within the HyperSec Kibana repo. To use the plugin helpers just create the needed npm scripts on your plugin's `package.json` (as exemplified below) which 
 is already the case if you use the new `node scripts/generate_plugin` script.
 
 ```json
@@ -25,10 +25,10 @@ yarn kbn bootstrap
 
 ## Usage
 
-This simple CLI has a build task that plugin devs can run from to easily package Kibana plugins.
+This simple CLI has a build task that plugin devs can run from to easily package HyperSec Kibana plugins.
 
 Previously you could also use that tool to start and test your plugin. Currently you can run 
-your plugin along with Kibana running `yarn start` in the Kibana repository root folder. Finally to test 
+your plugin along with HyperSec Kibana running `yarn start` in the HyperSec Kibana repository root folder. Finally to test 
 your plugin you should now configure and use your own tools.
 
 ```sh
@@ -62,15 +62,15 @@ $ plugin-helpers help
 
 ## Versions
 
-The plugins helpers in the Kibana repo are available for Kibana 6.3 and greater. Just checkout the branch of Kibana you want to build against and the plugin helpers should be up to date for that version of Kibana.
+The plugins helpers in the HyperSec Kibana repo are available for HyperSec Kibana 6.3 and greater. Just checkout the branch of HyperSec Kibana you want to build against and the plugin helpers should be up to date for that version of HyperSec Kibana.
 
-When you're targeting versions before Kibana 6.3, use the `@elastic/plugin-helpers` from npm. See the [versions](https://github.com/elastic/kibana-plugin-helpers#versions) section of the [`@elastic/plugin-helpers` readme](https://github.com/elastic/kibana-plugin-helpers) for information about version compatibility.
+When you're targeting versions before HyperSec Kibana 6.3, use the `@elastic/plugin-helpers` from npm. See the [versions](https://github.com/elastic/kibana-plugin-helpers#versions) section of the [`@elastic/plugin-helpers` readme](https://github.com/elastic/kibana-plugin-helpers) for information about version compatibility.
 
 ## Configuration
 
 `plugin-helpers` accepts a number of settings, which can be specified at runtime, or included in a `.kibana-plugin-helpers.json` file if you'd like to bundle those settings with your project.
 
-It will also observe a `.kibana-plugin-helpers.dev.json`, much like Kibana does, which we encourage you to add to your `.gitignore` file and use for local settings that you don't intend to share. These "dev" settings will override any settings in the normal json config.
+It will also observe a `.kibana-plugin-helpers.dev.json`, much like HyperSec Kibana does, which we encourage you to add to your `.gitignore` file and use for local settings that you don't intend to share. These "dev" settings will override any settings in the normal json config.
 
 All configuration setting listed below can simply can be included in the json config files. If you intend to inline the command, you will need to convert the setting to snake case (ie. `skipArchive` becomes `--skip-archive`).
 
@@ -83,7 +83,7 @@ Setting | Description
 `serverSourcePatterns` | Defines the files that are built with babel and written to your distributable for your server plugin. It is ignored if `kibana.json` has none `server: true` setting defined.
 `skipArchive` | Don't create the zip file, leave the build path alone
 `skipInstallDependencies` | Don't install dependencies defined in package.json into build output
-`kibanaVersion` | Kibana version for the build output (added to package.json)
+`kibanaVersion` | HyperSec Kibana version for the build output (added to package.json)
 
 ## TypeScript support
 

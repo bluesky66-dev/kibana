@@ -96,7 +96,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('home.tutorials.common.heartbeatInstructions.start.osxTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana index pattern.',
+        defaultMessage: 'The `setup` command loads the HyperSec Kibana index pattern.',
       }),
       commands: ['./heartbeat setup', './heartbeat -e'],
     },
@@ -105,7 +105,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('home.tutorials.common.heartbeatInstructions.start.debTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana index pattern.',
+        defaultMessage: 'The `setup` command loads the HyperSec Kibana index pattern.',
       }),
       commands: ['sudo heartbeat setup', 'sudo service heartbeat-elastic start'],
     },
@@ -114,7 +114,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('home.tutorials.common.heartbeatInstructions.start.rpmTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana index pattern.',
+        defaultMessage: 'The `setup` command loads the HyperSec Kibana index pattern.',
       }),
       commands: ['sudo heartbeat setup', 'sudo service heartbeat-elastic start'],
     },
@@ -123,7 +123,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
         defaultMessage: 'Start Heartbeat',
       }),
       textPre: i18n.translate('home.tutorials.common.heartbeatInstructions.start.windowsTextPre', {
-        defaultMessage: 'The `setup` command loads the Kibana index pattern.',
+        defaultMessage: 'The `setup` command loads the HyperSec Kibana index pattern.',
       }),
       commands: ['.\\heartbeat.exe setup', 'Start-Service heartbeat'],
     },
@@ -151,7 +151,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.osxTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -181,7 +181,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.debTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -211,7 +211,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.rpmTextPost', {
         defaultMessage:
           'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -243,7 +243,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         {
           defaultMessage:
             'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of Kibana.',
+and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',

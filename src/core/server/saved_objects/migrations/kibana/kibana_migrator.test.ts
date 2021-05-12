@@ -45,7 +45,7 @@ describe('KibanaMigrator', () => {
     (DocumentMigrator as jest.Mock).mockClear();
   });
   describe('constructor', () => {
-    it('coerces the current Kibana version if it has a hyphen', () => {
+    it('coerces the current HyperSec Kibana version if it has a hyphen', () => {
       const options = mockOptions();
       options.kibanaVersion = '3.2.1-SNAPSHOT';
       const migrator = new KibanaMigrator(options);
@@ -313,7 +313,7 @@ describe('KibanaMigrator', () => {
         const migrator = new KibanaMigrator(options);
         migrator.prepareMigrations();
         return expect(migrator.runMigrations()).rejects.toMatchInlineSnapshot(
-          `[Error: Unable to complete saved object migrations for the [.my-index] index: The .my-index alias is pointing to a newer version of Kibana: v8.2.4]`
+          `[Error: Unable to complete saved object migrations for the [.my-index] index: The .my-index alias is pointing to a newer version of HyperSec Kibana: v8.2.4]`
         );
       });
       it('rejects when an unexpected exception occurs in an action', async () => {

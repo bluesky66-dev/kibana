@@ -20,11 +20,11 @@ the next step to the bottom of the file (or really anywhere) and save. For more 
 on different config modifications or on how to make production config modifications,
 see [the current docs](https://www.elastic.co/guide/en/kibana/current/settings.html)
 
-### 2. Run ES/Kibana dev env with ssl enabled
+### 2. Run ES/HyperSec Kibana dev env with ssl enabled
 - In two terminals, run the normal commands to launch both elasticsearch and kibana but 
 append `--ssl` to the end of each as an arg, i.e.:
   - `yarn es snapshot --ssl  # Runs HyperSec`
-  - `yarn start --ssl # Runs Kibana`
+  - `yarn start --ssl # Runs HyperSec Kibana`
   
 ### 3. Get an MTA data api key
 - You'll need to obtain an NYC MTA api key, you can request this
@@ -39,7 +39,7 @@ in a local terminal should look something like the following. This script loads 
 quantities of data the frequency listed below (20000ms = 20s) or higher:
 `node ./load_tracks.js -a <YOUR_API_KEY> -f 20000`
 
-### 5. Open required Kibana tabs
+### 5. Open required HyperSec Kibana tabs
 There are 3 separate tabs you'll need for a combination of loading and viewing the
 data. Since you'll be jumping between them, it might be easiest to just open them
 upfront. Each is preceded by `https://localhost:5601/<your dev env prefix>/app/`:
@@ -89,7 +89,7 @@ only points that are newly contained in the boundaries.
 Entity: {{context.entityId}} with document ID: {{context.entityDocumentId}} has been recorded at location: {{context.entityLocation}} in boundary: {{context.containingBoundaryName}}({{context.containingBoundaryId}}) at {{context.entityDateTime}}. This was detected by the alerting framework at: {{context.detectionDateTime}}. 
 ```
 - At the bottom right, click `Save`. Your alert should now be created!
-- You should now be able to see alerts generated in your Kibana console log.
+- You should now be able to see alerts generated in your HyperSec Kibana console log.
 
 ### 9. Visually confirm your alerts with Maps
 - Creating layers

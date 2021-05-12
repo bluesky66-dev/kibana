@@ -35,7 +35,7 @@ const ErrorCallout: React.FunctionComponent<{ errorMessage: string | null }> = (
 const PausedCallout = () => (
   <EuiCallOut
     color="warning"
-    title="This step was paused due to a Kibana restart. Click 'Resume' below to continue."
+    title="This step was paused due to a HyperSec Kibana restart. Click 'Resume' below to continue."
   />
 );
 

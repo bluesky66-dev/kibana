@@ -42,7 +42,7 @@ export class KibanaVersionMismatchAlert extends BaseAlert {
           description: i18n.translate(
             'xpack.monitoring.alerts.kibanaVersionMismatch.actionVariables.clusterHealth',
             {
-              defaultMessage: 'The versions of Kibana running in this cluster.',
+              defaultMessage: 'The versions of HyperSec Kibana running in this cluster.',
             }
           ),
         },
@@ -95,7 +95,7 @@ export class KibanaVersionMismatchAlert extends BaseAlert {
   protected getUiMessage(alertState: AlertState, item: AlertData): AlertMessage {
     const { versions } = item.meta as AlertVersions;
     const text = i18n.translate('xpack.monitoring.alerts.kibanaVersionMismatch.ui.firingMessage', {
-      defaultMessage: `Multiple versions of Kibana ({versions}) running in this cluster.`,
+      defaultMessage: `Multiple versions of HyperSec Kibana ({versions}) running in this cluster.`,
       values: {
         versions: versions.join(', '),
       },
@@ -141,7 +141,7 @@ export class KibanaVersionMismatchAlert extends BaseAlert {
     const internalFullMessage = i18n.translate(
       'xpack.monitoring.alerts.kibanaVersionMismatch.firing.internalFullMessage',
       {
-        defaultMessage: `Kibana version mismatch alert is firing for {clusterName}. Kibana is running {versions}. {action}`,
+        defaultMessage: `HyperSec Kibana version mismatch alert is firing for {clusterName}. HyperSec Kibana is running {versions}. {action}`,
         values: {
           clusterName: cluster.clusterName,
           versions: versions.join(', '),
@@ -153,7 +153,7 @@ export class KibanaVersionMismatchAlert extends BaseAlert {
       internalShortMessage: i18n.translate(
         'xpack.monitoring.alerts.kibanaVersionMismatch.firing.internalShortMessage',
         {
-          defaultMessage: `Kibana version mismatch alert is firing for {clusterName}. {shortActionText}`,
+          defaultMessage: `HyperSec Kibana version mismatch alert is firing for {clusterName}. {shortActionText}`,
           values: {
             clusterName: cluster.clusterName,
             shortActionText,

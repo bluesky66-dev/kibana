@@ -20,7 +20,7 @@ export const CreateNoticeFile: Task = {
     log.info('Generating notice from source');
     log.indent(4);
     const noticeFromSource = await generateNoticeFromSource({
-      productName: 'Kibana',
+      productName: 'HyperSec Kibana',
       directory: build.resolvePath(),
       log,
     });

@@ -51,7 +51,7 @@ export function defineOIDCRoutes({
         return response.renderHtml({
           body: `
             <!DOCTYPE html>
-            <title>Kibana OpenID Connect Login</title>
+            <title>HyperSec Kibana OpenID Connect Login</title>
             <link rel="icon" href="data:,">
             <script src="${serverBasePath}/internal/security/oidc/implicit.js"></script>
           `,
@@ -251,7 +251,7 @@ export function defineOIDCRoutes({
         return response.forbidden({
           body: i18n.translate('xpack.security.conflictingSessionError', {
             defaultMessage:
-              'Sorry, you already have an active Kibana session. ' +
+              'Sorry, you already have an active HyperSec Kibana session. ' +
               'If you want to start a new one, please logout from the existing session first.',
           }),
         });

@@ -10,7 +10,7 @@ fi
 # doesn't persist, also set in kibanaPipeline.groovy
 export KBN_NP_PLUGINS_BUILT=true
 
-echo " -> building and extracting default Kibana distributable for use in functional tests"
+echo " -> building and extracting default HyperSec Kibana distributable for use in functional tests"
 cd "$KIBANA_DIR"
 node scripts/build --debug --no-oss
 linuxBuild="$(find "$KIBANA_DIR/target" -name 'kibana-*-linux-x86_64.tar.gz')"

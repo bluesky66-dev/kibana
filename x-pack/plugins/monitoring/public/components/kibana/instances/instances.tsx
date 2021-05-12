@@ -234,7 +234,7 @@ export const KibanaInstances: React.FC<Props> = (props: Props) => {
                   title={i18n.translate(
                     'xpack.monitoring.kibana.instances.metricbeatMigration.detectedNodeTitle',
                     {
-                      defaultMessage: 'Kibana instance detected',
+                      defaultMessage: 'HyperSec Kibana instance detected',
                     }
                   )}
                   color="warning"
@@ -274,7 +274,7 @@ export const KibanaInstances: React.FC<Props> = (props: Props) => {
           <h1>
             <FormattedMessage
               id="xpack.monitoring.kibana.instances.heading"
-              defaultMessage="Kibana instances"
+              defaultMessage="HyperSec Kibana instances"
             />
           </h1>
         </EuiScreenReaderOnly>

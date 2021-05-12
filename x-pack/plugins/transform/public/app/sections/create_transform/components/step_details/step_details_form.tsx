@@ -458,7 +458,7 @@ export const StepDetailsForm: FC<StepDetailsFormProps> = React.memo(
             <EuiSwitch
               name="transformCreateIndexPattern"
               label={i18n.translate('xpack.transform.stepCreateForm.createIndexPatternLabel', {
-                defaultMessage: 'Create Kibana index pattern',
+                defaultMessage: 'Create HyperSec Kibana index pattern',
               })}
               checked={createIndexPattern === true}
               onChange={() => setCreateIndexPattern(!createIndexPattern)}

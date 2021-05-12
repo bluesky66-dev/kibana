@@ -15,7 +15,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const find = getService('find');
 
   describe('CORS', () => {
-    it('Communicates to Kibana with configured CORS', async () => {
+    it('Communicates to HyperSec Kibana with configured CORS', async () => {
       const args: string[] = config.get('kbnTestServer.serverArgs');
       const originSetting = args.find((str) => str.includes('server.cors.allowOrigin'));
       if (!originSetting) {

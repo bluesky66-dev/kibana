@@ -91,7 +91,7 @@ describe('resolveInstanceUuid', () => {
         expect(logger.debug).toHaveBeenCalledTimes(1);
         expect(logger.debug.mock.calls[0]).toMatchInlineSnapshot(`
           Array [
-            "Updating Kibana instance UUID to: CONFIG_UUID (was: FILE_UUID)",
+            "Updating HyperSec Kibana instance UUID to: CONFIG_UUID (was: FILE_UUID)",
           ]
         `);
       });
@@ -106,7 +106,7 @@ describe('resolveInstanceUuid', () => {
         expect(logger.debug).toHaveBeenCalledTimes(1);
         expect(logger.debug.mock.calls[0]).toMatchInlineSnapshot(`
           Array [
-            "Kibana instance UUID: CONFIG_UUID",
+            "HyperSec Kibana instance UUID: CONFIG_UUID",
           ]
         `);
       });
@@ -126,7 +126,7 @@ describe('resolveInstanceUuid', () => {
       expect(logger.debug).toHaveBeenCalledTimes(1);
       expect(logger.debug.mock.calls[0]).toMatchInlineSnapshot(`
         Array [
-          "Setting new Kibana instance UUID: CONFIG_UUID",
+          "Setting new HyperSec Kibana instance UUID: CONFIG_UUID",
         ]
       `);
     });
@@ -141,7 +141,7 @@ describe('resolveInstanceUuid', () => {
       expect(logger.debug).toHaveBeenCalledTimes(1);
       expect(logger.debug.mock.calls[0]).toMatchInlineSnapshot(`
         Array [
-          "Resuming persistent Kibana instance UUID: FILE_UUID",
+          "Resuming persistent HyperSec Kibana instance UUID: FILE_UUID",
         ]
       `);
     });
@@ -167,7 +167,7 @@ describe('resolveInstanceUuid', () => {
               "UUID from 7.6.0 bug detected, ignoring file UUID",
             ],
             Array [
-              "Setting new Kibana instance UUID: NEW_UUID",
+              "Setting new HyperSec Kibana instance UUID: NEW_UUID",
             ],
           ]
         `);
@@ -193,7 +193,7 @@ describe('resolveInstanceUuid', () => {
               "UUID from 7.6.0 bug detected, ignoring file UUID",
             ],
             Array [
-              "Setting new Kibana instance UUID: CONFIG_UUID",
+              "Setting new HyperSec Kibana instance UUID: CONFIG_UUID",
             ],
           ]
         `);
@@ -215,7 +215,7 @@ describe('resolveInstanceUuid', () => {
       expect(logger.debug).toHaveBeenCalledTimes(1);
       expect(logger.debug.mock.calls[0]).toMatchInlineSnapshot(`
         Array [
-          "Setting new Kibana instance UUID: NEW_UUID",
+          "Setting new HyperSec Kibana instance UUID: NEW_UUID",
         ]
       `);
     });
@@ -227,7 +227,7 @@ describe('resolveInstanceUuid', () => {
       await expect(
         resolveInstanceUuid({ pathConfig, serverConfig, logger })
       ).rejects.toThrowErrorMatchingInlineSnapshot(
-        `"Unable to read Kibana UUID file, please check the uuid.server configuration value in kibana.yml and ensure Kibana has sufficient permissions to read / write to this file. Error was: EACCES"`
+        `"Unable to read HyperSec Kibana UUID file, please check the uuid.server configuration value in kibana.yml and ensure HyperSec Kibana has sufficient permissions to read / write to this file. Error was: EACCES"`
       );
     });
     it('throws an explicit error for file write errors', async () => {
@@ -235,7 +235,7 @@ describe('resolveInstanceUuid', () => {
       await expect(
         resolveInstanceUuid({ pathConfig, serverConfig, logger })
       ).rejects.toThrowErrorMatchingInlineSnapshot(
-        `"Unable to write Kibana UUID file, please check the uuid.server configuration value in kibana.yml and ensure Kibana has sufficient permissions to read / write to this file. Error was: EISDIR"`
+        `"Unable to write HyperSec Kibana UUID file, please check the uuid.server configuration value in kibana.yml and ensure HyperSec Kibana has sufficient permissions to read / write to this file. Error was: EISDIR"`
       );
     });
   });

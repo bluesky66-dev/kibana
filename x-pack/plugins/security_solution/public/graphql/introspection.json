@@ -8122,7 +8122,7 @@
           },
           {
             "name": "type",
-            "description": "The type of the field's values as recognized by Kibana",
+            "description": "The type of the field's values as recognized by HyperSec Kibana",
             "args": [],
             "type": {
               "kind": "NON_NULL",

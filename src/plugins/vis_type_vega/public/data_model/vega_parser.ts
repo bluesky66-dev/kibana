@@ -113,7 +113,7 @@ export class VegaParser {
             defaultMessage: `Your specification requires a {schemaParam} field with a valid URL for
 Vega (see {vegaSchemaUrl}) or
 Vega-Lite (see {vegaLiteSchemaUrl}).
-The URL is an identifier only. Kibana and your browser will never access this URL.`,
+The URL is an identifier only. HyperSec Kibana and your browser will never access this URL.`,
             values: {
               schemaParam: '"$schema"',
               vegaLiteSchemaUrl: 'https://vega.github.io/vega-lite/docs/spec.html#top-level',

@@ -113,7 +113,7 @@ function getNoItemsMessage(
             <p>
               <FormattedMessage
                 id="xpack.graph.listing.createNewGraph.newToKibanaDescription"
-                defaultMessage="New to Kibana? Get started with {sampleDataInstallLink}."
+                defaultMessage="New to HyperSec Kibana? Get started with {sampleDataInstallLink}."
                 values={{
                   sampleDataInstallLink: (
                     <EuiLink href={sampleDataUrl}>

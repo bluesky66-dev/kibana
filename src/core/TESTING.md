@@ -1,10 +1,10 @@
-# Testing Kibana Plugins
+# Testing HyperSec Kibana Plugins
 
-This document outlines best practices and patterns for testing Kibana Plugins.
+This document outlines best practices and patterns for testing HyperSec Kibana Plugins.
 
-- [Testing Kibana Plugins](#testing-kibana-plugins)
+- [Testing HyperSec Kibana Plugins](#testing-kibana-plugins)
   - [Strategy](#strategy)
-  - [New concerns in the Kibana Platform](#new-concerns-in-the-kibana-platform)
+  - [New concerns in the HyperSec Kibana Platform](#new-concerns-in-the-kibana-platform)
   - [Core Integrations](#core-integrations)
     - [Core Mocks](#core-mocks)
       - [Example](#example)
@@ -40,15 +40,15 @@ In general, we recommend three tiers of tests:
 
 These tiers should roughly follow the traditional ["testing pyramid"](https://martinfowler.com/articles/practical-test-pyramid.html), where there are more exhaustive testing at the unit level, fewer at the integration level, and very few at the functional level. 
 
-## New concerns in the Kibana Platform
+## New concerns in the HyperSec Kibana Platform
 
-The Kibana Platform introduces new concepts that legacy plugins did not have concern themselves with. Namely:
+The HyperSec Kibana Platform introduces new concepts that legacy plugins did not have concern themselves with. Namely:
 - **Lifecycles**: plugins now have explicit lifecycle methods that must interop with Core APIs and other plugins.
 - **Shared runtime**: plugins now all run in the same process at the same time. On the frontend, this is different behavior than the legacy plugins. Developers should take care not to break other plugins when interacting with their enviornment (Node.js or Browser).
-- **Single page application**: Kibana's frontend is now a single-page application where all plugins are running, but only one application is mounted at a time. Plugins need to handle mounting and unmounting, cleanup, and avoid overriding global browser behaviors in this shared space.
+- **Single page application**: HyperSec Kibana's frontend is now a single-page application where all plugins are running, but only one application is mounted at a time. Plugins need to handle mounting and unmounting, cleanup, and avoid overriding global browser behaviors in this shared space.
 - **Dependency management**: plugins must now explicitly declare their dependencies on other plugins, both required and optional. Plugins should ensure to test conditions where a optional dependency is missing.
 
-Simply porting over existing tests when migrating your plugin to the Kibana Platform will leave blind spots in test coverage. It is highly recommended that plugins add new tests that cover these new concerns.
+Simply porting over existing tests when migrating your plugin to the HyperSec Kibana Platform will leave blind spots in test coverage. It is highly recommended that plugins add new tests that cover these new concerns.
 
 ## Core Integrations
 
@@ -81,8 +81,8 @@ test('my test', async () => {
 ## Strategies for specific Core APIs
 
 ### HTTP Routes
-The HTTP API interface is another public contract of Kibana, although not every Kibana endpoint is for external use. When evaluating the required level of test coverage for an HTTP resource, make your judgment based on whether an endpoint is considered to be public or private. Public API is expected to have a higher level of test coverage.
-Public API tests should cover the **observable behavior** of the system, therefore they should be close to the real user interactions as much as possible, ideally by using HTTP requests to communicate with the Kibana server as a real user would do.
+The HTTP API interface is another public contract of HyperSec Kibana, although not every HyperSec Kibana endpoint is for external use. When evaluating the required level of test coverage for an HTTP resource, make your judgment based on whether an endpoint is considered to be public or private. Public API is expected to have a higher level of test coverage.
+Public API tests should cover the **observable behavior** of the system, therefore they should be close to the real user interactions as much as possible, ideally by using HTTP requests to communicate with the HyperSec Kibana server as a real user would do.
 
 ##### Preconditions
 We are going to add tests for `myPlugin` plugin that allows to format user-provided text, store and retrieve it later.
@@ -233,7 +233,7 @@ Main subjects for tests should be:
 
 ##### Functional Test Runner
 If your plugin relies on the elasticsearch server to store data and supports additional configuration, you can leverage the Functional Test Runner(FTR) to implement integration tests. 
-FTR bootstraps an elasticsearch and a Kibana instance and runs the test suite against it.
+FTR bootstraps an elasticsearch and a HyperSec Kibana instance and runs the test suite against it.
 Pros:
 - runs the whole HyperSec stack
 - tests cross-plugin integration
@@ -308,19 +308,19 @@ export default function({ getService }: FtrProviderContext) {
 
 ##### TestUtils
 It can be utilized if your plugin doesn't interact with the elasticsearch server or mocks the own methods doing so.
-Runs tests against real Kibana server instance.
+Runs tests against real HyperSec Kibana server instance.
 Pros:
-- runs the real Kibana instance
+- runs the real HyperSec Kibana instance
 - tests cross-plugin integration
 - emulates a real user interaction with the HTTP resources
 
 Cons:
 - faster than FTR because it doesn't run elasticsearch instance, but still slow
 - hard to debug
-- doesn't cover Kibana CLI logic
+- doesn't cover HyperSec Kibana CLI logic
 
 ###### Example
-To have access to Kibana TestUtils, you should create `integration_tests` folder and import `test_utils` within a test file:
+To have access to HyperSec Kibana TestUtils, you should create `integration_tests` folder and import `test_utils` within a test file:
 ```typescript
 // src/plugins/my_plugin/server/integration_tests/formatter.test.ts
 import * as kbnTestServer from 'src/core/test_helpers/kbn_server';
@@ -394,7 +394,7 @@ describe('myPlugin', () => {
 
 ### Applications
 
-Kibana Platform applications have less control over the page than legacy applications did. It is important that your app is built to handle it's co-habitance with other plugins in the browser. Applications are mounted and unmounted from the DOM as the user navigates between them, without full-page refreshes, as a single-page application (SPA). 
+HyperSec Kibana Platform applications have less control over the page than legacy applications did. It is important that your app is built to handle it's co-habitance with other plugins in the browser. Applications are mounted and unmounted from the DOM as the user navigates between them, without full-page refreshes, as a single-page application (SPA). 
 
 These long-lived sessions make cleanup more important than before. It's entirely possible a user has a single browsing session open for weeks at a time, without ever doing a full-page refresh. Common things that need to be cleaned up (and tested!) when your application is unmounted:
 - Subscriptions and polling (eg. `uiSettings.get$()`)
@@ -782,7 +782,7 @@ Objects client, you should write at least a few integration tests which loads
 data into and queries a real HyperSec database.
 
 To do that we'll write a Jest integration test using `TestUtils` to start
-Kibana and esArchiver to load fixture data into HyperSec.
+HyperSec Kibana and esArchiver to load fixture data into HyperSec.
 
 1. Create the fixtures data you need in HyperSec
 2. Create a fixtures archive with `node scripts/es_archiver save <name> [index patterns...]`

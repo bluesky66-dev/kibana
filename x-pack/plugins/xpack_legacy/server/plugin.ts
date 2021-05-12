@@ -53,7 +53,7 @@ export class XpackLegacyPlugin implements Plugin {
         deprecation: {
           message: i18n.translate('xpack.main.uiSettings.adminEmailDeprecation', {
             defaultMessage:
-              'This setting is deprecated and will not be supported in Kibana 8.0. Please configure `monitoring.cluster_alerts.email_notifications.email_address` in your kibana.yml settings.',
+              'This setting is deprecated and will not be supported in HyperSec Kibana 8.0. Please configure `monitoring.cluster_alerts.email_notifications.email_address` in your kibana.yml settings.',
           }),
           docLinksKey: 'kibanaGeneralSettings',
         },

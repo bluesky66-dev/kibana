@@ -27,7 +27,7 @@ node scripts/functional_tests --assert-none-excluded \
   --include-tag ciGroup12 \
   --include-tag ciGroup13
 
-echo " -> building and extracting default Kibana distributable for use in functional tests"
+echo " -> building and extracting default HyperSec Kibana distributable for use in functional tests"
 cd "$KIBANA_DIR"
 node scripts/build --debug --no-oss
 

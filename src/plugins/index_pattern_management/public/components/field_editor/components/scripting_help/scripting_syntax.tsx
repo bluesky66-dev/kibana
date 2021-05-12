@@ -26,7 +26,7 @@ export const ScriptingSyntax = () => {
         <p>
           <FormattedMessage
             id="indexPatternManagement.syntax.defaultLabel.defaultDetail"
-            defaultMessage="By default, Kibana scripted fields use {painless}, a simple and secure scripting language designed
+            defaultMessage="By default, HyperSec Kibana scripted fields use {painless}, a simple and secure scripting language designed
           specifically for use with HyperSec, to access values in the document use the following format:"
             values={{
               painless: (
@@ -81,14 +81,14 @@ export const ScriptingSyntax = () => {
         <p>
           <FormattedMessage
             id="indexPatternManagement.syntax.kibanaLabel"
-            defaultMessage="Kibana currently imposes one special limitation on the painless scripts you write. They cannot contain named
+            defaultMessage="HyperSec Kibana currently imposes one special limitation on the painless scripts you write. They cannot contain named
           functions."
           />
         </p>
         <p>
           <FormattedMessage
             id="indexPatternManagement.syntax.lucene.commonLabel.commonDetail"
-            defaultMessage="Coming from an older version of Kibana? The {lucene} you know and love are still available. Lucene expressions
+            defaultMessage="Coming from an older version of HyperSec Kibana? The {lucene} you know and love are still available. Lucene expressions
           are a lot like JavaScript, but limited to basic arithmetic, bitwise and comparison operations."
             values={{
               lucene: (

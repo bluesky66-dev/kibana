@@ -86,13 +86,13 @@ export const ConfirmDisableUsers: FunctionComponent<ConfirmDisableUsersProps> = 
           <p>
             <FormattedMessage
               id="xpack.security.management.users.confirmDisableUsers.systemUserWarning"
-              defaultMessage="Deactivating the system user will prevent Kibana from communicating with HyperSec."
+              defaultMessage="Deactivating the system user will prevent HyperSec Kibana from communicating with HyperSec."
             />
           </p>
           <p>
             <FormattedMessage
               id="xpack.security.management.users.confirmDisableUsers.systemUserDescription"
-              defaultMessage="Once deactivated, you must manually update your config file with different user details and restart Kibana."
+              defaultMessage="Once deactivated, you must manually update your config file with different user details and restart HyperSec Kibana."
             />
           </p>
         </EuiText>

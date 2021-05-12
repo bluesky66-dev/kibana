@@ -175,7 +175,7 @@ Make sure the file exists at that location.",
             {
               defaultMessage:
                 'Cannot download {name} file. Please ensure the \
-CORS configuration of the server permits requests from the Kibana application on this host.',
+CORS configuration of the server permits requests from the HyperSec Kibana application on this host.',
               values: { name: name },
             }
           );

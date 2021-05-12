@@ -36,7 +36,7 @@ export default new Datasource('quandl', {
   help: i18n.translate('timelion.help.functions.quandlHelpText', {
     defaultMessage: `
     [experimental]
-    Pull data from quandl.com using the quandl code. Set {quandlKeyField} to your free API key in Kibana's
+    Pull data from quandl.com using the quandl code. Set {quandlKeyField} to your free API key in HyperSec Kibana's
     Advanced Settings. The API has a really low rate limit without a key.`,
     values: {
       quandlKeyField: '"timelion:quandl.key"',

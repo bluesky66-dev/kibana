@@ -27,7 +27,7 @@ export function injectActionParams({
       kibanaFooterLink: {
         path: `/app/management/insightsAndAlerting/triggersActions/alert/${alertId}`,
         text: i18n.translate('xpack.alerts.injectActionParams.email.kibanaFooterLinkText', {
-          defaultMessage: 'View alert in Kibana',
+          defaultMessage: 'View alert in HyperSec Kibana',
         }),
       },
     };

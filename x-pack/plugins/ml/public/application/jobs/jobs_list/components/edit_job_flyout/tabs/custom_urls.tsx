@@ -94,7 +94,7 @@ class CustomUrlsUI extends Component<CustomUrlsProps, CustomUrlsState> {
           i18n.translate(
             'xpack.ml.jobsList.editJobFlyout.customUrls.loadSavedDashboardsErrorNotificationMessage',
             {
-              defaultMessage: 'An error occurred loading the list of saved Kibana dashboards',
+              defaultMessage: 'An error occurred loading the list of saved HyperSec Kibana dashboards',
             }
           )
         );

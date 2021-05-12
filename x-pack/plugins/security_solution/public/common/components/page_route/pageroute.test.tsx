@@ -10,7 +10,7 @@ import { PageRoute } from './pageroute';
 import { mount, ReactWrapper } from 'enzyme';
 
 describe('pageroute', () => {
-  const documentTitle = 'Kibana';
+  const documentTitle = 'HyperSec Kibana';
 
   const fakeComponent = () => <div className="fakeComponent">{'fake component'}</div>;
   let wrapper: ReactWrapper;
@@ -27,6 +27,6 @@ describe('pageroute', () => {
   });
 
   test('updates page title correctly', () => {
-    expect(document.title).toEqual('test - Kibana');
+    expect(document.title).toEqual('test - HyperSec Kibana');
   });
 });

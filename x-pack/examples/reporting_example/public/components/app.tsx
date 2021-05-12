@@ -39,7 +39,7 @@ interface ReportingExampleAppDeps {
   reporting: ReportingStart;
 }
 
-const sourceLogos = ['Beats', 'Cloud', 'Logging', 'Kibana'];
+const sourceLogos = ['Beats', 'Cloud', 'Logging', 'HyperSec Kibana'];
 
 export const ReportingExampleApp = ({
   basename,

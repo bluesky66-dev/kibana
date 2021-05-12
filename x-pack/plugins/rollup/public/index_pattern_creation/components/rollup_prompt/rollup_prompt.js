@@ -17,7 +17,7 @@ export const RollupPrompt = () => (
         'xpack.rollupJobs.editRollupIndexPattern.rollupPrompt.betaCalloutParagraph1Text',
         {
           defaultMessage:
-            "Kibana's support for rollup index patterns is in beta. You might encounter issues using " +
+            "HyperSec Kibana's support for rollup index patterns is in beta. You might encounter issues using " +
             'these patterns in saved searches, visualizations, and dashboards. They are not supported in ' +
             'some advanced features, such as Timelion, and Machine Learning.',
         }

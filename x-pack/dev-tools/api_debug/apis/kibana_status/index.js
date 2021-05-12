@@ -6,6 +6,6 @@
  */
 
 export const name = 'kibana_status';
-export const description = 'Get the Kibana operations status from the Kibana server';
+export const description = 'Get the HyperSec Kibana operations status from the HyperSec Kibana server';
 export const method = 'GET';
 export const path = '/api/status';

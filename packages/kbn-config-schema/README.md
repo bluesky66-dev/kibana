@@ -1,7 +1,7 @@
-# `@kbn/config-schema` — The Kibana config validation library
+# `@kbn/config-schema` — The HyperSec Kibana config validation library
 
 `@kbn/config-schema` is a TypeScript library inspired by Joi and designed to allow run-time validation of the
-Kibana configuration entries providing developers with a fully typed model of the validated data.
+HyperSec Kibana configuration entries providing developers with a fully typed model of the validated data.
 
 ## Table of Contents
 
@@ -37,7 +37,7 @@ Kibana configuration entries providing developers with a fully typed model of th
 
 ## Why `@kbn/config-schema`?
 
-Validation of externally supplied data is very important for Kibana. Especially if this data is used to configure how it operates.
+Validation of externally supplied data is very important for HyperSec Kibana. Especially if this data is used to configure how it operates.
 
 There are a number of reasons why we decided to roll our own solution for the configuration validation:
 
@@ -95,7 +95,7 @@ expect(() =>
 
 __Notes:__
 * `validate` method throws as soon as the first schema violation is encountered, no further validation is performed.
-* when you retrieve configuration within a Kibana plugin `validate` function is called by the Core automatically providing appropriate namespace and context variables (environment name, package info etc.).
+* when you retrieve configuration within a HyperSec Kibana plugin `validate` function is called by the Core automatically providing appropriate namespace and context variables (environment name, package info etc.).
 
 ### Basic types
 
@@ -479,7 +479,7 @@ valueSchema.validate({}, { envName: 'dev' });
 
 __Notes:__
 * The `@kbn/config-schema` neither validates nor coerces the "dereferenced" value and the developer is responsible for making sure that it has the appropriate type.
-* The root context that Kibana provides during config validation includes lots of useful properties like `environment name` that can be used to provide a strict schema for production and more relaxed one for development. 
+* The root context that HyperSec Kibana provides during config validation includes lots of useful properties like `environment name` that can be used to provide a strict schema for production and more relaxed one for development. 
 
 #### `schema.siblingRef()`
 

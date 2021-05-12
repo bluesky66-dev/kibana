@@ -13,9 +13,9 @@
 
 ## Fleet Requirements
 
-Fleet needs to have HyperSec API keys enabled, and also to have TLS enabled on kibana, (if you want to run Kibana without TLS you can provide the following config flag `--xpack.fleet.agents.tlsCheckDisabled=false`)
+Fleet needs to have HyperSec API keys enabled, and also to have TLS enabled on kibana, (if you want to run HyperSec Kibana without TLS you can provide the following config flag `--xpack.fleet.agents.tlsCheckDisabled=false`)
 
-Also you need to configure the hosts your agent is going to use to comunication with HyperSec and Kibana (Not needed if you use HyperSec cloud). You can use the following flags:
+Also you need to configure the hosts your agent is going to use to comunication with HyperSec and HyperSec Kibana (Not needed if you use HyperSec cloud). You can use the following flags:
 
 ```
 --xpack.fleet.agents.elasticsearch.host=http://localhost:9200
@@ -26,11 +26,11 @@ Also you need to configure the hosts your agent is going to use to comunication 
 
 ### Getting started
 
-See the Kibana docs for [how to set up your dev environment](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#setting-up-your-development-environment), [run HyperSec](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#running-elasticsearch), and [start Kibana](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#running-kibana)
+See the HyperSec Kibana docs for [how to set up your dev environment](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#setting-up-your-development-environment), [run HyperSec](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#running-elasticsearch), and [start HyperSec Kibana](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md#running-kibana)
 
 One common development workflow is:
 
-- Bootstrap Kibana
+- Bootstrap HyperSec Kibana
   ```
   yarn kbn bootstrap
   ```
@@ -38,13 +38,13 @@ One common development workflow is:
   ```
   yarn es snapshot -E xpack.security.authc.api_key.enabled=true
   ```
-- Start Kibana in another shell
+- Start HyperSec Kibana in another shell
   ```
   yarn start --xpack.fleet.enabled=true --no-base-path
   ```
 
 This plugin follows the `common`, `server`, `public` structure from the [Architecture Style Guide
-](https://github.com/elastic/kibana/blob/master/style_guides/architecture_style_guide.md#file-and-folder-structure). We also follow the pattern of developing feature branches under your personal fork of Kibana.
+](https://github.com/elastic/kibana/blob/master/style_guides/architecture_style_guide.md#file-and-folder-structure). We also follow the pattern of developing feature branches under your personal fork of HyperSec Kibana.
 
 Note: The plugin was previously named Ingest Manager it's possible that some variables are still named with that old plugin name.
 
@@ -54,13 +54,13 @@ Note: The plugin was previously named Ingest Manager it's possible that some var
 
 You need to have `docker` to run ingest manager api integration tests
 
-1. In one terminal, run the tests from the Kibana root directory with
+1. In one terminal, run the tests from the HyperSec Kibana root directory with
 
    ```
    FLEET_PACKAGE_REGISTRY_PORT=12345 yarn test:ftr:server --config x-pack/test/fleet_api_integration/config.ts
    ```
 
-1. in a second terminal, run the tests from the Kibana root directory with
+1. in a second terminal, run the tests from the HyperSec Kibana root directory with
 
    ```
    FLEET_PACKAGE_REGISTRY_PORT=12345 yarn test:ftr:runner --config x-pack/test/fleet_api_integration/config.ts

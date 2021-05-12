@@ -135,7 +135,7 @@ describe('Reporting server createConfig$', () => {
     `);
     expect((mockLogger.warn as any).mock.calls.length).toBe(1);
     expect((mockLogger.warn as any).mock.calls[0]).toMatchObject([
-      `Found 'server.host: \"0\"' in Kibana configuration. This is incompatible with Reporting. To enable Reporting to work, 'xpack.reporting.kibanaServer.hostname: 0.0.0.0' is being automatically ` +
+      `Found 'server.host: \"0\"' in HyperSec Kibana configuration. This is incompatible with Reporting. To enable Reporting to work, 'xpack.reporting.kibanaServer.hostname: 0.0.0.0' is being automatically ` +
         `to the configuration. You can change the setting to 'server.host: 0.0.0.0' or add 'xpack.reporting.kibanaServer.hostname: 0.0.0.0' in kibana.yml to prevent this message.`,
     ]);
   });

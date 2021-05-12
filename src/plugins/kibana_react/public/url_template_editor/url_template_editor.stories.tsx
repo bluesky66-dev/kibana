@@ -35,8 +35,8 @@ storiesOf('UrlTemplateEditor', module)
         },
         {
           label: 'kibanaUrl',
-          title: 'Kibana deployment URL.',
-          documentation: 'Kibana URL is the link to homepage of Kibana deployment.',
+          title: 'HyperSec Kibana deployment URL.',
+          documentation: 'HyperSec Kibana URL is the link to homepage of HyperSec Kibana deployment.',
         },
       ]}
       onChange={action('onChange')}

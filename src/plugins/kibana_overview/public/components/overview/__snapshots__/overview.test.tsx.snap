@@ -74,7 +74,7 @@ exports[`Overview render 1`] = `
     iconType="logoKibana"
     title={
       <FormattedMessage
-        defaultMessage="Kibana"
+        defaultMessage="HyperSec Kibana"
         id="kibanaOverview.header.title"
         values={Object {}}
       />
@@ -205,7 +205,7 @@ exports[`Overview render 1`] = `
                   }
                   image="/plugins/kibanaOverview/assets/solutions_kibana_light_2x.png"
                   onClick={[Function]}
-                  title="Kibana"
+                  title="HyperSec Kibana"
                   titleElement="h3"
                   titleSize="xs"
                 />
@@ -500,7 +500,7 @@ exports[`Overview without features 1`] = `
     iconType="logoKibana"
     title={
       <FormattedMessage
-        defaultMessage="Kibana"
+        defaultMessage="HyperSec Kibana"
         id="kibanaOverview.header.title"
         values={Object {}}
       />
@@ -631,7 +631,7 @@ exports[`Overview without features 1`] = `
                   }
                   image="/plugins/kibanaOverview/assets/solutions_kibana_light_2x.png"
                   onClick={[Function]}
-                  title="Kibana"
+                  title="HyperSec Kibana"
                   titleElement="h3"
                   titleSize="xs"
                 />
@@ -926,7 +926,7 @@ exports[`Overview without solutions 1`] = `
     iconType="logoKibana"
     title={
       <FormattedMessage
-        defaultMessage="Kibana"
+        defaultMessage="HyperSec Kibana"
         id="kibanaOverview.header.title"
         values={Object {}}
       />

@@ -13,7 +13,7 @@ import { PANEL_ID } from '@storybook/addon-actions';
 addons.setConfig({
   theme: create({
     base: 'light',
-    brandTitle: 'Kibana Presentation Utility Storybook',
+    brandTitle: 'HyperSec Kibana Presentation Utility Storybook',
     brandUrl: 'https://github.com/elastic/kibana/tree/master/src/plugins/presentation_util',
   }),
   showPanel: true.valueOf,

@@ -1,6 +1,6 @@
 # `kibana-react`
 
-Tools for building React applications in Kibana.
+Tools for building React applications in HyperSec Kibana.
 
 ## Context
 
@@ -210,7 +210,7 @@ const Demo = () => {
 
 Utility component that will intercept click events on children anchor (`<a>`) elements to call
 `application.navigateToUrl` with the link's href. This will trigger SPA friendly navigation
-when the link points to a valid Kibana app.
+when the link points to a valid HyperSec Kibana app.
 
 ```tsx
 <RedirectAppLinks application={application}>

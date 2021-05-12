@@ -159,7 +159,7 @@ export default function jiraTest({ getService }: FtrProviderContext) {
               statusCode: 400,
               error: 'Bad Request',
               message:
-                'error validating action type config: error configuring connector action: target url "http://jira.mynonexistent.com" is not added to the Kibana config xpack.actions.allowedHosts',
+                'error validating action type config: error configuring connector action: target url "http://jira.mynonexistent.com" is not added to the HyperSec Kibana config xpack.actions.allowedHosts',
             });
           });
       });

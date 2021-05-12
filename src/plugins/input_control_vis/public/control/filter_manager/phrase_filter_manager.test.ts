@@ -184,7 +184,7 @@ describe('PhraseFilterManager', function () {
       expect(filterManager.getValueFromFilterBar()).to.eql(['ios', 'win xp']);
     });
 
-    test('should return undefined when filter value can not be extracted from Kibana filter', function () {
+    test('should return undefined when filter value can not be extracted from HyperSec Kibana filter', function () {
       filterManager.setMockFilters([
         {
           query: {

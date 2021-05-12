@@ -7972,13 +7972,13 @@ export const fieldsBeat: BeatFields = {
   },
   'kibana.log.tags': {
     category: 'kibana',
-    description: 'Kibana logging tags. ',
+    description: 'HyperSec Kibana logging tags. ',
     name: 'kibana.log.tags',
     type: 'keyword',
   },
   'kibana.log.state': {
     category: 'kibana',
-    description: 'Current state of Kibana. ',
+    description: 'Current state of HyperSec Kibana. ',
     name: 'kibana.log.state',
     type: 'keyword',
   },

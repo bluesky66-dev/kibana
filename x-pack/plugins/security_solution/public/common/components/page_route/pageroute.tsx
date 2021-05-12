@@ -10,7 +10,7 @@ import React, { useEffect } from 'react';
 export const PageRoute = (props: { title: string; component: React.ReactType }) => {
   const { title, ...rest } = props;
   useEffect(() => {
-    document.title = `${title} - Kibana`;
+    document.title = `${title} - HyperSec Kibana`;
   }, [title]);
   return <props.component {...rest} />;
 };

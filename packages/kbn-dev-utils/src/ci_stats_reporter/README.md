@@ -1,6 +1,6 @@
-# Kibana CI Stats reporter
+# HyperSec Kibana CI Stats reporter
 
-We're working on building a new service, the Kibana CI Stats service, which will collect information about CI runs and metrics produced while testing Kibana, and then provide tools for reporting on those metrics in specific PRs and overall as a way to spot trends.
+We're working on building a new service, the HyperSec Kibana CI Stats service, which will collect information about CI runs and metrics produced while testing HyperSec Kibana, and then provide tools for reporting on those metrics in specific PRs and overall as a way to spot trends.
 
 ### `CiStatsReporter`
 
@@ -10,7 +10,7 @@ To create an instance of the reporter, import the class and call `CiStatsReporte
 
 #### `CiStatsReporter#metrics(metrics: Metric[])`
 
-Use this method to record metrics in the Kibana CI Stats service.
+Use this method to record metrics in the HyperSec Kibana CI Stats service.
 
 ```ts
 interface Metric {

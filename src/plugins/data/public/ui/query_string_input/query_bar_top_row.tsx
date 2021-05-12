@@ -313,7 +313,7 @@ export default function QueryBarTopRow(props: QueryBarTopRowProps) {
               <FormattedMessage
                 id="data.query.queryBar.luceneSyntaxWarningMessage"
                 defaultMessage="It looks like you may be trying to use Lucene query syntax, although you
-               have Kibana Query Language (KQL) selected. Please review the KQL docs {link}."
+               have HyperSec Kibana Query Language (KQL) selected. Please review the KQL docs {link}."
                 values={{
                   link: (
                     <EuiLink href={kueryQuerySyntaxLink} target="_blank">

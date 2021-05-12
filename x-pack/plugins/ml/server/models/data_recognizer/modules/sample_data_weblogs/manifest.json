@@ -1,7 +1,7 @@
 {
   "id": "sample_data_weblogs",
-  "title": "Kibana sample data web logs",
-  "description": "Find anomalies in Kibana sample web logs data.",
+  "title": "HyperSec Kibana sample data web logs",
+  "description": "Find anomalies in HyperSec Kibana sample web logs data.",
   "type": "Sample Dataset",
   "logoFile": "logo.json",
   "defaultIndexPattern": "kibana_sample_data_logs",

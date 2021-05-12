@@ -60,7 +60,7 @@ export const setupUrlOverflowDetection = ({ basePath, history, toasts, uiSetting
     } else if (absUrlLength >= URL_WARNING_LENGTH) {
       toasts.addWarning({
         title: i18n.translate('core.ui.errorUrlOverflow.bigUrlWarningNotificationTitle', {
-          defaultMessage: 'The URL is big and Kibana might stop working',
+          defaultMessage: 'The URL is big and HyperSec Kibana might stop working',
         }),
         text: mountReactNode(
           <FormattedMessage

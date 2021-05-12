@@ -1120,7 +1120,7 @@ Object {
       ],
       "metric": Object {
         "app": "kibana",
-        "description": "Maximum response time for client requests to the Kibana instance.",
+        "description": "Maximum response time for client requests to the HyperSec Kibana instance.",
         "field": "kibana_stats.response_times.max",
         "format": "0.[00]",
         "hasCalculation": false,

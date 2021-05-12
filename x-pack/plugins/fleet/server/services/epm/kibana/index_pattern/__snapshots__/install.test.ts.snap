@@ -36,7 +36,7 @@ exports[`creating index patterns from yaml fields createFieldFormatMap creates c
 }
 `;
 
-exports[`creating index patterns from yaml fields createIndexPattern function creates Kibana index pattern: createIndexPattern 1`] = `
+exports[`creating index patterns from yaml fields createIndexPattern function creates HyperSec Kibana index pattern: createIndexPattern 1`] = `
 {
   "title": "logs-*",
   "timeFieldName": "@timestamp",
@@ -46,7 +46,7 @@ exports[`creating index patterns from yaml fields createIndexPattern function cr
 }
 `;
 
-exports[`creating index patterns from yaml fields createIndexPatternFields function creates Kibana index pattern fields and fieldFormatMap: createIndexPatternFields 1`] = `
+exports[`creating index patterns from yaml fields createIndexPatternFields function creates HyperSec Kibana index pattern fields and fieldFormatMap: createIndexPatternFields 1`] = `
 {
   "indexPatternFields": [
     {

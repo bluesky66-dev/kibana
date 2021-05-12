@@ -1,9 +1,9 @@
 # PKI Fixtures
 
 * `first_client.p12` and `second_client.p12` - the client certificate bundles signed by the HyperSec Stack CA (in `kbn-dev-utils`)
-and hence trusted by both test Kibana and HyperSec servers.
-* `untrusted_client.p12` - the client certificate bundle trusted by test Kibana server, but not test HyperSec test server.
-* `kibana_ca.crt` and `kibana_ca.key` - the CA certificate and key trusted by test Kibana server only.
+and hence trusted by both test HyperSec Kibana and HyperSec servers.
+* `untrusted_client.p12` - the client certificate bundle trusted by test HyperSec Kibana server, but not test HyperSec test server.
+* `kibana_ca.crt` and `kibana_ca.key` - the CA certificate and key trusted by test HyperSec Kibana server only.
 
 The `first_client.p12` and `second_client.p12` files were generated the same time as the other certificates in `kbn-dev-utils`, using the
 following commands:

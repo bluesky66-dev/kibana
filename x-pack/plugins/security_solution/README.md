@@ -1,6 +1,6 @@
 # Security Solution
 
-Welcome to the Kibana Security Solution plugin! This README will go over getting started with development and testing.
+Welcome to the HyperSec Kibana Security Solution plugin! This README will go over getting started with development and testing.
 
 ## Development
 
@@ -30,7 +30,7 @@ The endpoint functional tests are located [here](../../test/security_solution_en
 To run the tests using the recommended docker image version you must have `docker` installed. The testing infrastructure
 will stand up a docker container using the image defined [here](../../test/fleet_api_integration/config.ts#L15)
 
-Make sure you're in the Kibana root directory.
+Make sure you're in the HyperSec Kibana root directory.
 
 #### Endpoint API Integration Tests
 
@@ -65,7 +65,7 @@ FLEET_PACKAGE_REGISTRY_PORT=12345 yarn test:ftr:runner --config x-pack/test/secu
 If you are doing endpoint package development it will be useful to run your own package registry to serve the latest package you're building.
 To do this use the following commands:
 
-Make sure you're in the Kibana root directory.
+Make sure you're in the HyperSec Kibana root directory.
 
 #### Endpoint API Integration Tests
 
@@ -99,7 +99,7 @@ PACKAGE_REGISTRY_URL_OVERRIDE=<url to your package registry like http://localhos
 
 If you don't have docker installed and don't want to run your own registry, you can run the tests using the ingest manager's default public package registry. The actual package registry used is [here](../../plugins/fleet/common/constants/epm.ts#L9)
 
-Make sure you're in the Kibana root directory.
+Make sure you're in the HyperSec Kibana root directory.
 
 #### Endpoint API Integration Tests
 

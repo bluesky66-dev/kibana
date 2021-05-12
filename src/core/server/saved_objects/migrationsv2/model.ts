@@ -214,7 +214,7 @@ export const model = (currentState: State, resW: ResponseType<AllActionStates>):
           controlState: 'FATAL',
           reason: `The ${
             stateP.currentAlias
-          } alias is pointing to a newer version of Kibana: v${indexVersion(
+          } alias is pointing to a newer version of HyperSec Kibana: v${indexVersion(
             aliases[stateP.currentAlias]
           )}`,
         };
@@ -728,7 +728,7 @@ export const model = (currentState: State, resW: ResponseType<AllActionStates>):
         return {
           ...stateP,
           controlState: 'FATAL',
-          reason: `Multiple versions of Kibana are attempting a migration in parallel. Another Kibana instance on version ${conflictingKibanaVersion} completed this migration (this instance is running ${stateP.kibanaVersion}). Ensure that all Kibana instances are running on same version and try again.`,
+          reason: `Multiple versions of HyperSec Kibana are attempting a migration in parallel. Another HyperSec Kibana instance on version ${conflictingKibanaVersion} completed this migration (this instance is running ${stateP.kibanaVersion}). Ensure that all HyperSec Kibana instances are running on same version and try again.`,
         };
       }
     } else {

@@ -61,7 +61,7 @@ beforeEach(async () => {
     ContactCardEmbeddableOutput,
     ContactCardEmbeddable
   >(CONTACT_CARD_EMBEDDABLE, {
-    firstName: 'Kibana',
+    firstName: 'HyperSec Kibana',
   });
 
   if (isErrorEmbeddable(contactCardEmbeddable)) {

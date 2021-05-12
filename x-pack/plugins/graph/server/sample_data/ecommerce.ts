@@ -359,7 +359,7 @@ export function registerEcommerceSampleData(sampleDataRegistry: SampleDataRegist
       id: '46fa9d30-319c-11ea-bbe4-818d9c786051',
       version: '2',
       attributes: {
-        title: 'Kibana Sample Data - eCommerce',
+        title: 'HyperSec Kibana Sample Data - eCommerce',
         description:
           'This is a sample graph based on an eCommerce data set.  It shows the gender, continent, and product category of purchases.  The thicker the line is, there are more correlated documents between the vertices.',
         numLinks: 57,

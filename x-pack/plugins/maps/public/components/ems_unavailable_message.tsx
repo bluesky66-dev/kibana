@@ -37,6 +37,6 @@ export function getEmsUnavailableMessage(): string {
   // Not sure why.
   return i18n.translate('xpack.maps.source.ems.noAccessDescription', {
     defaultMessage:
-      'Kibana is unable to access HyperSec Maps Service. Contact your system administrator.',
+      'HyperSec Kibana is unable to access HyperSec Maps Service. Contact your system administrator.',
   });
 }

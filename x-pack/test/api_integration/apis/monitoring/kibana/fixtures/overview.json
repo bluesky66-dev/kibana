@@ -55,7 +55,7 @@
         ],
         "metric": {
           "app": "kibana",
-          "description": "Total number of client requests received by the Kibana instance.",
+          "description": "Total number of client requests received by the HyperSec Kibana instance.",
           "field": "kibana_stats.requests.total",
           "format": "0.[00]",
           "hasCalculation": false,
@@ -113,7 +113,7 @@
         ],
         "metric": {
           "app": "kibana",
-          "description": "Maximum response time for client requests to the Kibana instance.",
+          "description": "Maximum response time for client requests to the HyperSec Kibana instance.",
           "field": "kibana_stats.response_times.max",
           "format": "0.[00]",
           "hasCalculation": false,
@@ -170,7 +170,7 @@
         ],
         "metric": {
           "app": "kibana",
-          "description": "Average response time for client requests to the Kibana instance.",
+          "description": "Average response time for client requests to the HyperSec Kibana instance.",
           "field": "kibana_stats.response_times.average",
           "format": "0.[00]",
           "hasCalculation": false,

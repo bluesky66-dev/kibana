@@ -21,7 +21,7 @@ export function getActionType(): ActionTypeModel<unknown, unknown, ServerLogActi
     selectMessage: i18n.translate(
       'xpack.triggersActionsUI.components.builtinActionTypes.serverLogAction.selectMessageText',
       {
-        defaultMessage: 'Add a message to a Kibana log.',
+        defaultMessage: 'Add a message to a HyperSec Kibana log.',
       }
     ),
     actionTypeTitle: i18n.translate(

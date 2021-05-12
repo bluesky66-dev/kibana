@@ -39,7 +39,7 @@ export function formatMsg(err: Record<string, any> | string, source: string = ''
       message += i18n.translate('kibana_legacy.notify.toaster.unavailableServerErrorMessage', {
         defaultMessage:
           'An HTTP request has failed to connect. ' +
-          'Please check if the Kibana server is running and that your browser has a working connection, ' +
+          'Please check if the HyperSec Kibana server is running and that your browser has a working connection, ' +
           'or contact your system administrator.',
       });
     } else {

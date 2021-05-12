@@ -10,7 +10,7 @@
 
 	##### 2.a : Create a new template from UI and export it.
 
-	 1. Go to Security Solution app in Kibana
+	 1. Go to Security Solution app in HyperSec Kibana
 	 2. Go to timelines > templates > custom templates (a filter on the right)
 	 3. Click `Create new timeline template`
 	 4. Edit your template

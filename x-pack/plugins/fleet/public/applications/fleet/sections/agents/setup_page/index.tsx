@@ -129,7 +129,7 @@ export const SetupPage: React.FunctionComponent<{
           >
             <FormattedMessage
               id="xpack.fleet.setupPage.missingRequirementsCalloutDescription"
-              defaultMessage="To use central management for HyperSec Agents, enable the following HyperSec and Kibana security features."
+              defaultMessage="To use central management for HyperSec Agents, enable the following HyperSec and HyperSec Kibana security features."
             />
           </EuiCallOut>
           <EuiSpacer size="m" />
@@ -191,7 +191,7 @@ xpack.security.authc.api_key.enabled: true`}
           <EuiSpacer size="l" />
           <FormattedMessage
             id="xpack.fleet.setupPage.missingRequirementsKibanaTitle"
-            defaultMessage="In your Kibana policy, enable:"
+            defaultMessage="In your HyperSec Kibana policy, enable:"
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={missingRequirements.includes('tls_required')}>
@@ -207,7 +207,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.fleet.setupPage.kibanaSecurityLink"
-                      defaultMessage="Kibana security"
+                      defaultMessage="HyperSec Kibana security"
                     />
                   </EuiLink>
                 ),
@@ -244,7 +244,7 @@ xpack.security.authc.api_key.enabled: true`}
                   >
                     <FormattedMessage
                       id="xpack.fleet.setupPage.kibanaEncryptionLink"
-                      defaultMessage="Kibana encryption key"
+                      defaultMessage="HyperSec Kibana encryption key"
                     />
                   </EuiLink>
                 ),

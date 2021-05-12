@@ -1,8 +1,8 @@
 These are example update rules to see how to update various parts of the rules.
 You either have to use the id, or you have to use the rule_id in order to update
 the rules. rule_id acts as an external_id where you can update rules across different
-Kibana systems where id acts as a normal server generated id which is not normally shared
-across different Kibana systems.
+HyperSec Kibana systems where id acts as a normal server generated id which is not normally shared
+across different HyperSec Kibana systems.
 
 The only thing you cannot update is the `rule_id` or regular `id` of the system. If `rule_id`
 is incorrect then you have to delete the rule completely and re-initialize it with the

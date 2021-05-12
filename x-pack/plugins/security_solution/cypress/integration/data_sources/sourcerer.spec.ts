@@ -47,7 +47,7 @@ describe.skip('Sourcerer', () => {
       isSourcererSelection(`auditbeat-*`);
     });
 
-    it('has Kibana index patterns in the options', () => {
+    it('has HyperSec Kibana index patterns in the options', () => {
       openSourcerer();
       isSourcererOptions([`metrics-*`, `logs-*`]);
     });

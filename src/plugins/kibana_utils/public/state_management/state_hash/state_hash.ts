@@ -74,7 +74,7 @@ export function persistState<State>(state: State): string {
     'kibana_utils.stateManagement.stateHash.unableToStoreHistoryInSessionErrorMessage',
     {
       defaultMessage:
-        'Kibana is unable to store history items in your session ' +
+        'HyperSec Kibana is unable to store history items in your session ' +
         `because it is full and there don't seem to be items any items safe ` +
         'to delete.\n\n' +
         'This can usually be fixed by moving to a fresh tab, but could ' +

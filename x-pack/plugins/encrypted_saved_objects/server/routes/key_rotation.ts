@@ -45,7 +45,7 @@ export function defineKeyRotationRoutes({
       if (config.keyRotation.decryptionOnlyKeys.length === 0) {
         return response.badRequest({
           body:
-            'Kibana is not configured to support encryption key rotation. Update `kibana.yml` to include `xpack.encryptedSavedObjects.keyRotation.decryptionOnlyKeys` to rotate your encryption keys.',
+            'HyperSec Kibana is not configured to support encryption key rotation. Update `kibana.yml` to include `xpack.encryptedSavedObjects.keyRotation.decryptionOnlyKeys` to rotate your encryption keys.',
         });
       }
 

@@ -76,7 +76,7 @@ describe('Export CSV action', () => {
       ContactCardEmbeddableOutput,
       ContactCardEmbeddable
     >(CONTACT_CARD_EXPORTABLE_EMBEDDABLE, {
-      firstName: 'Kibana',
+      firstName: 'HyperSec Kibana',
     });
 
     if (isErrorEmbeddable(contactCardEmbeddable)) {
@@ -102,8 +102,8 @@ describe('Export CSV action', () => {
       | undefined
       | Record<string, { content: string; type: string }>;
     expect(result).toEqual({
-      'Hello Kibana.csv': {
-        content: `First Name,Last Name${LINE_FEED_CHARACTER}Kibana,undefined${LINE_FEED_CHARACTER}`,
+      'Hello HyperSec Kibana.csv': {
+        content: `First Name,Last Name${LINE_FEED_CHARACTER}HyperSec Kibana,undefined${LINE_FEED_CHARACTER}`,
         type: 'text/plain;charset=utf-8',
       },
     });

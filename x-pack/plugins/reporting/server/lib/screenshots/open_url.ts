@@ -32,7 +32,7 @@ export const openUrl = async (
     logger.error(err);
     throw new Error(
       i18n.translate('xpack.reporting.screencapture.couldntLoadKibana', {
-        defaultMessage: `An error occurred when trying to open the Kibana URL. You may need to increase '{configKey}'. {error}`,
+        defaultMessage: `An error occurred when trying to open the HyperSec Kibana URL. You may need to increase '{configKey}'. {error}`,
         values: { configKey: 'xpack.reporting.capture.timeouts.openUrl', error: err },
       })
     );

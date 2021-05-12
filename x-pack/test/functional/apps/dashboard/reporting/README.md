@@ -14,7 +14,7 @@ Every now and then visual changes will be made that will require the snapshots t
   node scripts/es_archiver load reporting/ecommerce --config=x-pack/test/functional/config.js
   node scripts/es_archiver load reporting/ecommerce_kibana --config=x-pack/test/functional/config.js
   ```
-2. **Generate the reports of the E-commerce dashboard in the Kibana UI.**
+2. **Generate the reports of the E-commerce dashboard in the HyperSec Kibana UI.**
    Navigate to `http://localhost:5620`, find the archived dashboard, and generate all the types of reports for which there are stored baseline images.
 3. **Download the reports, and save them into the `reports/baseline` folder.**
    Change the names of the PNG/PDF files to overwrite the stored baselines.

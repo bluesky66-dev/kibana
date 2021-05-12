@@ -6,7 +6,7 @@
  */
 
 export const name = 'telemetry';
-export const description = 'Get the clusters stats from the Kibana server';
+export const description = 'Get the clusters stats from the HyperSec Kibana server';
 export const method = 'POST';
 export const path = '/api/telemetry/v2/clusters/_stats';
 

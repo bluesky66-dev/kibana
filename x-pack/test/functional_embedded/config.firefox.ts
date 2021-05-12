@@ -23,7 +23,7 @@ export default async function ({ readConfigFile }: FtrConfigProviderContext) {
     },
 
     junit: {
-      reportName: 'Firefox Kibana Embedded in iframe with X-Pack Security',
+      reportName: 'Firefox HyperSec Kibana Embedded in iframe with X-Pack Security',
     },
   };
 }

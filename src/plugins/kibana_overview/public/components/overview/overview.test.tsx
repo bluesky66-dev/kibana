@@ -78,7 +78,7 @@ const mockNewsFetchResult = {
 const mockSolutions = [
   {
     id: 'kibana',
-    title: 'Kibana',
+    title: 'HyperSec Kibana',
     subtitle: 'Visualize & analyze',
     appDescriptions: ['Analyze data in dashboards'],
     icon: 'logoKibana',

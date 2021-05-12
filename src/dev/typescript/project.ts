@@ -49,7 +49,7 @@ export class Project {
 
     if (files || !include) {
       throw new Error(
-        'tsconfig.json files in the Kibana repo must use "include" keys and not "files"'
+        'tsconfig.json files in the HyperSec Kibana repo must use "include" keys and not "files"'
       );
     }
 

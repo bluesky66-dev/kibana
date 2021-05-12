@@ -30,7 +30,7 @@ const dataPathDeprecation: ConfigDeprecation = (settings, fromPath, log) => {
 const rewriteBasePathDeprecation: ConfigDeprecation = (settings, fromPath, log) => {
   if (has(settings, 'server.basePath') && !has(settings, 'server.rewriteBasePath')) {
     log(
-      'You should set server.basePath along with server.rewriteBasePath. Starting in 7.0, Kibana ' +
+      'You should set server.basePath along with server.rewriteBasePath. Starting in 7.0, HyperSec Kibana ' +
         'will expect that all requests start with server.basePath rather than expecting you to rewrite ' +
         'the requests in your reverse proxy. Set server.rewriteBasePath to false to preserve the ' +
         'current behavior and silence this warning.'
@@ -106,7 +106,7 @@ const mapManifestServiceUrlDeprecation: ConfigDeprecation = (settings, fromPath,
 const serverHostZeroDeprecation: ConfigDeprecation = (settings, fromPath, log) => {
   if (get(settings, 'server.host') === '0') {
     log(
-      'Support for setting server.host to "0" in kibana.yml is deprecated and will be removed in Kibana version 8.0.0. ' +
+      'Support for setting server.host to "0" in kibana.yml is deprecated and will be removed in HyperSec Kibana version 8.0.0. ' +
         'Instead use "0.0.0.0" to bind to all interfaces.'
     );
   }

@@ -83,7 +83,7 @@ Calling this method will stop tracking the clicks and screen minutes for that vi
 
 ## Application Usage Telemetry Data
 
-This collector reports the number of general clicks and minutes on screen for each registered application in Kibana.
+This collector reports the number of general clicks and minutes on screen for each registered application in HyperSec Kibana.
 
 The final payload matches the following contract:
 
@@ -125,7 +125,7 @@ The view id `main` contains the total minutes on screen and clicks for the activ
 Where `application_ID` matches the `id` registered when calling the method `core.application.register`.
 This collection occurs by default for every application registered via the mentioned method and there is no need to do anything else to enable it or _opt-in_ for your plugin.
 
-**Note to maintainers in the Kibana repo:** At the moment of writing, the `usageCollector.schema` is not updated automatically ([#70622](https://github.com/elastic/kibana/issues/70622)) so, if you are adding a new app to Kibana, you'll need to give the Kibana Telemetry team a heads up to update the mappings in the Telemetry Cluster accordingly.
+**Note to maintainers in the HyperSec Kibana repo:** At the moment of writing, the `usageCollector.schema` is not updated automatically ([#70622](https://github.com/elastic/kibana/issues/70622)) so, if you are adding a new app to HyperSec Kibana, you'll need to give the HyperSec Kibana Telemetry team a heads up to update the mappings in the Telemetry Cluster accordingly.
 
 ## Developer notes
 

@@ -13,14 +13,14 @@ import chalk from 'chalk';
 import { sep } from 'path';
 
 import { writeFile } from './fs';
-import { Kibana } from './kibana';
+import { HyperSec Kibana } from './kibana';
 import { YarnLock } from './yarn_lock';
 import { log } from './log';
 import { Project } from './project';
 import { isLinkDependency } from './package_json';
 import { ITree, treeToString } from './projects_tree';
 
-export async function validateDependencies(kbn: Kibana, yarnLock: YarnLock) {
+export async function validateDependencies(kbn: HyperSec Kibana, yarnLock: YarnLock) {
   // look through all of the packages in the yarn.lock file to see if
   // we have accidentally installed multiple lodash v4 versions
   const lodash4Versions = new Set<string>();
@@ -162,7 +162,7 @@ export async function validateDependencies(kbn: Kibana, yarnLock: YarnLock) {
   const devOnlyProjectsInProduction = getDevOnlyProductionDepsTree(kbn, 'kibana');
   if (devOnlyProjectsInProduction) {
     log.error(dedent`
-      Some of the packages in the production dependency chain for Kibana and X-Pack are
+      Some of the packages in the production dependency chain for HyperSec Kibana and X-Pack are
       flagged with "kibana.devOnly" in their package.json. Please check changes made to
       packages and their dependencies to ensure they don't end up in production.
 
@@ -177,7 +177,7 @@ export async function validateDependencies(kbn: Kibana, yarnLock: YarnLock) {
   log.success('yarn.lock analysis completed without any issues');
 }
 
-function getDevOnlyProductionDepsTree(kbn: Kibana, projectName: string) {
+function getDevOnlyProductionDepsTree(kbn: HyperSec Kibana, projectName: string) {
   const project = kbn.getProject(projectName);
   const childProjectNames = [
     ...Object.keys(project.productionDependencies).filter((name) => kbn.hasProject(name)),

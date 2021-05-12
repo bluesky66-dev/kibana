@@ -35,7 +35,7 @@ export function handleKibanaStats(
   response?: KibanaUsageStats
 ) {
   if (!response) {
-    logger.warn('No Kibana stats returned from usage collectors');
+    logger.warn('No HyperSec Kibana stats returned from usage collectors');
     return;
   }
   const { kibana, kibana_stats: kibanaStats, ...plugins } = response;

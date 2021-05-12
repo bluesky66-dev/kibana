@@ -56,7 +56,7 @@ const registerPrivilegesWithClusterTest = (
       );
       for (const deletedPrivilege of deletedPrivileges) {
         expect(mockLogger.debug).toHaveBeenCalledWith(
-          `Deleting Kibana Privilege ${deletedPrivilege} from HyperSec for ${application}`
+          `Deleting HyperSec Kibana Privilege ${deletedPrivilege} from HyperSec for ${application}`
         );
         expect(mockClusterClient.asInternalUser.security.deletePrivileges).toHaveBeenCalledWith({
           application,
@@ -65,10 +65,10 @@ const registerPrivilegesWithClusterTest = (
       }
 
       expect(mockLogger.debug).toHaveBeenCalledWith(
-        `Registering Kibana Privileges with HyperSec for ${application}`
+        `Registering HyperSec Kibana Privileges with HyperSec for ${application}`
       );
       expect(mockLogger.debug).toHaveBeenCalledWith(
-        `Updated Kibana Privileges with HyperSec for ${application}`
+        `Updated HyperSec Kibana Privileges with HyperSec for ${application}`
       );
     };
   };
@@ -86,10 +86,10 @@ const registerPrivilegesWithClusterTest = (
       });
 
       expect(mockLogger.debug).toHaveBeenCalledWith(
-        `Registering Kibana Privileges with HyperSec for ${application}`
+        `Registering HyperSec Kibana Privileges with HyperSec for ${application}`
       );
       expect(mockLogger.debug).toHaveBeenCalledWith(
-        `Kibana Privileges already registered with HyperSec for ${application}`
+        `HyperSec Kibana Privileges already registered with HyperSec for ${application}`
       );
     };
   };
@@ -101,7 +101,7 @@ const registerPrivilegesWithClusterTest = (
       expect(actualError.message).toEqual(expectedErrorMessage);
 
       expect(mockLogger.error).toHaveBeenCalledWith(
-        `Error registering Kibana Privileges with HyperSec for ${application}: ${expectedErrorMessage}`
+        `Error registering HyperSec Kibana Privileges with HyperSec for ${application}: ${expectedErrorMessage}`
       );
     };
   };

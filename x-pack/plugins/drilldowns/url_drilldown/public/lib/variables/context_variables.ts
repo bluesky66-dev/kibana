@@ -139,7 +139,7 @@ const variableDescriptions: Record<string, undefined | VariableDescription> = {
       defaultMessage: 'Panel filters.',
     }),
     documentation: i18n.translate('xpack.urlDrilldown.context.panel.filters.documentation', {
-      defaultMessage: 'List of Kibana filters applied to a panel.',
+      defaultMessage: 'List of HyperSec Kibana filters applied to a panel.',
     }),
   },
   'query.query': {

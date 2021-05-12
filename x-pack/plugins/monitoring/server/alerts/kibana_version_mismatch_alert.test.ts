@@ -39,12 +39,12 @@ describe('KibanaVersionMismatchAlert', () => {
   it('should have defaults', () => {
     const alert = new KibanaVersionMismatchAlert();
     expect(alert.alertOptions.id).toBe(ALERT_KIBANA_VERSION_MISMATCH);
-    expect(alert.alertOptions.name).toBe('Kibana version mismatch');
+    expect(alert.alertOptions.name).toBe('HyperSec Kibana version mismatch');
     expect(alert.alertOptions.throttle).toBe('1d');
     expect(alert.alertOptions.actionVariables).toStrictEqual([
       {
         name: 'versionList',
-        description: 'The versions of Kibana running in this cluster.',
+        description: 'The versions of HyperSec Kibana running in this cluster.',
       },
       {
         name: 'clusterName',
@@ -140,7 +140,7 @@ describe('KibanaVersionMismatchAlert', () => {
             ui: {
               isFiring: true,
               message: {
-                text: 'Multiple versions of Kibana (8.0.0, 7.2.1) running in this cluster.',
+                text: 'Multiple versions of HyperSec Kibana (8.0.0, 7.2.1) running in this cluster.',
               },
               severity: 'warning',
               triggeredMS: 1,
@@ -152,9 +152,9 @@ describe('KibanaVersionMismatchAlert', () => {
       expect(scheduleActions).toHaveBeenCalledWith('default', {
         action: `[View instances](UNIT_TEST_URL/app/monitoring#/kibana/instances?_g=(cluster_uuid:${clusterUuid}))`,
         actionPlain: 'Verify you have the same version across all instances.',
-        internalFullMessage: `Kibana version mismatch alert is firing for testCluster. Kibana is running 8.0.0, 7.2.1. [View instances](UNIT_TEST_URL/app/monitoring#/kibana/instances?_g=(cluster_uuid:${clusterUuid}))`,
+        internalFullMessage: `HyperSec Kibana version mismatch alert is firing for testCluster. HyperSec Kibana is running 8.0.0, 7.2.1. [View instances](UNIT_TEST_URL/app/monitoring#/kibana/instances?_g=(cluster_uuid:${clusterUuid}))`,
         internalShortMessage:
-          'Kibana version mismatch alert is firing for testCluster. Verify you have the same version across all instances.',
+          'HyperSec Kibana version mismatch alert is firing for testCluster. Verify you have the same version across all instances.',
         versionList: ['8.0.0', '7.2.1'],
         clusterName,
         state: 'firing',

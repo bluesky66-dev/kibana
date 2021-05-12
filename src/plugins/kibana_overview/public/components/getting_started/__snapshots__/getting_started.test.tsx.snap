@@ -19,7 +19,7 @@ exports[`GettingStarted dark mode on 1`] = `
             id="kbnOverviewGettingStarted__title"
           >
             <FormattedMessage
-              defaultMessage="Getting started with Kibana"
+              defaultMessage="Getting started with HyperSec Kibana"
               id="kibanaOverview.gettingStarted.title"
               values={Object {}}
             />
@@ -31,7 +31,7 @@ exports[`GettingStarted dark mode on 1`] = `
         <EuiText>
           <p>
             <FormattedMessage
-              defaultMessage="Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
+              defaultMessage="HyperSec Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
               id="kibanaOverview.gettingStarted.description"
               values={Object {}}
             />
@@ -187,7 +187,7 @@ exports[`GettingStarted dark mode on 1`] = `
       className="kbnOverviewGettingStarted__graphic"
     >
       <EuiImage
-        alt="Kibana visualizations illustration"
+        alt="HyperSec Kibana visualizations illustration"
         url="/plugins/kibanaOverview/assets/kibana_montage_dark.svg"
       />
     </EuiFlexItem>
@@ -214,7 +214,7 @@ exports[`GettingStarted render 1`] = `
             id="kbnOverviewGettingStarted__title"
           >
             <FormattedMessage
-              defaultMessage="Getting started with Kibana"
+              defaultMessage="Getting started with HyperSec Kibana"
               id="kibanaOverview.gettingStarted.title"
               values={Object {}}
             />
@@ -226,7 +226,7 @@ exports[`GettingStarted render 1`] = `
         <EuiText>
           <p>
             <FormattedMessage
-              defaultMessage="Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
+              defaultMessage="HyperSec Kibana empowers you to visualize your data, your way.  Start with one question, and see where the answer leads you."
               id="kibanaOverview.gettingStarted.description"
               values={Object {}}
             />
@@ -382,7 +382,7 @@ exports[`GettingStarted render 1`] = `
       className="kbnOverviewGettingStarted__graphic"
     >
       <EuiImage
-        alt="Kibana visualizations illustration"
+        alt="HyperSec Kibana visualizations illustration"
         url="/plugins/kibanaOverview/assets/kibana_montage_light.svg"
       />
     </EuiFlexItem>

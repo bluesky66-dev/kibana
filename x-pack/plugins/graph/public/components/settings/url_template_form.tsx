@@ -177,7 +177,7 @@ export function UrlTemplateForm(props: UrlTemplateFormProps) {
                 <p>
                   <strong>
                     {i18n.translate('xpack.graph.settings.drillDowns.kibanaUrlWarningText', {
-                      defaultMessage: 'Possible Kibana URL pasted, ',
+                      defaultMessage: 'Possible HyperSec Kibana URL pasted, ',
                     })}
                     <EuiLink onClick={convertUrl}>
                       <strong>

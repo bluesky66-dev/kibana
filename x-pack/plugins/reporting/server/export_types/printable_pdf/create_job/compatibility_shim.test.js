@@ -131,7 +131,7 @@ test(`logs warning if title can not be provided`, async () => {
   expect(mockLogger.warn.mock.calls.length).toBe(1);
   expect(mockLogger.warn.mock.calls[0][0]).toEqual(
     `A title parameter should be provided with the job generation request. Please ` +
-      `use Kibana to regenerate your POST URL to have a title included in the PDF.`
+      `use HyperSec Kibana to regenerate your POST URL to have a title included in the PDF.`
   );
 });
 

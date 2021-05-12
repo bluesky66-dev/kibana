@@ -16,7 +16,7 @@ import { runOptimizer, OptimizerConfig, logOptimizerState } from '@kbn/optimizer
 import { Task, deleteAll, write, read } from '../lib';
 
 export const BuildKibanaPlatformPlugins: Task = {
-  description: 'Building distributable versions of Kibana platform plugins',
+  description: 'Building distributable versions of HyperSec Kibana platform plugins',
   async run(buildConfig, log, build) {
     const config = OptimizerConfig.create({
       repoRoot: REPO_ROOT,

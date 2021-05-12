@@ -76,13 +76,13 @@ describe('helpers', () => {
   describe('getNewsFeedUrl', () => {
     const getKibanaVersion = () => '8.0.0';
 
-    test('it combines the (default) base URL from settings and the Kibana version to return the expected URL', () => {
+    test('it combines the (default) base URL from settings and the HyperSec Kibana version to return the expected URL', () => {
       expect(
         getNewsFeedUrl({ newsFeedUrlSetting: NEWS_FEED_URL_SETTING_DEFAULT, getKibanaVersion })
       ).toEqual('https://feeds.elastic.co/security-solution/v8.0.0.json');
     });
 
-    test('it combines a URL with extra whitespace and the Kibana version to return the expected URL', () => {
+    test('it combines a URL with extra whitespace and the HyperSec Kibana version to return the expected URL', () => {
       const withExtraWhitespace = `   ${NEWS_FEED_URL_SETTING_DEFAULT}   `;
 
       expect(getNewsFeedUrl({ newsFeedUrlSetting: withExtraWhitespace, getKibanaVersion })).toEqual(
@@ -90,7 +90,7 @@ describe('helpers', () => {
       );
     });
 
-    test('it combines a URL with a trailing slash and the Kibana version to return the expected URL', () => {
+    test('it combines a URL with a trailing slash and the HyperSec Kibana version to return the expected URL', () => {
       const withTrailingSlash = `${NEWS_FEED_URL_SETTING_DEFAULT}/`;
 
       expect(getNewsFeedUrl({ newsFeedUrlSetting: withTrailingSlash, getKibanaVersion })).toEqual(
@@ -98,7 +98,7 @@ describe('helpers', () => {
       );
     });
 
-    test('it combines a URL with a trailing slash plus whitespace and the Kibana version to return the expected URL', () => {
+    test('it combines a URL with a trailing slash plus whitespace and the HyperSec Kibana version to return the expected URL', () => {
       const withTrailingSlashPlusWhitespace = `   ${NEWS_FEED_URL_SETTING_DEFAULT}/   `;
 
       expect(
@@ -106,7 +106,7 @@ describe('helpers', () => {
       ).toEqual('https://feeds.elastic.co/security-solution/v8.0.0.json');
     });
 
-    test('it combines a URL and a Kibana version with a `-SNAPSHOT` to return the expected URL', () => {
+    test('it combines a URL and a HyperSec Kibana version with a `-SNAPSHOT` to return the expected URL', () => {
       const getKibanaVersionWithSnapshot = () => '8.0.0-SNAPSHOT';
 
       expect(

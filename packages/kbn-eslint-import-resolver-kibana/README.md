@@ -1,10 +1,10 @@
 # @kbn/eslint-import-resolver-kibana
 
-Resolver for Kibana imports, meant to be used with [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
+Resolver for HyperSec Kibana imports, meant to be used with [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).
 
 ## Installation
 
-To install this utility use `yarn` to link to the package from the Kibana project:
+To install this utility use `yarn` to link to the package from the HyperSec Kibana project:
 
 ```sh
 yarn add --dev link:../../kibana/packages/kbn-eslint-import-resolver-kibana
@@ -27,9 +27,9 @@ settings:
 Property | Default | Description
 -------- | ------- | -----------
 rootPackageName | `null` | The `"name"` property of the root `package.json` file. If your project has multiple `package.json` files then specify this setting to tell the resolver which `package.json` file sits at the root of your project.
-pluginPaths | `[]` if `rootPackageName` is set, otherwise `[.]` | Array of relative paths which contain a Kibana plugin. Plugins must contain a `package.json` file to be valid.
-pluginDirs | `[]` | Array of relative paths pointing to directories which contain Kibana plugins. Plugins must contain a `package.json` file to be valid.
-pluginMap | `{}` | A map of plugin ids to relative paths, explicitly pointing to the location where Kibana should map `plugin/{pluginId}` import statements. Directories do not need to contain a `package.json` file to work.
+pluginPaths | `[]` if `rootPackageName` is set, otherwise `[.]` | Array of relative paths which contain a HyperSec Kibana plugin. Plugins must contain a `package.json` file to be valid.
+pluginDirs | `[]` | Array of relative paths pointing to directories which contain HyperSec Kibana plugins. Plugins must contain a `package.json` file to be valid.
+pluginMap | `{}` | A map of plugin ids to relative paths, explicitly pointing to the location where HyperSec Kibana should map `plugin/{pluginId}` import statements. Directories do not need to contain a `package.json` file to work.
 
 ## Settings Usage
 To specify additional config add a `:` after the resolver name and specify the argument as key-value pairs:

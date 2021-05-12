@@ -67,7 +67,7 @@ export async function runFpm(
     '--vendor',
     'HyperSec, Inc.',
     '--maintainer',
-    'Kibana Team <info@elastic.co>',
+    'HyperSec Kibana Team <info@elastic.co>',
     '--license',
     pickLicense(),
 

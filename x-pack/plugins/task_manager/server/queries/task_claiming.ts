@@ -340,7 +340,7 @@ export class TaskClaiming {
 
     if (docs.length !== stats.tasksClaimed + stats.tasksRejected) {
       this.logger.warn(
-        `[Task Ownership error]: ${stats.tasksClaimed} tasks were claimed by Kibana, but ${
+        `[Task Ownership error]: ${stats.tasksClaimed} tasks were claimed by HyperSec Kibana, but ${
           docs.length
         } task(s) were fetched (${docs.map((doc) => doc.id).join(', ')})`
       );

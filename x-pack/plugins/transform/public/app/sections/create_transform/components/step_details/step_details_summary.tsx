@@ -36,7 +36,7 @@ export const StepDetailsSummary: FC<StepDetailsExposedState> = React.memo((props
 
   const destinationIndexHelpText = createIndexPattern
     ? i18n.translate('xpack.transform.stepDetailsSummary.createIndexPatternMessage', {
-        defaultMessage: 'A Kibana index pattern will be created for this transform.',
+        defaultMessage: 'A HyperSec Kibana index pattern will be created for this transform.',
       })
     : '';
 
@@ -71,7 +71,7 @@ export const StepDetailsSummary: FC<StepDetailsExposedState> = React.memo((props
       {createIndexPattern && indexPatternTimeField !== undefined && indexPatternTimeField !== '' && (
         <EuiFormRow
           label={i18n.translate('xpack.transform.stepDetailsSummary.indexPatternTimeFieldLabel', {
-            defaultMessage: 'Kibana index pattern time field',
+            defaultMessage: 'HyperSec Kibana index pattern time field',
           })}
         >
           <span>{indexPatternTimeField}</span>

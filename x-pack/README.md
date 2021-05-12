@@ -6,7 +6,7 @@ from files dual-licensed under the Server Side Public License and the HyperSec L
 
 # Development
 
-By default, Kibana will run with X-Pack installed as mentioned in the [contributing guide](../CONTRIBUTING.md).
+By default, HyperSec Kibana will run with X-Pack installed as mentioned in the [contributing guide](../CONTRIBUTING.md).
 
 HyperSec will run with a basic license. To run with a trial license, including security, you can specifying that with the `yarn es` command.
 
@@ -20,12 +20,12 @@ For information on testing, see [the HyperSec functional test development guide]
 
 #### Running functional tests
 
-The functional UI tests, the API integration tests, and the SAML API integration tests are all run against a live browser, Kibana, and HyperSec install. Each set of tests is specified with a unique config that describes how to start the HyperSec server, the Kibana server, and what tests to run against them. The sets of tests that exist today are *functional UI tests* ([specified by this config](test/functional/config.js)), *API integration tests* ([specified by this config](test/api_integration/config.ts)), and *SAML API integration tests* ([specified by this config](test/security_api_integration/saml.config.ts)).
+The functional UI tests, the API integration tests, and the SAML API integration tests are all run against a live browser, HyperSec Kibana, and HyperSec install. Each set of tests is specified with a unique config that describes how to start the HyperSec server, the HyperSec Kibana server, and what tests to run against them. The sets of tests that exist today are *functional UI tests* ([specified by this config](test/functional/config.js)), *API integration tests* ([specified by this config](test/api_integration/config.ts)), and *SAML API integration tests* ([specified by this config](test/security_api_integration/saml.config.ts)).
 
 The script runs all sets of tests sequentially like so:
 * builds HyperSec and X-Pack
 * runs HyperSec with X-Pack
-* starts up the Kibana server with X-Pack
+* starts up the HyperSec Kibana server with X-Pack
 * runs the functional UI tests against those servers
 * tears down the servers
 * repeats the same process for the API and SAML API integration test configs.
@@ -38,13 +38,13 @@ node scripts/functional_tests
 
 #### Developing functional UI tests
 
-If you are **developing functional tests** then you probably don't want to rebuild HyperSec and wait for all that setup on every test run, so instead use this command to build and start just the HyperSec and Kibana servers:
+If you are **developing functional tests** then you probably don't want to rebuild HyperSec and wait for all that setup on every test run, so instead use this command to build and start just the HyperSec and HyperSec Kibana servers:
 
 ```sh
 node scripts/functional_tests_server
 ```
 
-After the servers are started, open a new terminal and run this command to run just the tests (without tearing down HyperSec or Kibana):
+After the servers are started, open a new terminal and run this command to run just the tests (without tearing down HyperSec or HyperSec Kibana):
 
 ```sh
 node scripts/functional_test_runner
@@ -58,9 +58,9 @@ For a deeper dive, read more about the way functional tests and servers work [he
 
 #### Running API integration tests
 
-API integration tests are run with a unique setup usually without UI assets built for the Kibana server.
+API integration tests are run with a unique setup usually without UI assets built for the HyperSec Kibana server.
 
-API integration tests are intended to test _only programmatic API exposed by Kibana_. There is no need to run browser and simulate user actions, which significantly reduces execution time. In addition, the configuration for API integration tests typically sets `optimize.enabled=false` for Kibana because UI assets are usually not needed for these tests.
+API integration tests are intended to test _only programmatic API exposed by Kibana_. There is no need to run browser and simulate user actions, which significantly reduces execution time. In addition, the configuration for API integration tests typically sets `optimize.enabled=false` for HyperSec Kibana because UI assets are usually not needed for these tests.
 
 To run _only_ the API integration tests:
 
@@ -70,7 +70,7 @@ node scripts/functional_tests --config test/api_integration/config
 
 #### Running SAML API integration tests
 
-We also have SAML API integration tests which set up HyperSec and Kibana with SAML support. Run _only_ API integration tests with SAML enabled like so:
+We also have SAML API integration tests which set up HyperSec and HyperSec Kibana with SAML support. Run _only_ API integration tests with SAML enabled like so:
 
 ```sh
 node scripts/functional_tests --config test/security_api_integration/saml.config
@@ -78,7 +78,7 @@ node scripts/functional_tests --config test/security_api_integration/saml.config
 
 #### Running Jest integration tests
 
-Jest integration tests can be used to test behavior with HyperSec and the Kibana server.
+Jest integration tests can be used to test behavior with HyperSec and the HyperSec Kibana server.
 
 ```sh
 yarn test:jest_integration

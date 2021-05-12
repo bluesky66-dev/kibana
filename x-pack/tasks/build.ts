@@ -111,7 +111,7 @@ async function generateNoticeText() {
   writeFileSync(
     resolve(PLUGIN_BUILD_DIR, 'NOTICE.txt'),
     await generateNoticeFromSource({
-      productName: 'Kibana X-Pack',
+      productName: 'HyperSec Kibana X-Pack',
       log,
       directory: PLUGIN_BUILD_DIR,
     })

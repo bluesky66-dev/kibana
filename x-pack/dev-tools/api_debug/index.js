@@ -36,7 +36,7 @@ async function showHelp() {
   console.log('  --headers                       Print the response headers to the console');
   console.log('  --host=[http://localhost:5601]  Host to send requests to');
   console.log(
-    `  --basePath                      Kibana server basePath, if it's using one (leading slash is auto-added)`
+    `  --basePath                      HyperSec Kibana server basePath, if it's using one (leading slash is auto-added)`
   );
   console.log(
     '  --auth                          username:password formatted authentication to use for the requests'

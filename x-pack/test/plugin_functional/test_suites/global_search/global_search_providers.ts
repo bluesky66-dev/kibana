@@ -91,7 +91,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
       it('can search for application deep links', async () => {
         const results = await findResultsWithApi('saved objects');
         expect(results.length).to.be(1);
-        expect(results[0].title).to.be('Kibana / Saved Objects');
+        expect(results[0].title).to.be('HyperSec Kibana / Saved Objects');
       });
     });
   });

@@ -71,7 +71,7 @@ export default new Datasource('es', {
       types: ['boolean', 'null'],
       help: i18n.translate('timelion.help.functions.es.args.kibanaHelpText', {
         defaultMessage:
-          'Respect filters on Kibana dashboards. Only has an effect when using on Kibana dashboards',
+          'Respect filters on HyperSec Kibana dashboards. Only has an effect when using on HyperSec Kibana dashboards',
       }),
     },
     {

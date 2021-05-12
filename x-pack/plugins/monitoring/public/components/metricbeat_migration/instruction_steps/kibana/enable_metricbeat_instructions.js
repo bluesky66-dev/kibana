@@ -23,7 +23,7 @@ export function getKibanaInstructionsForEnablingMetricbeat(product, _meta, { esM
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.kibanaInstructions.installMetricbeatTitle',
       {
-        defaultMessage: 'Install Metricbeat on the same server as Kibana',
+        defaultMessage: 'Install Metricbeat on the same server as HyperSec Kibana',
       }
     ),
     children: (
@@ -44,7 +44,7 @@ export function getKibanaInstructionsForEnablingMetricbeat(product, _meta, { esM
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.kibanaInstructions.enableMetricbeatModuleTitle',
       {
-        defaultMessage: 'Enable and configure the Kibana x-pack module in Metricbeat',
+        defaultMessage: 'Enable and configure the HyperSec Kibana x-pack module in Metricbeat',
       }
     ),
     children: (
@@ -57,7 +57,7 @@ export function getKibanaInstructionsForEnablingMetricbeat(product, _meta, { esM
           <p>
             <FormattedMessage
               id="xpack.monitoring.metricbeatMigration.kibanaInstructions.enableMetricbeatModuleDescription"
-              defaultMessage="By default the module will collect Kibana monitoring metrics from http://localhost:5601. If the local Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
+              defaultMessage="By default the module will collect HyperSec Kibana monitoring metrics from http://localhost:5601. If the local HyperSec Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
               values={{
                 hosts: <Monospace>hosts</Monospace>,
                 file: <Monospace>modules.d/kibana-xpack.yml</Monospace>,

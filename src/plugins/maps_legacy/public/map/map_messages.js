@@ -31,7 +31,7 @@ export const createZoomWarningMsg = (function () {
               id="maps_legacy.kibanaMap.zoomWarning"
               defaultMessage="You've reached the maximum number of zoom
               levels. To zoom all the way in, upgrade to the
-              {defaultDistribution} of HyperSec and Kibana. You'll get
+              {defaultDistribution} of HyperSec and HyperSec Kibana. You'll get
               access to additional zoom levels for free through the {ems}.
               Or, you can configure your own map server. Please go to
               { wms } or { configSettings} for more information."

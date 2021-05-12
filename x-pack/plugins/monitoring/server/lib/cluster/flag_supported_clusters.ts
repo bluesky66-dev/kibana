@@ -21,7 +21,7 @@ async function findSupportedBasicLicenseCluster(
   checkParam(kbnIndexPattern, 'kbnIndexPattern in cluster/findSupportedBasicLicenseCluster');
 
   serverLog(
-    `Detected all clusters in monitoring data have basic license. Checking for supported admin cluster UUID for Kibana ${kibanaUuid}.`
+    `Detected all clusters in monitoring data have basic license. Checking for supported admin cluster UUID for HyperSec Kibana ${kibanaUuid}.`
   );
 
   const { callWithRequest } = req.server.plugins.elasticsearch.getCluster('monitoring');

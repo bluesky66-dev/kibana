@@ -23,17 +23,17 @@ export function kibanaMetricsSpecProvider(context: TutorialContext): TutorialSch
   return {
     id: 'kibanaMetrics',
     name: i18n.translate('home.tutorials.kibanaMetrics.nameTitle', {
-      defaultMessage: 'Kibana metrics',
+      defaultMessage: 'HyperSec Kibana metrics',
     }),
     moduleName,
     isBeta: false,
     category: TutorialsCategory.METRICS,
     shortDescription: i18n.translate('home.tutorials.kibanaMetrics.shortDescription', {
-      defaultMessage: 'Fetch internal metrics from Kibana.',
+      defaultMessage: 'Fetch internal metrics from HyperSec Kibana.',
     }),
     longDescription: i18n.translate('home.tutorials.kibanaMetrics.longDescription', {
       defaultMessage:
-        'The `kibana` Metricbeat module fetches internal metrics from Kibana. \
+        'The `kibana` Metricbeat module fetches internal metrics from HyperSec Kibana. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.metricbeat}/metricbeat-module-kibana.html',

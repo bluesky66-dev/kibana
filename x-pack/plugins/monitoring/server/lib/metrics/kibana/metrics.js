@@ -44,7 +44,7 @@ export const metrics = {
       defaultMessage: 'Client Requests',
     }),
     description: i18n.translate('xpack.monitoring.metrics.kibana.clientRequestsDescription', {
-      defaultMessage: 'Total number of client requests received by the Kibana instance.',
+      defaultMessage: 'Total number of client requests received by the HyperSec Kibana instance.',
     }),
     format: SMALL_FLOAT,
     units: '',
@@ -58,7 +58,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibana.clientResponseTime.maxDescription',
       {
-        defaultMessage: 'Maximum response time for client requests to the Kibana instance.',
+        defaultMessage: 'Maximum response time for client requests to the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,
@@ -73,7 +73,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibana.clientResponseTime.averageDescription',
       {
-        defaultMessage: 'Average response time for client requests to the Kibana instance.',
+        defaultMessage: 'Average response time for client requests to the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,
@@ -150,7 +150,7 @@ export const metrics = {
       defaultMessage: 'Memory Size',
     }),
     description: i18n.translate('xpack.monitoring.metrics.kibanaInstance.memorySizeDescription', {
-      defaultMessage: 'Total heap used by Kibana running in Node.js.',
+      defaultMessage: 'Total heap used by HyperSec Kibana running in Node.js.',
     }),
     format: LARGE_BYTES,
     metricAgg: 'max',
@@ -165,7 +165,7 @@ export const metrics = {
       'xpack.monitoring.metrics.kibanaInstance.eventLoopDelayDescription',
       {
         defaultMessage:
-          'Delay in Kibana server event loops. Longer delays may indicate blocking events in server thread, ' +
+          'Delay in HyperSec Kibana server event loops. Longer delays may indicate blocking events in server thread, ' +
           'such as synchronous functions taking large amount of CPU time.',
       }
     ),
@@ -185,7 +185,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibanaInstance.clientResponseTime.averageDescription',
       {
-        defaultMessage: 'Average response time for client requests to the Kibana instance.',
+        defaultMessage: 'Average response time for client requests to the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,
@@ -201,7 +201,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibanaInstance.clientResponseTime.maxDescription',
       {
-        defaultMessage: 'Maximum response time for client requests to the Kibana instance.',
+        defaultMessage: 'Maximum response time for client requests to the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,
@@ -214,7 +214,7 @@ export const metrics = {
       defaultMessage: 'HTTP Connections',
     }),
     description: i18n.translate('xpack.monitoring.metrics.kibana.httpConnectionsDescription', {
-      defaultMessage: 'Total number of open socket connections to the Kibana instance.',
+      defaultMessage: 'Total number of open socket connections to the HyperSec Kibana instance.',
     }),
     format: SMALL_FLOAT,
     metricAgg: 'max',
@@ -228,7 +228,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibanaInstance.clientRequestsDescription',
       {
-        defaultMessage: 'Total number of client requests received by the Kibana instance.',
+        defaultMessage: 'Total number of client requests received by the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,
@@ -246,7 +246,7 @@ export const metrics = {
     description: i18n.translate(
       'xpack.monitoring.metrics.kibanaInstance.clientRequestsDisconnectsDescription',
       {
-        defaultMessage: 'Total number of client disconnects to the Kibana instance.',
+        defaultMessage: 'Total number of client disconnects to the HyperSec Kibana instance.',
       }
     ),
     format: SMALL_FLOAT,

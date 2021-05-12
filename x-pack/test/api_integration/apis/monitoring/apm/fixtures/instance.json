@@ -807,7 +807,7 @@
           "metricAgg": "max",
           "label": "Unavailable",
           "title": "Response Unavailable Errors Agent Configuration Management",
-          "description": "Unavailable HTTP response count. Possible misconfiguration or unsupported version of Kibana",
+          "description": "Unavailable HTTP response count. Possible misconfiguration or unsupported version of HyperSec Kibana",
           "units": "/s",
           "format": "0,0.[00]",
           "hasCalculation": false,

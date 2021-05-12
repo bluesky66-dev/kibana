@@ -41,16 +41,16 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
           await PageObjects.error.expectForbidden();
         });
 
-        it('should not display the ML file data vis link on the Kibana home page', async () => {
-          await ml.testExecution.logTestStep('should load the Kibana home page');
+        it('should not display the ML file data vis link on the HyperSec Kibana home page', async () => {
+          await ml.testExecution.logTestStep('should load the HyperSec Kibana home page');
           await ml.navigation.navigateToKibanaHome();
 
           await ml.testExecution.logTestStep('should not display the ML file data vis link');
           await ml.commonUI.assertKibanaHomeFileDataVisLinkNotExists();
         });
 
-        it('should not display the ML entry in Kibana app menu', async () => {
-          await ml.testExecution.logTestStep('should open the Kibana app menu');
+        it('should not display the ML entry in HyperSec Kibana app menu', async () => {
+          await ml.testExecution.logTestStep('should open the HyperSec Kibana app menu');
           await ml.navigation.openKibanaNav();
 
           await ml.testExecution.logTestStep('should not display the ML nav link');

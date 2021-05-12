@@ -108,13 +108,13 @@ export const ReportDiagnostic = ({ apiClient }: Props) => {
   const steps = [
     {
       title: i18n.translate('xpack.reporting.listing.diagnosticConfigTitle', {
-        defaultMessage: 'Verify Kibana configuration',
+        defaultMessage: 'Verify HyperSec Kibana configuration',
       }),
       children: (
         <Fragment>
           <FormattedMessage
             id="xpack.reporting.listing.diagnosticConfigMessage"
-            defaultMessage="Ensure your Kibana configuration is properly set up for reports."
+            defaultMessage="Ensure your HyperSec Kibana configuration is properly set up for reports."
           />
           <EuiSpacer />
           <EuiButton

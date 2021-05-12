@@ -34,7 +34,7 @@ const setup = async ({ targetAllPlatforms = true }: { targetAllPlatforms?: boole
 };
 
 describe('#getKibanaPkg()', () => {
-  it('returns the parsed package.json from the Kibana repo', async () => {
+  it('returns the parsed package.json from the HyperSec Kibana repo', async () => {
     const config = await setup();
     expect(config.getKibanaPkg()).toEqual(pkg);
   });

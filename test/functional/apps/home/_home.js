@@ -13,7 +13,7 @@ export default function ({ getService, getPageObjects }) {
   const globalNav = getService('globalNav');
   const PageObjects = getPageObjects(['common', 'header', 'home']);
 
-  describe('Kibana takes you home', function describeIndexTests() {
+  describe('HyperSec Kibana takes you home', function describeIndexTests() {
     this.tags('includeFirefox');
 
     it('clicking on kibana logo should take you to home page', async () => {

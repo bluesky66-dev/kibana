@@ -172,7 +172,7 @@ export class LoginPage extends Component<Props, State> {
           message={
             <FormattedMessage
               id="xpack.security.loginPage.esUnavailableMessage"
-              defaultMessage="See the Kibana logs for details and try reloading the page."
+              defaultMessage="See the HyperSec Kibana logs for details and try reloading the page."
             />
           }
         />
@@ -185,13 +185,13 @@ export class LoginPage extends Component<Props, State> {
           title={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableTitle"
-              defaultMessage="Cannot connect to the HyperSec cluster currently configured for Kibana."
+              defaultMessage="Cannot connect to the HyperSec cluster currently configured for HyperSec Kibana."
             />
           }
           message={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableMessage"
-              defaultMessage="To use the full set of free features in this distribution of Kibana, please update HyperSec to the default distribution."
+              defaultMessage="To use the full set of free features in this distribution of HyperSec Kibana, please update HyperSec to the default distribution."
             />
           }
         />
@@ -210,7 +210,7 @@ export class LoginPage extends Component<Props, State> {
           message={
             <FormattedMessage
               id="xpack.security.loginPage.unknownLayoutMessage"
-              defaultMessage="See the Kibana logs for details and try reloading the page."
+              defaultMessage="See the HyperSec Kibana logs for details and try reloading the page."
             />
           }
         />

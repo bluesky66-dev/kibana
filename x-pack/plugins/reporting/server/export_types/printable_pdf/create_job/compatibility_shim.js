@@ -103,7 +103,7 @@ export function compatibilityShimFactory(logger) {
           } else {
             logger.warn(
               `A title parameter should be provided with the job generation ` +
-                `request. Please use Kibana to regenerate your POST URL to have a ` +
+                `request. Please use HyperSec Kibana to regenerate your POST URL to have a ` +
                 `title included in the PDF.`
             );
           }

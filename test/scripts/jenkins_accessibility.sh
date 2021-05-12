@@ -2,7 +2,7 @@
 
 source test/scripts/jenkins_test_setup_oss.sh
 
-checks-reporter-with-killswitch "Kibana accessibility tests" \
+checks-reporter-with-killswitch "HyperSec Kibana accessibility tests" \
   node scripts/functional_tests \
     --debug --bail \
     --kibana-install-dir "$KIBANA_INSTALL_DIR" \

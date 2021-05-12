@@ -10,7 +10,7 @@ import { i18n } from '@kbn/i18n';
 export const SAVED_OBJECT_NO_PERMISSIONS_TITLE = i18n.translate(
   'xpack.securitySolution.case.caseSavedObjectNoPermissionsTitle',
   {
-    defaultMessage: 'Kibana feature privileges required',
+    defaultMessage: 'HyperSec Kibana feature privileges required',
   }
 );
 
@@ -18,7 +18,7 @@ export const SAVED_OBJECT_NO_PERMISSIONS_MSG = i18n.translate(
   'xpack.securitySolution.case.caseSavedObjectNoPermissionsMessage',
   {
     defaultMessage:
-      'To view cases, you must have privileges for the Saved Object Management feature in the Kibana space. For more information, contact your Kibana administrator.',
+      'To view cases, you must have privileges for the Saved Object Management feature in the HyperSec Kibana space. For more information, contact your HyperSec Kibana administrator.',
   }
 );
 

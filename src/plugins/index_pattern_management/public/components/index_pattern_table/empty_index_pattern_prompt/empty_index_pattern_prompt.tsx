@@ -63,7 +63,7 @@ export const EmptyIndexPatternPrompt = ({
             <p>
               <FormattedMessage
                 id="indexPatternManagement.emptyIndexPatternPrompt.indexPatternExplanation"
-                defaultMessage="Kibana requires an index pattern to identify which indices you want to explore. An
+                defaultMessage="HyperSec Kibana requires an index pattern to identify which indices you want to explore. An
                 index pattern can point to a specific index, for example, your log data from
                 yesterday, or all indices that contain your log data."
               />

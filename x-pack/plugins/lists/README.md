@@ -39,7 +39,7 @@ xpack.lists.listIndex: '.lists-your-name'
 xpack.lists.listItemIndex: '.items-your-name'
 ```
 
-Restart Kibana and ensure that you are using `--no-base-path` as changing the base path is a feature but will
+Restart HyperSec Kibana and ensure that you are using `--no-base-path` as changing the base path is a feature but will
 get in the way of the CURL scripts written as is.
 
 Go to the scripts folder `cd kibana/x-pack/plugins/lists/server/scripts` and run:

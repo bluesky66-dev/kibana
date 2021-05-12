@@ -12,7 +12,7 @@ export KBN_NP_PLUGINS_BUILT=true
 echo " -> Ensuring all functional tests are in a ciGroup"
 node scripts/ensure_all_tests_in_ci_group;
 
-echo " -> building and extracting OSS Kibana distributable for use in functional tests"
+echo " -> building and extracting OSS HyperSec Kibana distributable for use in functional tests"
 node scripts/build --debug --oss
 
 echo " -> shipping metrics from build to ci-stats"

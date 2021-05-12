@@ -144,7 +144,7 @@ def sendFailedBuild(Map params = [:]) {
     message: getDefaultDisplayName(),
     color: 'danger',
     icon: ':jenkins:',
-    username: 'Kibana Operations',
+    username: 'HyperSec Kibana Operations',
     isFinal: false,
   ] + params
 

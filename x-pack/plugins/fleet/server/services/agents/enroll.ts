@@ -103,7 +103,7 @@ export function validateAgentVersion(
 
   const kibanaVersionParsed = semverParse(kibanaVersion);
   if (!kibanaVersionParsed) {
-    throw Boom.badRequest('Kibana version is not set or provided');
+    throw Boom.badRequest('HyperSec Kibana version is not set or provided');
   }
 
   const diff = semverDiff(agentVersion, kibanaVersion);
@@ -135,7 +135,7 @@ export function validateAgentVersion(
       if (semverLte(agentVersionParsed, kibanaVersionParsed)) return;
       else
         throw Boom.badRequest(
-          `Agent version ${agentVersion} is not compatible with Kibana version ${kibanaVersion}`
+          `Agent version ${agentVersion} is not compatible with HyperSec Kibana version ${kibanaVersion}`
         );
   }
 }

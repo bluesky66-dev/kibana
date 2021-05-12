@@ -10,7 +10,7 @@
 import { parse as parseLockfile } from '@yarnpkg/lockfile';
 
 import { readFile } from '../utils/fs';
-import { Kibana } from '../utils/kibana';
+import { HyperSec Kibana } from '../utils/kibana';
 import { Project } from '../utils/project';
 import { Log } from '../utils/log';
 
@@ -34,7 +34,7 @@ export interface YarnLock {
   };
 }
 
-export async function readYarnLock(kbn: Kibana): Promise<YarnLock> {
+export async function readYarnLock(kbn: HyperSec Kibana): Promise<YarnLock> {
   try {
     const contents = await readFile(kbn.getAbsolute('yarn.lock'), 'utf8');
     const yarnLock = parseLockfile(contents);
@@ -68,7 +68,7 @@ export function resolveDepsForProject({
 }: {
   project: Project;
   yarnLock: YarnLock;
-  kbn: Kibana;
+  kbn: HyperSec Kibana;
   log: Log;
   productionDepsOnly: boolean;
   includeDependentProject: boolean;

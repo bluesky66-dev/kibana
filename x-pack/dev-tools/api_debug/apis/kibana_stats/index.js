@@ -6,6 +6,6 @@
  */
 
 export const name = 'kibana_stats';
-export const description = 'Get the extended Kibana usage stats from the Kibana server';
+export const description = 'Get the extended HyperSec Kibana usage stats from the HyperSec Kibana server';
 export const method = 'GET';
 export const path = '/api/stats?extended=true';

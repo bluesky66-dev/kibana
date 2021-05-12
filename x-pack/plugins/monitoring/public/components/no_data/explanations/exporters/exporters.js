@@ -37,7 +37,7 @@ export function ExplainExporters({ reason }) {
             defaultMessage="Using monitoring exporters to ship the monitoring data to a remote
             monitoring cluster is highly recommended as it keeps the integrity of
             the monitoring data safe no matter what the state of the production
-            cluster. However, as this instance of Kibana could not find any
+            cluster. However, as this instance of HyperSec Kibana could not find any
             monitoring data, there seems to be a problem with the {property} configuration,
             or the {monitoringEs} settings in {kibanaConfig}."
             values={{
@@ -53,7 +53,7 @@ export function ExplainExporters({ reason }) {
             id="xpack.monitoring.noData.explanations.exporters.checkConfigDescription"
             defaultMessage="Check that the intended exporters are enabled for sending statistics to
             the monitoring cluster, and that the monitoring cluster host matches the {monitoringEs}
-            setting in {kibanaConfig} to see monitoring data in this instance of Kibana."
+            setting in {kibanaConfig} to see monitoring data in this instance of HyperSec Kibana."
             values={{
               monitoringEs: <EuiCode>xpack.monitoring.elasticsearch</EuiCode>,
               kibanaConfig: <EuiCode>kibana.yml</EuiCode>,

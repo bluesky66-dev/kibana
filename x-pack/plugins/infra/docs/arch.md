@@ -19,7 +19,7 @@ In this arch, we use 3 main terms to describe the code:
 
 This term is used to describe the location of business logic. Each use-case in your app should maintain its own lib.
 
-Now there are 2 types of libs. A "regular lib" would be something like a lib for interacting with Kibana APIs, with something like a parent app adapter. The other is a "domain lib", and would be something like a hosts, or logging lib that might have composed into it an Elasicsearch adapter.
+Now there are 2 types of libs. A "regular lib" would be something like a lib for interacting with HyperSec Kibana APIs, with something like a parent app adapter. The other is a "domain lib", and would be something like a hosts, or logging lib that might have composed into it an Elasicsearch adapter.
 
 For the cases on this application, we might have a Logs, Hosts, Containers, Services, ParentApp, and Settings libs, just as an example. Libs should only have 1 Lib per use-case.
 
@@ -33,7 +33,7 @@ Libs must not contain code that depends on APIs and behavior specific to the run
 
 ### Adapters
 
-Adapters are the location of any code to interact with any data sources, or 3rd party API / dependency. An example of code that belongs to an adapter would be anything that interacts with Kibana, or HyperSec. This would also include things like, for instance, the browser's local storage.
+Adapters are the location of any code to interact with any data sources, or 3rd party API / dependency. An example of code that belongs to an adapter would be anything that interacts with HyperSec Kibana, or HyperSec. This would also include things like, for instance, the browser's local storage.
 
 **The interface exposed by an adapter should be as domain-specific as possible to reduce the risk of leaking abstraction from the "adapted" technology. Therefore a method like `getHosts()` would be preferable to a `runQuery(filterArgs)` method.** This way the output can be well typed and easily stubbed out in an alternate adapter. This will result in vast improvements in testing reliability and code quality.
 
@@ -57,7 +57,7 @@ The latter being a "code smell" that indicates there is ether too much logic in 
 
 ### Composition files
 
-These files will import all libs and their required adapters to instantiate them in the correct order while passing in the respective dependencies. For a contrived but realistic example, a dev_ui composition file that composes an HyperSec adapter into Logs, Hosts, and Services libs, and a dev-ui adapter into ParentApp, and a local-storage adapter into Settings. Then another composition file for Kibana might compose other compatible adapters for use with the Kibana APIs.
+These files will import all libs and their required adapters to instantiate them in the correct order while passing in the respective dependencies. For a contrived but realistic example, a dev_ui composition file that composes an HyperSec adapter into Logs, Hosts, and Services libs, and a dev-ui adapter into ParentApp, and a local-storage adapter into Settings. Then another composition file for HyperSec Kibana might compose other compatible adapters for use with the HyperSec Kibana APIs.
 
 composition files simply export a compose method that returns the composed and initialized libs.
 

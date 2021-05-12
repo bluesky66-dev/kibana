@@ -29,7 +29,7 @@ More details about the registry can be found [here](https://github.com/elastic/p
 
 ## Fleet
 
-Fleet is the part of the Ingest Manager UI in Kibana that handles the part of enrolling HyperSec Agents, managing agents and sending policies to the HyperSec Agent.
+Fleet is the part of the Ingest Manager UI in HyperSec Kibana that handles the part of enrolling HyperSec Agents, managing agents and sending policies to the HyperSec Agent.
 
 ## Indexing Strategy
 

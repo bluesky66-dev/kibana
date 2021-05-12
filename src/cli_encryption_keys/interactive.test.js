@@ -34,7 +34,7 @@ describe('encryption key generation interactive', () => {
       ['Set xpack.encryptedSavedObjects.encryptionKey?'],
       ['Set xpack.reporting.encryptionKey?'],
       ['Set xpack.security.encryptionKey?'],
-      ['Save generated keys to a sample Kibana configuration file?'],
+      ['Save generated keys to a sample HyperSec Kibana configuration file?'],
     ]);
     expect(prompt.question).not.toHaveBeenCalled();
   });

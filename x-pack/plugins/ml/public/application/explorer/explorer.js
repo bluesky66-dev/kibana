@@ -215,7 +215,7 @@ export class Explorer extends React.Component {
       toastNotifications.addDanger(
         i18n.translate('xpack.ml.explorer.invalidKuerySyntaxErrorMessageFromTable', {
           defaultMessage:
-            'Invalid syntax in query bar. The input must be valid Kibana Query Language (KQL)',
+            'Invalid syntax in query bar. The input must be valid HyperSec Kibana Query Language (KQL)',
         })
       );
     }

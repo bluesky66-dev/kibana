@@ -137,7 +137,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       value: DEFAULT_QUERY_LANGUAGE,
       description: i18n.translate('data.advancedSettings.searchQueryLanguageText', {
         defaultMessage:
-          'Query language used by the query bar. KQL is a new language built specifically for Kibana.',
+          'Query language used by the query bar. KQL is a new language built specifically for HyperSec Kibana.',
       }),
       type: 'select',
       options: ['lucene', 'kuery'],
@@ -264,7 +264,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       type: 'number',
       description: i18n.translate('data.advancedSettings.courier.maxRequestsText', {
         defaultMessage:
-          'Controls the {maxRequestsLink} setting used for _msearch requests sent by Kibana. ' +
+          'Controls the {maxRequestsLink} setting used for _msearch requests sent by HyperSec Kibana. ' +
           'Set to 0 to disable this config and use the HyperSec default.',
         values: {
           maxRequestsLink: `<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-multi-search.html"
@@ -281,12 +281,12 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       value: false,
       type: 'boolean',
       description: i18n.translate('data.advancedSettings.courier.batchSearchesText', {
-        defaultMessage: `Kibana uses a new search and batching infrastructure.
+        defaultMessage: `HyperSec Kibana uses a new search and batching infrastructure.
            Enable this option if you prefer to fallback to the legacy synchronous behavior`,
       }),
       deprecation: {
         message: i18n.translate('data.advancedSettings.courier.batchSearchesTextDeprecation', {
-          defaultMessage: 'This setting is deprecated and will be removed in Kibana 8.0.',
+          defaultMessage: 'This setting is deprecated and will be removed in HyperSec Kibana 8.0.',
         }),
         docLinksKey: 'kibanaSearchSettings',
       },
@@ -320,7 +320,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       value: 100,
       description: i18n.translate('data.advancedSettings.histogram.maxBarsText', {
         defaultMessage: `
-          Limits the density of date and number histograms across Kibana
+          Limits the density of date and number histograms across HyperSec Kibana
           for better performance using a test query. If the test query would too many buckets,
           the interval between buckets will be increased. This setting applies separately
           to each histogram aggregation, and does not apply to other types of aggregation.
@@ -550,7 +550,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
 }`,
       type: 'json',
       description: i18n.translate('data.advancedSettings.timepicker.timeDefaultsText', {
-        defaultMessage: 'The timefilter selection to use when Kibana is started without one',
+        defaultMessage: 'The timefilter selection to use when HyperSec Kibana is started without one',
       }),
       requiresPageReload: true,
       schema: schema.object({

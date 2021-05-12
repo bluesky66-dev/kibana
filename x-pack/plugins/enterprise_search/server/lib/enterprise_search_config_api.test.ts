@@ -205,7 +205,7 @@ describe('callEnterpriseSearchConfigAPI', () => {
     callEnterpriseSearchConfigAPI(mockDependencies);
     jest.advanceTimersByTime(150);
     expect(mockDependencies.log.warn).toHaveBeenCalledWith(
-      'Enterprise Search access check took over 100ms. Please ensure your Enterprise Search server is responding normally and not adversely impacting Kibana load speeds.'
+      'Enterprise Search access check took over 100ms. Please ensure your Enterprise Search server is responding normally and not adversely impacting HyperSec Kibana load speeds.'
     );
 
     // Timeout

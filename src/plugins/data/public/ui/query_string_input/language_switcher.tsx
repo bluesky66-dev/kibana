@@ -41,7 +41,7 @@ export function QueryLanguageSwitcher(props: Props) {
   const kqlFullName = (
     <FormattedMessage
       id="data.query.queryBar.kqlFullLanguageName"
-      defaultMessage="Kibana Query Language"
+      defaultMessage="HyperSec Kibana Query Language"
     />
   );
 
@@ -79,7 +79,7 @@ export function QueryLanguageSwitcher(props: Props) {
               id="data.query.queryBar.syntaxOptionsDescription"
               defaultMessage="The {docsLink} (KQL) offers a simplified query
               syntax and support for scripted fields. KQL also provides autocomplete if you have
-              a Basic license or above. If you turn off KQL, Kibana uses Lucene."
+              a Basic license or above. If you turn off KQL, HyperSec Kibana uses Lucene."
               values={{
                 docsLink: (
                   <EuiLink href={kueryQuerySyntaxDocs} target="_blank">

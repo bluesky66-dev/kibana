@@ -26,7 +26,7 @@ export default new Datasource('graphite', {
     },
   ],
   help: i18n.translate('timelion.help.functions.graphiteHelpText', {
-    defaultMessage: `[experimental] Pull data from graphite. Configure your graphite server in Kibana's Advanced Settings`,
+    defaultMessage: `[experimental] Pull data from graphite. Configure your graphite server in HyperSec Kibana's Advanced Settings`,
   }),
   fn: function graphite(args, tlConfig) {
     const config = args.byName;
@@ -42,7 +42,7 @@ export default new Datasource('graphite', {
         i18n.translate('timelion.help.functions.notAllowedGraphiteUrl', {
           defaultMessage: `This graphite URL is not configured on the kibana.yml file.
           Please configure your graphite server list in the kibana.yml file under 'timelion.graphiteUrls' and
-          select one from Kibana's Advanced Settings`,
+          select one from HyperSec Kibana's Advanced Settings`,
         })
       );
     }

@@ -73,7 +73,7 @@ window.canvasInitErrorHandler = () => {
       console.error(err);
       console.warn(`*** Uncaught error swallowed in dev mode ***
 
-  Check and fix the above error. This will blow up Kibana when run in production mode!`);
+  Check and fix the above error. This will blow up HyperSec Kibana when run in production mode!`);
       showError(err);
       return;
     }
