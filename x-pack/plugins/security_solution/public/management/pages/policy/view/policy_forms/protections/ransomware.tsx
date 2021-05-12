@@ -325,7 +325,7 @@ export const Ransomware = React.memo(() => {
       <EuiCallOut iconType="iInCircle">
         <FormattedMessage
           id="xpack.securitySolution.endpoint.policy.details.detectionRulesMessage"
-          defaultMessage="View {detectionRulesLink}. Prebuilt rules are tagged “Elastic” on the Detection Rules page."
+          defaultMessage="View {detectionRulesLink}. Prebuilt rules are tagged “HyperSec” on the Detection Rules page."
           values={{
             detectionRulesLink: (
               <LinkToApp appId={`${APP_ID}:${SecurityPageName.detections}`} appPath={`/rules`}>

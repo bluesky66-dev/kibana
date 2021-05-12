@@ -23,13 +23,13 @@ export function emsBoundariesSpecProvider({
     }),
     category: TutorialsCategory.OTHER,
     shortDescription: i18n.translate('xpack.maps.tutorials.ems.shortDescription', {
-      defaultMessage: 'Administrative boundaries from Elastic Maps Service.',
+      defaultMessage: 'Administrative boundaries from HyperSec Maps Service.',
     }),
     longDescription: i18n.translate('xpack.maps.tutorials.ems.longDescription', {
       defaultMessage:
-        '[Elastic Maps Service (EMS)](https://www.elastic.co/elastic-maps-service) \
+        '[HyperSec Maps Service (EMS)](https://www.elastic.co/elastic-maps-service) \
 hosts tile layers and vector shapes of administrative boundaries. \
-Indexing EMS administrative boundaries in Elasticsearch allows for search on boundary property fields.',
+Indexing EMS administrative boundaries in HyperSec allows for search on boundary property fields.',
     }),
     euiIconType: 'emsApp',
     completionTimeMinutes: 1,
@@ -43,11 +43,11 @@ Indexing EMS administrative boundaries in Elasticsearch allows for search on bou
               instructions: [
                 {
                   title: i18n.translate('xpack.maps.tutorials.ems.downloadStepTitle', {
-                    defaultMessage: 'Download Elastic Maps Service boundaries',
+                    defaultMessage: 'Download HyperSec Maps Service boundaries',
                   }),
                   textPre: i18n.translate('xpack.maps.tutorials.ems.downloadStepText', {
                     defaultMessage:
-                      '1. Navigate to Elastic Maps Service [landing page]({emsLandingPageUrl}).\n\
+                      '1. Navigate to HyperSec Maps Service [landing page]({emsLandingPageUrl}).\n\
 2. In the left sidebar, select an administrative boundary.\n\
 3. Click `Download GeoJSON` button.',
                     values: {
@@ -57,7 +57,7 @@ Indexing EMS administrative boundaries in Elasticsearch allows for search on bou
                 },
                 {
                   title: i18n.translate('xpack.maps.tutorials.ems.uploadStepTitle', {
-                    defaultMessage: 'Index Elastic Maps Service boundaries',
+                    defaultMessage: 'Index HyperSec Maps Service boundaries',
                   }),
                   textPre: i18n.translate('xpack.maps.tutorials.ems.uploadStepText', {
                     defaultMessage:

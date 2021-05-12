@@ -27,7 +27,7 @@ export const MlJobCompatibilityCalloutBody = () => (
           <FormattedMessage
             id="xpack.securitySolution.detectionEngine.mlJobCompatibilityCallout.messageBody.summary"
             defaultMessage="Machine learning rules specify ML jobs that in
-            turn have dependencies on data fields populated by the Elastic
+            turn have dependencies on data fields populated by the HyperSec
             beats and agent integrations that were current when the ML job
             was created. New ML jobs, prefixed with V2, have been updated to
             operate on now-current ECS fields. If you are using multiple

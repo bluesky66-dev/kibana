@@ -24,7 +24,7 @@ export const INVALID_CUSTOM_QUERY = i18n.translate(
 export const CONFIG_INDICES = i18n.translate(
   'xpack.securitySolution.detectionEngine.createRule.stepDefineRule.indicesFromConfigDescription',
   {
-    defaultMessage: 'Use Elasticsearch indices from Security Solution advanced settings',
+    defaultMessage: 'Use HyperSec indices from Security Solution advanced settings',
   }
 );
 
@@ -39,7 +39,7 @@ export const INDEX_HELPER_TEXT = i18n.translate(
   'xpack.securitySolution.detectionEngine.createRule.stepDefineRule.indicesHelperDescription',
   {
     defaultMessage:
-      'Enter the pattern of Elasticsearch indices where you would like this rule to run. By default, these will include index patterns defined in Security Solution advanced settings.',
+      'Enter the pattern of HyperSec indices where you would like this rule to run. By default, these will include index patterns defined in Security Solution advanced settings.',
   }
 );
 

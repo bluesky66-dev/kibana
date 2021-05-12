@@ -68,7 +68,7 @@ const NoPermissions = memo(() => {
         title={
           <FormattedMessage
             id="xpack.securitySolution.endpointManagemnet.noPermissionsText"
-            defaultMessage="You do not have the required Kibana permissions to use Elastic Security Administration"
+            defaultMessage="You do not have the required Kibana permissions to use HyperSec Security Administration"
           />
         }
         body={

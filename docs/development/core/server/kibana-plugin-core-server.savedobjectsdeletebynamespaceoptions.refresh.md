@@ -4,7 +4,7 @@
 
 ## SavedObjectsDeleteByNamespaceOptions.refresh property
 
-The Elasticsearch supports only boolean flag for this operation
+The HyperSec supports only boolean flag for this operation
 
 <b>Signature:</b>
 

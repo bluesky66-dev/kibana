@@ -25,19 +25,19 @@ Array [
     class="euiText euiText--medium eui-textLeft"
   >
     <p>
-      We checked the 
+      We checked the
       <span>
         <code>
           esProd001
         </code>
       </span>
-       settings for 
+       settings for
       <span>
         <code>
           xpack.monitoring.exporters
         </code>
       </span>
-      , and found the reason: 
+      , and found the reason:
       <span>
         <code>
           myMonitoringClusterExporter1
@@ -46,19 +46,19 @@ Array [
       .
     </p>
     <p>
-      Using monitoring exporters to ship the monitoring data to a remote monitoring cluster is highly recommended as it keeps the integrity of the monitoring data safe no matter what the state of the production cluster. However, as this instance of Kibana could not find any monitoring data, there seems to be a problem with the 
+      Using monitoring exporters to ship the monitoring data to a remote monitoring cluster is highly recommended as it keeps the integrity of the monitoring data safe no matter what the state of the production cluster. However, as this instance of Kibana could not find any monitoring data, there seems to be a problem with the
       <span>
         <code>
           xpack.monitoring.exporters
         </code>
       </span>
-       configuration, or the 
+       configuration, or the
       <span>
         <code>
           xpack.monitoring.elasticsearch
         </code>
       </span>
-       settings in 
+       settings in
       <span>
         <code>
           kibana.yml
@@ -67,13 +67,13 @@ Array [
       .
     </p>
     <p>
-      Check that the intended exporters are enabled for sending statistics to the monitoring cluster, and that the monitoring cluster host matches the 
+      Check that the intended exporters are enabled for sending statistics to the monitoring cluster, and that the monitoring cluster host matches the
       <span>
         <code>
           xpack.monitoring.elasticsearch
         </code>
       </span>
-       setting in 
+       setting in
       <span>
         <code>
           kibana.yml
@@ -94,14 +94,14 @@ Array [
       class="euiText euiText--medium"
     >
       <p>
-        Configure monitoring through 
+        Configure monitoring through
         <a
           class="euiLink euiLink--primary"
           href="https://cloud.elastic.co/deployments"
           rel="noopener"
           target="_blank"
         >
-          Elasticsearch Service Console
+          HyperSec Service Console
           <span
             aria-label="External link"
             class="euiLink__externalIcon"
@@ -113,7 +113,7 @@ Array [
             (opens in a new tab or window)
           </span>
         </a>
-         Go to 
+         Go to
         <a
           class="euiLink euiLink--primary"
           href="https://cloud.elastic.co/deployments"
@@ -132,7 +132,7 @@ Array [
             (opens in a new tab or window)
           </span>
         </a>
-         section for a deployment to configure monitoring. For more information visit 
+         section for a deployment to configure monitoring. For more information visit
         <a
           class="euiLink euiLink--primary"
           href="https://www.elastic.co/guide/en/cloud/current/ec-enable-logging-and-monitoring.html"
@@ -161,7 +161,7 @@ Array [
     class="euiText euiText--medium eui-textLeft"
   >
     <p>
-      In Elastic Cloud, your monitoring data is stored in your dedicated monitoring cluster.
+      In HyperSec Cloud, your monitoring data is stored in your dedicated monitoring cluster.
     </p>
   </div>,
 ]

@@ -95,7 +95,7 @@ const mapManifestServiceUrlDeprecation: ConfigDeprecation = (settings, fromPath,
   if (has(settings, 'map.manifestServiceUrl')) {
     log(
       'You should no longer use the map.manifestServiceUrl setting in kibana.yml to configure the location ' +
-        'of the Elastic Maps Service settings. These settings have moved to the "map.emsTileApiUrl" and ' +
+        'of the HyperSec Maps Service settings. These settings have moved to the "map.emsTileApiUrl" and ' +
         '"map.emsFileApiUrl" settings instead. These settings are for development use only and should not be ' +
         'modified for use in production environments.'
     );

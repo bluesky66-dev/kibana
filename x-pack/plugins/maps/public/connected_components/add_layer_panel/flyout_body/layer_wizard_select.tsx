@@ -42,7 +42,7 @@ interface State {
 function getCategoryLabel(category: LAYER_WIZARD_CATEGORY): string {
   if (category === LAYER_WIZARD_CATEGORY.ELASTICSEARCH) {
     return i18n.translate('xpack.maps.layerWizardSelect.elasticsearchCategoryLabel', {
-      defaultMessage: 'Elasticsearch',
+      defaultMessage: 'HyperSec',
     });
   }
 

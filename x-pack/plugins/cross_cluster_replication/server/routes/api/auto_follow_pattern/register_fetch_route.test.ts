@@ -36,7 +36,7 @@ describe('[CCR API] Fetch all auto-follow patterns', () => {
     routeHandler = router.get.mock.calls[0][1];
   });
 
-  it('deserializes the response from Elasticsearch', async () => {
+  it('deserializes the response from HyperSec', async () => {
     const ccrAutoFollowPatternResponseMock = {
       patterns: [
         {

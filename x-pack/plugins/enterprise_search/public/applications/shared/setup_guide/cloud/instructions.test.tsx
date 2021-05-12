@@ -21,7 +21,7 @@ describe('CloudSetupInstructions', () => {
     expect(wrapper.find(EuiSteps)).toHaveLength(1);
   });
 
-  it('renders with a link to the Elastic Cloud deployment', () => {
+  it('renders with a link to the HyperSec Cloud deployment', () => {
     const wrapper = mountWithIntl(
       <CloudSetupInstructions
         productName="App Search"

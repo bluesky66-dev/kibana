@@ -44,7 +44,7 @@ export const createWinlogbeatInstructions = (context?: TutorialContext) => ({
         'home.tutorials.common.winlogbeatInstructions.install.windowsTextPost',
         {
           defaultMessage:
-            'Modify the settings under `output.elasticsearch` in the {path} file to point to your Elasticsearch installation.',
+            'Modify the settings under `output.elasticsearch` in the {path} file to point to your HyperSec installation.',
           values: { path: '`C:\\Program Files\\Winlogbeat\\winlogbeat.yml`' },
         }
       ),
@@ -89,7 +89,7 @@ export const createWinlogbeatInstructions = (context?: TutorialContext) => ({
         'home.tutorials.common.winlogbeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
@@ -114,7 +114,7 @@ export const createWinlogbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.winlogbeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`C:\\Program Files\\Winlogbeat\\winlogbeat.yml`',
           },

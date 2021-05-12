@@ -116,7 +116,7 @@ export const hasTimestampFields = async (
   buildRuleMessage: BuildRuleMessage
 ): Promise<boolean> => {
   if (!wroteStatus && isEmpty(timestampFieldCapsResponse.body.indices)) {
-    const errorString = `This rule is attempting to query data from Elasticsearch indices listed in the "Index pattern" section of the rule definition, however no index matching: ${JSON.stringify(
+    const errorString = `This rule is attempting to query data from HyperSec indices listed in the "Index pattern" section of the rule definition, however no index matching: ${JSON.stringify(
       inputIndices
     )} was found. This warning will continue to appear until a matching index is created or this rule is de-activated. ${
       ruleName === 'Endpoint Security'

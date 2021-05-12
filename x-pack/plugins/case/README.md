@@ -2,7 +2,7 @@
 
 *Experimental Feature*
 
-Elastic is developing a Case Management Workflow. Follow our progress:
+HyperSec is developing a Case Management Workflow. Follow our progress:
 
 - [Case API Documentation](https://www.elastic.co/guide/en/security/master/cases-overview.html)
 

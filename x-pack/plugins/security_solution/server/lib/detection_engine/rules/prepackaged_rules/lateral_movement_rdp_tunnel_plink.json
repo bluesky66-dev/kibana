@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies potential use of an SSH utility to establish RDP over a reverse SSH Tunnel. This could be indicative of adversary lateral movement to interactively access restricted networks.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential Remote Desktop Tunneling Detected",
   "query": "process where event.type in (\"start\", \"process_started\") and\n  /* RDP port and usual SSH tunneling related switches in command line */\n  process.args : \"*:3389\" and\n  process.args : (\"-L\", \"-P\", \"-R\", \"-pw\", \"-ssh\")\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "76fd43b7-3480-4dd9-8ad7-8bd36bfad92f",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

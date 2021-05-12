@@ -35,10 +35,10 @@ uiRoutes.when('/elasticsearch/ccr', {
     constructor($injector, $scope) {
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.ccr.routeTitle', {
-          defaultMessage: 'Elasticsearch - Ccr',
+          defaultMessage: 'HyperSec - Ccr',
         }),
         pageTitle: i18n.translate('xpack.monitoring.elasticsearch.ccr.pageTitle', {
-          defaultMessage: 'Elasticsearch Ccr',
+          defaultMessage: 'HyperSec Ccr',
         }),
         reactNodeId: 'elasticsearchCcrReact',
         getPageData,

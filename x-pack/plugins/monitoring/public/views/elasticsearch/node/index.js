@@ -49,7 +49,7 @@ uiRoutes.when('/elasticsearch/nodes/:node', {
 
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.node.overview.routeTitle', {
-          defaultMessage: 'Elasticsearch - Nodes - {nodeName} - Overview',
+          defaultMessage: 'HyperSec - Nodes - {nodeName} - Overview',
           values: {
             nodeName,
           },
@@ -104,7 +104,7 @@ uiRoutes.when('/elasticsearch/nodes/:node', {
 
           this.setTitle(
             i18n.translate('xpack.monitoring.elasticsearch.node.overview.routeTitle', {
-              defaultMessage: 'Elasticsearch - Nodes - {nodeName} - Overview',
+              defaultMessage: 'HyperSec - Nodes - {nodeName} - Overview',
               values: {
                 nodeName: get(data, 'nodeSummary.name'),
               },
@@ -113,7 +113,7 @@ uiRoutes.when('/elasticsearch/nodes/:node', {
 
           this.setPageTitle(
             i18n.translate('xpack.monitoring.elasticsearch.node.overview.pageTitle', {
-              defaultMessage: 'Elasticsearch node: {node}',
+              defaultMessage: 'HyperSec node: {node}',
               values: {
                 node: get(data, 'nodeSummary.name'),
               },

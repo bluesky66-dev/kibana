@@ -69,7 +69,7 @@ export const Summary = React.memo(() => {
         <p>
           <FormattedMessage
             id="xpack.securitySolution.overview.feedbackText"
-            defaultMessage="If you have input or suggestions regarding your experience with Elastic SIEM, please feel free to {feedback}."
+            defaultMessage="If you have input or suggestions regarding your experience with HyperSec SIEM, please feel free to {feedback}."
             values={{
               feedback: (
                 <EuiLink href="https://discuss.elastic.co/c/security" target="blank">

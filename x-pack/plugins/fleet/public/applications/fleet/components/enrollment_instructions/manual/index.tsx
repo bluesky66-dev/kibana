@@ -40,7 +40,7 @@ export const ManualInstructions: React.FunctionComponent<Props> = ({
       <EuiText>
         <FormattedMessage
           id="xpack.fleet.enrollmentInstructions.descriptionText"
-          defaultMessage="From the agent directory, run the appropriate command to install, enroll, and start an Elastic Agent. You can reuse these commands to set up agents on more than one host. Requires administrator privileges."
+          defaultMessage="From the agent directory, run the appropriate command to install, enroll, and start an HyperSec Agent. You can reuse these commands to set up agents on more than one host. Requires administrator privileges."
         />
       </EuiText>
       <EuiSpacer size="l" />
@@ -83,7 +83,7 @@ export const ManualInstructions: React.FunctionComponent<Props> = ({
               >
                 <FormattedMessage
                   id="xpack.fleet.enrollmentInstructions.moreInstructionsLink"
-                  defaultMessage="Elastic Agent docs"
+                  defaultMessage="HyperSec Agent docs"
                 />
               </EuiLink>
             ),

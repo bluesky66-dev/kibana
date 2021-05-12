@@ -59,21 +59,21 @@ export const TAG_FETCH_FAILURE = i18n.translate(
 export const LOAD_PREPACKAGED_RULES = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.loadPrePackagedRulesButton',
   {
-    defaultMessage: 'Load Elastic prebuilt rules',
+    defaultMessage: 'Load HyperSec prebuilt rules',
   }
 );
 
 export const LOAD_PREPACKAGED_TIMELINE_TEMPLATES = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.loadPrePackagedTimelineTemplatesButton',
   {
-    defaultMessage: 'Load Elastic prebuilt timeline templates',
+    defaultMessage: 'Load HyperSec prebuilt timeline templates',
   }
 );
 
 export const LOAD_PREPACKAGED_RULES_AND_TEMPLATES = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.loadPrePackagedRulesAndTemplatesButton',
   {
-    defaultMessage: 'Load Elastic prebuilt rules and timeline templates',
+    defaultMessage: 'Load HyperSec prebuilt rules and timeline templates',
   }
 );
 
@@ -83,7 +83,7 @@ export const RELOAD_MISSING_PREPACKAGED_RULES = (missingRules: number) =>
     {
       values: { missingRules },
       defaultMessage:
-        'Install {missingRules} Elastic prebuilt {missingRules, plural, =1 {rule} other {rules}} ',
+        'Install {missingRules} HyperSec prebuilt {missingRules, plural, =1 {rule} other {rules}} ',
     }
   );
 
@@ -93,7 +93,7 @@ export const RELOAD_MISSING_PREPACKAGED_TIMELINES = (missingTimelines: number) =
     {
       values: { missingTimelines },
       defaultMessage:
-        'Install {missingTimelines} Elastic prebuilt {missingTimelines, plural, =1 {timeline} other {timelines}} ',
+        'Install {missingTimelines} HyperSec prebuilt {missingTimelines, plural, =1 {timeline} other {timelines}} ',
     }
   );
 
@@ -106,6 +106,6 @@ export const RELOAD_MISSING_PREPACKAGED_RULES_AND_TIMELINES = (
     {
       values: { missingRules, missingTimelines },
       defaultMessage:
-        'Install {missingRules} Elastic prebuilt {missingRules, plural, =1 {rule} other {rules}} and {missingTimelines} Elastic prebuilt {missingTimelines, plural, =1 {timeline} other {timelines}} ',
+        'Install {missingRules} HyperSec prebuilt {missingRules, plural, =1 {rule} other {rules}} and {missingTimelines} HyperSec prebuilt {missingTimelines, plural, =1 {timeline} other {timelines}} ',
     }
   );

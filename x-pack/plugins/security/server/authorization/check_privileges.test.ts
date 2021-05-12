@@ -195,7 +195,7 @@ describe('#atSpace', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same Elasticsearch cluster, unable to authorize user.]`
+      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
@@ -295,7 +295,7 @@ describe('#atSpace', () => {
     `);
   });
 
-  describe('with a malformed Elasticsearch response', () => {
+  describe('with a malformed HyperSec response', () => {
     test(`throws a validation error when an extra privilege is present in the response`, async () => {
       const result = await checkPrivilegesAtSpaceTest({
         spaceId: 'space_1',
@@ -316,7 +316,7 @@ describe('#atSpace', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
       );
     });
 
@@ -338,12 +338,12 @@ describe('#atSpace', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
       );
     });
   });
 
-  describe('with both Kibana and Elasticsearch privileges', () => {
+  describe('with both Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesAtSpaceTest({
         spaceId: 'space_1',
@@ -609,7 +609,7 @@ describe('#atSpace', () => {
     });
   });
 
-  describe('with Elasticsearch privileges', () => {
+  describe('with HyperSec privileges', () => {
     it('successful when checking for cluster privileges, and user has both', async () => {
       const result = await checkPrivilegesAtSpaceTest({
         spaceId: 'space_1',
@@ -1063,11 +1063,11 @@ describe('#atSpaces', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same Elasticsearch cluster, unable to authorize user.]`
+      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
-  test(`throws error when Elasticsearch returns malformed response`, async () => {
+  test(`throws error when HyperSec returns malformed response`, async () => {
     const result = await checkPrivilegesAtSpacesTest({
       spaceIds: ['space_1', 'space_2'],
       kibanaPrivileges: [
@@ -1092,7 +1092,7 @@ describe('#atSpaces', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+      `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
     );
   });
 
@@ -1352,7 +1352,7 @@ describe('#atSpaces', () => {
     `);
   });
 
-  describe('with a malformed Elasticsearch response', () => {
+  describe('with a malformed HyperSec response', () => {
     test(`throws a validation error when an extra privilege is present in the response`, async () => {
       const result = await checkPrivilegesAtSpacesTest({
         spaceIds: ['space_1', 'space_2'],
@@ -1379,7 +1379,7 @@ describe('#atSpaces', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
       );
     });
 
@@ -1407,7 +1407,7 @@ describe('#atSpaces', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
       );
     });
 
@@ -1440,7 +1440,7 @@ describe('#atSpaces', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
       );
     });
 
@@ -1463,12 +1463,12 @@ describe('#atSpaces', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected resources]`
       );
     });
   });
 
-  describe('with both Kibana and Elasticsearch privileges', () => {
+  describe('with both Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesAtSpacesTest({
         spaceIds: ['space_1', 'space_2'],
@@ -1798,7 +1798,7 @@ describe('#atSpaces', () => {
     });
   });
 
-  describe('with Elasticsearch privileges', () => {
+  describe('with HyperSec privileges', () => {
     it('successful when checking for cluster privileges, and user has both', async () => {
       const result = await checkPrivilegesAtSpacesTest({
         spaceIds: ['space_1', 'space_2'],
@@ -2242,11 +2242,11 @@ describe('#globally', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Multiple versions of Kibana are running against the same Elasticsearch cluster, unable to authorize user.]`
+      `[Error: Multiple versions of Kibana are running against the same HyperSec cluster, unable to authorize user.]`
     );
   });
 
-  test(`throws error when Elasticsearch returns malformed response`, async () => {
+  test(`throws error when HyperSec returns malformed response`, async () => {
     const result = await checkPrivilegesGloballyTest({
       kibanaPrivileges: [
         `saved_object:${savedObjectTypes[0]}/get`,
@@ -2266,7 +2266,7 @@ describe('#globally', () => {
       },
     });
     expect(result).toMatchInlineSnapshot(
-      `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+      `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
     );
   });
 
@@ -2364,7 +2364,7 @@ describe('#globally', () => {
     `);
   });
 
-  describe('with a malformed Elasticsearch response', () => {
+  describe('with a malformed HyperSec response', () => {
     test(`throws a validation error when an extra privilege is present in the response`, async () => {
       const result = await checkPrivilegesGloballyTest({
         kibanaPrivileges: [`saved_object:${savedObjectTypes[0]}/get`],
@@ -2384,7 +2384,7 @@ describe('#globally', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
       );
     });
 
@@ -2405,12 +2405,12 @@ describe('#globally', () => {
         },
       });
       expect(result).toMatchInlineSnapshot(
-        `[Error: Invalid response received from Elasticsearch has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
+        `[Error: Invalid response received from HyperSec has_privilege endpoint. Error: [application.kibana-our_application]: Payload did not match expected actions]`
       );
     });
   });
 
-  describe('with both Kibana and Elasticsearch privileges', () => {
+  describe('with both Kibana and HyperSec privileges', () => {
     it('successful when checking for privileges, and user has all', async () => {
       const result = await checkPrivilegesGloballyTest({
         elasticsearchPrivileges: {
@@ -2672,7 +2672,7 @@ describe('#globally', () => {
     });
   });
 
-  describe('with Elasticsearch privileges', () => {
+  describe('with HyperSec privileges', () => {
     it('successful when checking for cluster privileges, and user has both', async () => {
       const result = await checkPrivilegesGloballyTest({
         elasticsearchPrivileges: {

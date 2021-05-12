@@ -14,7 +14,7 @@ const i18nTexts = {
     defaultMessage: 'Create a cold tier',
   }),
   body: i18n.translate('xpack.indexLifecycleMgmt.editPolicy.cloudMissingColdTierCallout.body', {
-    defaultMessage: 'Edit your Elastic Cloud deployment to set up a cold tier.',
+    defaultMessage: 'Edit your HyperSec Cloud deployment to set up a cold tier.',
   }),
   linkText: i18n.translate(
     'xpack.indexLifecycleMgmt.editPolicy.cloudMissingColdTierCallout.linkToCloudDeploymentDescription',

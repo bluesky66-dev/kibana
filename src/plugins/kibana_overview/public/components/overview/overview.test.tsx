@@ -44,12 +44,12 @@ const mockNewsFetchResult = {
       linkUrl:
         'https://www.elastic.co/blog/the-go-client-for-elasticsearch-introduction?blade=kibanafeed',
       publishOn: moment('2020-08-31T10:23:47Z'),
-      title: 'The Go client for Elasticsearch: Introduction',
+      title: 'The Go client for HyperSec: Introduction',
     },
     {
       badge: null,
       description:
-        'Learn how to use Elastic Uptime to configure alerting and anomaly detection for sites, services, and APIs.',
+        'Learn how to use HyperSec Uptime to configure alerting and anomaly detection for sites, services, and APIs.',
       expireOn: moment('2050-12-31T11:59:59Z'),
       hash: 'fb3e3d42ef',
       linkText: 'Read more on the blog',
@@ -68,7 +68,7 @@ const mockNewsFetchResult = {
       linkUrl:
         'https://www.elastic.co/blog/optimizing-costs-elastic-cloud-hot-warm-index-lifecycle-management?blade=kibanafeed',
       publishOn: moment('2020-08-01T10:23:47Z'),
-      title: 'Optimizing costs in Elastic Cloud: Hot-warm + index lifecycle management',
+      title: 'Optimizing costs in HyperSec Cloud: Hot-warm + index lifecycle management',
     },
   ],
   hasNew: true,

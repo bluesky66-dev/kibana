@@ -121,7 +121,7 @@ export default function ({ getService }) {
     });
 
     describe('Advanced settings', () => {
-      it('hard-coded values should match Elasticsearch default values', async () => {
+      it('hard-coded values should match HyperSec default values', async () => {
         /**
          * To make sure that the hard-coded values in the client match the default
          * from Elasticsearch, we will create a follower index without any advanced settings.

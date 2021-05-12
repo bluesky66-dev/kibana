@@ -9,8 +9,8 @@
 This module implements two forward http proxies, http on 8080 and https on 8443,
 which can be used with the config xpack.actions.proxyUrl to emulate customers
 using forward proxies with Kibana actions.  You can use either the http or https
-versions, both can forward proxy http and https traffic: 
-  
+versions, both can forward proxy http and https traffic:
+
     xpack.actions.proxyUrl: http://localhost:8080
       OR
     xpack.actions.proxyUrl: https://localhost:8443

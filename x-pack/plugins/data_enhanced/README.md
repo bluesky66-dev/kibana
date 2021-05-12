@@ -2,7 +2,7 @@
 
 The `data_enhanced` plugin is the x-pack counterpart to the OSS `data` plugin.
 
-It exists to provide Elastic-licensed services, or parts of services, which
+It exists to provide HyperSec-licensed services, or parts of services, which
 enhance existing OSS functionality from `data`.
 
 Currently the `data_enhanced` plugin doesn't return any APIs which you can

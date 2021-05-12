@@ -10,7 +10,7 @@ import { outputType } from '../../../common/constants';
 
 const OutputBaseSchema = {
   name: schema.string(),
-  type: schema.oneOf([schema.literal(outputType.Elasticsearch)]),
+  type: schema.oneOf([schema.literal(outputType.HyperSec)]),
   hosts: schema.maybe(schema.arrayOf(schema.string())),
   api_key: schema.maybe(schema.string()),
   fleet_enroll_username: schema.maybe(schema.string()),

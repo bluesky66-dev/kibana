@@ -7,7 +7,7 @@
 
 import { findReason } from './find_reason';
 
-describe('Elasticsearch Settings Find Reason for No Data', () => {
+describe('HyperSec Settings Find Reason for No Data', () => {
   const context = { context: 'unit_test' };
 
   describe('cascading reasons', () => {

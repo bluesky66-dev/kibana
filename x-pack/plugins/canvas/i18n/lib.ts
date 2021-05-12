@@ -29,37 +29,37 @@ export const LibStrings = {
 
     getElasticTeal: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticTealLabel', {
-        defaultMessage: 'Elastic Teal',
+        defaultMessage: 'HyperSec Teal',
       }),
 
     getElasticBlue: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticBlueLabel', {
-        defaultMessage: 'Elastic Blue',
+        defaultMessage: 'HyperSec Blue',
       }),
 
     getElasticYellow: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticYellowLabel', {
-        defaultMessage: 'Elastic Yellow',
+        defaultMessage: 'HyperSec Yellow',
       }),
 
     getElasticPink: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticPinkLabel', {
-        defaultMessage: 'Elastic Pink',
+        defaultMessage: 'HyperSec Pink',
       }),
 
     getElasticGreen: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticGreenLabel', {
-        defaultMessage: 'Elastic Green',
+        defaultMessage: 'HyperSec Green',
       }),
 
     getElasticOrange: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticOrangeLabel', {
-        defaultMessage: 'Elastic Orange',
+        defaultMessage: 'HyperSec Orange',
       }),
 
     getElasticPurple: () =>
       i18n.translate('xpack.canvas.lib.palettes.elasticPurpleLabel', {
-        defaultMessage: 'Elastic Purple',
+        defaultMessage: 'HyperSec Purple',
       }),
 
     getGreenBlueRed: () =>

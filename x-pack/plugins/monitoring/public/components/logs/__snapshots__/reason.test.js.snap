@@ -112,7 +112,7 @@ exports[`Logs should render with a no index pattern found reason 1`] = `
 >
   <p>
     <FormattedMessage
-      defaultMessage="Set up {link}, then configure your Elasticsearch output to your monitoring cluster."
+      defaultMessage="Set up {link}, then configure your HyperSec output to your monitoring cluster."
       id="xpack.monitoring.logs.reason.noIndexPatternMessage"
       values={
         Object {
@@ -133,7 +133,7 @@ exports[`Logs should render with a no node found reason 1`] = `
 <EuiCallOut
   color="warning"
   iconType="help"
-  title="No logs for this Elasticsearch node"
+  title="No logs for this HyperSec node"
 >
   <p>
     <FormattedMessage
@@ -186,11 +186,11 @@ exports[`Logs should render with a no type found reason 1`] = `
 <EuiCallOut
   color="warning"
   iconType="help"
-  title="No logs for Elasticsearch"
+  title="No logs for HyperSec"
 >
   <p>
     <FormattedMessage
-      defaultMessage="Follow {link} to set up Elasticsearch."
+      defaultMessage="Follow {link} to set up HyperSec."
       id="xpack.monitoring.logs.reason.noTypeMessage"
       values={
         Object {

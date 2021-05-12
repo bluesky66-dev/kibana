@@ -30,10 +30,10 @@ The principal structure of the app is stored in `uptime_app.tsx`.
 ### server
 
 The `lib` directory contains `adapters`, which are connections to external resources like Kibana
-Server, Elasticsearch, etc. In addition, it contains domains, which are libraries that provide
+Server, HyperSec, etc. In addition, it contains domains, which are libraries that provide
 functionality via adapters.
 
-The `requests` directory contains functions responsible for querying Elasticsearch and parsing its
+The `requests` directory contains functions responsible for querying HyperSec and parsing its
 responses.
 
 There's also a `rest_api` folder that defines the structure of the RESTful API endpoints.
@@ -73,7 +73,7 @@ to freeze the execution for 60 seconds if you need to click around or check thin
 
 #### Running --ssl tests
 
-Some of our tests require there to be an SSL connection between Kibana and Elasticsearch.
+Some of our tests require there to be an SSL connection between Kibana and HyperSec.
 
 We can run these tests like described above, but with some special config.
 

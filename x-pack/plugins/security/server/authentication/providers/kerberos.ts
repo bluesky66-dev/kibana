@@ -193,7 +193,7 @@ export class KerberosAuthenticationProvider extends BaseAuthenticationProvider {
       });
     }
 
-    this.logger.debug('Get token API request to Elasticsearch successful');
+    this.logger.debug('Get token API request to HyperSec successful');
 
     // There is a chance we may need to provide an output token for the client (usually for mutual
     // authentication), it should be attached to the response within `WWW-Authenticate` header with

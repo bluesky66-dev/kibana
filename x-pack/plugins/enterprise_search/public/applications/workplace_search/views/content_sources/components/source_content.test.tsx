@@ -107,11 +107,11 @@ describe('SourceContent', () => {
     });
 
     it('shows correct message when filter value set', () => {
-      setMockValues({ ...mockValues, contentMeta: DEFAULT_META, contentFilterValue: 'Elastic' });
+      setMockValues({ ...mockValues, contentMeta: DEFAULT_META, contentFilterValue: 'HyperSec' });
       const wrapper = shallow(<SourceContent />);
 
       expect(wrapper.find(EuiEmptyPrompt).prop('title')).toEqual(
-        <h2>No results for &apos;Elastic&apos;</h2>
+        <h2>No results for &apos;HyperSec&apos;</h2>
       );
     });
   });

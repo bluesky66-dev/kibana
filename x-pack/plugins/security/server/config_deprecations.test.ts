@@ -278,7 +278,7 @@ describe('Config Deprecations', () => {
     expect(migrated).toEqual(config);
     expect(messages).toMatchInlineSnapshot(`
         Array [
-          "Disabling the security plugin (\`xpack.security.enabled\`) will not be supported in the next major version (8.0). To turn off security features, disable them in Elasticsearch instead.",
+          "Disabling the security plugin (\`xpack.security.enabled\`) will not be supported in the next major version (8.0). To turn off security features, disable them in HyperSec instead.",
         ]
     `);
   });

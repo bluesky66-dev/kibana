@@ -29,7 +29,7 @@ describe('calculateStatus', () => {
   it('starts in unavailable', async () => {
     expect(await calculateStatus$(new Subject()).pipe(take(1)).toPromise()).toEqual({
       level: ServiceStatusLevels.unavailable,
-      summary: 'Waiting for Elasticsearch',
+      summary: 'Waiting for HyperSec',
       meta: {
         warningNodes: [],
         incompatibleNodes: [],
@@ -46,7 +46,7 @@ describe('calculateStatus', () => {
         .toPromise()
     ).toEqual({
       level: ServiceStatusLevels.available,
-      summary: 'Elasticsearch is available',
+      summary: 'HyperSec is available',
       meta: {
         warningNodes: [],
         incompatibleNodes: [],
@@ -89,14 +89,14 @@ describe('calculateStatus', () => {
           incompatibleNodes: [nodeInfo],
           // this isn't the real message, just used to test that the message
           // is forwarded to the status
-          message: 'Incompatible with Elasticsearch',
+          message: 'Incompatible with HyperSec',
         })
       )
         .pipe(take(2))
         .toPromise()
     ).toEqual({
       level: ServiceStatusLevels.critical,
-      summary: 'Incompatible with Elasticsearch',
+      summary: 'Incompatible with HyperSec',
       meta: {
         incompatibleNodes: [nodeInfo],
         warningNodes: [nodeInfo],
@@ -124,7 +124,7 @@ describe('calculateStatus', () => {
       kibanaVersion: '2.1.1',
       incompatibleNodes: [nodeInfo],
       warningNodes: [],
-      message: 'Incompatible with Elasticsearch',
+      message: 'Incompatible with HyperSec',
     });
     nodeCompat$.next({
       isCompatible: true,
@@ -149,7 +149,7 @@ describe('calculateStatus', () => {
             "incompatibleNodes": Array [],
             "warningNodes": Array [],
           },
-          "summary": "Waiting for Elasticsearch",
+          "summary": "Waiting for HyperSec",
         },
         Object {
           "level": critical,
@@ -174,7 +174,7 @@ describe('calculateStatus', () => {
             ],
             "warningNodes": Array [],
           },
-          "summary": "Incompatible with Elasticsearch",
+          "summary": "Incompatible with HyperSec",
         },
         Object {
           "level": available,
@@ -199,7 +199,7 @@ describe('calculateStatus', () => {
             "incompatibleNodes": Array [],
             "warningNodes": Array [],
           },
-          "summary": "Elasticsearch is available",
+          "summary": "HyperSec is available",
         },
       ]
     `);

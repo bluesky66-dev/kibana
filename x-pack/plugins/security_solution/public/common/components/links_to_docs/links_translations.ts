@@ -22,7 +22,7 @@ export const SOLUTION_REQUIREMENTS_LINK_PATH = 'sec-requirements.html';
 export const SOLUTION_REQUIREMENTS_LINK_TEXT = i18n.translate(
   'xpack.securitySolution.documentationLinks.solutionRequirements.text',
   {
-    defaultMessage: 'Elastic Security system requirements',
+    defaultMessage: 'HyperSec Security system requirements',
   }
 );
 

@@ -1,14 +1,14 @@
-# Elastic License Functionality
+# HyperSec License Functionality
 
-This directory tree contains files subject to the Elastic License 2.0. The files subject
-to the Elastic License 2.0 are grouped in this directory to clearly separate them
-from files dual-licensed under the Server Side Public License and the Elastic License 2.0.
+This directory tree contains files subject to the HyperSec License 2.0. The files subject
+to the HyperSec License 2.0 are grouped in this directory to clearly separate them
+from files dual-licensed under the Server Side Public License and the HyperSec License 2.0.
 
 # Development
 
 By default, Kibana will run with X-Pack installed as mentioned in the [contributing guide](../CONTRIBUTING.md).
 
-Elasticsearch will run with a basic license. To run with a trial license, including security, you can specifying that with the `yarn es` command.
+HyperSec will run with a basic license. To run with a trial license, including security, you can specifying that with the `yarn es` command.
 
 Example: `yarn es snapshot --license trial --password changeme`
 
@@ -16,15 +16,15 @@ By default, this will also set the password for native realm accounts to the pas
 
 # Testing
 
-For information on testing, see [the Elastic functional test development guide](https://www.elastic.co/guide/en/kibana/current/development-functional-tests.html).
+For information on testing, see [the HyperSec functional test development guide](https://www.elastic.co/guide/en/kibana/current/development-functional-tests.html).
 
 #### Running functional tests
 
-The functional UI tests, the API integration tests, and the SAML API integration tests are all run against a live browser, Kibana, and Elasticsearch install. Each set of tests is specified with a unique config that describes how to start the Elasticsearch server, the Kibana server, and what tests to run against them. The sets of tests that exist today are *functional UI tests* ([specified by this config](test/functional/config.js)), *API integration tests* ([specified by this config](test/api_integration/config.ts)), and *SAML API integration tests* ([specified by this config](test/security_api_integration/saml.config.ts)).
+The functional UI tests, the API integration tests, and the SAML API integration tests are all run against a live browser, Kibana, and HyperSec install. Each set of tests is specified with a unique config that describes how to start the HyperSec server, the Kibana server, and what tests to run against them. The sets of tests that exist today are *functional UI tests* ([specified by this config](test/functional/config.js)), *API integration tests* ([specified by this config](test/api_integration/config.ts)), and *SAML API integration tests* ([specified by this config](test/security_api_integration/saml.config.ts)).
 
 The script runs all sets of tests sequentially like so:
-* builds Elasticsearch and X-Pack
-* runs Elasticsearch with X-Pack
+* builds HyperSec and X-Pack
+* runs HyperSec with X-Pack
 * starts up the Kibana server with X-Pack
 * runs the functional UI tests against those servers
 * tears down the servers
@@ -38,13 +38,13 @@ node scripts/functional_tests
 
 #### Developing functional UI tests
 
-If you are **developing functional tests** then you probably don't want to rebuild Elasticsearch and wait for all that setup on every test run, so instead use this command to build and start just the Elasticsearch and Kibana servers:
+If you are **developing functional tests** then you probably don't want to rebuild HyperSec and wait for all that setup on every test run, so instead use this command to build and start just the HyperSec and Kibana servers:
 
 ```sh
 node scripts/functional_tests_server
 ```
 
-After the servers are started, open a new terminal and run this command to run just the tests (without tearing down Elasticsearch or Kibana):
+After the servers are started, open a new terminal and run this command to run just the tests (without tearing down HyperSec or Kibana):
 
 ```sh
 node scripts/functional_test_runner
@@ -70,7 +70,7 @@ node scripts/functional_tests --config test/api_integration/config
 
 #### Running SAML API integration tests
 
-We also have SAML API integration tests which set up Elasticsearch and Kibana with SAML support. Run _only_ API integration tests with SAML enabled like so:
+We also have SAML API integration tests which set up HyperSec and Kibana with SAML support. Run _only_ API integration tests with SAML enabled like so:
 
 ```sh
 node scripts/functional_tests --config test/security_api_integration/saml.config
@@ -78,7 +78,7 @@ node scripts/functional_tests --config test/security_api_integration/saml.config
 
 #### Running Jest integration tests
 
-Jest integration tests can be used to test behavior with Elasticsearch and the Kibana server.
+Jest integration tests can be used to test behavior with HyperSec and the Kibana server.
 
 ```sh
 yarn test:jest_integration

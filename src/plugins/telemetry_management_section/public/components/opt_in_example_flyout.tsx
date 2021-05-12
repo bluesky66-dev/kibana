@@ -111,7 +111,7 @@ export class OptInExampleFlyout extends React.PureComponent<Props, State> {
           <FormattedMessage
             id="telemetry.callout.errorLoadingClusterStatisticsDescription"
             defaultMessage="An unexpected error occured while attempting to fetch the cluster statistics.
-              This can occur because Elasticsearch failed, Kibana failed, or there is a network error.
+              This can occur because HyperSec failed, Kibana failed, or there is a network error.
               Check Kibana, then reload the page and try again."
           />
         </EuiCallOut>

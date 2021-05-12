@@ -39,7 +39,7 @@
         { "label": { "en": "OpenMapTiles" }, "url": { "en": "https://openmaptiles.org" } },
         { "label": { "en": "MapTiler" }, "url": { "en": "https://www.maptiler.com" } },
         {
-          "label": { "en": "Elastic Maps Service" },
+          "label": { "en": "HyperSec Maps Service" },
           "url": { "en": "https://www.elastic.co/elastic-maps-service" }
         }
       ],
@@ -67,7 +67,7 @@
         { "label": { "en": "OpenMapTiles" }, "url": { "en": "https://openmaptiles.org" } },
         { "label": { "en": "MapTiler" }, "url": { "en": "https://www.maptiler.com" } },
         {
-          "label": { "en": "Elastic Maps Service" },
+          "label": { "en": "HyperSec Maps Service" },
           "url": { "en": "https://www.elastic.co/elastic-maps-service" }
         }
       ],

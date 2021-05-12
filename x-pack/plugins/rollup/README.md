@@ -2,7 +2,7 @@
 
 ## Summary
 
-Welcome to the Kibana rollup plugin! This plugin provides Kibana support for [Elasticsearch's rollup feature](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-rollup.html). Please refer to the Elasticsearch documentation to understand rollup indices and how to create rollup jobs.
+Welcome to the Kibana rollup plugin! This plugin provides Kibana support for [HyperSec's rollup feature](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-rollup.html). Please refer to the HyperSec documentation to understand rollup indices and how to create rollup jobs.
 
 This plugin allows Kibana to:
 
@@ -33,7 +33,7 @@ The pattern for creating a rollup job and rollup index pattern is:
 
 The most straight forward part of this plugin! A new app called Rollup Jobs is registered in the Management section and follows a typical CRUD UI pattern. This app allows users to create, start, stop, clone, and delete rollup jobs. There is no way to edit an existing rollup job; instead, the UI offers a cloning ability. The client-side portion of this app lives in [public/crud_app](public/crud_app) and uses endpoints registered in [server/routes/api/jobs](server/routes/api/jobs).
 
-Refer to the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/rollup-getting-started.html) to understand rollup indices and how to create rollup jobs.
+Refer to the [HyperSec documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/rollup-getting-started.html) to understand rollup indices and how to create rollup jobs.
 
 ## Create rollup index patterns
 
@@ -50,9 +50,9 @@ Once a rollup index pattern is created, it is tagged with `Rollup` in the list o
 
 ## Create visualizations from rollup index patterns
 
-This plugin enables the user to create visualizations from rollup data using the Visualize app, excluding TSVB, Vega, and Timelion. When Visualize sends search requests, this plugin routes the requests to the [Elasticsearch rollup search endpoint](https://www.elastic.co/guide/en/elasticsearch/reference/current/rollup-search.html), which searches the special document structure within rollup indices. The visualization options available to users are based on the capabilities of the rollup index pattern they're visualizing.
+This plugin enables the user to create visualizations from rollup data using the Visualize app, excluding TSVB, Vega, and Timelion. When Visualize sends search requests, this plugin routes the requests to the [HyperSec rollup search endpoint](https://www.elastic.co/guide/en/elasticsearch/reference/current/rollup-search.html), which searches the special document structure within rollup indices. The visualization options available to users are based on the capabilities of the rollup index pattern they're visualizing.
 
-Routing to the Elasticsearch rollup search endpoint is done by creating an extension point in Courier, effectively allowing multiple "search strategies" to be registered. A [rollup search strategy](public/search/register.js) is registered by this plugin that queries [this plugin's rollup search endpoint](server/routes/api/search.js).
+Routing to the HyperSec rollup search endpoint is done by creating an extension point in Courier, effectively allowing multiple "search strategies" to be registered. A [rollup search strategy](public/search/register.js) is registered by this plugin that queries [this plugin's rollup search endpoint](server/routes/api/search.js).
 
 Limiting visualization editor options is done by [registering configs](public/visualize/index.js) to various vis extension points. These configs use information stored on the rollup index pattern to limit:
 * Available aggregation types

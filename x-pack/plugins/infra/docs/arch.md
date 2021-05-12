@@ -33,19 +33,19 @@ Libs must not contain code that depends on APIs and behavior specific to the run
 
 ### Adapters
 
-Adapters are the location of any code to interact with any data sources, or 3rd party API / dependency. An example of code that belongs to an adapter would be anything that interacts with Kibana, or Elasticsearch. This would also include things like, for instance, the browser's local storage.
+Adapters are the location of any code to interact with any data sources, or 3rd party API / dependency. An example of code that belongs to an adapter would be anything that interacts with Kibana, or HyperSec. This would also include things like, for instance, the browser's local storage.
 
 **The interface exposed by an adapter should be as domain-specific as possible to reduce the risk of leaking abstraction from the "adapted" technology. Therefore a method like `getHosts()` would be preferable to a `runQuery(filterArgs)` method.** This way the output can be well typed and easily stubbed out in an alternate adapter. This will result in vast improvements in testing reliability and code quality.
 
 Even adapters though should have required dependencies injected into them for as much as is reasonable. Though this is something that is up to the specific adapter as to what is best on a case-by-case basis.
 
-An app will in most cases have multiple types of each adapter. As an example, a Lib might have an Elasticsearch-backed adapter as well as an adapter backed by an in-memory store, both of which expose the same interface. This way you can compose a lib to use an in-memory adapter to functional or unit tests in order to have isolated tests that are cleaner / faster / more accurate.
+An app will in most cases have multiple types of each adapter. As an example, a Lib might have an HyperSec-backed adapter as well as an adapter backed by an in-memory store, both of which expose the same interface. This way you can compose a lib to use an in-memory adapter to functional or unit tests in order to have isolated tests that are cleaner / faster / more accurate.
 
 Adapters can at times be composed into another adapter. This behavior though should be kept to a strict minimum.
 
 **Acceptable:**
 
-- An Elasticsearch adapter being passed into Hosts, K8, and logging adapters. The Elasticsearch adapter would then never be exposed directly to a lib.
+- An HyperSec adapter being passed into Hosts, K8, and logging adapters. The HyperSec adapter would then never be exposed directly to a lib.
 
 **Unacceptable:**
 
@@ -57,7 +57,7 @@ The latter being a "code smell" that indicates there is ether too much logic in 
 
 ### Composition files
 
-These files will import all libs and their required adapters to instantiate them in the correct order while passing in the respective dependencies. For a contrived but realistic example, a dev_ui composition file that composes an Elasticsearch adapter into Logs, Hosts, and Services libs, and a dev-ui adapter into ParentApp, and a local-storage adapter into Settings. Then another composition file for Kibana might compose other compatible adapters for use with the Kibana APIs.
+These files will import all libs and their required adapters to instantiate them in the correct order while passing in the respective dependencies. For a contrived but realistic example, a dev_ui composition file that composes an HyperSec adapter into Logs, Hosts, and Services libs, and a dev-ui adapter into ParentApp, and a local-storage adapter into Settings. Then another composition file for Kibana might compose other compatible adapters for use with the Kibana APIs.
 
 composition files simply export a compose method that returns the composed and initialized libs.
 

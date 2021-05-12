@@ -45,7 +45,7 @@ interface Props {
 export class ElasticsearchPrivileges extends Component<Props, {}> {
   public render() {
     return (
-      <CollapsiblePanel iconType={'logoElasticsearch'} title={'Elasticsearch'}>
+      <CollapsiblePanel iconType={'logoElasticsearch'} title={'HyperSec'}>
         {this.getForm()}
       </CollapsiblePanel>
     );

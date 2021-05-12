@@ -28,7 +28,7 @@ import { useAppContext } from '../../../app_context';
 // Keep this until last minor release (when next major is also released).
 const WAIT_FOR_RELEASE_STEP = (majorVersion: number, nextMajorVersion: number) => ({
   title: i18n.translate('xpack.upgradeAssistant.overviewTab.steps.waitForReleaseStep.stepTitle', {
-    defaultMessage: 'Wait for the Elasticsearch {nextEsVersion} release',
+    defaultMessage: 'Wait for the HyperSec {nextEsVersion} release',
     values: {
       nextEsVersion: `${nextMajorVersion}.0`,
     },
@@ -65,7 +65,7 @@ const START_UPGRADE_STEP = (isCloudEnabled: boolean, esDocBasePath: string) => (
           {isCloudEnabled ? (
             <FormattedMessage
               id="xpack.upgradeAssistant.overviewTab.steps.startUpgradeStepCloud.stepDetail.goToCloudDashboardDetail"
-              defaultMessage="Go to the Deployments section on the Elastic Cloud dashboard to start your upgrade."
+              defaultMessage="Go to the Deployments section on the HyperSec Cloud dashboard to start your upgrade."
             />
           ) : (
             <FormattedMessage
@@ -232,7 +232,7 @@ export const Steps: FunctionComponent<UpgradeAssistantTabProps> = ({
           title: i18n.translate(
             'xpack.upgradeAssistant.overviewTab.steps.deprecationLogsStep.stepTitle',
             {
-              defaultMessage: 'Review the Elasticsearch deprecation logs',
+              defaultMessage: 'Review the HyperSec deprecation logs',
             }
           ),
           children: (

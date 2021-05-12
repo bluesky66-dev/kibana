@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Windows Component Object Model (COM) is an inter-process communication (IPC) component of the native Windows application programming interface (API) that enables interaction between software objects or executable code. Xwizard can be used to run a COM object created in registry to evade defensive counter measures.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Execution of COM object via Xwizard",
   "query": "process where event.type in (\"start\", \"process_started\") and\n process.pe.original_file_name : \"xwizard.exe\" and\n (\n   (process.args : \"RunWizard\" and process.args : \"{*}\") or\n   (process.executable != null and\n     not process.executable : (\"C:\\\\Windows\\\\SysWOW64\\\\xwizard.exe\", \"C:\\\\Windows\\\\System32\\\\xwizard.exe\")\n   )\n )\n",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "1a6075b0-7479-450e-8fe7-b8b8438ac570",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

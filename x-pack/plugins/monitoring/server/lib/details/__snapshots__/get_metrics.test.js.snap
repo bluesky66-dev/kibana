@@ -1496,7 +1496,7 @@ Object {
       ],
       "metric": Object {
         "app": "elasticsearch",
-        "description": "Percentage of CPU usage for the Elasticsearch process.",
+        "description": "Percentage of CPU usage for the HyperSec process.",
         "field": "node_stats.process.cpu.percent",
         "format": "0,0.[00]",
         "hasCalculation": false,

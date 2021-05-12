@@ -188,7 +188,7 @@ describe('saved_object', () => {
       });
     });
 
-    test('should send correct options for counts of Elastic prebuilt templates', async () => {
+    test('should send correct options for counts of HyperSec prebuilt templates', async () => {
       expect(mockFindSavedObject.mock.calls[3][0]).toEqual({
         filter:
           'siem-ui-timeline.attributes.timelineType: template and not siem-ui-timeline.attributes.status: draft and siem-ui-timeline.attributes.status: immutable',

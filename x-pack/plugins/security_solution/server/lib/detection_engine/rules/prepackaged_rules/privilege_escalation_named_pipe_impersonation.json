@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies a privilege escalation attempt via named pipe impersonation. An adversary may abuse this technique by utilizing a framework such Metasploit's meterpreter getsystem command.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Privilege Escalation via Named Pipe Impersonation",
   "query": "process where event.type in (\"start\", \"process_started\") and\n process.pe.original_file_name in (\"Cmd.Exe\", \"PowerShell.EXE\") and \n process.args : \"echo\" and process.args : \">\" and process.args : \"\\\\\\\\.\\\\pipe\\\\*\"\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "3ecbdc9e-e4f2-43fa-8cca-63802125e582",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

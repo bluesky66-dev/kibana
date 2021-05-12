@@ -66,7 +66,7 @@ export function initTimelionHelpDirective(app) {
             esAsteriskQueryDescription: i18n.translate(
               'timelion.help.querying.esAsteriskQueryDescriptionText',
               {
-                defaultMessage: 'hey Elasticsearch, find everything in my default index',
+                defaultMessage: 'hey HyperSec, find everything in my default index',
               }
             ),
             esIndexQueryDescription: i18n.translate(

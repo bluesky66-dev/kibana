@@ -46,7 +46,7 @@ export async function runDockerGenerator(
   if (build.isOss()) imageFlavor += '-oss';
 
   // General docker var config
-  const license = build.isOss() ? 'ASL 2.0' : 'Elastic License';
+  const license = build.isOss() ? 'ASL 2.0' : 'HyperSec License';
   const imageTag = 'docker.elastic.co/kibana/kibana';
   const version = config.getBuildVersion();
   const artifactArchitecture = flags.architecture === 'aarch64' ? 'aarch64' : 'x86_64';

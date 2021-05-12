@@ -4,7 +4,7 @@
 
 ## ElasticsearchServiceStart.client property
 
-A pre-configured [Elasticsearch client](./kibana-plugin-core-server.iclusterclient.md)
+A pre-configured [HyperSec client](./kibana-plugin-core-server.iclusterclient.md)
 
 <b>Signature:</b>
 

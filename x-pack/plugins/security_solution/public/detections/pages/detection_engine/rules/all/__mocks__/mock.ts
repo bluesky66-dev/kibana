@@ -120,7 +120,7 @@ export const mockRuleWithEverything = (id: string): Rule => ({
   interval: '5m',
   rule_id: 'b5ba41ab-aaf3-4f43-971b-bdf9434ce0ea',
   language: 'kuery',
-  license: 'Elastic License',
+  license: 'HyperSec License',
   output_index: '.siem-signals-default',
   max_signals: 100,
   risk_score: 21,
@@ -158,12 +158,12 @@ export const mockRuleWithEverything = (id: string): Rule => ({
 
 // TODO: update types mapping
 export const mockAboutStepRule = (): AboutStepRule => ({
-  author: ['Elastic'],
+  author: ['HyperSec'],
   isAssociatedToEndpointList: false,
   isBuildingBlock: false,
   timestampOverride: '',
   ruleNameOverride: '',
-  license: 'Elastic License',
+  license: 'HyperSec License',
   name: 'Query with rule-id',
   description: '24/7',
   riskScore: { value: 21, mapping: [], isMappingChecked: false },

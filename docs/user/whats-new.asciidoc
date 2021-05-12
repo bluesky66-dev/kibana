@@ -90,7 +90,7 @@ The {es} query alert is especially good for
 advanced use cases where you want to create custom alerts with custom DSL queries.
 
 [role="screenshot"]
-image::user/images/highlights-es-query.png[Elasticsearch query alert]
+image::user/images/highlights-es-query.png[HyperSec query alert]
 
 
 [float]

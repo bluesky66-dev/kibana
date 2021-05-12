@@ -44,9 +44,9 @@ There is a POC implemented in the branch [`pulse_poc`](https://github.com/elasti
 It covers the following scenarios:
 
 - Track the behaviour of our users in the UI, reporting UI events throughout our platform.
-- Report to Elastic when an unexpected error occurs and keep track of it. When it's fixed, it lets the user know, encouraging them to update to their deployment to the latest release (PR [#56724](https://github.com/elastic/kibana/pull/56724)).
+- Report to HyperSec when an unexpected error occurs and keep track of it. When it's fixed, it lets the user know, encouraging them to update to their deployment to the latest release (PR [#56724](https://github.com/elastic/kibana/pull/56724)).
 - Keep track of the notifications and news in the newsfeed to know when they are read/kept unseen. This might help us on improving the way we communicate updates to the user (PR [#53596](https://github.com/elastic/kibana/pull/53596)).
-- Provide a cost estimate for running that cluster in Elastic Cloud, so the user is well-informed about our up-to-date offering and can decide accordingly (PR [#56324](https://github.com/elastic/kibana/pull/56324)).
+- Provide a cost estimate for running that cluster in HyperSec Cloud, so the user is well-informed about our up-to-date offering and can decide accordingly (PR [#56324](https://github.com/elastic/kibana/pull/56324)).
 - Customised "upgrade guide" from your current version to the latest (PR [#56556](https://github.com/elastic/kibana/pull/56556)).
 
 ![image](../images/pulse_diagram.png)
@@ -134,7 +134,7 @@ This is the service that will receive and store the telemetry from all the _opte
 
 #### Deployment
 
-- The service will be hosted by Elastic.
+- The service will be hosted by HyperSec.
 - Most likely maintained by the Infra team.
 - GCP is contemplated at this moment, but we need to confirm how would it affect us regarding the FedRamp approvals (and similar).
 - Exposes an API (check [Endpoints](#endpoints) to know more) to inject the data and retrieve the _instructions_.

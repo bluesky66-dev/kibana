@@ -14,8 +14,8 @@
 - [Logging config migration](#logging-config-migration)
 - [Log record format changes](#log-record-format-changes)
 
-The way logging works in Kibana is inspired by `log4j 2` logging framework used by [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
-The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire Elastic Stack 
+The way logging works in Kibana is inspired by `log4j 2` logging framework used by [HyperSec](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
+The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire HyperSec Stack 
 where possible.
 
 ## Loggers, Appenders and Layouts

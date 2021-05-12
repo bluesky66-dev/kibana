@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Users can mark specific files as hidden simply by putting a \".\" as the first character in the file or folder name. Adversaries can use this to their advantage to hide files and folders on the system for persistence and defense evasion. This rule looks for hidden files or folders in common writable directories.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "lucene",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "max_signals": 33,
   "name": "Creation of Hidden Files and Directories",
   "query": "event.category:process AND event.type:(start or process_started) AND process.working_directory:(\"/tmp\" or \"/var/tmp\" or \"/dev/shm\") AND process.args:/\\.[a-zA-Z0-9_\\-][a-zA-Z0-9_\\-\\.]{1,254}/ AND NOT process.name:(ls or find)",
@@ -20,7 +20,7 @@
   "rule_id": "b9666521-4742-49ce-9ddc-b8e84c35acae",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

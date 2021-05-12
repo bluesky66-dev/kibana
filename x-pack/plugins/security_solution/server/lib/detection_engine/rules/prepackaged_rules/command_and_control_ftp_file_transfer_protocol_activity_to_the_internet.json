@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "This rule detects events that may indicate the use of FTP network connections to the Internet. The File Transfer Protocol (FTP) has been around in its current form since the 1980s. It can be a common and efficient procedure on your network to send and receive files. Because of this, adversaries will also often use this protocol to exfiltrate data from your network or download new tools. Additionally, FTP is a plain-text protocol which, if intercepted, may expose usernames and passwords. FTP activity involving servers subject to regulations or compliance standards may be unauthorized.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "FTP (File Transfer Protocol) Activity to the Internet",
   "query": "event.category:(network or network_traffic) and network.transport:tcp and (destination.port:(20 or 21) or event.dataset:zeek.ftp) and source.ip:( 10.0.0.0/8 or 172.16.0.0/12 or 192.168.0.0/16 ) and not destination.ip:( 10.0.0.0/8 or 127.0.0.0/8 or 169.254.0.0/16 or 172.16.0.0/12 or 192.168.0.0/16 or 224.0.0.0/4 or \"::1\" or \"FE80::/10\" or \"FF00::/8\" )",
   "risk_score": 21,
   "rule_id": "87ec6396-9ac4-4706-bcf0-2ebb22002f43",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Network",
     "Threat Detection",

@@ -5,7 +5,7 @@
     "version": "7.0.0-alpha1",
     "name": "spicy.local",
     "type": "Metricbeat",
-    "output": "Elasticsearch",
+    "output": "HyperSec",
     "configReloads": 0,
     "uptime": 440261,
     "eventsTotal": 11466,

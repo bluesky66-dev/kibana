@@ -68,7 +68,7 @@ uiRoutes.when('/elasticsearch/indices/:index', {
 
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.indices.overview.routeTitle', {
-          defaultMessage: 'Elasticsearch - Indices - {indexName} - Overview',
+          defaultMessage: 'HyperSec - Indices - {indexName} - Overview',
           values: {
             indexName,
           },

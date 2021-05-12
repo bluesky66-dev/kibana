@@ -31,7 +31,7 @@ export const createZoomWarningMsg = (function () {
               id="maps_legacy.kibanaMap.zoomWarning"
               defaultMessage="You've reached the maximum number of zoom
               levels. To zoom all the way in, upgrade to the
-              {defaultDistribution} of Elasticsearch and Kibana. You'll get
+              {defaultDistribution} of HyperSec and Kibana. You'll get
               access to additional zoom levels for free through the {ems}.
               Or, you can configure your own map server. Please go to
               { wms } or { configSettings} for more information."
@@ -43,7 +43,7 @@ export const createZoomWarningMsg = (function () {
                 ),
                 ems: (
                   <a target="_blank" href="https://www.elastic.co/elastic-maps-service">
-                    {`Elastic Maps Service`}
+                    {`HyperSec Maps Service`}
                   </a>
                 ),
                 wms: (

@@ -85,7 +85,7 @@ export const aggMovingAvg = (): FunctionDefinition => ({
     json: {
       types: ['string'],
       help: i18n.translate('data.search.aggs.metrics.moving_avg.json.help', {
-        defaultMessage: 'Advanced json to include when the agg is sent to Elasticsearch',
+        defaultMessage: 'Advanced json to include when the agg is sent to HyperSec',
       }),
     },
     customLabel: {

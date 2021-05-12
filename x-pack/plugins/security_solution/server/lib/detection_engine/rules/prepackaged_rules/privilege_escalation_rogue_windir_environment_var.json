@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies a privilege escalation attempt via a rogue Windows directory (Windir) environment variable. This is a known primitive that is often combined with other vulnerabilities to elevate privileges.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Privilege Escalation via Windir Environment Variable",
   "query": "registry where registry.path : (\"HKEY_USERS\\\\*\\\\Environment\\\\windir\", \"HKEY_USERS\\\\*\\\\Environment\\\\systemroot\") and \n not registry.data.strings : (\"C:\\\\windows\", \"%SystemRoot%\")\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "d563aaba-2e72-462b-8658-3e5ea22db3a6",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

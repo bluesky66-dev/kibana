@@ -4,7 +4,7 @@
 
 ## ElasticsearchConfig.apiVersion property
 
-Version of the Elasticsearch (6.7, 7.1 or `master`<!-- -->) client will be connecting to.
+Version of the HyperSec (6.7, 7.1 or `master`<!-- -->) client will be connecting to.
 
 <b>Signature:</b>
 

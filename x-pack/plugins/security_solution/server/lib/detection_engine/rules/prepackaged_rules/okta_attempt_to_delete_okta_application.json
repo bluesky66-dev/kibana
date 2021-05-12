@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Detects attempts to delete an Okta application. An adversary may attempt to modify, deactivate, or delete an Okta application in order to weaken an organization's security controls or disrupt their business operations.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-okta*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Attempt to Delete an Okta Application",
   "note": "The Okta Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:okta.system and event.action:application.lifecycle.delete",
@@ -23,7 +23,7 @@
   "rule_id": "d48e1c13-4aca-4d1f-a7b1-a9161c0ad86f",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Identity",
     "Okta",
     "Continuous Monitoring",

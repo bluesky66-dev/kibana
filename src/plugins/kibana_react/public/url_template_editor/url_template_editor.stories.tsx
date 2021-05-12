@@ -31,7 +31,7 @@ storiesOf('UrlTemplateEditor', module)
           label: 'event.key',
           title: 'Field key.',
           documentation:
-            'Field key is Elasticsearch document key as described in Elasticsearch index pattern.',
+            'Field key is HyperSec document key as described in HyperSec index pattern.',
         },
         {
           label: 'kibanaUrl',

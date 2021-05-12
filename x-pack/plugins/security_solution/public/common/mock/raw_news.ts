@@ -14,7 +14,7 @@ export const rawNewsJSON = `
            "en":"Got SIEM Questions?"
         },
         "description":{
-           "en":"There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!"
+           "en":"There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!"
         },
         "link_text":null,
         "link_url":{
@@ -33,10 +33,10 @@ export const rawNewsJSON = `
      },
      {
         "title":{
-           "en":"Elastic Security 7.5.0 released"
+           "en":"HyperSec Security 7.5.0 released"
         },
         "description":{
-           "en":"Elastic Security combines the threat hunting and analytics of Elastic SIEM with the prevention and response provided by Elastic Endpoint Security."
+           "en":"HyperSec Security combines the threat hunting and analytics of HyperSec SIEM with the prevention and response provided by HyperSec Endpoint Security."
         },
         "link_text":null,
         "link_url":{
@@ -55,10 +55,10 @@ export const rawNewsJSON = `
      },
      {
         "title":{
-           "en":"Elastic Endpoint Security Overview Webinar"
+           "en":"HyperSec Endpoint Security Overview Webinar"
         },
         "description":{
-           "en":"At Elastic, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization."
+           "en":"At HyperSec, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization."
         },
         "link_text":null,
         "link_url":{
@@ -77,7 +77,7 @@ export const rawNewsJSON = `
      },
      {
         "title":{
-           "en":"Trying Elastic SIEM at Home?"
+           "en":"Trying HyperSec SIEM at Home?"
         },
         "description":{
            "en":"For small businesses and homes, having access to effective security analytics can come at a high cost of either time or money. Well, until now!"
@@ -99,10 +99,10 @@ export const rawNewsJSON = `
      },
      {
         "title":{
-           "en":"Introducing Elastic Endpoint Security"
+           "en":"Introducing HyperSec Endpoint Security"
         },
         "description":{
-           "en":"Elastic is excited to announce the introduction of Elastic Endpoint Security, based on Elastic’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response."
+           "en":"HyperSec is excited to announce the introduction of HyperSec Endpoint Security, based on HyperSec’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response."
         },
         "link_text":null,
         "link_url":{
@@ -121,10 +121,10 @@ export const rawNewsJSON = `
      },
      {
         "title":{
-           "en":"What is Elastic Common Schema (ECS)?"
+           "en":"What is HyperSec Common Schema (ECS)?"
         },
         "description":{
-           "en":"Elastic SIEM is powered by Elastic Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember."
+           "en":"HyperSec SIEM is powered by HyperSec Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember."
         },
         "link_text":null,
         "link_url":{

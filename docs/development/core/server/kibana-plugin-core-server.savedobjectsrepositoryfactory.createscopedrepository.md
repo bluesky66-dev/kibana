@@ -4,7 +4,7 @@
 
 ## SavedObjectsRepositoryFactory.createScopedRepository property
 
-Creates a [Saved Objects repository](./kibana-plugin-core-server.isavedobjectsrepository.md) that uses the credentials from the passed in request to authenticate with Elasticsearch.
+Creates a [Saved Objects repository](./kibana-plugin-core-server.isavedobjectsrepository.md) that uses the credentials from the passed in request to authenticate with HyperSec.
 
 <b>Signature:</b>
 

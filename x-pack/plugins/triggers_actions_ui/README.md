@@ -858,7 +858,7 @@ Kibana ships with a set of built-in action types UI:
 |[Server log](#server-log)|`.log`|Logs messages to the Kibana log using `server.log()`|
 |[Email](#email)|`.email`|Sends an email using SMTP|
 |[Slack](#slack)|`.slack`|Posts a message to a Slack channel|
-|[Index](#index)|`.index`|Indexes document(s) into Elasticsearch|
+|[Index](#index)|`.index`|Indexes document(s) into HyperSec|
 |[Webhook](#webhook)|`.webhook`|Sends a payload to a web service using HTTP POST or PUT|
 |[PagerDuty](#pagerduty)|`.pagerduty`|Triggers, resolves, or acknowledges an incident to a PagerDuty service|
 

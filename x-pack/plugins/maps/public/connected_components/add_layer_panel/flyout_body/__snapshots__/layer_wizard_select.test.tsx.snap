@@ -22,7 +22,7 @@ exports[`LayerWizardSelect Should render layer select after layer wizards are lo
       key="ELASTICSEARCH"
       onClick={[Function]}
     >
-      Elasticsearch
+      HyperSec
     </EuiFacetButton>
     <EuiFacetButton
       isSelected={false}

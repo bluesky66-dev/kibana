@@ -259,7 +259,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
               },
@@ -279,11 +279,11 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                   ransomware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
                 antivirus_registration: {
@@ -408,7 +408,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
               },
@@ -428,11 +428,11 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                   ransomware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
                 antivirus_registration: {
@@ -554,7 +554,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
               },
@@ -574,11 +574,11 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
                 popup: {
                   malware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                   ransomware: {
                     enabled: true,
-                    message: 'Elastic Security {action} {filename}',
+                    message: 'HyperSec Security {action} {filename}',
                   },
                 },
                 antivirus_registration: {

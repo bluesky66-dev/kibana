@@ -112,7 +112,7 @@ export const PolicyJsonFlyout: React.FunctionComponent<Props> = ({ policyName, c
             <p>
               <FormattedMessage
                 id="xpack.indexLifecycleMgmt.policyJsonFlyout.descriptionText"
-                defaultMessage="This Elasticsearch request will create or update this index lifecycle policy."
+                defaultMessage="This HyperSec request will create or update this index lifecycle policy."
               />
             </p>
           </EuiText>

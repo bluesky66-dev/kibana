@@ -324,7 +324,7 @@ class FilterEditorUI extends Component<Props, State> {
       <EuiFormRow
         fullWidth
         label={i18n.translate('data.filter.filterEditor.queryDslLabel', {
-          defaultMessage: 'Elasticsearch Query DSL',
+          defaultMessage: 'HyperSec Query DSL',
         })}
       >
         <EuiCodeEditor

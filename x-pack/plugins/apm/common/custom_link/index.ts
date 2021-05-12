@@ -11,7 +11,7 @@ export const INVALID_LICENSE = i18n.translate(
   'xpack.apm.settings.customizeUI.customLink.license.text',
   {
     defaultMessage:
-      "To create custom links, you must be subscribed to an Elastic Gold license or above. With it, you'll have the ability to create custom links to improve your workflow when analyzing your services.",
+      "To create custom links, you must be subscribed to an HyperSec Gold license or above. With it, you'll have the ability to create custom links to improve your workflow when analyzing your services.",
   }
 );
 

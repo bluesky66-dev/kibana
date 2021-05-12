@@ -155,7 +155,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       }),
       value: '{ "unmapped_type": "boolean" }',
       description: i18n.translate('data.advancedSettings.sortOptionsText', {
-        defaultMessage: '{optionsLink} for the Elasticsearch sort parameter',
+        defaultMessage: '{optionsLink} for the HyperSec sort parameter',
         description:
           'Part of composite text: data.advancedSettings.sortOptions.optionsLinkText + ' +
           'data.advancedSettings.sortOptionsText',
@@ -265,7 +265,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
       description: i18n.translate('data.advancedSettings.courier.maxRequestsText', {
         defaultMessage:
           'Controls the {maxRequestsLink} setting used for _msearch requests sent by Kibana. ' +
-          'Set to 0 to disable this config and use the Elasticsearch default.',
+          'Set to 0 to disable this config and use the HyperSec default.',
         values: {
           maxRequestsLink: `<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-multi-search.html"
             target="_blank" rel="noopener" >max_concurrent_shard_requests</a>`,
@@ -324,7 +324,7 @@ export function getUiSettings(): Record<string, UiSettingsParams<unknown>> {
           for better performance using a test query. If the test query would too many buckets,
           the interval between buckets will be increased. This setting applies separately
           to each histogram aggregation, and does not apply to other types of aggregation.
-          To find the maximum value of this setting, divide the Elasticsearch 'search.max_buckets'
+          To find the maximum value of this setting, divide the HyperSec 'search.max_buckets'
           value by the maximum number of aggregations in each visualization.
         `,
       }),

@@ -28,10 +28,10 @@ uiRoutes.when('/elasticsearch/ml_jobs', {
     constructor($injector, $scope) {
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.mlJobs.routeTitle', {
-          defaultMessage: 'Elasticsearch - Machine Learning Jobs',
+          defaultMessage: 'HyperSec - Machine Learning Jobs',
         }),
         pageTitle: i18n.translate('xpack.monitoring.elasticsearch.mlJobs.pageTitle', {
-          defaultMessage: 'Elasticsearch machine learning jobs',
+          defaultMessage: 'HyperSec machine learning jobs',
         }),
         storageKey: 'elasticsearch.mlJobs',
         getPageData,

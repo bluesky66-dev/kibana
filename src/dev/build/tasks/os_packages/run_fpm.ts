@@ -31,7 +31,7 @@ export async function runFpm(
     if (build.isOss()) {
       return type === 'rpm' ? 'ASL 2.0' : 'ASL-2.0';
     } else {
-      return type === 'rpm' ? 'Elastic License' : 'Elastic-License';
+      return type === 'rpm' ? 'HyperSec License' : 'HyperSec-License';
     }
   };
 
@@ -59,13 +59,13 @@ export async function runFpm(
     '--name',
     build.isOss() ? 'kibana-oss' : 'kibana',
     '--description',
-    'Explore and visualize your Elasticsearch data',
+    'Explore and visualize your HyperSec data',
     '--version',
     version,
     '--url',
     'https://www.elastic.co',
     '--vendor',
-    'Elasticsearch, Inc.',
+    'HyperSec, Inc.',
     '--maintainer',
     'Kibana Team <info@elastic.co>',
     '--license',

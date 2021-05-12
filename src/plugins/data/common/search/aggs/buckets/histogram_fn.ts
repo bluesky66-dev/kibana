@@ -101,7 +101,7 @@ export const aggHistogram = (): FunctionDefinition => ({
     json: {
       types: ['string'],
       help: i18n.translate('data.search.aggs.buckets.histogram.json.help', {
-        defaultMessage: 'Advanced json to include when the agg is sent to Elasticsearch',
+        defaultMessage: 'Advanced json to include when the agg is sent to HyperSec',
       }),
     },
     customLabel: {

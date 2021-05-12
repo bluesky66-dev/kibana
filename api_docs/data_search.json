@@ -1977,7 +1977,7 @@
             "type": "Function",
             "label": "getSearchStrategy",
             "description": [
-              "\nGet other registered search strategies by name (or, by default, the Elasticsearch strategy).\nFor example, if a new strategy needs to use the already-registered ES search strategy, it can\nuse this function to accomplish that."
+              "\nGet other registered search strategies by name (or, by default, the HyperSec strategy).\nFor example, if a new strategy needs to use the already-registered ES search strategy, it can\nuse this function to accomplish that."
             ],
             "source": {
               "path": "src/plugins/data/server/search/types.ts",
@@ -4981,7 +4981,7 @@
         "tags": [],
         "label": "AggsCommonService",
         "description": [
-          "\nThe aggs service provides a means of modeling and manipulating the various\nElasticsearch aggregations supported by Kibana, providing the ability to\noutput the correct DSL when you are ready to send your request to ES."
+          "\nThe aggs service provides a means of modeling and manipulating the various\nHyperSec aggregations supported by Kibana, providing the ability to\noutput the correct DSL when you are ready to send your request to ES."
         ],
         "children": [
           {
@@ -7225,7 +7225,7 @@
               "<any>>"
             ],
             "description": [
-              "\nFetch this source from Elasticsearch, returning an observable over the response(s)"
+              "\nFetch this source from HyperSec, returning an observable over the response(s)"
             ],
             "children": [
               {
@@ -10026,7 +10026,7 @@
           "(interval: string) => Interval"
         ],
         "description": [
-          "\nChecks whether a given Elasticsearch interval is a calendar or fixed interval\nand returns an object containing the appropriate date_histogram property for that\ninterval. So it will return either an object containing the fixed_interval key for\nthat interval or a calendar_interval. If the specified interval was not a valid Elasticsearch\ninterval this method will throw an error.\n\nYou can simply spread the returned value of this method into your date_histogram."
+          "\nChecks whether a given HyperSec interval is a calendar or fixed interval\nand returns an object containing the appropriate date_histogram property for that\ninterval. So it will return either an object containing the fixed_interval key for\nthat interval or a calendar_interval. If the specified interval was not a valid HyperSec\ninterval this method will throw an error.\n\nYou can simply spread the returned value of this method into your date_histogram."
         ],
         "children": [
           {
@@ -10065,7 +10065,7 @@
           "(interval: string) => boolean"
         ],
         "description": [
-          "\nChecks whether a given interval string (e.g. 1w, 24h, ...) is a valid Elasticsearch interval.\nWill return false if the interval is not valid in Elasticsearch, otherwise true.\nInvalid intervals might be: 2f, since there is no unit 'f'; 2w, since weeks and month intervals\nare only allowed with a value of 1, etc.\n"
+          "\nChecks whether a given interval string (e.g. 1w, 24h, ...) is a valid HyperSec interval.\nWill return false if the interval is not valid in HyperSec, otherwise true.\nInvalid intervals might be: 2f, since there is no unit 'f'; 2w, since weeks and month intervals\nare only allowed with a value of 1, etc.\n"
         ],
         "children": [
           {
@@ -10087,7 +10087,7 @@
         ],
         "tags": [],
         "returnComment": [
-          "True if the interval is valid for Elasticsearch"
+          "True if the interval is valid for HyperSec"
         ],
         "source": {
           "path": "src/plugins/data/common/search/aggs/utils/date_interval_utils/is_valid_es_interval.ts",

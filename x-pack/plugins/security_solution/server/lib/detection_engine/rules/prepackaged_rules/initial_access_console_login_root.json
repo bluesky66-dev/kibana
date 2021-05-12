@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies a successful login to the AWS Management Console by the Root user.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "AWS Management Console Root Login",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:ConsoleLogin and event.dataset:aws.cloudtrail and event.provider:signin.amazonaws.com and aws.cloudtrail.user_identity.type:Root and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "e2a67480-3b79-403d-96e3-fdd2992c50ef",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

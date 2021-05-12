@@ -55,7 +55,7 @@ export const WelcomeContent: FC = () => {
             <FormattedMessage
               id="xpack.ml.fileDatavisualizer.welcomeContent.visualizeDataFromLogFileDescription"
               defaultMessage="The File Data Visualizer helps you understand the fields and metrics in a log file.
-              Upload your file, analyze its data, and then choose whether to import the data into an Elasticsearch index."
+              Upload your file, analyze its data, and then choose whether to import the data into an HyperSec index."
             />
           </p>
         </EuiText>

@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies the attempted use of a heap-based buffer overflow vulnerability for the Sudo binary in Unix-like systems (CVE-2021-3156). Successful exploitation allows an unprivileged user to escalate to the root user.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Sudo Heap-Based Buffer Overflow Attempt",
   "query": "event.category:process and event.type:start and process.name:(sudo or sudoedit) and process.args:(*\\\\ and (\"-i\" or \"-s\"))",
   "references": [
@@ -25,7 +25,7 @@
   "rule_id": "f37f3054-d40b-49ac-aa9b-a786c74c58b8",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "macOS",

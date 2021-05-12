@@ -12,7 +12,7 @@ import { TagsDisplay } from './tag_display';
 import { TestProviders } from '../../../../../common/mock';
 import { waitFor } from '@testing-library/react';
 
-const mockTags = ['Elastic', 'Endpoint', 'Data Protection', 'ML', 'Continuous Monitoring'];
+const mockTags = ['HyperSec', 'Endpoint', 'Data Protection', 'ML', 'Continuous Monitoring'];
 
 describe('When tag display loads', () => {
   let wrapper: ReactWrapper;

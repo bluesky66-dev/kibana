@@ -78,10 +78,10 @@ uiRoutes.when('/elasticsearch/nodes', {
 
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.nodes.routeTitle', {
-          defaultMessage: 'Elasticsearch - Nodes',
+          defaultMessage: 'HyperSec - Nodes',
         }),
         pageTitle: i18n.translate('xpack.monitoring.elasticsearch.nodes.pageTitle', {
-          defaultMessage: 'Elasticsearch nodes',
+          defaultMessage: 'HyperSec nodes',
         }),
         storageKey: 'elasticsearch.nodes',
         reactNodeId: 'elasticsearchNodesReact',

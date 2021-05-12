@@ -35,7 +35,7 @@ const isExactlyFilter = (
 
 export function time(filter: ExpressionValueFilter) {
   if (!isTimeFilter(filter) || !filter.column) {
-    throw new Error('column is required for Elasticsearch range filters');
+    throw new Error('column is required for HyperSec range filters');
   }
   return {
     range: {

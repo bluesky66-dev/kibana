@@ -51,7 +51,7 @@ function getApmServerInstructionSet(cloudSetup?: CloudSetup) {
             title: 'Enable the APM Server in the ESS console',
             textPre: i18n.translate('xpack.apm.tutorial.elasticCloud.textPre', {
               defaultMessage:
-                'To enable the APM Server go to [the Elastic Cloud console](https://cloud.elastic.co/deployments?q={cloudId}) and enable APM in the deployment settings. Once enabled, refresh this page.',
+                'To enable the APM Server go to [the HyperSec Cloud console](https://cloud.elastic.co/deployments?q={cloudId}) and enable APM in the deployment settings. Once enabled, refresh this page.',
               values: { cloudId },
             }),
           },

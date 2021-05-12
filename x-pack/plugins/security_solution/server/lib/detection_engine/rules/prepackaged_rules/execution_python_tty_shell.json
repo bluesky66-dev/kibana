@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies when a terminal (tty) is spawned via Python. Attackers may upgrade a simple reverse shell to a fully interactive tty after obtaining initial access to a host.",
   "from": "now-9m",
@@ -9,14 +9,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Interactive Terminal Spawned via Python",
   "query": "event.category:process and event.type:(start or process_started) and process.name:python and process.args:(\"import pty; pty.spawn(\\\"/bin/sh\\\")\" or \"import pty; pty.spawn(\\\"/bin/dash\\\")\" or \"import pty; pty.spawn(\\\"/bin/bash\\\")\")",
   "risk_score": 73,
   "rule_id": "d76b02ef-fc95-4001-9297-01cb7412232f",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

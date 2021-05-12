@@ -38,7 +38,7 @@ export const getOutputRuleAlertForRest = (): Omit<
   RulesSchema,
   'machine_learning_job_id' | 'anomaly_threshold'
 > => ({
-  author: ['Elastic'],
+  author: ['HyperSec'],
   actions: [],
   created_by: 'elastic',
   created_at: '2019-12-13T16:40:33.400Z',
@@ -55,7 +55,7 @@ export const getOutputRuleAlertForRest = (): Omit<
   risk_score_mapping: [],
   rule_id: 'rule-1',
   language: 'kuery',
-  license: 'Elastic License',
+  license: 'HyperSec License',
   max_signals: 100,
   name: 'Detect Root/Admin Users',
   output_index: '.siem-signals',

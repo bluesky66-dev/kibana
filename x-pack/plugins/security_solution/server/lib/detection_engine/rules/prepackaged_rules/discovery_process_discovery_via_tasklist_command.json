@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Adversaries may attempt to get information about running processes on a system.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Process Discovery via Tasklist",
   "query": "event.category:process and event.type:(start or process_started) and process.name:tasklist.exe",
   "risk_score": 21,
   "rule_id": "cc16f774-59f9-462d-8b98-d27ccd4519ec",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

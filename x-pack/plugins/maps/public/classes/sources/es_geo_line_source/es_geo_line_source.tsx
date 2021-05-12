@@ -212,7 +212,7 @@ export class ESGeoLineSource extends AbstractESAggSource {
       searchSource: entitySearchSource,
       registerCancelCallback,
       requestDescription: i18n.translate('xpack.maps.source.esGeoLine.entityRequestDescription', {
-        defaultMessage: 'Elasticsearch terms request to fetch entities within map buffer.',
+        defaultMessage: 'HyperSec terms request to fetch entities within map buffer.',
       }),
       searchSessionId: searchFilters.searchSessionId,
     });
@@ -282,7 +282,7 @@ export class ESGeoLineSource extends AbstractESAggSource {
       registerCancelCallback,
       requestDescription: i18n.translate('xpack.maps.source.esGeoLine.trackRequestDescription', {
         defaultMessage:
-          'Elasticsearch geo_line request to fetch tracks for entities. Tracks are not filtered by map buffer.',
+          'HyperSec geo_line request to fetch tracks for entities. Tracks are not filtered by map buffer.',
       }),
       searchSessionId: searchFilters.searchSessionId,
     });

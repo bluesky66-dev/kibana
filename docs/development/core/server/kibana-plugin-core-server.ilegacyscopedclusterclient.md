@@ -9,7 +9,7 @@
 > Use [IScopedClusterClient](./kibana-plugin-core-server.iscopedclusterclient.md)<!-- -->.
 > 
 
-Serves the same purpose as "normal" `ClusterClient` but exposes additional `callAsCurrentUser` method that doesn't use credentials of the Kibana internal user (as `callAsInternalUser` does) to request Elasticsearch API, but rather passes HTTP headers extracted from the current user request to the API.
+Serves the same purpose as "normal" `ClusterClient` but exposes additional `callAsCurrentUser` method that doesn't use credentials of the Kibana internal user (as `callAsInternalUser` does) to request HyperSec API, but rather passes HTTP headers extracted from the current user request to the API.
 
 See [LegacyScopedClusterClient](./kibana-plugin-core-server.legacyscopedclusterclient.md)<!-- -->.
 

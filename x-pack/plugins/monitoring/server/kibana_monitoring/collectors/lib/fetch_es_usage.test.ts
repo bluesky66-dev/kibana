@@ -38,7 +38,7 @@ describe('fetchESUsage', () => {
   }));
   const config: any = {};
 
-  it('should return usage data for Elasticsearch', async () => {
+  it('should return usage data for HyperSec', async () => {
     const result = await fetchESUsage(config, callCluster, clusterUuid, index);
     expect(result).toStrictEqual({
       count: 10,

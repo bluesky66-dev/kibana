@@ -21,9 +21,9 @@ export class ElasticsearchOverviewController extends MonitoringViewBaseControlle
     });
 
     super({
-      title: 'Elasticsearch',
+      title: 'HyperSec',
       pageTitle: i18n.translate('xpack.monitoring.elasticsearch.overview.pageTitle', {
-        defaultMessage: 'Elasticsearch overview',
+        defaultMessage: 'HyperSec overview',
       }),
       api: `../api/monitoring/v1/clusters/${globalState.cluster_uuid}/elasticsearch`,
       defaultData: {

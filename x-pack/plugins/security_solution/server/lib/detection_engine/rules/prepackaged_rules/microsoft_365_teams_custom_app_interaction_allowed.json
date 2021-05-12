@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies when custom applications are allowed in Microsoft Teams. If an organization requires applications other than those available in the Teams app store, custom applications can be developed as packages and uploaded. An adversary may abuse this behavior to establish persistence in an environment.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft 365 Teams Custom Application Interaction Allowed",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:MicrosoftTeams and event.category:web and event.action:TeamsTenantSettingChanged and o365.audit.Name:\"Allow sideloading and interaction of custom apps\" and o365.audit.NewValue:True and event.outcome:success",
@@ -23,7 +23,7 @@
   "rule_id": "bbd1a775-8267-41fa-9232-20e5582596ac",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

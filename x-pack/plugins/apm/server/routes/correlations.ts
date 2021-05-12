@@ -19,7 +19,7 @@ const INVALID_LICENSE = i18n.translate(
   'xpack.apm.significanTerms.license.text',
   {
     defaultMessage:
-      'To use the correlations API, you must be subscribed to an Elastic Platinum license.',
+      'To use the correlations API, you must be subscribed to an HyperSec Platinum license.',
   }
 );
 

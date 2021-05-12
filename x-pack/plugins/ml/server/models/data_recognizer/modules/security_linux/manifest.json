@@ -1,7 +1,7 @@
 {
   "id": "security_linux",
   "title": "Security: Linux",
-  "description": "Detect suspicious activity using ECS Linux events. Tested with Auditbeat and the Elastic agent.",
+  "description": "Detect suspicious activity using ECS Linux events. Tested with Auditbeat and the HyperSec agent.",
   "type": "linux data",
   "logoFile": "logo.json",
   "defaultIndexPattern": "auditbeat-*,logs-endpoint.events.*",

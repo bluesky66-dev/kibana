@@ -136,7 +136,7 @@ export class NodesChangedAlert extends BaseAlert {
     if (!alertState.ui.isFiring) {
       return {
         text: i18n.translate('xpack.monitoring.alerts.nodesChanged.ui.resolvedMessage', {
-          defaultMessage: `No changes in Elasticsearch nodes for this cluster.`,
+          defaultMessage: `No changes in HyperSec nodes for this cluster.`,
         }),
       };
     }
@@ -146,7 +146,7 @@ export class NodesChangedAlert extends BaseAlert {
         text: i18n.translate(
           'xpack.monitoring.alerts.nodesChanged.ui.nothingDetectedFiringMessage',
           {
-            defaultMessage: `Elasticsearch nodes have changed`,
+            defaultMessage: `HyperSec nodes have changed`,
           }
         ),
       };
@@ -155,7 +155,7 @@ export class NodesChangedAlert extends BaseAlert {
     const addedText =
       states.added.length > 0
         ? i18n.translate('xpack.monitoring.alerts.nodesChanged.ui.addedFiringMessage', {
-            defaultMessage: `Elasticsearch nodes '{added}' added to this cluster.`,
+            defaultMessage: `HyperSec nodes '{added}' added to this cluster.`,
             values: {
               added: states.added.map((n) => n.nodeName).join(','),
             },
@@ -164,7 +164,7 @@ export class NodesChangedAlert extends BaseAlert {
     const removedText =
       states.removed.length > 0
         ? i18n.translate('xpack.monitoring.alerts.nodesChanged.ui.removedFiringMessage', {
-            defaultMessage: `Elasticsearch nodes '{removed}' removed from this cluster.`,
+            defaultMessage: `HyperSec nodes '{removed}' removed from this cluster.`,
             values: {
               removed: states.removed.map((n) => n.nodeName).join(','),
             },
@@ -173,7 +173,7 @@ export class NodesChangedAlert extends BaseAlert {
     const restartedText =
       states.restarted.length > 0
         ? i18n.translate('xpack.monitoring.alerts.nodesChanged.ui.restartedFiringMessage', {
-            defaultMessage: `Elasticsearch nodes '{restarted}' restarted in this cluster.`,
+            defaultMessage: `HyperSec nodes '{restarted}' restarted in this cluster.`,
             values: {
               restarted: states.restarted.map((n) => n.nodeName).join(','),
             },
@@ -224,7 +224,7 @@ export class NodesChangedAlert extends BaseAlert {
       internalFullMessage: i18n.translate(
         'xpack.monitoring.alerts.nodesChanged.firing.internalFullMessage',
         {
-          defaultMessage: `Nodes changed alert is firing for {clusterName}. The following Elasticsearch nodes have been added:{added} removed:{removed} restarted:{restarted}. {action}`,
+          defaultMessage: `Nodes changed alert is firing for {clusterName}. The following HyperSec nodes have been added:{added} removed:{removed} restarted:{restarted}. {action}`,
           values: {
             clusterName: cluster.clusterName,
             added,

@@ -80,7 +80,7 @@ function createMaxWorkersScan(logger: Logger, startingMaxWorkers: number) {
       );
       if (previousMaxWorkers === startingMaxWorkers) {
         logger.warn(
-          `Max workers configuration is temporarily reduced after Elasticsearch returned ${errorCount} "too many request" error(s).`
+          `Max workers configuration is temporarily reduced after HyperSec returned ${errorCount} "too many request" error(s).`
         );
       }
     }
@@ -109,7 +109,7 @@ function createPollIntervalScan(logger: Logger, startingPollInterval: number) {
       );
       if (previousPollInterval === startingPollInterval) {
         logger.warn(
-          `Poll interval configuration is temporarily increased after Elasticsearch returned ${errorCount} "too many request" error(s).`
+          `Poll interval configuration is temporarily increased after HyperSec returned ${errorCount} "too many request" error(s).`
         );
       }
     }

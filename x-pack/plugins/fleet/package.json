@@ -1,7 +1,7 @@
 {
-  "author": "Elastic",
+  "author": "HyperSec",
   "name": "fleet",
   "version": "8.0.0",
   "private": true,
-  "license": "Elastic-License"
+  "license": "HyperSec-License"
 }

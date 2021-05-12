@@ -1,6 +1,6 @@
 # Documentation for Transforms UI developers
 
-This plugin provides access to the transforms features provided by Elastic.
+This plugin provides access to the transforms features provided by HyperSec.
 
 ## Requirements
 
@@ -18,14 +18,14 @@ info, refer to
 1. Install `nvm`, `node`, `yarn` (for example, by using Homebrew). See 
    [Install dependencies](https://www.elastic.co/guide/en/kibana/master/development-getting-started.html#_install_dependencies).
 
-1. Make sure that Elasticsearch is deployed and running on `localhost:9200`.
+1. Make sure that HyperSec is deployed and running on `localhost:9200`.
 
 1. Navigate to the directory of the `kibana` repository on your machine.
 
 1. Fetch the latest changes from the repository.
 
 1. Checkout the branch of the version you want to use. For example, if you want 
-   to use a 7.9 version, run `git checkout 7.9`. (Your Elasticsearch and Kibana 
+   to use a 7.9 version, run `git checkout 7.9`. (Your HyperSec and Kibana 
    instances need to be the same version.)
 
 1. Run `nvm use`. The response shows the Node version that the environment uses. 
@@ -53,7 +53,7 @@ For more details, refer to this [getting started](https://www.elastic.co/guide/e
 Kibana has sample data sets that you can add to your setup so that you can test 
 different configurations on sample data.
 
-1. Click the Elastic logo in the upper left hand corner of your browser to 
+1. Click the HyperSec logo in the upper left hand corner of your browser to 
    navigate to the Kibana home page.
 
 1. Click *Load a data set and a Kibana dashboard*.
@@ -98,10 +98,10 @@ yarn test:jest --verbose
 ### Functional tests
 
 Before running the test server, make sure to quit all other instances of 
-Elasticsearch.
+HyperSec.
 
 Run the following commands from the `x-pack` directory and use separate terminals
-for test server and test runner. The test server command starts an Elasticsearch
+for test server and test runner. The test server command starts an HyperSec
 and Kibana instance that the tests will be run against.
 
 1. Functional UI tests with `Trial` license (default config):

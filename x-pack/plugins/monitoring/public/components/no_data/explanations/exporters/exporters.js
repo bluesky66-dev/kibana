@@ -78,7 +78,7 @@ export function ExplainExportersCloud() {
         <p>
           <FormattedMessage
             id="xpack.monitoring.noData.explanations.exportersCloudDescription"
-            defaultMessage="In Elastic Cloud, your monitoring data is stored in your dedicated monitoring cluster."
+            defaultMessage="In HyperSec Cloud, your monitoring data is stored in your dedicated monitoring cluster."
           />
         </p>
       </EuiText>

@@ -97,7 +97,7 @@ describe('home', () => {
       const directoryEntry = {
         id: 'stack-management',
         title: 'Management',
-        description: 'Your center console for managing the Elastic Stack.',
+        description: 'Your center console for managing the HyperSec Stack.',
         icon: 'managementApp',
         path: 'management_landing_page',
         category: FeatureCatalogueCategory.ADMIN,
@@ -198,7 +198,7 @@ describe('home', () => {
       const directoryEntry = {
         id: 'index_patterns',
         title: 'Index Patterns',
-        description: 'Manage the index patterns that help retrieve your data from Elasticsearch.',
+        description: 'Manage the index patterns that help retrieve your data from HyperSec.',
         icon: 'indexPatternApp',
         path: 'index_management_landing_page',
         showOnHomePage: true,
@@ -216,7 +216,7 @@ describe('home', () => {
       const directoryEntry = {
         id: 'stack-management',
         title: 'Management',
-        description: 'Your center console for managing the Elastic Stack.',
+        description: 'Your center console for managing the HyperSec Stack.',
         icon: 'managementApp',
         path: 'management_landing_page',
         showOnHomePage: false,

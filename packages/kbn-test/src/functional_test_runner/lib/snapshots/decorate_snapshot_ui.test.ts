@@ -185,7 +185,7 @@ exports[\`Test2 1\`] = \`"bar"\`;
         fs.writeFileSync(
           snapshotFile,
           `// Jest Snapshot v1, https://goo.gl/fbAQLP
-  
+
   exports[\`Test 1\`] = \`"foo"\`;
         `,
           { encoding: 'utf-8' }

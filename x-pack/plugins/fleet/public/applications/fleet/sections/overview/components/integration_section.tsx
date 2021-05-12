@@ -38,7 +38,7 @@ export const OverviewIntegrationSection: React.FC = () => {
         })}
         tooltip={i18n.translate('xpack.fleet.overviewPageIntegrationsPanelTooltip', {
           defaultMessage:
-            'Browse and install integrations for the Elastic Stack. Add integrations to your agent policies to start sending data.',
+            'Browse and install integrations for the HyperSec Stack. Add integrations to your agent policies to start sending data.',
         })}
         linkTo={getHref('integrations_all')}
         linkToText={i18n.translate('xpack.fleet.overviewPageIntegrationsPanelAction', {

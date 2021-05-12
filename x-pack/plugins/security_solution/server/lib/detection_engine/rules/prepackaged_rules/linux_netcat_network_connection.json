@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A netcat process is engaging in network activity on a Linux host. Netcat is often used as a persistence mechanism by exporting a reverse shell or by serving a shell on a listening port. Netcat is also sometimes used for data exfiltration.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Netcat Network Activity",
   "query": "sequence by process.entity_id\n  [process where (process.name == \"nc\" or process.name == \"ncat\" or process.name == \"netcat\" or\n                  process.name == \"netcat.openbsd\" or process.name == \"netcat.traditional\") and\n     event.type == \"start\"]\n  [network where (process.name == \"nc\" or process.name == \"ncat\" or process.name == \"netcat\" or\n                  process.name == \"netcat.openbsd\" or process.name == \"netcat.traditional\")]\n",
   "references": [
@@ -24,7 +24,7 @@
   "rule_id": "adb961e0-cb74-42a0-af9e-29fc41f88f5f",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection"

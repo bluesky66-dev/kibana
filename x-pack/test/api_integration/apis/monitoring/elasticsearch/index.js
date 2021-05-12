@@ -6,7 +6,7 @@
  */
 
 export default function ({ loadTestFile }) {
-  describe('Elasticsearch', () => {
+  describe('HyperSec', () => {
     loadTestFile(require.resolve('./overview'));
     loadTestFile(require.resolve('./nodes'));
     loadTestFile(require.resolve('./node_detail'));

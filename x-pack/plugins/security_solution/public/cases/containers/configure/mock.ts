@@ -117,7 +117,7 @@ export const actionTypesMock: ActionTypeConnector[] = [
 
 export const caseConfigurationResposeMock: CasesConfigureResponse = {
   created_at: '2020-04-06T13:03:18.657Z',
-  created_by: { username: 'elastic', full_name: 'Elastic', email: 'elastic@elastic.co' },
+  created_by: { username: 'elastic', full_name: 'HyperSec', email: 'elastic@elastic.co' },
   connector: {
     id: '123',
     name: 'My connector',
@@ -128,7 +128,7 @@ export const caseConfigurationResposeMock: CasesConfigureResponse = {
   error: null,
   mappings: [],
   updated_at: '2020-04-06T14:03:18.657Z',
-  updated_by: { username: 'elastic', full_name: 'Elastic', email: 'elastic@elastic.co' },
+  updated_by: { username: 'elastic', full_name: 'HyperSec', email: 'elastic@elastic.co' },
   version: 'WzHJ12',
 };
 
@@ -144,7 +144,7 @@ export const caseConfigurationMock: CasesConfigureRequest = {
 
 export const caseConfigurationCamelCaseResponseMock: CaseConfigure = {
   createdAt: '2020-04-06T13:03:18.657Z',
-  createdBy: { username: 'elastic', fullName: 'Elastic', email: 'elastic@elastic.co' },
+  createdBy: { username: 'elastic', fullName: 'HyperSec', email: 'elastic@elastic.co' },
   connector: {
     id: '123',
     name: 'My connector',
@@ -155,6 +155,6 @@ export const caseConfigurationCamelCaseResponseMock: CaseConfigure = {
   error: null,
   mappings: [],
   updatedAt: '2020-04-06T14:03:18.657Z',
-  updatedBy: { username: 'elastic', fullName: 'Elastic', email: 'elastic@elastic.co' },
+  updatedBy: { username: 'elastic', fullName: 'HyperSec', email: 'elastic@elastic.co' },
   version: 'WzHJ12',
 };

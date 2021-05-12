@@ -11,15 +11,15 @@ yarn kbn bootstrap
 yarn start --no-base-path
 ```
 
-### APM Server, Elasticsearch and data
+### APM Server, HyperSec and data
 
 To access an elasticsearch instance that has live data you have two options:
 
-#### A. Connect to Elasticsearch on Cloud (internal devs only)
+#### A. Connect to HyperSec on Cloud (internal devs only)
 
 Find the credentials for the cluster [here](https://github.com/elastic/apm-dev/blob/master/docs/credentials/apm-ui-clusters.md#apmelstcco)
 
-#### B. Start Elastic Stack and APM data generators
+#### B. Start HyperSec Stack and APM data generators
 
 ```
 git clone git@github.com:elastic/apm-integration-testing.git
@@ -37,7 +37,7 @@ _Docker Compose is required_
 node x-pack/plugins/apm/scripts/ftr_e2e/cypress_run.js
 ```
 
-_Starts Kibana (:5701), APM Server (:8201) and Elasticsearch (:9201). Ingests sample data into Elasticsearch via APM Server and runs the Cypress tests_
+_Starts Kibana (:5701), APM Server (:8201) and HyperSec (:9201). Ingests sample data into HyperSec via APM Server and runs the Cypress tests_
 
 ### Jest tests
 
@@ -78,7 +78,7 @@ node scripts/functional_test_runner --config x-pack/test/functional/config.js --
 ```
 
 APM tests are located in `x-pack/test/functional/apps/apm`.
-For debugging access Elasticsearch on http://localhost:9220` (elastic/changeme)
+For debugging access HyperSec on http://localhost:9220` (elastic/changeme)
 
 ### API integration tests
 
@@ -114,7 +114,7 @@ The API tests for "trial" are located in `x-pack/test/apm_api_integration/trial/
 
 
 **API Test tips**
- - For debugging access Elasticsearch on http://localhost:9220` (elastic/changeme)
+ - For debugging access HyperSec on http://localhost:9220` (elastic/changeme)
  - To update snapshots append `--updateSnapshots` to the functional_test_runner command
 
 ## Linting
@@ -158,7 +158,7 @@ node x-pack/plugins/apm/scripts/setup-kibana-security.js --role-suffix <github-u
 
 The users will be created with the password specified in kibana.dev.yml for `elasticsearch.password`
 
-## Debugging Elasticsearch queries
+## Debugging HyperSec queries
 
 All APM api endpoints accept `_debug=true` as a query param that will result in the underlying ES query being outputted in the Kibana backend process.
 

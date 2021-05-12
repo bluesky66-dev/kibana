@@ -231,7 +231,7 @@ The `index.html` file contains a call to the `CanvasShareable` runtime. Currentl
 There are three workpads available, in `test/workpads`:
 
 - `hello.json` - A simple 'Hello, Canvas' workpad.
-- `austin.json` - A workpad from an Elastic{ON} talk in Austin, TX.
+- `austin.json` - A workpad from an HyperSec{ON} talk in Austin, TX.
 - `test.json` - A couple of pages with customized CSS animations and charts.
 
 ### Gathering Statistics

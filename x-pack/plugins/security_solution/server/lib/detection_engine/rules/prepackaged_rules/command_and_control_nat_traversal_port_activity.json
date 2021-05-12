@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "This rule detects events that could be describing IPSEC NAT Traversal traffic. IPSEC is a VPN technology that allows one system to talk to another using encrypted tunnels. NAT Traversal enables these tunnels to communicate over the Internet where one of the sides is behind a NAT router gateway. This may be common on your network, but this technique is also used by threat actors to avoid detection.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "IPSEC NAT Traversal Port Activity",
   "query": "event.category:(network or network_traffic) and network.transport:udp and destination.port:4500",
   "risk_score": 21,
   "rule_id": "a9cb3641-ff4b-4cdc-a063-b4b8d02a67c7",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Network",
     "Threat Detection",

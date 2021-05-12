@@ -98,7 +98,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
         'home.tutorials.common.metricbeatInstructions.install.windowsTextPost',
         {
           defaultMessage:
-            'Modify the settings under `output.elasticsearch` in the {path} file to point to your Elasticsearch installation.',
+            'Modify the settings under `output.elasticsearch` in the {path} file to point to your HyperSec installation.',
           values: { path: '`C:\\Program Files\\Metricbeat\\metricbeat.yml`' },
         }
       ),
@@ -168,7 +168,7 @@ export const createMetricbeatInstructions = (context?: TutorialContext) => ({
       ],
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.osxTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -198,7 +198,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.debTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -228,7 +228,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.metricbeatInstructions.config.rpmTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -263,7 +263,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         'home.tutorials.common.metricbeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
@@ -285,7 +285,7 @@ export const createMetricbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.metricbeatCloudInstructions.config.osxTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`metricbeat.yml`',
           },
@@ -301,7 +301,7 @@ export const createMetricbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.metricbeatCloudInstructions.config.debTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`/etc/metricbeat/metricbeat.yml`',
           },
@@ -317,7 +317,7 @@ export const createMetricbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.metricbeatCloudInstructions.config.rpmTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`/etc/metricbeat/metricbeat.yml`',
           },
@@ -336,7 +336,7 @@ export const createMetricbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.metricbeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`C:\\Program Files\\Metricbeat\\metricbeat.yml`',
           },

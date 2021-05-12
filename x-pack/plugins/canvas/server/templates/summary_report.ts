@@ -415,7 +415,7 @@ export const summary: CanvasTemplate = {
               parent: null,
             },
             expression:
-              'filters\n| demodata\n| markdown "## Monitoring Elastic projects" "" \n  font={font family="\'Open Sans\', Helvetica, Arial, sans-serif" size=14 align="left" color="#FFFFFF" weight="bold" underline=false italic=false}\n| render css=".canvasRenderEl {\n\n}"',
+              'filters\n| demodata\n| markdown "## Monitoring HyperSec projects" "" \n  font={font family="\'Open Sans\', Helvetica, Arial, sans-serif" size=14 align="left" color="#FFFFFF" weight="bold" underline=false italic=false}\n| render css=".canvasRenderEl {\n\n}"',
           },
           {
             id: 'element-5e85d913-fb4b-41d5-9caf-ca2de9970cc7',

@@ -96,7 +96,7 @@ const nodeUsedHeapLabel = i18n.translate('xpack.monitoring.metrics.esNode.jvmHea
 const nodeUsedHeapDescription = i18n.translate(
   'xpack.monitoring.metrics.esNode.jvmHeap.usedHeapDescription',
   {
-    defaultMessage: 'Total heap used by Elasticsearch running in the JVM.',
+    defaultMessage: 'Total heap used by HyperSec running in the JVM.',
   }
 );
 const nodeReadThreads = i18n.translate('xpack.monitoring.metrics.esNode.readThreadsTitle', {
@@ -422,7 +422,7 @@ export const metrics = {
     field: 'index_stats.total.query_cache.memory_size_in_bytes',
     title: i18n.translate('xpack.monitoring.metrics.esIndex.indexMemoryEsTitle', {
       defaultMessage: 'Index Memory - {elasticsearch}',
-      values: { elasticsearch: 'Elasticsearch' },
+      values: { elasticsearch: 'HyperSec' },
     }),
     label: i18n.translate('xpack.monitoring.metrics.esIndex.indexMemoryEs.queryCacheLabel', {
       defaultMessage: 'Query Cache',
@@ -917,7 +917,7 @@ export const metrics = {
     field: 'node_stats.process.cpu.percent',
     label: nodeCpuUtilizationLabel,
     description: i18n.translate('xpack.monitoring.metrics.esNode.cpuUtilizationDescription', {
-      defaultMessage: 'Percentage of CPU usage for the Elasticsearch process.',
+      defaultMessage: 'Percentage of CPU usage for the HyperSec process.',
     }),
     type: 'node',
     format: LARGE_FLOAT,
@@ -1004,7 +1004,7 @@ export const metrics = {
       defaultMessage: 'Max Heap',
     }),
     description: i18n.translate('xpack.monitoring.metrics.esNode.jvmHeap.maxHeapDescription', {
-      defaultMessage: 'Total heap available to Elasticsearch running in the JVM.',
+      defaultMessage: 'Total heap available to HyperSec running in the JVM.',
     }),
     type: 'node',
     format: SMALL_BYTES,
@@ -1168,7 +1168,7 @@ export const metrics = {
     }),
     title: i18n.translate('xpack.monitoring.metrics.esNode.indexMemoryEsTitle', {
       defaultMessage: 'Index Memory - {elasticsearch}',
-      values: { elasticsearch: 'Elasticsearch' },
+      values: { elasticsearch: 'HyperSec' },
     }),
     description: i18n.translate(
       'xpack.monitoring.metrics.esNode.indexMemoryEs.queryCacheDescription',
@@ -1658,7 +1658,7 @@ export const metrics = {
       defaultMessage: 'Total Refresh Time',
     }),
     description: i18n.translate('xpack.monitoring.metrics.esNode.totalRefreshTimeDescription', {
-      defaultMessage: 'Time spent on Elasticsearch refresh for primary and replica shards.',
+      defaultMessage: 'Time spent on HyperSec refresh for primary and replica shards.',
     }),
     format: LARGE_FLOAT,
     metricAgg: 'max',

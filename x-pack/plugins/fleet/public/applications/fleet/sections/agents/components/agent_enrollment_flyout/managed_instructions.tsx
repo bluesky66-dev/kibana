@@ -47,7 +47,7 @@ export const ManagedInstructions = React.memo<Props>(({ agentPolicies }) => {
     AgentPolicySelectionStep({ agentPolicies, setSelectedAPIKeyId }),
     {
       title: i18n.translate('xpack.fleet.agentEnrollment.stepEnrollAndRunAgentTitle', {
-        defaultMessage: 'Enroll and start the Elastic Agent',
+        defaultMessage: 'Enroll and start the HyperSec Agent',
       }),
       children: apiKey.data && (
         <ManualInstructions
@@ -64,7 +64,7 @@ export const ManagedInstructions = React.memo<Props>(({ agentPolicies }) => {
       <EuiText>
         <FormattedMessage
           id="xpack.fleet.agentEnrollment.managedDescription"
-          defaultMessage="Enroll an Elastic Agent in Fleet to automatically deploy updates and centrally manage the agent."
+          defaultMessage="Enroll an HyperSec Agent in Fleet to automatically deploy updates and centrally manage the agent."
         />
       </EuiText>
       <EuiSpacer size="l" />
@@ -82,7 +82,7 @@ export const ManagedInstructions = React.memo<Props>(({ agentPolicies }) => {
                 <EuiLink href={getHref('fleet')}>
                   <FormattedMessage
                     id="xpack.fleet.agentEnrollment.setUpAgentsLink"
-                    defaultMessage="set up central management for Elastic Agents"
+                    defaultMessage="set up central management for HyperSec Agents"
                   />
                 </EuiLink>
               ),

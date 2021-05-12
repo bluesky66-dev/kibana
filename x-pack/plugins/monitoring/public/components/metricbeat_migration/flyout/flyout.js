@@ -106,7 +106,7 @@ export class Flyout extends Component {
                 'xpack.monitoring.metricbeatMigration.flyout.step1.monitoringUrlHelpText',
                 {
                   defaultMessage: `Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these Elasticsearch servers.`,
+                The running Metricbeat instance must be able to communicate with these HyperSec servers.`,
                 }
               )}
             >
@@ -289,7 +289,7 @@ export class Flyout extends Component {
             <p>
               <FormattedMessage
                 id="xpack.monitoring.metricbeatMigration.flyout.noClusterUuidDescription"
-                defaultMessage="This {productName} {instanceIdentifier} is not connected to an Elasticsearch cluster so once fully migrated,
+                defaultMessage="This {productName} {instanceIdentifier} is not connected to an HyperSec cluster so once fully migrated,
                 this {productName} {instanceIdentifier} will appear in the Standalone cluster instead of this one. {link}"
                 values={{
                   productName,

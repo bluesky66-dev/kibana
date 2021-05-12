@@ -17,7 +17,7 @@ describe('build query', () => {
   } as unknown) as IIndexPattern;
 
   describe('buildQueryFromFilters', () => {
-    test('should return the parameters of an Elasticsearch bool query', () => {
+    test('should return the parameters of an HyperSec bool query', () => {
       const result = buildQueryFromFilters([], indexPattern, false);
       const expected = {
         must: [],

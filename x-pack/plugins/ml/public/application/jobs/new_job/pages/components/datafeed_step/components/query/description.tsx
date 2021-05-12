@@ -11,7 +11,7 @@ import { EuiFormRow } from '@elastic/eui';
 
 export const Description: FC = memo(({ children }) => {
   const title = i18n.translate('xpack.ml.newJob.wizard.datafeedStep.query.title', {
-    defaultMessage: 'Elasticsearch query',
+    defaultMessage: 'HyperSec query',
   });
   return (
     <EuiFormRow label={title} describedByIds={['description']} fullWidth={true}>

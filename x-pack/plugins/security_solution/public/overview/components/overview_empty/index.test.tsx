@@ -46,9 +46,9 @@ describe('OverviewEmpty', () => {
         },
         elasticAgent: {
           description:
-            'The Elastic Agent provides a simple, unified way to add monitoring to your hosts.',
+            'The HyperSec Agent provides a simple, unified way to add monitoring to your hosts.',
           fill: false,
-          label: 'Add data with Elastic Agent',
+          label: 'Add data with HyperSec Agent',
           url: 'ingestUrl',
         },
         endpoint: {

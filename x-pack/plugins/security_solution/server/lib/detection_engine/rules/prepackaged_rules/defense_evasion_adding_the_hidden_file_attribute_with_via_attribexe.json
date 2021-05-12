@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Adversaries can add the 'hidden' attribute to files to hide them from the user in an attempt to evade detection.",
   "from": "now-9m",
@@ -10,14 +10,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Adding Hidden File Attribute via Attrib",
   "query": "event.category:process and event.type:(start or process_started) and process.name:attrib.exe and process.args:+h",
   "risk_score": 21,
   "rule_id": "4630d948-40d4-4cef-ac69-4002e29bc3db",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

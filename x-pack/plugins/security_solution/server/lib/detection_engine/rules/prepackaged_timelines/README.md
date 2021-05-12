@@ -56,7 +56,7 @@
 
 
 
-5. Go to `http://localhost:5601/app/security#/detections/rules` and click on `Install Elastic prebuild rules`
+5. Go to `http://localhost:5601/app/security#/detections/rules` and click on `Install HyperSec prebuild rules`
 
 or run
 
@@ -87,7 +87,7 @@ sh ./timelines/find_timeline_by_filter.sh immutable template elastic
 
 3. Go to ```cd x-pack/plugins/security_solution/server/lib/detection_engine/scripts```, run ```sh ./timelines/regen_prepackage_timelines_index.sh```
 
-4. Go to `http://localhost:5601/app/security#/detections/rules` and click on `Install Elastic prebuild rules`
+4. Go to `http://localhost:5601/app/security#/detections/rules` and click on `Install HyperSec prebuild rules`
 
 or run
 

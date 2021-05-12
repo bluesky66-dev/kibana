@@ -33,7 +33,7 @@ describe('AddRoleTemplateButton', () => {
       >
         <p>
           <FormattedMessage
-            defaultMessage="Role templates cannot be used when scripts are disabled in Elasticsearch."
+            defaultMessage="Role templates cannot be used when scripts are disabled in HyperSec."
             id="xpack.security.management.editRoleMapping.roleTemplatesUnavailable"
             values={Object {}}
           />

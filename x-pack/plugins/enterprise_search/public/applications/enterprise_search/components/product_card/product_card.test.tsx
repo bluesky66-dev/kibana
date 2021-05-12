@@ -27,7 +27,7 @@ describe('ProductCard', () => {
     const wrapper = shallow(<ProductCard product={APP_SEARCH_PLUGIN} image="as.jpg" />);
     const card = wrapper.find(EuiCard).dive().shallow();
 
-    expect(card.find('h2').text()).toEqual('Elastic App Search');
+    expect(card.find('h2').text()).toEqual('HyperSec App Search');
     expect(card.find('.productCard__image').prop('src')).toEqual('as.jpg');
 
     const button = card.find(EuiButtonTo);
@@ -45,7 +45,7 @@ describe('ProductCard', () => {
     const wrapper = shallow(<ProductCard product={WORKPLACE_SEARCH_PLUGIN} image="ws.jpg" />);
     const card = wrapper.find(EuiCard).dive().shallow();
 
-    expect(card.find('h2').text()).toEqual('Elastic Workplace Search');
+    expect(card.find('h2').text()).toEqual('HyperSec Workplace Search');
     expect(card.find('.productCard__image').prop('src')).toEqual('ws.jpg');
 
     const button = card.find(EuiButtonTo);

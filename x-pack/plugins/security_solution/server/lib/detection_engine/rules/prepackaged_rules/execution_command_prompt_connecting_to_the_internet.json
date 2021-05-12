@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies cmd.exe making a network connection. Adversaries could abuse cmd.exe to download or execute malware from a remote URL.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Command Prompt Network Connection",
   "query": "sequence by process.entity_id\n  [process where process.name : \"cmd.exe\" and event.type == \"start\"]\n  [network where process.name : \"cmd.exe\" and\n     not cidrmatch(destination.ip, \"10.0.0.0/8\", \"172.16.0.0/12\", \"192.168.0.0/16\")]\n",
   "risk_score": 21,
   "rule_id": "89f9a4b0-9f8f-4ee0-8823-c4751a6d6696",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

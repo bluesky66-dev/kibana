@@ -238,7 +238,7 @@ exports[`MonitorTags component render against summary 1`] = `
                 "agent": Object {
                   "ephemeral_id": "a4d0d3eb-d162-4cc7-b14d-eaaad8b3d224",
                   "id": "1f122196-6a5e-4bd4-8288-ef084e2ec982",
-                  "name": "Elastic-Mac",
+                  "name": "HyperSec-Mac",
                   "type": "heartbeat",
                   "version": "8.0.0",
                 },
@@ -471,7 +471,7 @@ exports[`MonitorTags component renders against ping 1`] = `
           "agent": Object {
             "ephemeral_id": "a4d0d3eb-d162-4cc7-b14d-eaaad8b3d224",
             "id": "1f122196-6a5e-4bd4-8288-ef084e2ec982",
-            "name": "Elastic-Mac",
+            "name": "HyperSec-Mac",
             "type": "heartbeat",
             "version": "8.0.0",
           },

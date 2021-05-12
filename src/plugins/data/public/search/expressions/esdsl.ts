@@ -39,7 +39,7 @@ export const esdsl = (): EsdslExpressionFunctionDefinition => ({
   type: 'es_raw_response',
   inputTypes: ['kibana_context', 'null'],
   help: i18n.translate('data.search.esdsl.help', {
-    defaultMessage: 'Run Elasticsearch request',
+    defaultMessage: 'Run HyperSec request',
   }),
   args: {
     dsl: {
@@ -98,7 +98,7 @@ export const esdsl = (): EsdslExpressionFunctionDefinition => ({
       {
         description: i18n.translate('data.search.es_search.dataRequest.description', {
           defaultMessage:
-            'This request queries Elasticsearch to fetch the data for the visualization.',
+            'This request queries HyperSec to fetch the data for the visualization.',
         }),
       }
     );
@@ -110,7 +110,7 @@ export const esdsl = (): EsdslExpressionFunctionDefinition => ({
         }),
         value: args.index,
         description: i18n.translate('data.search.es_search.indexPatternDescription', {
-          defaultMessage: 'The index pattern that connected to the Elasticsearch indices.',
+          defaultMessage: 'The index pattern that connected to the HyperSec indices.',
         }),
       },
     });

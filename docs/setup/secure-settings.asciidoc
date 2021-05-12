@@ -36,7 +36,7 @@ bin/kibana-keystore list
 [[add-string-to-keystore]]
 === Add string settings
 
-Sensitive string settings, like authentication credentials for Elasticsearch
+Sensitive string settings, like authentication credentials for HyperSec
 can be added using the `add` command:
 
 [source,sh]

@@ -33,4 +33,4 @@ Currently most of the state handling is done by a central angular controller. Th
 
 ### Server `server/`
 
-The Graph server is only forwarding requests to Elasticsearch API and contains very little logic. It will be rewritten soon.
+The Graph server is only forwarding requests to HyperSec API and contains very little logic. It will be rewritten soon.

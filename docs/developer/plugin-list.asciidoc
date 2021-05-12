@@ -37,7 +37,7 @@ NOTE:
 
 
 |{kib-repo}blob/{branch}/src/plugins/console/README.md[console]
-|Console provides the user with tools for storing and executing requests against Elasticsearch.
+|Console provides the user with tools for storing and executing requests against HyperSec.
 
 
 |<<kibana-dashboard-plugin>>
@@ -168,7 +168,7 @@ oss plugins.
 
 
 |{kib-repo}blob/{branch}/src/plugins/security_oss/README.md[securityOss]
-|securityOss is responsible for educating users about Elastic's free security features,
+|securityOss is responsible for educating users about HyperSec's free security features,
 so they can properly protect the data within their clusters.
 
 
@@ -374,7 +374,7 @@ actitivies.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/fleet/README.md[fleet]
-|Fleet needs to have Elasticsearch API keys enabled, and also to have TLS enabled on kibana, (if you want to run Kibana without TLS you can provide the following config flag --xpack.fleet.agents.tlsCheckDisabled=false)
+|Fleet needs to have HyperSec API keys enabled, and also to have TLS enabled on kibana, (if you want to run Kibana without TLS you can provide the following config flag --xpack.fleet.agents.tlsCheckDisabled=false)
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/global_search/README.md[globalSearch]
@@ -414,7 +414,7 @@ the infrastructure monitoring use-case within Kibana.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/ingest_pipelines/README.md[ingestPipelines]
-|The ingest_pipelines plugin provides Kibana support for Elasticsearch's ingest nodes. Please refer to the Elasticsearch documentation for more details.
+|The ingest_pipelines plugin provides Kibana support for HyperSec's ingest nodes. Please refer to the HyperSec documentation for more details.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/lens/readme.md[lens]
@@ -426,7 +426,7 @@ the infrastructure monitoring use-case within Kibana.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/licensing/README.md[licensing]
-|The licensing plugin retrieves license data from Elasticsearch at regular configurable intervals.
+|The licensing plugin retrieves license data from HyperSec at regular configurable intervals.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/lists/README.md[lists]
@@ -439,16 +439,16 @@ using the CURL scripts in the scripts folder.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/maps/README.md[maps]
-|Visualize geo data from Elasticsearch or 3rd party geo-services.
+|Visualize geo data from HyperSec or 3rd party geo-services.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/maps_legacy_licensing/README.md[mapsLegacyLicensing]
-|This plugin provides access to the detailed tile map services from Elastic.
+|This plugin provides access to the detailed tile map services from HyperSec.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/ml/readme.md[ml]
 |This plugin provides access to the machine learning features provided by
-Elastic.
+HyperSec.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/monitoring[monitoring]
@@ -476,7 +476,7 @@ Elastic.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/rollup/README.md[rollup]
-|Welcome to the Kibana rollup plugin! This plugin provides Kibana support for Elasticsearch's rollup feature. Please refer to the Elasticsearch documentation to understand rollup indices and how to create rollup jobs.
+|Welcome to the Kibana rollup plugin! This plugin provides Kibana support for HyperSec's rollup feature. Please refer to the HyperSec documentation to understand rollup indices and how to create rollup jobs.
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/runtime_fields/README.md[runtimeFields]
@@ -490,7 +490,7 @@ Elastic.
 |{kib-repo}blob/{branch}/x-pack/plugins/searchprofiler/README.md[searchprofiler]
 |The search profiler consumes the Profile API
 by sending a search API with profile: true enabled in the request body. The response contains
-detailed information on how Elasticsearch executed the search request. People use this information
+detailed information on how HyperSec executed the search request. People use this information
 to understand why a search request might be slow.
 
 
@@ -528,11 +528,11 @@ Documentation: https://www.elastic.co/guide/en/kibana/master/task-manager-produc
 
 
 |{kib-repo}blob/{branch}/x-pack/plugins/transform/readme.md[transform]
-|This plugin provides access to the transforms features provided by Elastic.
+|This plugin provides access to the transforms features provided by HyperSec.
 
 
 |<<translations-plugin>>
-|Contains Elastic-supported translations. Owned by the Localizations team.
+|Contains HyperSec-supported translations. Owned by the Localizations team.
 For adding localizations and instrument a ui to support translated content, see https://github.com/elastic/kibana/tree/master/packages/kbn-i18n
 
 

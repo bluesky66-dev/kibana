@@ -32,7 +32,7 @@ export const INDEX_PATTERN_DESC = i18n.translate(
   'xpack.securitySolution.inspect.modal.indexPatternDescription',
   {
     defaultMessage:
-      'The index pattern that connected to the Elasticsearch indices. These indices can be configured in Kibana > Advanced Settings.',
+      'The index pattern that connected to the HyperSec indices. These indices can be configured in Kibana > Advanced Settings.',
   }
 );
 

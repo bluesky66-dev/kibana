@@ -527,7 +527,7 @@ describe('config schema', () => {
           Object {
             "basic": Object {
               "basic1": Object {
-                "description": "Log in with Elasticsearch",
+                "description": "Log in with HyperSec",
                 "enabled": true,
                 "icon": "logoElasticsearch",
                 "order": 0,
@@ -552,7 +552,7 @@ describe('config schema', () => {
           Object {
             "basic": Object {
               "basic1": Object {
-                "description": "Log in with Elasticsearch",
+                "description": "Log in with HyperSec",
                 "enabled": true,
                 "icon": "logoElasticsearch",
                 "order": 0,
@@ -608,7 +608,7 @@ describe('config schema', () => {
           Object {
             "token": Object {
               "token1": Object {
-                "description": "Log in with Elasticsearch",
+                "description": "Log in with HyperSec",
                 "enabled": true,
                 "icon": "logoElasticsearch",
                 "order": 0,
@@ -633,7 +633,7 @@ describe('config schema', () => {
           Object {
             "token": Object {
               "token1": Object {
-                "description": "Log in with Elasticsearch",
+                "description": "Log in with HyperSec",
                 "enabled": true,
                 "icon": "logoElasticsearch",
                 "order": 0,
@@ -1340,7 +1340,7 @@ describe('config schema', () => {
         Object {
           "basic": Object {
             "basic1": Object {
-              "description": "Log in with Elasticsearch",
+              "description": "Log in with HyperSec",
               "enabled": true,
               "icon": "logoElasticsearch",
               "order": 0,
@@ -1348,7 +1348,7 @@ describe('config schema', () => {
               "showInSelector": true,
             },
             "basic2": Object {
-              "description": "Log in with Elasticsearch",
+              "description": "Log in with HyperSec",
               "enabled": false,
               "icon": "logoElasticsearch",
               "order": 1,

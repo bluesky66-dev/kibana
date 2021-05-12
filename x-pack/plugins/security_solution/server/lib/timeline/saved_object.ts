@@ -370,7 +370,7 @@ export const persistTimeline = async (
   isImmutable?: boolean
 ): Promise<ResponseTimeline> => {
   const savedObjectsClient = request.context.core.savedObjects.client;
-  const userInfo = isImmutable ? ({ username: 'Elastic' } as AuthenticatedUser) : request.user;
+  const userInfo = isImmutable ? ({ username: 'HyperSec' } as AuthenticatedUser) : request.user;
   try {
     if (timelineId == null) {
       // Create new timeline

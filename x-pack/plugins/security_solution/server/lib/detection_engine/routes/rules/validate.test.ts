@@ -20,7 +20,7 @@ import { RuleTypeParams } from '../../types';
 
 export const ruleOutput = (): RulesSchema => ({
   actions: [],
-  author: ['Elastic'],
+  author: ['HyperSec'],
   created_at: '2019-12-13T16:40:33.400Z',
   updated_at: '2019-12-13T16:40:33.400Z',
   created_by: 'elastic',
@@ -33,7 +33,7 @@ export const ruleOutput = (): RulesSchema => ({
   interval: '5m',
   rule_id: 'rule-1',
   language: 'kuery',
-  license: 'Elastic License',
+  license: 'HyperSec License',
   output_index: '.siem-signals',
   max_signals: 100,
   risk_score: 50,

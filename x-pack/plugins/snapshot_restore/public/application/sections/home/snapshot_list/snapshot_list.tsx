@@ -225,7 +225,7 @@ export const SnapshotList: React.FunctionComponent<RouteComponentProps<MatchPara
                           >
                             <FormattedMessage
                               id="xpack.snapshotRestore.emptyPrompt.usePolicyDocLinkText"
-                              defaultMessage="the Elasticsearch API"
+                              defaultMessage="the HyperSec API"
                             />
                           </EuiLink>
                         ),
@@ -265,7 +265,7 @@ export const SnapshotList: React.FunctionComponent<RouteComponentProps<MatchPara
                   <p>
                     <FormattedMessage
                       id="xpack.snapshotRestore.snapshotList.emptyPrompt.noSnapshotsDescription"
-                      defaultMessage="Create a snapshot using the Elasticsearch API."
+                      defaultMessage="Create a snapshot using the HyperSec API."
                     />
                   </p>
                   <p>

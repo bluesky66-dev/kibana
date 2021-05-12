@@ -234,7 +234,7 @@ describe('TelemetryService', () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Elastic-Stack-Version': 'mockKibanaVersion',
+          'X-HyperSec-Stack-Version': 'mockKibanaVersion',
         },
         body: JSON.stringify(mockPayload),
       });

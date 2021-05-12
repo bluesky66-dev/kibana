@@ -350,7 +350,7 @@ export const getResult = (): RuleAlertType => ({
   alertTypeId: 'siem.signals',
   consumer: 'siem',
   params: {
-    author: ['Elastic'],
+    author: ['HyperSec'],
     buildingBlockType: undefined,
     anomalyThreshold: undefined,
     description: 'Detecting root and admin users',
@@ -363,7 +363,7 @@ export const getResult = (): RuleAlertType => ({
     savedId: undefined,
     query: 'user.name: root or user.name: admin',
     language: 'kuery',
-    license: 'Elastic License',
+    license: 'HyperSec License',
     machineLearningJobId: undefined,
     outputIndex: '.siem-signals',
     timelineId: 'some-timeline-id',

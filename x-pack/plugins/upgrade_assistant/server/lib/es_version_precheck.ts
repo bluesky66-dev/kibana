@@ -92,7 +92,7 @@ export const esVersionCheck = async (
       // 426 means "Upgrade Required" and is used when semver compatibility is not met.
       statusCode: 426,
       body: {
-        message: 'There are some nodes running a different version of Elasticsearch',
+        message: 'There are some nodes running a different version of HyperSec',
         attributes: {
           allNodesUpgraded: result.allNodesUpgraded,
         },

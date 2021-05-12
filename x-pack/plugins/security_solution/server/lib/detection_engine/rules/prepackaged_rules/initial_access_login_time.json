@@ -1,13 +1,13 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies that a login attempt occurred at a forbidden time.",
   "index": [
     "auditbeat-*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Auditd Login Attempt at Forbidden Time",
   "query": "event.module:auditd and event.action:\"attempted-log-in-during-unusual-hour-to\"",
   "references": [
@@ -17,7 +17,7 @@
   "rule_id": "90e28af7-1d96-4582-bf11-9a1eff21d0e5",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

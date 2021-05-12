@@ -224,7 +224,7 @@ export class VisualizePlugin
         title: 'Visualize Library',
         description: i18n.translate('visualize.visualizeDescription', {
           defaultMessage:
-            'Create visualizations and aggregate data stores in your Elasticsearch indices.',
+            'Create visualizations and aggregate data stores in your HyperSec indices.',
         }),
         icon: 'visualizeApp',
         path: `/app/visualize#${VisualizeConstants.LANDING_PAGE_PATH}`,

@@ -55,7 +55,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, image }) => {
       className="productCard"
       titleElement="h2"
       title={i18n.translate('xpack.enterpriseSearch.overview.productCard.heading', {
-        defaultMessage: 'Elastic {productName}',
+        defaultMessage: 'HyperSec {productName}',
         values: { productName: product.NAME },
       })}
       image={

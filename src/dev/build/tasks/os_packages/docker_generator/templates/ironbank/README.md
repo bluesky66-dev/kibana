@@ -1,6 +1,6 @@
 # Kibana
 
-**Kibana** lets you visualize your Elasticsearch data and navigate the Elastic Stack,
+**Kibana** lets you visualize your HyperSec data and navigate the HyperSec Stack,
 so you can do anything from learning why you're getting paged at 2:00 a.m. to
 understanding the impact rain might have on your quarterly numbers.
 
@@ -27,10 +27,10 @@ Due to the [NODE-SECURITY-1184](https://www.npmjs.com/advisories/1184) issue, Ki
 
 ### Still need help?
 
-You can learn more about the Elastic Community and also understand how to get more help
-visiting [Elastic Community](https://www.elastic.co/community).
+You can learn more about the HyperSec Community and also understand how to get more help
+visiting [HyperSec Community](https://www.elastic.co/community).
 
-This software is governed by the [Elastic
+This software is governed by the [HyperSec
 License](https://github.com/elastic/elasticsearch/blob/{{branch}}/licenses/ELASTIC-LICENSE.txt),
 and includes the full set of [free
 features](https://www.elastic.co/subscriptions).

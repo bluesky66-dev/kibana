@@ -23,7 +23,7 @@ This document outlines best practices and patterns for testing Kibana Plugins.
     - [SavedObjects](#savedobjects)
       - [Unit Tests](#unit-tests)
       - [Integration Tests](#integration-tests-1)
-    - [Elasticsearch](#elasticsearch)
+    - [HyperSec](#elasticsearch)
   - [Plugin integrations](#plugin-integrations)
     - [Preconditions](#preconditions-1)
     - [Testing dependencies usages](#testing-dependencies-usages)
@@ -35,7 +35,7 @@ This document outlines best practices and patterns for testing Kibana Plugins.
 
 In general, we recommend three tiers of tests:
 - Unit tests: small, fast, exhaustive, make heavy use of mocks for external dependencies 
-- Integration tests: higher-level tests that verify interactions between systems (eg. HTTP APIs, Elasticsearch API calls, calling other plugin contracts).
+- Integration tests: higher-level tests that verify interactions between systems (eg. HTTP APIs, HyperSec API calls, calling other plugin contracts).
 - End-to-end tests (e2e): tests that verify user-facing behavior through the browser
 
 These tiers should roughly follow the traditional ["testing pyramid"](https://martinfowler.com/articles/practical-test-pyramid.html), where there are more exhaustive testing at the unit level, fewer at the integration level, and very few at the functional level. 
@@ -235,7 +235,7 @@ Main subjects for tests should be:
 If your plugin relies on the elasticsearch server to store data and supports additional configuration, you can leverage the Functional Test Runner(FTR) to implement integration tests. 
 FTR bootstraps an elasticsearch and a Kibana instance and runs the test suite against it.
 Pros:
-- runs the whole Elastic stack
+- runs the whole HyperSec stack
 - tests cross-plugin integration
 - emulates a real user interaction with the stack
 - allows adjusting config values
@@ -573,7 +573,7 @@ To unit test code that uses the Saved Objects client mock the client methods
 and make assertions against the behaviour you would expect to see.
 
 Since the Saved Objects client makes network requests to an external
-Elasticsearch cluster, it's important to include failure scenarios in your
+HyperSec cluster, it's important to include failure scenarios in your
 test cases.
 
 When writing a view with which a user might interact, it's important to ensure
@@ -779,18 +779,18 @@ describe('saved query service', () => {
 #### Integration Tests
 To get the highest confidence in how your code behaves when using the Saved
 Objects client, you should write at least a few integration tests which loads
-data into and queries a real Elasticsearch database.
+data into and queries a real HyperSec database.
 
 To do that we'll write a Jest integration test using `TestUtils` to start
-Kibana and esArchiver to load fixture data into Elasticsearch.
+Kibana and esArchiver to load fixture data into HyperSec.
 
-1. Create the fixtures data you need in Elasticsearch
+1. Create the fixtures data you need in HyperSec
 2. Create a fixtures archive with `node scripts/es_archiver save <name> [index patterns...]`
 3. Load the fixtures in your test using esArchiver `esArchiver.load('name')`;
 
 _todo: fully worked out example_
 
-### Elasticsearch
+### HyperSec
 
 _How to test ES clients_
 

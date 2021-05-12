@@ -42,8 +42,8 @@ const mockFieldToIndexPatternField = (spec: Record<string, string | boolean | un
 
 const fields = [
   {
-    name: 'Elastic',
-    displayName: 'Elastic',
+    name: 'HyperSec',
+    displayName: 'HyperSec',
     searchable: true,
     type: 'string',
   },

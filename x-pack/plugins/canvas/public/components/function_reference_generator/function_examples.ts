@@ -254,7 +254,7 @@ dropdownControl valueColumn=agent filterColumn=agent.keyword filterGroup=group1`
 | dropdownControl valueColumn=project filterColumn=project
 | render`,
       help:
-        'This creates a dropdown filter element. It requires a data source and uses the unique values from the given `valueColumn` (i.e. `project`) and applies the filter to the `project` column. Note: `filterColumn` should point to a keyword type field for Elasticsearch data sources.',
+        'This creates a dropdown filter element. It requires a data source and uses the unique values from the given `valueColumn` (i.e. `project`) and applies the filter to the `project` column. Note: `filterColumn` should point to a keyword type field for HyperSec data sources.',
     },
   },
   eq: {

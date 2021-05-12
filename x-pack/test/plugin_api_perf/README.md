@@ -53,11 +53,11 @@ You'll see the average number of tasks executed per second, over a period of eac
 You'll also see the average time it takes from the moment a task's scheduled time was reached, until Task Manager picked it up for execution.
 
 
-# Running the test against multiple Kibana and a single Elasticsearch
+# Running the test against multiple Kibana and a single HyperSec
 This is not a clean and ideal way of running this test, but it is a workaround that's worth understanding.
 
 ## Test Description
-The idea is that we would like to test performance of running multiple Kibana instances side by side, both pointing at the same Elasticsearch cluster.
+The idea is that we would like to test performance of running multiple Kibana instances side by side, both pointing at the same HyperSec cluster.
 
 This is needed in order to verify that the distributed nature of Kibana doesn't introduce issues or break assumptions in our developed solutions.
 
@@ -69,9 +69,9 @@ Ideally we can clean this up and make it easier and less hacky in the future, bu
 ## Method
 1. You need two cloned repos of Kibana, so clone a second Kibana of your personal form along side your existing clone. Personally I have two co-located Kibana folders (`./elastic/kibana` and `./elastic/_kibana`, where the first is my working clone and the other is never used for actual dev work, but that's just me -GM).
 1. You can run the FTS in the main clone of your fork by running `node scripts/functional_tests_server.js --config=test/plugin_api_perf/config.js` in the `x-pack` folder.
-1. Once you've began running the default FTS, you want your second FTS to run such that it is referencing the Elasticsearch instance started by that first FTS. You achieve this by exporting a `TEST_ES_URL` Environment variable that points at it. By default, you should be able to run this: `export TEST_ES_URL=http://elastic:changeme@localhost:9220`. Do this in a terminal window opened in your **second** clone of Kibana (in my case, the `./elastic/_kibana` folder).
+1. Once you've began running the default FTS, you want your second FTS to run such that it is referencing the HyperSec instance started by that first FTS. You achieve this by exporting a `TEST_ES_URL` Environment variable that points at it. By default, you should be able to run this: `export TEST_ES_URL=http://elastic:changeme@localhost:9220`. Do this in a terminal window opened in your **second** clone of Kibana (in my case, the `./elastic/_kibana` folder).
 1. One issue I encountered with FTS is that I can't tell it _not to start its own ES instance at all_. To achieve this, in `packages/kbn-test/src/functional_tests/tasks.js` you need to comment out the line that starts up its own ES (`const es = await runElasticsearch({ config, options: opts });` [line 85]  and `await es.cleanup();` shortly after)
 1. Next you want each instance of Kibana to run with its own UUID as that is used to identify each Kibana's owned tasks. In the file `x-pack/test/functional/config.js` simple change the uuid on the line `--server.uuid=` into any random UUID.
 1. Now that you've made these changes you can kick off your second Kibana FTS by running ths following in the second clone's `x-pack` folder: `TEST_KIBANA_PORT=5621 node scripts/functional_tests_server.js --config=test/plugin_api_perf/config.js`. This runs Kibana on a different port than the first FTS (`5621` instead of `5620`).
-1. With two FTS Kibana running and both pointing at the same Elasticsearch. Now, you can run the actual perf test by running `node scripts/functional_test_runner.js --config=test/plugin_api_perf/config.js` in a third terminal
+1. With two FTS Kibana running and both pointing at the same HyperSec. Now, you can run the actual perf test by running `node scripts/functional_test_runner.js --config=test/plugin_api_perf/config.js` in a third terminal
 

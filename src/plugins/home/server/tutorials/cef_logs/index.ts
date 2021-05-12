@@ -37,7 +37,7 @@ export function cefLogsSpecProvider(context: TutorialContext): TutorialSchema {
         Syslog. When messages are received over the syslog protocol the syslog \
         input will parse the header and set the timestamp value. Then the \
         processor is applied to parse the CEF encoded data. The decoded data \
-        is written into a `cef` object field. Lastly any Elastic Common Schema \
+        is written into a `cef` object field. Lastly any HyperSec Common Schema \
         (ECS) fields that can be populated with the CEF data are populated. \
         [Learn more]({learnMoreLink}).',
       values: {

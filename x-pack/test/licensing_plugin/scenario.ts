@@ -82,8 +82,8 @@ export function createScenario({ getService, getPageObjects }: FtrProviderContex
             expiry_date_in_millis: 1672531199999,
             max_resource_units: 250,
             max_nodes: null,
-            issued_to: 'Elastic Internal Use (development environments)',
-            issuer: 'Elastic',
+            issued_to: 'HyperSec Internal Use (development environments)',
+            issuer: 'HyperSec',
             signature:
               'AAAABQAAAA1gHUVis7hel8b8nNCAAAAAIAo5/x6hrsGh1GqqrJmy4qgmEC7gK0U4zQ6q5ZEMhm4jAAABAKMR+w3KZsMJfG5jNWgZXJLwRmiNqN7k94vKFgRdj1yM+gA9ufhXIn9d01OvFhPjilIqm+fxVjCxXwGKbFRiwtTWnTYjXPuNml+qCFGgUWguWEcVoIW6VU7/lYOqMJ4EB4zOMLe93P267iaDm542aelQrW1OJ69lGGuPBik8v9r1bNZzKBQ99VUr/qoosGDAm0udh2HxWzYoCL5lDML5Niy87xlVCubSSBXdUXzUgdZKKk6pKaMdHswB1gjvEfnwqPxEWAyrV0BCr/T1WehXd7U4p6/zt6sJ6cPh+34AZe9g4+3WPKrZhX4iaSHMDDHn4HNjO72CZ2oi42ZDNnJ37tA=',
           },

@@ -44,7 +44,7 @@ be included in the audit log:
 - Data writes (incl. failed attempts due to authorisation errors)
 
 If Kibana does not own the resource (e.g. when running queries against user
-indices), then auditing responsibilities are deferred to Elasticsearch and no
+indices), then auditing responsibilities are deferred to HyperSec and no
 additional events will be logged.
 
 **Examples:**

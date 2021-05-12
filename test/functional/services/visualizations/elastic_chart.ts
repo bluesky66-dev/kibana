@@ -112,7 +112,7 @@ export function ElasticChartProvider({ getService }: FtrProviderContext) {
         );
         return debugDataString ? JSON.parse(debugDataString) : null;
       } catch (error) {
-        throw Error('Elastic charts debugState not found');
+        throw Error('HyperSec charts debugState not found');
       }
     }
 

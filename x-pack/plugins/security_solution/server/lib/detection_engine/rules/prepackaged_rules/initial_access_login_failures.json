@@ -1,13 +1,13 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies that the maximum number of failed login attempts has been reached for a user.",
   "index": [
     "auditbeat-*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Auditd Max Failed Login Attempts",
   "query": "event.module:auditd and event.action:\"failed-log-in-too-many-times-to\"",
   "references": [
@@ -17,7 +17,7 @@
   "rule_id": "fb9937ce-7e21-46bf-831d-1ad96eac674d",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

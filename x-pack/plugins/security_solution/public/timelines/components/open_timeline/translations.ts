@@ -310,7 +310,7 @@ export const TAB_TEMPLATES = i18n.translate(
 export const FILTER_ELASTIC_TIMELINES = i18n.translate(
   'xpack.securitySolution.timelines.components.templateFilter.elasticTitle',
   {
-    defaultMessage: 'Elastic templates',
+    defaultMessage: 'HyperSec templates',
   }
 );
 

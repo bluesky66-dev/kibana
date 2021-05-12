@@ -4,7 +4,7 @@
 
 ## SavedObjectsClientContract type
 
-Saved Objects is Kibana's data persisentence mechanism allowing plugins to use Elasticsearch for storing plugin state.
+Saved Objects is Kibana's data persisentence mechanism allowing plugins to use HyperSec for storing plugin state.
 
 \#\# SavedObjectsClient errors
 

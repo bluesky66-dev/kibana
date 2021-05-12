@@ -1,13 +1,13 @@
 [[add-data-tutorials]]
 == Add data tutorials
 
-`Add Data` in the {kib} Home application contains tutorials for setting up data flows in the Elastic stack.
+`Add Data` in the {kib} Home application contains tutorials for setting up data flows in the HyperSec stack.
 
 Each tutorial contains three sets of instructions:
 
 * `On Premise.` Set up a data flow when both {kib} and {es} are running on premise.
-* `On Premise Elastic Cloud.` Set up a data flow when {kib} is running on premise and {es} is running on Elastic Cloud.
-* `Elastic Cloud.` Set up a data flow when both {kib} and {es} are running on Elastic Cloud.
+* `On Premise HyperSec Cloud.` Set up a data flow when {kib} is running on premise and {es} is running on HyperSec Cloud.
+* `HyperSec Cloud.` Set up a data flow when both {kib} and {es} are running on HyperSec Cloud.
 
 [discrete]
 === Creating a new tutorial

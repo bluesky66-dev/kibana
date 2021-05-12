@@ -70,7 +70,7 @@ export const migrationRetryCallCluster = <T extends Promise<unknown>>(
         errors.pipe(
           concatMap((error) => {
             if (!previousErrors.includes(error.message)) {
-              log.warn(`Unable to connect to Elasticsearch. Error: ${error.message}`);
+              log.warn(`Unable to connect to HyperSec. Error: ${error.message}`);
               previousErrors.push(error.message);
             }
             return iif(

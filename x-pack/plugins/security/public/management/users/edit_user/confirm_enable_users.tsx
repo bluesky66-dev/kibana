@@ -72,7 +72,7 @@ export const ConfirmEnableUsers: FunctionComponent<ConfirmEnableUsersProps> = ({
         <p>
           <FormattedMessage
             id="xpack.security.management.users.confirmEnableUsers.description"
-            defaultMessage="{count, plural, one{This user} other{These users}} will be able to access Elastic{count, plural, one{.} other{:}}"
+            defaultMessage="{count, plural, one{This user} other{These users}} will be able to access HyperSec{count, plural, one{.} other{:}}"
             values={{ count: usernames.length }}
           />
         </p>

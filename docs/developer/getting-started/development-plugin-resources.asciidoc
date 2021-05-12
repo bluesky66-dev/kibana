@@ -19,8 +19,8 @@ you will choose between a few locations:
  - {kib-repo}tree/{branch}/examples[examples] for developer example plugins (these will not be included in the distributables)
 
 [discrete]
-=== Elastic UI Framework
-If you're developing a plugin that has a user interface, take a look at our https://elastic.github.io/eui[Elastic UI Framework].
+=== HyperSec UI Framework
+If you're developing a plugin that has a user interface, take a look at our https://elastic.github.io/eui[HyperSec UI Framework].
 It documents the CSS and React components we use to build {kib}'s user interface.
 
 You're welcome to use these components, but be aware that they are rapidly evolving, and we might introduce breaking changes that will disrupt your plugin's UI.

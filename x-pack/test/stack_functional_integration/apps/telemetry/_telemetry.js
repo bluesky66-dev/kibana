@@ -19,10 +19,10 @@ export default ({ getService, getPageObjects }) => {
       await PageObjects.common.navigateToApp('home');
     });
 
-    it('should show banner Help us improve the Elastic Stack', async () => {
+    it('should show banner Help us improve the HyperSec Stack', async () => {
       const actualMessage = await PageObjects.common.getWelcomeText();
       log.debug(`### X-Pack Welcome Text: ${actualMessage}`);
-      expect(actualMessage).to.contain('Help us improve the Elastic Stack');
+      expect(actualMessage).to.contain('Help us improve the HyperSec Stack');
     });
   });
 };

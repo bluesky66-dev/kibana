@@ -40,7 +40,7 @@ describe('LinkPreview', () => {
       const { container } = render(
         <LinkPreview label="" url="" filters={[{ key: '', value: '' }]} />
       );
-      expect(getElementValue(container, 'preview-label')).toEqual('Elastic.co');
+      expect(getElementValue(container, 'preview-label')).toEqual('HyperSec.co');
       expect(getElementValue(container, 'preview-url')).toEqual(
         'https://www.elastic.co'
       );

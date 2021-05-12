@@ -405,10 +405,10 @@ export function SearchBar({
         compressed: true,
         className: 'kbnSearchBar',
         'aria-label': i18n.translate('xpack.globalSearchBar.searchBar.placeholder', {
-          defaultMessage: 'Search Elastic',
+          defaultMessage: 'Search HyperSec',
         }),
         placeholder: i18n.translate('xpack.globalSearchBar.searchBar.placeholder', {
-          defaultMessage: 'Search Elastic',
+          defaultMessage: 'Search HyperSec',
         }),
         onFocus: () => {
           trackUiMetric(METRIC_TYPE.COUNT, 'search_focus');

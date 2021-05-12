@@ -67,7 +67,7 @@ export class TelemetrySender {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
-                'X-Elastic-Stack-Version': this.telemetryService.currentKibanaVersion,
+                'X-HyperSec-Stack-Version': this.telemetryService.currentKibanaVersion,
               },
               body: cluster,
             })

@@ -84,7 +84,7 @@ export const StandaloneInstructions = React.memo<Props>(({ agentPolicies }) => {
           <EuiText>
             <FormattedMessage
               id="xpack.fleet.agentEnrollment.stepConfigureAgentDescription"
-              defaultMessage="Copy this policy to the {fileName} on the host where the Elastic Agent is installed. Modify {ESUsernameVariable} and {ESPasswordVariable} in the {outputSection} section of {fileName} to use your Elasticsearch credentials."
+              defaultMessage="Copy this policy to the {fileName} on the host where the HyperSec Agent is installed. Modify {ESUsernameVariable} and {ESPasswordVariable} in the {outputSection} section of {fileName} to use your HyperSec credentials."
               values={{
                 fileName: <EuiCode>elastic-agent.yml</EuiCode>,
                 ESUsernameVariable: <EuiCode>ES_USERNAME</EuiCode>,
@@ -132,7 +132,7 @@ export const StandaloneInstructions = React.memo<Props>(({ agentPolicies }) => {
           <EuiText>
             <FormattedMessage
               id="xpack.fleet.agentEnrollment.stepRunAgentDescription"
-              defaultMessage="From the agent directory, run this command to install, enroll and start an Elastic Agent. You can reuse this command to set up agents on more than one host. Requires administrator privileges."
+              defaultMessage="From the agent directory, run this command to install, enroll and start an HyperSec Agent. You can reuse this command to set up agents on more than one host. Requires administrator privileges."
             />
             <EuiSpacer size="m" />
             <EuiCodeBlock fontSize="m">{RUN_INSTRUCTIONS}</EuiCodeBlock>
@@ -183,7 +183,7 @@ export const StandaloneInstructions = React.memo<Props>(({ agentPolicies }) => {
       <EuiText>
         <FormattedMessage
           id="xpack.fleet.agentEnrollment.standaloneDescription"
-          defaultMessage="Run an Elastic Agent standalone to configure and update the agent manually on the host where the agent is installed."
+          defaultMessage="Run an HyperSec Agent standalone to configure and update the agent manually on the host where the agent is installed."
         />
       </EuiText>
       <EuiSpacer size="l" />

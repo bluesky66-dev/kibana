@@ -57,7 +57,7 @@ export const ConfirmPackageInstall = (props: ConfirmPackageInstallProps) => {
       <p>
         <FormattedMessage
           id="xpack.fleet.integrations.settings.confirmInstallModal.installDescription"
-          defaultMessage="Kibana assets will be installed in the current Space (Default) and will only be accessible to users who have permission to view this Space. Elasticsearch assets are installed globally and will be accessible to all Kibana users."
+          defaultMessage="Kibana assets will be installed in the current Space (Default) and will only be accessible to users who have permission to view this Space. HyperSec assets are installed globally and will be accessible to all Kibana users."
         />
       </p>
     </EuiConfirmModal>

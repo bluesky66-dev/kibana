@@ -179,7 +179,7 @@ export class TelemetryService {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Elastic-Stack-Version': this.currentKibanaVersion,
+          'X-HyperSec-Stack-Version': this.currentKibanaVersion,
         },
         body: JSON.stringify(optInPayload),
       });

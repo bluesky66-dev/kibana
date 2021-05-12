@@ -234,13 +234,13 @@ describe('migrationRetryCallCluster', () => {
     expect(loggingSystemMock.collect(logger).warn).toMatchInlineSnapshot(`
       Array [
         Array [
-          "Unable to connect to Elasticsearch. Error: Response Error",
+          "Unable to connect to HyperSec. Error: Response Error",
         ],
         Array [
-          "Unable to connect to Elasticsearch. Error: connection error",
+          "Unable to connect to HyperSec. Error: connection error",
         ],
         Array [
-          "Unable to connect to Elasticsearch. Error: snapshot_in_progress_exception",
+          "Unable to connect to HyperSec. Error: snapshot_in_progress_exception",
         ],
       ]
     `);

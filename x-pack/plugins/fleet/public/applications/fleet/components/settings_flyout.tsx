@@ -155,7 +155,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       inputs.elasticsearchUrl.setValue(output.hosts || []);
       inputs.additionalYamlConfig.setValue(
         output.config_yaml ||
-          `# YAML settings here will be added to the Elasticsearch output section of each policy`
+          `# YAML settings here will be added to the HyperSec output section of each policy`
       );
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -196,7 +196,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
               <h3>
                 <FormattedMessage
                   id="xpack.fleet.settings.autoUpgradeFieldLabel"
-                  defaultMessage="Elastic Agent binary version"
+                  defaultMessage="HyperSec Agent binary version"
                 />
               </h3>
             </EuiTitle>
@@ -249,7 +249,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiText color="subdued" size="s">
         <FormattedMessage
           id="xpack.fleet.settings.globalOutputDescription"
-          defaultMessage="Specify where to send data. These settings are applied to all Elastic Agent policies."
+          defaultMessage="Specify where to send data. These settings are applied to all HyperSec Agent policies."
         />
       </EuiText>
       <EuiSpacer size="m" />
@@ -267,7 +267,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
       <EuiFormRow>
         <EuiFormRow
           label={i18n.translate('xpack.fleet.settings.elasticsearchUrlLabel', {
-            defaultMessage: 'Elasticsearch URL',
+            defaultMessage: 'HyperSec URL',
           })}
           {...inputs.elasticsearchUrl.formRowProps}
         >
@@ -279,7 +279,7 @@ export const SettingFlyout: React.FunctionComponent<Props> = ({ onClose }) => {
         <EuiFormRow
           {...inputs.additionalYamlConfig.formRowProps}
           label={i18n.translate('xpack.fleet.settings.additionalYamlConfig', {
-            defaultMessage: 'Elasticsearch output configuration',
+            defaultMessage: 'HyperSec output configuration',
           })}
           fullWidth={true}
         >

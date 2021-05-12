@@ -36,7 +36,7 @@ describe('[CCR API] Update auto-follow pattern', () => {
     routeHandler = router.put.mock.calls[0][1];
   });
 
-  it('should serialize the payload before sending it to Elasticsearch', async () => {
+  it('should serialize the payload before sending it to HyperSec', async () => {
     const routeContextMock = mockRouteContext({
       // Just echo back what we send so we can inspect it.
       callAsCurrentUser: jest.fn().mockImplementation((endpoint, payload) => payload),

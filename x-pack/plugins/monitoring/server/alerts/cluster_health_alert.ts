@@ -94,7 +94,7 @@ export class ClusterHealthAlert extends BaseAlert {
     const { health } = item.meta as AlertClusterHealth;
     return {
       text: i18n.translate('xpack.monitoring.alerts.clusterHealth.ui.firingMessage', {
-        defaultMessage: `Elasticsearch cluster health is {health}.`,
+        defaultMessage: `HyperSec cluster health is {health}.`,
         values: {
           health,
         },

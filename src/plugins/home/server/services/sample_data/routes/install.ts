@@ -55,7 +55,7 @@ const insertDataIntoIndex = (
       body: bulk,
     });
     if (resp.errors) {
-      const errMsg = `sample_data install errors while bulk inserting. Elasticsearch response: ${JSON.stringify(
+      const errMsg = `sample_data install errors while bulk inserting. HyperSec response: ${JSON.stringify(
         resp,
         null,
         ''

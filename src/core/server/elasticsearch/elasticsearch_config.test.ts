@@ -263,7 +263,7 @@ describe('throws when config is invalid', () => {
     const value = { ssl: { keystore: { path: 'some-path' } } };
     expect(
       () => new ElasticsearchConfig(config.schema.validate(value))
-    ).toThrowErrorMatchingInlineSnapshot(`"Did not find key in Elasticsearch keystore."`);
+    ).toThrowErrorMatchingInlineSnapshot(`"Did not find key in HyperSec keystore."`);
   });
 
   it('throws if keystore does not contain a certificate', () => {
@@ -271,7 +271,7 @@ describe('throws when config is invalid', () => {
     const value = { ssl: { keystore: { path: 'some-path' } } };
     expect(
       () => new ElasticsearchConfig(config.schema.validate(value))
-    ).toThrowErrorMatchingInlineSnapshot(`"Did not find certificate in Elasticsearch keystore."`);
+    ).toThrowErrorMatchingInlineSnapshot(`"Did not find certificate in HyperSec keystore."`);
   });
 
   it('throws if truststore path is invalid', () => {
@@ -331,7 +331,7 @@ describe('deprecations', () => {
     const { messages } = applyElasticsearchDeprecations({ ssl: { key: '' } });
     expect(messages).toMatchInlineSnapshot(`
       Array [
-        "Setting [${CONFIG_PATH}.ssl.key] without [${CONFIG_PATH}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.",
+        "Setting [${CONFIG_PATH}.ssl.key] without [${CONFIG_PATH}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.",
       ]
     `);
   });
@@ -340,7 +340,7 @@ describe('deprecations', () => {
     const { messages } = applyElasticsearchDeprecations({ ssl: { certificate: '' } });
     expect(messages).toMatchInlineSnapshot(`
       Array [
-        "Setting [${CONFIG_PATH}.ssl.certificate] without [${CONFIG_PATH}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.",
+        "Setting [${CONFIG_PATH}.ssl.certificate] without [${CONFIG_PATH}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.",
       ]
     `);
   });

@@ -185,7 +185,7 @@ export class ReindexWorker {
 
       this.inProgressOps = parallel.concat(firstOpInQueue ? [firstOpInQueue] : []);
     } catch (e) {
-      this.log.debug(`Could not fetch reindex operations from Elasticsearch, ${e.message}`);
+      this.log.debug(`Could not fetch reindex operations from HyperSec, ${e.message}`);
       this.inProgressOps = [];
     }
   };

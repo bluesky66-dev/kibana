@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A request to web application returned a 405 response which indicates the web application declined to process the request because the HTTP method is not allowed for the resource",
   "false_positives": [
@@ -10,7 +10,7 @@
     "apm-*-transaction*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Web Application Suspicious Activity: Unauthorized Method",
   "query": "http.response.status_code:405",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "75ee75d8-c180-481c-ba88-ee50129a6aef",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "APM"
   ],
   "timestamp_override": "event.ingested",

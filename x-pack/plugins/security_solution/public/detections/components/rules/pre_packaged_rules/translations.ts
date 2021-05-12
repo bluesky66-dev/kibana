@@ -10,7 +10,7 @@ import { i18n } from '@kbn/i18n';
 export const PRE_BUILT_TITLE = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.prePackagedRules.emptyPromptTitle',
   {
-    defaultMessage: 'Load Elastic prebuilt detection rules',
+    defaultMessage: 'Load HyperSec prebuilt detection rules',
   }
 );
 
@@ -18,7 +18,7 @@ export const PRE_BUILT_MSG = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.prePackagedRules.emptyPromptMessage',
   {
     defaultMessage:
-      'Elastic Security comes with prebuilt detection rules that run in the background and create alerts when their conditions are met. By default, all prebuilt rules except the Endpoint Security rule are disabled. You can select additional rules you want to activate.',
+      'HyperSec Security comes with prebuilt detection rules that run in the background and create alerts when their conditions are met. By default, all prebuilt rules except the Endpoint Security rule are disabled. You can select additional rules you want to activate.',
   }
 );
 
@@ -32,7 +32,7 @@ export const CREATE_RULE_ACTION = i18n.translate(
 export const UPDATE_PREPACKAGED_RULES_TITLE = i18n.translate(
   'xpack.securitySolution.detectionEngine.rules.updatePrePackagedRulesTitle',
   {
-    defaultMessage: 'Update available for Elastic prebuilt rules or timeline templates',
+    defaultMessage: 'Update available for HyperSec prebuilt rules or timeline templates',
   }
 );
 
@@ -40,14 +40,14 @@ export const UPDATE_PREPACKAGED_RULES_MSG = (updateRules: number) =>
   i18n.translate('xpack.securitySolution.detectionEngine.rules.updatePrePackagedRulesMsg', {
     values: { updateRules },
     defaultMessage:
-      'You can update {updateRules} Elastic prebuilt {updateRules, plural, =1 {rule} other {rules}}',
+      'You can update {updateRules} HyperSec prebuilt {updateRules, plural, =1 {rule} other {rules}}',
   });
 
 export const UPDATE_PREPACKAGED_TIMELINES_MSG = (updateTimelines: number) =>
   i18n.translate('xpack.securitySolution.detectionEngine.rules.updatePrePackagedTimelinesMsg', {
     values: { updateTimelines },
     defaultMessage:
-      'You can update {updateTimelines} Elastic prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
+      'You can update {updateTimelines} HyperSec prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
   });
 
 export const UPDATE_PREPACKAGED_RULES_AND_TIMELINES_MSG = (
@@ -59,7 +59,7 @@ export const UPDATE_PREPACKAGED_RULES_AND_TIMELINES_MSG = (
     {
       values: { updateRules, updateTimelines },
       defaultMessage:
-        'You can update {updateRules} Elastic prebuilt {updateRules, plural, =1 {rule} other {rules}} and {updateTimelines} Elastic prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}. Note that this will reload deleted Elastic prebuilt rules.',
+        'You can update {updateRules} HyperSec prebuilt {updateRules, plural, =1 {rule} other {rules}} and {updateTimelines} HyperSec prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}. Note that this will reload deleted HyperSec prebuilt rules.',
     }
   );
 
@@ -67,14 +67,14 @@ export const UPDATE_PREPACKAGED_RULES = (updateRules: number) =>
   i18n.translate('xpack.securitySolution.detectionEngine.rules.updatePrePackagedRulesButton', {
     values: { updateRules },
     defaultMessage:
-      'Update {updateRules} Elastic prebuilt {updateRules, plural, =1 {rule} other {rules}}',
+      'Update {updateRules} HyperSec prebuilt {updateRules, plural, =1 {rule} other {rules}}',
   });
 
 export const UPDATE_PREPACKAGED_TIMELINES = (updateTimelines: number) =>
   i18n.translate('xpack.securitySolution.detectionEngine.rules.updatePrePackagedTimelinesButton', {
     values: { updateTimelines },
     defaultMessage:
-      'Update {updateTimelines} Elastic prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
+      'Update {updateTimelines} HyperSec prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
   });
 
 export const UPDATE_PREPACKAGED_RULES_AND_TIMELINES = (
@@ -86,7 +86,7 @@ export const UPDATE_PREPACKAGED_RULES_AND_TIMELINES = (
     {
       values: { updateRules, updateTimelines },
       defaultMessage:
-        'Update {updateRules} Elastic prebuilt {updateRules, plural, =1 {rule} other {rules}} and {updateTimelines} Elastic prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
+        'Update {updateRules} HyperSec prebuilt {updateRules, plural, =1 {rule} other {rules}} and {updateTimelines} HyperSec prebuilt {updateTimelines, plural, =1 {timeline} other {timelines}}',
     }
   );
 

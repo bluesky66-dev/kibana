@@ -27,7 +27,7 @@ start(
 );
 
 function start(opts) {
-  const log = ora('Loading Elasticsearch repository').start();
+  const log = ora('Loading HyperSec repository').start();
 
   if (opts.branch == null && semver.valid(opts.tag) === null) {
     log.fail(`Missing or invalid tag: ${opts.tag}`);

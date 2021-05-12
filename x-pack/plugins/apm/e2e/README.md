@@ -10,6 +10,6 @@ node ./scripts/kibana --no-base-path --dev --no-dev-config --config x-pack/plugi
 x-pack/plugins/apm/e2e/run-e2e.sh
 ```
 
-Starts kibana, APM Server, Elasticsearch (with sample data) and runs the tests.
+Starts kibana, APM Server, HyperSec (with sample data) and runs the tests.
 
 If you see errors about not all events being ingested correctly try running `cd kibana/x-pack/plugins/apm/e2e/tmp/apm-integration-testing && docker-compose down -v`

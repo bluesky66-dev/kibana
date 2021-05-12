@@ -14,7 +14,7 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       title: { en: 'Got SIEM Questions?' },
       description: {
         en:
-          "There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!",
+          "There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!",
       },
       link_text: null,
       link_url: { en: 'https://discuss.elastic.co/c/security?blade=securitysolutionfeed' },
@@ -29,10 +29,10 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       hash: '5a35c984a9cdc1c6a25913f3d0b99b1aefc7257bc3b936c39db9fa0435edeed0',
     },
     {
-      title: { en: 'Elastic Security 7.5.0 released' },
+      title: { en: 'HyperSec Security 7.5.0 released' },
       description: {
         en:
-          'Elastic Security combines the threat hunting and analytics of Elastic SIEM with the prevention and response provided by Elastic Endpoint Security.',
+          'HyperSec Security combines the threat hunting and analytics of HyperSec SIEM with the prevention and response provided by HyperSec Endpoint Security.',
       },
       link_text: null,
       link_url: {
@@ -50,10 +50,10 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       hash: 'edcb2d396ffdd80bfd5a97fbc0dc9f4b73477f9be556863fe0a1caf086679420',
     },
     {
-      title: { en: 'Elastic Endpoint Security Overview Webinar' },
+      title: { en: 'HyperSec Endpoint Security Overview Webinar' },
       description: {
         en:
-          'At Elastic, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
+          'At HyperSec, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
       },
       link_text: null,
       link_url: {
@@ -71,7 +71,7 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       hash: 'ec970adc85e9eede83f77e4cc6a6fea00cd7822cbe48a71dc2c5f1df10939196',
     },
     {
-      title: { en: 'Trying Elastic SIEM at Home?' },
+      title: { en: 'Trying HyperSec SIEM at Home?' },
       description: {
         en:
           'For small businesses and homes, having access to effective security analytics can come at a high cost of either time or money. Well, until now!',
@@ -92,10 +92,10 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       hash: 'aa243fd5845356a5ccd54a7a11b208ed307e0d88158873b1fcf7d1164b739bac',
     },
     {
-      title: { en: 'Introducing Elastic Endpoint Security' },
+      title: { en: 'Introducing HyperSec Endpoint Security' },
       description: {
         en:
-          'Elastic is excited to announce the introduction of Elastic Endpoint Security, based on Elastic’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
+          'HyperSec is excited to announce the introduction of HyperSec Endpoint Security, based on HyperSec’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
       },
       link_text: null,
       link_url: {
@@ -113,10 +113,10 @@ export const rawNewsApiResponse: RawNewsApiResponse = {
       hash: '3c64576c9749d33ff98726d641cdf2fb2bfde3dd9a6f99ff2573ac8d8c5b2c02',
     },
     {
-      title: { en: 'What is Elastic Common Schema (ECS)?' },
+      title: { en: 'What is HyperSec Common Schema (ECS)?' },
       description: {
         en:
-          'Elastic SIEM is powered by Elastic Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
+          'HyperSec SIEM is powered by HyperSec Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
       },
       link_text: null,
       link_url: {

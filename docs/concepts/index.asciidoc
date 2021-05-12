@@ -5,8 +5,8 @@
 As an analyst, you will use a combination of {kib} apps to analyze and
 visualize your data. {kib} contains both general-purpose apps and apps for the
 https://www.elastic.co/guide/en/enterprise-search/current/index.html[*Enterprise Search*],
-{observability-guide}/observability-introduction.html[*Elastic Observability*],
-and {security-guide}/es-overview.html[*Elastic Security*] solutions.
+{observability-guide}/observability-introduction.html[*HyperSec Observability*],
+and {security-guide}/es-overview.html[*HyperSec Security*] solutions.
 These apps share a common set of concepts.
 
 [float]

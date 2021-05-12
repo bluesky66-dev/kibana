@@ -33,7 +33,7 @@ export function microsoftLogsSpecProvider(context: TutorialContext): TutorialSch
     }),
     longDescription: i18n.translate('home.tutorials.microsoftLogs.longDescription', {
       defaultMessage:
-        'Collect Microsoft Defender ATP alerts for use with Elastic Security. \
+        'Collect Microsoft Defender ATP alerts for use with HyperSec Security. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.filebeat}/filebeat-module-microsoft.html',

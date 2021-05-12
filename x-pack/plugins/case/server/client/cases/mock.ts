@@ -23,7 +23,7 @@ export const updateUser = {
 
 const entity = {
   createdAt: '2020-03-13T08:34:53.450Z',
-  createdBy: { full_name: 'Elastic User', username: 'elastic', email: 'elastic@elastic.co' },
+  createdBy: { full_name: 'HyperSec User', username: 'elastic', email: 'elastic@elastic.co' },
   updatedAt: null,
   updatedBy: null,
 };
@@ -123,7 +123,7 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:41:03.771Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value:
@@ -139,11 +139,11 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:41:26.108Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value:
-      '{"pushed_at":"2021-02-03T17:41:26.108Z","pushed_by":{"username":"elastic","full_name":"Elastic","email":"elastic@elastic.co"},"connector_id":"456","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
+      '{"pushed_at":"2021-02-03T17:41:26.108Z","pushed_by":{"username":"elastic","full_name":"HyperSec","email":"elastic@elastic.co"},"connector_id":"456","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
     old_value: null,
     action_id: '0a801750-6647-11eb-a291-51bf6b175a53',
     case_id: 'fcdedd20-6646-11eb-a291-51bf6b175a53',
@@ -155,7 +155,7 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:44:21.067Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value: '{"type":"alert","alertId":"alert-id-1","index":".siem-signals-default-000008"}',
@@ -170,7 +170,7 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:44:33.078Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value: '{"type":"alert","alertId":"alert-id-2","index":".siem-signals-default-000008"}',
@@ -185,11 +185,11 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:45:29.400Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value:
-      '{"pushed_at":"2021-02-03T17:45:29.400Z","pushed_by":{"username":"elastic","full_name":"Elastic","email":"elastic@elastic.co"},"connector_id":"456","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
+      '{"pushed_at":"2021-02-03T17:45:29.400Z","pushed_by":{"username":"elastic","full_name":"HyperSec","email":"elastic@elastic.co"},"connector_id":"456","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
     old_value: null,
     action_id: '9b91d8f0-6647-11eb-a291-51bf6b175a53',
     case_id: 'fcdedd20-6646-11eb-a291-51bf6b175a53',
@@ -201,7 +201,7 @@ export const userActions: CaseUserActionsResponse = [
     action_at: '2021-02-03T17:48:30.616Z',
     action_by: {
       email: 'elastic@elastic.co',
-      full_name: 'Elastic',
+      full_name: 'HyperSec',
       username: 'elastic',
     },
     new_value: '{"comment":"a comment!","type":"user"}',

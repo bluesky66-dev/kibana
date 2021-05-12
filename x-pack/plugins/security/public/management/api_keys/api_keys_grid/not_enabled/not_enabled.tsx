@@ -17,7 +17,7 @@ export const NotEnabled: React.FunctionComponent = () => {
       title={
         <FormattedMessage
           id="xpack.security.management.apiKeys.table.apiKeysDisabledErrorTitle"
-          defaultMessage="API keys not enabled in Elasticsearch"
+          defaultMessage="API keys not enabled in HyperSec"
         />
       }
       color="danger"

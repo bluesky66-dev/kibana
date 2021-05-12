@@ -26,7 +26,7 @@ describe('JobsTableFilters', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('when you click Elastic Jobs filter, state is updated and it is selected', () => {
+  test('when you click HyperSec Jobs filter, state is updated and it is selected', () => {
     const onFilterChanged = jest.fn();
     const wrapper = mount(
       <JobsTableFiltersComponent securityJobs={securityJobs} onFilterChanged={onFilterChanged} />
@@ -60,7 +60,7 @@ describe('JobsTableFilters', () => {
     ).toEqual(true);
   });
 
-  test('when you click Custom Jobs filter once, then Elastic Jobs filter, state is updated and  selected changed', () => {
+  test('when you click Custom Jobs filter once, then HyperSec Jobs filter, state is updated and  selected changed', () => {
     const onFilterChanged = jest.fn();
     const wrapper = mount(
       <JobsTableFiltersComponent securityJobs={securityJobs} onFilterChanged={onFilterChanged} />

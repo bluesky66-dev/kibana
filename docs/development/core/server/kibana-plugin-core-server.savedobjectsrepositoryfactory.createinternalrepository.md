@@ -4,7 +4,7 @@
 
 ## SavedObjectsRepositoryFactory.createInternalRepository property
 
-Creates a [Saved Objects repository](./kibana-plugin-core-server.isavedobjectsrepository.md) that uses the internal Kibana user for authenticating with Elasticsearch.
+Creates a [Saved Objects repository](./kibana-plugin-core-server.isavedobjectsrepository.md) that uses the internal Kibana user for authenticating with HyperSec.
 
 <b>Signature:</b>
 

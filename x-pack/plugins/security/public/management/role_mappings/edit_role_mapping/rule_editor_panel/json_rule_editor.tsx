@@ -115,7 +115,7 @@ export const JSONRuleEditor = (props: Props) => {
                   >
                     <FormattedMessage
                       id="xpack.security.management.editRoleMapping.JSONEditorEsApi"
-                      defaultMessage="Elasticsearch role mapping API."
+                      defaultMessage="HyperSec role mapping API."
                     />
                   </EuiLink>
                 ),

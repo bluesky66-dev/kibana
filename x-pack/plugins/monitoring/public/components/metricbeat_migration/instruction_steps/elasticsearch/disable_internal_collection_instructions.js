@@ -17,7 +17,7 @@ export function getElasticsearchInstructionsForDisablingInternalCollection(produ
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.elasticsearchInstructions.disableInternalCollectionTitle',
       {
-        defaultMessage: 'Disable self monitoring of Elasticsearch monitoring metrics',
+        defaultMessage: 'Disable self monitoring of HyperSec monitoring metrics',
       }
     ),
     children: (
@@ -26,7 +26,7 @@ export function getElasticsearchInstructionsForDisablingInternalCollection(produ
           <p>
             <FormattedMessage
               id="xpack.monitoring.metricbeatMigration.elasticsearchInstructions.disableInternalCollectionDescription"
-              defaultMessage="Disable self monitoring of Elasticsearch monitoring metrics.
+              defaultMessage="Disable self monitoring of HyperSec monitoring metrics.
             Set {monospace} to false on each server in the production cluster."
               values={{
                 monospace: <Monospace>xpack.monitoring.elasticsearch.collection.enabled</Monospace>,

@@ -57,7 +57,7 @@ describe('Error handling for 401/403 errors', () => {
     });
   });
 
-  describe('Elasticsearch errors', () => {
+  describe('HyperSec errors', () => {
     it('handles Forbidden error defined by ElasticsearchJS', () => {
       const err = { statusCode: 401 };
       expect(isAuthError(err)).toBe(true);

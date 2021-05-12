@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Adversaries may attempt to disable the iptables or firewall service in an attempt to affect how a host is allowed to receive or send network traffic.",
   "from": "now-9m",
@@ -9,14 +9,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Attempt to Disable IPTables or Firewall",
   "query": "event.category:process and event.type:(start or process_started) and process.name:ufw and process.args:(allow or disable or reset) or  (((process.name:service and process.args:stop) or (process.name:chkconfig and process.args:off) or (process.name:systemctl and process.args:(disable or stop or kill))) and process.args:(firewalld or ip6tables or iptables))",
   "risk_score": 47,
   "rule_id": "125417b8-d3df-479f-8418-12d7e034fee3",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

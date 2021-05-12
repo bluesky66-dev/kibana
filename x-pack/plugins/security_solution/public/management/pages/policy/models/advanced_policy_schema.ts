@@ -87,7 +87,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.linux.advanced.elasticsearch.delay',
       {
-        defaultMessage: 'Delay for sending events to Elasticsearch, in seconds. Default: 120.',
+        defaultMessage: 'Delay for sending events to HyperSec, in seconds. Default: 120.',
       }
     ),
   },
@@ -118,7 +118,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.linux.advanced.elasticsearch.tls.ca_cert',
       {
-        defaultMessage: 'PEM-encoded certificate for Elasticsearch certificate authority.',
+        defaultMessage: 'PEM-encoded certificate for HyperSec certificate authority.',
       }
     ),
   },
@@ -129,7 +129,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
       'xpack.securitySolution.endpoint.policy.advanced.linux.advanced.logging.file',
       {
         defaultMessage:
-          'A supplied value will override the log level configured for logs that are saved to disk and streamed to Elasticsearch. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
+          'A supplied value will override the log level configured for logs that are saved to disk and streamed to HyperSec. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
       }
     ),
   },
@@ -215,7 +215,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.mac.advanced.elasticsearch.delay',
       {
-        defaultMessage: 'Delay for sending events to Elasticsearch, in seconds. Default: 120.',
+        defaultMessage: 'Delay for sending events to HyperSec, in seconds. Default: 120.',
       }
     ),
   },
@@ -246,7 +246,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.mac.advanced.elasticsearch.tls.ca_cert',
       {
-        defaultMessage: 'PEM-encoded certificate for Elasticsearch certificate authority.',
+        defaultMessage: 'PEM-encoded certificate for HyperSec certificate authority.',
       }
     ),
   },
@@ -257,7 +257,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
       'xpack.securitySolution.endpoint.policy.advanced.mac.advanced.logging.file',
       {
         defaultMessage:
-          'A supplied value will override the log level configured for logs that are saved to disk and streamed to Elasticsearch. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
+          'A supplied value will override the log level configured for logs that are saved to disk and streamed to HyperSec. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
       }
     ),
   },
@@ -418,7 +418,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.windows.advanced.elasticsearch.delay',
       {
-        defaultMessage: 'Delay for sending events to Elasticsearch, in seconds. Default: 120.',
+        defaultMessage: 'Delay for sending events to HyperSec, in seconds. Default: 120.',
       }
     ),
   },
@@ -449,7 +449,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
     documentation: i18n.translate(
       'xpack.securitySolution.endpoint.policy.advanced.windows.advanced.elasticsearch.tls.ca_cert',
       {
-        defaultMessage: 'PEM-encoded certificate for Elasticsearch certificate authority.',
+        defaultMessage: 'PEM-encoded certificate for HyperSec certificate authority.',
       }
     ),
   },
@@ -460,7 +460,7 @@ export const AdvancedPolicySchema: AdvancedPolicySchemaType[] = [
       'xpack.securitySolution.endpoint.policy.advanced.windows.advanced.logging.file',
       {
         defaultMessage:
-          'A supplied value will override the log level configured for logs that are saved to disk and streamed to Elasticsearch. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
+          'A supplied value will override the log level configured for logs that are saved to disk and streamed to HyperSec. It is recommended Fleet be used to change this logging in most circumstances. Allowed values are error, warning, info, debug, and trace.',
       }
     ),
   },

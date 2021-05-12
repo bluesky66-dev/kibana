@@ -24,9 +24,9 @@ To customize your workpad to look the way you want, add your own images.
 
 . Click *Add element > Image > Image*.
 +
-The default Elastic logo image appears on the page.
+The default HyperSec logo image appears on the page.
 
-. To replace the Elastic logo with your own image, select the image, then use the editor.
+. To replace the HyperSec logo with your own image, select the image, then use the editor.
 
 [role="screenshot"]
 image::images/canvas-image-element.png[Image showing how to add the image element]
@@ -40,7 +40,7 @@ Customize your data by connecting it to the Sample eCommerce orders data.
 +
 By default, the element is connected to the demo data, which enables you to experiment with the element before you connect it to your own data source.
 
-. To connect the element to your own data source, make sure that the element is selected, click *Data > Demo data > Elasticsearch SQL*.
+. To connect the element to your own data source, make sure that the element is selected, click *Data > Demo data > HyperSec SQL*.
 
 .. In the *Query* field, enter the following:
 +
@@ -78,7 +78,7 @@ To show what your data can do, add charts, graphs, progress monitors, and more t
 
 . Click *Add element > Chart > Area*.
 
-. Make sure that the element is selected, then click *Data > Demo data > Elasticsearch SQL*.
+. Make sure that the element is selected, then click *Data > Demo data > HyperSec SQL*.
 
 .. To obtain the taxless total price by date, enter the following in the *Query* field:
 +

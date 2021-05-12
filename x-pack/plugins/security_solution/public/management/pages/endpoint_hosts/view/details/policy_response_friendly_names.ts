@@ -18,7 +18,7 @@ const policyResponses: Array<[string, string]> = [
     'configure_elasticsearch_connection',
     i18n.translate(
       'xpack.securitySolution.endpoint.details.policyResponse.configure_elasticsearch_connection',
-      { defaultMessage: 'Configure Elasticsearch Connection' }
+      { defaultMessage: 'Configure HyperSec Connection' }
     ),
   ],
   [
@@ -163,7 +163,7 @@ const policyResponses: Array<[string, string]> = [
     'read_elasticsearch_config',
     i18n.translate(
       'xpack.securitySolution.endpoint.details.policyResponse.read_elasticsearch_config',
-      { defaultMessage: 'Read Elasticsearch Config' }
+      { defaultMessage: 'Read HyperSec Config' }
     ),
   ],
   [

@@ -120,7 +120,7 @@ LABEL org.label-schema.build-date="{{dockerBuildDate}}" \
   org.label-schema.usage="https://www.elastic.co/guide/en/kibana/reference/index.html" \
   org.label-schema.vcs-ref="{{revision}}" \
   org.label-schema.vcs-url="https://github.com/elastic/kibana" \
-  org.label-schema.vendor="Elastic" \
+  org.label-schema.vendor="HyperSec" \
   org.label-schema.version="{{version}}" \
   org.opencontainers.image.created="{{dockerBuildDate}}" \
   org.opencontainers.image.documentation="https://www.elastic.co/guide/en/kibana/reference/index.html" \
@@ -129,17 +129,17 @@ LABEL org.label-schema.build-date="{{dockerBuildDate}}" \
   org.opencontainers.image.source="https://github.com/elastic/kibana" \
   org.opencontainers.image.title="Kibana" \
   org.opencontainers.image.url="https://www.elastic.co/products/kibana" \
-  org.opencontainers.image.vendor="Elastic" \
+  org.opencontainers.image.vendor="HyperSec" \
   org.opencontainers.image.version="{{version}}"
 
 {{#ubi}}
 LABEL name="Kibana" \
   maintainer="infra@elastic.co" \
-  vendor="Elastic" \
+  vendor="HyperSec" \
   version="{{version}}" \
   release="1" \
   summary="Kibana" \
-  description="Your window into the Elastic Stack."
+  description="Your window into the HyperSec Stack."
 
 RUN mkdir /licenses && \
     cp LICENSE.txt /licenses/LICENSE

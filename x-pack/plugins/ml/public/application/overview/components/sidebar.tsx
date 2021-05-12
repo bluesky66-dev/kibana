@@ -55,7 +55,7 @@ export const OverviewSideBar: FC<Props> = ({ createAnomalyDetectionJobDisabled }
                 <EuiLink href={transformsLink} target="blank">
                   <FormattedMessage
                     id="xpack.ml.overview.gettingStartedSectionTransforms"
-                    defaultMessage="Elasticsearch's transforms"
+                    defaultMessage="HyperSec's transforms"
                   />
                 </EuiLink>
               ),

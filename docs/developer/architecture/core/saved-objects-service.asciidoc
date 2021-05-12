@@ -211,7 +211,7 @@ Management UI, or when a new object is created via the HTTP API.
 
 Each Saved Object type may define migrations for its schema. Migrations are
 specified by the Kibana version number, receive an input document, and must
-return the fully migrated document to be persisted to Elasticsearch.
+return the fully migrated document to be persisted to HyperSec.
 
 Let's say we want to define two migrations:
 - In version 1.1.0, we want to drop the `subtitle` field and append it to the

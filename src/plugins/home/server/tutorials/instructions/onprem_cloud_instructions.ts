@@ -10,14 +10,14 @@ import { i18n } from '@kbn/i18n';
 
 export const createTrycloudOption1 = () => ({
   title: i18n.translate('home.tutorials.common.premCloudInstructions.option1.title', {
-    defaultMessage: 'Option 1: Try in Elastic Cloud',
+    defaultMessage: 'Option 1: Try in HyperSec Cloud',
   }),
   textPre: i18n.translate('home.tutorials.common.premCloudInstructions.option1.textPre', {
     defaultMessage:
-      'Go to [Elastic Cloud]({link}). Register if you \
+      'Go to [HyperSec Cloud]({link}). Register if you \
 do not already have an account. Free 14-day trial available.\n\n\
-Log into the Elastic Cloud console\n\n\
-To create a cluster, in Elastic Cloud console:\n\
+Log into the HyperSec Cloud console\n\n\
+To create a cluster, in HyperSec Cloud console:\n\
  1. Select **Create Deployment** and specify the **Deployment Name**\n\
  2. Modify the other deployment options as needed (or not, the defaults are great to get started)\n\
  3. Click **Create Deployment**\n\
@@ -35,9 +35,9 @@ export const createTrycloudOption2 = () => ({
   }),
   textPre: i18n.translate('home.tutorials.common.premCloudInstructions.option2.textPre', {
     defaultMessage:
-      'If you are running this Kibana instance against a hosted Elasticsearch instance, \
+      'If you are running this Kibana instance against a hosted HyperSec instance, \
 proceed with manual setup.\n\n\
-Save the **Elasticsearch** endpoint as {urlTemplate} and the cluster **Password** as {passwordTemplate} for your records',
+Save the **HyperSec** endpoint as {urlTemplate} and the cluster **Password** as {passwordTemplate} for your records',
     values: {
       urlTemplate: '`<es_url>`',
       passwordTemplate: '`<password>`',

@@ -82,7 +82,7 @@ export class License implements ILicense {
   getUnavailableReason() {
     if (this.error) return this.error;
     if (!this.isAvailable) {
-      return 'X-Pack plugin is not installed on the Elasticsearch cluster.';
+      return 'X-Pack plugin is not installed on the HyperSec cluster.';
     }
   }
 

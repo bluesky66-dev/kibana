@@ -234,7 +234,7 @@ export const RepositoryFormStepOne: React.FunctionComponent<Props> = ({
           repositoryTypes.includes(REPOSITORY_TYPES.url) ? (
             <FormattedMessage
               id="xpack.snapshotRestore.repositoryForm.fields.defaultTypeDescription"
-              defaultMessage="Elasticsearch supports file system and read-only URL repositories.
+              defaultMessage="HyperSec supports file system and read-only URL repositories.
                 Additional types require plugins. {docLink}"
               values={{
                 docLink: pluginDocLink,
@@ -243,7 +243,7 @@ export const RepositoryFormStepOne: React.FunctionComponent<Props> = ({
           ) : (
             <FormattedMessage
               id="xpack.snapshotRestore.repositoryForm.fields.cloudTypeDescription"
-              defaultMessage="Elasticsearch provides core plugins for custom repositories. {docLink}"
+              defaultMessage="HyperSec provides core plugins for custom repositories. {docLink}"
               values={{
                 docLink: pluginDocLink,
               }}

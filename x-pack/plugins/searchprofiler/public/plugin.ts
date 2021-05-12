@@ -31,7 +31,7 @@ export class SearchProfilerUIPlugin implements Plugin<void, void, AppPublicPlugi
         defaultMessage: 'Search Profiler',
       }),
       description: i18n.translate('xpack.searchProfiler.registryProviderDescription', {
-        defaultMessage: 'Quickly check the performance of any Elasticsearch query.',
+        defaultMessage: 'Quickly check the performance of any HyperSec query.',
       }),
       icon: 'searchProfilerApp',
       path: '/app/dev_tools#/searchprofiler',

@@ -64,7 +64,7 @@ export class IndexAction extends BaseAction {
   });
   static iconClass = 'indexOpen';
   static selectMessage = i18n.translate('xpack.watcher.models.indexAction.selectMessageText', {
-    defaultMessage: 'Index data into Elasticsearch.',
+    defaultMessage: 'Index data into HyperSec.',
   });
   static simulatePrompt = i18n.translate('xpack.watcher.models.indexAction.simulateButtonLabel', {
     defaultMessage: 'Index data',

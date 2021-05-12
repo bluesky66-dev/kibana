@@ -8,13 +8,13 @@
 import { i18n } from '@kbn/i18n';
 
 export const EMPTY_TITLE = i18n.translate('xpack.securitySolution.pages.common.emptyTitle', {
-  defaultMessage: 'Welcome to Elastic Security. Let’s get you started.',
+  defaultMessage: 'Welcome to HyperSec Security. Let’s get you started.',
 });
 
 export const EMPTY_ACTION_ELASTIC_AGENT = i18n.translate(
   'xpack.securitySolution.pages.common.emptyActionElasticAgent',
   {
-    defaultMessage: 'Add data with Elastic Agent',
+    defaultMessage: 'Add data with HyperSec Agent',
   }
 );
 
@@ -22,7 +22,7 @@ export const EMPTY_ACTION_ELASTIC_AGENT_DESCRIPTION = i18n.translate(
   'xpack.securitySolution.pages.common.emptyActionElasticAgentDescription',
   {
     defaultMessage:
-      'The Elastic Agent provides a simple, unified way to add monitoring to your hosts.',
+      'The HyperSec Agent provides a simple, unified way to add monitoring to your hosts.',
   }
 );
 

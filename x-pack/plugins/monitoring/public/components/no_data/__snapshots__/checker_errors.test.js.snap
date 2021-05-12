@@ -23,7 +23,7 @@ Array [
       class="euiText euiText--small"
     >
       <p>
-        There were some errors encountered in trying to check Elasticsearch settings. You need administrator rights to check the settings and, if needed, to enable the monitoring collection setting.
+        There were some errors encountered in trying to check HyperSec settings. You need administrator rights to check the settings and, if needed, to enable the monitoring collection setting.
       </p>
       <dl
         class="euiDescriptionList euiDescriptionList--row"

@@ -20,7 +20,7 @@ export const EnforceSecurityPage = injectI18n(({ intl }) => (
     <p>
       <FormattedMessage
         id="xpack.beatsManagement.disabledSecurityDescription"
-        defaultMessage="You must enable security in Kibana and Elasticsearch to use Beats central management."
+        defaultMessage="You must enable security in Kibana and HyperSec to use Beats central management."
       />
     </p>
   </NoDataLayout>

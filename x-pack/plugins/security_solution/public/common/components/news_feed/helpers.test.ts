@@ -140,7 +140,7 @@ describe('helpers', () => {
     const expectedNewsItems: NewsItem[] = [
       {
         description:
-          "There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!",
+          "There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!",
         expireOn: expect.any(Date),
         hash: '5a35c984a9cdc1c6a25913f3d0b99b1aefc7257bc3b936c39db9fa0435edeed0',
         imageUrl:
@@ -151,7 +151,7 @@ describe('helpers', () => {
       },
       {
         description:
-          'Elastic Security combines the threat hunting and analytics of Elastic SIEM with the prevention and response provided by Elastic Endpoint Security.',
+          'HyperSec Security combines the threat hunting and analytics of HyperSec SIEM with the prevention and response provided by HyperSec Endpoint Security.',
         expireOn: expect.any(Date),
         hash: 'edcb2d396ffdd80bfd5a97fbc0dc9f4b73477f9be556863fe0a1caf086679420',
         imageUrl:
@@ -159,11 +159,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/elastic-security-7-5-0-released?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Elastic Security 7.5.0 released',
+        title: 'HyperSec Security 7.5.0 released',
       },
       {
         description:
-          'At Elastic, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
+          'At HyperSec, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
         expireOn: expect.any(Date),
         hash: 'ec970adc85e9eede83f77e4cc6a6fea00cd7822cbe48a71dc2c5f1df10939196',
         imageUrl:
@@ -171,7 +171,7 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/webinars/elastic-endpoint-security-overview-security-starts-at-the-endpoint?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Elastic Endpoint Security Overview Webinar',
+        title: 'HyperSec Endpoint Security Overview Webinar',
       },
       {
         description:
@@ -183,11 +183,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/elastic-siem-for-small-business-and-home-1-getting-started?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Trying Elastic SIEM at Home?',
+        title: 'Trying HyperSec SIEM at Home?',
       },
       {
         description:
-          'Elastic is excited to announce the introduction of Elastic Endpoint Security, based on Elastic’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
+          'HyperSec is excited to announce the introduction of HyperSec Endpoint Security, based on HyperSec’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
         expireOn: expect.any(Date),
         hash: '3c64576c9749d33ff98726d641cdf2fb2bfde3dd9a6f99ff2573ac8d8c5b2c02',
         imageUrl:
@@ -195,11 +195,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/introducing-elastic-endpoint-security?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Introducing Elastic Endpoint Security',
+        title: 'Introducing HyperSec Endpoint Security',
       },
       {
         description:
-          'Elastic SIEM is powered by Elastic Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
+          'HyperSec SIEM is powered by HyperSec Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
         expireOn: expect.any(Date),
         hash: 'b8a0d3d21e9638bde891ab5eb32594b3d7a3daacc7f0900c6dd506d5d7b42410',
         imageUrl:
@@ -207,7 +207,7 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/introducing-the-elastic-common-schema?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'What is Elastic Common Schema (ECS)?',
+        title: 'What is HyperSec Common Schema (ECS)?',
       },
     ];
 
@@ -269,7 +269,7 @@ describe('helpers', () => {
 
     describe('translated items', () => {
       const translatedDescription =
-        'Elastic SIEMユーザーの素晴らしいコミュニティがそこにあります。 Elastic SIEMアプリの設定、学習、使用、および脅威の検出に関するディスカッションに参加してください！';
+        'HyperSec SIEMユーザーの素晴らしいコミュニティがそこにあります。 HyperSec SIEMアプリの設定、学習、使用、および脅威の検出に関するディスカッションに参加してください！';
       const translatedImageUrl = 'https://aws1.discourse-cdn.com/elastic/translated-image-url';
       const translatedLinkUrl = 'https://discuss.elastic.co/translated-link-url';
       const translatedTitle = 'SIEMに関する質問はありますか？';
@@ -280,7 +280,7 @@ describe('helpers', () => {
             title: { en: 'Got SIEM Questions?', ja: translatedTitle },
             description: {
               en:
-                "There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!",
+                "There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!",
               ja: translatedDescription,
             },
             link_text: null,

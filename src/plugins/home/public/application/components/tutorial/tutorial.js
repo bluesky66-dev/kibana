@@ -212,7 +212,7 @@ class TutorialUi extends React.Component {
       });
       const cloudLabel = this.props.intl.formatMessage({
         id: 'home.tutorial.elasticCloudButtonLabel',
-        defaultMessage: 'Elastic Cloud',
+        defaultMessage: 'HyperSec Cloud',
       });
       const radioButtons = [
         {

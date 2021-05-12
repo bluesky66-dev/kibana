@@ -35,7 +35,7 @@ cd script/stack_scripts
 
 Requirements for Enterprise Search:
 
-- Running on port 3002 against a separate Elasticsearch cluster.
-- Elasticsearch must have a platinum or greater level license (or trial).
+- Running on port 3002 against a separate HyperSec cluster.
+- HyperSec must have a platinum or greater level license (or trial).
 - Must have Standard or Native Auth configured with an `enterprise_search` user with password `changeme`.
 - There should be NO existing Engines or Meta Engines.

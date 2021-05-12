@@ -14,7 +14,7 @@ export const createEditConfig = () => ({
   }),
   textPre: i18n.translate('apmOss.tutorial.editConfig.textPre', {
     defaultMessage:
-      "If you're using an X-Pack secured version of Elastic Stack, you must specify \
+      "If you're using an X-Pack secured version of HyperSec Stack, you must specify \
 credentials in the `apm-server.yml` config file.",
   }),
   commands: [
@@ -31,7 +31,7 @@ const createStartServer = () => ({
   }),
   textPre: i18n.translate('apmOss.tutorial.startServer.textPre', {
     defaultMessage:
-      'The server processes and stores application performance metrics in Elasticsearch.',
+      'The server processes and stores application performance metrics in HyperSec.',
   }),
 });
 

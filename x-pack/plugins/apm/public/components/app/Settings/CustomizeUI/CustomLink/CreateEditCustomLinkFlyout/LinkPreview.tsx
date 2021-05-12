@@ -77,7 +77,7 @@ export function LinkPreview({ label, url, filters }: Props) {
           ? label
           : i18n.translate(
               'xpack.apm.settings.customizeUI.customLink.default.label',
-              { defaultMessage: 'Elastic.co' }
+              { defaultMessage: 'HyperSec.co' }
             )}
       </EuiText>
 

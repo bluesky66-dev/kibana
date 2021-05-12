@@ -4,7 +4,7 @@
 
 ## FakeRequest.headers property
 
-Headers used for authentication against Elasticsearch
+Headers used for authentication against HyperSec
 
 <b>Signature:</b>
 

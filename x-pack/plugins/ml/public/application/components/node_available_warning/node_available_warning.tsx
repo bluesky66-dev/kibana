@@ -52,7 +52,7 @@ export const NodeAvailableWarning: FC = () => {
                   <EuiLink href={`https://cloud.elastic.co/deployments?q=${id}`}>
                     <FormattedMessage
                       id="xpack.ml.jobsList.nodeAvailableWarning.linkToCloud.hereLinkText"
-                      defaultMessage="Elastic Cloud deployment"
+                      defaultMessage="HyperSec Cloud deployment"
                     />
                   </EuiLink>
                 ),

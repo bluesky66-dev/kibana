@@ -172,7 +172,7 @@ function GuidancePanelComponent(props: GuidancePanelProps) {
           <p>
             <FormattedMessage
               id="xpack.graph.noDataSourceNotificationMessageText"
-              defaultMessage="No data sources found. Go to {managementIndexPatternsLink} and create an index pattern for your Elasticsearch indices."
+              defaultMessage="No data sources found. Go to {managementIndexPatternsLink} and create an index pattern for your HyperSec indices."
               values={{
                 managementIndexPatternsLink: (
                   <a href={indexPatternUrl}>

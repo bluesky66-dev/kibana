@@ -57,7 +57,7 @@ export const ConfirmPackageUninstall = (props: ConfirmPackageUninstallProps) => 
         <p>
           <FormattedMessage
             id="xpack.fleet.integrations.settings.confirmUninstallModal.uninstallCallout.description"
-            defaultMessage="Kibana and Elasticsearch assets that were created by this integration will be removed. Agents policies and any data sent by your agents will not be effected."
+            defaultMessage="Kibana and HyperSec assets that were created by this integration will be removed. Agents policies and any data sent by your agents will not be effected."
           />
         </p>
       </EuiCallOut>

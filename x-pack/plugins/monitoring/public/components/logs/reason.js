@@ -43,7 +43,7 @@ export const Reason = ({ reason }) => {
     message = (
       <FormattedMessage
         id="xpack.monitoring.logs.reason.noIndexPatternMessage"
-        defaultMessage="Set up {link}, then configure your Elasticsearch output to your monitoring cluster."
+        defaultMessage="Set up {link}, then configure your HyperSec output to your monitoring cluster."
         values={{
           link: (
             <EuiLink target="_blank" href={filebeatUrl}>
@@ -70,12 +70,12 @@ export const Reason = ({ reason }) => {
     );
   } else if (false === reason.typeExists) {
     title = i18n.translate('xpack.monitoring.logs.reason.noTypeTitle', {
-      defaultMessage: 'No logs for Elasticsearch',
+      defaultMessage: 'No logs for HyperSec',
     });
     message = (
       <FormattedMessage
         id="xpack.monitoring.logs.reason.noTypeMessage"
-        defaultMessage="Follow {link} to set up Elasticsearch."
+        defaultMessage="Follow {link} to set up HyperSec."
         values={{
           link: (
             <EuiLink target="_blank" href={elasticsearchUrl}>
@@ -128,7 +128,7 @@ export const Reason = ({ reason }) => {
     );
   } else if (false === reason.nodeExists) {
     title = i18n.translate('xpack.monitoring.logs.reason.noNodeTitle', {
-      defaultMessage: 'No logs for this Elasticsearch node',
+      defaultMessage: 'No logs for this HyperSec node',
     });
     message = (
       <FormattedMessage

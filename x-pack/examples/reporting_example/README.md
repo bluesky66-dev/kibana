@@ -20,7 +20,7 @@ Reporting. The job params give the app control over the end-resulting report:
   - DOM attributes to select where the visualization container(s) is/are. The App team must add the attributes to DOM elements in their app.
   - DOM events that the page fires off and signals when the rendering is done. The App team must implement triggering the DOM events around rendering the data in their app.
 - Export type definition
-  - Processes the jobParams into output data, which is stored in Elasticsearch in the Reporting system index.
+  - Processes the jobParams into output data, which is stored in HyperSec in the Reporting system index.
   - Export type definitions are registered with the Reporting plugin at setup time.
 
 The existing export type definitions are PDF, PNG, and CSV. They should be

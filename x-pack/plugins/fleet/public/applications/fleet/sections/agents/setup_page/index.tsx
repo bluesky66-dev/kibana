@@ -89,7 +89,7 @@ export const SetupPage: React.FunctionComponent<{
               <h2>
                 <FormattedMessage
                   id="xpack.fleet.setupPage.enableTitle"
-                  defaultMessage="Enable central management for Elastic Agents"
+                  defaultMessage="Enable central management for HyperSec Agents"
                 />
               </h2>
             </EuiTitle>
@@ -97,7 +97,7 @@ export const SetupPage: React.FunctionComponent<{
             <EuiText color="subdued">
               <FormattedMessage
                 id="xpack.fleet.setupPage.enableText"
-                defaultMessage="Central management requires an Elastic user who can create API keys and write to logs-* and metrics-*."
+                defaultMessage="Central management requires an HyperSec user who can create API keys and write to logs-* and metrics-*."
               />
             </EuiText>
             <EuiSpacer size="l" />
@@ -129,13 +129,13 @@ export const SetupPage: React.FunctionComponent<{
           >
             <FormattedMessage
               id="xpack.fleet.setupPage.missingRequirementsCalloutDescription"
-              defaultMessage="To use central management for Elastic Agents, enable the following Elasticsearch and Kibana security features."
+              defaultMessage="To use central management for HyperSec Agents, enable the following HyperSec and Kibana security features."
             />
           </EuiCallOut>
           <EuiSpacer size="m" />
           <FormattedMessage
             id="xpack.fleet.setupPage.missingRequirementsElasticsearchTitle"
-            defaultMessage="In your Elasticsearch policy, enable:"
+            defaultMessage="In your HyperSec policy, enable:"
           />
           <EuiSpacer size="l" />
           <RequirementItem isMissing={false}>
@@ -151,7 +151,7 @@ export const SetupPage: React.FunctionComponent<{
                   >
                     <FormattedMessage
                       id="xpack.fleet.setupPage.elasticsearchSecurityLink"
-                      defaultMessage="Elasticsearch security"
+                      defaultMessage="HyperSec security"
                     />
                   </EuiLink>
                 ),

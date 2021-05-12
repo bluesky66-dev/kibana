@@ -220,7 +220,7 @@ describe('TaskPollingLifecycle', () => {
 
       expect(logger.warn).toHaveBeenCalledTimes(1);
       expect(logger.warn).toHaveBeenCalledWith(
-        `Task Manager cannot operate when inline scripts are disabled in Elasticsearch`
+        `Task Manager cannot operate when inline scripts are disabled in HyperSec`
       );
     });
   });

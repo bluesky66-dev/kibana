@@ -109,7 +109,7 @@ export default function (providerContext: FtrProviderContext) {
                     field: 'actingProcess.file.signer',
                     operator: 'included',
                     type: 'exact_cased',
-                    value: 'Elastic, N.V.',
+                    value: 'HyperSec, N.V.',
                   },
                   {
                     entries: [
@@ -208,7 +208,7 @@ export default function (providerContext: FtrProviderContext) {
                         field: 'actingProcess.file.signer',
                         operator: 'included',
                         type: 'exact_cased',
-                        value: 'Elastic, N.V.',
+                        value: 'HyperSec, N.V.',
                       },
                       {
                         entries: [
@@ -347,7 +347,7 @@ export default function (providerContext: FtrProviderContext) {
                         field: 'actingProcess.file.signer',
                         operator: 'included',
                         type: 'exact_cased',
-                        value: 'Elastic, N.V.',
+                        value: 'HyperSec, N.V.',
                       },
                       {
                         entries: [

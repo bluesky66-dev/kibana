@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Strace runs in a privileged context and can be used to escape restrictive environments by instantiating a shell in order to elevate privileges or move laterally.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Strace Process Activity",
   "query": "event.category:process and event.type:(start or process_started) and process.name:strace",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "d6450d4e-81c6-46a3-bd94-079886318ed5",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection"

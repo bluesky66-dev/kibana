@@ -130,7 +130,7 @@
             "field": "actingProcess.file.signer",
             "operator": "included",
             "type": "match",
-            "value": "Elastic, N.V."
+            "value": "HyperSec, N.V."
           },
           {
             "field": "event.category",

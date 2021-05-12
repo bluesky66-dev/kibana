@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A suspicious SolarWinds child process was detected, which may indicate an attempt to execute malicious programs.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Suspicious SolarWinds Child Process",
   "query": "process where event.type in (\"start\", \"process_started\") and\n process.parent.name: (\"SolarWinds.BusinessLayerHost.exe\", \"SolarWinds.BusinessLayerHostx64.exe\") and\n not process.name : (\n        \"APMServiceControl*.exe\",\n        \"ExportToPDFCmd*.Exe\",\n        \"SolarWinds.Credentials.Orion.WebApi*.exe\",\n        \"SolarWinds.Orion.Topology.Calculator*.exe\",\n        \"Database-Maint.exe\",\n        \"SolarWinds.Orion.ApiPoller.Service.exe\",\n        \"WerFault.exe\",\n        \"WerMgr.exe\")\n",
   "references": [
@@ -24,7 +24,7 @@
   "rule_id": "93b22c0a-06a0-4131-b830-b10d5e166ff4",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

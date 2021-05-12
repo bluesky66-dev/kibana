@@ -45,7 +45,7 @@ export const ErrorStrings = {
   esPersist: {
     getSaveFailureTitle: () =>
       i18n.translate('xpack.canvas.error.esPersist.saveFailureTitle', {
-        defaultMessage: "Couldn't save your changes to Elasticsearch",
+        defaultMessage: "Couldn't save your changes to HyperSec",
       }),
     getTooLargeErrorMessage: () =>
       i18n.translate('xpack.canvas.error.esPersist.tooLargeErrorMessage', {
@@ -64,14 +64,14 @@ export const ErrorStrings = {
       }),
     getFieldsFetchErrorMessage: (index: string) =>
       i18n.translate('xpack.canvas.error.esService.fieldsFetchErrorMessage', {
-        defaultMessage: "Couldn't fetch Elasticsearch fields for '{index}'",
+        defaultMessage: "Couldn't fetch HyperSec fields for '{index}'",
         values: {
           index,
         },
       }),
     getIndicesFetchErrorMessage: () =>
       i18n.translate('xpack.canvas.error.esService.indicesFetchErrorMessage', {
-        defaultMessage: "Couldn't fetch Elasticsearch indices",
+        defaultMessage: "Couldn't fetch HyperSec indices",
       }),
   },
   RenderWithFn: {

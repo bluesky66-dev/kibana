@@ -58,7 +58,7 @@ exports[`DataOrIndexMissing component renders headingMessage 1`] = `
             </p>
             <p>
               <FormattedMessage
-                defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                 id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                 values={Object {}}
               />

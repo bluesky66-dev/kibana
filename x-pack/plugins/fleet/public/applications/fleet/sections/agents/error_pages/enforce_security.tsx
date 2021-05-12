@@ -21,7 +21,7 @@ export const EnforceSecurityPage = injectI18n(({ intl }) => (
     <p>
       <FormattedMessage
         id="xpack.fleet.disabledSecurityDescription"
-        defaultMessage="You must enable security in Kibana and Elasticsearch to use Elastic Fleet."
+        defaultMessage="You must enable security in Kibana and HyperSec to use HyperSec Fleet."
       />
     </p>
   </NoDataLayout>

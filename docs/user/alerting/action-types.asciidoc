@@ -17,7 +17,7 @@ a| <<resilient-action-type, IBM Resilient>>
 
 a| <<index-action-type, Index>>
 
-| Index data into Elasticsearch.
+| Index data into HyperSec.
 
 a| <<jira-action-type, Jira>>
 
@@ -51,7 +51,7 @@ a| <<webhook-action-type, Webhook>>
 [NOTE]
 ==============================================
 Some action types are paid commercial features, while others are free.
-For a comparison of the Elastic subscription levels,
+For a comparison of the HyperSec subscription levels,
 see https://www.elastic.co/subscriptions[the subscription page].
 ==============================================
 

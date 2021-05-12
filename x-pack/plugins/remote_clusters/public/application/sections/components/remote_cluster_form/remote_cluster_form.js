@@ -528,7 +528,7 @@ export class RemoteClusterForm extends Component {
                   title={
                     <FormattedMessage
                       id="xpack.remoteClusters.cloudClusterInformationTitle"
-                      defaultMessage="Use proxy mode for Elastic Cloud deployment"
+                      defaultMessage="Use proxy mode for HyperSec Cloud deployment"
                     />
                   }
                 >

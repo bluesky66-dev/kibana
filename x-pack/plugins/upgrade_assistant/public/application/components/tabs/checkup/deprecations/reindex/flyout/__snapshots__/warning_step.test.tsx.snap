@@ -69,7 +69,7 @@ exports[`WarningsFlyoutStep renders 1`] = `
       }
       description={
         <FormattedMessage
-          defaultMessage="Starting in version 7.0.0, APM data will be represented in the Elastic Common Schema. Historical APM data will not visible until it's reindexed."
+          defaultMessage="Starting in version 7.0.0, APM data will be represented in the HyperSec Common Schema. Historical APM data will not visible until it's reindexed."
           id="xpack.upgradeAssistant.checkupTab.reindexing.flyout.warningsStep.apmReindexWarningDetail"
           values={Object {}}
         />

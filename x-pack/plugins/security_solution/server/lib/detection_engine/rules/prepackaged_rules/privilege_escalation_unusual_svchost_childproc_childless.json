@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies unusual child processes of Service Host (svchost.exe) that traditionally do not spawn any child processes. This may indicate a code injection or an equivalent form of exploitation.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Unusual Service Host Child Process - Childless Service",
   "query": "process where event.type in (\"start\", \"process_started\") and\n     process.parent.name : \"svchost.exe\" and\n\n     /* based on svchost service arguments -s svcname where the service is known to be childless */\n\n    process.parent.args : (\"WdiSystemHost\",\"LicenseManager\",\n      \"StorSvc\",\"CDPSvc\",\"cdbhsvc\",\"BthAvctpSvc\",\"SstpSvc\",\"WdiServiceHost\",\n      \"imgsvc\",\"TrkWks\",\"WpnService\",\"IKEEXT\",\"PolicyAgent\",\"CryptSvc\",\n      \"netprofm\",\"ProfSvc\",\"StateRepository\",\"camsvc\",\"LanmanWorkstation\",\n      \"NlaSvc\",\"EventLog\",\"hidserv\",\"DisplayEnhancementService\",\"ShellHWDetection\",\n      \"AppHostSvc\",\"fhsvc\",\"CscService\",\"PushToInstall\") and\n\n      /* unknown FPs can be added here */\n\n     not process.name : (\"WerFault.exe\",\"WerFaultSecure.exe\",\"wermgr.exe\")\n",
   "risk_score": 47,
   "rule_id": "6a8ab9cc-4023-4d17-b5df-1a3e16882ce7",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

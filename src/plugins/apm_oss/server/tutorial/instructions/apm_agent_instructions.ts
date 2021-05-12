@@ -637,17 +637,17 @@ export const createDotNetAgentInstructions = (apmServerUrl = '', secretToken = '
       defaultMessage:
         'Add the the agent package(s) from [NuGet]({allNuGetPackagesLink}) to your .NET application. There are multiple \
       NuGet packages available for different use cases. \n\nFor an ASP.NET Core application with Entity Framework \
-      Core download the [Elastic.Apm.NetCoreAll]({netCoreAllApmPackageLink}) package. This package will automatically add every \
+      Core download the [HyperSec.Apm.NetCoreAll]({netCoreAllApmPackageLink}) package. This package will automatically add every \
       agent component to your application. \n\n In case you would like to to minimize the dependencies, you can use the \
-      [Elastic.Apm.AspNetCore]({aspNetCorePackageLink}) package for just \
-      ASP.NET Core monitoring or the [Elastic.Apm.EfCore]({efCorePackageLink}) package for just Entity Framework Core monitoring. \n\n \
-      In case you only want to use the public Agent API for manual instrumentation use the [Elastic.Apm]({elasticApmPackageLink}) package.',
+      [HyperSec.Apm.AspNetCore]({aspNetCorePackageLink}) package for just \
+      ASP.NET Core monitoring or the [HyperSec.Apm.EfCore]({efCorePackageLink}) package for just Entity Framework Core monitoring. \n\n \
+      In case you only want to use the public Agent API for manual instrumentation use the [HyperSec.Apm]({elasticApmPackageLink}) package.',
       values: {
-        allNuGetPackagesLink: 'https://www.nuget.org/packages?q=Elastic.apm',
-        netCoreAllApmPackageLink: 'https://www.nuget.org/packages/Elastic.Apm.NetCoreAll',
-        aspNetCorePackageLink: 'https://www.nuget.org/packages/Elastic.Apm.AspNetCore',
-        efCorePackageLink: 'https://www.nuget.org/packages/Elastic.Apm.EntityFrameworkCore',
-        elasticApmPackageLink: 'https://www.nuget.org/packages/Elastic.Apm',
+        allNuGetPackagesLink: 'https://www.nuget.org/packages?q=HyperSec.apm',
+        netCoreAllApmPackageLink: 'https://www.nuget.org/packages/HyperSec.Apm.NetCoreAll',
+        aspNetCorePackageLink: 'https://www.nuget.org/packages/HyperSec.Apm.AspNetCore',
+        efCorePackageLink: 'https://www.nuget.org/packages/HyperSec.Apm.EntityFrameworkCore',
+        elasticApmPackageLink: 'https://www.nuget.org/packages/HyperSec.Apm',
       },
     }),
   },
@@ -657,7 +657,7 @@ export const createDotNetAgentInstructions = (apmServerUrl = '', secretToken = '
     }),
     textPre: i18n.translate('apmOss.tutorial.dotNetClient.configureApplication.textPre', {
       defaultMessage:
-        'In case of ASP.NET Core with the `Elastic.Apm.NetCoreAll` package, call the `UseAllElasticApm` \
+        'In case of ASP.NET Core with the `HyperSec.Apm.NetCoreAll` package, call the `UseAllElasticApm` \
       method in the `Configure` method within the `Startup.cs` file.',
     }),
     commands: `public class Startup

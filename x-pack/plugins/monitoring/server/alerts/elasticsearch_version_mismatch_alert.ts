@@ -42,7 +42,7 @@ export class ElasticsearchVersionMismatchAlert extends BaseAlert {
           description: i18n.translate(
             'xpack.monitoring.alerts.elasticsearchVersionMismatch.actionVariables.clusterHealth',
             {
-              defaultMessage: 'The versions of Elasticsearch running in this cluster.',
+              defaultMessage: 'The versions of HyperSec running in this cluster.',
             }
           ),
         },
@@ -84,7 +84,7 @@ export class ElasticsearchVersionMismatchAlert extends BaseAlert {
     const text = i18n.translate(
       'xpack.monitoring.alerts.elasticsearchVersionMismatch.ui.firingMessage',
       {
-        defaultMessage: `Multiple versions of Elasticsearch ({versions}) running in this cluster.`,
+        defaultMessage: `Multiple versions of HyperSec ({versions}) running in this cluster.`,
         values: {
           versions: versions.join(', '),
         },
@@ -132,7 +132,7 @@ export class ElasticsearchVersionMismatchAlert extends BaseAlert {
       internalShortMessage: i18n.translate(
         'xpack.monitoring.alerts.elasticsearchVersionMismatch.firing.internalShortMessage',
         {
-          defaultMessage: `Elasticsearch version mismatch alert is firing for {clusterName}. {shortActionText}`,
+          defaultMessage: `HyperSec version mismatch alert is firing for {clusterName}. {shortActionText}`,
           values: {
             clusterName: cluster.clusterName,
             shortActionText,
@@ -142,7 +142,7 @@ export class ElasticsearchVersionMismatchAlert extends BaseAlert {
       internalFullMessage: i18n.translate(
         'xpack.monitoring.alerts.elasticsearchVersionMismatch.firing.internalFullMessage',
         {
-          defaultMessage: `Elasticsearch version mismatch alert is firing for {clusterName}. Elasticsearch is running {versions}. {action}`,
+          defaultMessage: `HyperSec version mismatch alert is firing for {clusterName}. HyperSec is running {versions}. {action}`,
           values: {
             clusterName: cluster.clusterName,
             versions: versions.join(', '),

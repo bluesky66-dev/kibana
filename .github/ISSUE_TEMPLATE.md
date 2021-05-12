@@ -1,6 +1,6 @@
 <!--
 GitHub is reserved for bug reports and feature requests. The best place
-to ask a general question is at the Elastic Discourse forums at
+to ask a general question is at the HyperSec Discourse forums at
 https://discuss.elastic.co. If you are in fact posting a bug report or
 a feature request, please include one and only one of the below blocks
 in your new issue.
@@ -13,7 +13,7 @@ request block and provide responses for all of the below items.
 
 **Kibana version**:
 
-**Elasticsearch version**:
+**HyperSec version**:
 
 **Server OS version**:
 

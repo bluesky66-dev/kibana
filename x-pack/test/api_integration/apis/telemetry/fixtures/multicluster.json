@@ -136,7 +136,7 @@
         "plugins": [
           {
             "classname": "org.elasticsearch.xpack.XPackPlugin",
-            "description": "Elasticsearch Expanded Pack Plugin",
+            "description": "HyperSec Expanded Pack Plugin",
             "has_native_controller": true,
             "name": "x-pack",
             "version": "7.0.0-alpha1"
@@ -427,7 +427,7 @@
         "plugins": [
           {
             "classname": "org.elasticsearch.xpack.XPackPlugin",
-            "description": "Elasticsearch Expanded Pack Plugin",
+            "description": "HyperSec Expanded Pack Plugin",
             "has_native_controller": true,
             "name": "x-pack",
             "version": "7.0.0-alpha1"
@@ -744,7 +744,7 @@
         "plugins": [
           {
             "classname": "org.elasticsearch.xpack.XPackPlugin",
-            "description": "Elasticsearch Expanded Pack Plugin",
+            "description": "HyperSec Expanded Pack Plugin",
             "has_native_controller": true,
             "name": "x-pack",
             "version": "7.0.0-alpha1"

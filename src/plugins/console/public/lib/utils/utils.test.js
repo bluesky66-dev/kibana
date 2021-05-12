@@ -12,47 +12,47 @@ describe('Utils class', () => {
   test('extract deprecation messages', function () {
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning" "Mon, 27 Feb 2017 14:52:14 GMT"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning" "Mon, 27 Feb 2017 14:52:14 GMT"'
       )
     ).toEqual(['#! this is a warning']);
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning"'
       )
     ).toEqual(['#! this is a warning']);
 
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning" "Mon, 27 Feb 2017 14:52:14 GMT", 299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a second warning" "Mon, 27 Feb 2017 14:52:14 GMT"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning" "Mon, 27 Feb 2017 14:52:14 GMT", 299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a second warning" "Mon, 27 Feb 2017 14:52:14 GMT"'
       )
     ).toEqual(['#! this is a warning', '#! this is a second warning']);
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning", 299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a second warning"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning", 299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a second warning"'
       )
     ).toEqual(['#! this is a warning', '#! this is a second warning']);
 
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes a comma" "Mon, 27 Feb 2017 14:52:14 GMT"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes a comma" "Mon, 27 Feb 2017 14:52:14 GMT"'
       )
     ).toEqual(['#! this is a warning, and it includes a comma']);
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes a comma"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes a comma"'
       )
     ).toEqual(['#! this is a warning, and it includes a comma']);
 
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes an escaped backslash \\\\ and a pair of \\"escaped quotes\\"" "Mon, 27 Feb 2017 14:52:14 GMT"'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes an escaped backslash \\\\ and a pair of \\"escaped quotes\\"" "Mon, 27 Feb 2017 14:52:14 GMT"'
       )
     ).toEqual([
       '#! this is a warning, and it includes an escaped backslash \\ and a pair of "escaped quotes"',
     ]);
     expect(
       utils.extractWarningMessages(
-        '299 Elasticsearch-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes an escaped backslash \\\\ and a pair of \\"escaped quotes\\""'
+        '299 HyperSec-6.0.0-alpha1-SNAPSHOT-abcdef1 "this is a warning, and it includes an escaped backslash \\\\ and a pair of \\"escaped quotes\\""'
       )
     ).toEqual([
       '#! this is a warning, and it includes an escaped backslash \\ and a pair of "escaped quotes"',

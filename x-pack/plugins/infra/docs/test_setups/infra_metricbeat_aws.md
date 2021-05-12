@@ -11,7 +11,7 @@ This is helpful to develop and test the following features in the Kibana Metrics
 
 This guide assumes:
 * a linux environment, but mac os x should be very similar
-* a running `elasticsearch` instance accessible from an AWS instance to send metrics data to (e.g. on Elastic Cloud)
+* a running `elasticsearch` instance accessible from an AWS instance to send metrics data to (e.g. on HyperSec Cloud)
 * the knowledge how to configure and run metricbeat to send data to a remote `elasticsearch` instance
 * the knowledge how to create and access linux instances on AWS
 

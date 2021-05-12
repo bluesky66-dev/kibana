@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "This rule detects when an internal network client sends DNS traffic directly to the Internet. This is atypical behavior for a managed network, and can be indicative of malware, exfiltration, command and control, or, simply, misconfiguration. This DNS activity also impacts your organization's ability to provide enterprise monitoring and logging of DNS, and opens your network to a variety of abuses and malicious communications.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "packetbeat-*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "DNS Activity to the Internet",
   "query": "event.category:(network or network_traffic) and (event.type:connection or type:dns) and (destination.port:53 or event.dataset:zeek.dns) and source.ip:( 10.0.0.0/8 or 172.16.0.0/12 or 192.168.0.0/16 ) and not destination.ip:( 10.0.0.0/8 or 127.0.0.0/8 or 169.254.0.0/16 or 172.16.0.0/12 or 192.168.0.0/16 or 224.0.0.0/4 or 255.255.255.255 or \"::1\" or \"FE80::/10\" or \"FF00::/8\")",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "6ea71ff0-9e95-475b-9506-2580d1ce6154",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Network",
     "Threat Detection",
     "Command and Control"

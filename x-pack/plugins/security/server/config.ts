@@ -82,7 +82,7 @@ const providersConfigSchema = schema.object(
     basic: getUniqueProviderSchema('basic', {
       description: schema.string({
         defaultValue: i18n.translate('xpack.security.loginWithElasticsearchLabel', {
-          defaultMessage: 'Log in with Elasticsearch',
+          defaultMessage: 'Log in with HyperSec',
         }),
       }),
       icon: schema.string({ defaultValue: 'logoElasticsearch' }),
@@ -98,7 +98,7 @@ const providersConfigSchema = schema.object(
     token: getUniqueProviderSchema('token', {
       description: schema.string({
         defaultValue: i18n.translate('xpack.security.loginWithElasticsearchLabel', {
-          defaultMessage: 'Log in with Elasticsearch',
+          defaultMessage: 'Log in with HyperSec',
         }),
       }),
       icon: schema.string({ defaultValue: 'logoElasticsearch' }),

@@ -355,7 +355,7 @@ export class Listing extends Component {
           color="warning"
           title={i18n.translate('xpack.monitoring.cluster.listing.standaloneClusterCallOutTitle', {
             defaultMessage:
-              "It looks like you have instances that aren't connected to an Elasticsearch cluster.",
+              "It looks like you have instances that aren't connected to an HyperSec cluster.",
           })}
           iconType="link"
         >

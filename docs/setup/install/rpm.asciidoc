@@ -21,7 +21,7 @@ link:/downloads/kibana[Download Kibana] page. Other versions can
 be found on the link:/downloads/past-releases[Past Releases page].
 
 [[rpm-key]]
-==== Import the Elastic PGP key
+==== Import the HyperSec PGP key
 
 include::key.asciidoc[]
 

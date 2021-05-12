@@ -1,11 +1,11 @@
 [role="xpack"]
 [[xpack-siem]]
-= Elastic Security
+= HyperSec Security
 
 [partintro]
 --
 
-Elastic Security combines SIEM threat detection features with endpoint
+HyperSec Security combines SIEM threat detection features with endpoint
 prevention and response capabilities in one solution, including:
 
 * A detection engine to identify attacks and system misconfiguration
@@ -16,7 +16,7 @@ prevention and response capabilities in one solution, including:
 detection rules
 
 [role="screenshot"]
-image::siem/images/overview-ui.png[Elastic Security in Kibana]
+image::siem/images/overview-ui.png[HyperSec Security in Kibana]
 
 [float]
 == Add data
@@ -32,26 +32,26 @@ https://www.elastic.co/products/beats/auditbeat[{auditbeat}],
 https://www.elastic.co/products/beats/filebeat[{filebeat}],
 https://www.elastic.co/products/beats/winlogbeat[{winlogbeat}], and
 https://www.elastic.co/products/beats/packetbeat[{packetbeat}]
-send security events and other data to Elasticsearch.
+send security events and other data to HyperSec.
 
-The default index patterns for Elastic Security events are `auditbeat-*`, `winlogbeat-*`,
+The default index patterns for HyperSec Security events are `auditbeat-*`, `winlogbeat-*`,
 `filebeat-*`, `packetbeat-*`, `endgame-*`, `logs-*`, and `apm-*-transaction*`. To change the default pattern patterns, go to *Stack Management > Advanced Settings > securitySolution:defaultIndex*.
 
 [float]
-=== Elastic Security endpoint agent
+=== HyperSec Security endpoint agent
 
 The agent detects and protects against malware, and ships host and network
-events directly to Elastic Security.
+events directly to HyperSec Security.
 
 [float]
-=== Elastic Common Schema (ECS) for normalizing data
+=== HyperSec Common Schema (ECS) for normalizing data
 
-The {ecs-ref}[Elastic Common Schema (ECS)] defines a common set of fields to be
-used for storing event data in Elasticsearch. ECS helps users normalize their
+The {ecs-ref}[HyperSec Common Schema (ECS)] defines a common set of fields to be
+used for storing event data in HyperSec. ECS helps users normalize their
 event data to better analyze, visualize, and correlate the data represented in
 their events.
 
-Elastic Security can ingest and normalize events from ECS-compatible data sources.
+HyperSec Security can ingest and normalize events from ECS-compatible data sources.
 
 --
 

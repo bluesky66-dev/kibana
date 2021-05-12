@@ -58,7 +58,7 @@ describe('lib/errors', () => {
       expect(errors.getErrorStatusCode(Boom.unauthorized())).toBe(401);
     });
 
-    it('extracts status code from Elasticsearch client response error', () => {
+    it('extracts status code from HyperSec client response error', () => {
       expect(
         errors.getErrorStatusCode(
           new esErrors.ResponseError(securityMock.createApiResponse({ statusCode: 400, body: {} }))
@@ -71,7 +71,7 @@ describe('lib/errors', () => {
       ).toBe(401);
     });
 
-    it('extracts status code from legacy Elasticsearch client error', () => {
+    it('extracts status code from legacy HyperSec client error', () => {
       expect(errors.getErrorStatusCode(new legacyESErrors.BadRequest())).toBe(400);
       expect(errors.getErrorStatusCode(new legacyESErrors.AuthenticationException())).toBe(401);
     });
@@ -106,7 +106,7 @@ describe('lib/errors', () => {
       );
     });
 
-    it('extracts body from Elasticsearch client response error', () => {
+    it('extracts body from HyperSec client response error', () => {
       expect(
         errors.getDetailedErrorMessage(
           new esErrors.ResponseError(
@@ -119,7 +119,7 @@ describe('lib/errors', () => {
       ).toBe(JSON.stringify({ field1: 'value-1', field2: 'value-2' }));
     });
 
-    it('extracts status code from legacy Elasticsearch client error', () => {
+    it('extracts status code from legacy HyperSec client error', () => {
       expect(errors.getDetailedErrorMessage(new legacyESErrors.BadRequest())).toBe('Bad Request');
       expect(errors.getDetailedErrorMessage(new legacyESErrors.AuthenticationException())).toBe(
         'Authentication Exception'

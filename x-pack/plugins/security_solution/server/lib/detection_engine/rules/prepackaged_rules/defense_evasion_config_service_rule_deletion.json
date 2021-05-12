@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies attempts to delete an AWS Config Service rule. An adversary may tamper with Config rules in order to reduce visibiltiy into the security posture of an account and / or its workload instances.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "AWS Config Service Tampering",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.dataset: aws.cloudtrail and event.action: DeleteConfigRule and event.provider: config.amazonaws.com",
@@ -25,7 +25,7 @@
   "rule_id": "7024e2a0-315d-4334-bb1a-552d604f27bc",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

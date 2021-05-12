@@ -58,7 +58,7 @@ export const ProductSelector: React.FC<ProductSelectorProps> = ({ access }) => {
             <EuiTitle size="l">
               <h1 className="enterpriseSearchOverview__heading">
                 {i18n.translate('xpack.enterpriseSearch.overview.heading', {
-                  defaultMessage: 'Welcome to Elastic Enterprise Search',
+                  defaultMessage: 'Welcome to HyperSec Enterprise Search',
                 })}
               </h1>
             </EuiTitle>

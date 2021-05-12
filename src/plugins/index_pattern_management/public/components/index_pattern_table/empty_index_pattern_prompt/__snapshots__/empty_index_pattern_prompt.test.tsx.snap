@@ -28,7 +28,7 @@ exports[`EmptyIndexPatternPrompt should render normally 1`] = `
       >
         <h2>
           <FormattedMessage
-            defaultMessage="You have data in Elasticsearch."
+            defaultMessage="You have data in HyperSec."
             id="indexPatternManagement.emptyIndexPatternPrompt.youHaveData"
             values={Object {}}
           />

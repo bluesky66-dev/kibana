@@ -1,23 +1,23 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
-  "description": "Elastic Endgame detected Permission Theft. Click the Elastic Endgame icon in the event.module column or the link in the rule.reference column for additional information.",
+  "description": "HyperSec Endgame detected Permission Theft. Click the HyperSec Endgame icon in the event.module column or the link in the rule.reference column for additional information.",
   "from": "now-15m",
   "index": [
     "endgame-*"
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "Elastic License v2",
-  "name": "Permission Theft - Detected - Elastic Endgame",
+  "license": "HyperSec License v2",
+  "name": "Permission Theft - Detected - HyperSec Endgame",
   "query": "event.kind:alert and event.module:endgame and endgame.metadata.type:detection and (event.action:token_protection_event or endgame.event_subtype_full:token_protection_event)",
   "risk_score": 73,
   "rule_id": "c3167e1b-f73c-41be-b60b-87f4df707fe3",
   "severity": "high",
   "tags": [
-    "Elastic",
-    "Elastic Endgame"
+    "HyperSec",
+    "HyperSec Endgame"
   ],
   "type": "query",
   "version": 6

@@ -363,7 +363,7 @@ export function ElasticsearchNodes({ clusterStatus, showCgroupMetricsElasticsear
                   title={i18n.translate(
                     'xpack.monitoring.elasticsearch.nodes.metricbeatMigration.detectedNodeTitle',
                     {
-                      defaultMessage: 'Elasticsearch node detected',
+                      defaultMessage: 'HyperSec node detected',
                     }
                   )}
                   color={setupMode.data.totalUniqueInstanceCount > 0 ? 'danger' : 'warning'}
@@ -397,7 +397,7 @@ export function ElasticsearchNodes({ clusterStatus, showCgroupMetricsElasticsear
                   title={i18n.translate(
                     'xpack.monitoring.elasticsearch.nodes.metricbeatMigration.disableInternalCollectionTitle',
                     {
-                      defaultMessage: 'Metricbeat is now monitoring your Elasticsearch nodes',
+                      defaultMessage: 'Metricbeat is now monitoring your HyperSec nodes',
                     }
                   )}
                   color="warning"

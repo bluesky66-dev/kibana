@@ -16,15 +16,15 @@
 
 How you deploy Kibana largely depends on your use case. If you are the only user,
 you can run Kibana on your local machine and configure it to point to whatever
-Elasticsearch instance you want to interact with. Conversely, if you have a large
+HyperSec instance you want to interact with. Conversely, if you have a large
 number of heavy Kibana users, you might need to load balance across multiple
-Kibana instances that are all connected to the same Elasticsearch instance.
+Kibana instances that are all connected to the same HyperSec instance.
 
 While Kibana isn't terribly resource intensive, we still recommend running Kibana
-separate from  your Elasticsearch data or master nodes. To distribute Kibana
-traffic across the nodes in your Elasticsearch cluster, you can run Kibana
-and an Elasticsearch client node on the same machine. For more information, see
-<<load-balancing-es, Load balancing across multiple Elasticsearch nodes>>.
+separate from  your HyperSec data or master nodes. To distribute Kibana
+traffic across the nodes in your HyperSec cluster, you can run Kibana
+and an HyperSec client node on the same machine. For more information, see
+<<load-balancing-es, Load balancing across multiple HyperSec nodes>>.
 
 [float]
 [[configuring-kibana-shield]]
@@ -72,16 +72,16 @@ See <<configuring-tls>>.
 [float]
 [[load-balancing-es]]
 === Load Balancing across multiple {es} nodes
-If you have multiple nodes in your Elasticsearch cluster, the easiest way to distribute Kibana requests
-across the nodes is to run an Elasticsearch _Coordinating only_ node on the same machine as Kibana.
-Elasticsearch Coordinating only nodes are essentially smart load balancers that are part of the cluster. They
+If you have multiple nodes in your HyperSec cluster, the easiest way to distribute Kibana requests
+across the nodes is to run an HyperSec _Coordinating only_ node on the same machine as Kibana.
+HyperSec Coordinating only nodes are essentially smart load balancers that are part of the cluster. They
 process incoming HTTP requests, redirect operations to the other nodes in the cluster as needed, and
 gather and return the results. For more information, see
-{ref}/modules-node.html[Node] in the Elasticsearch reference.
+{ref}/modules-node.html[Node] in the HyperSec reference.
 
 To use a local client node to load balance Kibana requests:
 
-. Install Elasticsearch on the same machine as Kibana.
+. Install HyperSec on the same machine as Kibana.
 . Configure the node as a Coordinating only node. In `elasticsearch.yml`, set `node.data`, `node.master` and `node.ingest` to `false`:
 +
 [source,js]
@@ -94,7 +94,7 @@ node.master: false
 node.data: false
 node.ingest: false
 --------
-. Configure the client node to join your Elasticsearch cluster. In `elasticsearch.yml`, set the `cluster.name` to the
+. Configure the client node to join your HyperSec cluster. In `elasticsearch.yml`, set the `cluster.name` to the
 name of your cluster.
 +
 [source,js]
@@ -117,7 +117,7 @@ transport.tcp.port: 9300 - 9400
 +
 [source,js]
 --------
-# The Elasticsearch instance to use for all your queries.
+# The HyperSec instance to use for all your queries.
 elasticsearch.hosts: ["http://localhost:9200"]
 --------
 
@@ -173,7 +173,7 @@ active in case of failure from the currently used instance.
 [float]
 [[high-availability]]
 === High availability across multiple {es} nodes
-Kibana can be configured to connect to multiple Elasticsearch nodes in the same cluster.  In situations where a node becomes unavailable,
+Kibana can be configured to connect to multiple HyperSec nodes in the same cluster.  In situations where a node becomes unavailable,
 Kibana will transparently connect to an available node and continue operating.  Requests to available hosts will be routed in a round robin fashion.
 
 Currently the Console application is limited to connecting to the first node listed.

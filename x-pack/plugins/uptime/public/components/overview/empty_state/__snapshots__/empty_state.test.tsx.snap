@@ -235,7 +235,7 @@ exports[`EmptyState component does not render empty state with appropriate base 
                         </p>
                         <p>
                           <FormattedMessage
-                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                             id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                             values={Object {}}
                           />
@@ -307,7 +307,7 @@ exports[`EmptyState component does not render empty state with appropriate base 
                                     }
                                   }
                                 >
-                                  No uptime data found in index 
+                                  No uptime data found in index
                                   <em />
                                 </FormattedMessage>
                               </h3>
@@ -335,11 +335,11 @@ exports[`EmptyState component does not render empty state with appropriate base 
                               </p>
                               <p>
                                 <FormattedMessage
-                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                                   id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                                   values={Object {}}
                                 >
-                                  If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config.
+                                  If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config.
                                 </FormattedMessage>
                               </p>
                             </div>
@@ -725,7 +725,7 @@ exports[`EmptyState component doesn't render child components when count is fals
                         </p>
                         <p>
                           <FormattedMessage
-                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                             id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                             values={Object {}}
                           />
@@ -797,7 +797,7 @@ exports[`EmptyState component doesn't render child components when count is fals
                                     }
                                   }
                                 >
-                                  No indices found matching pattern 
+                                  No indices found matching pattern
                                   <em />
                                 </FormattedMessage>
                               </h3>
@@ -825,11 +825,11 @@ exports[`EmptyState component doesn't render child components when count is fals
                               </p>
                               <p>
                                 <FormattedMessage
-                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                                   id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                                   values={Object {}}
                                 >
-                                  If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config.
+                                  If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config.
                                 </FormattedMessage>
                               </p>
                             </div>
@@ -1220,7 +1220,7 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                         </p>
                         <p>
                           <FormattedMessage
-                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                            defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                             id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                             values={Object {}}
                           />
@@ -1292,7 +1292,7 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                                     }
                                   }
                                 >
-                                  No indices found matching pattern 
+                                  No indices found matching pattern
                                   <em />
                                 </FormattedMessage>
                               </h3>
@@ -1320,11 +1320,11 @@ exports[`EmptyState component notifies when index does not exist 1`] = `
                               </p>
                               <p>
                                 <FormattedMessage
-                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config."
+                                  defaultMessage="If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config."
                                   id="xpack.uptime.emptyState.configureHeartbeatIndexSettings"
                                   values={Object {}}
                                 >
-                                  If you have setup heartbeat and confirmed data is being sent to Elasticsearch, update your index pattern settings and insure they are aligned with your Heartbeat config.
+                                  If you have setup heartbeat and confirmed data is being sent to HyperSec, update your index pattern settings and insure they are aligned with your Heartbeat config.
                                 </FormattedMessage>
                               </p>
                             </div>

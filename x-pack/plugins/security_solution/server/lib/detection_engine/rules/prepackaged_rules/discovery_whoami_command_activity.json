@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies use of whoami.exe which displays user, group, and privileges information for the user who is currently logged on to the local system.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Whoami Process Activity",
   "query": "event.category:process and event.type:(start or process_started) and process.name:whoami.exe",
   "risk_score": 21,
   "rule_id": "ef862985-3f13-4262-a686-5f357bbb9bc2",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

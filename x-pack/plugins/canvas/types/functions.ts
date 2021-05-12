@@ -23,7 +23,7 @@ import { initFunctions } from '../public/functions';
  * effectively introspect properties from the factory in other places.
  *
  * As an example, given the following:
- * 
+ *
 ```
    function foo(): ExpressionFunction<'foo', Context, Arguments, Return> {
      // ...
@@ -33,14 +33,14 @@ import { initFunctions } from '../public/functions';
  * `foo` would be an `ExpressionFunctionFactory`.  Using the `FunctionFactory` type allows one to
  * introspect the generics from the `ExpressionFunction` without needing to access it
  * directly:
- * 
+ *
 ```
     type Baz = FunctionFactory<typeof foo>;
 ```
  *
- * Thus, in reality, and in a Typescript-enabled IDE, one would see the following definition 
+ * Thus, in reality, and in a Typescript-enabled IDE, one would see the following definition
  * for `Baz`:
- * 
+ *
 ```
     type Baz = ExpressionFunction<"foo", Context, Arguments, Return>
 ```
@@ -60,18 +60,18 @@ import { initFunctions } from '../public/functions';
     ];
 
     export type FunctionName = FunctionFactory<typeof someFunctions[number]>['name'];
-    
+
     const name: FunctionName = 'functionOne';  // passes
     const nonName: FunctionName = 'elastic`;  // fails
 ```
  *
- * A more practical example would be to use the introspected generics to create dictionaries, 
- * like of help strings or documentation, that would contain only valid functions and their 
- * generics, but nothing extraneous.  This is actually used in a number of built-in functions 
+ * A more practical example would be to use the introspected generics to create dictionaries,
+ * like of help strings or documentation, that would contain only valid functions and their
+ * generics, but nothing extraneous.  This is actually used in a number of built-in functions
  * in Kibana and Canvas.
  */
 // prettier-ignore
-export type ExpressionFunctionFactory<Name extends string, Input, Arguments, Output> = 
+export type ExpressionFunctionFactory<Name extends string, Input, Arguments, Output> =
   () => ExpressionFunctionDefinition<Name, Input, Arguments, Output>;
 
 /**
@@ -81,7 +81,7 @@ export type ExpressionFunctionFactory<Name extends string, Input, Arguments, Out
  * with a shorter name).
  */
 // prettier-ignore
-export type FunctionFactory<FnFactory> = 
+export type FunctionFactory<FnFactory> =
   FnFactory extends ExpressionFunctionFactory<infer Name, infer Input, infer Arguments, infer Output> ?
   ExpressionFunctionDefinition<Name, Input, Arguments, Output> :
     never;

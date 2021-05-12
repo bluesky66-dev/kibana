@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic",
+    "HyperSec",
     "Austin Songer"
   ],
   "description": "Identifies suspicious files being written by the Microsoft Exchange Server Unified Messaging (UM) service. This activity has been observed exploiting CVE-2021-26858.",
@@ -14,7 +14,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft Exchange Server UM Writing Suspicious Files",
   "query": "file where event.type == \"creation\" and\n  process.parent.name : (\"UMWorkerProcess.exe\", \"umservice.exe\") and\n  file.extension : (\"php\", \"jsp\", \"js\", \"aspx\", \"asmx\", \"asax\", \"cfm\", \"shtml\") and\n  (\n    file.path : (\"C:\\\\inetpub\\\\wwwroot\\\\aspnet_client\\\\*\",\n                 \"C:\\\\*\\\\FrontEnd\\\\HttpProxy\\\\owa\\\\auth\\\\*\") or\n    (file.path : \"C:\\\\*\\\\FrontEnd\\\\HttpProxy\\\\ecp\\\\auth\\\\*\" and not file.name : \"TimeoutLogoff.aspx\")\n  )\n",
   "references": [
@@ -25,7 +25,7 @@
   "rule_id": "6cd1779c-560f-4b68-a8f1-11009b27fe63",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

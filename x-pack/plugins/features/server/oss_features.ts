@@ -314,7 +314,7 @@ export const buildOSSFeatures = ({ savedObjectTypes, includeTimelion }: BuildOSS
       },
       privilegesTooltip: i18n.translate('xpack.features.devToolsPrivilegesTooltip', {
         defaultMessage:
-          'User should also be granted the appropriate Elasticsearch cluster and index privileges',
+          'User should also be granted the appropriate HyperSec cluster and index privileges',
       }),
     },
     {

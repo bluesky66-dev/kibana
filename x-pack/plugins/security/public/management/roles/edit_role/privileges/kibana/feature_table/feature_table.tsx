@@ -359,7 +359,7 @@ export class FeatureTable extends Component<Props, {}> {
         'xpack.security.management.editRole.featureTable.managementCategoryHelpText',
         {
           defaultMessage:
-            'Access to Stack Management is determined by both Elasticsearch and Kibana privileges, and cannot be explicitly disabled.',
+            'Access to Stack Management is determined by both HyperSec and Kibana privileges, and cannot be explicitly disabled.',
         }
       );
     }

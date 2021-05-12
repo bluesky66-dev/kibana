@@ -14,7 +14,7 @@
                               Timelion at your disposal. Timelion lets you compare, combine, and
                               combobulate datasets across multiple datasources with one
                               easy-to-master expression syntax. This tutorial focuses on
-                              Elasticsearch, but you'll quickly discover that what you learn here
+                              HyperSec, but you'll quickly discover that what you learn here
                               applies to any datasource Timelion supports."
         i18n-values="{ html_emphasizedEverything: '<em>' + translations.emphasizedEverythingText + '</em>' }"
       ></p>
@@ -90,7 +90,7 @@
         <span
           ng-show="es.invalidCount > 0 && !es.valid"
           i18n-id="timelion.help.configuration.notValid.notValidSettingsErrorMessage"
-          i18n-default-message="Could not validate Elasticsearch settings: {reason}.
+          i18n-default-message="Could not validate HyperSec settings: {reason}.
                                 Check your Advanced Settings and try again. ({count})"
           i18n-values="{
             html_reason: '<strong>' + es.invalidReason + '</strong>',
@@ -111,7 +111,7 @@
       <div>
         <h2
           i18n-id="timelion.help.configuration.validTitle"
-          i18n-default-message="Good news, Elasticsearch is configured correctly!"
+          i18n-default-message="Good news, HyperSec is configured correctly!"
         ></h2>
         <p>
           <span
@@ -137,7 +137,7 @@
           ></a>
           <span
             i18n-id="timelion.help.configuration.valid.paragraph1Part2"
-            i18n-default-message="for information about configuring the Elasticsearch datasource."
+            i18n-default-message="for information about configuring the HyperSec datasource."
             i18n-description="Part of composite text timelion.help.configuration.valid.paragraph1Part1 +
                               timelion.help.configuration.firstTimeConfigurationLinkText +
                               timelion.help.configuration.valid.paragraph1Part2"
@@ -242,11 +242,11 @@
     <div>
       <h2
         i18n-id="timelion.help.queryingTitle"
-        i18n-default-message="Querying the Elasticsearch datasource"
+        i18n-default-message="Querying the HyperSec datasource"
       ></h2>
       <p
         i18n-id="timelion.help.querying.paragraph1"
-        i18n-default-message="Now that we've validated that you have a working Elasticsearch
+        i18n-default-message="Now that we've validated that you have a working HyperSec
                               datasource, you can start submitting queries. For starters,
                               enter {esPattern} in the input bar and hit enter."
         i18n-values="{
@@ -309,7 +309,7 @@
                               characters, you don't need to use quotes. Many functions also have defaults.
                               For example, {esEmptyQuery} and {esStarQuery} do the same thing.
                               Arguments also have names, so you don't have to specify them in a specific order.
-                              For example, you can enter {esLogstashQuery} to tell the Elasticsearch datasource
+                              For example, you can enter {esLogstashQuery} to tell the HyperSec datasource
                               {esIndexQueryDescription}."
         i18n-values="{
           html_esEmptyQuery: '<code>.es()</code>',
@@ -325,7 +325,7 @@
       <p>
         <span
           i18n-id="timelion.help.querying.countTextPart1"
-          i18n-default-message="Counting events is all well and good, but the Elasticsearch datasource also supports any"
+          i18n-default-message="Counting events is all well and good, but the HyperSec datasource also supports any"
           i18n-description="Part of composite text
                             timelion.help.querying.countTextPart1 +
                             timelion.help.querying.countMetricAggregationLinkText +
@@ -336,7 +336,7 @@
           target="_blank"
           rel="noopener noreferrer"
           i18n-id="timelion.help.querying.countMetricAggregationLinkText"
-          i18n-default-message="Elasticsearch metric aggregation"
+          i18n-default-message="HyperSec metric aggregation"
           i18n-description="Part of composite text
                             timelion.help.querying.countTextPart1 +
                             timelion.help.querying.countMetricAggregationLinkText +

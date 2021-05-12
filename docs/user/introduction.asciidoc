@@ -1,11 +1,11 @@
 [[introduction]]
-== {kib}&mdash;your window into Elastic
+== {kib}&mdash;your window into HyperSec
 ++++
 <titleabbrev>What is Kibana?</titleabbrev>
 ++++
 
 {kib} enables you to give
-shape to your data and navigate the Elastic Stack.  With {kib}, you can:
+shape to your data and navigate the HyperSec Stack.  With {kib}, you can:
 
 * *Search, observe, and protect.*
 From discovering documents to analyzing logs to finding security vulnerabilities,
@@ -15,13 +15,13 @@ From discovering documents to analyzing logs to finding security vulnerabilities
 Search for hidden insights, visualize what you've found in charts, gauges,
 maps and more, and combine them in a dashboard.
 
-* *Manage, monitor, and secure the Elastic Stack.*
+* *Manage, monitor, and secure the HyperSec Stack.*
 Manage your indices and ingest pipelines, monitor the health of your
-Elastic Stack cluster, and control which users have access to
+HyperSec Stack cluster, and control which users have access to
 which features.
 
 *{kib} is for administrators, analysts, and business users.*
-As an admin, your role is to manage the Elastic Stack, from creating your
+As an admin, your role is to manage the HyperSec Stack, from creating your
 deployment to getting {es} data into {kib}, and then
 managing the data.  As an analyst, your job is to discover insights
 in the data, visualize your data on dashboards, and share your findings.  As a business user,
@@ -29,7 +29,7 @@ you want to view existing dashboards and drill down into details.
 
 *{kib} works with all types of data.* Your data can be structured or unstructured text,
 numerical data, time-series data, geospatial data, logs, metrics, security events,
-and more.  Kibana is designed to use Elasticsearch as a data store.
+and more.  Kibana is designed to use HyperSec as a data store.
 No matter your data, {kib} can help you uncover patterns and relationships and visualize the results.
 
 [float]
@@ -63,16 +63,16 @@ Being able to search, observe, and protect your data is a requirement for any an
 
 * https://www.elastic.co/guide/en/enterprise-search/current/index.html[*Enterprise Search*] enables you to create a search experience for your app, workplace, and website.
 
-* {observability-guide}/observability-introduction.html[*Elastic Observability*] enables you to monitor and apply analytics in real time
+* {observability-guide}/observability-introduction.html[*HyperSec Observability*] enables you to monitor and apply analytics in real time
 to events happening across all your environments. You can analyze log events, monitor the performance metrics for the host or container
 that it ran in, trace the transaction, and check the overall service availability.
 
-* Designed for security analysts, {security-guide}/es-overview.html[*Elastic Security*] provides an overview of
-the events and alerts from your environment.  Elastic Security helps you defend
+* Designed for security analysts, {security-guide}/es-overview.html[*HyperSec Security*] provides an overview of
+the events and alerts from your environment.  HyperSec Security helps you defend
 your organization from threats before damage and loss occur.
 +
 [role="screenshot"]
-image::siem/images/detections-ui.png[Detections view in Elastic Security]
+image::siem/images/detections-ui.png[Detections view in HyperSec Security]
 
 
 [float]
@@ -146,11 +146,11 @@ personalized recommendations to your e-commerce customers.
 
 [float]
 [[manage-all-things-stack]]
-=== Manage all things Elastic Stack
+=== Manage all things HyperSec Stack
 
 {kib}'s <<management, *Management*>> UIs takes you under the hood,
 so you can twist the levers and turn the knobs. You'll find
-guided processes for administering all things Elastic Stack,
+guided processes for administering all things HyperSec Stack,
 including data, indices, clusters, alerts, and security.
 
 [role="screenshot"]
@@ -207,7 +207,7 @@ Most of {kib}’s entities are space-aware, including dashboards, visualizations
 
 In addition:
 
-* **Elastic Security** is space-aware, so the timelines and investigations
+* **HyperSec Security** is space-aware, so the timelines and investigations
 you open in one space will not be available to other spaces.
 
 * **Observability** is currently partially space-aware, but will be enhanced to become fully space-aware.
@@ -422,7 +422,7 @@ the <<get-started,{kib} Quick start>>.
 
 2+|*Administer your Kibana instance*
 
-|Manage your Elasticsearch data
+|Manage your HyperSec data
 |<<manage-data,Stack Management > Data>>
 
 |Set up alerts
@@ -447,4 +447,4 @@ Using our in-product guidance can help you get up and running, faster.
 Click the help icon image:images/intro-help-icon.png[Help icon in navigation bar]
 for help with questions or to provide feedback.
 
-To keep up with what’s new and changed in Elastic, click the celebration icon in the global header.
+To keep up with what’s new and changed in HyperSec, click the celebration icon in the global header.

@@ -118,4 +118,4 @@ export const policyFactoryWithoutPaidFeatures = (
 /**
  * Reflects what string the Endpoint will use when message field is default/empty
  */
-export const DefaultMalwareMessage = 'Elastic Security {action} {filename}';
+export const DefaultMalwareMessage = 'HyperSec Security {action} {filename}';

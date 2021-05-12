@@ -816,7 +816,7 @@
     {
       "index": "twitter",
       "level": "critical",
-      "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
+      "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
       "details": "Reindexing is irreversible, so always back up your index before proceeding.",
       "actions": [
         {
@@ -829,14 +829,14 @@
     {
       "index": ".triggered_watches",
       "level": "critical",
-      "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
+      "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
       "details": "Upgrading is irreversible, so always back up your index before proceeding.",
       "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html"
     },
     {
       "index": ".reindex-status",
       "level": "critical",
-      "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
+      "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
       "details": "Reindexing is irreversible, so always back up your index before proceeding.",
       "actions": [
         {
@@ -849,7 +849,7 @@
     {
       "index": "twitter2",
       "level": "critical",
-      "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
+      "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
       "details": "Reindexing is irreversible, so always back up your index before proceeding.",
       "actions": [
         {
@@ -862,7 +862,7 @@
     {
       "index": ".watches",
       "level": "critical",
-      "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
+      "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
       "details": "Upgrading is irreversible, so always back up your index before proceeding.",
       "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html"
     }

@@ -31,7 +31,7 @@ export const AddRoleTemplateButton = (props: Props) => {
         <p>
           <FormattedMessage
             id="xpack.security.management.editRoleMapping.roleTemplatesUnavailable"
-            defaultMessage="Role templates cannot be used when scripts are disabled in Elasticsearch."
+            defaultMessage="Role templates cannot be used when scripts are disabled in HyperSec."
           />
         </p>
       </EuiCallOut>

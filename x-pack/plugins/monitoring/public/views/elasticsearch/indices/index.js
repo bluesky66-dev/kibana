@@ -43,10 +43,10 @@ uiRoutes.when('/elasticsearch/indices', {
 
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.indices.routeTitle', {
-          defaultMessage: 'Elasticsearch - Indices',
+          defaultMessage: 'HyperSec - Indices',
         }),
         pageTitle: i18n.translate('xpack.monitoring.elasticsearch.indices.pageTitle', {
-          defaultMessage: 'Elasticsearch indices',
+          defaultMessage: 'HyperSec indices',
         }),
         storageKey: 'elasticsearch.indices',
         apiUrlFn: () =>

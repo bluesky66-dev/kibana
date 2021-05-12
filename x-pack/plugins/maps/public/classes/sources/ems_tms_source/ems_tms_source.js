@@ -28,7 +28,7 @@ export function getSourceTitle() {
   const emsSettings = getEMSSettings();
   if (emsSettings.isEMSUrlSet()) {
     return i18n.translate('xpack.maps.source.emsOnPremTileTitle', {
-      defaultMessage: 'Elastic Maps Server Basemaps',
+      defaultMessage: 'HyperSec Maps Server Basemaps',
     });
   } else {
     return i18n.translate('xpack.maps.source.emsTileTitle', {
@@ -79,7 +79,7 @@ export class EMSTMSSource extends AbstractTMSSource {
     if (emsSettings.isEMSUrlSet()) {
       props.push({
         label: i18n.translate('xpack.maps.source.emsTile.emsOnPremLabel', {
-          defaultMessage: `Elastic Maps Server`,
+          defaultMessage: `HyperSec Maps Server`,
         }),
         value: emsSettings.getEMSRoot(),
       });

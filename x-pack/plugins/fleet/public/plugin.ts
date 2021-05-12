@@ -139,10 +139,10 @@ export class FleetPlugin implements Plugin<FleetSetup, FleetStart, FleetSetupDep
       deps.home.featureCatalogue.register({
         id: 'fleet',
         title: i18n.translate('xpack.fleet.featureCatalogueTitle', {
-          defaultMessage: 'Add Elastic Agent',
+          defaultMessage: 'Add HyperSec Agent',
         }),
         description: i18n.translate('xpack.fleet.featureCatalogueDescription', {
-          defaultMessage: 'Add and manage your fleet of Elastic Agents and integrations.',
+          defaultMessage: 'Add and manage your fleet of HyperSec Agents and integrations.',
         }),
         icon: 'indexManagementApp',
         showOnHomePage: true,

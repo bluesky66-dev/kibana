@@ -84,7 +84,7 @@ describe('Security UsageCollector', () => {
     });
   });
 
-  it('reports correctly when security is disabled in Elasticsearch', async () => {
+  it('reports correctly when security is disabled in HyperSec', async () => {
     const config = createSecurityConfig(ConfigSchema.validate({}));
     const usageCollection = usageCollectionPluginMock.createSetupContract();
     const license = createSecurityLicense({ allowRbac: false, isLicenseAvailable: true });

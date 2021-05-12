@@ -60,7 +60,7 @@ describe('buildRule', () => {
     });
     const expected: Partial<RulesSchema> = {
       actions: [],
-      author: ['Elastic'],
+      author: ['HyperSec'],
       building_block_type: 'default',
       created_by: 'elastic',
       description: 'Detecting root and admin users',
@@ -72,7 +72,7 @@ describe('buildRule', () => {
       index: ['auditbeat-*', 'filebeat-*', 'packetbeat-*', 'winlogbeat-*'],
       interval: 'some interval',
       language: 'kuery',
-      license: 'Elastic License',
+      license: 'HyperSec License',
       max_signals: 10000,
       name: 'some-name',
       output_index: '.siem-signals',
@@ -129,7 +129,7 @@ describe('buildRule', () => {
     });
     const expected: Partial<RulesSchema> = {
       actions: [],
-      author: ['Elastic'],
+      author: ['HyperSec'],
       building_block_type: 'default',
       created_by: 'elastic',
       description: 'Detecting root and admin users',
@@ -141,7 +141,7 @@ describe('buildRule', () => {
       index: ['auditbeat-*', 'filebeat-*', 'packetbeat-*', 'winlogbeat-*'],
       interval: 'some interval',
       language: 'kuery',
-      license: 'Elastic License',
+      license: 'HyperSec License',
       max_signals: 10000,
       name: 'some-name',
       output_index: '.siem-signals',
@@ -187,7 +187,7 @@ describe('buildRule', () => {
     });
     const expected: Partial<RulesSchema> = {
       actions: [],
-      author: ['Elastic'],
+      author: ['HyperSec'],
       building_block_type: 'default',
       created_by: 'elastic',
       description: 'Detecting root and admin users',
@@ -199,7 +199,7 @@ describe('buildRule', () => {
       index: ['auditbeat-*', 'filebeat-*', 'packetbeat-*', 'winlogbeat-*'],
       interval: 'some interval',
       language: 'kuery',
-      license: 'Elastic License',
+      license: 'HyperSec License',
       max_signals: 10000,
       name: 'some-name',
       note: '',
@@ -249,7 +249,7 @@ describe('buildRule', () => {
     });
     const expected: Partial<RulesSchema> = {
       actions: [],
-      author: ['Elastic'],
+      author: ['HyperSec'],
       building_block_type: 'default',
       created_by: 'elastic',
       description: 'Detecting root and admin users',
@@ -261,7 +261,7 @@ describe('buildRule', () => {
       index: ['auditbeat-*', 'filebeat-*', 'packetbeat-*', 'winlogbeat-*'],
       interval: 'some interval',
       language: 'kuery',
-      license: 'Elastic License',
+      license: 'HyperSec License',
       max_signals: 10000,
       name: 'some-name',
       output_index: '.siem-signals',

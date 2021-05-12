@@ -59,7 +59,7 @@ export const AREAS: Area[] = [
       'Feature:Inspector',
       'Feature:Index Management',
       'Feature:Snapshot and Restore',
-      'Team:Elasticsearch UI',
+      'Team:HyperSec UI',
       'Feature:FieldFormatters',
       'Feature:CCR',
       'Feature:ILM',

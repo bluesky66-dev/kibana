@@ -70,7 +70,7 @@ export const DatafeedDetails: FC = () => {
   const queryTitle = i18n.translate(
     'xpack.ml.newJob.wizard.summaryStep.datafeedDetails.query.title',
     {
-      defaultMessage: 'Elasticsearch query',
+      defaultMessage: 'HyperSec query',
     }
   );
 

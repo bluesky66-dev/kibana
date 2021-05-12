@@ -68,7 +68,7 @@ export const securityConfigDeprecationProvider: ConfigDeprecationProvider = ({
     if (settings?.xpack?.security?.enabled === false) {
       log(
         'Disabling the security plugin (`xpack.security.enabled`) will not be supported in the next major version (8.0). ' +
-          'To turn off security features, disable them in Elasticsearch instead.'
+          'To turn off security features, disable them in HyperSec instead.'
       );
     }
     return settings;

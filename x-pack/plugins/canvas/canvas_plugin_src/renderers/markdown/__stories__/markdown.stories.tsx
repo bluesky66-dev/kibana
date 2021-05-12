@@ -25,7 +25,7 @@ storiesOf('renderers/markdown', module)
   })
   .add('links in new tab', () => {
     const config = {
-      content: '[Elastic.co](https://elastic.co)',
+      content: '[HyperSec.co](https://elastic.co)',
       font: {
         css: '',
         spec: {},

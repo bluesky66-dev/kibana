@@ -171,7 +171,7 @@ describe('TelemetrySender', () => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'X-Elastic-Stack-Version': telemetryService.currentKibanaVersion,
+            'X-HyperSec-Stack-Version': telemetryService.currentKibanaVersion,
           },
           body: mockTelemetryPayload[0],
         });

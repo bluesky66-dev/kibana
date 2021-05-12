@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic",
+    "HyperSec",
     "Willem D'Haese"
   ],
   "description": "Identifies high risk Azure Active Directory (AD) sign-ins by leveraging Microsoft's Identity Protection machine learning and heuristics. Identity Protection categorizes risk into three tiers: low, medium, and high. While Microsoft does not provide specific details about how risk is calculated, each level brings higher confidence that the user or sign-in is compromised.",
@@ -10,7 +10,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Azure Active Directory High Risk Sign-in",
   "note": "The Azure Fleet Integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.signinlogs and azure.signinlogs.properties.risk_level_during_signin:high and event.outcome:(success or Success)",
@@ -23,7 +23,7 @@
   "rule_id": "37994bca-0611-4500-ab67-5588afe73b77",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

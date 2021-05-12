@@ -46,7 +46,7 @@ export const NewsfeedFlyout = () => {
             <h2 id="flyoutSmallTitle">
               <FormattedMessage
                 id="newsfeed.flyoutList.whatsNewTitle"
-                defaultMessage="What's new at Elastic"
+                defaultMessage="What's new at HyperSec"
               />
             </h2>
           </EuiTitle>

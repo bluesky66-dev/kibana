@@ -15,7 +15,7 @@ import { IIndexPattern } from 'src/plugins/data/public';
 
 const getIndexPatternMock = (mockedFields: any = {}) => ({ ...mockedFields } as IIndexPattern);
 
-const items: ScriptedFieldItem[] = [{ name: '1', lang: 'Elastic', script: '' }];
+const items: ScriptedFieldItem[] = [{ name: '1', lang: 'HyperSec', script: '' }];
 
 describe('Table', () => {
   let indexPattern: IIndexPattern;
@@ -23,7 +23,7 @@ describe('Table', () => {
   beforeEach(() => {
     indexPattern = getIndexPatternMock({
       fieldFormatMap: {
-        Elastic: {
+        HyperSec: {
           type: {
             title: 'string',
           },
@@ -55,7 +55,7 @@ describe('Table', () => {
       />
     );
 
-    const formatTableCell = shallow(component.prop('columns')[3].render('Elastic'));
+    const formatTableCell = shallow(component.prop('columns')[3].render('HyperSec'));
     expect(formatTableCell).toMatchSnapshot();
   });
 

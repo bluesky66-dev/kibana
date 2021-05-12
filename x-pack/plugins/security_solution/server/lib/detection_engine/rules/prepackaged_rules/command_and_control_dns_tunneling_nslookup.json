@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "This rule identifies a large number (15) of nslookup.exe executions with an explicit query type from the same host. This may indicate command and control activity utilizing the DNS protocol.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential DNS Tunneling via NsLookup",
   "query": "event.category:process and event.type:start and process.name:nslookup.exe and process.args:(-querytype=* or -qt=* or -q=* or -type=*)",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "3a59fc81-99d3-47ea-8cd6-d48d561fca20",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

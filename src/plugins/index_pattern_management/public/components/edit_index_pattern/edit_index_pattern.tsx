@@ -180,7 +180,7 @@ export const EditIndexPattern = withRouter(
             <p>
               <FormattedMessage
                 id="indexPatternManagement.editIndexPattern.timeFilterLabel.timeFilterDetail"
-                defaultMessage="This page lists every field in the {indexPatternTitle} index and the field's associated core type as recorded by Elasticsearch. To change a field type, use the Elasticsearch"
+                defaultMessage="This page lists every field in the {indexPatternTitle} index and the field's associated core type as recorded by HyperSec. To change a field type, use the HyperSec"
                 values={{ indexPatternTitle: <strong>{indexPattern.title}</strong> }}
               />{' '}
               <EuiLink href={docsUrl} target="_blank" external>

@@ -23,7 +23,7 @@ export const UpdateLicenseFile: Task = {
         ssplLicense + LICENSE_SEPARATOR + elasticLicense
       );
     } else {
-      log.info('Copying Elastic license to LICENSE.txt');
+      log.info('Copying HyperSec license to LICENSE.txt');
       await write(build.resolvePath('LICENSE.txt'), elasticLicense);
     }
   },

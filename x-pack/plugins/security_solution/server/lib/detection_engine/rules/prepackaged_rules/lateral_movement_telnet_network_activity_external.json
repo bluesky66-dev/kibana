@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Telnet provides a command line interface for communication with a remote device or server. This rule identifies Telnet network connections to publicly routable IP addresses.",
   "false_positives": [
@@ -12,14 +12,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Connection to External Network via Telnet",
   "query": "sequence by process.entity_id\n  [process where process.name == \"telnet\" and event.type == \"start\"]\n  [network where process.name == \"telnet\" and\n    not cidrmatch(destination.ip, \"127.0.0.0/8\", \"10.0.0.0/8\", \"172.16.0.0/12\",\n                                  \"192.168.0.0/16\", \"FE80::/10\", \"::1/128\")]\n",
   "risk_score": 47,
   "rule_id": "e19e64ee-130e-4c07-961f-8a339f0b8362",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

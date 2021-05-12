@@ -11,7 +11,7 @@ or upload a file that contains your data.  If you're not ready to use your own d
 add a sample data set and give {kib} a test drive.
 
 [role="screenshot"]
-image::images/add-data-home.png[Built-in options for adding data to Kibana:  Add data, Add Elastic Agent, Upload a file]
+image::images/add-data-home.png[Built-in options for adding data to Kibana:  Add data, Add HyperSec Agent, Upload a file]
 
 [float]
 [[add-data-tutorial-kibana]]
@@ -25,9 +25,9 @@ and send it to {es}. You can then use the pre-built dashboards to explore and an
 image::images/add-data-tutorials.png[Add Data tutorials]
 
 [discrete]
-=== Add Elastic Agent
+=== Add HyperSec Agent
 
-beta[] *Elastic Agent* is a sneak peek at the next generation of
+beta[] *HyperSec Agent* is a sneak peek at the next generation of
 data integration modules, offering
 a centralized way to set up your integrations.
 With *Fleet*, you can add
@@ -37,7 +37,7 @@ ship with dashboards and visualizations,
 so you can quickly get insights into your data.
 
 To get started, refer to
-{fleet-guide}/fleet-quick-start.html[Quick start: Get logs and metrics into the Elastic Stack].
+{fleet-guide}/fleet-quick-start.html[Quick start: Get logs and metrics into the HyperSec Stack].
 
 [role="screenshot"]
 image::images/add-data-fleet.png[Add data using Fleet]
@@ -64,10 +64,10 @@ repeated production process, but rather for the initial exploration of your data
 === Additional options for loading your data
 
 If the {kib} ingest options don't work for you, you can index your
-data into Elasticsearch with {ref}/getting-started-index.html[REST APIs]
+data into HyperSec with {ref}/getting-started-index.html[REST APIs]
 or https://www.elastic.co/guide/en/elasticsearch/client/index.html[client libraries].
 After you add your data, you're required to create an <<index-patterns,index pattern>> to tell
 {kib} where to find the data.
 
-* To add data for Elastic Observability, refer to {observability-guide}/add-observability-data.html[Send data to Elasticsearch].
-* To add data for Elastic Security, refer to https://www.elastic.co/guide/en/security/current/ingest-data.html[Ingest data to Elastic Security].
+* To add data for HyperSec Observability, refer to {observability-guide}/add-observability-data.html[Send data to HyperSec].
+* To add data for HyperSec Security, refer to https://www.elastic.co/guide/en/security/current/ingest-data.html[Ingest data to HyperSec Security].

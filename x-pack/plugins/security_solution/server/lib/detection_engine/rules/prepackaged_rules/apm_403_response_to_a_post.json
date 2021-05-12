@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A POST request to web application returned a 403 response, which indicates the web application declined to process the request because the action requested was not allowed",
   "false_positives": [
@@ -10,7 +10,7 @@
     "apm-*-transaction*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Web Application Suspicious Activity: POST Request Declined",
   "query": "http.response.status_code:403 and http.request.method:post",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "a87a4e42-1d82-44bd-b0bf-d9b7f91fb89e",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "APM"
   ],
   "timestamp_override": "event.ingested",

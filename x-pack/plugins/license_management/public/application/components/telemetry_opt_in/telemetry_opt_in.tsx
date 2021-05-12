@@ -82,7 +82,7 @@ export class TelemetryOptIn extends React.Component<Props, State> {
             <h4>
               <FormattedMessage
                 id="xpack.licenseMgmt.telemetryOptIn.customersHelpSupportDescription"
-                defaultMessage="Help Elastic support provide better service"
+                defaultMessage="Help HyperSec support provide better service"
               />
             </h4>
           </EuiTitle>
@@ -114,7 +114,7 @@ export class TelemetryOptIn extends React.Component<Props, State> {
             <FormattedMessage
               id="xpack.licenseMgmt.telemetryOptIn.featureUsageWarningMessage"
               defaultMessage="This feature periodically sends basic feature usage statistics.
-              This information will not be shared outside of Elastic.
+              This information will not be shared outside of HyperSec.
               See an {exampleLink} or read our {telemetryPrivacyStatementLink}.
               You can disable this feature any time."
               values={{
@@ -153,7 +153,7 @@ export class TelemetryOptIn extends React.Component<Props, State> {
             <span>
               <FormattedMessage
                 id="xpack.licenseMgmt.telemetryOptIn.sendBasicFeatureStatisticsLabel"
-                defaultMessage="Send basic feature usage statistics to Elastic periodically. {popover}"
+                defaultMessage="Send basic feature usage statistics to HyperSec periodically. {popover}"
                 values={{
                   popover,
                 }}

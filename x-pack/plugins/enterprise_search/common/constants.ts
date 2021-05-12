@@ -47,7 +47,7 @@ export const APP_SEARCH_PLUGIN = {
   }),
   CARD_DESCRIPTION: i18n.translate('xpack.enterpriseSearch.appSearch.productCardDescription', {
     defaultMessage:
-      'Elastic App Search provides user-friendly tools to design and deploy a powerful search to your websites or web/mobile applications.',
+      'HyperSec App Search provides user-friendly tools to design and deploy a powerful search to your websites or web/mobile applications.',
   }),
   URL: '/app/enterprise_search/app_search',
   SUPPORT_URL: 'https://discuss.elastic.co/c/enterprise-search/app-search/',

@@ -102,7 +102,7 @@ export const CheckupTab: FunctionComponent<CheckupTabProps> = ({
         >
           <FormattedMessage
             id="xpack.upgradeAssistant.checkupTab.tabDetail"
-            defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to Elasticsearch {nextEsVersion}."
+            defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to HyperSec {nextEsVersion}."
             values={{
               strongCheckupLabel: <strong>{checkupLabel}</strong>,
               nextEsVersion: `${nextMajor}.x`,

@@ -14,7 +14,7 @@ export default function ({ getService, getPageObjects }) {
   const nodesList = getService('monitoringElasticsearchNodes');
   const nodeDetail = getService('monitoringElasticsearchNodeDetail');
 
-  describe('Elasticsearch node detail', () => {
+  describe('HyperSec node detail', () => {
     describe('Active Nodes', () => {
       const { setup, tearDown } = getLifecycleMethods(getService, getPageObjects);
 

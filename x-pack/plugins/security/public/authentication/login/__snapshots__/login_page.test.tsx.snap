@@ -11,7 +11,7 @@ exports[`LoginPage disabled form states renders as expected when a connection to
   }
   title={
     <FormattedMessage
-      defaultMessage="Cannot connect to the Elasticsearch cluster"
+      defaultMessage="Cannot connect to the HyperSec cluster"
       id="xpack.security.loginPage.esUnavailableTitle"
       values={Object {}}
     />
@@ -80,14 +80,14 @@ exports[`LoginPage disabled form states renders as expected when xpack is not av
 <DisabledLoginForm
   message={
     <FormattedMessage
-      defaultMessage="To use the full set of free features in this distribution of Kibana, please update Elasticsearch to the default distribution."
+      defaultMessage="To use the full set of free features in this distribution of Kibana, please update HyperSec to the default distribution."
       id="xpack.security.loginPage.xpackUnavailableMessage"
       values={Object {}}
     />
   }
   title={
     <FormattedMessage
-      defaultMessage="Cannot connect to the Elasticsearch cluster currently configured for Kibana."
+      defaultMessage="Cannot connect to the HyperSec cluster currently configured for Kibana."
       id="xpack.security.loginPage.xpackUnavailableTitle"
       values={Object {}}
     />
@@ -237,7 +237,7 @@ exports[`LoginPage page renders as expected 1`] = `
       >
         <h1>
           <FormattedMessage
-            defaultMessage="Welcome to Elastic"
+            defaultMessage="Welcome to HyperSec"
             id="xpack.security.loginPage.welcomeTitle"
             values={Object {}}
           />

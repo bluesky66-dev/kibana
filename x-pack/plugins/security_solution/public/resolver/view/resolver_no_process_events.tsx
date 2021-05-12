@@ -35,7 +35,7 @@ export const ResolverNoProcessEvents = () => (
         defaultMessage: `
             The Analyze Event tool creates graphs based on process events.
             If the analyzed event does not have an associated process in the current time range,
-            or stored in Elasticsearch within any time range, a graph will not be created.
+            or stored in HyperSec within any time range, a graph will not be created.
             You can check for associated processes by expanding your time range.
           `,
       })}

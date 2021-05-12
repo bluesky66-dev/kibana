@@ -35,8 +35,8 @@ export const OverviewTab: FunctionComponent<UpgradeAssistantTabProps> = (props) 
         <p>
           <FormattedMessage
             id="xpack.upgradeAssistant.overviewTab.tabDetail"
-            defaultMessage="This assistant helps you prepare your cluster and indices for Elasticsearch
-           {nextEsVersion} For other issues that need your attention, see the Elasticsearch logs."
+            defaultMessage="This assistant helps you prepare your cluster and indices for HyperSec
+           {nextEsVersion} For other issues that need your attention, see the HyperSec logs."
             values={{
               nextEsVersion: `${nextMajor}.x`,
             }}

@@ -316,7 +316,7 @@ export function ElasticsearchPanel(props) {
   }
 
   return (
-    <ClusterItemContainer {...props} url="elasticsearch" title="Elasticsearch">
+    <ClusterItemContainer {...props} url="elasticsearch" title="HyperSec">
       <EuiFlexGrid columns={4}>
         <EuiFlexItem>
           <EuiPanel paddingSize="m">
@@ -331,7 +331,7 @@ export function ElasticsearchPanel(props) {
                       aria-label={i18n.translate(
                         'xpack.monitoring.cluster.overview.esPanel.overviewLinkAriaLabel',
                         {
-                          defaultMessage: 'Elasticsearch Overview',
+                          defaultMessage: 'HyperSec Overview',
                         }
                       )}
                       data-test-subj="esOverview"
@@ -459,7 +459,7 @@ export function ElasticsearchPanel(props) {
                       aria-label={i18n.translate(
                         'xpack.monitoring.cluster.overview.esPanel.indicesCountLinkAriaLabel',
                         {
-                          defaultMessage: 'Elasticsearch Indices: {indicesCount}',
+                          defaultMessage: 'HyperSec Indices: {indicesCount}',
                           values: {
                             indicesCount: formatNumber(get(indices, 'count'), 'int_commas'),
                           },
@@ -536,7 +536,7 @@ export function ElasticsearchPanel(props) {
                   aria-label={i18n.translate(
                     'xpack.monitoring.cluster.overview.esPanel.logsLinkAriaLabel',
                     {
-                      defaultMessage: 'Elasticsearch Logs',
+                      defaultMessage: 'HyperSec Logs',
                     }
                   )}
                   data-test-subj="esLogs"

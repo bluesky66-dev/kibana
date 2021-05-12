@@ -66,7 +66,7 @@ uiRoutes.when('/elasticsearch/indices/:index/advanced', {
 
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.indices.advanced.routeTitle', {
-          defaultMessage: 'Elasticsearch - Indices - {indexName} - Advanced',
+          defaultMessage: 'HyperSec - Indices - {indexName} - Advanced',
           values: {
             indexName,
           },

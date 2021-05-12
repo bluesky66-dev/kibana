@@ -5,7 +5,7 @@
 The {stack} {monitor-features} provide
 <<alerting-getting-started,{kib} alerts>> out-of-the box to notify you of
 potential issues in the {stack}. These alerts are preconfigured based on the
-best practices recommended by Elastic. However, you can tailor them to meet your 
+best practices recommended by HyperSec. However, you can tailor them to meet your 
 specific needs.
 
 When you open *{stack-monitor-app}*, the preconfigured {kib} alerts are
@@ -124,5 +124,5 @@ The 60-day and 30-day thresholds are skipped for Trial licenses, which are only
 valid for 30 days.
 
 NOTE: Some action types are subscription features, while others are free.
-For a comparison of the Elastic subscription levels, see the alerting section of
+For a comparison of the HyperSec subscription levels, see the alerting section of
 the {subscriptions}[Subscriptions page].

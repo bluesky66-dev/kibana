@@ -4,7 +4,7 @@
 
 ## SavedObjectsServiceStart.getScopedClient property
 
-Creates a [Saved Objects client](./kibana-plugin-core-server.savedobjectsclientcontract.md) that uses the credentials from the passed in request to authenticate with Elasticsearch. If other plugins have registered Saved Objects client wrappers, these will be applied to extend the functionality of the client.
+Creates a [Saved Objects client](./kibana-plugin-core-server.savedobjectsclientcontract.md) that uses the credentials from the passed in request to authenticate with HyperSec. If other plugins have registered Saved Objects client wrappers, these will be applied to extend the functionality of the client.
 
 A client that is already scoped to the incoming request is also exposed from the route handler context see [RequestHandlerContext](./kibana-plugin-core-server.requesthandlercontext.md)<!-- -->.
 

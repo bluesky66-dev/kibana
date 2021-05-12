@@ -160,7 +160,7 @@ export const START_TRAIL_DESC = i18n.translate(
   'xpack.uptime.ml.enableAnomalyDetectionPanel.startTrialDesc',
   {
     defaultMessage:
-      'In order to access duration anomaly detection, you have to be subscribed to an Elastic Platinum license.',
+      'In order to access duration anomaly detection, you have to be subscribed to an HyperSec Platinum license.',
   }
 );
 

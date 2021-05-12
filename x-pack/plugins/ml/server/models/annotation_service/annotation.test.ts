@@ -99,7 +99,7 @@ describe('annotation_service', () => {
       };
 
       await expect(getAnnotations(indexAnnotationArgsMock)).rejects.toEqual(
-        Error(`Annotations couldn't be retrieved from Elasticsearch.`)
+        Error(`Annotations couldn't be retrieved from HyperSec.`)
       );
     });
   });

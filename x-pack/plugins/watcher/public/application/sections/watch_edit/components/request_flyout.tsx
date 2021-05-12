@@ -62,7 +62,7 @@ export class RequestFlyout extends PureComponent<Props> {
             <p>
               <FormattedMessage
                 id="xpack.watcher.requestFlyout.descriptionText"
-                defaultMessage="This Elasticsearch request will create or update this watch."
+                defaultMessage="This HyperSec request will create or update this watch."
               />
             </p>
           </EuiText>

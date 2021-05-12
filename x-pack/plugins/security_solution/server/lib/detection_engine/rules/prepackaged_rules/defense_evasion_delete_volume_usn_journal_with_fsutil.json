@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies use of the fsutil.exe to delete the volume USNJRNL. This technique is used by attackers to eliminate evidence of files created during post-exploitation activities.",
   "from": "now-9m",
@@ -10,14 +10,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Delete Volume USN Journal with Fsutil",
   "query": "event.category:process and event.type:(start or process_started) and process.name:fsutil.exe and process.args:(deletejournal and usn)",
   "risk_score": 21,
   "rule_id": "f675872f-6d85-40a3-b502-c0d2ef101e92",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

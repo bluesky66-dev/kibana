@@ -96,7 +96,7 @@ export function HeaderLogo({ href, navigateToApp, loadingCount$, ...observables 
       href={href}
       data-test-subj="logo"
       aria-label={i18n.translate('core.ui.chrome.headerGlobalNav.goHomePageIconAriaLabel', {
-        defaultMessage: 'Elastic home',
+        defaultMessage: 'HyperSec home',
       })}
     >
       <LoadingIndicator loadingCount$={loadingCount$!} />

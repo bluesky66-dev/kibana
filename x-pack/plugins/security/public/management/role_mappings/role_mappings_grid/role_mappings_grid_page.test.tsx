@@ -244,7 +244,7 @@ describe('RoleMappingsGridPage', () => {
       Object {
         "children": <div>
           kibana_user
-           
+
           <EuiIcon
             className="eui-alignTop"
             color="warning"

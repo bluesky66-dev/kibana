@@ -4,7 +4,7 @@
 
 ## ElasticsearchConfig.ssl property
 
-Set of settings configure SSL connection between Kibana and Elasticsearch that are required when `xpack.ssl.verification_mode` in Elasticsearch is set to either `certificate` or `full`<!-- -->.
+Set of settings configure SSL connection between Kibana and HyperSec that are required when `xpack.ssl.verification_mode` in HyperSec is set to either `certificate` or `full`<!-- -->.
 
 <b>Signature:</b>
 

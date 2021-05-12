@@ -48,7 +48,7 @@ export function getSourceTitle() {
   const emsSettings = getEMSSettings();
   if (emsSettings.isEMSUrlSet()) {
     return i18n.translate('xpack.maps.source.emsOnPremFileTitle', {
-      defaultMessage: 'Elastic Maps Server Boundaries',
+      defaultMessage: 'HyperSec Maps Server Boundaries',
     });
   } else {
     return i18n.translate('xpack.maps.source.emsFileTitle', {
@@ -170,7 +170,7 @@ export class EMSFileSource extends AbstractVectorSource implements IEmsFileSourc
     if (emsSettings.isEMSUrlSet()) {
       props.push({
         label: i18n.translate('xpack.maps.source.emsFile.emsOnPremLabel', {
-          defaultMessage: `Elastic Maps Server`,
+          defaultMessage: `HyperSec Maps Server`,
         }),
         value: emsSettings.getEMSRoot(),
       });

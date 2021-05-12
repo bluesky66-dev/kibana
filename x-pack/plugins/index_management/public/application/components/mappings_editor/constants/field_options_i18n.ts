@@ -240,7 +240,7 @@ export const FIELD_OPTIONS_TEXTS: { [key in FieldOption]: Optioni18n } = {
       'xpack.idxMgmt.mappingsEditor.formSelect.analyzer.languageDescription',
       {
         defaultMessage:
-          'Elasticsearch provides many language-specific analyzers like english or french.',
+          'HyperSec provides many language-specific analyzers like english or french.',
       }
     ),
   },
@@ -251,7 +251,7 @@ export const FIELD_OPTIONS_TEXTS: { [key in FieldOption]: Optioni18n } = {
     description: i18n.translate(
       'xpack.idxMgmt.mappingsEditor.formSelect.similarity.bm25Description',
       {
-        defaultMessage: 'The default algorithm used in Elasticsearch and Lucene.',
+        defaultMessage: 'The default algorithm used in HyperSec and Lucene.',
       }
     ),
   },

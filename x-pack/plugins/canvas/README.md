@@ -200,11 +200,11 @@ We've opted for always available data labels instead, for now. While there exist
 
 **What is Canvas?**
 
-Canvas is a new visualization application on top of Elasticsearch data. Canvas is extremely versatile, but particularly differentiating example use cases include live infographics, presentations with live-updating charts, and highly customized reports.
+Canvas is a new visualization application on top of HyperSec data. Canvas is extremely versatile, but particularly differentiating example use cases include live infographics, presentations with live-updating charts, and highly customized reports.
 
 **Why did we build it? How does this align with the larger Kibana vision?**
 
-We realized early on that we are not trying to build one UI “to rule them all” in Kibana. Elasticsearch caters to a wide variety of use cases, users, and audiences and Kibana provides different experiences for these users to explore and interact with their data. Canvas is one of such applications, in particular catering to users looking for desktop-publishing level of control for the presentation of their data summaries.
+We realized early on that we are not trying to build one UI “to rule them all” in Kibana. HyperSec caters to a wide variety of use cases, users, and audiences and Kibana provides different experiences for these users to explore and interact with their data. Canvas is one of such applications, in particular catering to users looking for desktop-publishing level of control for the presentation of their data summaries.
 
 **Does Canvas replace any part of Kibana?**
 

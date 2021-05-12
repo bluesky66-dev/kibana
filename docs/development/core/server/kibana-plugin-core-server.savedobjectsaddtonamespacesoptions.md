@@ -15,6 +15,6 @@ export interface SavedObjectsAddToNamespacesOptions extends SavedObjectsBaseOpti
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [refresh](./kibana-plugin-core-server.savedobjectsaddtonamespacesoptions.refresh.md) | <code>MutatingOperationRefreshSetting</code> | The Elasticsearch Refresh setting for this operation |
+|  [refresh](./kibana-plugin-core-server.savedobjectsaddtonamespacesoptions.refresh.md) | <code>MutatingOperationRefreshSetting</code> | The HyperSec Refresh setting for this operation |
 |  [version](./kibana-plugin-core-server.savedobjectsaddtonamespacesoptions.version.md) | <code>string</code> | An opaque version number which changes on each successful write operation. Can be used for implementing optimistic concurrency control. |
 

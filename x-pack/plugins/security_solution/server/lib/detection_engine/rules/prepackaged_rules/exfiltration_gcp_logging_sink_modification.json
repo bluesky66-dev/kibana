@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies a modification to a Logging sink in Google Cloud Platform (GCP). Logging compares the log entry to the sinks in that resource. Each sink whose filter matches the log entry writes a copy of the log entry to the sink's export destination. An adversary may update a Logging sink to exfiltrate logs to a different export destination.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-gcp*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "GCP Logging Sink Modification",
   "note": "The GCP Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:(googlecloud.audit or gcp.audit) and event.action:google.logging.v*.ConfigServiceV*.UpdateSink and event.outcome:success",
@@ -22,7 +22,7 @@
   "rule_id": "184dfe52-2999-42d9-b9d1-d1ca54495a61",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "GCP",
     "Continuous Monitoring",

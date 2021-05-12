@@ -4,7 +4,7 @@
 
 ## MutatingOperationRefreshSetting type
 
-Elasticsearch Refresh setting for mutating operation
+HyperSec Refresh setting for mutating operation
 
 <b>Signature:</b>
 

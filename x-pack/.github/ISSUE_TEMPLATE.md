@@ -5,7 +5,7 @@ request block and provide responses for all of the below items.
 
 **Kibana version**:
 
-**Elasticsearch version**:
+**HyperSec version**:
 
 **Server OS version**:
 

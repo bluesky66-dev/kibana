@@ -189,7 +189,7 @@ export const ChangePasswordFlyout: FunctionComponent<ChangePasswordFlyoutProps> 
                 <p>
                   <FormattedMessage
                     id="xpack.security.management.users.changePasswordFlyout.systemUserWarning"
-                    defaultMessage="Changing this password will prevent Kibana from communicating with Elasticsearch."
+                    defaultMessage="Changing this password will prevent Kibana from communicating with HyperSec."
                   />
                 </p>
                 <p>

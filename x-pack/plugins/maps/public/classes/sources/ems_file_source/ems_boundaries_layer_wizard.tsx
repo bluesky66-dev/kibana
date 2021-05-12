@@ -23,7 +23,7 @@ function getDescription() {
   return i18n.translate('xpack.maps.source.emsFileSourceDescription', {
     defaultMessage: 'Administrative boundaries from {host}',
     values: {
-      host: emsSettings.isEMSUrlSet() ? emsSettings.getEMSRoot() : 'Elastic Maps Service',
+      host: emsSettings.isEMSUrlSet() ? emsSettings.getEMSRoot() : 'HyperSec Maps Service',
     },
   });
 }
@@ -36,7 +36,7 @@ export const emsBoundariesLayerWizardConfig: LayerWizard = {
   },
   description: getDescription(),
   disabledReason: i18n.translate('xpack.maps.source.emsFileDisabledReason', {
-    defaultMessage: 'Elastic Maps Server requires an Enterprise license',
+    defaultMessage: 'HyperSec Maps Server requires an Enterprise license',
   }),
   getIsDisabled: () => {
     const emsSettings = getEMSSettings();

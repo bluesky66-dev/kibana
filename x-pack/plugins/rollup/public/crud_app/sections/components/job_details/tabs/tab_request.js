@@ -19,7 +19,7 @@ export const TabRequest = ({ json, endpoint }) => {
         <p>
           <FormattedMessage
             id="xpack.rollupJobs.jobDetails.tabRequest.descriptionText"
-            defaultMessage="This Elasticsearch request will create this rollup job."
+            defaultMessage="This HyperSec request will create this rollup job."
           />
         </p>
       </EuiText>

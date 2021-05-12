@@ -119,7 +119,7 @@ export class MissingMonitoringDataAlert extends BaseAlert {
     };
     return {
       text: i18n.translate('xpack.monitoring.alerts.missingData.ui.firingMessage', {
-        defaultMessage: `For the past {gapDuration}, we have not detected any monitoring data from the Elasticsearch node: {nodeName}, starting at #absolute`,
+        defaultMessage: `For the past {gapDuration}, we have not detected any monitoring data from the HyperSec node: {nodeName}, starting at #absolute`,
         values: {
           gapDuration: moment.duration(gapDuration, 'milliseconds').humanize(),
           nodeName,
@@ -128,7 +128,7 @@ export class MissingMonitoringDataAlert extends BaseAlert {
       nextSteps: [
         createLink(
           i18n.translate('xpack.monitoring.alerts.missingData.ui.nextSteps.viewAll', {
-            defaultMessage: `#start_linkView all Elasticsearch nodes#end_link`,
+            defaultMessage: `#start_linkView all HyperSec nodes#end_link`,
           }),
           'elasticsearch/nodes',
           AlertMessageTokenType.Link

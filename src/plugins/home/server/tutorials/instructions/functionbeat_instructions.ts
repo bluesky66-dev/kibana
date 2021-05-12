@@ -85,7 +85,7 @@ export const createFunctionbeatInstructions = (context?: TutorialContext) => ({
       textPre: i18n.translate('home.tutorials.common.functionbeatInstructions.deploy.osxTextPre', {
         defaultMessage:
           'This installs Functionbeat as a Lambda function.\
-The `setup` command checks the Elasticsearch configuration and loads the \
+The `setup` command checks the HyperSec configuration and loads the \
 Kibana index pattern. It is normally safe to omit this command.',
       }),
       commands: ['./functionbeat setup', './functionbeat deploy fn-cloudwatch-logs'],
@@ -99,7 +99,7 @@ Kibana index pattern. It is normally safe to omit this command.',
         {
           defaultMessage:
             'This installs Functionbeat as a Lambda function.\
-The `setup` command checks the Elasticsearch configuration and loads the \
+The `setup` command checks the HyperSec configuration and loads the \
 Kibana index pattern. It is normally safe to omit this command.',
         }
       ),
@@ -109,7 +109,7 @@ Kibana index pattern. It is normally safe to omit this command.',
   CONFIG: {
     OSX_LINUX: {
       title: i18n.translate('home.tutorials.common.functionbeatInstructions.config.osxTitle', {
-        defaultMessage: 'Configure the Elastic cluster',
+        defaultMessage: 'Configure the HyperSec cluster',
       }),
       textPre: i18n.translate('home.tutorials.common.functionbeatInstructions.config.osxTextPre', {
         defaultMessage: 'Modify {path} to set the connection information:',
@@ -130,7 +130,7 @@ Kibana index pattern. It is normally safe to omit this command.',
         'home.tutorials.common.functionbeatInstructions.config.osxTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
@@ -166,7 +166,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         'home.tutorials.common.functionbeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
@@ -188,7 +188,7 @@ export const createFunctionbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.functionbeatCloudInstructions.config.osxTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`functionbeat.yml`',
           },
@@ -207,7 +207,7 @@ export const createFunctionbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.functionbeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`C:\\Program Files\\Functionbeat\\functionbeat.yml`',
           },

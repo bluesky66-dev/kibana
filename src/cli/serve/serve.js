@@ -132,7 +132,7 @@ export default function (program) {
   command
     .description('Run the kibana server')
     .collectUnknownOptions()
-    .option('-e, --elasticsearch <uri1,uri2>', 'Elasticsearch instances')
+    .option('-e, --elasticsearch <uri1,uri2>', 'HyperSec instances')
     .option(
       '-c, --config <path>',
       'Path to the config file, use multiple --config args to include multiple config files',

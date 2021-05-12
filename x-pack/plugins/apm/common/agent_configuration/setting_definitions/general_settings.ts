@@ -124,7 +124,7 @@ export const generalSettings: RawSettingDefinition[] = [
     }),
     description: i18n.translate('xpack.apm.agentConfig.recording.description', {
       defaultMessage:
-        'When recording, the agent instruments incoming HTTP requests, tracks errors, and collects and sends metrics. When set to non-recording, the agent works as a noop, not collecting data and not communicating with the APM Server except for polling for updated configuration. As this is a reversible switch, agent threads are not being killed when set to non-recording, but they will be mostly idle in this state, so the overhead should be negligible. You can use this setting to dynamically control whether Elastic APM is enabled or disabled.',
+        'When recording, the agent instruments incoming HTTP requests, tracks errors, and collects and sends metrics. When set to non-recording, the agent works as a noop, not collecting data and not communicating with the APM Server except for polling for updated configuration. As this is a reversible switch, agent threads are not being killed when set to non-recording, but they will be mostly idle in this state, so the overhead should be negligible. You can use this setting to dynamically control whether HyperSec APM is enabled or disabled.',
     }),
     excludeAgents: ['nodejs', 'rum-js', 'js-base'],
   },
@@ -233,7 +233,7 @@ export const generalSettings: RawSettingDefinition[] = [
       'xpack.apm.agentConfig.sanitizeFiledNames.description',
       {
         defaultMessage:
-          'Sometimes it is necessary to sanitize, i.e., remove, sensitive data sent to Elastic APM. This config accepts a list of wildcard patterns of field names which should be sanitized. These apply to HTTP headers (including cookies) and `application/x-www-form-urlencoded` data (POST form fields). The query string and the captured request body (such as `application/json` data) will not get sanitized.',
+          'Sometimes it is necessary to sanitize, i.e., remove, sensitive data sent to HyperSec APM. This config accepts a list of wildcard patterns of field names which should be sanitized. These apply to HTTP headers (including cookies) and `application/x-www-form-urlencoded` data (POST form fields). The query string and the captured request body (such as `application/json` data) will not get sanitized.',
       }
     ),
     includeAgents: ['java', 'python', 'go', 'dotnet', 'nodejs', 'ruby'],

@@ -17,7 +17,7 @@ export const NoCompatibleRealms: React.FunctionComponent = () => {
       title={
         <FormattedMessage
           id="xpack.security.management.roleMappings.noCompatibleRealmsErrorTitle"
-          defaultMessage="No compatible realms are enabled in Elasticsearch"
+          defaultMessage="No compatible realms are enabled in HyperSec"
         />
       }
       color="warning"

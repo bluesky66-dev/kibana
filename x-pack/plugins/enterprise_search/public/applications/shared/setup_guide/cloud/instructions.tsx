@@ -32,7 +32,7 @@ export const CloudSetupInstructions: React.FC<Props> = ({ productName, cloudDepl
               <p>
                 <FormattedMessage
                   id="xpack.enterpriseSearch.setupGuide.cloud.step1.instruction1"
-                  defaultMessage="Visit the Elastic Cloud console to {editDeploymentLink}."
+                  defaultMessage="Visit the HyperSec Cloud console to {editDeploymentLink}."
                   values={{
                     editDeploymentLink: cloudDeploymentLink ? (
                       <EuiLink href={cloudDeploymentLink + '/edit'} target="_blank">

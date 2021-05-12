@@ -101,7 +101,7 @@ describe('utils', () => {
 
       expect(res).toEqual({
         short_description: 'a title',
-        description: 'a description (created at 2020-03-13T08:34:53.450Z by Elastic User)',
+        description: 'a description (created at 2020-03-13T08:34:53.450Z by HyperSec User)',
       });
     });
 
@@ -125,14 +125,14 @@ describe('utils', () => {
         fields,
         currentIncident: {
           short_description: 'first title',
-          description: 'first description (created at 2020-03-13T08:34:53.450Z by Elastic User)',
+          description: 'first description (created at 2020-03-13T08:34:53.450Z by HyperSec User)',
         },
       });
 
       expect(res).toEqual({
         short_description: 'a title',
         description:
-          'first description (created at 2020-03-13T08:34:53.450Z by Elastic User) \r\na description (updated at 2020-03-15T08:34:53.450Z by Another User)',
+          'first description (created at 2020-03-13T08:34:53.450Z by HyperSec User) \r\na description (updated at 2020-03-15T08:34:53.450Z by Another User)',
       });
     });
 
@@ -539,7 +539,7 @@ describe('utils', () => {
           commentId: 'comment-user-1',
         },
         {
-          comment: 'Elastic Security Alerts attached to the case: 3',
+          comment: 'HyperSec Security Alerts attached to the case: 3',
           commentId: 'mock-id-1-total-alerts',
         },
       ]);
@@ -569,7 +569,7 @@ describe('utils', () => {
           commentId: 'comment-user-1',
         },
         {
-          comment: 'Elastic Security Alerts attached to the case: 4',
+          comment: 'HyperSec Security Alerts attached to the case: 4',
           commentId: 'mock-id-1-total-alerts',
         },
       ]);
@@ -665,7 +665,7 @@ describe('utils', () => {
             pushed_at: '2021-02-03T17:45:29.400Z',
             pushed_by: {
               email: 'elastic@elastic.co',
-              full_name: 'Elastic',
+              full_name: 'HyperSec',
               username: 'elastic',
             },
           },
@@ -691,12 +691,12 @@ describe('utils', () => {
             action_at: '2021-02-03T17:45:29.400Z',
             action_by: {
               email: 'elastic@elastic.co',
-              full_name: 'Elastic',
+              full_name: 'HyperSec',
               username: 'elastic',
             },
             new_value:
               // The connector id is  123
-              '{"pushed_at":"2021-02-03T17:45:29.400Z","pushed_by":{"username":"elastic","full_name":"Elastic","email":"elastic@elastic.co"},"connector_id":"123","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
+              '{"pushed_at":"2021-02-03T17:45:29.400Z","pushed_by":{"username":"elastic","full_name":"HyperSec","email":"elastic@elastic.co"},"connector_id":"123","connector_name":"ServiceNow SN","external_id":"external-id","external_title":"SIR0010037","external_url":"https://dev92273.service-now.com/nav_to.do?uri=sn_si_incident.do?sys_id=external-id"}',
             old_value: null,
             action_id: '9b91d8f0-6647-11eb-a291-51bf6b175a53',
             case_id: 'fcdedd20-6646-11eb-a291-51bf6b175a53',
@@ -716,7 +716,7 @@ describe('utils', () => {
             pushed_at: '2021-02-03T17:41:26.108Z',
             pushed_by: {
               email: 'elastic@elastic.co',
-              full_name: 'Elastic',
+              full_name: 'HyperSec',
               username: 'elastic',
             },
           },

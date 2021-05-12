@@ -21,7 +21,7 @@ const createCrumb = (url, label, testSubj, ignoreGlobalState = false) => {
 function getElasticsearchBreadcrumbs(mainInstance) {
   const breadcrumbs = [];
   if (mainInstance.instance) {
-    breadcrumbs.push(createCrumb('#/elasticsearch', 'Elasticsearch'));
+    breadcrumbs.push(createCrumb('#/elasticsearch', 'HyperSec'));
     if (mainInstance.name === 'indices') {
       breadcrumbs.push(
         createCrumb(
@@ -61,7 +61,7 @@ function getElasticsearchBreadcrumbs(mainInstance) {
     breadcrumbs.push(createCrumb(null, mainInstance.instance));
   } else {
     // don't link to Overview when we're possibly on Overview or its sibling tabs
-    breadcrumbs.push(createCrumb(null, 'Elasticsearch'));
+    breadcrumbs.push(createCrumb(null, 'HyperSec'));
   }
   return breadcrumbs;
 }

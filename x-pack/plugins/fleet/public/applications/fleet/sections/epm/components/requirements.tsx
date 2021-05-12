@@ -44,7 +44,7 @@ export function Requirements(props: RequirementsProps) {
         <EuiFlexItem>
           <EuiTitle>
             <EuiText>
-              <h4>Elastic Stack Compatibility</h4>
+              <h4>HyperSec Stack Compatibility</h4>
             </EuiText>
           </EuiTitle>
         </EuiFlexItem>

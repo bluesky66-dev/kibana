@@ -37,7 +37,7 @@ export const SyntheticsCallout = () => {
     <>
       <EuiCallOut
         title={i18n.translate('xpack.uptime.overview.pageHeader.syntheticsCallout.title', {
-          defaultMessage: 'Elastic Synthetics',
+          defaultMessage: 'HyperSec Synthetics',
         })}
         iconType="beaker"
       >

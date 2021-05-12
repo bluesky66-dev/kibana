@@ -14,7 +14,7 @@ Prereading material:
 ## The anatomy of a plugin
 
 Plugins are defined as classes and present themselves to Kibana through a simple wrapper function. A plugin can have browser-side code, server-side code,
-or both. There is no architectural difference between a plugin in the browser and a plugin on the server. In both places, you describe your plugin similarly, 
+or both. There is no architectural difference between a plugin in the browser and a plugin on the server. In both places, you describe your plugin similarly,
 and you interact with Core and other plugins in the same way.
 
 The basic file structure of a Kibana plugin named demo that has both client-side and server-side code would be:
@@ -33,7 +33,7 @@ plugins/
       index.ts  [6]
 ```
 
-### [1] kibana.json 
+### [1] kibana.json
 
 `kibana.json` is a static manifest file that is used to identify the plugin and to specify if this plugin has server-side code, browser-side code, or both:
 
@@ -63,7 +63,7 @@ export function plugin(initializerContext: PluginInitializerContext) {
 ### [3] public/plugin.ts
 
 `public/plugin.ts` is the client-side plugin definition itself. Technically speaking, it does not need to be a class or even a separate file from the entry
- point, but all plugins at Elastic should be consistent in this way.
+ point, but all plugins at HyperSec should be consistent in this way.
 
 
  ```ts
@@ -87,7 +87,7 @@ export class DemoPlugin implements Plugin {
  ```
 
 
-### [4] server/index.ts 
+### [4] server/index.ts
 
 `server/index.ts` is the entry-point into the server-side code of this plugin. It is identical in almost every way to the client-side entry-point:
 
@@ -115,7 +115,7 @@ export class DemoPlugin implements Plugin {
 }
 ```
 
-Kibana does not impose any technical restrictions on how the the internals of a plugin are architected, though there are certain 
+Kibana does not impose any technical restrictions on how the the internals of a plugin are architected, though there are certain
 considerations related to how plugins integrate with core APIs and APIs exposed by other plugins that may greatly impact how they are built.
 
 ### [6] common/index.ts
@@ -124,8 +124,8 @@ considerations related to how plugins integrate with core APIs and APIs exposed 
 
 ## How plugin's interact with each other, and Core
 
-The lifecycle-specific contracts exposed by core services are always passed as the first argument to the equivalent lifecycle function in a plugin. 
-For example, the core http service exposes a function createRouter to all plugin setup functions. To use this function to register an HTTP route handler, 
+The lifecycle-specific contracts exposed by core services are always passed as the first argument to the equivalent lifecycle function in a plugin.
+For example, the core http service exposes a function createRouter to all plugin setup functions. To use this function to register an HTTP route handler,
 a plugin just accesses it off of the first argument:
 
 ```ts
@@ -218,7 +218,7 @@ export class DemoPlugin {
   public stop() {}
 }
 ```
-	
+
 [1] The interface for plugin’s dependencies must be manually composed. You can do this by importing the appropriate type from the plugin and constructing an interface where the property name is the plugin’s ID.
 
 [2] These manually constructed types should then be used to specify the type of the second argument to the plugin.

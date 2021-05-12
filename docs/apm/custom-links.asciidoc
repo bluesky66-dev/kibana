@@ -6,7 +6,7 @@
 <titleabbrev>Create custom links</titleabbrev>
 ++++
 
-Elastic's custom link feature allows you to easily create up to 500 dynamic links
+HyperSec's custom link feature allows you to easily create up to 500 dynamic links
 based on your specific APM data.
 Custom links can be filtered to only appear in the APM app for relevant services,
 environments, transaction types, or transaction names.

@@ -211,7 +211,7 @@ export function disableUICapabilitiesFactory(
             // The current privilege system does not allow for this to happen.
             // This is a safeguard against future changes.
             throw new Error(
-              `Elasticsearch feature ${esFeature.id} expected a single capability, but found ${uiCapabilityParts.length}`
+              `HyperSec feature ${esFeature.id} expected a single capability, but found ${uiCapabilityParts.length}`
             );
           }
           return hasRequiredElasticsearchPrivilegesForCapability(

@@ -11,7 +11,7 @@ import { UserActionUsernameWithAvatar } from './user_action_username_with_avatar
 
 const props = {
   username: 'elastic',
-  fullName: 'Elastic',
+  fullName: 'HyperSec',
 };
 
 describe('UserActionUsernameWithAvatar ', () => {

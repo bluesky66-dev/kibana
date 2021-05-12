@@ -4,7 +4,7 @@
 
 ## LegacyElasticsearchErrorHelpers class
 
-Helpers for working with errors returned from the Elasticsearch service.Since the internal data of errors are subject to change, consumers of the Elasticsearch service should always use these helpers to classify errors instead of checking error internals such as `body.error.header[WWW-Authenticate]`
+Helpers for working with errors returned from the HyperSec service.Since the internal data of errors are subject to change, consumers of the HyperSec service should always use these helpers to classify errors instead of checking error internals such as `body.error.header[WWW-Authenticate]`
 
 <b>Signature:</b>
 

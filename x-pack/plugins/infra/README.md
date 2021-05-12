@@ -33,7 +33,7 @@ this section details a few plugin-specific aspects.
 
 The *Metrics UI* displays [ECS]-compatible metric data from indices
 matching the `metricbeat-*` pattern by default. The primary way to ingest these
-is by running [Metricbeat] to deliver metrics to the development Elasticsearch
+is by running [Metricbeat] to deliver metrics to the development HyperSec
 cluster. It can be used to ingest development host metrics using the `system`
 module.
 
@@ -49,7 +49,7 @@ fields enable additional functionality such as linking to and from other
 solutions.
 
 The primary way to ingest such log data is via [Filebeat]. A convenient source
-of log entries are the Kibana and Elasticsearch log files produced by the
+of log entries are the Kibana and HyperSec log files produced by the
 development environment itself. These can easily be consumed by enabling the modules
 
 ```

@@ -9,10 +9,10 @@ For information about how to debug unit tests, refer to <<debugging-unit-tests>>
 `yarn debug` will start the server with Node's inspect flag. {kib}'s development mode will start three processes on ports `9229`, `9230`, and `9231`. Chrome's developer tools need to be configured to connect to all three connections. Add `localhost:<port>` for each {kib} process in Chrome's developer tools connection tab.
 
 [discrete]
-=== Instrumenting with Elastic APM
+=== Instrumenting with HyperSec APM
 
 {kib} ships with the
-https://github.com/elastic/apm-agent-nodejs[Elastic APM Node.js Agent]
+https://github.com/elastic/apm-agent-nodejs[HyperSec APM Node.js Agent]
 built-in for debugging purposes.
 
 With an application as varied and complex as Kibana has become, it's not practical or scalable to craft all possible performance measurements by hand ahead of time. As such, we need to rely on tooling to help us catch things we may otherwise have missed.
@@ -28,7 +28,7 @@ This type of data can help us identify unknown bottlenecks, spot when a performa
 The default APM configuration is meant to be used by core {kib} developers
 only, but it can easily be re-configured to your needs. In its default
 configuration it’s disabled and will, once enabled, send APM data to a
-centrally managed {es} cluster accessible only to Elastic
+centrally managed {es} cluster accessible only to HyperSec
 employees.
 
 To change the location where data is sent, use the

@@ -4,7 +4,7 @@
 
 ## SavedObjectsRepository.closePointInTime() method
 
-Closes a Point In Time (PIT) by ID. This simply proxies the request to ES via the Elasticsearch client, and is included in the Saved Objects Client as a convenience for consumers who are using `openPointInTimeForType`<!-- -->.
+Closes a Point In Time (PIT) by ID. This simply proxies the request to ES via the HyperSec client, and is included in the Saved Objects Client as a convenience for consumers who are using `openPointInTimeForType`<!-- -->.
 
 <b>Signature:</b>
 
@@ -27,7 +27,7 @@ closePointInTime(id: string, options?: SavedObjectsClosePointInTimeOptions): Pro
 
 ## Remarks
 
-While the `keepAlive` that is provided will cause a PIT to automatically close, it is highly recommended to explicitly close a PIT when you are done with it in order to avoid consuming unneeded resources in Elasticsearch.
+While the `keepAlive` that is provided will cause a PIT to automatically close, it is highly recommended to explicitly close a PIT when you are done with it in order to avoid consuming unneeded resources in HyperSec.
 
 ## Example
 

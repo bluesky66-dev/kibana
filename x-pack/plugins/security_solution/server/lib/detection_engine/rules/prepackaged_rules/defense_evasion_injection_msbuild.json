@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "An instance of MSBuild, the Microsoft Build Engine, created a thread in another process. This technique is sometimes used to evade detection or elevate privileges.",
   "false_positives": [
@@ -11,14 +11,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Process Injection by the Microsoft Build Engine",
   "query": "process.name:MSBuild.exe and event.action:\"CreateRemoteThread detected (rule: CreateRemoteThread)\"",
   "risk_score": 21,
   "rule_id": "9d110cb3-5f4b-4c9a-b9f5-53f0a1707ae9",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

@@ -4,7 +4,7 @@
 
 ## SavedObjectsRemoveReferencesToOptions.refresh property
 
-The Elasticsearch Refresh setting for this operation. Defaults to `true`
+The HyperSec Refresh setting for this operation. Defaults to `true`
 
 <b>Signature:</b>
 

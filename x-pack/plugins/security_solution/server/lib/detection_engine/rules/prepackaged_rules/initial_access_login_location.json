@@ -1,13 +1,13 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies that a login attempt has happened from a forbidden location.",
   "index": [
     "auditbeat-*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Auditd Login from Forbidden Location",
   "query": "event.module:auditd and event.action:\"attempted-log-in-from-unusual-place-to\"",
   "references": [
@@ -17,7 +17,7 @@
   "rule_id": "cab4f01c-793f-4a54-a03e-e5d85b96d7af",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

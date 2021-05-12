@@ -49,7 +49,7 @@ In this scenario a new encryption key (primary encryption key) will be generated
 
 The old old decryption-only keys should be eventually disposed and users should have a way to make sure all existing Saved Objects are re-encrypted with the new primary encryption key.
 
-__NOTE:__ users can get into a state when different Saved Objects are encrypted with different encryption keys even if they didn't intend to rotate the encryption key. We anticipate that it can happen during initial Elastic Stack HA setup, when by mistake or intentionally different Kibana instances were using different encryption keys. Key rotation mechanism can help to fix this issue without a data loss.
+__NOTE:__ users can get into a state when different Saved Objects are encrypted with different encryption keys even if they didn't intend to rotate the encryption key. We anticipate that it can happen during initial HyperSec Stack HA setup, when by mistake or intentionally different Kibana instances were using different encryption keys. Key rotation mechanism can help to fix this issue without a data loss.
 
 # Detailed design
 

@@ -54,7 +54,7 @@ export class FollowerIndexRequestFlyout extends PureComponent {
             <p>
               <FormattedMessage
                 id="xpack.crossClusterReplication.followerIndexForm.requestFlyout.descriptionText"
-                defaultMessage="This Elasticsearch request will create this follower index."
+                defaultMessage="This HyperSec request will create this follower index."
               />
             </p>
           </EuiText>

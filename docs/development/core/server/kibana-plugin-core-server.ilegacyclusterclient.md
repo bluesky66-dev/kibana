@@ -9,7 +9,7 @@
 > Use [IClusterClient](./kibana-plugin-core-server.iclusterclient.md)<!-- -->.
 > 
 
-Represents an Elasticsearch cluster API client created by the platform. It allows to call API on behalf of the internal Kibana user and the actual user that is derived from the request headers (via `asScoped(...)`<!-- -->).
+Represents an HyperSec cluster API client created by the platform. It allows to call API on behalf of the internal Kibana user and the actual user that is derived from the request headers (via `asScoped(...)`<!-- -->).
 
 See [LegacyClusterClient](./kibana-plugin-core-server.legacyclusterclient.md)<!-- -->.
 

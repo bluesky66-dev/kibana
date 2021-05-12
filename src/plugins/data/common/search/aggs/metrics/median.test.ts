@@ -45,7 +45,7 @@ describe('AggTypeMetricMedianProvider class', () => {
     );
   });
 
-  it('requests the percentiles aggregation in the Elasticsearch query DSL', () => {
+  it('requests the percentiles aggregation in the HyperSec query DSL', () => {
     const dsl: Record<string, any> = aggConfigs.toDsl();
 
     expect(dsl.median.percentiles.field).toEqual('bytes');

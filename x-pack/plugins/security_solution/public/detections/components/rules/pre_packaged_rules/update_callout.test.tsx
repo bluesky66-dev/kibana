@@ -49,7 +49,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout"]').find('p').text()).toEqual(
-      'You can update 1 Elastic prebuilt ruleRelease notes'
+      'You can update 1 HyperSec prebuilt ruleRelease notes'
     );
   });
 
@@ -64,7 +64,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout-button"]').prop('children')).toEqual(
-      'Update 1 Elastic prebuilt rule'
+      'Update 1 HyperSec prebuilt rule'
     );
   });
 
@@ -79,7 +79,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout"]').find('p').text()).toEqual(
-      'You can update 1 Elastic prebuilt timelineRelease notes'
+      'You can update 1 HyperSec prebuilt timelineRelease notes'
     );
   });
 
@@ -94,7 +94,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout-button"]').prop('children')).toEqual(
-      'Update 1 Elastic prebuilt timeline'
+      'Update 1 HyperSec prebuilt timeline'
     );
   });
 
@@ -109,7 +109,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout"]').find('p').text()).toEqual(
-      'You can update 1 Elastic prebuilt rule and 1 Elastic prebuilt timeline. Note that this will reload deleted Elastic prebuilt rules.Release notes'
+      'You can update 1 HyperSec prebuilt rule and 1 HyperSec prebuilt timeline. Note that this will reload deleted HyperSec prebuilt rules.Release notes'
     );
   });
 
@@ -124,7 +124,7 @@ describe('UpdatePrePackagedRulesCallOut', () => {
     );
 
     expect(wrapper.find('[data-test-subj="update-callout-button"]').prop('children')).toEqual(
-      'Update 1 Elastic prebuilt rule and 1 Elastic prebuilt timeline'
+      'Update 1 HyperSec prebuilt rule and 1 HyperSec prebuilt timeline'
     );
   });
 });

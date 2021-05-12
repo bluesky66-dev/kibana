@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies when an Event Hub Authorization Rule is created or updated in Azure. An authorization rule is associated with specific rights, and carries a pair of cryptographic keys. When you create an Event Hubs namespace, a policy rule named RootManageSharedAccessKey is created for the namespace. This has manage permissions for the entire namespace and it's recommended that you treat this rule like an administrative root account and don't use it in your application.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Azure Event Hub Authorization Rule Created or Updated",
   "note": "The Azure Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.activitylogs and azure.activitylogs.operation_name:\"MICROSOFT.EVENTHUB/NAMESPACES/AUTHORIZATIONRULES/WRITE\" and event.outcome:(Success or success)",
@@ -23,7 +23,7 @@
   "rule_id": "b6dce542-2b75-4ffb-b7d6-38787298ba9d",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

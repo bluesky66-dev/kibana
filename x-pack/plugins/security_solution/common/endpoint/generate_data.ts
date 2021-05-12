@@ -1263,7 +1263,7 @@ export class EndpointDocGenerator {
       namespace: 'default',
       package: {
         name: 'endpoint',
-        title: 'Elastic Endpoint',
+        title: 'HyperSec Endpoint',
         version: '1.0.0',
       },
       revision: 1,
@@ -1296,9 +1296,9 @@ export class EndpointDocGenerator {
   public generateEpmPackage(): GetPackagesResponse['response'][0] {
     return {
       name: 'endpoint',
-      title: 'Elastic Endpoint',
+      title: 'HyperSec Endpoint',
       version: '0.5.0',
-      description: 'This is the Elastic Endpoint package.',
+      description: 'This is the HyperSec Endpoint package.',
       type: 'integration',
       download: '/epr/endpoint/endpoint-0.5.0.tar.gz',
       path: '/package/endpoint/0.5.0',
@@ -1467,7 +1467,7 @@ export class EndpointDocGenerator {
               },
               {
                 name: 'read_elasticsearch_config',
-                message: 'Successfully read Elasticsearch configuration',
+                message: 'Successfully read HyperSec configuration',
                 status: HostPolicyResponseActionStatus.success,
               },
               {

@@ -18,7 +18,7 @@ function parseResponse(request: SearchResponse<any>) {
   if (!response || !response._scroll_id) {
     throw new Error(
       i18n.translate('xpack.reporting.exportTypes.csv.hitIterator.expectedScrollIdErrorMessage', {
-        defaultMessage: 'Expected {scrollId} in the following Elasticsearch response: {response}',
+        defaultMessage: 'Expected {scrollId} in the following HyperSec response: {response}',
         values: { response: JSON.stringify(response), scrollId: '_scroll_id' },
       })
     );
@@ -27,7 +27,7 @@ function parseResponse(request: SearchResponse<any>) {
   if (!response.hits) {
     throw new Error(
       i18n.translate('xpack.reporting.exportTypes.csv.hitIterator.expectedHitsErrorMessage', {
-        defaultMessage: 'Expected {hits} in the following Elasticsearch response: {response}',
+        defaultMessage: 'Expected {hits} in the following HyperSec response: {response}',
         values: { response: JSON.stringify(response), hits: 'hits' },
       })
     );

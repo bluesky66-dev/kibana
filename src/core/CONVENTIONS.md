@@ -34,7 +34,7 @@ Definition of done for a feature:
 ## Technical Conventions
 ### Plugin Structure
 
-All Kibana plugins built at Elastic should follow the same structure.
+All Kibana plugins built at HyperSec should follow the same structure.
 
 ```
 my_plugin/

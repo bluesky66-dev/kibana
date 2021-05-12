@@ -160,7 +160,7 @@ export const SettingsPage: React.FC<Props> = memo(({ packageInfo }: Props) => {
                   <p>
                     <FormattedMessage
                       id="xpack.fleet.integrations.settings.packageInstallDescription"
-                      defaultMessage="Install this integration to setup Kibana and Elasticsearch assets designed for {title} data."
+                      defaultMessage="Install this integration to setup Kibana and HyperSec assets designed for {title} data."
                       values={{
                         title,
                       }}
@@ -184,7 +184,7 @@ export const SettingsPage: React.FC<Props> = memo(({ packageInfo }: Props) => {
                   <p>
                     <FormattedMessage
                       id="xpack.fleet.integrations.settings.packageUninstallDescription"
-                      defaultMessage="Remove Kibana and Elasticsearch assets that were installed by this integration."
+                      defaultMessage="Remove Kibana and HyperSec assets that were installed by this integration."
                     />
                   </p>
                 </div>

@@ -7,7 +7,7 @@
 
 import { checkNodesSettings } from '.';
 
-describe('Elasticsearch Nodes Settings', () => {
+describe('HyperSec Nodes Settings', () => {
   const getReq = (response) => {
     return {
       server: {

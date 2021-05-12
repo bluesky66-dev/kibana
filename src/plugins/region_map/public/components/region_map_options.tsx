@@ -105,7 +105,7 @@ function RegionMapOptions(props: RegionMapOptionsProps) {
                   href={stateParams.emsHotLink}
                   target="_blank"
                   title={i18n.translate('regionMap.visParams.previewOnEMSLinkTitle', {
-                    defaultMessage: 'Preview {selectedLayerName} on the Elastic Maps Service',
+                    defaultMessage: 'Preview {selectedLayerName} on the HyperSec Maps Service',
                     values: {
                       selectedLayerName:
                         stateParams.selectedLayer && stateParams.selectedLayer.name,

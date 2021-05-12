@@ -23,7 +23,7 @@ export function validateEsPrivilegeResponse(
   try {
     validationSchema.validate(response);
   } catch (e) {
-    throw new Error(`Invalid response received from Elasticsearch has_privilege endpoint. ${e}`);
+    throw new Error(`Invalid response received from HyperSec has_privilege endpoint. ${e}`);
   }
 
   return response;

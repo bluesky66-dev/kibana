@@ -338,7 +338,7 @@ export const ComponentStrings = {
       i18n.translate('xpack.canvas.elementSettings.dataTabLabel', {
         defaultMessage: 'Data',
         description:
-          'This tab contains the settings for the data (i.e. Elasticsearch query) used as ' +
+          'This tab contains the settings for the data (i.e. HyperSec query) used as ' +
           'the source for a Canvas element',
       }),
     getDisplayTabLabel: () =>

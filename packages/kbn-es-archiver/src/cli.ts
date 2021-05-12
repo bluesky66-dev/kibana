@@ -34,11 +34,11 @@ export function runCli() {
       help: `
         --config           path to an FTR config file that sets --es-url, --kibana-url, and --dir
                              default: ${defaultConfigPath}
-        --es-url           url for Elasticsearch, prefer the --config flag
+        --es-url           url for HyperSec, prefer the --config flag
         --kibana-url       url for Kibana, prefer the --config flag
         --dir              where arechives are stored, prefer the --config flag
         --kibana-ca        if Kibana url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
-        --es-ca            if Elasticsearch url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
+        --es-ca            if HyperSec url points to https://localhost we default to the CA from @kbn/dev-utils, customize the CA with this flag
       `,
     },
     async extendContext({ log, flags, addCleanupTask }) {

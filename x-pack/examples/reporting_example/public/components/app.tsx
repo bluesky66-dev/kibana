@@ -118,7 +118,7 @@ export const ReportingExampleApp = ({
                         <EuiFlexItem key={index} data-shared-item>
                           <EuiCard
                             icon={<EuiIcon size="xxl" type={`logo${item}`} />}
-                            title={`Elastic ${item}`}
+                            title={`HyperSec ${item}`}
                             description="Example of a card's description. Stick to one or two sentences."
                             onClick={() => {}}
                           />

@@ -10,7 +10,7 @@ import { forbidden } from '@hapi/boom';
 
 const updateModelSpy = jest.fn((properties) => properties);
 
-describe('Settings Enabler Class for calling API to update Elasticsearch Settings', () => {
+describe('Settings Enabler Class for calling API to update HyperSec Settings', () => {
   test('should return status from successfully calling API', async () => {
     const get$http = () => ({
       put() {

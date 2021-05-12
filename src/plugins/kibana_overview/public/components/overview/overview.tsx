@@ -187,7 +187,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
                       <h2 id="kbnOverviewMore__title">
                         <FormattedMessage
                           id="kibanaOverview.more.title"
-                          defaultMessage="Do more with Elastic"
+                          defaultMessage="Do more with HyperSec"
                         />
                       </h2>
                     </EuiTitle>

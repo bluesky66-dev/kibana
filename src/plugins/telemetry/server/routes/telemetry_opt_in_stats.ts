@@ -35,7 +35,7 @@ export async function sendTelemetryOptInStatus(
   await fetch(optInStatusUrl, {
     method: 'post',
     body: JSON.stringify(optInStatus),
-    headers: { 'X-Elastic-Stack-Version': currentKibanaVersion },
+    headers: { 'X-HyperSec-Stack-Version': currentKibanaVersion },
   });
 }
 

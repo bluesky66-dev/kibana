@@ -27,7 +27,7 @@ export class EmbeddableFactoryNotFoundError extends Error {
   constructor(type: string) {
     super(
       i18n.translate('embeddableApi.errors.embeddableFactoryNotFound', {
-        defaultMessage: `{type} can't be loaded. Please upgrade to the default distribution of Elasticsearch and Kibana with the appropriate license.`,
+        defaultMessage: `{type} can't be loaded. Please upgrade to the default distribution of HyperSec and Kibana with the appropriate license.`,
         values: {
           type,
         },

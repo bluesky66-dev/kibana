@@ -56,7 +56,7 @@ export class GraphPlugin
           defaultMessage: 'Reveal patterns and relationships.',
         }),
         description: i18n.translate('xpack.graph.pluginDescription', {
-          defaultMessage: 'Surface and analyze relevant relationships in your Elasticsearch data.',
+          defaultMessage: 'Surface and analyze relevant relationships in your HyperSec data.',
         }),
         icon: 'graphApp',
         path: '/app/graph',

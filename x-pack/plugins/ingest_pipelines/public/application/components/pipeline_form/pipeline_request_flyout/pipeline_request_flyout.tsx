@@ -66,7 +66,7 @@ export const PipelineRequestFlyout: React.FunctionComponent<Props> = ({
           <p>
             <FormattedMessage
               id="xpack.ingestPipelines.requestFlyout.descriptionText"
-              defaultMessage="This Elasticsearch request will create or update the pipeline."
+              defaultMessage="This HyperSec request will create or update the pipeline."
             />
           </p>
         </EuiText>

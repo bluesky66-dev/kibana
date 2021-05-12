@@ -150,7 +150,7 @@ export const createHeartbeatInstructions = (context?: TutorialContext) => ({
       ],
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.osxTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -180,7 +180,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.debTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -210,7 +210,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.heartbeatInstructions.config.rpmTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
@@ -242,7 +242,7 @@ and {kibanaUrlTemplate} is the URL of Kibana.',
         'home.tutorials.common.heartbeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
 and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
@@ -264,7 +264,7 @@ export const createHeartbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.heartbeatCloudInstructions.config.osxTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`heartbeat.yml`',
           },
@@ -280,7 +280,7 @@ export const createHeartbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.heartbeatCloudInstructions.config.debTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`/etc/heartbeat/heartbeat.yml`',
           },
@@ -296,7 +296,7 @@ export const createHeartbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.heartbeatCloudInstructions.config.rpmTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`/etc/heartbeat/heartbeat.yml`',
           },
@@ -315,7 +315,7 @@ export const createHeartbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.heartbeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
           values: {
             path: '`C:\\Program Files\\Heartbeat\\heartbeat.yml`',
           },

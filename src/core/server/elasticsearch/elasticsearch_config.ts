@@ -127,11 +127,11 @@ const deprecations: ConfigDeprecationProvider = () => [
     }
     if (es.ssl?.key !== undefined && es.ssl?.certificate === undefined) {
       log(
-        `Setting [${fromPath}.ssl.key] without [${fromPath}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.`
+        `Setting [${fromPath}.ssl.key] without [${fromPath}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.`
       );
     } else if (es.ssl?.certificate !== undefined && es.ssl?.key === undefined) {
       log(
-        `Setting [${fromPath}.ssl.certificate] without [${fromPath}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.`
+        `Setting [${fromPath}.ssl.certificate] without [${fromPath}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.`
       );
     } else if (es.logQueries === true) {
       log(
@@ -293,9 +293,9 @@ const readKeyAndCerts = (rawConfig: ElasticsearchConfigType) => {
       rawConfig.ssl.keystore.password
     );
     if (!keystore.key) {
-      throw new Error(`Did not find key in Elasticsearch keystore.`);
+      throw new Error(`Did not find key in HyperSec keystore.`);
     } else if (!keystore.cert) {
-      throw new Error(`Did not find certificate in Elasticsearch keystore.`);
+      throw new Error(`Did not find certificate in HyperSec keystore.`);
     }
     key = keystore.key;
     certificate = keystore.cert;

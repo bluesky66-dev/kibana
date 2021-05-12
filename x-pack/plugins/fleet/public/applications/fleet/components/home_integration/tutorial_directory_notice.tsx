@@ -71,7 +71,7 @@ const TutorialDirectoryNotice: TutorialDirectoryNoticeComponent = memo(() => {
         title={
           <FormattedMessage
             id="xpack.fleet.homeIntegration.tutorialDirectory.noticeTitle"
-            defaultMessage="{newPrefix} Elastic Agent and Fleet Beta"
+            defaultMessage="{newPrefix} HyperSec Agent and Fleet Beta"
             values={{
               newPrefix: (
                 <strong>
@@ -88,7 +88,7 @@ const TutorialDirectoryNotice: TutorialDirectoryNoticeComponent = memo(() => {
         <p>
           <FormattedMessage
             id="xpack.fleet.homeIntegration.tutorialDirectory.noticeText"
-            defaultMessage="The Elastic Agent provides a simple, unified way to add monitoring for logs, metrics, and other types of data to your hosts.
+            defaultMessage="The HyperSec Agent provides a simple, unified way to add monitoring for logs, metrics, and other types of data to your hosts.
                 You no longer need to install multiple Beats and other agents, which makes it easier and faster to deploy policies across your infrastructure.
                 For more information, read our {blogPostLink}."
             values={{

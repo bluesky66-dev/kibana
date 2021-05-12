@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies process execution followed by a file overwrite of an executable by the same parent process. This may indicate an evasion attempt to execute malicious code in a stealthy way.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential Process Herpaderping Attempt",
   "query": "sequence with maxspan=5s\n   [process where event.type == \"start\" and not process.parent.executable : \"C:\\\\Windows\\\\SoftwareDistribution\\\\*.exe\"] by host.id, process.executable, process.parent.entity_id\n   [file where event.type == \"change\" and event.action == \"overwrite\" and file.extension == \"exe\"] by host.id, file.path, process.entity_id\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "ccc55af4-9882-4c67-87b4-449a7ae8079c",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

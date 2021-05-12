@@ -210,7 +210,7 @@ export class AbstractESSource extends AbstractVectorSource implements IESSource 
 
       throw new Error(
         i18n.translate('xpack.maps.source.esSource.requestFailedErrorMessage', {
-          defaultMessage: `Elasticsearch search request failed, error: {message}`,
+          defaultMessage: `HyperSec search request failed, error: {message}`,
           values: { message: error.message },
         })
       );
@@ -464,7 +464,7 @@ export class AbstractESSource extends AbstractVectorSource implements IESSource 
         'xpack.maps.source.esSource.stylePropsMetaRequestDescription',
         {
           defaultMessage:
-            'Elasticsearch request retrieving field metadata used for calculating symbolization bands.',
+            'HyperSec request retrieving field metadata used for calculating symbolization bands.',
         }
       ),
       searchSessionId,

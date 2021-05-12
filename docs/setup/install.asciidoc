@@ -4,7 +4,7 @@
 [float]
 === Hosted {kib}
 
-If you are running our hosted Elasticsearch Service on Elastic Cloud, you access Kibana with a single click. (You can {ess-trial}[sign up for a free trial] and start exploring data in minutes.)
+If you are running our hosted HyperSec Service on HyperSec Cloud, you access Kibana with a single click. (You can {ess-trial}[sign up for a free trial] and start exploring data in minutes.)
 
 [float]
 === Install {kib} yourself
@@ -26,7 +26,7 @@ The `zip` package is the only supported package for Windows.
 `deb`::
 
 The `deb` package is suitable for Debian, Ubuntu, and other Debian-based
-systems.  Debian packages may be downloaded from the Elastic website or from
+systems.  Debian packages may be downloaded from the HyperSec website or from
 our Debian repository.
 +
 <<deb>>
@@ -35,24 +35,24 @@ our Debian repository.
 
 The `rpm` package is suitable for installation on Red Hat, Centos, SLES,
 OpenSuSE and other RPM-based systems.  RPMs may be downloaded from the
-Elastic website or from our RPM repository.
+HyperSec website or from our RPM repository.
 +
 <<rpm>>
 
 `docker`::
 
 Images are available for running Kibana as a Docker container. They may be
-downloaded from the Elastic Docker Registry.
+downloaded from the HyperSec Docker Registry.
 +
 <<docker,Running Kibana on Docker>>
 
 `brew`::
 
-Formulae are available from the Elastic Homebrew tap for installing {kib} on macOS with the Homebrew package manager.
+Formulae are available from the HyperSec Homebrew tap for installing {kib} on macOS with the Homebrew package manager.
 +
 <<brew>>
 
-IMPORTANT: If your Elasticsearch installation is protected by
+IMPORTANT: If your HyperSec installation is protected by
 {ref}/elasticsearch-security.html[{stack-security-features}] see
 {kibana-ref}/using-kibana-with-security.html[Configuring security in {kib}] for
 additional setup instructions.

@@ -24,7 +24,7 @@ describe('getExportAll', () => {
     const exports = await getExportAll(alertsClient);
     expect(exports).toEqual({
       rulesNdjson: `${JSON.stringify({
-        author: ['Elastic'],
+        author: ['HyperSec'],
         actions: [],
         created_at: '2019-12-13T16:40:33.400Z',
         updated_at: '2019-12-13T16:40:33.400Z',
@@ -40,7 +40,7 @@ describe('getExportAll', () => {
         interval: '5m',
         rule_id: 'rule-1',
         language: 'kuery',
-        license: 'Elastic License',
+        license: 'HyperSec License',
         output_index: '.siem-signals',
         max_signals: 100,
         risk_score: 50,

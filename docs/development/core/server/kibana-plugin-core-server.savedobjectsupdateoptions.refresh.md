@@ -4,7 +4,7 @@
 
 ## SavedObjectsUpdateOptions.refresh property
 
-The Elasticsearch Refresh setting for this operation
+The HyperSec Refresh setting for this operation
 
 <b>Signature:</b>
 

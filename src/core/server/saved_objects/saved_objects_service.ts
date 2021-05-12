@@ -393,7 +393,7 @@ export class SavedObjectsService
       );
     } else {
       this.logger.info(
-        'Waiting until all Elasticsearch nodes are compatible with Kibana before starting saved objects migrations...'
+        'Waiting until all HyperSec nodes are compatible with Kibana before starting saved objects migrations...'
       );
 
       // TODO: Move to Status Service https://github.com/elastic/kibana/issues/41983

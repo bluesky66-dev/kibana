@@ -36,10 +36,10 @@ export function initDeleteSpacesApi(deps: ExternalRouteDeps) {
           return response.notFound();
         } else if (SavedObjectsErrorHelpers.isEsCannotExecuteScriptError(error)) {
           log.error(
-            `Failed to delete space '${id}', cannot execute script in Elasticsearch query: ${error.message}`
+            `Failed to delete space '${id}', cannot execute script in HyperSec query: ${error.message}`
           );
           return response.customError(
-            wrapError(Boom.badRequest('Cannot execute script in Elasticsearch query'))
+            wrapError(Boom.badRequest('Cannot execute script in HyperSec query'))
           );
         }
         return response.customError(wrapError(error));

@@ -43,7 +43,7 @@ export const DocumentCreationButtons: React.FC<Props> = ({ disabled = false }) =
         <p>
           <FormattedMessage
             id="xpack.enterpriseSearch.appSearch.documentCreation.description"
-            defaultMessage="There are four ways to send documents to your engine for indexing. You can paste raw JSON, upload a {jsonCode} file, {postCode} to the {documentsApiLink} endpoint, or test drive the new Elastic Crawler (beta) to automatically index documents from a URL. Click on your choice below."
+            defaultMessage="There are four ways to send documents to your engine for indexing. You can paste raw JSON, upload a {jsonCode} file, {postCode} to the {documentsApiLink} endpoint, or test drive the new HyperSec Crawler (beta) to automatically index documents from a URL. Click on your choice below."
             values={{
               jsonCode: <EuiCode>.json</EuiCode>,
               postCode: <EuiCode>POST</EuiCode>,
@@ -110,7 +110,7 @@ export const DocumentCreationButtons: React.FC<Props> = ({ disabled = false }) =
               'xpack.enterpriseSearch.appSearch.documentCreation.buttons.betaTooltip',
               {
                 defaultMessage:
-                  'The Elastic Crawler is not GA. Please help us by reporting any bugs.',
+                  'The HyperSec Crawler is not GA. Please help us by reporting any bugs.',
               }
             )}
             to={crawlerLink}

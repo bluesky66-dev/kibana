@@ -105,7 +105,7 @@ describe('When calling package policy', () => {
           output_id: '',
           inputs: [],
           namespace: 'default',
-          package: { name: 'endpoint', title: 'Elastic Endpoint', version: '0.5.0' },
+          package: { name: 'endpoint', title: 'HyperSec Endpoint', version: '0.5.0' },
         },
       });
     };
@@ -195,7 +195,7 @@ describe('When calling package policy', () => {
             output_id: '',
             package: {
               name: 'endpoint',
-              title: 'Elastic Endpoint',
+              title: 'HyperSec Endpoint',
               version: '0.5.0',
             },
           })
@@ -226,7 +226,7 @@ describe('When calling package policy', () => {
           output_id: '',
           package: {
             name: 'endpoint',
-            title: 'Elastic Endpoint',
+            title: 'HyperSec Endpoint',
             version: '0.5.0',
           },
         });

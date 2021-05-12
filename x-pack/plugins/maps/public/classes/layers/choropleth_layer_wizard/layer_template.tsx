@@ -40,13 +40,13 @@ const BOUNDARIES_OPTIONS = [
   {
     id: BOUNDARIES_SOURCE.EMS,
     label: i18n.translate('xpack.maps.choropleth.boundaries.ems', {
-      defaultMessage: 'Administrative boundaries from Elastic Maps Service',
+      defaultMessage: 'Administrative boundaries from HyperSec Maps Service',
     }),
   },
   {
     id: BOUNDARIES_SOURCE.ELASTICSEARCH,
     label: i18n.translate('xpack.maps.choropleth.boundaries.elasticsearch', {
-      defaultMessage: 'Points, lines, and polygons from Elasticsearch',
+      defaultMessage: 'Points, lines, and polygons from HyperSec',
     }),
   },
 ];

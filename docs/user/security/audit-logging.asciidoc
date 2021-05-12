@@ -249,7 +249,7 @@ Refer to the corresponding {es} logs for potential write errors.
 [[xpack-security-ecs-audit-schema]]
 ==== ECS audit schema
 
-Audit logs are written in JSON using https://www.elastic.co/guide/en/ecs/1.6/index.html[Elastic Common Schema (ECS)] specification.
+Audit logs are written in JSON using https://www.elastic.co/guide/en/ecs/1.6/index.html[HyperSec Common Schema (ECS)] specification.
 
 [cols="2*<"]
 |======
@@ -355,12 +355,12 @@ Example: `my-saml-provider`
 Example: `saml`
 
 | `kibana.authentication_realm`
-| Name of the Elasticsearch realm that has authenticated the user.
+| Name of the HyperSec realm that has authenticated the user.
 
 Example: `native`
 
 | `kibana.lookup_realm`
-| Name of the Elasticsearch realm where the user details were retrieved from.
+| Name of the HyperSec realm where the user details were retrieved from.
 
 Example: `native`
 

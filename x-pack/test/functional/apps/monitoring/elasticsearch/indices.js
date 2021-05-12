@@ -13,7 +13,7 @@ export default function ({ getService, getPageObjects }) {
   const indicesList = getService('monitoringElasticsearchIndices');
   const esClusterSummaryStatus = getService('monitoringElasticsearchSummaryStatus');
 
-  describe('Elasticsearch indices listing', () => {
+  describe('HyperSec indices listing', () => {
     const { setup, tearDown } = getLifecycleMethods(getService, getPageObjects);
 
     before(async () => {
@@ -31,7 +31,7 @@ export default function ({ getService, getPageObjects }) {
       await tearDown();
     });
 
-    it('should have an Elasticsearch cluster summary with correct info', async () => {
+    it('should have an HyperSec cluster summary with correct info', async () => {
       expect(await esClusterSummaryStatus.getContent()).to.eql({
         nodesCount: 'Nodes\n1',
         indicesCount: 'Indices\n19',

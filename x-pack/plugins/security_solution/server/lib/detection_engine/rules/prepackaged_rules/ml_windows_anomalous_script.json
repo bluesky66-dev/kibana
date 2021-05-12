@@ -1,7 +1,7 @@
 {
   "anomaly_threshold": 50,
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A machine learning job detected a PowerShell script with unusual data characteristics, such as obfuscation, that may be a characteristic of malicious PowerShell script text blocks.",
   "false_positives": [
@@ -9,7 +9,7 @@
   ],
   "from": "now-45m",
   "interval": "15m",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "machine_learning_job_id": "windows_anomalous_script",
   "name": "Suspicious Powershell Script",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "1781d055-5c66-4adf-9d60-fc0fa58337b6",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

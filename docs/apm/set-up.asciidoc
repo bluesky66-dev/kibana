@@ -7,7 +7,7 @@
 ++++
 
 APM is available via the navigation sidebar in {Kib}.
-If you have not already installed and configured Elastic APM,
+If you have not already installed and configured HyperSec APM,
 the *Setup Instructions* in Kibana will get you started.
 
 [role="screenshot"]
@@ -17,7 +17,7 @@ image::apm/images/apm-setup.png[Installation instructions on the APM page in Kib
 [[apm-configure-index-pattern]]
 === Load the index pattern
 
-Index patterns tell Kibana which Elasticsearch indices you want to explore.
+Index patterns tell Kibana which HyperSec indices you want to explore.
 An APM index pattern is necessary for certain features in the APM app, like the query bar.
 To set up the correct index pattern,
 simply click *Load Kibana objects* at the bottom of the Setup Instructions.

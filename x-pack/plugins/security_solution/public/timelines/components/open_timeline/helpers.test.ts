@@ -998,7 +998,7 @@ describe('helpers', () => {
       });
     });
 
-    test('should override timerange if given an Elastic prebuilt template', () => {
+    test('should override timerange if given an HyperSec prebuilt template', () => {
       const timeline = {
         savedObjectId: 'savedObject-1',
         title: 'Awesome Timeline',

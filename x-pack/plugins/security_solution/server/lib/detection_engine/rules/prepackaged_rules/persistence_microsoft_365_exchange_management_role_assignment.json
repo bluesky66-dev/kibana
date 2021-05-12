@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies when a new role is assigned to a management group in Microsoft 365. An adversary may attempt to add a role in order to maintain persistence in an environment.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft 365 Exchange Management Group Role Assignment",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:Exchange and event.category:web and event.action:\"New-ManagementRoleAssignment\" and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "98995807-5b09-4e37-8a54-5cae5dc932d7",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

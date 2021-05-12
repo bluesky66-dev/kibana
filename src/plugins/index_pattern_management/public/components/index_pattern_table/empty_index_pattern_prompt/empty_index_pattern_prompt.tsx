@@ -52,7 +52,7 @@ export const EmptyIndexPatternPrompt = ({
             <h2>
               <FormattedMessage
                 id="indexPatternManagement.emptyIndexPatternPrompt.youHaveData"
-                defaultMessage="You have data in Elasticsearch."
+                defaultMessage="You have data in HyperSec."
               />
               <br />
               <FormattedMessage

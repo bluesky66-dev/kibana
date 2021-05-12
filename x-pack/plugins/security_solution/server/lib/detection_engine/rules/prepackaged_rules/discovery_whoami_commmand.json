@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "The whoami application was executed on a Linux host. This is often used by tools and persistence mechanisms to test for privileged access.",
   "false_positives": [
@@ -12,14 +12,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "User Discovery via Whoami",
   "query": "event.category:process and event.type:(start or process_started) and process.name:whoami",
   "risk_score": 21,
   "rule_id": "120559c6-5e24-49f4-9e30-8ffe697df6b9",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

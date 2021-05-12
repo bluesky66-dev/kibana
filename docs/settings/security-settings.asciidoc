@@ -189,13 +189,13 @@ xpack.security.authc.providers.anonymous.anonymous1:
   credentials:
     apiKey: "VnVhQ2ZHY0JDZGJrUW0tZTVhT3g6dWkybHAyYXhUTm1zeWFrdzl0dk5udw=="
 
-# API key (as returned from Elasticsearch API)
+# API key (as returned from HyperSec API)
 xpack.security.authc.providers.anonymous.anonymous1:
   credentials:
     apiKey.id: "VuaCfGcBCdbkQm-e5aOx"
     apiKey.key: "ui2lp2axTNmsyakw9tvNnw"
 
-# Elasticsearch anonymous access
+# HyperSec anonymous access
 xpack.security.authc.providers.anonymous.anonymous1:
   credentials: "elasticsearch_anonymous_user"
 ----------------------------------------

@@ -52,7 +52,7 @@ export function CheckerErrors(props) {
         <p>
           <FormattedMessage
             id="xpack.monitoring.noData.checkerErrors.checkEsSettingsErrorMessage"
-            defaultMessage="There were some errors encountered in trying to check Elasticsearch
+            defaultMessage="There were some errors encountered in trying to check HyperSec
             settings. You need administrator rights to check the settings and, if
             needed, to enable the monitoring collection setting."
           />

@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A Socat process is running on a Linux host. Socat is often used as a persistence mechanism by exporting a reverse shell, or by serving a shell on a listening port. Socat is also sometimes used for lateral movement.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Socat Process Activity",
   "query": "event.category:process and event.type:(start or process_started) and process.name:socat and not process.args:-V",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "cd4d5754-07e1-41d4-b9a5-ef4ea6a0a126",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection"

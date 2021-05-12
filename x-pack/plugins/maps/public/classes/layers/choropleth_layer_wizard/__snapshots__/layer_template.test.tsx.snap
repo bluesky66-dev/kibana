@@ -32,11 +32,11 @@ exports[`should render EMS UI when left source is BOUNDARIES_SOURCE.EMS 1`] = `
           Array [
             Object {
               "id": "EMS",
-              "label": "Administrative boundaries from Elastic Maps Service",
+              "label": "Administrative boundaries from HyperSec Maps Service",
             },
             Object {
               "id": "ELASTICSEARCH",
-              "label": "Points, lines, and polygons from Elasticsearch",
+              "label": "Points, lines, and polygons from HyperSec",
             },
           ]
         }
@@ -85,11 +85,11 @@ exports[`should render elasticsearch UI when left source is BOUNDARIES_SOURCE.EL
           Array [
             Object {
               "id": "EMS",
-              "label": "Administrative boundaries from Elastic Maps Service",
+              "label": "Administrative boundaries from HyperSec Maps Service",
             },
             Object {
               "id": "ELASTICSEARCH",
-              "label": "Points, lines, and polygons from Elasticsearch",
+              "label": "Points, lines, and polygons from HyperSec",
             },
           ]
         }

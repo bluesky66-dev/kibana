@@ -2,7 +2,7 @@
 
 exports[`kbnLoadingIndicator is hidden by default 1`] = `
 <EuiIcon
-  aria-label="Elastic Logo"
+  aria-label="HyperSec Logo"
   className="chrHeaderLogo__cluster"
   data-test-subj="globalLoadingIndicator-hidden"
   size="l"
@@ -12,7 +12,7 @@ exports[`kbnLoadingIndicator is hidden by default 1`] = `
 
 exports[`kbnLoadingIndicator is visible when loadingCount is > 0 1`] = `
 <EuiIcon
-  aria-label="Elastic Logo"
+  aria-label="HyperSec Logo"
   className="chrHeaderLogo__cluster"
   data-test-subj="globalLoadingIndicator-hidden"
   size="l"

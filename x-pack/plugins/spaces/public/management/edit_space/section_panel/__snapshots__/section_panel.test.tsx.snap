@@ -19,8 +19,8 @@ exports[`it renders without blowing up 1`] = `
             size="xl"
             type="logoElasticsearch"
           />
-           
-          Elasticsearch
+
+          HyperSec
         </h2>
       </EuiTitle>
     </EuiFlexItem>

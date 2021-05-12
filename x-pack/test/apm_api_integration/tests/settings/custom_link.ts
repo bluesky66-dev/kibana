@@ -36,7 +36,7 @@ export default function customLinksTests({ getService }: FtrProviderContext) {
       expect(response.status).to.be(403);
 
       expectSnapshot(response.body.message).toMatchInline(
-        `"To create custom links, you must be subscribed to an Elastic Gold license or above. With it, you'll have the ability to create custom links to improve your workflow when analyzing your services."`
+        `"To create custom links, you must be subscribed to an HyperSec Gold license or above. With it, you'll have the ability to create custom links to improve your workflow when analyzing your services."`
       );
     });
   });

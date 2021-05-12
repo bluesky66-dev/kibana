@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies the deletion of a resource group in Azure, which includes all resources within the group. Deletion is permanent and irreversible. An adversary may delete a resource group in an attempt to evade defenses or intentionally destroy data.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Azure Resource Group Deletion",
   "note": "The Azure Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.activitylogs and azure.activitylogs.operation_name:\"MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/DELETE\" and event.outcome:(Success or success)",
@@ -23,7 +23,7 @@
   "rule_id": "bb4fe8d2-7ae2-475c-8b5d-55b449e4264f",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

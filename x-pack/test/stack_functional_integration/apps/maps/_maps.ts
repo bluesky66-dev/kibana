@@ -18,7 +18,7 @@ export default function ({
   const find = getService('find');
   const PageObjects = getPageObjects(['maps']);
 
-  describe('check Elastic Maps Server', function () {
+  describe('check HyperSec Maps Server', function () {
     before(async function () {
       await PageObjects.maps.loadSavedMap('EMS Test');
       await find.clickByButtonText('Dismiss');

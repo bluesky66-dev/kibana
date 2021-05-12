@@ -90,7 +90,7 @@ describe('Monitoring Breadcrumbs Service', () => {
     expect(controller.breadcrumbs).to.eql([
       { url: '#/home', label: 'Clusters', testSubj: 'breadcrumbClusters', ignoreGlobalState: true },
       { url: '#/overview', label: 'test-cluster-foo', ignoreGlobalState: false },
-      { url: '#/elasticsearch', label: 'Elasticsearch', ignoreGlobalState: false },
+      { url: '#/elasticsearch', label: 'HyperSec', ignoreGlobalState: false },
       {
         url: '#/elasticsearch/nodes',
         label: 'Nodes',

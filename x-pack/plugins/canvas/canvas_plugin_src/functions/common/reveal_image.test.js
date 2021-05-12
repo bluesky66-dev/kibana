@@ -49,7 +49,7 @@ describe('revealImage', () => {
         expect(result).toHaveProperty('image', elasticLogo);
       });
 
-      it('defaults to the Elastic outline logo', () => {
+      it('defaults to the HyperSec outline logo', () => {
         const result = fn(0.89).value;
         expect(result).toHaveProperty('image', elasticOutline);
       });

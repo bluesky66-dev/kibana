@@ -120,7 +120,7 @@ describe('hitIterator', function () {
       }
     } catch (err) {
       expect(err).to.eql(
-        new Error('Expected _scroll_id in the following Elasticsearch response: {"status":404}')
+        new Error('Expected _scroll_id in the following HyperSec response: {"status":404}')
       );
       errorThrown = true;
     }

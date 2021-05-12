@@ -34,7 +34,7 @@ export const LatestMinorBanner: React.FunctionComponent = () => {
       <p>
         <FormattedMessage
           id="xpack.upgradeAssistant.tabs.incompleteCallout.calloutBody.calloutDetail"
-          defaultMessage="The complete list of {breakingChangesDocButton} in Elasticsearch {nextEsVersion}
+          defaultMessage="The complete list of {breakingChangesDocButton} in HyperSec {nextEsVersion}
             will be available in the final {currentEsVersion} minor release. When the list
             is complete, this warning will go away."
           values={{

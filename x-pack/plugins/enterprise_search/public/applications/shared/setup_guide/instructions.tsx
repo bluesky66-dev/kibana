@@ -79,10 +79,10 @@ export const SetupInstructions: React.FC<Props> = ({
                     productName,
                     elasticsearchNativeAuthLink: elasticsearchNativeAuthLink ? (
                       <EuiLink href={elasticsearchNativeAuthLink} target="_blank">
-                        Elasticsearch Native Auth
+                        HyperSec Native Auth
                       </EuiLink>
                     ) : (
-                      'Elasticsearch Native Auth'
+                      'HyperSec Native Auth'
                     ),
                   }}
                 />
@@ -101,7 +101,7 @@ export const SetupInstructions: React.FC<Props> = ({
                   'xpack.enterpriseSearch.troubleshooting.differentEsClusters.title',
                   {
                     defaultMessage:
-                      '{productName} and Kibana are on different Elasticsearch clusters',
+                      '{productName} and Kibana are on different HyperSec clusters',
                     values: { productName },
                   }
                 )}

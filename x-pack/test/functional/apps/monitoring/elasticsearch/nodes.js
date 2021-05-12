@@ -13,7 +13,7 @@ export default function ({ getService, getPageObjects }) {
   const nodesList = getService('monitoringElasticsearchNodes');
   const esClusterSummaryStatus = getService('monitoringElasticsearchSummaryStatus');
 
-  describe('Elasticsearch nodes listing', function () {
+  describe('HyperSec nodes listing', function () {
     // FF issue: https://github.com/elastic/kibana/issues/35551
     this.tags(['skipFirefox']);
 
@@ -35,7 +35,7 @@ export default function ({ getService, getPageObjects }) {
         await tearDown();
       });
 
-      it('should have an Elasticsearch Cluster Summary Status with correct info', async () => {
+      it('should have an HyperSec Cluster Summary Status with correct info', async () => {
         expect(await esClusterSummaryStatus.getContent()).to.eql({
           nodesCount: 'Nodes\n2',
           indicesCount: 'Indices\n20',
@@ -273,7 +273,7 @@ export default function ({ getService, getPageObjects }) {
         await tearDown();
       });
 
-      it('should have an Elasticsearch Cluster Summary Status with correct info', async () => {
+      it('should have an HyperSec Cluster Summary Status with correct info', async () => {
         expect(await esClusterSummaryStatus.getContent()).to.eql({
           nodesCount: 'Nodes\n3',
           indicesCount: 'Indices\n20',

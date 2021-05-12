@@ -64,7 +64,7 @@ const OverviewEmptyComponent: React.FC = () => {
         <>
           <FormattedMessage
             id="xpack.securitySolution.emptyMessage"
-            defaultMessage="Elastic Security integrates the free and open Elastic SIEM with Endpoint Security to prevent, detect, and respond to threats. To begin, you’ll need to add security solution related data to the Elastic Stack. For additional information, you can view our "
+            defaultMessage="HyperSec Security integrates the free and open HyperSec SIEM with Endpoint Security to prevent, detect, and respond to threats. To begin, you’ll need to add security solution related data to the HyperSec Stack. For additional information, you can view our "
           />
           <EuiLink href={docLinks.links.siem.gettingStarted} target="_blank">
             {i18nCommon.EMPTY_ACTION_SECONDARY}
@@ -81,7 +81,7 @@ const OverviewEmptyComponent: React.FC = () => {
         <>
           <FormattedMessage
             id="xpack.securitySolution.emptyMessage"
-            defaultMessage="Elastic Security integrates the free and open Elastic SIEM with Endpoint Security to prevent, detect, and respond to threats. To begin, you’ll need to add security solution related data to the Elastic Stack. For additional information, you can view our "
+            defaultMessage="HyperSec Security integrates the free and open HyperSec SIEM with Endpoint Security to prevent, detect, and respond to threats. To begin, you’ll need to add security solution related data to the HyperSec Stack. For additional information, you can view our "
           />
           <EuiLink href={docLinks.links.siem.gettingStarted} target="_blank">
             {i18nCommon.EMPTY_ACTION_SECONDARY}

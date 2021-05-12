@@ -32,7 +32,7 @@ describe('get_export_by_object_ids', () => {
       const exports = await getExportByObjectIds(alertsClient, objects);
       expect(exports).toEqual({
         rulesNdjson: `${JSON.stringify({
-          author: ['Elastic'],
+          author: ['HyperSec'],
           actions: [],
           created_at: '2019-12-13T16:40:33.400Z',
           updated_at: '2019-12-13T16:40:33.400Z',
@@ -48,7 +48,7 @@ describe('get_export_by_object_ids', () => {
           interval: '5m',
           rule_id: 'rule-1',
           language: 'kuery',
-          license: 'Elastic License',
+          license: 'HyperSec License',
           output_index: '.siem-signals',
           max_signals: 100,
           risk_score: 50,
@@ -118,7 +118,7 @@ describe('get_export_by_object_ids', () => {
         rules: [
           {
             actions: [],
-            author: ['Elastic'],
+            author: ['HyperSec'],
             created_at: '2019-12-13T16:40:33.400Z',
             updated_at: '2019-12-13T16:40:33.400Z',
             created_by: 'elastic',
@@ -133,7 +133,7 @@ describe('get_export_by_object_ids', () => {
             interval: '5m',
             rule_id: 'rule-1',
             language: 'kuery',
-            license: 'Elastic License',
+            license: 'HyperSec License',
             output_index: '.siem-signals',
             max_signals: 100,
             risk_score: 50,

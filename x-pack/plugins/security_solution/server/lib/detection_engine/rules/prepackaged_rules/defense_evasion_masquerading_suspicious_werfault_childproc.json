@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A suspicious WerFault child process was detected, which may indicate an attempt to run unnoticed. Verify process details such as command line, network connections, file writes and parent process details as well.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Suspicious WerFault Child Process",
   "query": "event.category:process and event.type:(start or process_started) and process.parent.name:WerFault.exe and not process.name:(cofire.exe or psr.exe or VsJITDebugger.exe or TTTracer.exe or rundll32.exe)",
   "references": [
@@ -25,7 +25,7 @@
   "rule_id": "ac5012b8-8da8-440b-aaaf-aedafdea2dff",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

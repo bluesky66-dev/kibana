@@ -269,12 +269,12 @@ export const LEGACY_ALERT_DETAILS = {
   },
   [ALERT_ELASTICSEARCH_VERSION_MISMATCH]: {
     label: i18n.translate('xpack.monitoring.alerts.elasticsearchVersionMismatch.label', {
-      defaultMessage: 'Elasticsearch version mismatch',
+      defaultMessage: 'HyperSec version mismatch',
     }),
     description: i18n.translate(
       'xpack.monitoring.alerts.elasticsearchVersionMismatch.description',
       {
-        defaultMessage: 'Alert when the cluster has multiple versions of Elasticsearch.',
+        defaultMessage: 'Alert when the cluster has multiple versions of HyperSec.',
       }
     ),
   },

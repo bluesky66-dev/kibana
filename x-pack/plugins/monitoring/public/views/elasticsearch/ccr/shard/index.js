@@ -37,7 +37,7 @@ uiRoutes.when('/elasticsearch/ccr/:index/shard/:shardId', {
       const $route = $injector.get('$route');
       super({
         title: i18n.translate('xpack.monitoring.elasticsearch.ccr.shard.routeTitle', {
-          defaultMessage: 'Elasticsearch - Ccr - Shard',
+          defaultMessage: 'HyperSec - Ccr - Shard',
         }),
         reactNodeId: 'elasticsearchCcrShardReact',
         getPageData,
@@ -73,7 +73,7 @@ uiRoutes.when('/elasticsearch/ccr/:index/shard/:shardId', {
 
           this.setPageTitle(
             i18n.translate('xpack.monitoring.elasticsearch.ccr.shard.pageTitle', {
-              defaultMessage: 'Elasticsearch Ccr Shard - Index: {followerIndex} Shard: {shardId}',
+              defaultMessage: 'HyperSec Ccr Shard - Index: {followerIndex} Shard: {shardId}',
               values: {
                 followerIndex: get(pageData, 'stat.follower_index'),
                 shardId: get(pageData, 'stat.shard_id'),

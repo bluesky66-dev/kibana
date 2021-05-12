@@ -631,7 +631,7 @@ function discoverController($route, $scope, Promise) {
       defaultMessage: 'data',
     });
     const description = i18n.translate('discover.inspectorRequestDescription', {
-      defaultMessage: 'This request queries Elasticsearch to fetch the data for the search.',
+      defaultMessage: 'This request queries HyperSec to fetch the data for the search.',
     });
     inspectorRequest = inspectorAdapters.requests.start(title, { description, searchSessionId });
     inspectorRequest.stats(getRequestInspectorStats($scope.volatileSearchSource));

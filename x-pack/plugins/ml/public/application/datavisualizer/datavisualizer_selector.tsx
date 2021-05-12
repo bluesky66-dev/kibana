@@ -94,7 +94,7 @@ export const DatavisualizerSelector: FC = () => {
                 <FormattedMessage
                   id="xpack.ml.datavisualizer.selector.dataVisualizerDescription"
                   defaultMessage="The Machine Learning Data Visualizer tool helps you understand your data,
-                  by analyzing the metrics and fields in a log file or an existing Elasticsearch index."
+                  by analyzing the metrics and fields in a log file or an existing HyperSec index."
                 />
               </EuiText>
             </EuiFlexItem>
@@ -156,7 +156,7 @@ export const DatavisualizerSelector: FC = () => {
                 description={
                   <FormattedMessage
                     id="xpack.ml.datavisualizer.selector.selectIndexPatternDescription"
-                    defaultMessage="Visualize the data in an existing Elasticsearch index."
+                    defaultMessage="Visualize the data in an existing HyperSec index."
                   />
                 }
                 footer={

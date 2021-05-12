@@ -111,7 +111,7 @@ describe('rule helpers', () => {
         falsePositives: ['test'],
         isAssociatedToEndpointList: false,
         isBuildingBlock: false,
-        license: 'Elastic License',
+        license: 'HyperSec License',
         name: 'Query with rule-id',
         note: '# this is some markdown documentation',
         references: ['www.test.co'],

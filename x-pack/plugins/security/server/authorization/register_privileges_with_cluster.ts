@@ -53,7 +53,7 @@ export async function registerPrivilegesWithCluster(
 
   const expectedPrivileges = serializePrivileges(application, privileges.get());
 
-  logger.debug(`Registering Kibana Privileges with Elasticsearch for ${application}`);
+  logger.debug(`Registering Kibana Privileges with HyperSec for ${application}`);
 
   try {
     // we only want to post the privileges when they're going to change as Elasticsearch has
@@ -62,14 +62,14 @@ export async function registerPrivilegesWithCluster(
       Record<string, object>
     >({ application });
     if (arePrivilegesEqual(existingPrivileges, expectedPrivileges)) {
-      logger.debug(`Kibana Privileges already registered with Elasticsearch for ${application}`);
+      logger.debug(`Kibana Privileges already registered with HyperSec for ${application}`);
       return;
     }
 
     const privilegesToDelete = getPrivilegesToDelete(existingPrivileges, expectedPrivileges);
     for (const privilegeToDelete of privilegesToDelete) {
       logger.debug(
-        `Deleting Kibana Privilege ${privilegeToDelete} from Elasticsearch for ${application}`
+        `Deleting Kibana Privilege ${privilegeToDelete} from HyperSec for ${application}`
       );
       try {
         await clusterClient.asInternalUser.security.deletePrivileges({
@@ -83,10 +83,10 @@ export async function registerPrivilegesWithCluster(
     }
 
     await clusterClient.asInternalUser.security.putPrivileges({ body: expectedPrivileges });
-    logger.debug(`Updated Kibana Privileges with Elasticsearch for ${application}`);
+    logger.debug(`Updated Kibana Privileges with HyperSec for ${application}`);
   } catch (err) {
     logger.error(
-      `Error registering Kibana Privileges with Elasticsearch for ${application}: ${err.message}`
+      `Error registering Kibana Privileges with HyperSec for ${application}: ${err.message}`
     );
     throw err;
   }

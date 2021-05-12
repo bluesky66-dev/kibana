@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies the creation or modification of the default configuration for periodic tasks. Adversaries may abuse periodic tasks to execute malicious code or maintain persistence.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential Persistence via Periodic Tasks",
   "query": "event.category:\"file\" and not event.type:\"deletion\" and file.path:(/private/etc/periodic/* or /private/etc/defaults/periodic.conf or /private/etc/periodic.conf)",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "48ec9452-e1fd-4513-a376-10a1a26d2c83",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "macOS",
     "Threat Detection",

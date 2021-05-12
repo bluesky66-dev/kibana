@@ -41,7 +41,7 @@ const SIGNER_CONDITION: WindowsConditionEntry = {
   field: ConditionEntryField.SIGNER,
   operator: 'included',
   type: 'match',
-  value: 'Elastic',
+  value: 'HyperSec',
 };
 
 storiesOf('TrustedApps/TrustedAppCard', module)

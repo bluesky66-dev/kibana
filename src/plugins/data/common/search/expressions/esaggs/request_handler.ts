@@ -122,7 +122,7 @@ export const handleRequest = async ({
       {
         description: i18n.translate('data.functions.esaggs.inspector.dataRequest.description', {
           defaultMessage:
-            'This request queries Elasticsearch to fetch the data for the visualization.',
+            'This request queries HyperSec to fetch the data for the visualization.',
         }),
         searchSessionId,
       }

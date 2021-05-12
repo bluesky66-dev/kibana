@@ -30,7 +30,7 @@ export function getRequestInspectorStats(searchSource: ISearchSource) {
       }),
       value: index.title,
       description: i18n.translate('data.search.searchSource.indexPatternDescription', {
-        defaultMessage: 'The index pattern that connected to the Elasticsearch indices.',
+        defaultMessage: 'The index pattern that connected to the HyperSec indices.',
       }),
     };
     stats.indexPatternId = {
@@ -107,7 +107,7 @@ export function getResponseInspectorStats(
       }),
       description: i18n.translate('data.search.searchSource.requestTimeDescription', {
         defaultMessage:
-          'The time of the request from the browser to Elasticsearch and back. ' +
+          'The time of the request from the browser to HyperSec and back. ' +
           'Does not include the time the requested waited in the queue.',
       }),
     };

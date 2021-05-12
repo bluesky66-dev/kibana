@@ -20,7 +20,7 @@ export const validateIsStringElasticsearchJSONFilter = (value: string) => {
     return;
   }
 
-  const errorMessage = 'filterQuery must be a valid Elasticsearch filter expressed in JSON';
+  const errorMessage = 'filterQuery must be a valid HyperSec filter expressed in JSON';
   try {
     const parsedValue = JSON.parse(value);
     if (!isEmpty(parsedValue.bool)) {

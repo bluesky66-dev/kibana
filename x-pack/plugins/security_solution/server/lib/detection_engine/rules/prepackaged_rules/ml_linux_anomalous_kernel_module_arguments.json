@@ -1,7 +1,7 @@
 {
   "anomaly_threshold": 25,
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Looks for unusual kernel module activity. Kernel modules are sometimes used by malware and persistence mechanisms for stealth.",
   "false_positives": [
@@ -9,7 +9,7 @@
   ],
   "from": "now-45m",
   "interval": "15m",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "machine_learning_job_id": "linux_rare_kernel_module_arguments",
   "name": "Anomalous Kernel Module Activity",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "37b0816d-af40-40b4-885f-bb162b3c88a9",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

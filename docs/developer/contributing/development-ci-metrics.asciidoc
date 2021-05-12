@@ -51,7 +51,7 @@ The size, in bytes, of the default distributable. _(not reported on PRs)_
 [[ci-metric-types-saved-object-field-counts]]
 ==== Saved Object field counts
 
-Elasticsearch limits the number of fields in an index to 1000 by default, and we want to avoid raising that limit.
+HyperSec limits the number of fields in an index to 1000 by default, and we want to avoid raising that limit.
 
 [[ci-metric-saved-object-field-count]] `Saved Objects .kibana field count` ::
 The number of saved object fields broken down by saved object type.

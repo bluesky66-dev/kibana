@@ -8,7 +8,7 @@
 import { SettingsChecker } from './checkers/settings_checker';
 import { startChecks } from '.';
 
-describe('Start Checks of Elasticsearch Settings', () => {
+describe('Start Checks of HyperSec Settings', () => {
   const getHttp = (data) => ({
     get() {
       return Promise.resolve({ data });

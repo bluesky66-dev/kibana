@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies a transport rule creation in Microsoft 365. Exchange Online mail transport rules should be set to not forward email to domains outside of your organization as a best practice. An adversary may create transport rules to exfiltrate data.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft 365 Exchange Transport Rule Creation",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:Exchange and event.category:web and event.action:\"New-TransportRule\" and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "ff4dd44a-0ac6-44c4-8609-3f81bc820f02",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

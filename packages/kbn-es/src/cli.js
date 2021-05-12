@@ -21,7 +21,7 @@ function help() {
   console.log(dedent`
     usage: es <command> [<args>]
 
-    Assists with running Elasticsearch for Kibana development
+    Assists with running HyperSec for Kibana development
 
     Available commands:
 

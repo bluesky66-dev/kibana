@@ -7,7 +7,7 @@ to help you prepare for your upgrade to 7.0. To access the assistant, go to *Man
 [IMPORTANT]
 ===========================================
 If you've saved and/or exported objects in {kib} that rely on the
-<<search,Elasticsearch Query DSL>>, make sure to check the {es}
+<<search,HyperSec Query DSL>>, make sure to check the {es}
 {ref}/breaking-changes.html[breaking changes] documentation and take the
 necessary remediation steps as per those instructions.
 ===========================================

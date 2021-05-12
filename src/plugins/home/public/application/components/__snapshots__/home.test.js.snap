@@ -142,7 +142,7 @@ exports[`home directories should render ADMIN directory entry in "Manage your da
             Array [
               Object {
                 "category": "admin",
-                "description": "Manage the index patterns that help retrieve your data from Elasticsearch.",
+                "description": "Manage the index patterns that help retrieve your data from HyperSec.",
                 "icon": "indexPatternApp",
                 "id": "index_patterns",
                 "path": "index_management_landing_page",

@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies modification of the dynamic linker preload shared object (ld.so.preload). Adversaries may execute malicious payloads by hijacking the dynamic linker used to load libraries.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Modification of Dynamic Linker Preload Shared Object",
   "query": "event.category:file and not event.type:deletion and file.path:/etc/ld.so.preload",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "717f82c2-7741-4f9b-85b8-d06aeb853f4f",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

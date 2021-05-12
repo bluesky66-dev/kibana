@@ -149,7 +149,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Upgrade",
+            "description": "HyperSec Expanded Pack Plugin - Upgrade",
             "classname": "org.elasticsearch.xpack.upgrade.Upgrade",
             "extended_plugins": [
               "x-pack-core"
@@ -161,7 +161,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "The Elasticsearch plugin that powers SQL for Elasticsearch",
+            "description": "The HyperSec plugin that powers SQL for HyperSec",
             "classname": "org.elasticsearch.xpack.sql.plugin.SqlPlugin",
             "extended_plugins": [
               "x-pack-core"
@@ -173,7 +173,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Machine Learning",
+            "description": "HyperSec Expanded Pack Plugin - Machine Learning",
             "classname": "org.elasticsearch.xpack.ml.MachineLearning",
             "extended_plugins": [
               "x-pack-core"
@@ -185,7 +185,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Logstash",
+            "description": "HyperSec Expanded Pack Plugin - Logstash",
             "classname": "org.elasticsearch.xpack.logstash.Logstash",
             "extended_plugins": [
               "x-pack-core"
@@ -197,7 +197,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Deprecation",
+            "description": "HyperSec Expanded Pack Plugin - Deprecation",
             "classname": "org.elasticsearch.xpack.deprecation.Deprecation",
             "extended_plugins": [
               "x-pack-core"
@@ -209,7 +209,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Monitoring",
+            "description": "HyperSec Expanded Pack Plugin - Monitoring",
             "classname": "org.elasticsearch.xpack.monitoring.Monitoring",
             "extended_plugins": [
               "x-pack-core"
@@ -221,7 +221,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Core",
+            "description": "HyperSec Expanded Pack Plugin - Core",
             "classname": "org.elasticsearch.xpack.core.XPackPlugin",
             "extended_plugins": [],
             "has_native_controller": false
@@ -231,7 +231,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Security",
+            "description": "HyperSec Expanded Pack Plugin - Security",
             "classname": "org.elasticsearch.xpack.security.Security",
             "extended_plugins": [
               "x-pack-core"
@@ -243,7 +243,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Rollup",
+            "description": "HyperSec Expanded Pack Plugin - Rollup",
             "classname": "org.elasticsearch.xpack.rollup.Rollup",
             "extended_plugins": [
               "x-pack-core"
@@ -255,7 +255,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Watcher",
+            "description": "HyperSec Expanded Pack Plugin - Watcher",
             "classname": "org.elasticsearch.xpack.watcher.Watcher",
             "extended_plugins": [
               "x-pack-core"
@@ -267,7 +267,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Graph",
+            "description": "HyperSec Expanded Pack Plugin - Graph",
             "classname": "org.elasticsearch.xpack.graph.Graph",
             "extended_plugins": [
               "x-pack-core"
@@ -497,7 +497,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Upgrade",
+            "description": "HyperSec Expanded Pack Plugin - Upgrade",
             "classname": "org.elasticsearch.xpack.upgrade.Upgrade",
             "extended_plugins": [
               "x-pack-core"
@@ -509,7 +509,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "The Elasticsearch plugin that powers SQL for Elasticsearch",
+            "description": "The HyperSec plugin that powers SQL for HyperSec",
             "classname": "org.elasticsearch.xpack.sql.plugin.SqlPlugin",
             "extended_plugins": [
               "x-pack-core"
@@ -521,7 +521,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Machine Learning",
+            "description": "HyperSec Expanded Pack Plugin - Machine Learning",
             "classname": "org.elasticsearch.xpack.ml.MachineLearning",
             "extended_plugins": [
               "x-pack-core"
@@ -533,7 +533,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Logstash",
+            "description": "HyperSec Expanded Pack Plugin - Logstash",
             "classname": "org.elasticsearch.xpack.logstash.Logstash",
             "extended_plugins": [
               "x-pack-core"
@@ -545,7 +545,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Deprecation",
+            "description": "HyperSec Expanded Pack Plugin - Deprecation",
             "classname": "org.elasticsearch.xpack.deprecation.Deprecation",
             "extended_plugins": [
               "x-pack-core"
@@ -557,7 +557,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Monitoring",
+            "description": "HyperSec Expanded Pack Plugin - Monitoring",
             "classname": "org.elasticsearch.xpack.monitoring.Monitoring",
             "extended_plugins": [
               "x-pack-core"
@@ -569,7 +569,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Core",
+            "description": "HyperSec Expanded Pack Plugin - Core",
             "classname": "org.elasticsearch.xpack.core.XPackPlugin",
             "extended_plugins": [],
             "has_native_controller": false
@@ -579,7 +579,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Security",
+            "description": "HyperSec Expanded Pack Plugin - Security",
             "classname": "org.elasticsearch.xpack.security.Security",
             "extended_plugins": [
               "x-pack-core"
@@ -591,7 +591,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Rollup",
+            "description": "HyperSec Expanded Pack Plugin - Rollup",
             "classname": "org.elasticsearch.xpack.rollup.Rollup",
             "extended_plugins": [
               "x-pack-core"
@@ -603,7 +603,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Watcher",
+            "description": "HyperSec Expanded Pack Plugin - Watcher",
             "classname": "org.elasticsearch.xpack.watcher.Watcher",
             "extended_plugins": [
               "x-pack-core"
@@ -615,7 +615,7 @@
             "version": "7.0.0-alpha1",
             "elasticsearch_version": "7.0.0-alpha1",
             "java_version": "1.8",
-            "description": "Elasticsearch Expanded Pack Plugin - Graph",
+            "description": "HyperSec Expanded Pack Plugin - Graph",
             "classname": "org.elasticsearch.xpack.graph.Graph",
             "extended_plugins": [
               "x-pack-core"

@@ -16,7 +16,7 @@ Third-party developers can create drilldowns. To learn how to code drilldowns, r
 [NOTE]
 =====================================
 Some drilldowns are paid subscription features, while others are free.
-For a comparison of the Elastic subscription levels,
+For a comparison of the HyperSec subscription levels,
 refer https://www.elastic.co/subscriptions[the subscription page].
 =====================================
 

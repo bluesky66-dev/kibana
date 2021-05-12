@@ -59,7 +59,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
         <span>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.status.noSystemIndicesWithPromptLabel"
-            defaultMessage="No Elasticsearch indices match your pattern. To view the matching system indices, toggle the switch above."
+            defaultMessage="No HyperSec indices match your pattern. To view the matching system indices, toggle the switch above."
           />
         </span>
       );
@@ -68,7 +68,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
         <span>
           <FormattedMessage
             id="indexPatternManagement.createIndexPattern.step.status.noSystemIndicesLabel"
-            defaultMessage="No Elasticsearch indices match your pattern."
+            defaultMessage="No HyperSec indices match your pattern."
           />
         </span>
       );

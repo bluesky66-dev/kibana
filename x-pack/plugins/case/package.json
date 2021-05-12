@@ -1,9 +1,9 @@
 {
-  "author": "Elastic",
+  "author": "HyperSec",
   "name": "case",
   "version": "8.0.0",
   "private": true,
-  "license": "Elastic-License",
+  "license": "HyperSec-License",
   "scripts": {
     "test:sub-cases": "node server/scripts/sub_cases/generator"
   }

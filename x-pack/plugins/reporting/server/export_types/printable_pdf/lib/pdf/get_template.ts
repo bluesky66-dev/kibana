@@ -92,7 +92,7 @@ export function getTemplate(
             logo
               ? {
                   text: i18n.translate('xpack.reporting.exportTypes.printablePdf.logoDescription', {
-                    defaultMessage: 'Powered by Elastic',
+                    defaultMessage: 'Powered by HyperSec',
                   }),
                   fontSize: 10,
                   style: {

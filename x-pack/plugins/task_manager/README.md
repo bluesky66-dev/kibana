@@ -182,7 +182,7 @@ Other return values will result in a warning, but the system should continue to 
 
 ### Task retries when the Task Runner fails
 If a task runner throws an error, task manager will try to rerun the task shortly after (up to the task definition's `maxAttempts`).
-Normal tasks will wait a default amount of 5m before trying again and every subsequent attempt will add an additonal 5m cool off period to avoid a stampeding herd of failed tasks from storming Elasticsearch.
+Normal tasks will wait a default amount of 5m before trying again and every subsequent attempt will add an additonal 5m cool off period to avoid a stampeding herd of failed tasks from storming HyperSec.
 
 Recurring tasks will also get retried, but instead of using the 5m interval for the retry, they will be retried on their next scheduled run.
 
@@ -416,7 +416,7 @@ export class Plugin {
 
 #### more options
 
-More custom access to the tasks can be done directly via Elasticsearch, though that won't be officially supported, as we can change the document structure at any time.
+More custom access to the tasks can be done directly via HyperSec, though that won't be officially supported, as we can change the document structure at any time.
 
 ## Middleware
 

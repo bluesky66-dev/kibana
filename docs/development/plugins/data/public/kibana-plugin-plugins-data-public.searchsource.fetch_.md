@@ -4,7 +4,7 @@
 
 ## SearchSource.fetch$() method
 
-Fetch this source from Elasticsearch, returning an observable over the response(s)
+Fetch this source from HyperSec, returning an observable over the response(s)
 
 <b>Signature:</b>
 

@@ -44,7 +44,7 @@ const infoMessageMap = new Map([
   [
     'LOGGED_OUT',
     i18n.translate('xpack.security.login.loggedOutDescription', {
-      defaultMessage: 'You have logged out of Elastic.',
+      defaultMessage: 'You have logged out of HyperSec.',
     }),
   ],
 ]);
@@ -98,7 +98,7 @@ export class LoginPage extends Component<Props, State> {
               <h1>
                 <FormattedMessage
                   id="xpack.security.loginPage.welcomeTitle"
-                  defaultMessage="Welcome to Elastic"
+                  defaultMessage="Welcome to HyperSec"
                 />
               </h1>
             </EuiTitle>
@@ -166,7 +166,7 @@ export class LoginPage extends Component<Props, State> {
           title={
             <FormattedMessage
               id="xpack.security.loginPage.esUnavailableTitle"
-              defaultMessage="Cannot connect to the Elasticsearch cluster"
+              defaultMessage="Cannot connect to the HyperSec cluster"
             />
           }
           message={
@@ -185,13 +185,13 @@ export class LoginPage extends Component<Props, State> {
           title={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableTitle"
-              defaultMessage="Cannot connect to the Elasticsearch cluster currently configured for Kibana."
+              defaultMessage="Cannot connect to the HyperSec cluster currently configured for Kibana."
             />
           }
           message={
             <FormattedMessage
               id="xpack.security.loginPage.xpackUnavailableMessage"
-              defaultMessage="To use the full set of free features in this distribution of Kibana, please update Elasticsearch to the default distribution."
+              defaultMessage="To use the full set of free features in this distribution of Kibana, please update HyperSec to the default distribution."
             />
           }
         />

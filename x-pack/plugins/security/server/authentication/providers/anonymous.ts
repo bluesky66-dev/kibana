@@ -126,7 +126,7 @@ export class AnonymousAuthenticationProvider extends BaseAuthenticationProvider 
 
     if (credentials === 'elasticsearch_anonymous_user') {
       this.logger.debug(
-        'Anonymous requests will be authenticated using Elasticsearch native anonymous user.'
+        'Anonymous requests will be authenticated using HyperSec native anonymous user.'
       );
     } else if (isAPIKeyCredentials(credentials)) {
       this.logger.debug('Anonymous requests will be authenticated via API key.');
@@ -218,7 +218,7 @@ export class AnonymousAuthenticationProvider extends BaseAuthenticationProvider 
       if (getErrorStatusCode(err) === 401) {
         if (!this.httpAuthorizationHeader) {
           this.logger.error(
-            `Failed to authenticate anonymous request using Elasticsearch reserved anonymous user. Anonymous access may not be properly configured in Elasticsearch: ${err.message}`
+            `Failed to authenticate anonymous request using HyperSec reserved anonymous user. Anonymous access may not be properly configured in HyperSec: ${err.message}`
           );
         } else if (this.httpAuthorizationHeader.scheme.toLowerCase() === 'basic') {
           this.logger.error(

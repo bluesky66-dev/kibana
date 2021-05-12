@@ -97,7 +97,7 @@ describe('transform_elastic_named_search_to_list_item', () => {
     expect(queryFilter).toEqual(expected);
   });
 
-  test('it attaches two found results if the value is found in two hits from Elastic Search', () => {
+  test('it attaches two found results if the value is found in two hits from HyperSec Search', () => {
     const response = getSearchListItemMock();
     response.hits.hits = [
       ...response.hits.hits,

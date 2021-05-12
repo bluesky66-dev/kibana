@@ -38,11 +38,11 @@ describe('getNewsFeed', () => {
             items: [
               {
                 title: {
-                  en: 'Elastic introduces OpenTelemetry integration',
+                  en: 'HyperSec introduces OpenTelemetry integration',
                 },
                 description: {
                   en:
-                    'We are pleased to announce the availability of the Elastic OpenTelemetry integration — available on Elastic Cloud, or when you download Elastic APM.',
+                    'We are pleased to announce the availability of the HyperSec OpenTelemetry integration — available on HyperSec Cloud, or when you download HyperSec APM.',
                 },
                 link_text: null,
                 link_url: {
@@ -62,7 +62,7 @@ describe('getNewsFeed', () => {
                 },
                 description: {
                   en:
-                    'Learn how Elastic Observability makes it easy to monitor and detect anomalies in millions of logs from thousands of containers running hundreds of microservices — while Kubernetes scales applications with changing pod counts. All from a single UI.',
+                    'Learn how HyperSec Observability makes it easy to monitor and detect anomalies in millions of logs from thousands of containers running hundreds of microservices — while Kubernetes scales applications with changing pod counts. All from a single UI.',
                 },
                 link_text: null,
                 link_url: {
@@ -83,7 +83,7 @@ describe('getNewsFeed', () => {
                 },
                 description: {
                   en:
-                    'This blog will walk you through configuring the environment you will be using for the Kubernetes observability tutorial blog series. We will be deploying Elasticsearch Service, a Minikube single-node Kubernetes cluster setup, and a demo app.',
+                    'This blog will walk you through configuring the environment you will be using for the Kubernetes observability tutorial blog series. We will be deploying HyperSec Service, a Minikube single-node Kubernetes cluster setup, and a demo app.',
                 },
                 link_text: null,
                 link_url: {

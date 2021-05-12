@@ -21,7 +21,7 @@ export const CloudDeployment = () => {
             defaultMessage="Configure monitoring through "
           />
           <EuiLink href="https://cloud.elastic.co/deployments" target="_blank">
-            Elasticsearch Service Console
+            HyperSec Service Console
           </EuiLink>{' '}
           <FormattedMessage
             id="xpack.monitoring.noData.blurbs.cloudDeploymentDescription2"

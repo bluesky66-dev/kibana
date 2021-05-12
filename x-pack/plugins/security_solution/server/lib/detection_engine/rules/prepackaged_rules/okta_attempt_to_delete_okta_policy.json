@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Detects attempts to delete an Okta policy. An adversary may attempt to delete an Okta policy in order to weaken an organization's security controls. For example, an adversary may attempt to delete an Okta multi-factor authentication (MFA) policy in order to weaken the authentication requirements for user accounts.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-okta*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Attempt to Delete an Okta Policy",
   "note": "The Okta Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:okta.system and event.action:policy.lifecycle.delete",
@@ -24,7 +24,7 @@
   "rule_id": "b4bb1440-0fcb-4ed1-87e5-b06d58efc5e9",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Identity",
     "Okta",
     "Continuous Monitoring",

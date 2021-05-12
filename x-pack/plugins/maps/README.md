@@ -1,6 +1,6 @@
 # Maps
 
-Visualize geo data from Elasticsearch or 3rd party geo-services.
+Visualize geo data from HyperSec or 3rd party geo-services.
 
 
 ## Testing

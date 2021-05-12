@@ -138,7 +138,7 @@ export function Correlations() {
                   text={i18n.translate(
                     'xpack.apm.correlations.licenseCheckText',
                     {
-                      defaultMessage: `To use correlations, you must be subscribed to an Elastic Platinum license. With it, you'll be able to discover which fields are correlated with poor performance.`,
+                      defaultMessage: `To use correlations, you must be subscribed to an HyperSec Platinum license. With it, you'll be able to discover which fields are correlated with poor performance.`,
                     }
                   )}
                 />

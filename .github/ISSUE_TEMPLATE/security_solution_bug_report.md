@@ -1,19 +1,19 @@
 ---
 name: Bug report for Security Solution
-about: Help us identify bugs in Elastic Security, SIEM, and Endpoint so we can fix them!
+about: Help us identify bugs in HyperSec Security, SIEM, and Endpoint so we can fix them!
 title: '[Security Solution]'
 labels: Team: SecuritySolution
 ---
 
 **Describe the bug:**
 
-**Kibana/Elasticsearch Stack version:**
+**Kibana/HyperSec Stack version:**
 
 **Server OS version:**
 
 **Browser and Browser OS versions:**
 
-**Elastic Endpoint version:**
+**HyperSec Endpoint version:**
 
 **Original install method (e.g. download page, yum, from source, etc.):**
 

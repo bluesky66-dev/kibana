@@ -4,7 +4,7 @@
 <titleabbrev>Install with Docker </titleabbrev>
 ++++
 
-Docker images for Kibana are available from the Elastic Docker registry. The
+Docker images for Kibana are available from the HyperSec Docker registry. The
 base image is https://hub.docker.com/_/centos/[centos:7].
 
 A list of all published Docker images and tags is available at
@@ -19,7 +19,7 @@ These images contain both free and subscription features.
 === Pull the image
 
 Obtaining Kibana for Docker is as simple as issuing a +docker pull+ command
-against the Elastic Docker registry.
+against the HyperSec Docker registry.
 
 ifeval::["{release-state}"=="unreleased"]
 
@@ -37,7 +37,7 @@ docker pull {docker-repo}:{version}
 
 [float]
 === Run Kibana on Docker for development
-Kibana can be quickly started and connected to a local Elasticsearch container for development
+Kibana can be quickly started and connected to a local HyperSec container for development
 or testing use with the following command:
 
 [source,sh,subs="attributes"]

@@ -64,7 +64,7 @@ export function mapNodesVersionCompatibility(
   if (Object.keys(nodesInfo.nodes ?? {}).length === 0) {
     return {
       isCompatible: false,
-      message: 'Unable to retrieve version information from Elasticsearch nodes.',
+      message: 'Unable to retrieve version information from HyperSec nodes.',
       incompatibleNodes: [],
       warningNodes: [],
       kibanaVersion,
@@ -92,15 +92,15 @@ export function mapNodesVersionCompatibility(
   if (incompatibleNodes.length > 0) {
     const incompatibleNodeNames = incompatibleNodes.map((node) => node.name).join(', ');
     if (ignoreVersionMismatch) {
-      message = `Ignoring version incompatibility between Kibana v${kibanaVersion} and the following Elasticsearch nodes: ${incompatibleNodeNames}`;
+      message = `Ignoring version incompatibility between Kibana v${kibanaVersion} and the following HyperSec nodes: ${incompatibleNodeNames}`;
     } else {
-      message = `This version of Kibana (v${kibanaVersion}) is incompatible with the following Elasticsearch nodes in your cluster: ${incompatibleNodeNames}`;
+      message = `This version of Kibana (v${kibanaVersion}) is incompatible with the following HyperSec nodes in your cluster: ${incompatibleNodeNames}`;
     }
   } else if (warningNodes.length > 0) {
     const warningNodeNames = warningNodes.map((node) => node.name).join(', ');
     message =
       `You're running Kibana ${kibanaVersion} with some different versions of ` +
-      'Elasticsearch. Update Kibana or Elasticsearch to the same ' +
+      'HyperSec. Update Kibana or HyperSec to the same ' +
       `version to prevent compatibility issues: ${warningNodeNames}`;
   }
 
@@ -132,7 +132,7 @@ export const pollEsNodesVersion = ({
   ignoreVersionMismatch,
   esVersionCheckInterval: healthCheckInterval,
 }: PollEsNodesVersionOptions): Observable<NodesVersionCompatibility> => {
-  log.debug('Checking Elasticsearch version');
+  log.debug('Checking HyperSec version');
   return timer(0, healthCheckInterval).pipe(
     exhaustMap(() => {
       return from(

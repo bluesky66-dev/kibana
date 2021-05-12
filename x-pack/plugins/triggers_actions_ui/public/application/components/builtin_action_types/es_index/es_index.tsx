@@ -21,7 +21,7 @@ export function getActionType(): ActionTypeModel<EsIndexConfig, unknown, IndexAc
     selectMessage: i18n.translate(
       'xpack.triggersActionsUI.components.builtinActionTypes.indexAction.selectMessageText',
       {
-        defaultMessage: 'Index data into Elasticsearch.',
+        defaultMessage: 'Index data into HyperSec.',
       }
     ),
     actionTypeTitle: i18n.translate(

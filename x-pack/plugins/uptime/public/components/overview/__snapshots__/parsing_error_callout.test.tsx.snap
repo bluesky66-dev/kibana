@@ -18,7 +18,7 @@ exports[`OverviewPageParsingErrorCallout renders without errors when a valid err
       values={
         Object {
           "content": <EuiCodeBlock>
-            Unable to convert to Elasticsearch query, invalid syntax.
+            Unable to convert to HyperSec query, invalid syntax.
           </EuiCodeBlock>,
         }
       }

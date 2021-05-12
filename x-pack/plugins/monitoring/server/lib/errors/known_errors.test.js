@@ -23,7 +23,7 @@ describe.skip('Error handling for 503 errors', () => {
     const wrappedErr = handleKnownError(err);
     expect(wrappedErr.message).toBe(
       'Connection Failure: ' +
-        'Check the Elasticsearch Monitoring cluster network connection and refer to the Kibana logs for more information.'
+        'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.'
     );
     expect(wrappedErr.isBoom).toBe(true);
     expect(wrappedErr.isServer).toBe(true);
@@ -35,7 +35,7 @@ describe.skip('Error handling for 503 errors', () => {
         error: 'Service Unavailable',
         message:
           'Connection Failure: ' +
-          'Check the Elasticsearch Monitoring cluster network connection and refer to the Kibana logs for more information.',
+          'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.',
       },
       headers: {},
     });
@@ -48,7 +48,7 @@ describe.skip('Error handling for 503 errors', () => {
     const wrappedErr = handleKnownError(err);
     expect(wrappedErr.message).toBe(
       'No Living connections: ' +
-        'Check the Elasticsearch Monitoring cluster network connection and refer to the Kibana logs for more information.'
+        'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.'
     );
     expect(wrappedErr.isBoom).toBe(true);
     expect(wrappedErr.isServer).toBe(true);
@@ -60,7 +60,7 @@ describe.skip('Error handling for 503 errors', () => {
         error: 'Service Unavailable',
         message:
           'No Living connections: ' +
-          'Check the Elasticsearch Monitoring cluster network connection and refer to the Kibana logs for more information.',
+          'Check the HyperSec Monitoring cluster network connection and refer to the Kibana logs for more information.',
       },
       headers: {},
     });
@@ -73,7 +73,7 @@ describe.skip('Error handling for 503 errors', () => {
     const wrappedErr = handleKnownError(err);
     expect(wrappedErr.message).toBe(
       'Request Timeout: ' +
-        'Check the Elasticsearch Monitoring cluster network connection or the load level of the nodes.'
+        'Check the HyperSec Monitoring cluster network connection or the load level of the nodes.'
     );
     expect(wrappedErr.isBoom).toBe(true);
     expect(wrappedErr.isServer).toBe(true);
@@ -84,7 +84,7 @@ describe.skip('Error handling for 503 errors', () => {
         statusCode: 503,
         error: 'Service Unavailable',
         message:
-          'Request Timeout: Check the Elasticsearch Monitoring cluster network connection or the load level of the nodes.',
+          'Request Timeout: Check the HyperSec Monitoring cluster network connection or the load level of the nodes.',
       },
       headers: {},
     });

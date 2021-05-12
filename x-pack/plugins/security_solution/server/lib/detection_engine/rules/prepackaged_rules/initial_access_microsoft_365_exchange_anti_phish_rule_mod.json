@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies the modification of an anti-phishing rule in Microsoft 365. By default, Microsoft 365 includes built-in features that help protect users from phishing attacks. Anti-phishing rules increase this protection by refining settings to better detect and prevent attacks.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft 365 Exchange Anti-Phish Rule Modification",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:Exchange and event.category:web and event.action:(\"Remove-AntiPhishRule\" or \"Disable-AntiPhishRule\") and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "97314185-2568-4561-ae81-f3e480e5e695",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

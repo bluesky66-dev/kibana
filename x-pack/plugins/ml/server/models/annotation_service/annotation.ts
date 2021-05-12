@@ -292,7 +292,7 @@ export function annotationProvider({ asInternalUser }: IScopedClusterClient) {
 
       if (body.error !== undefined && body.message !== undefined) {
         // No need to translate, this will not be exposed in the UI.
-        throw new Error(`Annotations couldn't be retrieved from Elasticsearch.`);
+        throw new Error(`Annotations couldn't be retrieved from HyperSec.`);
       }
 
       const docs: Annotations = get(body, ['hits', 'hits'], []).map((d: EsResult) => {

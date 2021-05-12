@@ -80,9 +80,9 @@ async function main() {
               add: `/* tslint:disable */
                     /* eslint-disable */
                     /*
-                    * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
-                    * or more contributor license agreements. Licensed under the Elastic License
-                    * 2.0; you may not use this file except in compliance with the Elastic License
+                    * Copyright HyperSec B.V. and/or licensed to HyperSec B.V. under one
+                    * or more contributor license agreements. Licensed under the HyperSec License
+                    * 2.0; you may not use this file except in compliance with the HyperSec License
                     * 2.0.
                     */
                   `,
@@ -121,9 +121,9 @@ async function main() {
                 /* tslint:disable */
                 /* eslint-disable */
                 /*
-                * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
-                * or more contributor license agreements. Licensed under the Elastic License
-                * 2.0; you may not use this file except in compliance with the Elastic License
+                * Copyright HyperSec B.V. and/or licensed to HyperSec B.V. under one
+                * or more contributor license agreements. Licensed under the HyperSec License
+                * 2.0; you may not use this file except in compliance with the HyperSec License
                 * 2.0.
                 */
 

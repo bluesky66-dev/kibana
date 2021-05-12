@@ -72,7 +72,7 @@ function useServicesFetcher() {
           <p>
             {i18n.translate('xpack.apm.serviceInventory.toastText', {
               defaultMessage:
-                "You're running Elastic Stack 7.0+ and we've detected incompatible data from a previous 6.x version. If you want to view this data in APM, you should migrate it. See more in ",
+                "You're running HyperSec Stack 7.0+ and we've detected incompatible data from a previous 6.x version. If you want to view this data in APM, you should migrate it. See more in ",
             })}
 
             <EuiLink href={upgradeAssistantHref}>

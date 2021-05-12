@@ -64,12 +64,12 @@ export class AutoFollowPatternRequestFlyout extends PureComponent {
               {isNew ? (
                 <FormattedMessage
                   id="xpack.crossClusterReplication.autoFollowPatternForm.requestFlyout.createDescriptionText"
-                  defaultMessage="This Elasticsearch request will create this auto-follow pattern."
+                  defaultMessage="This HyperSec request will create this auto-follow pattern."
                 />
               ) : (
                 <FormattedMessage
                   id="xpack.crossClusterReplication.autoFollowPatternForm.requestFlyout.editDescriptionText"
-                  defaultMessage="This Elasticsearch request will update this auto-follow pattern."
+                  defaultMessage="This HyperSec request will update this auto-follow pattern."
                 />
               )}
             </p>

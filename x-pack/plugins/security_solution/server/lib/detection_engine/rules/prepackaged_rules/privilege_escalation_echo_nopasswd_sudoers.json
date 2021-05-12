@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "A sudoers file specifies the commands users or groups can run and from which terminals. Adversaries can take advantage of these configurations to execute commands as other users or spawn processes with higher privileges.",
   "from": "now-9m",
@@ -9,14 +9,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential Privilege Escalation via Sudoers File Modification",
   "query": "event.category:process and event.type:start and process.args:(echo and *NOPASSWD*ALL*)",
   "risk_score": 73,
   "rule_id": "76152ca1-71d0-4003-9e37-0983e12832da",
   "severity": "high",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "macOS",

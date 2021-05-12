@@ -14,7 +14,7 @@ const i18nTexts = {
     defaultMessage: 'Migrate to data tiers',
   }),
   body: i18n.translate('xpack.indexLifecycleMgmt.editPolicy.cloudDataTierCallout.body', {
-    defaultMessage: 'Migrate your Elastic Cloud deployment to use data tiers.',
+    defaultMessage: 'Migrate your HyperSec Cloud deployment to use data tiers.',
   }),
   linkText: i18n.translate(
     'xpack.indexLifecycleMgmt.editPolicy.cloudDataTierCallout.linkToCloudDeploymentDescription',

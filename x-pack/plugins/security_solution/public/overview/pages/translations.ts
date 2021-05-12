@@ -23,7 +23,7 @@ export const PAGE_TITLE = i18n.translate('xpack.securitySolution.overview.pageTi
 });
 
 export const PAGE_SUBTITLE = i18n.translate('xpack.securitySolution.overview.pageSubtitle', {
-  defaultMessage: 'Security Information & Event Management with the Elastic Stack',
+  defaultMessage: 'Security Information & Event Management with the HyperSec Stack',
 });
 
 export const RECENT_CASES = i18n.translate(

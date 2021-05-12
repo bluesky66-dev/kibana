@@ -40,7 +40,7 @@ export function createDefaultLayerDescriptor(
 export const esDocumentsLayerWizardConfig: LayerWizard = {
   categories: [LAYER_WIZARD_CATEGORY.ELASTICSEARCH],
   description: i18n.translate('xpack.maps.source.esSearchDescription', {
-    defaultMessage: 'Points, lines, and polygons from Elasticsearch',
+    defaultMessage: 'Points, lines, and polygons from HyperSec',
   }),
   icon: DocumentsLayerIcon,
   renderWizard: ({ previewLayers, mapColors }: RenderWizardArguments) => {

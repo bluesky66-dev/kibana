@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "This rule detects network events that may indicate the use of SSH traffic from the Internet. SSH is commonly used by system administrators to remotely control a system using the command line shell. If it is exposed to the Internet, it should be done with strong security controls as it is frequently targeted and exploited by threat actors as an initial access or back-door vector.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "SSH (Secure Shell) to the Internet",
   "query": "event.category:(network or network_traffic) and network.transport:tcp and (destination.port:22 or event.dataset:zeek.ssh) and source.ip:( 10.0.0.0/8 or 172.16.0.0/12 or 192.168.0.0/16 ) and not destination.ip:( 10.0.0.0/8 or 127.0.0.0/8 or 169.254.0.0/16 or 172.16.0.0/12 or 192.168.0.0/16 or 224.0.0.0/4 or \"::1\" or \"FE80::/10\" or \"FF00::/8\" )",
   "risk_score": 21,
   "rule_id": "6f1500bc-62d7-4eb9-8601-7485e87da2f4",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Network",
     "Threat Detection",

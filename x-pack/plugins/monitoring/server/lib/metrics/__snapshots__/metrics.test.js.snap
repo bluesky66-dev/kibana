@@ -2637,7 +2637,7 @@ Object {
     "label": "Query Cache",
     "metricAgg": "max",
     "timestampField": "timestamp",
-    "title": "Index Memory - Elasticsearch",
+    "title": "Index Memory - HyperSec",
     "type": "index",
     "units": "B",
     "uuidField": "source_node.uuid",
@@ -2782,7 +2782,7 @@ Object {
   "index_refresh_time": ElasticsearchMetric {
     "app": "elasticsearch",
     "derivative": true,
-    "description": "Time spent on Elasticsearch refresh for primary and replica shards.",
+    "description": "Time spent on HyperSec refresh for primary and replica shards.",
     "field": "index_stats.total.refresh.total_time_in_millis",
     "format": "0,0.[00]",
     "label": "Total Refresh Time",
@@ -4004,7 +4004,7 @@ Object {
   "node_cpu_utilization": ElasticsearchMetric {
     "app": "elasticsearch",
     "derivative": false,
-    "description": "Percentage of CPU usage for the Elasticsearch process.",
+    "description": "Percentage of CPU usage for the HyperSec process.",
     "field": "node_stats.process.cpu.percent",
     "format": "0,0.[00]",
     "label": "CPU Utilization",
@@ -4203,7 +4203,7 @@ Object {
     "label": "Query Cache",
     "metricAgg": "max",
     "timestampField": "timestamp",
-    "title": "Index Memory - Elasticsearch",
+    "title": "Index Memory - HyperSec",
     "type": "node",
     "units": "B",
     "uuidField": "source_node.uuid",
@@ -4524,7 +4524,7 @@ Object {
   "node_jvm_mem_max_in_bytes": ElasticsearchMetric {
     "app": "elasticsearch",
     "derivative": false,
-    "description": "Total heap available to Elasticsearch running in the JVM.",
+    "description": "Total heap available to HyperSec running in the JVM.",
     "field": "node_stats.jvm.mem.heap_max_in_bytes",
     "format": "0.0 b",
     "label": "Max Heap",
@@ -4538,7 +4538,7 @@ Object {
   "node_jvm_mem_percent": ElasticsearchMetric {
     "app": "elasticsearch",
     "derivative": false,
-    "description": "Total heap used by Elasticsearch running in the JVM.",
+    "description": "Total heap used by HyperSec running in the JVM.",
     "field": "node_stats.jvm.mem.heap_used_percent",
     "format": "0,0.[00]",
     "label": "Used Heap",
@@ -4552,7 +4552,7 @@ Object {
   "node_jvm_mem_used_in_bytes": ElasticsearchMetric {
     "app": "elasticsearch",
     "derivative": false,
-    "description": "Total heap used by Elasticsearch running in the JVM.",
+    "description": "Total heap used by HyperSec running in the JVM.",
     "field": "node_stats.jvm.mem.heap_used_in_bytes",
     "format": "0.0 b",
     "label": "Used Heap",

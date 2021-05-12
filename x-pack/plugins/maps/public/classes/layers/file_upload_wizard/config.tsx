@@ -13,7 +13,7 @@ import { ClientFileCreateSourceEditor, INDEX_SETUP_STEP_ID, INDEXING_STEP_ID } f
 export const uploadLayerWizardConfig: LayerWizard = {
   categories: [],
   description: i18n.translate('xpack.maps.fileUploadWizard.description', {
-    defaultMessage: 'Index GeoJSON data in Elasticsearch',
+    defaultMessage: 'Index GeoJSON data in HyperSec',
   }),
   icon: 'importAction',
   prerequisiteSteps: [

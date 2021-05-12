@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies attempts to modify an AWS IAM Assume Role Policy. An adversary may attempt to modify the AssumeRolePolicy of a misconfigured role in order to gain the privileges of that role.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "AWS IAM Assume Role Policy Update",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:aws.cloudtrail and event.provider:iam.amazonaws.com and event.action:UpdateAssumeRolePolicy and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "a60326d7-dca7-4fb7-93eb-1ca03a1febbd",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

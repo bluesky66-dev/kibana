@@ -23,7 +23,7 @@ see [the current docs](https://www.elastic.co/guide/en/kibana/current/settings.h
 ### 2. Run ES/Kibana dev env with ssl enabled
 - In two terminals, run the normal commands to launch both elasticsearch and kibana but 
 append `--ssl` to the end of each as an arg, i.e.:
-  - `yarn es snapshot --ssl  # Runs Elasticsearch`
+  - `yarn es snapshot --ssl  # Runs HyperSec`
   - `yarn start --ssl # Runs Kibana`
   
 ### 3. Get an MTA data api key

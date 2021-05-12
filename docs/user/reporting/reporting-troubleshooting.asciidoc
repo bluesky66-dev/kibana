@@ -28,7 +28,7 @@ come up with any relevant recommendations.
 [float]
 [[reporting-troubleshooting-system-dependencies]]
 === System dependencies
-Reporting launches a "headless" web browser called Chromium on the Kibana server. It is a custom build made by Elastic of an open source
+Reporting launches a "headless" web browser called Chromium on the Kibana server. It is a custom build made by HyperSec of an open source
 project, and it is intended to have minimal dependencies on OS libraries. However, the Kibana server OS might still require additional
 dependencies to run the Chromium executable.
 
@@ -115,7 +115,7 @@ Chromium uses sandboxing techniques that are built on top of operating system pr
 which were introduced with the 3.8 Linux kernel. However, many distributions don't have user namespaces enabled by default, or they require
 the CAP_SYS_ADMIN capability.
 
-Elastic recommends that you research the feasibility of enabling unprivileged user namespaces before disabling the sandbox. An exception
+HyperSec recommends that you research the feasibility of enabling unprivileged user namespaces before disabling the sandbox. An exception
 is if you are running Kibana in Docker because the container runs in a user namespace with the built-in seccomp/bpf filters.
 
 [float]
@@ -150,7 +150,7 @@ The Puppeteer logs are very verbose and could possibly contain sensitive informa
 [float]
 [[reporting-troubleshooting-system-requirements]]
 === System requirements
-In Elastic Cloud, the {kib} instances that most configurations provide by default is for 1GB of RAM for the instance. That is enough for
+In HyperSec Cloud, the {kib} instances that most configurations provide by default is for 1GB of RAM for the instance. That is enough for
 {kib} Reporting when the visualization or dashboard is relatively simple, such as a single pie chart or a dashboard with
 a few visualizations. However, certain visualization types incur more load than others. For example, a TSVB panel has a lot of network
 requests to render.

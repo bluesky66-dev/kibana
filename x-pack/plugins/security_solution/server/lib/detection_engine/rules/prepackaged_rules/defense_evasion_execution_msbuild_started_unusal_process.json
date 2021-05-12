@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "An instance of MSBuild, the Microsoft Build Engine, started a PowerShell script or the Visual C# Command Line Compiler. This technique is sometimes used to deploy a malicious payload using the Build Engine.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Microsoft Build Engine Started an Unusual Process",
   "query": "event.category:process and event.type:(start or process_started) and process.parent.name:MSBuild.exe and process.name:(csc.exe or iexplore.exe or powershell.exe)",
   "references": [
@@ -23,7 +23,7 @@
   "rule_id": "9d110cb3-5f4b-4c9a-b9f5-53f0a1707ae6",
   "severity": "low",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Windows",
     "Threat Detection",

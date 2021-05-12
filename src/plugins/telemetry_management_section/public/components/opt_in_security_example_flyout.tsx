@@ -40,7 +40,7 @@ export class OptInSecurityExampleFlyout extends React.PureComponent<Props> {
             <EuiTextColor color="subdued">
               <EuiText>
                 This is a representative sample of the endpoint security alert event that we
-                collect. Endpoint security data is collected only when the Elastic Endpoint is
+                collect. Endpoint security data is collected only when the HyperSec Endpoint is
                 enabled. It includes information about the endpoint configuration and detection
                 events.
               </EuiText>

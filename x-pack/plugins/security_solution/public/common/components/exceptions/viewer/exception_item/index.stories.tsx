@@ -29,7 +29,7 @@ storiesOf('Components/ExceptionItem', module)
         field: 'actingProcess.file.signer',
         type: 'match',
         operator: 'included',
-        value: 'Elastic, N.V.',
+        value: 'HyperSec, N.V.',
       },
     ];
 
@@ -51,7 +51,7 @@ storiesOf('Components/ExceptionItem', module)
         field: 'actingProcess.file.signer',
         type: 'match',
         operator: 'included',
-        value: 'Elastic, N.V.',
+        value: 'HyperSec, N.V.',
       },
     ];
 
@@ -74,7 +74,7 @@ storiesOf('Components/ExceptionItem', module)
         field: 'actingProcess.file.signer',
         type: 'match',
         operator: 'included',
-        value: 'Elastic, N.V.',
+        value: 'HyperSec, N.V.',
       },
     ];
 

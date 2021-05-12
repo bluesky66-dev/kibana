@@ -19,11 +19,11 @@ This directory is excluded from the build and tools within it should help users 
 
 **`node scripts/functional_tests [--config test/functional/config.js --config test/api_integration/config.js]`**
 
-Runs all the functional tests: selenium tests and api integration tests. List configs with multiple `--config` arguments. Uses the [@kbn/test](../packages/kbn-test) library to run Elasticsearch and Kibana servers and tests against those servers, for multiple server+test setups. In particular, calls out to [`runTests()`](../packages/kbn-test/src/functional_tests/tasks.js). Can be run on a single config.
+Runs all the functional tests: selenium tests and api integration tests. List configs with multiple `--config` arguments. Uses the [@kbn/test](../packages/kbn-test) library to run HyperSec and Kibana servers and tests against those servers, for multiple server+test setups. In particular, calls out to [`runTests()`](../packages/kbn-test/src/functional_tests/tasks.js). Can be run on a single config.
 
 **`node scripts/functional_tests_server [--config test/functional/config.js]`**
 
-Starts just the Elasticsearch and Kibana servers given a single config, i.e. via `--config test/functional/config.js` or `--config test/api_integration/config`. Allows the user to start just the servers with this script, and keep them running while running tests against these servers. The idea is that the same config file configures both Elasticsearch and Kibana servers. Uses the [`startServers()`](../packages/kbn-test/src/functional_tests/tasks.js#L52-L80) method from [@kbn/test](../packages/kbn-test) library.
+Starts just the HyperSec and Kibana servers given a single config, i.e. via `--config test/functional/config.js` or `--config test/api_integration/config`. Allows the user to start just the servers with this script, and keep them running while running tests against these servers. The idea is that the same config file configures both HyperSec and Kibana servers. Uses the [`startServers()`](../packages/kbn-test/src/functional_tests/tasks.js#L52-L80) method from [@kbn/test](../packages/kbn-test) library.
 
 Example. Start servers _and_ run tests, separately, but using the same config:
 

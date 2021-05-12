@@ -102,7 +102,7 @@ uiRoutes.when('/elasticsearch/nodes/:node/advanced', {
 
           this.setTitle(
             i18n.translate('xpack.monitoring.elasticsearch.node.advanced.routeTitle', {
-              defaultMessage: 'Elasticsearch - Nodes - {nodeSummaryName} - Advanced',
+              defaultMessage: 'HyperSec - Nodes - {nodeSummaryName} - Advanced',
               values: {
                 nodeSummaryName: get(data, 'nodeSummary.name'),
               },
@@ -111,7 +111,7 @@ uiRoutes.when('/elasticsearch/nodes/:node/advanced', {
 
           this.setPageTitle(
             i18n.translate('xpack.monitoring.elasticsearch.node.overview.pageTitle', {
-              defaultMessage: 'Elasticsearch node: {node}',
+              defaultMessage: 'HyperSec node: {node}',
               values: {
                 node: get(data, 'nodeSummary.name'),
               },

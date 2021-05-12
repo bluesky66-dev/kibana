@@ -22,7 +22,7 @@ export const InvalidLicensePage = injectI18n(({ intl }) => (
       <FormattedMessage
         id="xpack.fleet.invalidLicenseDescription"
         defaultMessage="Your current license is expired. Enrolled Beats Agents will continue to work, but you need a valid
-          license to access the Elastic Fleet interface."
+          license to access the HyperSec Fleet interface."
       />
     </p>
   </NoDataLayout>

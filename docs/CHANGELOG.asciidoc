@@ -81,8 +81,8 @@ Dashboard::
 * Allows By Value Flow Without Visualize Save Permissions {kibana-pull}95951[#95951]
 * Fixes adding columns from doc viewer table tab {kibana-pull}95748[#95748]
 * Adds Discrete Library Option to Save Modal {kibana-pull}94589[#94589]
-Elastic Security::
-For the Elastic Security 7.12.1 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security::
+For the HyperSec Security 7.12.1 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Machine Learning::
 * Data Frame Analytics creation: ensure job config validity persists when switching from/to form/editor {kibana-pull}94654[#94654]
 * Data Frame Analytics results: Ensure outlier detection results view displays feature influence correctly {kibana-pull}94493[#94493]
@@ -108,7 +108,7 @@ Monitoring::
 Operations::
 * Improves performance of data stream API {kibana-pull}97058[#97058]
 * Migrations v2 ignore fleet agent events {kibana-pull}96690[#96690]
-* Resolves regression where Elastic Endgame rules would warn about unmapped timestamp override field {kibana-pull}96394[#96394]
+* Resolves regression where HyperSec Endgame rules would warn about unmapped timestamp override field {kibana-pull}96394[#96394]
 * Updates query for ping histogram {kibana-pull}95495[#95495]
 * Migrations v2: Retry tasks that timeout {kibana-pull}95305[#95305]
 * Fixes issues preventing the SysV service from starting Kibana {kibana-pull}95018[#95018]
@@ -263,8 +263,8 @@ Dashboard::
 * Adds switch for color syncing between charts on dashboards {kibana-pull}86180[#86180]
 Discover::
 * Support mapping defined runtime fields in Discover {kibana-pull}83891[#83891]
-Elastic Security::
-For the Elastic Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security::
+For the HyperSec Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Lens & Visualizations::
 * Support histogram mapping type for all numeric functions in *Lens* {kibana-pull}90357[#90357]
 * Adds percentile to *Lens* {kibana-pull}86490[#86490]
@@ -335,8 +335,8 @@ Discover::
 * Deangularize navbar in context app {kibana-pull}86353[#86353]
 * Change default sort handling {kibana-pull}85561[#85561]
 * Support mapping defined runtime fields in Discover {kibana-pull}83891[#83891]
-Elastic Security::
-For the Elastic Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security::
+For the HyperSec Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Fleet::
 * Install Lens assets from packages if present {kibana-pull}88189[#88189]
 Kibana Home & Add Data::
@@ -481,8 +481,8 @@ Discover::
 * Fixes icon for conflicting fields {kibana-pull}90641[#90641]
 * Add icon for nested fields in sidebar {kibana-pull}85147[#85147]
 * Fixes context view for date_nanos format with custom timestamps {kibana-pull}54089[#54089]
-Elastic Security::
-For the Elastic Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security::
+For the HyperSec Security 7.12.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Fleet::
 * Return empty agents list when submitting a kuery with no keys {kibana-pull}93844[#93844]
 * V1 migrations: drop fleet-agent-events during a migration {kibana-pull}92188[#92188]
@@ -532,7 +532,7 @@ Maps::
 * Increase index pattern select limit to 1000 {kibana-pull}92093[#92093]
 * Fixes issue preventing WebGL warning message from appearing {kibana-pull}91069[#91069]
 * Fixes geo shape agg telemetry not collecting due to missing index pattern IDs {kibana-pull}90886[#90886]
-* Fixes reporting jobs fail when Elastic Maps Service (EMS) is unavailable {kibana-pull}90834[#90834]
+* Fixes reporting jobs fail when HyperSec Maps Service (EMS) is unavailable {kibana-pull}90834[#90834]
 * Fixes users without access to Maps should not have the option to create them {kibana-pull}88830[#88830]
 * Geo containment latency and concurrent containment fix {kibana-pull}86980[#86980]
 Metrics::
@@ -572,7 +572,7 @@ Platform::
 * Resilient saved object migration algorithm {kibana-pull}78413[#78413]
 Querying & Filtering::
 * Remove number parsing {kibana-pull}93658[#93658]
-* Do not generate nested AST/Elasticsearch queries for same-level AND/OR clauses {kibana-pull}93506[#93506]
+* Do not generate nested AST/HyperSec queries for same-level AND/OR clauses {kibana-pull}93506[#93506]
 * Fixes accessibility in the global query bar {kibana-pull}93411[#93411]
 Reporting::
 * Deserialize query string options for serverside ES Query {kibana-pull}90050[#90050]
@@ -634,8 +634,8 @@ APM::
 * Fixes an issue preventing metric-document only services from displaying in the Services overview list  {kibana-pull}92378[#92378]
 Canvas::
 * Removes custom plot plugins when *Canvas* is unmounted {kibana-pull}90722[#90722]
-Elastic Security::
-For the Elastic Security 7.11.2 bug fixes, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security::
+For the HyperSec Security 7.11.2 bug fixes, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Lens and visualizations::
 * Fixes *TSVB* chart scroll when legend has many items {kibana-pull}91394[#91394]
 * Use timestamp on brush event instead of iso dates {kibana-pull}91483[#91483]
@@ -672,8 +672,8 @@ Dashboard::
 * Sync tooltip legend values {kibana-pull}90036[#90036]
 Discover::
 * Fixes 'auto' collapsing of documents {kibana-pull}89712[#89712]
-Elastic Security Solution::
-For the Elastic Security Solution 7.11.1 bug fixes, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security Solution::
+For the HyperSec Security Solution 7.11.1 bug fixes, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Lens and visualizations::
 * *Lens* visualizations now load faster on dashboards {kibana-pull}88953[#88953]
 * Advanced input now works for aggregation-based visualizations {kibana-pull}88154[#88154]
@@ -733,7 +733,7 @@ Alerting::
 * Adds footer to all emails sent by Kibana email connector with a link to open Kibana or to the alert details page {kibana-pull}84371[#84371]
 * Adds default dedupKey value as an {{alertInstanceId}} to provide grouping functionality for PagerDuty incidents {kibana-pull}84598[#84598]
 APM::
-* Transition to Elastic charts for all relevant APM charts {kibana-pull}80298[#80298]
+* Transition to HyperSec charts for all relevant APM charts {kibana-pull}80298[#80298]
 * APM Experiments settings {kibana-pull}81554[#81554]
 * APM index settings import/export in saved-object management {kibana-pull}82784[#82784]
 * Service overview: Dependencies table {kibana-pull}83416[#83416]
@@ -759,8 +759,8 @@ Dashboard::
 * ExternalUrl service was integrated with URL Drilldown {kibana-pull}85779[#85779]
 Discover::
 * Adds new responsive layout {kibana-pull}83633[#83633]
-Elastic Security Solution::
-For the Elastic Security Solution 7.11.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security Solution::
+For the HyperSec Security Solution 7.11.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Fleet::
 * Agent logs UI {kibana-pull}83356[#83356]
 Lens and visualizations::
@@ -879,7 +879,7 @@ Operations::
 * Upgrades the major Node.js version used by and shipped with Kibana from v12 to v14 {kibana-pull}83425[#83425]
 * Adds experimental support for configuring CORS policy {kibana-pull}84316[#84316]
 Platform::
-* Apply back pressure in Task Manager whenever Elasticsearch responds with a 429 {kibana-pull}75666[#75666]
+* Apply back pressure in Task Manager whenever HyperSec responds with a 429 {kibana-pull}75666[#75666]
 * Adds basic observability into Task Manager's runtime operations {kibana-pull}77868[#77868]
 * Custom labels for ranges {kibana-pull}79628[#79628]
 * Adds cumulative sum expression function {kibana-pull}80129[#80129]
@@ -961,8 +961,8 @@ Dashboard::
 Discover::
 * Fixes double fetching of saved search embeddable  {kibana-pull}84060[#84060]
 * Fixes navigating back when changing index pattern {kibana-pull}84061[#84061]
-Elastic Security Solution::
-For the Elastic Security Solution 7.11.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
+HyperSec Security Solution::
+For the HyperSec Security Solution 7.11.0 release information, refer to {security-guide}/release-notes.html[_Elastic Security Solution Release Notes_].
 Fleet::
 * Fixes duplicate ingest pipeline refs {kibana-pull}82078[#82078]
 Lens and visualizations::
@@ -1008,7 +1008,7 @@ Management::
 * Fixes ilm navigation {kibana-pull}81664[#81664]
 * Fixes a bug in the Watcher UI where the search input cleared after 1 minute of inactivity, causing a user to lose the filtered results {kibana-pull}82651[#82651]
 * Fixes a bug in the Index Templates UI where editing an index template with a deprecated type defined and no mapped fields could remove the type on save {kibana-pull}82987[#82987]
-* Grokdebugger correctly passes Elasticsearch errors to the Kibana UI {kibana-pull}83036[#83036]
+* Grokdebugger correctly passes HyperSec errors to the Kibana UI {kibana-pull}83036[#83036]
 * Fixes an issue in the Snapshot and Restore UI, where editing a Snapshot Lifecycle Management policy may fail if it contains a previous snapshot failure with a large payload content {kibana-pull}83928[#83928]
 * Reset to default for empty strings {kibana-pull}85137[#85137]
 * Fixes esaggs missing default time field scenario in Lens {kibana-pull}85754[#85754]
@@ -1289,9 +1289,9 @@ Ingest Manager::
 * User experience metrics {kibana-pull}77384[#77384]
 * Uses optional `registryProxyUrl` setting when contacting Registry {kibana-pull}78648[#78648]
 * Upgrades Agents in Fleet {kibana-pull}78810[#78810]
-* Configures Elasticsearch output with YAML in global output settings {kibana-pull}79019[#79019]
+* Configures HyperSec output with YAML in global output settings {kibana-pull}79019[#79019]
 Kibana UI::
-* Elastic home page redesign {kibana-pull}70571[#70571]
+* HyperSec home page redesign {kibana-pull}70571[#70571]
 * Stacked headers and navigational search {kibana-pull}72331[#72331]
 * Kibana Overview Page {kibana-pull}75827[#75827]
 * Adds meta data and highlighting to nav search {kibana-pull}77662[#77662]
@@ -1642,7 +1642,7 @@ Querying & Filtering::
 * Fixes warning text doesn't get displayed on filters with custom filter name {kibana-pull}78617[#78617]
 Reporting::
 * Allows any hostname for chromium proxy bypass {kibana-pull}74693[#74693]
-* Fixes an issue with CSV Export where a job could fail if clearing the scroll ID failed in Elasticsearch {kibana-pull}76014[#76014]
+* Fixes an issue with CSV Export where a job could fail if clearing the scroll ID failed in HyperSec {kibana-pull}76014[#76014]
 * Fixes a bug where the downloading CSV from a saved search in a dashboard panel had no file name if the dashboard panels were hidden {kibana-pull}76031[#76031]
 * Fixes the reporting exports to use the correct Space for advanced settings {kibana-pull}76998[#76998]
 * Fixes a problem in the list of Reports jobs in Management would not refresh with the correct items immediately after deleting a report from the listing {kibana-pull}78516[#78516]
@@ -1692,7 +1692,7 @@ Lens and visualizations::
 * Shows tooltip on external pointer events {kibana-pull}77306[#77306]
 Management::
 * Fixes a bug in the index template wizard, which resulted in an error when the user tries to save an existing
-template or attempts to view the Elasticsearch request when the template does not have any mappings {kibana-pull}78653[#78653]
+template or attempts to view the HyperSec request when the template does not have any mappings {kibana-pull}78653[#78653]
 * Fixes index pattern creation when using cross cluster search with clusters running <7.9 {kibana-pull}80006[#80006]
 Monitoring::
 * Fixes UX around an unavailable remote cluster {kibana-pull}79202[#79202]
@@ -1907,7 +1907,7 @@ that burden is removed and improved access to ES processors is provided. This co
 * Transforms - Updated: Add ability to delete dest index & index pattern when deleting transform job {kibana-pull}68896[#68896]
 * Transform: Table enhancements {kibana-pull}69307[#69307]
 * Transform: Enable force delete if one of the transforms failed {kibana-pull}69472[#69472]
-* A new tab called Component Templates is available in Index Management. It provides a way to manage Elasticsearch's component templates. Users can create, edit, clone, and delete a component template {kibana-pull}69732[#69732]
+* A new tab called Component Templates is available in Index Management. It provides a way to manage HyperSec's component templates. Users can create, edit, clone, and delete a component template {kibana-pull}69732[#69732]
 * The index templates tab allows users to manage both their legacy index templates and composable index templates. Users can create, edit, clone, and delete a composable index template {kibana-pull}70220[#70220]
 * We updated the snapshot policy name field in Delete phase of index lifecycle policy. This component now display a list of existing snapshot policies and warns the user if their input doesn't match any existing policies {kibana-pull}70627[#70627]
 Maps::
@@ -1980,7 +1980,7 @@ Dashboard::
 * Loses OriginatingApp Connection on Save As {kibana-pull}72725[#72725]
 * Sometimes when creating filters on a dashboard suggestions from default index patterns were shown by mistake {kibana-pull}72899[#72899]
 * Handles listing errors gracefully {kibana-pull}66986[#66986]
-* {kib} now sets the keep_alive parameter to 1m in _async_search requests to Elasticsearch to ensure that search requests are cancelled
+* {kib} now sets the keep_alive parameter to 1m in _async_search requests to HyperSec to ensure that search requests are cancelled
 if a user closes the browser or navigates outside of Kibana before a request completes {kibana-pull}73712[#73712]
 Design::
 * Multiple chart actions context menu positioning fixes {kibana-pull}70705[#70705]
@@ -1990,7 +1990,7 @@ Discover::
 * Removes column from sorting array when removed from table {kibana-pull}65990[#65990]
 * Validates timerange before submitting query to ES {kibana-pull}69363[#69363]
 * Adds error and warning statuses to FilterBar filters {kibana-pull}66979[#66979]
-* Forbids timezones not working in Elasticsearch {kibana-pull}70780[#70780]
+* Forbids timezones not working in HyperSec {kibana-pull}70780[#70780]
 Ingest Management::
 * Fixes clear filters on agents table not working {kibana-pull}71978[#71978]
 Kibana UI::
@@ -2086,7 +2086,7 @@ Platform::
 * Sets wrap to the errorLink so it doesn't go outside of box {kibana-pull}67797[#67797]
 * Fixes plugin lifecycle log to only include server plugins {kibana-pull}68686[#68686]
 Querying & Filtering::
-* When using KQL or the filter bar, if a request is issued to Elasticsearch for suggestions for a value for a specific field, the request
+* When using KQL or the filter bar, if a request is issued to HyperSec for suggestions for a value for a specific field, the request
 will be cancelled when navigating away as well as when the input is updated (and a new request is issued {kibana-pull}69769[#69769]
 Reporting::
 * Fixes a bug where the Kibana server could crash if the Reporting server-side headless browser crashes {kibana-pull}71989[#71989]
@@ -2629,8 +2629,8 @@ Canvas::
 * Updates esdocs datasource {kib-pull}59512[#59512]
 * Improves expression autocomplete {kib-pull}52035[#52035]
 Dashboard::
-* Use Elasticsearch `_async_search` instead of `_search` when it is available (excluding TSVB, Timelion, and Vega) {kib-pull}59224[#59224}
-* When queries run more than 10 seconds, show a pop-up to allow users to run the queries beyond the configured Elasticsearch query timeout or cancel the queries {kib-pull}60706[#60706]
+* Use HyperSec `_async_search` instead of `_search` when it is available (excluding TSVB, Timelion, and Vega) {kib-pull}59224[#59224}
+* When queries run more than 10 seconds, show a pop-up to allow users to run the queries beyond the configured HyperSec query timeout or cancel the queries {kib-pull}60706[#60706]
 * Dashboard/add panel flow {kib-pull}59918[#59918]
 * Moves the "Create New" button in add panel flyout to the top to make it more visible to the user {kib-pull}56428[#56428]
 Lens and visualizations::
@@ -2681,7 +2681,7 @@ Management::
 * Server-side batch reindexing {kib-pull}58598[#58598]
 * Better handling of closed indices {kib-pull}58890[#58890]
 * Advanced settings UI change to centralize save state {kib-pull}53693[#53693]
-* The autocomplete in the dev console now supports many different types of Elasticsearch pipeline processors {kib-pull}60553[#60553]
+* The autocomplete in the dev console now supports many different types of HyperSec pipeline processors {kib-pull}60553[#60553]
 Maps::
 * Improves Layer Style UI {kib-pull}58406[#58406]
 * Shows field type icons in data driven styling field select {kib-pull}55166[#55166]
@@ -3356,7 +3356,7 @@ Platform::
 * {kib} 7.0.0 URL field formatter doesn't render relative hyperlinks properly {kib-pull}53265[#53265]
 * Interpreter conversion of string to number should throw on NaN #27788 {kib-pull}50063[#50063]
 * Cancels discarded KQL value suggestion requests {kib-pull}51411[#51411]
-* Performs successful Elasticsearch version check before migrations {kib-pull}51311[#51311]
+* Performs successful HyperSec version check before migrations {kib-pull}51311[#51311]
 Reporting::
 * Do not fail the report if request is aborted {kib-pull}52344[#52344]
 * Fixes map tiles not loading by using Chrome's Remote Protocol {kib-pull}55137[#55137]
@@ -3607,7 +3607,7 @@ Maps::
 * Uses EuiPopover instead of mapbox tooltip {kib-pull}45938[#45938]
 * Cancels SearchSource fetches that are no longer needed {kib-pull}44436[#44436]
 * Provides isLoading and hasError feedback when legend is collapsed {kib-pull}47157[#47157]
-* Uses pre-indexed shapes in shape filters when shape is stored in Elasticsearch {kib-pull}47171[#47171]
+* Uses pre-indexed shapes in shape filters when shape is stored in HyperSec {kib-pull}47171[#47171]
 * Moves sort out of top hits configuration for ES documents source {kib-pull}47361[#47361]
 * Provides drag-n-drop support to order tooltip properties {kib-pull}46631[#46631]
 * Retrieves geo_point value from docvalue_fields instead of _source {kib-pull}47389[#47389]
@@ -3626,7 +3626,7 @@ Metrics::
 Monitoring::
 * Moves to OSS {kib-pull}45769[#45769]
 * Metricbeat Migration Wizard {kib-pull}45799[#45799]
-* Adds I/O metrics for Elasticsearch {kib-pull}45870[#45870]
+* Adds I/O metrics for HyperSec {kib-pull}45870[#45870]
 Platform::
 * Moves highlight_html.js {kib-pull}45372[#45372]
 * Moves as_pretty_string.js {kib-pull}45356[#45356]
@@ -3664,7 +3664,7 @@ Stack services::
 * Provides telemetry on opt-in status {kib-pull}50158[#50158]
 * Adds configureable server side telemetry {kib-pull}50015[#50015]
 * Adds kibana.yml configurations for telemetry default status and UI behavior {kib-pull}49798[#49798]
-* Adds Ask Elastic and Give feedback links to help section {kib-pull}49797[#49797]
+* Adds Ask HyperSec and Give feedback links to help section {kib-pull}49797[#49797]
 * Adds newsfeed {kib-pull}49579[#49579]
 Uptime::
 * Query Overhaul + Pagination {kib-pull}42933[#42933]
@@ -4006,7 +4006,7 @@ Reporting::
 * Truncate base64 urls in logs {kib-pull}41304[#41304]
 * Sanitize 409 error log message {kib-pull}42495[#42495]
 Security::
-* PKI authentication in Kibana via Elasticsearch PKI realm {kib-pull}42606[#42606]
+* PKI authentication in Kibana via HyperSec PKI realm {kib-pull}42606[#42606]
 * OIDC authentication now supports the implicit flow {kib-pull}42069[#42069]
 * Telemetry for csp configuration {kib-pull}43223[#43223]
 * Copy Saved Objects to Spaces UI {kib-pull}39002[#39002]
@@ -4070,7 +4070,7 @@ Filters::
 Graph::
 * Replace all occurences of placeholder in drilldown URL template {kib-pull}41673[#41673]
 Infrastructure::
-* Replace EUI Charts with Elastic Charts on node detail page {kib-pull}41262[#41262]
+* Replace EUI Charts with HyperSec Charts on node detail page {kib-pull}41262[#41262]
 * Use {kib} date format for chart headers {kib-pull}41715[#41715]
 * Change contextual menu position on infrastructure view {kib-pull}41810[#41810]
 * Cleanup loading states for node detail page. {kib-pull}43311[#43311]
@@ -4207,7 +4207,7 @@ Filters::
 * Fixes Firefox continuously changing filter position order when
 applying more than 1 filter. See https://github.com/elastic/kibana/issues/41567[issue #41567].
 Geo::
-* Moves Geojson deep clone logic to Elasticsearch, making Geojson
+* Moves Geojson deep clone logic to HyperSec, making Geojson
 upload more stable when uploading large geometries. {kib-pull}41835[#41835]
 * Fixes maps Geojson upload hanging on index step {kib-pull}42623[#42623]
 * Formats doc-ids as strings {kib-pull}42011[#42011]
@@ -4380,7 +4380,7 @@ Visualize::
 * Add configs for terminate_after {kib-pull}37643[#37643]
 * Enable use of KQL and autocomplete in filters agg editor {kib-pull}37287[#37287]
 * Add automatic alignment to gauge visualisation {kib-pull}34845[#34845]
-* Support Elasticsearch date_nanos datatype {kib-pull}36111[#36111]
+* Support HyperSec date_nanos datatype {kib-pull}36111[#36111]
 * Support for date_nanos type timestamps in context view  {kib-pull}38023[#38023]
 * [Fixes #38424] Show link to Maps application in create new visualize menu {kib-pull}39191[#39191]
 * Rename Visual Builder to TSVB {kib-pull}39125[#39125]
@@ -5182,7 +5182,7 @@ a password change is possible for the authentication realm {kib-pull}26779[#2677
 * Makes space selector a `button` {kib-pull}26889[#26889]
 Visualizations::
 * Replaces Angular timepicker with EuiSuperDatePicker {kib-pull}29204[#29204]
-* Upgrades Kibana to Elasticsearch 7.0 {kib-pull}29184[#29184]
+* Upgrades Kibana to HyperSec 7.0 {kib-pull}29184[#29184]
 * Maps inspector requests by id so single requests can be reset at a time {kib-pull}26770[#26770]
 * Adds ODBC to blurb for start trail {kib-pull}27223[#27223]
 * Adds a `console.error` for visualize errors {kib-pull}24581[#24581]
@@ -5345,7 +5345,7 @@ Monitoring::
 * Fixes error handling for local stats collection/permissions {kib-pull}26560[#26560]
 * Removes initial delay to check and send Telemetry data {kib-pull}26575[#26575]
 * Pulls local Kibana usage stats {kib-pull}26496[#26496]
-* Converts the Elasticsearch monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
+* Converts the HyperSec monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
 * Renames Monitoring `FormattedMessage` to `FormattedAlert` {kib-pull}24197[#24197]
 * Uses the cluster name from metadata if it exists {kib-pull}24495[#24495]
 Observability::
@@ -5720,7 +5720,7 @@ a password change is possible for the authentication realm {kib-pull}26779[#2677
 * Makes space selector a `button` {kib-pull}26889[#26889]
 Visualizations::
 * Replaces Angular timepicker with EuiSuperDatePicker {kib-pull}29204[#29204]
-* Upgrades Kibana to Elasticsearch 7.0 {kib-pull}29184[#29184]
+* Upgrades Kibana to HyperSec 7.0 {kib-pull}29184[#29184]
 * Maps inspector requests by id so single requests can be reset at a time {kib-pull}26770[#26770]
 * Adds ODBC to blurb for start trail {kib-pull}27223[#27223]
 * Adds a `console.error` for visualize errors {kib-pull}24581[#24581]
@@ -5880,7 +5880,7 @@ Monitoring::
 * Fixes error handling for local stats collection/permissions {kib-pull}26560[#26560]
 * Removes initial delay to check and send Telemetry data {kib-pull}26575[#26575]
 * Pulls local Kibana usage stats {kib-pull}26496[#26496]
-* Converts the Elasticsearch monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
+* Converts the HyperSec monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
 * Renames Monitoring `FormattedMessage` to `FormattedAlert` {kib-pull}24197[#24197]
 * Uses the cluster name from metadata if it exists {kib-pull}24495[#24495]
 Observability::
@@ -6169,7 +6169,7 @@ Discover::
 * Adds visual indication of selected language in query bar {kib-pull}30899[#30899]
 Kibana App::
 * Replaces Angular timepicker with EuiSuperDatePicker {kib-pull}29204[#29204]
-* Upgrades Kibana to Elasticsearch 7.0 {kib-pull}29184[#29184]
+* Upgrades Kibana to HyperSec 7.0 {kib-pull}29184[#29184]
 * Maps inspector requests by id so single requests can be reset at a time {kib-pull}26770[#26770]
 * Adds ODBC to blurb for start trail {kib-pull}27223[#27223]
 Logstash::
@@ -6429,7 +6429,7 @@ Monitoring::
 * Fixes error handling for local stats collection/permissions {kib-pull}26560[#26560]
 * Removes initial delay to check and send Telemetry data {kib-pull}26575[#26575]
 * Pulls local Kibana usage stats {kib-pull}26496[#26496]
-* Converts the Elasticsearch monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
+* Converts the HyperSec monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
 * Renames Monitoring `FormattedMessage` to `FormattedAlert` {kib-pull}24197[#24197]
 * Uses the cluster name from metadata if it exists {kib-pull}24495[#24495]
 Observability::
@@ -6659,7 +6659,7 @@ Canvas::
 * Optimizes Canvas REST calls via batching {kib-pull}29847[#29847]
 Kibana App::
 * Replaces Angular timepicker with EuiSuperDatePicker {kib-pull}29204[#29204]
-* Upgrades Kibana to Elasticsearch 7.0 {kib-pull}29184[#29184]
+* Upgrades Kibana to HyperSec 7.0 {kib-pull}29184[#29184]
 Machine Learning::
 * Updates HTTP access modules for ECS {kib-pull}29383[#29383]
 * Updates auditbeat modules for ECS {kib-pull}29934[#29934]
@@ -6705,7 +6705,7 @@ Canvas::
 Design::
 * Updates dashboard design {kib-pull}29896[#29896]
 * Adjusts side navigation interaction {kib-pull}29978[#29978]
-Elasticsearch UI::
+HyperSec UI::
 * Triggers full load when encountering 403 for index list reload {kib-pull}28243[#28243]
 * Updates xpack console specs {kib-pull}29506[#29506]
 * Fixes API integration test for follower indices {kib-pull}30260[#30260]
@@ -6937,7 +6937,7 @@ Monitoring::
 * Fixes error handling for local stats collection/permissions {kib-pull}26560[#26560]
 * Removes initial delay to check and send Telemetry data {kib-pull}26575[#26575]
 * Pulls local Kibana usage stats {kib-pull}26496[#26496]
-* Converts the Elasticsearch monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
+* Converts the HyperSec monitoring UIs to using EUI tables and page layout {kib-pull}26217[#26217]
 Platform & Operations::
 * Decreases start limit and interval {kib-pull}25474[#25474]
 * Adds `--download` flag to snapshot command to warm the cache {kib-pull}25830[#25830]

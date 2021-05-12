@@ -24,7 +24,7 @@ export const getEnabledScriptingLanguages = (
   http.get('/api/kibana/scripts/languages').catch(() => {
     toasts.addDanger(
       i18n.translate('indexPatternManagement.scriptingLanguages.errorFetchingToastDescription', {
-        defaultMessage: 'Error getting available scripting languages from Elasticsearch',
+        defaultMessage: 'Error getting available scripting languages from HyperSec',
       })
     );
 

@@ -170,7 +170,7 @@ describe('Session index', () => {
       jest.spyOn(Date, 'now').mockImplementation(() => now);
     });
 
-    it('throws if call to Elasticsearch fails', async () => {
+    it('throws if call to HyperSec fails', async () => {
       const failureReason = new errors.ResponseError(
         securityMock.createApiResponse(securityMock.createApiResponse({ body: { type: 'Uh oh.' } }))
       );
@@ -588,7 +588,7 @@ describe('Session index', () => {
   });
 
   describe('#get', () => {
-    it('throws if call to Elasticsearch fails', async () => {
+    it('throws if call to HyperSec fails', async () => {
       const failureReason = new errors.ResponseError(
         securityMock.createApiResponse(securityMock.createApiResponse({ body: { type: 'Uh oh.' } }))
       );
@@ -649,7 +649,7 @@ describe('Session index', () => {
   });
 
   describe('#create', () => {
-    it('throws if call to Elasticsearch fails', async () => {
+    it('throws if call to HyperSec fails', async () => {
       const failureReason = new errors.ResponseError(
         securityMock.createApiResponse(securityMock.createApiResponse({ body: { type: 'Uh oh.' } }))
       );
@@ -698,7 +698,7 @@ describe('Session index', () => {
   });
 
   describe('#update', () => {
-    it('throws if call to Elasticsearch fails', async () => {
+    it('throws if call to HyperSec fails', async () => {
       const failureReason = new errors.ResponseError(
         securityMock.createApiResponse(securityMock.createApiResponse({ body: { type: 'Uh oh.' } }))
       );
@@ -797,7 +797,7 @@ describe('Session index', () => {
   });
 
   describe('#clear', () => {
-    it('throws if call to Elasticsearch fails', async () => {
+    it('throws if call to HyperSec fails', async () => {
       const failureReason = new errors.ResponseError(
         securityMock.createApiResponse(securityMock.createApiResponse({ body: { type: 'Uh oh.' } }))
       );

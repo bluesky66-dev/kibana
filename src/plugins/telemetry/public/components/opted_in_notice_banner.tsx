@@ -26,7 +26,7 @@ export class OptedInNoticeBanner extends React.PureComponent<Props> {
     const basePath = http.basePath.get();
 
     const bannerTitle = i18n.translate('telemetry.telemetryOptedInNoticeTitle', {
-      defaultMessage: 'Help us improve the Elastic Stack',
+      defaultMessage: 'Help us improve the HyperSec Stack',
     });
 
     return (

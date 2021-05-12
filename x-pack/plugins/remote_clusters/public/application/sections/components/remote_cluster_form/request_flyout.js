@@ -62,7 +62,7 @@ export class RequestFlyout extends PureComponent {
             <p>
               <FormattedMessage
                 id="xpack.remoteClusters.requestFlyout.descriptionText"
-                defaultMessage="This Elasticsearch request will create or update this remote cluster."
+                defaultMessage="This HyperSec request will create or update this remote cluster."
               />
             </p>
           </EuiText>

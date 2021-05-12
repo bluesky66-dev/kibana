@@ -270,7 +270,7 @@ export const EsQueryAlertTypeExpression: React.FunctionComponent<
         <h5>
           <FormattedMessage
             id="xpack.stackAlerts.esQuery.ui.queryPrompt"
-            defaultMessage="Define the Elasticsearch query"
+            defaultMessage="Define the HyperSec query"
           />
         </h5>
       </EuiTitle>
@@ -281,7 +281,7 @@ export const EsQueryAlertTypeExpression: React.FunctionComponent<
         label={
           <FormattedMessage
             id="xpack.stackAlerts.esQuery.ui.queryPrompt.label"
-            defaultMessage="Elasticsearch query"
+            defaultMessage="HyperSec query"
           />
         }
         isInvalid={errors.esQuery.length > 0}
@@ -290,7 +290,7 @@ export const EsQueryAlertTypeExpression: React.FunctionComponent<
           <EuiLink href={docLinks.links.query.queryDsl} target="_blank">
             <FormattedMessage
               id="xpack.stackAlerts.esQuery.ui.queryPrompt.help"
-              defaultMessage="Elasticsearch Query DSL documentation"
+              defaultMessage="HyperSec Query DSL documentation"
             />
           </EuiLink>
         }
@@ -302,7 +302,7 @@ export const EsQueryAlertTypeExpression: React.FunctionComponent<
           theme="github"
           data-test-subj="queryJsonEditor"
           aria-label={i18n.translate('xpack.stackAlerts.esQuery.ui.queryEditor', {
-            defaultMessage: 'Elasticsearch query editor',
+            defaultMessage: 'HyperSec query editor',
           })}
           value={xJson}
           onChange={(xjson: string) => {

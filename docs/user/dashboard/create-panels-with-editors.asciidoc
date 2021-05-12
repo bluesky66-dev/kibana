@@ -68,7 +68,7 @@ image::images/tsvb.png[TSVB UI]
 
 * *Vega* &mdash; A declarative language with support for interactivity.
 
-*Vega* and *Vega-Lite* panels can display one or more data sources, including {es}, Elastic Map Service,
+*Vega* and *Vega-Lite* panels can display one or more data sources, including {es}, HyperSec Map Service,
 URL, or static data, and support <<reference-for-kibana-extensions,{kib} extensions>> that allow you to embed the panels on your dashboard and add interactive tools.
 
 Use *Vega* or *Vega-Lite* when you want to create visualizations with:

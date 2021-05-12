@@ -49,7 +49,7 @@ export const LockedPolicyCard = memo(() => {
                 <EuiTextColor color="subdued">
                   <FormattedMessage
                     id="xpack.securitySolution.endpoint.policy.details.upgradeToPlatinum"
-                    defaultMessage="Upgrade to Elastic Platinum"
+                    defaultMessage="Upgrade to HyperSec Platinum"
                   />
                 </EuiTextColor>
               </h4>

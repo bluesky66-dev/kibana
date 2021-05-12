@@ -336,14 +336,14 @@ export const SearchExamplesApp = ({
                       <EuiSpacer />
                       <EuiTitle size="s">
                         <h3>
-                          Searching Elasticsearch using <EuiCode>data.search</EuiCode>
+                          Searching HyperSec using <EuiCode>data.search</EuiCode>
                         </h3>
                       </EuiTitle>
                       <EuiText>
-                        If you want to fetch data from Elasticsearch, you can use the different
+                        If you want to fetch data from HyperSec, you can use the different
                         services provided by the <EuiCode>data</EuiCode> plugin. These help you get
                         the index pattern and search bar configuration, format them into a DSL query
-                        and send it to Elasticsearch.
+                        and send it to HyperSec.
                         <EuiSpacer />
                         <EuiButtonEmpty size="xs" onClick={onClickHandler} iconType="play">
                           <FormattedMessage

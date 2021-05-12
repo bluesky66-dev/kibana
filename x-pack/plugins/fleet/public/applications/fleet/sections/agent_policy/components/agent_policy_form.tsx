@@ -224,7 +224,7 @@ export const AgentPolicyForm: React.FunctionComponent<Props> = ({
                     content={i18n.translate(
                       'xpack.fleet.agentPolicyForm.monitoringLogsTooltipText',
                       {
-                        defaultMessage: 'Collect logs from Elastic Agents that use this policy.',
+                        defaultMessage: 'Collect logs from HyperSec Agents that use this policy.',
                       }
                     )}
                     position="right"
@@ -246,7 +246,7 @@ export const AgentPolicyForm: React.FunctionComponent<Props> = ({
                     content={i18n.translate(
                       'xpack.fleet.agentPolicyForm.monitoringMetricsTooltipText',
                       {
-                        defaultMessage: 'Collect metrics from Elastic Agents that use this policy.',
+                        defaultMessage: 'Collect metrics from HyperSec Agents that use this policy.',
                       }
                     )}
                     position="right"

@@ -18,7 +18,7 @@ program
   .version(pkg.version)
   .description(
     'Kibana is an open and free, browser ' +
-      'based analytics and search dashboard for Elasticsearch.'
+      'based analytics and search dashboard for HyperSec.'
   );
 
 // attach commands

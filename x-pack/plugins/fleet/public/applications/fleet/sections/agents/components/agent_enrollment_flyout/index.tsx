@@ -52,7 +52,7 @@ export const AgentEnrollmentFlyout: React.FunctionComponent<Props> = ({
         <EuiText>
           <FormattedMessage
             id="xpack.fleet.agentEnrollment.agentDescription"
-            defaultMessage="Add Elastic Agents to your hosts to collect data and send it to the Elastic Stack."
+            defaultMessage="Add HyperSec Agents to your hosts to collect data and send it to the HyperSec Stack."
           />
         </EuiText>
         <EuiSpacer size="l" />

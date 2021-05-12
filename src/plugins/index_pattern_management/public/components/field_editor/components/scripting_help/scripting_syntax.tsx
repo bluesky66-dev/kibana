@@ -27,7 +27,7 @@ export const ScriptingSyntax = () => {
           <FormattedMessage
             id="indexPatternManagement.syntax.defaultLabel.defaultDetail"
             defaultMessage="By default, Kibana scripted fields use {painless}, a simple and secure scripting language designed
-          specifically for use with Elasticsearch, to access values in the document use the following format:"
+          specifically for use with HyperSec, to access values in the document use the following format:"
             values={{
               painless: (
                 <EuiLink target="_blank" href={docLinksScriptedFields.painless}>

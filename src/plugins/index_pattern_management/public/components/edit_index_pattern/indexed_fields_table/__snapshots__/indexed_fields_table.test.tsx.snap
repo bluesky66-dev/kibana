@@ -13,11 +13,11 @@ exports[`IndexedFieldsTable should filter based on the query bar 1`] = `
     items={
       Array [
         Object {
-          "displayName": "Elastic",
+          "displayName": "HyperSec",
           "excluded": false,
           "format": "",
           "info": Array [],
-          "name": "Elastic",
+          "name": "HyperSec",
           "searchable": true,
           "type": "string",
         },
@@ -66,11 +66,11 @@ exports[`IndexedFieldsTable should render normally 1`] = `
     items={
       Array [
         Object {
-          "displayName": "Elastic",
+          "displayName": "HyperSec",
           "excluded": false,
           "format": "",
           "info": Array [],
-          "name": "Elastic",
+          "name": "HyperSec",
           "searchable": true,
           "type": "string",
         },

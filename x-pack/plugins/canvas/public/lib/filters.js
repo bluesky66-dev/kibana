@@ -11,7 +11,7 @@
 
 export function time(filter) {
   if (!filter.column) {
-    throw new Error('column is required for Elasticsearch range filters');
+    throw new Error('column is required for HyperSec range filters');
   }
   return {
     range: {

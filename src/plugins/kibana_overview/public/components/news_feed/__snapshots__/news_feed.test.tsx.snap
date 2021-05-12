@@ -106,7 +106,7 @@ exports[`FeedItem render 1`] = `
     </article>
     <article
       aria-labelledby="kbnOverviewNews__title2"
-      key="Optimizing costs in Elastic Cloud: Hot-warm + index lifecycle management"
+      key="Optimizing costs in HyperSec Cloud: Hot-warm + index lifecycle management"
     >
       <header>
         <EuiTitle
@@ -119,7 +119,7 @@ exports[`FeedItem render 1`] = `
               href="link-blog-post-3"
               target="_blank"
             >
-              Optimizing costs in Elastic Cloud: Hot-warm + index lifecycle management
+              Optimizing costs in HyperSec Cloud: Hot-warm + index lifecycle management
             </EuiLink>
           </h3>
         </EuiTitle>

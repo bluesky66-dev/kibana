@@ -107,7 +107,7 @@ function getNoItemsMessage(
             <p>
               <FormattedMessage
                 id="xpack.graph.listing.createNewGraph.combineDataViewFromKibanaAppDescription"
-                defaultMessage="Discover patterns and relationships in your Elasticsearch indices."
+                defaultMessage="Discover patterns and relationships in your HyperSec indices."
               />
             </p>
             <p>

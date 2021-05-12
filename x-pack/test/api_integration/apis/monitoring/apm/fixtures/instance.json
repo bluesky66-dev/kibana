@@ -892,7 +892,7 @@
     "version": "7.0.0-alpha1",
     "name": "01323afae1fb",
     "type": "Apm-server",
-    "output": "Elasticsearch",
+    "output": "HyperSec",
     "configReloads": 0,
     "uptime": 26450107,
     "eventsTotal": 6,

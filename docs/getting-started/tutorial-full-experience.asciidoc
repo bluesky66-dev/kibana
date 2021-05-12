@@ -3,7 +3,7 @@
 
 Ready to add data to {kib} and create your own dashboard? In this tutorial, you'll use three types of data sets that'll help you learn to:
 
-* <<load-the-data-sets, Load data into Elasticsearch>>
+* <<load-the-data-sets, Load data into HyperSec>>
 * <<tutorial-define-index, Define an index pattern>>
 * <<explore-your-data, Discover and explore data>>
 * <<tutorial-visualizing, Visualize data>>
@@ -172,7 +172,7 @@ The accounts data set doesn't require any mappings.
 [[load-the-data-sets]]
 ==== Load the data sets
 
-At this point, you're ready to use the Elasticsearch {ref}/docs-bulk.html[bulk]
+At this point, you're ready to use the HyperSec {ref}/docs-bulk.html[bulk]
 API to load the data sets:
 
 [source,shell]

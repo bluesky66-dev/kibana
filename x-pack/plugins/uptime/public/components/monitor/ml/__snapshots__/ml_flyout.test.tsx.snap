@@ -144,7 +144,7 @@ exports[`ML Flyout component shows license info if no ml available 1`] = `
               class="euiText euiText--small"
             >
               <p>
-                In order to access duration anomaly detection, you have to be subscribed to an Elastic Platinum license.
+                In order to access duration anomaly detection, you have to be subscribed to an HyperSec Platinum license.
               </p>
               <a
                 class="euiButton euiButton--primary"
@@ -176,7 +176,7 @@ exports[`ML Flyout component shows license info if no ml available 1`] = `
      identify periods of increased latency across geographical regions.
             </p>
             <p>
-              Once a job is created, you can manage it and see more details in the 
+              Once a job is created, you can manage it and see more details in the
               <a
                 class="euiLink euiLink--primary"
                 href="/app/ml"

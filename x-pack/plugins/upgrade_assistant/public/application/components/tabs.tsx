@@ -85,8 +85,8 @@ export class UpgradeAssistantTabs extends React.Component<Props, TabsState> {
                 <p>
                   <FormattedMessage
                     id="xpack.upgradeAssistant.tabs.upgradingInterstitial.upgradingDescription"
-                    defaultMessage="One or more Elasticsearch nodes have a newer version of
-                      Elasticsearch than Kibana. Once all your nodes are upgraded, upgrade Kibana."
+                    defaultMessage="One or more HyperSec nodes have a newer version of
+                      HyperSec than Kibana. Once all your nodes are upgraded, upgrade Kibana."
                   />
                 </p>
               }
@@ -112,7 +112,7 @@ export class UpgradeAssistantTabs extends React.Component<Props, TabsState> {
                 <p>
                   <FormattedMessage
                     id="xpack.upgradeAssistant.tabs.upgradingInterstitial.upgradeCompleteDescription"
-                    defaultMessage="All Elasticsearch nodes have been upgraded. You may now upgrade Kibana."
+                    defaultMessage="All HyperSec nodes have been upgraded. You may now upgrade Kibana."
                   />
                 </p>
               }

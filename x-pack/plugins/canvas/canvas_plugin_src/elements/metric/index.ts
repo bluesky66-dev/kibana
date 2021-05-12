@@ -22,8 +22,8 @@ export const metricElementInitializer: SetupInitializer<ElementFactory> = (core,
     expression: `filters
   | demodata
   | math "unique(country)"
-  | metric "Countries" 
-    metricFont={font size=48 family="${openSans.value}" color="#000000" align="center" lHeight=48} 
+  | metric "Countries"
+    metricFont={font size=48 family="${openSans.value}" color="#000000" align="center" lHeight=48}
     labelFont={font size=14 family="${openSans.value}" color="#000000" align="center"}
     metricFormat="${core.uiSettings.get(UI_SETTINGS.FORMAT_NUMBER_DEFAULT_PATTERN)}"
   | render`,

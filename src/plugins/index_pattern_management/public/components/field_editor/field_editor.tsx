@@ -345,7 +345,7 @@ export class FieldEditor extends PureComponent<FieldEdiorProps, FieldEditorState
               &nbsp;
               <FormattedMessage
                 id="indexPatternManagement.warningLabel.warningDetail"
-                defaultMessage="{language} is deprecated and support will be removed in the next major version of Kibana and Elasticsearch.
+                defaultMessage="{language} is deprecated and support will be removed in the next major version of Kibana and HyperSec.
               We recommend using {painlessLink} for new scripted fields."
                 values={{
                   language: <EuiCode>{spec.lang}</EuiCode>,

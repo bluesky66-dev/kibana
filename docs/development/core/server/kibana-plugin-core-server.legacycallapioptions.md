@@ -21,5 +21,5 @@ export interface LegacyCallAPIOptions
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [signal](./kibana-plugin-core-server.legacycallapioptions.signal.md) | <code>AbortSignal</code> | A signal object that allows you to abort the request via an AbortController object. |
-|  [wrap401Errors](./kibana-plugin-core-server.legacycallapioptions.wrap401errors.md) | <code>boolean</code> | Indicates whether <code>401 Unauthorized</code> errors returned from the Elasticsearch API should be wrapped into <code>Boom</code> error instances with properly set <code>WWW-Authenticate</code> header that could have been returned by the API itself. If API didn't specify that then <code>Basic realm=&quot;Authorization Required&quot;</code> is used as <code>WWW-Authenticate</code>. |
+|  [wrap401Errors](./kibana-plugin-core-server.legacycallapioptions.wrap401errors.md) | <code>boolean</code> | Indicates whether <code>401 Unauthorized</code> errors returned from the HyperSec API should be wrapped into <code>Boom</code> error instances with properly set <code>WWW-Authenticate</code> header that could have been returned by the API itself. If API didn't specify that then <code>Basic realm=&quot;Authorization Required&quot;</code> is used as <code>WWW-Authenticate</code>. |
 

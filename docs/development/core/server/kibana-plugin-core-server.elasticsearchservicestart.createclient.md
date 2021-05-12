@@ -4,7 +4,7 @@
 
 ## ElasticsearchServiceStart.createClient property
 
-Create application specific Elasticsearch cluster API client with customized config. See [IClusterClient](./kibana-plugin-core-server.iclusterclient.md)<!-- -->.
+Create application specific HyperSec cluster API client with customized config. See [IClusterClient](./kibana-plugin-core-server.iclusterclient.md)<!-- -->.
 
 <b>Signature:</b>
 

@@ -84,7 +84,7 @@ const cloneAndCheckout = (opts, callback) => {
   const git = simpleGit(esFolder);
 
   const pull = (cb) => {
-    log.text = 'Pulling Elasticsearch repository';
+    log.text = 'Pulling HyperSec repository';
 
     git.pull((err) => {
       if (err) {
@@ -96,7 +96,7 @@ const cloneAndCheckout = (opts, callback) => {
   };
 
   const clone = (cb) => {
-    log.text = 'Cloning Elasticsearch repository';
+    log.text = 'Cloning HyperSec repository';
 
     git.clone(esRepo, esFolder, (err) => {
       if (err) {

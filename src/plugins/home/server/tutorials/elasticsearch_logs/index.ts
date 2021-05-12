@@ -24,17 +24,17 @@ export function elasticsearchLogsSpecProvider(context: TutorialContext): Tutoria
   return {
     id: 'elasticsearchLogs',
     name: i18n.translate('home.tutorials.elasticsearchLogs.nameTitle', {
-      defaultMessage: 'Elasticsearch logs',
+      defaultMessage: 'HyperSec logs',
     }),
     moduleName,
     category: TutorialsCategory.LOGGING,
     isBeta: true,
     shortDescription: i18n.translate('home.tutorials.elasticsearchLogs.shortDescription', {
-      defaultMessage: 'Collect and parse logs created by Elasticsearch.',
+      defaultMessage: 'Collect and parse logs created by HyperSec.',
     }),
     longDescription: i18n.translate('home.tutorials.elasticsearchLogs.longDescription', {
       defaultMessage:
-        'The `elasticsearch` Filebeat module parses logs created by Elasticsearch. \
+        'The `elasticsearch` Filebeat module parses logs created by HyperSec. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.filebeat}/filebeat-module-elasticsearch.html',

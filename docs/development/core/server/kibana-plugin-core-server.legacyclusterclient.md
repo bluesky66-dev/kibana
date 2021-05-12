@@ -9,7 +9,7 @@
 > Use [IClusterClient](./kibana-plugin-core-server.iclusterclient.md)<!-- -->.
 > 
 
-Represents an Elasticsearch cluster API client created by the platform. It allows to call API on behalf of the internal Kibana user and the actual user that is derived from the request headers (via `asScoped(...)`<!-- -->).
+Represents an HyperSec cluster API client created by the platform. It allows to call API on behalf of the internal Kibana user and the actual user that is derived from the request headers (via `asScoped(...)`<!-- -->).
 
 <b>Signature:</b>
 
@@ -34,5 +34,5 @@ export declare class LegacyClusterClient implements ILegacyClusterClient
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [asScoped(request)](./kibana-plugin-core-server.legacyclusterclient.asscoped.md) |  | Creates an instance of [ILegacyScopedClusterClient](./kibana-plugin-core-server.ilegacyscopedclusterclient.md) based on the configuration the current cluster client that exposes additional <code>callAsCurrentUser</code> method scoped to the provided req. Consumers shouldn't worry about closing scoped client instances, these will be automatically closed as soon as the original cluster client isn't needed anymore and closed. |
-|  [close()](./kibana-plugin-core-server.legacyclusterclient.close.md) |  | Closes the cluster client. After that client cannot be used and one should create a new client instance to be able to interact with Elasticsearch API. |
+|  [close()](./kibana-plugin-core-server.legacyclusterclient.close.md) |  | Closes the cluster client. After that client cannot be used and one should create a new client instance to be able to interact with HyperSec API. |
 

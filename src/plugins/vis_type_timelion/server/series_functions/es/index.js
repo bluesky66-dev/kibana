@@ -120,7 +120,7 @@ export default new Datasource('es', {
     if (!resp.rawResponse._shards.total) {
       throw new Error(
         i18n.translate('timelion.serverSideErrors.esFunction.indexNotFoundErrorMessage', {
-          defaultMessage: 'Elasticsearch index not found: {index}',
+          defaultMessage: 'HyperSec index not found: {index}',
           values: {
             index: config.index,
           },

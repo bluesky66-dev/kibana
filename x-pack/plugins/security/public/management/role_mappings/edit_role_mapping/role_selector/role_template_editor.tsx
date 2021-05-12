@@ -135,7 +135,7 @@ export const RoleTemplateEditor = ({
           <EuiText size="xs" color="danger" data-test-subj="roleMappingInlineScriptsDisabled">
             <FormattedMessage
               id="xpack.security.management.editRoleMapping.roleTemplateInlineScriptsDisabled"
-              defaultMessage="Template uses inline scripts, which are disabled in Elasticsearch."
+              defaultMessage="Template uses inline scripts, which are disabled in HyperSec."
             />
           </EuiText>
         );
@@ -188,7 +188,7 @@ export const RoleTemplateEditor = ({
           <EuiText size="xs" color="danger" data-test-subj="roleMappingStoredScriptsDisabled">
             <FormattedMessage
               id="xpack.security.management.editRoleMapping.roleTemplateStoredScriptsDisabled"
-              defaultMessage="Template uses stored scripts, which are disabled in Elasticsearch."
+              defaultMessage="Template uses stored scripts, which are disabled in HyperSec."
             />
           </EuiText>
         );

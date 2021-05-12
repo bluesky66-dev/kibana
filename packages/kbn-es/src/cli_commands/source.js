@@ -25,8 +25,8 @@ exports.help = (defaults = {}) => {
       --data-archive    Path to zip or tarball containing an ES data directory to seed the cluster with.
       --password        Sets password for elastic user [default: ${password}]
       --password.[user] Sets password for native realm user [default: ${password}]
-      --ssl             Sets up SSL on Elasticsearch
-      -E                Additional key=value settings to pass to Elasticsearch
+      --ssl             Sets up SSL on HyperSec
+      -E                Additional key=value settings to pass to HyperSec
 
     Example:
 

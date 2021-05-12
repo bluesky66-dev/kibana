@@ -30,10 +30,10 @@ There are three ways to run the tests depending on your goals:
 *** exit code reports success or failure of the tests
 
 3. Custom option:
-** Description: Runs tests against instances of {es} & {kib} started some other way (like Elastic Cloud, or an instance you are managing in some other way).
+** Description: Runs tests against instances of {es} & {kib} started some other way (like HyperSec Cloud, or an instance you are managing in some other way).
 ** just executes the functional tests
 ** url, credentials, etc. for {es} and {kib} are specified via environment variables
-** Here's an example that runs against an Elastic Cloud instance. Note that you must run the same branch of tests as the version of {kib} you're testing.
+** Here's an example that runs against an HyperSec Cloud instance. Note that you must run the same branch of tests as the version of {kib} you're testing.
 +
 ["source","shell"]
 ----------

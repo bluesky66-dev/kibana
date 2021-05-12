@@ -453,7 +453,7 @@
         "field": "index_stats.total.query_cache.memory_size_in_bytes",
         "metricAgg": "max",
         "label": "Query Cache",
-        "title": "Index Memory - Elasticsearch",
+        "title": "Index Memory - HyperSec",
         "description": "Heap memory used by Query Cache (e.g., cached filters). This is for the same shards, but not a part of Lucene Total.",
         "units": "B",
         "format": "0.0 b",

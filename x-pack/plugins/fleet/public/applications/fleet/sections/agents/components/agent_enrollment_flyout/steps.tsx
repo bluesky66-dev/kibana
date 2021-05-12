@@ -15,14 +15,14 @@ import { AgentPolicy } from '../../../../types';
 export const DownloadStep = () => {
   return {
     title: i18n.translate('xpack.fleet.agentEnrollment.stepDownloadAgentTitle', {
-      defaultMessage: 'Download the Elastic Agent to your host',
+      defaultMessage: 'Download the HyperSec Agent to your host',
     }),
     children: (
       <>
         <EuiText>
           <FormattedMessage
             id="xpack.fleet.agentEnrollment.downloadDescription"
-            defaultMessage="You can download the agent binaries and their verification signatures from the Elastic Agent download page."
+            defaultMessage="You can download the agent binaries and their verification signatures from the HyperSec Agent download page."
           />
         </EuiText>
         <EuiSpacer size="l" />

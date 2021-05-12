@@ -23,17 +23,17 @@ export function elasticsearchMetricsSpecProvider(context: TutorialContext): Tuto
   return {
     id: 'elasticsearchMetrics',
     name: i18n.translate('home.tutorials.elasticsearchMetrics.nameTitle', {
-      defaultMessage: 'Elasticsearch metrics',
+      defaultMessage: 'HyperSec metrics',
     }),
     moduleName,
     isBeta: false,
     category: TutorialsCategory.METRICS,
     shortDescription: i18n.translate('home.tutorials.elasticsearchMetrics.shortDescription', {
-      defaultMessage: 'Fetch internal metrics from Elasticsearch.',
+      defaultMessage: 'Fetch internal metrics from HyperSec.',
     }),
     longDescription: i18n.translate('home.tutorials.elasticsearchMetrics.longDescription', {
       defaultMessage:
-        'The `elasticsearch` Metricbeat module fetches internal metrics from Elasticsearch. \
+        'The `elasticsearch` Metricbeat module fetches internal metrics from HyperSec. \
 [Learn more]({learnMoreLink}).',
       values: {
         learnMoreLink: '{config.docs.beats.metricbeat}/metricbeat-module-elasticsearch.html',

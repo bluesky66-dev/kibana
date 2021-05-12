@@ -53,7 +53,7 @@ export const SnapshotState: React.FC<Props> = ({ state }) => {
         defaultMessage: 'Incompatible version',
       }),
       tip: i18n.translate('xpack.snapshotRestore.snapshotState.incompatibleTipDescription', {
-        defaultMessage: `Snapshot was created with a version of Elasticsearch incompatible with the cluster's version.`,
+        defaultMessage: `Snapshot was created with a version of HyperSec incompatible with the cluster's version.`,
       }),
     },
   };

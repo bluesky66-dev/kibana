@@ -279,7 +279,7 @@ export class ESGeoGridSource extends AbstractESAggSource implements ITiledSingle
         requestDescription: i18n.translate(
           'xpack.maps.source.esGrid.compositeInspectorDescription',
           {
-            defaultMessage: 'Elasticsearch geo grid aggregation request: {requestId}',
+            defaultMessage: 'HyperSec geo grid aggregation request: {requestId}',
             values: { requestId },
           }
         ),
@@ -352,7 +352,7 @@ export class ESGeoGridSource extends AbstractESAggSource implements ITiledSingle
       searchSource,
       registerCancelCallback,
       requestDescription: i18n.translate('xpack.maps.source.esGrid.inspectorDescription', {
-        defaultMessage: 'Elasticsearch geo grid aggregation request',
+        defaultMessage: 'HyperSec geo grid aggregation request',
       }),
       searchSessionId,
     });

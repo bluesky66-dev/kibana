@@ -179,13 +179,13 @@ describe.skip('onPostAuthInterceptor', () => {
     spacesServiceStart.createSpacesClient = jest.fn().mockReturnValue({
       getAll() {
         if (testOptions.simulateGetSpacesFailure) {
-          throw Boom.unauthorized('missing credendials', 'Protected Elasticsearch');
+          throw Boom.unauthorized('missing credendials', 'Protected HyperSec');
         }
         return Promise.resolve(availableSpaces.map(convertSavedObjectToSpace));
       },
       get(spaceId: string) {
         if (testOptions.simulateGetSingleSpaceFailure) {
-          throw Boom.unauthorized('missing credendials', 'Protected Elasticsearch');
+          throw Boom.unauthorized('missing credendials', 'Protected HyperSec');
         }
         const space = availableSpaces.find((s) => s.id === spaceId);
         if (!space) {
@@ -331,7 +331,7 @@ describe.skip('onPostAuthInterceptor', () => {
     expect(response.status).toEqual(401);
 
     expect(response.header).toMatchObject({
-      'www-authenticate': `Protected Elasticsearch error="missing credendials"`,
+      'www-authenticate': `Protected HyperSec error="missing credendials"`,
     });
 
     expect(response.body).toMatchInlineSnapshot(`
@@ -370,7 +370,7 @@ describe.skip('onPostAuthInterceptor', () => {
     expect(response.status).toEqual(401);
 
     expect(response.header).toMatchObject({
-      'www-authenticate': `Protected Elasticsearch error="missing credendials"`,
+      'www-authenticate': `Protected HyperSec error="missing credendials"`,
     });
 
     expect(response.body).toMatchInlineSnapshot(`

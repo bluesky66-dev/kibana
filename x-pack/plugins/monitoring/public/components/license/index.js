@@ -154,7 +154,7 @@ const LicenseUpdateInfoForRemote = ({ isPrimaryCluster }) => {
         <FormattedMessage
           id="xpack.monitoring.license.howToUpdateLicenseDescription"
           defaultMessage="To update the license for this cluster, provide the license file through
-          the Elasticsearch {apiText}:"
+          the HyperSec {apiText}:"
           values={{
             apiText: 'API',
           }}

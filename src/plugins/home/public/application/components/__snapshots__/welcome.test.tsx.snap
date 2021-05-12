@@ -28,7 +28,7 @@ exports[`should render a Welcome screen with no telemetry disclaimer 1`] = `
         >
           <h1>
             <FormattedMessage
-              defaultMessage="Welcome to Elastic"
+              defaultMessage="Welcome to HyperSec"
               id="home.welcomeTitle"
               values={Object {}}
             />
@@ -89,7 +89,7 @@ exports[`should render a Welcome screen with the telemetry disclaimer 1`] = `
         >
           <h1>
             <FormattedMessage
-              defaultMessage="Welcome to Elastic"
+              defaultMessage="Welcome to HyperSec"
               id="home.welcomeTitle"
               values={Object {}}
             />
@@ -187,7 +187,7 @@ exports[`should render a Welcome screen with the telemetry disclaimer when optIn
         >
           <h1>
             <FormattedMessage
-              defaultMessage="Welcome to Elastic"
+              defaultMessage="Welcome to HyperSec"
               id="home.welcomeTitle"
               values={Object {}}
             />
@@ -285,7 +285,7 @@ exports[`should render a Welcome screen with the telemetry disclaimer when optIn
         >
           <h1>
             <FormattedMessage
-              defaultMessage="Welcome to Elastic"
+              defaultMessage="Welcome to HyperSec"
               id="home.welcomeTitle"
               values={Object {}}
             />

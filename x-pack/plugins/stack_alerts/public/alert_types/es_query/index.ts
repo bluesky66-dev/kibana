@@ -15,7 +15,7 @@ export function getAlertType(): AlertTypeModel<EsQueryAlertParams> {
   return {
     id: '.es-query',
     description: i18n.translate('xpack.stackAlerts.esQuery.ui.alertType.descriptionText', {
-      defaultMessage: 'Alert on matches against an Elasticsearch query.',
+      defaultMessage: 'Alert on matches against an HyperSec query.',
     }),
     iconClass: 'logoElastic',
     documentationUrl: (docLinks) => docLinks.links.alerting.esQuery,
@@ -24,7 +24,7 @@ export function getAlertType(): AlertTypeModel<EsQueryAlertParams> {
     defaultActionMessage: i18n.translate(
       'xpack.stackAlerts.esQuery.ui.alertType.defaultActionMessage',
       {
-        defaultMessage: `Elasticsearch query alert '\\{\\{alertName\\}\\}' is active:
+        defaultMessage: `HyperSec query alert '\\{\\{alertName\\}\\}' is active:
 
 - Value: \\{\\{context.value\\}\\}
 - Conditions Met: \\{\\{context.conditions\\}\\} over \\{\\{params.timeWindowSize\\}\\}\\{\\{params.timeWindowUnit\\}\\}

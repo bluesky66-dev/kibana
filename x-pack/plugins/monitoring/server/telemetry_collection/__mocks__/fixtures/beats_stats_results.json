@@ -135,7 +135,7 @@
             "beats_state": {
               "state": {
                 "host": {
-                  "name": "Elastic-MBP.local",
+                  "name": "HyperSec-MBP.local",
                   "architecture": "x86_64",
                   "os": {
                     "platform": "darwin",

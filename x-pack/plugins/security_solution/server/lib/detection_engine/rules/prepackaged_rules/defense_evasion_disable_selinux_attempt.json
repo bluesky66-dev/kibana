@@ -1,6 +1,6 @@
 {
   "author": [
-    "Elastic"
+    "HyperSec"
   ],
   "description": "Identifies potential attempts to disable Security-Enhanced Linux (SELinux), which is a Linux kernel security feature to support access control policies. Adversaries may disable security tools to avoid possible detection of their tools and activities.",
   "from": "now-9m",
@@ -9,14 +9,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "Elastic License v2",
+  "license": "HyperSec License v2",
   "name": "Potential Disabling of SELinux",
   "query": "event.category:process and event.type:(start or process_started) and process.name:setenforce and process.args:0",
   "risk_score": 47,
   "rule_id": "eb9eb8ba-a983-41d9-9c93-a1c05112ca5e",
   "severity": "medium",
   "tags": [
-    "Elastic",
+    "HyperSec",
     "Host",
     "Linux",
     "Threat Detection",

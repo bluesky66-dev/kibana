@@ -96,7 +96,7 @@ use a `eventName` of  `create_vis_1m`, `create_vis_5m`, `create_vis_20m`, or `cr
 
 #### Data Telemetry
 
-Not an API as such. However, Data Telemetry collects the usage of known patterns of indices, either via well-known index names (check the list [here](../telemetry/server/telemetry_collection/get_data_telemetry/constants.ts)) or by identifying Elastic internal `_meta` keys in the index definitions: Beats indices or `ingest-manager`'s maintained Data Streams.
+Not an API as such. However, Data Telemetry collects the usage of known patterns of indices, either via well-known index names (check the list [here](../telemetry/server/telemetry_collection/get_data_telemetry/constants.ts)) or by identifying HyperSec internal `_meta` keys in the index definitions: Beats indices or `ingest-manager`'s maintained Data Streams.
 
 This collector does not report the name of the indices nor any content. It only provides stats about usage of known shippers/ingest tools.
 
@@ -273,7 +273,7 @@ negatively affect your plugin or users (see the example):
  - Don't block your application on the incrementCounter method (e.g.
    don't use `await`)
  - Set the `refresh` option to false to prevent unecessary index refreshes
-   which slows down Elasticsearch performance
+   which slows down HyperSec performance
 
 
 Note: for brevity the following example does not follow Kibana's conventions
