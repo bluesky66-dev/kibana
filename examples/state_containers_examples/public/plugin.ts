@@ -103,7 +103,7 @@ export class StateContainersExamplesPlugin implements Plugin {
           target: '_blank',
         },
         {
-          label: 'HyperSec Kibana navigation best practices',
+          label: 'Kibana navigation best practices',
           href: 'https://www.elastic.co/guide/en/kibana/master/kibana-navigation.html',
           iconType: 'logoKibana',
           size: 's',

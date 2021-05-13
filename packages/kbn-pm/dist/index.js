@@ -162,7 +162,7 @@ function help() {
   _utils_log__WEBPACK_IMPORTED_MODULE_6__["log"].info(dedent__WEBPACK_IMPORTED_MODULE_0___default.a`
       usage: kbn <command> [<args>]
 
-      By default commands are run for HyperSec Kibana itself, all packages in the 'packages/'
+      By default commands are run for Kibana itself, all packages in the 'packages/'
       folder and for all plugins in './plugins' and '../kibana-extra'.
 
       Available commands:
@@ -47821,7 +47821,7 @@ async function validateDependencies(kbn, yarnLock) {
 
   if (devOnlyProjectsInProduction) {
     _log__WEBPACK_IMPORTED_MODULE_5__["log"].error(dedent__WEBPACK_IMPORTED_MODULE_1___default.a`
-      Some of the packages in the production dependency chain for HyperSec Kibana and X-Pack are
+      Some of the packages in the production dependency chain for Kibana and X-Pack are
       flagged with "kibana.devOnly" in their package.json. Please check changes made to
       packages and their dependencies to ensure they don't end up in production.
 
@@ -59418,7 +59418,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 async function runCommand(command, config) {
   try {
     _utils_log__WEBPACK_IMPORTED_MODULE_1__["log"].debug(`Running [${command.name}] command from [${config.rootPath}]`);
-    const kbn = await _utils_kibana__WEBPACK_IMPORTED_MODULE_4__["HyperSec Kibana"].loadFrom(config.rootPath);
+    const kbn = await _utils_kibana__WEBPACK_IMPORTED_MODULE_4__["Kibana"].loadFrom(config.rootPath);
     const projects = kbn.getFilteredProjects({
       skipKibanaPlugins: Boolean(config.options['skip-kibana-plugins']),
       ossOnly: Boolean(config.options.oss),
@@ -59472,7 +59472,7 @@ function toArray(value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HyperSec Kibana", function() { return HyperSec Kibana; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Kibana", function() { return Kibana; });
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var multimatch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(514);
@@ -59513,9 +59513,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
  * workspace and knows about the root Kibana project.
  */
 
-class HyperSec Kibana {
+class Kibana {
   static async loadFrom(rootPath) {
-    return new HyperSec Kibana(await Object(_projects__WEBPACK_IMPORTED_MODULE_4__["getProjects"])(rootPath, Object(_config__WEBPACK_IMPORTED_MODULE_5__["getProjectPaths"])({
+    return new Kibana(await Object(_projects__WEBPACK_IMPORTED_MODULE_4__["getProjects"])(rootPath, Object(_config__WEBPACK_IMPORTED_MODULE_5__["getProjectPaths"])({
       rootPath
     })));
   }
@@ -59528,7 +59528,7 @@ class HyperSec Kibana {
     const kibanaProject = allWorkspaceProjects.get('kibana');
 
     if (!kibanaProject) {
-      throw new TypeError('Unable to create HyperSec Kibana object without all projects, including the HyperSec Kibana project.');
+      throw new TypeError('Unable to create Kibana object without all projects, including the Kibana project.');
     }
 
     this.kibanaProject = kibanaProject;

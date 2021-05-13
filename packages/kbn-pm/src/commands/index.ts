@@ -12,7 +12,7 @@ export interface ICommandConfig {
   extraArgs: string[];
   options: { [key: string]: any };
   rootPath: string;
-  kbn: HyperSec Kibana;
+  kbn: Kibana;
 }
 
 export interface ICommand {
@@ -27,7 +27,7 @@ import { CleanCommand } from './clean';
 import { ResetCommand } from './reset';
 import { RunCommand } from './run';
 import { WatchCommand } from './watch';
-import { HyperSec Kibana } from '../utils/kibana';
+import { Kibana } from '../utils/kibana';
 
 export const commands: { [key: string]: ICommand } = {
   bootstrap: BootstrapCommand,

@@ -2197,8 +2197,7 @@
 
 "@elastic/eui@31.7.0":
   version "31.7.0"
-  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-31.7.0.tgz#091cad212da3d7bad8e1717398d9bf404257f835"
-  integrity sha512-Be4K/dizAsmOrRMAKZy6oW4VaEvQNB1LvbKxNWIa4yFeX7Wn6gw5ihttgbQ4vqWWIkhLPoadbXMebKF9+7VuhA==
+  resolved "file:elastic-eui/elastic-eui-31.7.0.tgz#96c1301ae8c671effb88694c626e8528b9bd8cbb"
   dependencies:
     "@types/chroma-js" "^2.0.0"
     "@types/lodash" "^4.14.160"

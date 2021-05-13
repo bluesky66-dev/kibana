@@ -86,7 +86,7 @@ export const SecuritySection = {
 };
 
 export const KibanaSection = {
-  id: ManagementSectionId.HyperSec Kibana,
+  id: ManagementSectionId.Kibana,
   title: kibanaTitle,
   tip: kibanaTip,
   order: 4,

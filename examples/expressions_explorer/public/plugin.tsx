@@ -68,7 +68,7 @@ export class ExpressionsExplorerPlugin implements Plugin<void, void, SetupDeps, 
     deps.developerExamples.register({
       appId: 'expressionsExplorer',
       title: 'Expressions',
-      description: `Expressions is a plugin that allows to execute HyperSec Kibana expressions and render content using expression renderers. This example plugin showcases various usage scenarios.`,
+      description: `Expressions is a plugin that allows to execute Kibana expressions and render content using expression renderers. This example plugin showcases various usage scenarios.`,
       links: [
         {
           label: 'README',

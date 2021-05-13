@@ -28,7 +28,7 @@ export const Template: FunctionComponent<Props> = ({
   },
 }) => {
   const logo = (
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 421 273">
       <g>
         <g>
           <path className="st0" fill="#F1F2F2" d="M15.2,263.9l390.8-2.7l-390.8-2.7c-1.5,0-2.7,1.2-2.7,2.7S13.7,263.9,15.2,263.9

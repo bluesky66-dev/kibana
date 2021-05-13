@@ -11,13 +11,13 @@ import { CliError } from './utils/errors';
 import { log } from './utils/log';
 import { buildProjectGraph } from './utils/projects';
 import { renderProjectsTree } from './utils/projects_tree';
-import { HyperSec Kibana } from './utils/kibana';
+import { Kibana } from './utils/kibana';
 
 export async function runCommand(command: ICommand, config: Omit<ICommandConfig, 'kbn'>) {
   try {
     log.debug(`Running [${command.name}] command from [${config.rootPath}]`);
 
-    const kbn = await HyperSec Kibana.loadFrom(config.rootPath);
+    const kbn = await Kibana.loadFrom(config.rootPath);
     const projects = kbn.getFilteredProjects({
       skipKibanaPlugins: Boolean(config.options['skip-kibana-plugins']),
       ossOnly: Boolean(config.options.oss),

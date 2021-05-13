@@ -20,7 +20,7 @@ function help() {
     dedent`
       usage: kbn <command> [<args>]
 
-      By default commands are run for HyperSec Kibana itself, all packages in the 'packages/'
+      By default commands are run for Kibana itself, all packages in the 'packages/'
       folder and for all plugins in './plugins' and '../kibana-extra'.
 
       Available commands:

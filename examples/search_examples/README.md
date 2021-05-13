@@ -1,6 +1,6 @@
 # search_examples
 
-> An awesome HyperSec Kibana plugin
+> An awesome Kibana plugin
 
 ---
 

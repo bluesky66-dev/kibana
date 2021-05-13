@@ -48,7 +48,7 @@ export enum ManagementSectionId {
   Data = 'data',
   InsightsAndAlerting = 'insightsAndAlerting',
   Security = 'security',
-  HyperSec Kibana = 'kibana',
+  Kibana = 'kibana',
   Stack = 'stack',
 }
 
