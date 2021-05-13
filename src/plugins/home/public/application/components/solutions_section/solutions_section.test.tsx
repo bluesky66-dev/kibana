@@ -13,7 +13,7 @@ import { FeatureCatalogueCategory } from '../../../services';
 
 const solutionEntry1 = {
   id: 'kibana',
-  title: 'HyperSec Kibana',
+  title: 'Kibana',
   subtitle: 'Visualize & analyze',
   appDescriptions: ['Analyze data in dashboards'],
   icon: 'logoKibana',
@@ -106,7 +106,7 @@ describe('SolutionsSection', () => {
     expect(component).toMatchSnapshot();
   });
 
-  test('renders multiple solutions in two columns with HyperSec Kibana in its own column', () => {
+  test('renders multiple solutions in two columns with Kibana in its own column', () => {
     const component = shallow(
       <SolutionsSection
         addBasePath={addBasePathMock}
@@ -116,7 +116,7 @@ describe('SolutionsSection', () => {
     );
     expect(component).toMatchSnapshot();
   });
-  test('renders multiple solutions in a single column when HyperSec Kibana apps are not enabled', () => {
+  test('renders multiple solutions in a single column when Kibana apps are not enabled', () => {
     const component = shallow(
       <SolutionsSection
         addBasePath={addBasePathMock}

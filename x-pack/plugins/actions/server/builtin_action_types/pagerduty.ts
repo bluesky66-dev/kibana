@@ -281,7 +281,7 @@ function getBodyForEventAction(actionId: string, params: ActionParamsType): Page
 
   data.payload = {
     summary: params.summary || 'No summary provided.',
-    source: params.source || `HyperSec Kibana Action ${actionId}`,
+    source: params.source || `Kibana Action ${actionId}`,
     severity: params.severity || 'info',
     ...omitBy(pick(params, ['timestamp', 'component', 'group', 'class']), isUndefined),
   };

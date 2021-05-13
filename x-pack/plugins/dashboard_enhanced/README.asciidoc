@@ -2,4 +2,4 @@
 [[dashboard-enhanced-plugin]]
 == Dashboard app enhancements plugin
 
-Adds drilldown capabilities to dashboard.  Owned by the HyperSec Kibana App team.
+Adds drilldown capabilities to dashboard.  Owned by the Kibana App team.

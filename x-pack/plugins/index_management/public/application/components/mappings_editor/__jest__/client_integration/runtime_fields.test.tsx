@@ -73,7 +73,7 @@ describe('Mappings editor: runtime fields', () => {
           day_of_week: {
             type: 'date',
             script: {
-              source: 'emit("hello HyperSec Kibana")',
+              source: 'emit("hello Kibana")',
             },
           },
         },
@@ -99,7 +99,7 @@ describe('Mappings editor: runtime fields', () => {
         expect(field.type).toBe('Date');
 
         await actions.startEditRuntimeField('day_of_week');
-        expect(find('runtimeFieldEditor.scriptField').props().value).toBe('emit("hello HyperSec Kibana")');
+        expect(find('runtimeFieldEditor.scriptField').props().value).toBe('emit("hello Kibana")');
       });
 
       test('should have a button to create fields', () => {

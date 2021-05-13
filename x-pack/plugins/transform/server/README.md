@@ -1,6 +1,6 @@
-# Transform HyperSec Kibana API routes
+# Transform Kibana API routes
 
-This folder contains Transform API routes in HyperSec Kibana.
+This folder contains Transform API routes in Kibana.
 
 Each route handler requires [apiDoc](https://github.com/apidoc/apidoc) annotations in order
 to generate documentation.

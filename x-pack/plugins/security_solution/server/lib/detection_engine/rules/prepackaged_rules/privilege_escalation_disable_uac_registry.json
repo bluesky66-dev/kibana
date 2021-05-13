@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "User Account Control (UAC) can help mitigate the impact of malware on Windows hosts. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system. This rule identifies registry value changes to bypass User Access Control (UAC) protection.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Disabling User Account Control via Registry Modification",
   "query": "registry where event.type == \"change\" and\n  registry.path :\n    (\n      \"HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System\\\\EnableLUA\",\n      \"HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System\\\\ConsentPromptBehaviorAdmin\",\n      \"HKLM\\\\SOFTWARE\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Policies\\\\System\\\\PromptOnSecureDesktop\"\n    ) and\n  registry.data.strings : \"0\"\n",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "d31f183a-e5b1-451b-8534-ba62bca0b404",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

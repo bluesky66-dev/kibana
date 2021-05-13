@@ -125,13 +125,13 @@ describe('ML - custom URL utils', () => {
   };
 
   describe('replaceTokensInUrlValue', () => {
-    test('replaces tokens as expected for a HyperSec Kibana Dashboard type URL', () => {
+    test('replaces tokens as expected for a Kibana Dashboard type URL', () => {
       expect(replaceTokensInUrlValue(TEST_DASHBOARD_URL, 300, TEST_DOC, 'timestamp')).toBe(
         "dashboards#/view/5f112420-9fc6-11e8-9130-150552a4bef3?_g=(time:(from:'2017-02-09T15:10:00.000Z',mode:absolute,to:'2017-02-09T17:15:00.000Z'))&_a=(filters:!(),query:(language:kuery,query:'airline:\"AAL\"'))"
       );
     });
 
-    test('replaces tokens containing special characters as expected for a HyperSec Kibana Dashboard type URL', () => {
+    test('replaces tokens containing special characters as expected for a Kibana Dashboard type URL', () => {
       expect(
         replaceTokensInUrlValue(TEST_DASHBOARD_URL, 300, TEST_RECORD_SPECIAL_CHARS, 'timestamp')
       ).toBe(
@@ -139,7 +139,7 @@ describe('ML - custom URL utils', () => {
       );
     });
 
-    test('replaces tokens containing special characters as expected for a HyperSec Kibana Dashboard type URL where query language is lucene', () => {
+    test('replaces tokens containing special characters as expected for a Kibana Dashboard type URL where query language is lucene', () => {
       expect(
         replaceTokensInUrlValue(
           TEST_DASHBOARD_LUCENE_URL,
@@ -152,7 +152,7 @@ describe('ML - custom URL utils', () => {
       );
     });
 
-    test('replaces tokens as expected for a HyperSec Kibana Discover type URL', () => {
+    test('replaces tokens as expected for a Kibana Discover type URL', () => {
       expect(replaceTokensInUrlValue(TEST_DISCOVER_URL, 300, TEST_DOC, 'timestamp')).toBe(
         "discover#/?_g=(time:(from:'2017-02-09T16:05:00.000Z',mode:absolute,to:'2017-02-09T16:20:00.000Z'))&_a=(index:bf6e5860-9404-11e8-8d4c-593f69c47267,query:(language:kuery,query:'airline:\"AAL\"'))"
       );
@@ -257,19 +257,19 @@ describe('ML - custom URL utils', () => {
   });
 
   describe('getUrlForRecord', () => {
-    test('returns expected URL for a HyperSec Kibana Dashboard type URL', () => {
+    test('returns expected URL for a Kibana Dashboard type URL', () => {
       expect(getUrlForRecord(TEST_DASHBOARD_URL, TEST_RECORD)).toBe(
         "dashboards#/view/5f112420-9fc6-11e8-9130-150552a4bef3?_g=(time:(from:'2017-02-09T15:10:00.000Z',mode:absolute,to:'2017-02-09T17:15:00.000Z'))&_a=(filters:!(),query:(language:kuery,query:'airline:\"AAL\"'))"
       );
     });
 
-    test('returns expected URL for a HyperSec Kibana Discover type URL', () => {
+    test('returns expected URL for a Kibana Discover type URL', () => {
       expect(getUrlForRecord(TEST_DISCOVER_URL, TEST_RECORD)).toBe(
         "discover#/?_g=(time:(from:'2017-02-09T15:10:00.000Z',mode:absolute,to:'2017-02-09T17:15:00.000Z'))&_a=(index:bf6e5860-9404-11e8-8d4c-593f69c47267,query:(language:kuery,query:'airline:\"AAL\"'))"
       );
     });
 
-    test.skip('returns expected URL for a HyperSec Kibana Discover type URL when record field contains special characters', () => {
+    test.skip('returns expected URL for a Kibana Discover type URL when record field contains special characters', () => {
       expect(getUrlForRecord(TEST_DISCOVER_URL, TEST_RECORD_SPECIAL_CHARS)).toBe(
         "discover#/?_g=(time:(from:'2017-02-09T15:10:00.000Z',mode:absolute,to:'2017-02-09T17:15:00.000Z'))&_a=(index:bf6e5860-9404-11e8-8d4c-593f69c47267,query:(language:kuery,query:'airline:\"%3C%3E%3A%3B%5B%7D%5C%22)\" and odd:field,name:>:&12<''))"
       );

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies msxsl.exe making a network connection. This may indicate adversarial activity as msxsl.exe is often leveraged by adversaries to execute malicious scripts and evade detection.",
   "from": "now-9m",
@@ -10,14 +10,14 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Network Connection via MsXsl",
   "query": "sequence by process.entity_id\n  [process where process.name : \"msxsl.exe\" and event.type == \"start\"]\n  [network where process.name : \"msxsl.exe\" and\n     not cidrmatch(destination.ip, \"10.0.0.0/8\", \"172.16.0.0/12\", \"192.168.0.0/16\")]\n",
   "risk_score": 21,
   "rule_id": "b86afe07-0d98-4738-b15d-8d7465f95ff5",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

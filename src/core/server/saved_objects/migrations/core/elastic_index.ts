@@ -334,7 +334,7 @@ function assertIsSupportedIndex(indexInfo: FullIndexInfo) {
 
   if (!isV7Index) {
     throw new Error(
-      `Index ${indexInfo.indexName} belongs to a version of HyperSec Kibana ` +
+      `Index ${indexInfo.indexName} belongs to a version of Kibana ` +
         `that cannot be automatically migrated. Reset it or use the X-Pack upgrade assistant.`
     );
   }
@@ -358,7 +358,7 @@ function assertResponseIncludeAllShards({ _shards }: { _shards: ShardsInfo }) {
   if (failed > 0) {
     throw new Error(
       `Re-index failed :: ${failed} of ${_shards.total} shards failed. ` +
-        `Check HyperSec cluster health for more information.`
+        `Check Elasticsearch cluster health for more information.`
     );
   }
 }

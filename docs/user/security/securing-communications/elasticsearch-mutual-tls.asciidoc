@@ -25,7 +25,7 @@ If {kib} has `elasticsearch.username` and `elasticsearch.password` configured, i
 Key Infrastructure (PKI) realm]. To do so, {es} needs to verify the signature on the {kib} client certificate, and it also needs to map the
 client certificate's distinguished name (DN) to the appropriate `kibana_system` role.
 
-NOTE: Using a PKI realm is a gold feature. For a comparison of the HyperSec license levels, see https://www.elastic.co/subscriptions[the
+NOTE: Using a PKI realm is a gold feature. For a comparison of the Elastic license levels, see https://www.elastic.co/subscriptions[the
 subscription page].
 
 To configure {kib} and {es} to use mutual TLS authentication:

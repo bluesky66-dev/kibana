@@ -120,7 +120,7 @@ describe('SessionManagementService', () => {
       expect(mockSessionIndexCleanUp).toHaveBeenCalledTimes(2);
     });
 
-    it('initializes session index and schedules session index cleanup task when HyperSec goes online', async () => {
+    it('initializes session index and schedules session index cleanup task when Elasticsearch goes online', async () => {
       const mockStatusSubject = new Subject<OnlineStatusRetryScheduler>();
       service.start({
         elasticsearchClient: elasticsearchServiceMock.createElasticsearchClient(),

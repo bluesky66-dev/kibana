@@ -326,7 +326,7 @@ export const configBlockSchemas: ConfigBlockSchema[] = [
         options: [
           {
             value: 'elasticsearch',
-            text: 'HyperSec',
+            text: 'Elasticsearch',
           },
           {
             value: 'logstash',

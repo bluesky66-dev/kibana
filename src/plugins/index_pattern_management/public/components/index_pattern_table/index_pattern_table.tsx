@@ -219,7 +219,7 @@ export const IndexPatternTable = ({ canSave, history }: Props) => {
             <p>
               <FormattedMessage
                 id="indexPatternManagement.indexPatternTable.indexPatternExplanation"
-                defaultMessage="Create and manage the index patterns that help you retrieve your data from HyperSec."
+                defaultMessage="Create and manage the index patterns that help you retrieve your data from Elasticsearch."
               />
             </p>
           </EuiText>

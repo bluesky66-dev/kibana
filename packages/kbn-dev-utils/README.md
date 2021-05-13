@@ -2,7 +2,7 @@
 
 ## proc runner
 
-For running integration tests in HyperSec Kibana
+For running integration tests in Kibana
 
 ## tooling log
 

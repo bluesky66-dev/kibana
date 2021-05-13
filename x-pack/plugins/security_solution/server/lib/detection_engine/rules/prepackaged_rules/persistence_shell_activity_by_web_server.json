@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies suspicious commands executed via a web server, which may suggest a vulnerability and remote shell access.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Potential Shell via Web Server",
   "query": "event.category:process and event.type:(start or process_started) and process.name:(bash or dash) and user.name:(apache or nginx or www or \"www-data\")",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "231876e7-4d1f-4d63-a47c-47dd1acdc1cb",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

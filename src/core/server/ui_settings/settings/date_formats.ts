@@ -141,7 +141,7 @@ export const getDateFormatSettings = (): Record<string, UiSettingsParams> => {
       }),
       value: 'MMM D, YYYY @ HH:mm:ss.SSSSSSSSS',
       description: i18n.translate('core.ui_settings.params.dateNanosFormatText', {
-        defaultMessage: 'Used for the {dateNanosLink} datatype of HyperSec',
+        defaultMessage: 'Used for the {dateNanosLink} datatype of Elasticsearch',
         values: {
           dateNanosLink:
             '<a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/date_nanos.html" target="_blank" rel="noopener noreferrer">' +

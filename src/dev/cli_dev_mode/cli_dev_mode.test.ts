@@ -235,7 +235,7 @@ describe('#start()/#stop()', () => {
         Object {
           "args": Array [
             "no-base-path",
-            "Running HyperSec Kibana in dev mode with --no-base-path disables several useful features and is not recommended",
+            "Running Kibana in dev mode with --no-base-path disables several useful features and is not recommended",
           ],
           "type": "warn",
         },

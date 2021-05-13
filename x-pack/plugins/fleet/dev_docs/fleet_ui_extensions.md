@@ -1,6 +1,6 @@
 # Fleet UI Extensions
 
-Fleet's HyperSec Kibana UI supports two types of UI extensions:
+Fleet's Kibana UI supports two types of UI extensions:
 
 - Custom UI components
 - Navigation redirection
@@ -10,7 +10,7 @@ More information about these can be found below.
 
 ## Custom UI Components
 
-Custom UI component extension can be registered with Fleet using the Plugin's `#start()` exposed interface, which contains a method named `registerExtension()`. In order to take advantage of these extension points, a HyperSec Kibana plugin must set a dependency on Fleet so that the interface can be made available.
+Custom UI component extension can be registered with Fleet using the Plugin's `#start()` exposed interface, which contains a method named `registerExtension()`. In order to take advantage of these extension points, a Kibana plugin must set a dependency on Fleet so that the interface can be made available.
 
 Here is an example Security Solution's Endpoint takes advantage of this functionality to register several custom UI extensions:
 
@@ -51,7 +51,7 @@ For a list of supported Fleet UI extensions, see the `UIExtensionPoint` and asso
 
 ## Navigation Redirection
 
-In order to support better user flows, some of Fleet's pages support changing the behaviour of the certain links and/or button clicks and to where they redirect if a user clicks on it. This type of UI extension does not need a Plugin level dependency on Fleet - it utilizes Route state via `react-router` along with HyperSec Kibana's `core.application.navigateToApp()` method thus any kibana plugin can take advantage of it.
+In order to support better user flows, some of Fleet's pages support changing the behaviour of the certain links and/or button clicks and to where they redirect if a user clicks on it. This type of UI extension does not need a Plugin level dependency on Fleet - it utilizes Route state via `react-router` along with Kibana's `core.application.navigateToApp()` method thus any kibana plugin can take advantage of it.
 
 Here is an example of how to create a link that redirects the user to Fleet's Agent Policy detail page with the Agent Enroll flyout opened, and once the user clicks "done", they are redirected back to the originating page:
 

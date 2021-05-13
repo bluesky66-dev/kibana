@@ -22,7 +22,7 @@ image::user/reporting/images/share-menu.png["Share"]
 The {report-features} are automatically enabled in {kib}. It runs a custom build of the Chromium web browser, which
 runs on the server in headless mode to load {kib} and capture the rendered {kib} charts as images.
 
-Chromium is an open-source project not related to HyperSec, but the Chromium binary for {kib} has been custom-built by HyperSec to ensure it
+Chromium is an open-source project not related to Elastic, but the Chromium binary for {kib} has been custom-built by Elastic to ensure it
 works with minimal setup. However, the {kib} server OS might still require additional dependencies for Chromium. See the
 <<reporting-troubleshooting-system-dependencies, Reporting troubleshooting>> section for more information about the system dependencies
 for different operating systems.

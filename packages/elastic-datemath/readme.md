@@ -1,3 +1,3 @@
 # datemath
 
-Datemath string parser used in HyperSec Kibana
+Datemath string parser used in Kibana

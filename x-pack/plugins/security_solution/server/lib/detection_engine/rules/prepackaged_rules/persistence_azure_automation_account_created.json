@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies when an Azure Automation account is created. Azure Automation accounts can be used to automate management tasks and orchestrate actions across systems. An adversary may create an Automation account in order to maintain persistence in their target's environment.",
   "from": "now-25m",
@@ -9,7 +9,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Azure Automation Account Created",
   "note": "The Azure Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.activitylogs and azure.activitylogs.operation_name:\"MICROSOFT.AUTOMATION/AUTOMATIONACCOUNTS/WRITE\" and event.outcome:(Success or success)",
@@ -23,7 +23,7 @@
   "rule_id": "df26fd74-1baa-4479-b42e-48da84642330",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

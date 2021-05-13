@@ -206,7 +206,7 @@ field contains a name, stock, and category.
 [source,json]
 ----------------------------------
 {
-  "grocery_name": "HyperSec Eats",
+  "grocery_name": "Elastic Eats",
   "items": [
     {
       "name": "banana",

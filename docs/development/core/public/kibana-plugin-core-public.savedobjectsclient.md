@@ -4,7 +4,7 @@
 
 ## SavedObjectsClient class
 
-Saved Objects is Kibana's data persisentence mechanism allowing plugins to use HyperSec for storing plugin state. The client-side SavedObjectsClient is a thin convenience library around the SavedObjects HTTP API for interacting with Saved Objects.
+Saved Objects is Kibana's data persisentence mechanism allowing plugins to use Elasticsearch for storing plugin state. The client-side SavedObjectsClient is a thin convenience library around the SavedObjects HTTP API for interacting with Saved Objects.
 
 <b>Signature:</b>
 

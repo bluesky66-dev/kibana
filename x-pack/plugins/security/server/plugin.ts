@@ -135,7 +135,7 @@ export class SecurityPlugin
   private kibanaIndexName?: string;
   private readonly getKibanaIndexName = () => {
     if (!this.kibanaIndexName) {
-      throw new Error('HyperSec Kibana index name is not available.');
+      throw new Error('Kibana index name is not available.');
     }
     return this.kibanaIndexName;
   };

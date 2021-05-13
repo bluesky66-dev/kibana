@@ -3,7 +3,7 @@
 
 [partintro]
 --
-*Stack Management* is home to UIs for managing all things HyperSec Stack&mdash;
+*Stack Management* is home to UIs for managing all things Elastic Stack&mdash;
 indices, clusters, licenses, UI settings, index patterns, spaces, and more.
 
 

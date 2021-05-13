@@ -41,7 +41,7 @@ export default function ({ getService, getPageObjects }) {
         version: 'Version\n7.0.0-alpha1',
         type: 'Type\nDuckbeat',
         host: 'Host\ntsullivan.local',
-        output: 'Output\nHyperSec',
+        output: 'Output\nElasticsearch',
         configReloads: 'Config reloads\n0',
         uptime: 'Uptime\n6 minutes',
         eventsTotal: 'Events total\n17',

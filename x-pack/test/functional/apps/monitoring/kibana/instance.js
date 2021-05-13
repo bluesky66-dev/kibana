@@ -13,7 +13,7 @@ export default function ({ getService, getPageObjects }) {
   const instances = getService('monitoringKibanaInstances');
   const instance = getService('monitoringKibanaInstance');
 
-  describe('HyperSec Kibana instance detail', () => {
+  describe('Kibana instance detail', () => {
     const { setup, tearDown } = getLifecycleMethods(getService, getPageObjects);
 
     before(async () => {

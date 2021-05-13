@@ -24,7 +24,7 @@ describe('Create Query', () => {
     expect(result).toEqual(expected);
   });
 
-  it('Uses HyperSec timestamp field for start and end time range by default', () => {
+  it('Uses Elasticsearch timestamp field for start and end time range by default', () => {
     const options = {
       uuid: 'abc123',
       start: '2016-03-01 10:00:00',

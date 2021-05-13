@@ -1,8 +1,8 @@
 # @kbn/optimizer
 
-`@kbn/optimizer` is a package for building HyperSec Kibana platform UI plugins (and hopefully more soon).
+`@kbn/optimizer` is a package for building Kibana platform UI plugins (and hopefully more soon).
 
-HyperSec Kibana Platform plugins with `"ui": true` in their `kibana.json` file will have their `public/index.ts` file (and all of its dependencies) bundled into the `target/public` directory of the plugin. The build output does not need to be updated when other plugins are updated and is included in the distributable without requiring that we ship `@kbn/optimizer` 🎉.
+Kibana Platform plugins with `"ui": true` in their `kibana.json` file will have their `public/index.ts` file (and all of its dependencies) bundled into the `target/public` directory of the plugin. The build output does not need to be updated when other plugins are updated and is included in the distributable without requiring that we ship `@kbn/optimizer` 🎉.
 
 ## Webpack config
 
@@ -16,7 +16,7 @@ To make front-end code easier to debug the optimizer uses the `BROWSERSLIST_ENV=
 
 ## Running the optimizer
 
-The `@kbn/optimizer` is automatically executed from the dev cli, the HyperSec Kibana build scripts, and in CI. If you're running HyperSec Kibana locally in some other way you might need to build the plugins manually, which you can do by running `node scripts/build_kibana_platform_plugins` (pass `--help` for options).
+The `@kbn/optimizer` is automatically executed from the dev cli, the Kibana build scripts, and in CI. If you're running Kibana locally in some other way you might need to build the plugins manually, which you can do by running `node scripts/build_kibana_platform_plugins` (pass `--help` for options).
 
 ### Worker count
 
@@ -44,7 +44,7 @@ Any import in a bundle which resolves into another bundles "context" directory, 
 
 ## Themes
 
-SASS imports in bundles are automatically converted to CSS for one or more themes. In development we build the `v7light` and `v7dark` themes by default to improve build performance. When producing distributable bundles the default shifts to `*` so that the distributable bundles will include all themes, preventing the bundles from needing to be rebuilt when users change the active theme in HyperSec Kibana's advanced settings.
+SASS imports in bundles are automatically converted to CSS for one or more themes. In development we build the `v7light` and `v7dark` themes by default to improve build performance. When producing distributable bundles the default shifts to `*` so that the distributable bundles will include all themes, preventing the bundles from needing to be rebuilt when users change the active theme in Kibana's advanced settings.
 
 To customize the themes that are built for development you can specify the `KBN_OPTIMIZER_THEMES` environment variable to one or more theme tags, or use `*` to build styles for all themes. Unfortunately building more than one theme significantly impacts build performance, so try to be strategic about which themes you build.
 

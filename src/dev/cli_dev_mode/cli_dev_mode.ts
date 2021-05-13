@@ -209,7 +209,7 @@ export class CliDevMode {
       this.log.warn('no-base-path', '='.repeat(100));
       this.log.warn(
         'no-base-path',
-        'Running HyperSec Kibana in dev mode with --no-base-path disables several useful features and is not recommended'
+        'Running Kibana in dev mode with --no-base-path disables several useful features and is not recommended'
       );
       this.log.warn('no-base-path', '='.repeat(100));
     }

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "A scheduled task can be used by an adversary to establish persistence, move laterally, and/or escalate privileges.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Local Scheduled Task Commands",
   "query": "event.category:process and event.type:(start or process_started) and process.name:schtasks.exe and process.args:(-change or -create or -run or -s or /S or /change or /create or /run)",
   "risk_score": 21,
   "rule_id": "afcce5ad-65de-4ed2-8516-5e093d3ac99a",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

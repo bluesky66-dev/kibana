@@ -4,7 +4,7 @@ All rules described in the [server-side architecture documentation](docs/arch.md
 
 ## Apps
 
-The `apps` folder contains the entry point for the UI code, such as for use in HyperSec Kibana or testing.
+The `apps` folder contains the entry point for the UI code, such as for use in Kibana or testing.
 
 ## Components
 

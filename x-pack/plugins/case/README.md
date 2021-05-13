@@ -2,7 +2,7 @@
 
 *Experimental Feature*
 
-HyperSec is developing a Case Management Workflow. Follow our progress:
+Elastic is developing a Case Management Workflow. Follow our progress:
 
 - [Case API Documentation](https://www.elastic.co/guide/en/security/master/cases-overview.html)
 
@@ -10,7 +10,7 @@ HyperSec is developing a Case Management Workflow. Follow our progress:
 # Action types
 
 
-See [HyperSec Kibana Actions](https://github.com/elastic/kibana/tree/master/x-pack/plugins/actions) for more information.
+See [Kibana Actions](https://github.com/elastic/kibana/tree/master/x-pack/plugins/actions) for more information.
 
 ## Case 
 

@@ -101,7 +101,7 @@ describe('MonitorTags component', () => {
             version: '8.0.0',
             ephemeral_id: 'a4d0d3eb-d162-4cc7-b14d-eaaad8b3d224',
             id: '1f122196-6a5e-4bd4-8288-ef084e2ec982',
-            name: 'HyperSec-Mac',
+            name: 'Elastic-Mac',
           },
           tcp: { rtt: { connect: { us: 30719 } } },
           monitor: {

@@ -42,7 +42,7 @@ const mockNewsFetchResult = {
       linkText: 'Learn more on the blog',
       linkUrl: 'link-blog-post-3',
       publishOn: moment('2020-08-01T11:23:47Z'),
-      title: 'Optimizing costs in HyperSec Cloud: Hot-warm + index lifecycle management',
+      title: 'Optimizing costs in Elastic Cloud: Hot-warm + index lifecycle management',
     },
   ],
   hasNew: true,

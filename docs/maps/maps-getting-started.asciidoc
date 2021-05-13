@@ -79,10 +79,10 @@ image::maps/images/gs_add_cloropeth_layer.png[]
 
 [float]
 [[maps-add-elasticsearch-layer]]
-=== Step 3. Add layers for the HyperSec data
+=== Step 3. Add layers for the Elasticsearch data
 
 To avoid overwhelming the user with too much data at once, you'll add two layers
-for the HyperSec data. The first layer will display individual documents
+for the Elasticsearch data. The first layer will display individual documents
 when users zoom in on the map. The second layer will
 display aggregated data when users zoom the map out.
 

@@ -4,7 +4,7 @@
 
 ## ElasticsearchConfig.shardTimeout property
 
-Timeout for HyperSec to wait for responses from shards. Set to 0 to disable.
+Timeout for Elasticsearch to wait for responses from shards. Set to 0 to disable.
 
 <b>Signature:</b>
 

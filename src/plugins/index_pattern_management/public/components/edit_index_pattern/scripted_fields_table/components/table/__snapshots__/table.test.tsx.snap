@@ -60,7 +60,7 @@ exports[`Table should render normally 1`] = `
   items={
     Array [
       Object {
-        "lang": "HyperSec",
+        "lang": "Elastic",
         "name": "1",
         "script": "",
       },

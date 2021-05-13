@@ -69,7 +69,7 @@ export class HttpService
       configService.atPath<CspConfigType>(cspConfig.path),
       configService.atPath<ExternalUrlConfigType>(externalUrlConfig.path),
     ]).pipe(map(([http, csp, externalUrl]) => new HttpConfig(http, csp, externalUrl)));
-    this.httpServer = new HttpServer(logger, 'HyperSec Kibana');
+    this.httpServer = new HttpServer(logger, 'Kibana');
     this.httpsRedirectServer = new HttpsRedirectServer(logger.get('http', 'redirect', 'server'));
   }
 
@@ -190,13 +190,13 @@ export class HttpService
       path: '/{p*}',
       method: '*',
       handler: (req, responseToolkit) => {
-        this.log.debug(`HyperSec Kibana server is not ready yet ${req.method}:${req.url.href}.`);
+        this.log.debug(`Kibana server is not ready yet ${req.method}:${req.url.href}.`);
 
         // If server is not ready yet, because plugins or core can perform
         // long running tasks (build assets, saved objects migrations etc.)
         // we should let client know that and ask to retry after 30 seconds.
         return responseToolkit
-          .response('HyperSec Kibana server is not ready yet')
+          .response('Kibana server is not ready yet')
           .code(503)
           .header('Retry-After', '30');
       },

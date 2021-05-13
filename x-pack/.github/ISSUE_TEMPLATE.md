@@ -3,9 +3,9 @@ If you are filing a bug report, please remove the below feature
 request block and provide responses for all of the below items.
 -->
 
-**HyperSec Kibana version**:
+**Kibana version**:
 
-**HyperSec version**:
+**Elasticsearch version**:
 
 **Server OS version**:
 
@@ -13,7 +13,7 @@ request block and provide responses for all of the below items.
 
 **Browser OS version**:
 
-**Original HyperSec Kibana install method (e.g. download page, yum, from source, etc.)**:
+**Original Kibana install method (e.g. download page, yum, from source, etc.)**:
 
 **Original X-Pack install method (e.g. by name, offline install, from source, etc.)**:
 

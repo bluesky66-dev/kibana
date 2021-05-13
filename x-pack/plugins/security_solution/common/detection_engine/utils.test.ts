@@ -47,7 +47,7 @@ describe('#hasLargeValueList', () => {
         field: 'actingProcess.file.signer',
         type: 'match',
         operator: 'included',
-        value: 'HyperSec, N.V.',
+        value: 'Elastic, N.V.',
       },
       {
         field: 'file.signature.signer',
@@ -96,7 +96,7 @@ describe('#hasNestedEntry', () => {
         field: 'actingProcess.file.signer',
         type: 'match',
         operator: 'included',
-        value: 'HyperSec, N.V.',
+        value: 'Elastic, N.V.',
       },
       {
         field: 'file.signature.signer',

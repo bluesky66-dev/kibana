@@ -422,7 +422,7 @@ export default function ({ getService }: FtrProviderContext) {
           .expect(401);
       });
 
-      it('should invalidate access token on IdP initiated logout even if there is no HyperSec Kibana session', async () => {
+      it('should invalidate access token on IdP initiated logout even if there is no Kibana session', async () => {
         const logoutRequest = await createLogoutRequest({ sessionIndex: idpSessionIndex });
         const logoutResponse = await supertest
           .get(`/api/security/logout?${stringify(logoutRequest, { sort: false })}`)

@@ -21,7 +21,7 @@ type Result = { id: string; type: string } | string;
 const createResult = (result: Result): GlobalSearchResult => {
   const id = typeof result === 'string' ? result : result.id;
   const type = typeof result === 'string' ? 'application' : result.type;
-  const meta = type === 'application' ? { categoryLabel: 'HyperSec Kibana' } : { categoryLabel: null };
+  const meta = type === 'application' ? { categoryLabel: 'Kibana' } : { categoryLabel: null };
 
   return {
     id,

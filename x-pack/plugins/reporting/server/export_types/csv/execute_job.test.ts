@@ -126,7 +126,7 @@ describe('CSV Execute Job', function () {
     });
   });
 
-  describe('basic HyperSec call behavior', function () {
+  describe('basic Elasticsearch call behavior', function () {
     it('should decrypt encrypted headers and pass to callAsCurrentUser', async function () {
       const runTask = runTaskFnFactory(mockReportingCore, mockLogger);
       await runTask(
@@ -533,7 +533,7 @@ describe('CSV Execute Job', function () {
     });
   });
 
-  describe('HyperSec call errors', function () {
+  describe('Elasticsearch call errors', function () {
     it('should reject Promise if search call errors out', async function () {
       callAsCurrentUserStub.rejects(new Error());
       const runTask = runTaskFnFactory(mockReportingCore, mockLogger);
@@ -583,7 +583,7 @@ describe('CSV Execute Job', function () {
         searchRequest: { index: null, body: null },
       });
       await expect(runTask('job123', jobParams, cancellationToken)).rejects.toMatchInlineSnapshot(
-        `[Error: Expected _scroll_id in the following HyperSec response: {"hits":{"hits":[{}]}}]`
+        `[Error: Expected _scroll_id in the following Elasticsearch response: {"hits":{"hits":[{}]}}]`
       );
     });
 
@@ -602,7 +602,7 @@ describe('CSV Execute Job', function () {
         searchRequest: { index: null, body: null },
       });
       await expect(runTask('job123', jobParams, cancellationToken)).rejects.toMatchInlineSnapshot(
-        `[Error: Expected _scroll_id in the following HyperSec response: {"hits":{"hits":[]}}]`
+        `[Error: Expected _scroll_id in the following Elasticsearch response: {"hits":{"hits":[]}}]`
       );
     });
 
@@ -628,7 +628,7 @@ describe('CSV Execute Job', function () {
         searchRequest: { index: null, body: null },
       });
       await expect(runTask('job123', jobParams, cancellationToken)).rejects.toMatchInlineSnapshot(
-        `[Error: Expected _scroll_id in the following HyperSec response: {"hits":{"hits":[{}]}}]`
+        `[Error: Expected _scroll_id in the following Elasticsearch response: {"hits":{"hits":[{}]}}]`
       );
     });
 
@@ -654,7 +654,7 @@ describe('CSV Execute Job', function () {
         searchRequest: { index: null, body: null },
       });
       await expect(runTask('job123', jobParams, cancellationToken)).rejects.toMatchInlineSnapshot(
-        `[Error: Expected _scroll_id in the following HyperSec response: {"hits":{"hits":[]}}]`
+        `[Error: Expected _scroll_id in the following Elasticsearch response: {"hits":{"hits":[]}}]`
       );
     });
   });
@@ -681,7 +681,7 @@ describe('CSV Execute Job', function () {
         });
     });
 
-    it('should stop calling HyperSec when cancellationToken.cancel is called', async function () {
+    it('should stop calling Elasticsearch when cancellationToken.cancel is called', async function () {
       const runTask = runTaskFnFactory(mockReportingCore, mockLogger);
       runTask(
         'job345',

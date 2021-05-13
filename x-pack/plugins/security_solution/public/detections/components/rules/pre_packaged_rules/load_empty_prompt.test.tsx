@@ -54,7 +54,7 @@ describe('PrePackagedRulesPrompt', () => {
 });
 
 describe('LoadPrebuiltRulesAndTemplatesButton', () => {
-  it('renders correct button with correct text - Load HyperSec prebuilt rules and timeline templates', async () => {
+  it('renders correct button with correct text - Load Elastic prebuilt rules and timeline templates', async () => {
     (getPrePackagedRulesStatus as jest.Mock).mockResolvedValue({
       rules_not_installed: 3,
       rules_installed: 0,
@@ -70,12 +70,12 @@ describe('LoadPrebuiltRulesAndTemplatesButton', () => {
 
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').exists()).toEqual(true);
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').last().text()).toEqual(
-        'Load HyperSec prebuilt rules and timeline templates'
+        'Load Elastic prebuilt rules and timeline templates'
       );
     });
   });
 
-  it('renders correct button with correct text - Load HyperSec prebuilt rules', async () => {
+  it('renders correct button with correct text - Load Elastic prebuilt rules', async () => {
     (getPrePackagedRulesStatus as jest.Mock).mockResolvedValue({
       rules_not_installed: 3,
       rules_installed: 0,
@@ -91,12 +91,12 @@ describe('LoadPrebuiltRulesAndTemplatesButton', () => {
 
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').exists()).toEqual(true);
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').last().text()).toEqual(
-        'Load HyperSec prebuilt rules'
+        'Load Elastic prebuilt rules'
       );
     });
   });
 
-  it('renders correct button with correct text - Load HyperSec prebuilt timeline templates', async () => {
+  it('renders correct button with correct text - Load Elastic prebuilt timeline templates', async () => {
     (getPrePackagedRulesStatus as jest.Mock).mockResolvedValue({
       rules_not_installed: 0,
       rules_installed: 0,
@@ -112,7 +112,7 @@ describe('LoadPrebuiltRulesAndTemplatesButton', () => {
 
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').exists()).toEqual(true);
       expect(wrapper.find('[data-test-subj="load-prebuilt-rules"]').last().text()).toEqual(
-        'Load HyperSec prebuilt timeline templates'
+        'Load Elastic prebuilt timeline templates'
       );
     });
   });

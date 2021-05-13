@@ -63,7 +63,7 @@ describe('mapNodesVersionCompatibility', () => {
     const result = mapNodesVersionCompatibility(nodesInfo, KIBANA_VERSION, false);
     expect(result.isCompatible).toBe(false);
     expect(result.message).toMatchInlineSnapshot(
-      `"This version of HyperSec Kibana (v5.1.0) is incompatible with the following HyperSec nodes in your cluster: v5.0.0 @ http_address (ip)"`
+      `"This version of Kibana (v5.1.0) is incompatible with the following Elasticsearch nodes in your cluster: v5.0.0 @ http_address (ip)"`
     );
   });
 
@@ -72,7 +72,7 @@ describe('mapNodesVersionCompatibility', () => {
     const result = mapNodesVersionCompatibility(nodesInfo, KIBANA_VERSION, false);
     expect(result.isCompatible).toBe(false);
     expect(result.message).toMatchInlineSnapshot(
-      `"This version of HyperSec Kibana (v5.1.0) is incompatible with the following HyperSec nodes in your cluster: v6.1.1 @ undefined (ip)"`
+      `"This version of Kibana (v5.1.0) is incompatible with the following Elasticsearch nodes in your cluster: v6.1.1 @ undefined (ip)"`
     );
   });
 
@@ -83,7 +83,7 @@ describe('mapNodesVersionCompatibility', () => {
     const result = mapNodesVersionCompatibility(nodesInfo, KIBANA_VERSION, ignoreVersionMismatch);
     expect(result.isCompatible).toBe(true);
     expect(result.message).toMatchInlineSnapshot(
-      `"Ignoring version incompatibility between HyperSec Kibana v5.1.0 and the following HyperSec nodes: v5.0.0 @ http_address (ip)"`
+      `"Ignoring version incompatibility between Kibana v5.1.0 and the following Elasticsearch nodes: v5.0.0 @ http_address (ip)"`
     );
   });
 
@@ -91,7 +91,7 @@ describe('mapNodesVersionCompatibility', () => {
     const result = mapNodesVersionCompatibility(createNodes('5.1.1'), KIBANA_VERSION, false);
     expect(result.isCompatible).toBe(true);
     expect(result.message).toMatchInlineSnapshot(
-      `"You're running HyperSec Kibana 5.1.0 with some different versions of HyperSec. Update HyperSec Kibana or HyperSec to the same version to prevent compatibility issues: v5.1.1 @ http_address (ip)"`
+      `"You're running Kibana 5.1.0 with some different versions of Elasticsearch. Update Kibana or Elasticsearch to the same version to prevent compatibility issues: v5.1.1 @ http_address (ip)"`
     );
   });
 
@@ -99,7 +99,7 @@ describe('mapNodesVersionCompatibility', () => {
     const result = mapNodesVersionCompatibility(createNodes('5.1.1'), KIBANA_VERSION, false);
     expect(result.isCompatible).toBe(true);
     expect(result.message).toMatchInlineSnapshot(
-      `"You're running HyperSec Kibana 5.1.0 with some different versions of HyperSec. Update HyperSec Kibana or HyperSec to the same version to prevent compatibility issues: v5.1.1 @ http_address (ip)"`
+      `"You're running Kibana 5.1.0 with some different versions of Elasticsearch. Update Kibana or Elasticsearch to the same version to prevent compatibility issues: v5.1.1 @ http_address (ip)"`
     );
   });
 });

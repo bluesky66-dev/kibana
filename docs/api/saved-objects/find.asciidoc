@@ -32,7 +32,7 @@ experimental[] Retrieve a paginated set of {kib} saved objects by various condit
   (Optional, number) The page of objects to return.
 
 `search`::
-  (Optional, string) An HyperSec {ref}/query-dsl-simple-query-string-query.html[simple_query_string] query that filters the objects in the response.
+  (Optional, string) An Elasticsearch {ref}/query-dsl-simple-query-string-query.html[simple_query_string] query that filters the objects in the response.
 
 `default_search_operator`::
   (Optional, string) The default operator to use for the `simple_query_string`.

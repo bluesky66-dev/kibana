@@ -30,7 +30,7 @@ export default function serviceMapsApiTests({ getService }: FtrProviderContext) 
       expect(response.status).to.be(403);
 
       expectSnapshot(response.body.message).toMatchInline(
-        `"In order to access Service Maps, you must be subscribed to an HyperSec Platinum license. With it, you'll have the ability to visualize your entire application stack along with your APM data."`
+        `"In order to access Service Maps, you must be subscribed to an Elastic Platinum license. With it, you'll have the ability to visualize your entire application stack along with your APM data."`
       );
     });
   });

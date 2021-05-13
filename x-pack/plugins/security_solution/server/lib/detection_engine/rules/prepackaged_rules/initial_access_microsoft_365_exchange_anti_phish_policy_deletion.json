@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the deletion of an anti-phishing policy in Microsoft 365. By default, Microsoft 365 includes built-in features that help protect users from phishing attacks. Anti-phishing polices increase this protection by refining settings to better detect and prevent attacks.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Microsoft 365 Exchange Anti-Phish Policy Deletion",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:Exchange and event.category:web and event.action:\"Remove-AntiPhishPolicy\" and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "d68eb1b5-5f1c-4b6d-9e63-5b6b145cd4aa",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

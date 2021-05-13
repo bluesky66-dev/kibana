@@ -76,13 +76,13 @@ describe('helpers', () => {
   describe('getNewsFeedUrl', () => {
     const getKibanaVersion = () => '8.0.0';
 
-    test('it combines the (default) base URL from settings and the HyperSec Kibana version to return the expected URL', () => {
+    test('it combines the (default) base URL from settings and the Kibana version to return the expected URL', () => {
       expect(
         getNewsFeedUrl({ newsFeedUrlSetting: NEWS_FEED_URL_SETTING_DEFAULT, getKibanaVersion })
       ).toEqual('https://feeds.elastic.co/security-solution/v8.0.0.json');
     });
 
-    test('it combines a URL with extra whitespace and the HyperSec Kibana version to return the expected URL', () => {
+    test('it combines a URL with extra whitespace and the Kibana version to return the expected URL', () => {
       const withExtraWhitespace = `   ${NEWS_FEED_URL_SETTING_DEFAULT}   `;
 
       expect(getNewsFeedUrl({ newsFeedUrlSetting: withExtraWhitespace, getKibanaVersion })).toEqual(
@@ -90,7 +90,7 @@ describe('helpers', () => {
       );
     });
 
-    test('it combines a URL with a trailing slash and the HyperSec Kibana version to return the expected URL', () => {
+    test('it combines a URL with a trailing slash and the Kibana version to return the expected URL', () => {
       const withTrailingSlash = `${NEWS_FEED_URL_SETTING_DEFAULT}/`;
 
       expect(getNewsFeedUrl({ newsFeedUrlSetting: withTrailingSlash, getKibanaVersion })).toEqual(
@@ -98,7 +98,7 @@ describe('helpers', () => {
       );
     });
 
-    test('it combines a URL with a trailing slash plus whitespace and the HyperSec Kibana version to return the expected URL', () => {
+    test('it combines a URL with a trailing slash plus whitespace and the Kibana version to return the expected URL', () => {
       const withTrailingSlashPlusWhitespace = `   ${NEWS_FEED_URL_SETTING_DEFAULT}/   `;
 
       expect(
@@ -106,7 +106,7 @@ describe('helpers', () => {
       ).toEqual('https://feeds.elastic.co/security-solution/v8.0.0.json');
     });
 
-    test('it combines a URL and a HyperSec Kibana version with a `-SNAPSHOT` to return the expected URL', () => {
+    test('it combines a URL and a Kibana version with a `-SNAPSHOT` to return the expected URL', () => {
       const getKibanaVersionWithSnapshot = () => '8.0.0-SNAPSHOT';
 
       expect(
@@ -140,7 +140,7 @@ describe('helpers', () => {
     const expectedNewsItems: NewsItem[] = [
       {
         description:
-          "There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!",
+          "There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!",
         expireOn: expect.any(Date),
         hash: '5a35c984a9cdc1c6a25913f3d0b99b1aefc7257bc3b936c39db9fa0435edeed0',
         imageUrl:
@@ -151,7 +151,7 @@ describe('helpers', () => {
       },
       {
         description:
-          'HyperSec Security combines the threat hunting and analytics of HyperSec SIEM with the prevention and response provided by HyperSec Endpoint Security.',
+          'Elastic Security combines the threat hunting and analytics of Elastic SIEM with the prevention and response provided by Elastic Endpoint Security.',
         expireOn: expect.any(Date),
         hash: 'edcb2d396ffdd80bfd5a97fbc0dc9f4b73477f9be556863fe0a1caf086679420',
         imageUrl:
@@ -159,11 +159,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/elastic-security-7-5-0-released?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'HyperSec Security 7.5.0 released',
+        title: 'Elastic Security 7.5.0 released',
       },
       {
         description:
-          'At HyperSec, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
+          'At Elastic, we’re bringing endpoint protection and SIEM together into the same experience to streamline how you secure your organization.',
         expireOn: expect.any(Date),
         hash: 'ec970adc85e9eede83f77e4cc6a6fea00cd7822cbe48a71dc2c5f1df10939196',
         imageUrl:
@@ -171,7 +171,7 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/webinars/elastic-endpoint-security-overview-security-starts-at-the-endpoint?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'HyperSec Endpoint Security Overview Webinar',
+        title: 'Elastic Endpoint Security Overview Webinar',
       },
       {
         description:
@@ -183,11 +183,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/elastic-siem-for-small-business-and-home-1-getting-started?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Trying HyperSec SIEM at Home?',
+        title: 'Trying Elastic SIEM at Home?',
       },
       {
         description:
-          'HyperSec is excited to announce the introduction of HyperSec Endpoint Security, based on HyperSec’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
+          'Elastic is excited to announce the introduction of Elastic Endpoint Security, based on Elastic’s acquisition of Endgame, a pioneer and industry-recognized leader in endpoint threat prevention, detection, and response.',
         expireOn: expect.any(Date),
         hash: '3c64576c9749d33ff98726d641cdf2fb2bfde3dd9a6f99ff2573ac8d8c5b2c02',
         imageUrl:
@@ -195,11 +195,11 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/introducing-elastic-endpoint-security?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'Introducing HyperSec Endpoint Security',
+        title: 'Introducing Elastic Endpoint Security',
       },
       {
         description:
-          'HyperSec SIEM is powered by HyperSec Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
+          'Elastic SIEM is powered by Elastic Common Schema. With ECS, analytics content such as dashboards, rules, and machine learning jobs can be applied more broadly, searches can be crafted more narrowly, and field names are easier to remember.',
         expireOn: expect.any(Date),
         hash: 'b8a0d3d21e9638bde891ab5eb32594b3d7a3daacc7f0900c6dd506d5d7b42410',
         imageUrl:
@@ -207,7 +207,7 @@ describe('helpers', () => {
         linkUrl:
           'https://www.elastic.co/blog/introducing-the-elastic-common-schema?blade=securitysolutionfeed',
         publishOn: expect.any(Date),
-        title: 'What is HyperSec Common Schema (ECS)?',
+        title: 'What is Elastic Common Schema (ECS)?',
       },
     ];
 
@@ -269,7 +269,7 @@ describe('helpers', () => {
 
     describe('translated items', () => {
       const translatedDescription =
-        'HyperSec SIEMユーザーの素晴らしいコミュニティがそこにあります。 HyperSec SIEMアプリの設定、学習、使用、および脅威の検出に関するディスカッションに参加してください！';
+        'Elastic SIEMユーザーの素晴らしいコミュニティがそこにあります。 Elastic SIEMアプリの設定、学習、使用、および脅威の検出に関するディスカッションに参加してください！';
       const translatedImageUrl = 'https://aws1.discourse-cdn.com/elastic/translated-image-url';
       const translatedLinkUrl = 'https://discuss.elastic.co/translated-link-url';
       const translatedTitle = 'SIEMに関する質問はありますか？';
@@ -280,7 +280,7 @@ describe('helpers', () => {
             title: { en: 'Got SIEM Questions?', ja: translatedTitle },
             description: {
               en:
-                "There's an awesome community of HyperSec SIEM users out there. Join the discussion about configuring, learning, and using the HyperSec SIEM app, and detecting threats!",
+                "There's an awesome community of Elastic SIEM users out there. Join the discussion about configuring, learning, and using the Elastic SIEM app, and detecting threats!",
               ja: translatedDescription,
             },
             link_text: null,

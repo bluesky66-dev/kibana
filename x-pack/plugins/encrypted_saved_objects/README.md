@@ -82,10 +82,10 @@ const esoClient = encryptedSavedObjects.getClient({ includedHiddenTypes: ['myHid
 
 6. To retrieve Saved Object with decrypted content use the dedicated `getDecryptedAsInternalUser` API method. 
 
-**Note:** As name suggests the method will retrieve the encrypted values and decrypt them on behalf of the internal HyperSec Kibana
+**Note:** As name suggests the method will retrieve the encrypted values and decrypt them on behalf of the internal Kibana
 user to make it possible to use this method even when user request context is not available (e.g. in background tasks).
 Hence this method should only be used wherever consumers would otherwise feel comfortable using `callAsInternalUser`
-and preferably only as a part of the HyperSec Kibana server routines that are outside of the lifecycle of a HTTP request that a 
+and preferably only as a part of the Kibana server routines that are outside of the lifecycle of a HTTP request that a 
 user has control over.
 
 ```typescript

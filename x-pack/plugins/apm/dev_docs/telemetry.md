@@ -40,7 +40,7 @@ and/or config/kibana.dev.yml files.
 
 Running the script with `--clear` will delete the index first.
 
-If you're using an HyperSec instance without TLS verification (if you have `elasticsearch.ssl.verificationMode: none` set in your kibana.yml)
+If you're using an Elasticsearch instance without TLS verification (if you have `elasticsearch.ssl.verificationMode: none` set in your kibana.yml)
 you can run the script with `env NODE_TLS_REJECT_UNAUTHORIZED=0` to avoid TLS connection errors.
 
 After running the script you should see sample telemetry data in the "xpack-phone-home" index.
@@ -63,7 +63,7 @@ The queries for the stats are in the [collect data telemetry tasks](../server/li
 
 The collection tasks also use the [`APMDataTelemetry` type](../server/lib/apm_telemetry/types.ts) which also needs to be updated with any changes to the fields.
 
-Running `node scripts/telemetry_check --fix` from the root HyperSec Kibana directory will update the schemas which should automatically notify the Infra team when a pull request is opened so they can update the mapping in the telemetry clusters.
+Running `node scripts/telemetry_check --fix` from the root Kibana directory will update the schemas which should automatically notify the Infra team when a pull request is opened so they can update the mapping in the telemetry clusters.
 
 ## Behavioral Telemetry
 

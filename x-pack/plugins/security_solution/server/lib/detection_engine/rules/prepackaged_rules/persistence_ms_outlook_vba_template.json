@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Detects attempts to establish persistence on an endpoint by installing a rogue Microsoft Outlook VBA Template.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Persistence via Microsoft Outlook VBA",
   "query": "file where event.type != \"deletion\" and\n file.path : \"C:\\\\Users\\\\*\\\\AppData\\\\Roaming\\\\Microsoft\\\\Outlook\\\\VbaProject.OTM\"\n",
   "references": [
@@ -24,7 +24,7 @@
   "rule_id": "397945f3-d39a-4e6f-8bcb-9656c2031438",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

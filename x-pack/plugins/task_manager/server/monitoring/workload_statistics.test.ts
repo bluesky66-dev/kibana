@@ -444,7 +444,7 @@ describe('Workload Statistics Aggregator', () => {
           idle: 2,
         })
       )
-      .mockRejectedValueOnce(new Error('HyperSec has gone poof'))
+      .mockRejectedValueOnce(new Error('Elasticsearch has gone poof'))
       .mockResolvedValueOnce(
         setTaskTypeCount(mockAggregatedResult(), 'alerting_telemetry', {
           idle: 1,
@@ -497,9 +497,9 @@ describe('Workload Statistics Aggregator', () => {
       taskStore.aggregate.mockImplementation(async () => {
         if (errorWasThrowAt === 0) {
           errorWasThrowAt = Date.now();
-          throw new Error(`HyperSec has gone poof`);
+          throw new Error(`Elasticsearch has gone poof`);
         } else if (Date.now() - errorWasThrowAt < refreshInterval) {
-          reject(new Error(`HyperSec is still poof`));
+          reject(new Error(`Elasticsearch is still poof`));
         }
 
         return setTaskTypeCount(mockAggregatedResult(), 'alerting_telemetry', {

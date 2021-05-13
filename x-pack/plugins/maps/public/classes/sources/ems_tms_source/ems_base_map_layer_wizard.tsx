@@ -23,7 +23,7 @@ function getDescription() {
   return i18n.translate('xpack.maps.source.emsTileSourceDescription', {
     defaultMessage: 'Basemap service from {host}',
     values: {
-      host: emsSettings.isEMSUrlSet() ? emsSettings.getEMSRoot() : 'HyperSec Maps Service',
+      host: emsSettings.isEMSUrlSet() ? emsSettings.getEMSRoot() : 'Elastic Maps Service',
     },
   });
 }
@@ -36,7 +36,7 @@ export const emsBaseMapLayerWizardConfig: LayerWizard = {
   },
   description: getDescription(),
   disabledReason: i18n.translate('xpack.maps.source.emsTileDisabledReason', {
-    defaultMessage: 'HyperSec Maps Server requires an Enterprise license',
+    defaultMessage: 'Elastic Maps Server requires an Enterprise license',
   }),
   getIsDisabled: () => {
     const emsSettings = getEMSSettings();

@@ -147,7 +147,7 @@ export async function parseManifest(
     throw PluginDiscoveryError.incompatibleVersion(
       manifestPath,
       new Error(
-        `Plugin "${manifest.id}" is only compatible with HyperSec Kibana version "${expectedKibanaVersion}", but used HyperSec Kibana version is "${packageInfo.version}".`
+        `Plugin "${manifest.id}" is only compatible with Kibana version "${expectedKibanaVersion}", but used Kibana version is "${packageInfo.version}".`
       )
     );
   }

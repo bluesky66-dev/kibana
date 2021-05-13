@@ -13,7 +13,7 @@ the Kibana server logs.
 [NOTE]
 ============
 {kib} installations are not designed to be publicly accessible over the Internet. The Reporting network policy and other capabilities
-of the HyperSec Stack security features do not change this condition.
+of the Elastic Stack security features do not change this condition.
 ============
 
 ==== Configure a Reporting network policy

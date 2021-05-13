@@ -108,7 +108,7 @@ Reporting 7.0 uses a version of the Chromium headless browser that RHEL 6,
 CentOS 6.x, and other old versions of Linux derived from RHEL 6. This change
 effectively removes RHEL 6 OS server support from Kibana Reporting. Users with
 RHEL 6 must upgrade to RHEL 7 to use Kibana Reporting starting with version
-7.0.0 of the HyperSec stack.
+7.0.0 of the Elastic stack.
 ============
 
 
@@ -124,7 +124,7 @@ users to use IE11, you might like to disable the warning entirely with `csp.warn
 
 [float]
 [[breaking_70_ems_changes]]
-=== HyperSec Maps Service changes
+=== Elastic Maps Service changes
 
 [float]
 ==== Removed overseas territories from France Departments vector layer
@@ -174,8 +174,8 @@ Kibana 7.0 will only use the Node.js distribution included in the package.
 === Security changes
 
 [float]
-==== Removed support for users relying on direct index privileges to the Kibana index in HyperSec
-*Details:* With the introduction of Kibana RBAC in 6.4, users no longer require privileges to the Kibana index in HyperSec. Instead, users
+==== Removed support for users relying on direct index privileges to the Kibana index in Elasticsearch
+*Details:* With the introduction of Kibana RBAC in 6.4, users no longer require privileges to the Kibana index in Elasticsearch. Instead, users
 should be granted <<kibana-privileges>>. Prior to 7.0, when a user who relies upon direct index privileges logged into Kibana, a deprecation warning was logged. 
 
 *Impact:* You must change any roles that grant access to Kibana using index privileges to use <<kibana-privileges>> instead. 
@@ -197,7 +197,7 @@ to grant access to that tenant.
 
 [float]
 ==== Removed support for tribe nodes
-*Details:* HyperSec 7.0 removes the tribe node feature, so Kibana removes it as well.
+*Details:* Elasticsearch 7.0 removes the tribe node feature, so Kibana removes it as well.
 
 *Impact:* You must remove any tribe node configurations in Kibana. Consider using <<management-cross-cluster-search>> instead, which does not require kibana.yml configurations in Kibana.
 
@@ -431,7 +431,7 @@ the `kibana.yml` file has been officially removed.
 when it was explicitly recommended to use `uuid` as its value.
 
 *Impact:* This setting is no longer necessary. If you enable the {stack}
-{monitor-features}, a monitoring agent runs on each HyperSec node, Logstash
+{monitor-features}, a monitoring agent runs on each Elasticsearch node, Logstash
 node, Kibana instance, and Beat to collect and index metrics. Each node and
 instance is considered unique based on its persistent UUID, which is written to
 the `path.data` directory when the node or instance starts.
@@ -471,13 +471,13 @@ users can have full control over their custom filters.
 
 [float]
 ==== Advanced setting query:queryString:options no longer applies `default_field: *` by default.
-*Details:* HyperSec removed the ability to create indices with an _all field in 6.0. As a result, a user could end
+*Details:* Elasticsearch removed the ability to create indices with an _all field in 6.0. As a result, a user could end
 up with a mix of indices with and without _all fields if they upgraded from an older version of ES. This could lead to
 inconsistent highlighting in Discover. To work around this issue we added `default_field: *` to query:queryString:options
 to force consistent querying across indices with and without _all. In 7.0 the _all field will be gone from all indices
 so we no longer need this workaround.
 
-*Impact:* Since we'll no longer send the `default_field` parameter in Kibana's query_string query, HyperSec
+*Impact:* Since we'll no longer send the `default_field` parameter in Kibana's query_string query, Elasticsearch
 will use the index setting instead. The default for the index setting is also `*`, so most users should not be impacted.
 If some of your indices have a non-default `default_field` setting, you may want to update it or re-add the parameter
 to Kibana's advanced setting.

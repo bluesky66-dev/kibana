@@ -350,7 +350,7 @@ export const getResult = (): RuleAlertType => ({
   alertTypeId: 'siem.signals',
   consumer: 'siem',
   params: {
-    author: ['HyperSec'],
+    author: ['Elastic'],
     buildingBlockType: undefined,
     anomalyThreshold: undefined,
     description: 'Detecting root and admin users',
@@ -363,7 +363,7 @@ export const getResult = (): RuleAlertType => ({
     savedId: undefined,
     query: 'user.name: root or user.name: admin',
     language: 'kuery',
-    license: 'HyperSec License',
+    license: 'Elastic License',
     machineLearningJobId: undefined,
     outputIndex: '.siem-signals',
     timelineId: 'some-timeline-id',
@@ -573,7 +573,7 @@ export const getFindResultStatus = (): SavedObjectsFindResponse<IRuleSavedAttrib
         lastFailureAt: '2020-02-18T15:15:58.806Z',
         lastSuccessAt: '2020-02-13T20:31:59.855Z',
         lastFailureMessage:
-          'Signal rule name: "Query with a rule id Number 1", id: "1ea5a820-4da1-4e82-92a1-2b43a7bece08", rule_id: "query-rule-id-1" has a time gap of 5 days (412682928ms), and could be missing signals within that time. Consider increasing your look behind time or adding more HyperSec Kibana instances.',
+          'Signal rule name: "Query with a rule id Number 1", id: "1ea5a820-4da1-4e82-92a1-2b43a7bece08", rule_id: "query-rule-id-1" has a time gap of 5 days (412682928ms), and could be missing signals within that time. Consider increasing your look behind time or adding more Kibana instances.',
         lastSuccessMessage: 'succeeded',
         lastLookBackDate: new Date('2020-02-18T15:14:58.806Z').toISOString(),
         gap: '500.32',

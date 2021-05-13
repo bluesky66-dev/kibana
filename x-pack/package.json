@@ -1,9 +1,9 @@
 {
   "name": "x-pack",
   "version": "7.12.1",
-  "author": "HyperSec",
+  "author": "Elastic",
   "private": true,
-  "license": "HyperSec-License",
+  "license": "Elastic-License",
   "scripts": {
     "github-checks-reporter": "../node_modules/.bin/github-checks-reporter",
     "kbn": "node ../scripts/kbn",

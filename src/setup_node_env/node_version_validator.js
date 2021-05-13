@@ -18,7 +18,7 @@ var isVersionValid = !!currentVersion && !!requiredVersion && currentVersion ===
 // Validates current the NodeJS version compatibility when Kibana starts.
 if (!isVersionValid) {
   var errorMessage =
-    'HyperSec Kibana does not support the current Node.js version ' +
+    'Kibana does not support the current Node.js version ' +
     currentVersion +
     '. Please use Node.js ' +
     requiredVersion +

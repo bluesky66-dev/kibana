@@ -114,7 +114,7 @@ export function runKbnArchiverCli() {
     .command({
       name: 'save',
       usage: 'save <name>',
-      description: 'export saved objects from HyperSec Kibana to a file',
+      description: 'export saved objects from Kibana to a file',
       flags: {
         string: ['type'],
         help: `
@@ -132,7 +132,7 @@ export function runKbnArchiverCli() {
     .command({
       name: 'load',
       usage: 'load <name>',
-      description: 'import a saved export to HyperSec Kibana',
+      description: 'import a saved export to Kibana',
       async run({ kbnClient, flags, space }) {
         await kbnClient.importExport.load(getSinglePositionalArg(flags), { space });
       },
@@ -140,7 +140,7 @@ export function runKbnArchiverCli() {
     .command({
       name: 'unload',
       usage: 'unload <name>',
-      description: 'delete the saved objects saved in the archive from the HyperSec Kibana index',
+      description: 'delete the saved objects saved in the archive from the Kibana index',
       async run({ kbnClient, flags, space }) {
         await kbnClient.importExport.unload(getSinglePositionalArg(flags), { space });
       },

@@ -14,19 +14,19 @@ The Presentation Utility Plugin is a set of common, shared components and toolki
 
 ## Plugin Services Toolkit
 
-While HyperSec Kibana provides a `useKibana` hook for use in a plugin, the number of services it provides is very large.  This presents a set of difficulties:
+While Kibana provides a `useKibana` hook for use in a plugin, the number of services it provides is very large.  This presents a set of difficulties:
 
-- a direct dependency upon the HyperSec Kibana environment;
-- a requirement to mock the full HyperSec Kibana environment when testing or using Storybook;
+- a direct dependency upon the Kibana environment;
+- a requirement to mock the full Kibana environment when testing or using Storybook;
 - a lack of knowledge as to what services are being consumed at any given time.
 
-To mitigate these difficulties, the Presentation Team creates services within the plugin that then consume HyperSec Kibana-provided (or other) services.  This is a toolkit for creating simple services within a plugin.
+To mitigate these difficulties, the Presentation Team creates services within the plugin that then consume Kibana-provided (or other) services.  This is a toolkit for creating simple services within a plugin.
 
 ### Overview
 
 - A `PluginServiceFactory` is a function that will return a set of functions-- which comprise a `Service`-- given a set of parameters.
 - A `PluginServiceProvider` is an object that use a factory to start, stop or provide a `Service`.
-- A `PluginServiceRegistry` is a collection of providers for a given environment, (e.g. HyperSec Kibana, Jest, Storybook, stub, etc).
+- A `PluginServiceRegistry` is a collection of providers for a given environment, (e.g. Kibana, Jest, Storybook, stub, etc).
 - A `PluginServices` object uses a registry to provide services throughout the plugin.
 
 ### Defining Services
@@ -84,9 +84,9 @@ export const serviceRegistry = new PluginServiceRegistry<PresentationUtilService
 ```
 </DocAccordion>
 
-By contrast, a registry that uses HyperSec Kibana can provide `KibanaPluginServiceParams` to determine how to start its providers, so the `StartParameters` generic is given:
+By contrast, a registry that uses Kibana can provide `KibanaPluginServiceParams` to determine how to start its providers, so the `StartParameters` generic is given:
 
-<DocAccordion buttonContent="HyperSec Kibana Service Registry Example" initialIsOpen>
+<DocAccordion buttonContent="Kibana Service Registry Example" initialIsOpen>
 ```ts
 export const providers: PluginServiceProviders<
   PresentationUtilServices,
@@ -131,7 +131,7 @@ export const fooServiceFactory: FooServiceFactory = () => ({
 });
 ```
 
-and a factory for a HyperSec Kibana version might look like this:
+and a factory for a Kibana version might look like this:
 
 ```ts
 export type FooServiceFactory = KibanaPluginServiceFactory<
@@ -143,7 +143,7 @@ export const fooServiceFactory: FooServiceFactory = ({
   coreStart,
   startPlugins,
 }) => {
-  // ...do something with HyperSec Kibana services...
+  // ...do something with Kibana services...
 
   return {
     getFoo: //...

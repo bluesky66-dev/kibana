@@ -1,7 +1,7 @@
-# `@kbn/config-schema` — The HyperSec Kibana config validation library
+# `@kbn/config-schema` — The Kibana config validation library
 
 `@kbn/config-schema` is a TypeScript library inspired by Joi and designed to allow run-time validation of the
-HyperSec Kibana configuration entries providing developers with a fully typed model of the validated data.
+Kibana configuration entries providing developers with a fully typed model of the validated data.
 
 ## Table of Contents
 
@@ -37,12 +37,12 @@ HyperSec Kibana configuration entries providing developers with a fully typed mo
 
 ## Why `@kbn/config-schema`?
 
-Validation of externally supplied data is very important for HyperSec Kibana. Especially if this data is used to configure how it operates.
+Validation of externally supplied data is very important for Kibana. Especially if this data is used to configure how it operates.
 
 There are a number of reasons why we decided to roll our own solution for the configuration validation:
 
 * **Limited API surface** - having a future rich library is awesome, but it's a really hard task to audit such library and make sure everything is sane and secure enough. As everyone knows complexity is the enemy of security and hence we'd like to have a full control over what exactly we expose and commit to maintain.
-* **Custom error messages** - detailed validation error messages are a great help to developers, but at the same time they can contain information that's way too sensitive to expose to everyone. We'd like to control these messages and make them only as detailed as really needed. For example, we don't want validation error messages to contain the passwords for internal users to show-up in the logs. These logs are commonly ingested into HyperSec, and accessible to a large number of users which shouldn't have access to the internal user's password.
+* **Custom error messages** - detailed validation error messages are a great help to developers, but at the same time they can contain information that's way too sensitive to expose to everyone. We'd like to control these messages and make them only as detailed as really needed. For example, we don't want validation error messages to contain the passwords for internal users to show-up in the logs. These logs are commonly ingested into Elasticsearch, and accessible to a large number of users which shouldn't have access to the internal user's password.
 * **Type information** - having run-time guarantees is great, but additionally having compile-time guarantees is even better. We'd like to provide developers with a fully typed model of the validated data so that it's harder to misuse it _after_ validation.
 * **Upgradability** - no matter how well a validation library is implemented, it will have bugs and may need to be improved at some point anyway. Some external libraries are very well supported, some aren't or won't be in the future. It's always a risk to depend on an external party with their own release cadence when you need to quickly fix a security vulnerability in a patch version. We'd like to have a better control over lifecycle of such an important piece of our codebase. 
 
@@ -95,7 +95,7 @@ expect(() =>
 
 __Notes:__
 * `validate` method throws as soon as the first schema violation is encountered, no further validation is performed.
-* when you retrieve configuration within a HyperSec Kibana plugin `validate` function is called by the Core automatically providing appropriate namespace and context variables (environment name, package info etc.).
+* when you retrieve configuration within a Kibana plugin `validate` function is called by the Core automatically providing appropriate namespace and context variables (environment name, package info etc.).
 
 ### Basic types
 
@@ -479,7 +479,7 @@ valueSchema.validate({}, { envName: 'dev' });
 
 __Notes:__
 * The `@kbn/config-schema` neither validates nor coerces the "dereferenced" value and the developer is responsible for making sure that it has the appropriate type.
-* The root context that HyperSec Kibana provides during config validation includes lots of useful properties like `environment name` that can be used to provide a strict schema for production and more relaxed one for development. 
+* The root context that Kibana provides during config validation includes lots of useful properties like `environment name` that can be used to provide a strict schema for production and more relaxed one for development. 
 
 #### `schema.siblingRef()`
 

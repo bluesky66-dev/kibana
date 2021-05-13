@@ -4,7 +4,7 @@
 
 ## GetAuthHeaders type
 
-Get headers to authenticate a user against HyperSec.
+Get headers to authenticate a user against Elasticsearch.
 
 <b>Signature:</b>
 

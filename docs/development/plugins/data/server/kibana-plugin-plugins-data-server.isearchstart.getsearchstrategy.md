@@ -4,7 +4,7 @@
 
 ## ISearchStart.getSearchStrategy property
 
-Get other registered search strategies by name (or, by default, the HyperSec strategy). For example, if a new strategy needs to use the already-registered ES search strategy, it can use this function to accomplish that.
+Get other registered search strategies by name (or, by default, the Elasticsearch strategy). For example, if a new strategy needs to use the already-registered ES search strategy, it can use this function to accomplish that.
 
 <b>Signature:</b>
 

@@ -53,14 +53,14 @@ exports[`after fetch When given a title that matches multiple dashboards, filter
             <React.Fragment>
               <p>
                 <FormattedMessage
-                  defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
+                  defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
                   id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
                   values={Object {}}
                 />
               </p>
               <p>
                 <FormattedMessage
-                  defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
+                  defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
                   id="dashboard.listing.createNewDashboard.newToKibanaDescription"
                   values={
                     Object {
@@ -299,14 +299,14 @@ exports[`after fetch initialFilter 1`] = `
             <React.Fragment>
               <p>
                 <FormattedMessage
-                  defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
+                  defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
                   id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
                   values={Object {}}
                 />
               </p>
               <p>
                 <FormattedMessage
-                  defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
+                  defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
                   id="dashboard.listing.createNewDashboard.newToKibanaDescription"
                   values={
                     Object {
@@ -445,14 +445,14 @@ exports[`after fetch renders all table rows 1`] = `
             <React.Fragment>
               <p>
                 <FormattedMessage
-                  defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
+                  defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
                   id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
                   values={Object {}}
                 />
               </p>
               <p>
                 <FormattedMessage
-                  defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
+                  defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
                   id="dashboard.listing.createNewDashboard.newToKibanaDescription"
                   values={
                     Object {
@@ -591,14 +591,14 @@ exports[`after fetch renders call to action when no dashboards exist 1`] = `
             <React.Fragment>
               <p>
                 <FormattedMessage
-                  defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
+                  defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
                   id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
                   values={Object {}}
                 />
               </p>
               <p>
                 <FormattedMessage
-                  defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
+                  defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
                   id="dashboard.listing.createNewDashboard.newToKibanaDescription"
                   values={
                     Object {
@@ -737,14 +737,14 @@ exports[`after fetch renders warning when listingLimit is exceeded 1`] = `
             <React.Fragment>
               <p>
                 <FormattedMessage
-                  defaultMessage="You can combine data views from any HyperSec Kibana app into one dashboard and see everything in one place."
+                  defaultMessage="You can combine data views from any Kibana app into one dashboard and see everything in one place."
                   id="dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription"
                   values={Object {}}
                 />
               </p>
               <p>
                 <FormattedMessage
-                  defaultMessage="New to HyperSec Kibana? {sampleDataInstallLink} to take a test drive."
+                  defaultMessage="New to Kibana? {sampleDataInstallLink} to take a test drive."
                   id="dashboard.listing.createNewDashboard.newToKibanaDescription"
                   values={
                     Object {

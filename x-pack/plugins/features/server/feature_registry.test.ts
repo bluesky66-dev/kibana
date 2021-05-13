@@ -10,7 +10,7 @@ import { ElasticsearchFeatureConfig, KibanaFeatureConfig } from '../common';
 import { licensingMock } from '../../licensing/server/mocks';
 
 describe('FeatureRegistry', () => {
-  describe('HyperSec Kibana Features', () => {
+  describe('Kibana Features', () => {
     it('allows a minimal feature to be registered', () => {
       const feature: KibanaFeatureConfig = {
         id: 'test-feature',
@@ -1509,7 +1509,7 @@ describe('FeatureRegistry', () => {
     });
   });
 
-  describe('HyperSec Features', () => {
+  describe('Elasticsearch Features', () => {
     it('allows a minimal feature to be registered', () => {
       const feature: ElasticsearchFeatureConfig = {
         id: 'test-feature',
@@ -1614,7 +1614,7 @@ describe('FeatureRegistry', () => {
     });
   });
 
-  it('does not allow a HyperSec Kibana feature to share an id with an HyperSec feature', () => {
+  it('does not allow a Kibana feature to share an id with an Elasticsearch feature', () => {
     const kibanaFeature: KibanaFeatureConfig = {
       id: 'test-feature',
       name: 'Test Feature',
@@ -1640,7 +1640,7 @@ describe('FeatureRegistry', () => {
     ).toThrowErrorMatchingInlineSnapshot(`"Feature with id test-feature is already registered."`);
   });
 
-  it('does not allow an HyperSec feature to share an id with a HyperSec Kibana feature', () => {
+  it('does not allow an Elasticsearch feature to share an id with a Kibana feature', () => {
     const kibanaFeature: KibanaFeatureConfig = {
       id: 'test-feature',
       name: 'Test Feature',

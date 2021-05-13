@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec",
+    "Elastic",
     "Austin Songer"
   ],
   "description": "Identifies suspicious processes being spawned by the Microsoft Exchange Server Unified Messaging (UM) service. This activity has been observed exploiting CVE-2021-26857.",
@@ -14,7 +14,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Microsoft Exchange Server UM Spawning Suspicious Processes",
   "query": "process where event.type == \"start\" and\n  process.parent.name : (\"UMService.exe\", \"UMWorkerProcess.exe\") and\n    not process.name : (\"werfault.exe\", \"wermgr.exe\")\n",
   "references": [
@@ -25,7 +25,7 @@
   "rule_id": "483c4daf-b0c6-49e0-adf3-0bfa93231d6b",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

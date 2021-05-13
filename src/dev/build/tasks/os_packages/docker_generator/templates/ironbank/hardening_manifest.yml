@@ -19,14 +19,14 @@ args:
 # Docker image labels
 labels:
   org.opencontainers.image.title: 'kibana'
-  org.opencontainers.image.description: 'Your window into the HyperSec Stack.'
-  org.opencontainers.image.licenses: 'HyperSec License'
+  org.opencontainers.image.description: 'Your window into the Elastic Stack.'
+  org.opencontainers.image.licenses: 'Elastic License'
   org.opencontainers.image.url: 'https://www.elastic.co/products/kibana'
-  org.opencontainers.image.vendor: 'HyperSec'
+  org.opencontainers.image.vendor: 'Elastic'
   org.opencontainers.image.version: '{{version}}'
   # mil.dso.ironbank.image.keywords: ""
   # mil.dso.ironbank.image.type: "commercial"
-  mil.dso.ironbank.product.name: 'HyperSec Kibana'
+  mil.dso.ironbank.product.name: 'Kibana'
 
 # List of resources to make available to the offline build context
 resources:

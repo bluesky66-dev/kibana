@@ -4,9 +4,9 @@ exports[`setupMode formatting formatProductName should format the product name f
 
 exports[`setupMode formatting formatProductName should format the product name for beats 1`] = `"Beats"`;
 
-exports[`setupMode formatting formatProductName should format the product name for elasticsearch 1`] = `"HyperSec"`;
+exports[`setupMode formatting formatProductName should format the product name for elasticsearch 1`] = `"Elasticsearch"`;
 
-exports[`setupMode formatting formatProductName should format the product name for kibana 1`] = `"HyperSec Kibana"`;
+exports[`setupMode formatting formatProductName should format the product name for kibana 1`] = `"Kibana"`;
 
 exports[`setupMode formatting formatProductName should format the product name for logstash 1`] = `"Logstash"`;
 

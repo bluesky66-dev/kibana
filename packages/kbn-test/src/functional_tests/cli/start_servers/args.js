@@ -19,12 +19,12 @@ const options = {
   },
   esFrom: {
     arg: '<snapshot|source|path>',
-    desc: 'Build HyperSec from source, snapshot or path to existing install dir.',
+    desc: 'Build Elasticsearch from source, snapshot or path to existing install dir.',
     defaultHelp: 'Default: $TEST_ES_FROM or snapshot',
   },
   'kibana-install-dir': {
     arg: '<dir>',
-    desc: 'Run HyperSec Kibana from existing install directory instead of from source.',
+    desc: 'Run Kibana from existing install directory instead of from source.',
   },
   verbose: { desc: 'Log everything.' },
   debug: { desc: 'Run in debug mode.' },

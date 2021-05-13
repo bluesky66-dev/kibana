@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Kernel modules are pieces of code that can be loaded and unloaded into the kernel upon demand. They extend the functionality of the kernel without the need to reboot the system. This rule identifies attempts to remove a kernel module.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Kernel Module Removal",
   "query": "event.category:process and event.type:(start or process_started) and process.args:((rmmod and sudo) or (modprobe and sudo and (\"--remove\" or \"-r\")))",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "cd66a5af-e34b-4bb0-8931-57d0a043f2ef",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

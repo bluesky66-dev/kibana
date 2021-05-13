@@ -11,7 +11,7 @@ const getopts = require('getopts');
 const { Cluster } = require('../cluster');
 const { createCliError } = require('../errors');
 
-exports.description = 'Install and run from an HyperSec tar';
+exports.description = 'Install and run from an Elasticsearch tar';
 
 exports.usage = 'es archive <path> [<args>]';
 
@@ -25,8 +25,8 @@ exports.help = (defaults = {}) => {
       --install-path    Installation path, defaults to 'source' within base-path
       --password        Sets password for elastic user [default: ${password}]
       --password.[user] Sets password for native realm user [default: ${password}]
-      --ssl             Sets up SSL on HyperSec
-      -E                Additional key=value settings to pass to HyperSec
+      --ssl             Sets up SSL on Elasticsearch
+      -E                Additional key=value settings to pass to Elasticsearch
 
     Example:
 

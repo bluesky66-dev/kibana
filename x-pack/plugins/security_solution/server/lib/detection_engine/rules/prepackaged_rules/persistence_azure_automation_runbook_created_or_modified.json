@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies when an Azure Automation runbook is created or modified. An adversary may create or modify an Azure Automation runbook to execute malicious code and maintain persistence in their target's environment.",
   "from": "now-25m",
@@ -9,7 +9,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Azure Automation Runbook Created or Modified",
   "note": "The Azure Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.activitylogs and azure.activitylogs.operation_name: ( \"MICROSOFT.AUTOMATION/AUTOMATIONACCOUNTS/RUNBOOKS/DRAFT/WRITE\" or \"MICROSOFT.AUTOMATION/AUTOMATIONACCOUNTS/RUNBOOKS/WRITE\" or \"MICROSOFT.AUTOMATION/AUTOMATIONACCOUNTS/RUNBOOKS/PUBLISH/ACTION\" ) and event.outcome:(Success or success)",
@@ -23,7 +23,7 @@
   "rule_id": "16280f1e-57e6-4242-aa21-bb4d16f13b2f",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

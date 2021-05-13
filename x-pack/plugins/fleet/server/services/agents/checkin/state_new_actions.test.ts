@@ -135,7 +135,7 @@ describe('test agent checkin new action services', () => {
           id: 'policy1',
           outputs: {
             default: {
-              type: outputType.HyperSec,
+              type: outputType.Elasticsearch,
               hosts: [],
               ca_sha256: undefined,
               api_key: undefined,

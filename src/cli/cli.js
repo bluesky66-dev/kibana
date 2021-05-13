@@ -17,8 +17,8 @@ const program = new Command('bin/kibana');
 program
   .version(pkg.version)
   .description(
-    'HyperSec Kibana is an open and free, browser ' +
-      'based analytics and search dashboard for HyperSec.'
+    'Kibana is an open and free, browser ' +
+      'based analytics and search dashboard for Elasticsearch.'
   );
 
 // attach commands

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies loadable kernel module errors, which are often indicative of potential persistence attempts.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Persistence via Kernel Module Modification",
   "query": "event.category:process and event.type:(start or process_started) and process.name:(insmod or kmod or modprobe or rmod)",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "81cc58f5-8062-49a2-ba84-5cc4b4d31c40",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

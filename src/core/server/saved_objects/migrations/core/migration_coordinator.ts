@@ -87,10 +87,10 @@ function handleIndexExists(error: any, log: SavedObjectsMigrationLogger) {
   const index = _.get(error, 'body.error.index');
 
   log.warning(
-    `Another HyperSec Kibana instance appears to be migrating the index. Waiting for ` +
-      `that migration to complete. If no other HyperSec Kibana instance is attempting ` +
+    `Another Kibana instance appears to be migrating the index. Waiting for ` +
+      `that migration to complete. If no other Kibana instance is attempting ` +
       `migrations, you can get past this message by deleting index ${index} and ` +
-      `restarting HyperSec Kibana.`
+      `restarting Kibana.`
   );
 
   return true;

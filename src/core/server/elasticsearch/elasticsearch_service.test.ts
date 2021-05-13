@@ -68,7 +68,7 @@ beforeEach(() => {
 afterEach(() => jest.clearAllMocks());
 
 describe('#setup', () => {
-  it('returns legacy HyperSec config as a part of the contract', async () => {
+  it('returns legacy Elasticsearch config as a part of the contract', async () => {
     const setupContract = await elasticsearchService.setup(setupDeps);
 
     await expect(setupContract.legacy.config$.pipe(first()).toPromise()).resolves.toBeInstanceOf(

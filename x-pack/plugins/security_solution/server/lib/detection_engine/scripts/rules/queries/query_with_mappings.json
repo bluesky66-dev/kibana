@@ -1,5 +1,5 @@
 {
-  "description": "Makes external events actionable within HyperSec Security! 🎬",
+  "description": "Makes external events actionable within Elastic Security! 🎬",
   "enabled": false,
   "index": [
     "apm-*-transaction*",
@@ -15,9 +15,9 @@
   "name": "External alerts",
   "query": "event.type: \"alert\"",
   "type": "query",
-  "author": ["HyperSec"],
+  "author": ["Elastic"],
   "building_block_type": "default",
-  "license": "HyperSec License",
+  "license": "Elastic License",
   "risk_score_mapping": [
     {
       "field": "event.risk_score",

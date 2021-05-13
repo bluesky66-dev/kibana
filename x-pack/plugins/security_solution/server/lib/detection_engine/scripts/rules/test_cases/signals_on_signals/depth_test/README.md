@@ -74,7 +74,7 @@ Finally, insert and start the first the query like so:
 ./post_rule.sh ./rules/test_cases/signals_on_signals/depth_test/query_single_id.json
 ```
 
-Wait 30+ seconds to ensure that the single record shows up in your signals index. You can use dev tools in HyperSec Kibana
+Wait 30+ seconds to ensure that the single record shows up in your signals index. You can use dev tools in Kibana
 to see this by first getting your configured signals index by running:
 
 ```ts

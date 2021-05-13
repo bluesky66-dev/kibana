@@ -41,7 +41,7 @@ One can see how middle-click or Ctrl + click behavior could be supported using
 
 *Drilldown Manager* is a collectio of code and React components that allows you
 to add drilldowns to any app. To see examples of how drilldows can be added to
-your app, run HyperSec Kibana with `--run-examples` flag:
+your app, run Kibana with `--run-examples` flag:
 
 ```
 yarn start --run-examples

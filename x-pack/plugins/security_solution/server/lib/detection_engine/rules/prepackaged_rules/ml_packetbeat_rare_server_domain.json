@@ -1,7 +1,7 @@
 {
   "anomaly_threshold": 50,
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "A machine learning job detected an unusual network destination domain name. This can be due to initial access, persistence, command-and-control, or exfiltration activity. For example, when a user clicks on a link in a phishing email or opens a malicious document, a request may be sent to download and run a payload from an uncommon web server name. When malware is already running, it may send requests to an uncommon DNS domain the malware uses for command-and-control communication.",
   "false_positives": [
@@ -9,7 +9,7 @@
   ],
   "from": "now-45m",
   "interval": "15m",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "machine_learning_job_id": "packetbeat_rare_server_domain",
   "name": "Unusual Network Destination Domain Name",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "17e68559-b274-4948-ad0b-f8415bb31126",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Network",
     "Threat Detection",
     "ML"

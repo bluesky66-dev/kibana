@@ -1,11 +1,11 @@
 # API integration tests
 
-Many API integration tests for Ingest Manager trigger at some point a connection to the package registry, and retrieval of some packages. If these connections are made to a package registry deployment outside of HyperSec Kibana CI, these tests can fail at any time for two reasons:
+Many API integration tests for Ingest Manager trigger at some point a connection to the package registry, and retrieval of some packages. If these connections are made to a package registry deployment outside of Kibana CI, these tests can fail at any time for two reasons:
 
 - the deployed registry is temporarily unavailable
 - the packages served by the registry do not match the expectation of the code under test
 
-For that reason, we run a dockerized version of the package registry in HyperSec Kibana CI. For this to work, our tests must run against a custom test configuration and be kept in a custom directory, `x-pack/test/fleet_api_integration`.
+For that reason, we run a dockerized version of the package registry in Kibana CI. For this to work, our tests must run against a custom test configuration and be kept in a custom directory, `x-pack/test/fleet_api_integration`.
 
 ## How to run the tests locally
 
@@ -64,7 +64,7 @@ The main configuration for the `DockerServers` service for our tests can be foun
 image: 'docker.elastic.co/package-registry/package-registry:kibana-testing-1'
 ```
 
-This image contains the content of `docker.elastic.co/package-registry/package-registry:master` on June 26 2020. The image used here should be stable, i.e. using `master` would defeat the purpose of having a stable set of packages to be used in HyperSec Kibana CI.
+This image contains the content of `docker.elastic.co/package-registry/package-registry:master` on June 26 2020. The image used here should be stable, i.e. using `master` would defeat the purpose of having a stable set of packages to be used in Kibana CI.
 
 ### Packages available for testing
 

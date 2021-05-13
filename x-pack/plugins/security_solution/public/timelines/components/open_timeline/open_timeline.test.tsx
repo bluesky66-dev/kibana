@@ -411,7 +411,7 @@ describe('OpenTimeline', () => {
     expect(wrapper.find('[data-test-subj="selected-count"]').exists()).toEqual(true);
   });
 
-  test("it should not render bulk actions if timelineStatus is immutable (selecting HyperSec templates' tab)", () => {
+  test("it should not render bulk actions if timelineStatus is immutable (selecting Elastic templates' tab)", () => {
     const defaultProps = {
       ...getDefaultTestProps(mockResults),
       timelineStatus: TimelineStatus.immutable,
@@ -425,7 +425,7 @@ describe('OpenTimeline', () => {
     expect(wrapper.find('[data-test-subj="utility-bar-action"]').exists()).toEqual(false);
   });
 
-  test("it should not render a selectable timeline table if timelineStatus is immutable (selecting HyperSec templates' tab)", () => {
+  test("it should not render a selectable timeline table if timelineStatus is immutable (selecting Elastic templates' tab)", () => {
     const defaultProps = {
       ...getDefaultTestProps(mockResults),
       timelineStatus: TimelineStatus.immutable,
@@ -441,7 +441,7 @@ describe('OpenTimeline', () => {
     ).toEqual(['createFrom', 'duplicate']);
   });
 
-  test("it should not render selected count if timelineStatus is immutable (selecting HyperSec templates' tab)", () => {
+  test("it should not render selected count if timelineStatus is immutable (selecting Elastic templates' tab)", () => {
     const defaultProps = {
       ...getDefaultTestProps(mockResults),
       timelineStatus: TimelineStatus.immutable,

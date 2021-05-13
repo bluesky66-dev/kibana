@@ -10,7 +10,7 @@ exports[`AddRoleAlert component renders expected component 1`] = `
     />
   </strong>
   <FormattedMessage
-    defaultMessage="In HyperSec Kibana Management, assign the {role} role to your HyperSec Kibana user."
+    defaultMessage="In Kibana Management, assign the {role} role to your Kibana user."
     id="xpack.logstash.addRoleAlert.grantAdditionalPrivilegesDescription"
     values={
       Object {

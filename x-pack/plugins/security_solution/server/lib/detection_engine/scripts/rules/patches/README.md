@@ -1,8 +1,8 @@
 These are example PATCH rules to see how to patch various parts of the rules.
 You either have to use the id, or you have to use the rule_id in order to patch
 the rules. rule_id acts as an external_id where you can patch rules across different
-HyperSec Kibana systems where id acts as a normal server generated id which is not normally shared
-across different HyperSec Kibana systems.
+Kibana systems where id acts as a normal server generated id which is not normally shared
+across different Kibana systems.
 
 The only thing you cannot patch is the `rule_id` or regular `id` of the system. If `rule_id`
 is incorrect then you have to delete the rule completely and re-initialize it with the

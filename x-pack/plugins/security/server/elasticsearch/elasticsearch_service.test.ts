@@ -62,7 +62,7 @@ describe('ElasticsearchService', () => {
       expect(service.start()).toEqual({ watchOnlineStatus$: expect.any(Function) });
     });
 
-    it('`watchOnlineStatus$` allows tracking of HyperSec status', () => {
+    it('`watchOnlineStatus$` allows tracking of Elasticsearch status', () => {
       const mockHandler = jest.fn();
       service.start().watchOnlineStatus$().subscribe(mockHandler);
 

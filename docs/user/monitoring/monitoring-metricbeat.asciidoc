@@ -54,7 +54,7 @@ view the cluster settings and `manage` cluster privileges to change them.
 --
 If you are running {kib} locally, go to `http://localhost:5601/`.
 
-If the HyperSec {security-features} are enabled, log in.
+If the Elastic {security-features} are enabled, log in.
 --
 
 ... In the side navigation, click *Stack Monitoring*. If data collection is
@@ -130,7 +130,7 @@ access it via HTTPS. For example, use a `hosts` setting like
 // end::configure-kibana-module[]
 
 // tag::remote-monitoring-user[]
-If the HyperSec {security-features} are enabled, you must also provide a user
+If the Elastic {security-features} are enabled, you must also provide a user
 ID and password so that {metricbeat} can collect metrics successfully:
 
 .. Create a user on the production cluster that has the

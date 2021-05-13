@@ -327,7 +327,7 @@ export class ESSearchSource extends AbstractESSource implements ITiledSingleLaye
       requestName: layerName,
       searchSource,
       registerCancelCallback,
-      requestDescription: 'HyperSec document top hits request',
+      requestDescription: 'Elasticsearch document top hits request',
       searchSessionId: searchFilters.searchSessionId,
     });
 
@@ -395,7 +395,7 @@ export class ESSearchSource extends AbstractESSource implements ITiledSingleLaye
       requestName: layerName,
       searchSource,
       registerCancelCallback,
-      requestDescription: 'HyperSec document request',
+      requestDescription: 'Elasticsearch document request',
       searchSessionId: searchFilters.searchSessionId,
     });
 

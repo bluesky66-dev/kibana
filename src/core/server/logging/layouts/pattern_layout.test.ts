@@ -301,8 +301,8 @@ describe('schema', () => {
 
       it('fails on %date with predefined date format and invalid timezone', () => {
         expect(() =>
-          patternSchema.validate('%date{ISO8601_TZ}{Europe/HyperSec Kibana}')
-        ).toThrowErrorMatchingInlineSnapshot(`"Unknown timezone: Europe/HyperSec Kibana"`);
+          patternSchema.validate('%date{ISO8601_TZ}{Europe/Kibana}')
+        ).toThrowErrorMatchingInlineSnapshot(`"Unknown timezone: Europe/Kibana"`);
       });
 
       it('validates several %date in pattern', () => {

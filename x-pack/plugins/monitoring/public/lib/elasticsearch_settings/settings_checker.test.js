@@ -7,7 +7,7 @@
 
 import { SettingsChecker } from './checkers/settings_checker';
 
-describe('Settings Checker Class for HyperSec Settings', () => {
+describe('Settings Checker Class for Elasticsearch Settings', () => {
   const getHttp = () => ({
     get() {
       return Promise.resolve({

@@ -8,11 +8,11 @@ Canvas is included with X-Pack and requires a Basic license or better to use.
 
 ### Developing in Canvas
 
-To develop your own Canvas plugins, you simply create a HyperSec Kibana plugin, and register your customizations with Canvas.
+To develop your own Canvas plugins, you simply create a Kibana plugin, and register your customizations with Canvas.
 
 The following is a step-by-step guide to adding your own custom random number Canvas plugin.
 
-#### Generating a HyperSec Kibana plugin
+#### Generating a Kibana plugin
 
 ```bash
 # in the kibana directory
@@ -69,7 +69,7 @@ export default function (kibana) {
 }
 ```
 
-Now that the HyperSec Kibana plugin boilerplate is out of the way, you can write a Canvas plugin.
+Now that the Kibana plugin boilerplate is out of the way, you can write a Canvas plugin.
 
 Create a new file: `public/index.js` and make it look like this:
 
@@ -117,7 +117,7 @@ In the terminal, in your plugin's directory, run:
 yarn start
 ```
 
-- Pull up HyperSec Kibana in your browser: `http://localhost:5601`
+- Pull up Kibana in your browser: `http://localhost:5601`
 - Go to canvas, and click: "Create workpad"
 - Click: "Add element"
 - Click: "Random Number"
@@ -187,7 +187,7 @@ You should now see one random number and one "Server Time in ms" value.
 There are several scripts available once you are in that path as well.
 
 - `node scripts/lint` - local linter setup, can also be used with the `--fix` flag for automatic fixes.
-- `node scripts/test` - local test runner, does not require a real HyperSec Kibana instance. Runs all the same unit tests the normal runner does, just limited to Canvas, and *waaaaaay* faster (currently 12 seconds or less).
+- `node scripts/test` - local test runner, does not require a real Kibana instance. Runs all the same unit tests the normal runner does, just limited to Canvas, and *waaaaaay* faster (currently 12 seconds or less).
 - `node scripts/test_dev` - Same as above, but watches for changes and only runs tests for the given scope (browser, server, or common).
 
 ## Feature Questions
@@ -200,15 +200,15 @@ We've opted for always available data labels instead, for now. While there exist
 
 **What is Canvas?**
 
-Canvas is a new visualization application on top of HyperSec data. Canvas is extremely versatile, but particularly differentiating example use cases include live infographics, presentations with live-updating charts, and highly customized reports.
+Canvas is a new visualization application on top of Elasticsearch data. Canvas is extremely versatile, but particularly differentiating example use cases include live infographics, presentations with live-updating charts, and highly customized reports.
 
-**Why did we build it? How does this align with the larger HyperSec Kibana vision?**
+**Why did we build it? How does this align with the larger Kibana vision?**
 
-We realized early on that we are not trying to build one UI “to rule them all” in HyperSec Kibana. HyperSec caters to a wide variety of use cases, users, and audiences and HyperSec Kibana provides different experiences for these users to explore and interact with their data. Canvas is one of such applications, in particular catering to users looking for desktop-publishing level of control for the presentation of their data summaries.
+We realized early on that we are not trying to build one UI “to rule them all” in Kibana. Elasticsearch caters to a wide variety of use cases, users, and audiences and Kibana provides different experiences for these users to explore and interact with their data. Canvas is one of such applications, in particular catering to users looking for desktop-publishing level of control for the presentation of their data summaries.
 
-**Does Canvas replace any part of HyperSec Kibana?**
+**Does Canvas replace any part of Kibana?**
 
-No, it is an alternative experience that does not conflict with other parts of HyperSec Kibana.
+No, it is an alternative experience that does not conflict with other parts of Kibana.
 
 **Isn’t there overlap between Canvas and Dashboard?**
 

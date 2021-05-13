@@ -31,7 +31,7 @@ export const noteSchema = gql`
     updatedBy
     updated
   }
-
+  
   input SortNote {
     sortField: SortFieldNote!
     sortOrder: Direction!

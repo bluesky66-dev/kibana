@@ -12,7 +12,7 @@ import { CollapsiblePanel } from './collapsible_panel';
 
 test('it renders without blowing up', () => {
   const wrapper = shallowWithIntl(
-    <CollapsiblePanel iconType="logoElasticsearch" title="HyperSec">
+    <CollapsiblePanel iconType="logoElasticsearch" title="Elasticsearch">
       <p>child</p>
     </CollapsiblePanel>
   );
@@ -22,7 +22,7 @@ test('it renders without blowing up', () => {
 
 test('it renders children by default', () => {
   const wrapper = mountWithIntl(
-    <CollapsiblePanel iconType="logoElasticsearch" title="HyperSec">
+    <CollapsiblePanel iconType="logoElasticsearch" title="Elasticsearch">
       <p className="child">child 1</p>
       <p className="child">child 2</p>
     </CollapsiblePanel>
@@ -34,7 +34,7 @@ test('it renders children by default', () => {
 
 test('it hides children when the "hide" link is clicked', () => {
   const wrapper = mountWithIntl(
-    <CollapsiblePanel iconType="logoElasticsearch" title="HyperSec">
+    <CollapsiblePanel iconType="logoElasticsearch" title="Elasticsearch">
       <p className="child">child 1</p>
       <p className="child">child 2</p>
     </CollapsiblePanel>

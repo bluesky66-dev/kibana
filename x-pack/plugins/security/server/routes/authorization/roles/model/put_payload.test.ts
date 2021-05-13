@@ -63,7 +63,7 @@ describe('Put payload schema', () => {
   });
 
   describe('global', () => {
-    test(`only allows known HyperSec Kibana global base privileges`, () => {
+    test(`only allows known Kibana global base privileges`, () => {
       expect(() =>
         getPutPayloadSchema(() => basePrivilegeNamesMap).validate({
           kibana: [{ base: ['foo'], spaces: ['*'] }],
@@ -73,7 +73,7 @@ describe('Put payload schema', () => {
       );
     });
 
-    test(`doesn't allow HyperSec Kibana reserved privileges`, () => {
+    test(`doesn't allow Kibana reserved privileges`, () => {
       expect(() =>
         getPutPayloadSchema(() => basePrivilegeNamesMap).validate({
           kibana: [{ _reserved: ['customApplication1'], spaces: ['*'] }],
@@ -122,7 +122,7 @@ describe('Put payload schema', () => {
 `);
     });
 
-    test(`only allows known HyperSec Kibana space base privileges`, () => {
+    test(`only allows known Kibana space base privileges`, () => {
       expect(() =>
         getPutPayloadSchema(() => basePrivilegeNamesMap).validate({
           kibana: [{ base: ['foo'], spaces: ['foo-space'] }],
@@ -145,7 +145,7 @@ describe('Put payload schema', () => {
       );
     });
 
-    test(`doesn't allow HyperSec Kibana reserved privileges`, () => {
+    test(`doesn't allow Kibana reserved privileges`, () => {
       expect(() =>
         getPutPayloadSchema(() => basePrivilegeNamesMap).validate({
           kibana: [{ _reserved: ['customApplication1'], spaces: ['marketing'] }],

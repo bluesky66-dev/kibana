@@ -130,7 +130,7 @@ export function runFtrCli() {
           --updateBaselines  replace baseline screenshots with whatever is generated from the test
           --updateSnapshots  replace inline and file snapshots with whatever is generated from the test
           -u                 replace both baseline screenshots and snapshots
-          --kibana-install-dir  directory where the HyperSec Kibana install being tested resides
+          --kibana-install-dir  directory where the Kibana install being tested resides
         `,
       },
     }

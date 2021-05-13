@@ -878,7 +878,7 @@ setup(core: CoreSetup){
 }
 ----
 
-=== HyperSec client
+=== Elasticsearch client
 
 The new elasticsearch client is a thin wrapper around
 `@elastic/elasticsearch`’s `Client` class. Even if the API is quite
@@ -974,7 +974,7 @@ const { body } = await client.asInternalUser.get({ id: 'id' });
 
 The new client doesn’t provide exhaustive typings for the response
 object yet. You might have to copy response type definitions from the
-Legacy HyperSec library until the additional announcements.
+Legacy Elasticsearch library until the additional announcements.
 
 [source,typescript]
 ----
@@ -1144,7 +1144,7 @@ router.get(
 ==== Accessing the client from a collector's `fetch` method
 
 At the moment, the `fetch` method's context receives preconfigured 
-<<scoped-services, scoped clients>> for HyperSec and SavedObjects. 
+<<scoped-services, scoped clients>> for Elasticsearch and SavedObjects. 
 To help in the transition, both, the legacy (`callCluster`) and new clients are provided, 
 but we strongly discourage using the deprecated legacy ones for any new implementation.
 

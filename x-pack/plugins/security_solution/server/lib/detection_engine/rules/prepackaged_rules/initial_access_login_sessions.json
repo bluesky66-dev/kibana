@@ -1,13 +1,13 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies that the maximum number login sessions has been reached for a user.",
   "index": [
     "auditbeat-*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Auditd Max Login Sessions",
   "query": "event.module:auditd and event.action:\"opened-too-many-sessions-to\"",
   "references": [
@@ -17,7 +17,7 @@
   "rule_id": "20dc4620-3b68-4269-8124-ca5091e00ea8",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

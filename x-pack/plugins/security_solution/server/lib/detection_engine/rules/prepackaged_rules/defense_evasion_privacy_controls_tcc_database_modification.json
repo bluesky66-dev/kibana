@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the use of sqlite3 to directly modify the Transparency, Consent, and Control (TCC) SQLite database. This may indicate an attempt to bypass macOS privacy controls, including access to sensitive resources like the system camera, microphone, address book, and calendar.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Potential Privacy Control Bypass via TCCDB Modification",
   "query": "process where event.type in (\"start\", \"process_started\") and process.name : \"sqlite*\" and \n process.args : \"/*/Application Support/com.apple.TCC/TCC.db\"\n",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "eea82229-b002-470e-a9e1-00be38b14d32",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

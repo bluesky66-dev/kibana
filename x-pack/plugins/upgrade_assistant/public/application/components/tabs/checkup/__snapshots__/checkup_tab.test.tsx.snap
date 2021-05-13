@@ -10,7 +10,7 @@ exports[`CheckupTab render with deprecations 1`] = `
       data-test-subj="upgradeAssistantIndexTabDetail"
     >
       <FormattedMessage
-        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to HyperSec {nextEsVersion}."
+        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to Elasticsearch {nextEsVersion}."
         id="xpack.upgradeAssistant.checkupTab.tabDetail"
         values={
           Object {
@@ -115,14 +115,14 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": "twitter",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
               "details": "Upgrading is irreversible, so always back up your index before proceeding.",
               "index": ".triggered_watches",
               "level": "critical",
-              "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
+              "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html",
             },
             Object {
@@ -135,7 +135,7 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": ".reindex-status",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
@@ -148,14 +148,14 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": "twitter2",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
               "details": "Upgrading is irreversible, so always back up your index before proceeding.",
               "index": ".watches",
               "level": "critical",
-              "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
+              "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html",
             },
           ]
@@ -230,14 +230,14 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": "twitter",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
               "details": "Upgrading is irreversible, so always back up your index before proceeding.",
               "index": ".triggered_watches",
               "level": "critical",
-              "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
+              "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html",
             },
             Object {
@@ -250,7 +250,7 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": ".reindex-status",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
@@ -263,14 +263,14 @@ exports[`CheckupTab render with deprecations 1`] = `
               "details": "Reindexing is irreversible, so always back up your index before proceeding.",
               "index": "twitter2",
               "level": "critical",
-              "message": "This index must be reindexed in order to upgrade the HyperSec Stack.",
+              "message": "This index must be reindexed in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/reindex-upgrade.html",
             },
             Object {
               "details": "Upgrading is irreversible, so always back up your index before proceeding.",
               "index": ".watches",
               "level": "critical",
-              "message": "This index must be upgraded in order to upgrade the HyperSec Stack.",
+              "message": "This index must be upgraded in order to upgrade the Elastic Stack.",
               "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-upgrade.html",
             },
           ]
@@ -294,7 +294,7 @@ exports[`CheckupTab render with error 1`] = `
       data-test-subj="upgradeAssistantIndexTabDetail"
     >
       <FormattedMessage
-        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to HyperSec {nextEsVersion}."
+        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to Elasticsearch {nextEsVersion}."
         id="xpack.upgradeAssistant.checkupTab.tabDetail"
         values={
           Object {
@@ -362,7 +362,7 @@ exports[`CheckupTab render without deprecations 1`] = `
       data-test-subj="upgradeAssistantIndexTabDetail"
     >
       <FormattedMessage
-        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to HyperSec {nextEsVersion}."
+        defaultMessage="These {strongCheckupLabel} issues need your attention. Resolve them before upgrading to Elasticsearch {nextEsVersion}."
         id="xpack.upgradeAssistant.checkupTab.tabDetail"
         values={
           Object {

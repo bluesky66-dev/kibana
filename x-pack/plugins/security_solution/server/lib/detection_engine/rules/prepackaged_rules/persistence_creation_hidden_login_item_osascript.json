@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the execution of osascript to create a hidden login item. This may indicate an attempt to persist a malicious program while concealing its presence.",
   "from": "now-9m",
@@ -9,14 +9,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Creation of Hidden Login Item via Apple Script",
   "query": "process where event.type in (\"start\", \"process_started\") and process.name : \"osascript\" and\n process.command_line : \"osascript*login item*hidden:true*\"\n",
   "risk_score": 47,
   "rule_id": "f24bcae1-8980-4b30-b5dd-f851b055c9e7",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

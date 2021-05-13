@@ -30,6 +30,6 @@ export default {
 
 export function Example() {
   return (
-    <LicensePrompt text="To create Feature name, you must be subscribed to an HyperSec X license or above." />
+    <LicensePrompt text="To create Feature name, you must be subscribed to an Elastic X license or above." />
   );
 }

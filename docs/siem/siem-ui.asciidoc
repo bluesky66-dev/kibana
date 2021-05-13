@@ -1,8 +1,8 @@
 [role="xpack"]
 [[siem-ui]]
-== Using HyperSec Security
+== Using Elastic Security
 
-HyperSec Security is a highly interactive workspace designed for security
+Elastic Security is a highly interactive workspace designed for security
 analysts. It provides a clear overview of events and alerts from your
 environment, and you can use the interactive UI to drill down into areas of
 interest.
@@ -36,7 +36,7 @@ image::siem/images/network-ui.png[]
 
 The Detections feature automatically searches for threats and creates 
 alerts when they are detected. Detection rules define the conditions 
-for when alerts are created. HyperSec Security comes with prebuilt rules that
+for when alerts are created. Elastic Security comes with prebuilt rules that
 search for suspicious activity on your network and hosts. Additionally, you can
 create your own rules.
 
@@ -50,14 +50,14 @@ image::siem/images/detections-ui.png[]
 [[cases-ui]]
 === Cases (beta)
 
-Cases are used to open and track security issues directly in HyperSec Security. 
+Cases are used to open and track security issues directly in Elastic Security. 
 Cases list the original reporter and all users who contribute to a case
 (`participants`). Case comments support Markdown syntax, and allow linking to
 saved Timelines. Additionally, you can send cases to external systems from
-within HyperSec Security.
+within Elastic Security.
 
 For information about opening, updating, and closing cases, see
-{security-guide}/cases-overview.html[Cases] in the HyperSec Security Guide.
+{security-guide}/cases-overview.html[Cases] in the Elastic Security Guide.
 
 [role="screenshot"]
 image::siem/images/cases-ui.png[]
@@ -69,13 +69,13 @@ image::siem/images/cases-ui.png[]
 Timeline is your workspace for threat hunting and alert investigations. 
 
 [role="screenshot"]
-image::siem/images/timeline-ui.png[HyperSec Security Timeline]
+image::siem/images/timeline-ui.png[Elastic Security Timeline]
 
 You can drag objects of interest into the Timeline Event Viewer to create
 exactly the query filter you need. You can drag items from table widgets within
 Hosts and Network pages, or even from within Timeline itself.
 
-A timeline is responsive and persists as you move through HyperSec Security
+A timeline is responsive and persists as you move through Elastic Security
 collecting data. 
 
 For detailed information about Timeline, see
@@ -86,10 +86,10 @@ For detailed information about Timeline, see
 === Sample workflow
 
 An analyst notices a suspicious user ID that warrants further investigation, and
-clicks a URL that links to HyperSec Security. 
+clicks a URL that links to Elastic Security. 
 
 The analyst uses the tables, histograms, and filtering and search capabilities in
-HyperSec Security to get to the bottom of the alert. The analyst can drag items of
+Elastic Security to get to the bottom of the alert. The analyst can drag items of
 interest to Timeline for further analysis.
 
 Within Timeline, the analyst can investigate further - drilling down,

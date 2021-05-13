@@ -29,11 +29,11 @@ The principal structure of the app is stored in `uptime_app.tsx`.
 
 ### server
 
-The `lib` directory contains `adapters`, which are connections to external resources like HyperSec Kibana
-Server, HyperSec, etc. In addition, it contains domains, which are libraries that provide
+The `lib` directory contains `adapters`, which are connections to external resources like Kibana
+Server, Elasticsearch, etc. In addition, it contains domains, which are libraries that provide
 functionality via adapters.
 
-The `requests` directory contains functions responsible for querying HyperSec and parsing its
+The `requests` directory contains functions responsible for querying Elasticsearch and parsing its
 responses.
 
 There's also a `rest_api` folder that defines the structure of the RESTful API endpoints.
@@ -64,7 +64,7 @@ If instead you need to run API tests, start up the test server and then in anoth
 
 You can update snapshots by prefixing the runner command with `env UPDATE_UPTIME_FIXTURES=1`
 
-You can access the functional test server's HyperSec Kibana at `http://localhost:5620/`.
+You can access the functional test server's Kibana at `http://localhost:5620/`.
 
 You can login with username `elastic` and password `changeme` by default.
 
@@ -73,7 +73,7 @@ to freeze the execution for 60 seconds if you need to click around or check thin
 
 #### Running --ssl tests
 
-Some of our tests require there to be an SSL connection between HyperSec Kibana and HyperSec.
+Some of our tests require there to be an SSL connection between Kibana and Elasticsearch.
 
 We can run these tests like described above, but with some special config.
 
@@ -86,7 +86,7 @@ We can run these tests like described above, but with some special config.
 We maintain a suite of Accessibility tests (you may see them referred to elsewhere as `a11y` tests).
 
 These tests render each of our pages and ensure that the inputs and other elements contain the
-attributes necessary to ensure all users are able to make use of HyperSec Kibana (for example, users relying
+attributes necessary to ensure all users are able to make use of Kibana (for example, users relying
 on screen readers).
 
 The commands for running these tests are very similar to the other functional tests described above.

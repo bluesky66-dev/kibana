@@ -459,10 +459,10 @@ describe('helpers', () => {
     test('returns formatted object as AboutStepRuleJson', () => {
       const result = formatAboutStepData(mockData);
       const expected: AboutStepRuleJson = {
-        author: ['HyperSec'],
+        author: ['Elastic'],
         description: '24/7',
         false_positives: ['test'],
-        license: 'HyperSec License',
+        license: 'Elastic License',
         name: 'Query with rule-id',
         note: '# this is some markdown documentation',
         references: ['www.test.co'],
@@ -539,10 +539,10 @@ describe('helpers', () => {
       };
       const result = formatAboutStepData(mockStepData);
       const expected: AboutStepRuleJson = {
-        author: ['HyperSec'],
+        author: ['Elastic'],
         description: '24/7',
         false_positives: ['test'],
-        license: 'HyperSec License',
+        license: 'Elastic License',
         name: 'Query with rule-id',
         note: '# this is some markdown documentation',
         references: ['www.test.co'],
@@ -564,10 +564,10 @@ describe('helpers', () => {
       };
       const result = formatAboutStepData(mockStepData);
       const expected: AboutStepRuleJson = {
-        author: ['HyperSec'],
+        author: ['Elastic'],
         description: '24/7',
         false_positives: ['test'],
-        license: 'HyperSec License',
+        license: 'Elastic License',
         name: 'Query with rule-id',
         references: ['www.test.co'],
         risk_score: 21,
@@ -606,8 +606,8 @@ describe('helpers', () => {
       };
       const result = formatAboutStepData(mockStepData);
       const expected: AboutStepRuleJson = {
-        author: ['HyperSec'],
-        license: 'HyperSec License',
+        author: ['Elastic'],
+        license: 'Elastic License',
         description: '24/7',
         false_positives: ['test'],
         name: 'Query with rule-id',
@@ -649,8 +649,8 @@ describe('helpers', () => {
       };
       const result = formatAboutStepData(mockStepData);
       const expected: AboutStepRuleJson = {
-        author: ['HyperSec'],
-        license: 'HyperSec License',
+        author: ['Elastic'],
+        license: 'Elastic License',
         description: '24/7',
         false_positives: ['test'],
         name: 'Query with rule-id',

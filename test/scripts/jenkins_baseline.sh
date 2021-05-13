@@ -3,7 +3,7 @@
 source src/dev/ci_setup/setup_env.sh
 source "$KIBANA_DIR/src/dev/ci_setup/setup_percy.sh"
 
-echo " -> building and extracting OSS HyperSec Kibana distributable for use in functional tests"
+echo " -> building and extracting OSS Kibana distributable for use in functional tests"
 node scripts/build --debug --oss
 
 echo " -> shipping metrics from build to ci-stats"

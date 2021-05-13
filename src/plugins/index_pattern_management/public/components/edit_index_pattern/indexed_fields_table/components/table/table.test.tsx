@@ -18,8 +18,8 @@ const indexPattern = {
 
 const items: IndexedFieldItem[] = [
   {
-    name: 'HyperSec',
-    displayName: 'HyperSec',
+    name: 'Elastic',
+    displayName: 'Elastic',
     searchable: true,
     info: [],
     type: 'name',
@@ -58,7 +58,7 @@ describe('Table', () => {
       <Table indexPattern={indexPattern} items={items} editField={() => {}} />
     );
 
-    const tableCell = shallow(component.prop('columns')[0].render('HyperSec', items[0]));
+    const tableCell = shallow(component.prop('columns')[0].render('Elastic', items[0]));
     expect(tableCell).toMatchSnapshot();
   });
 

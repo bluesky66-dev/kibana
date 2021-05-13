@@ -44,7 +44,7 @@ describe('Alerts rules, prebuilt rules', () => {
 
   it('Loads prebuilt rules', () => {
     const expectedNumberOfRules = totalNumberOfPrebuiltRules;
-    const expectedElasticRulesBtnText = `HyperSec rules (${expectedNumberOfRules})`;
+    const expectedElasticRulesBtnText = `Elastic rules (${expectedNumberOfRules})`;
 
     loginAndWaitForPageWithoutDateRange(DETECTIONS_URL);
     waitForAlertsPanelToBeLoaded();
@@ -75,7 +75,7 @@ describe('Alerts rules, prebuilt rules', () => {
 describe('Deleting prebuilt rules', () => {
   beforeEach(() => {
     const expectedNumberOfRules = totalNumberOfPrebuiltRules;
-    const expectedElasticRulesBtnText = `HyperSec rules (${expectedNumberOfRules})`;
+    const expectedElasticRulesBtnText = `Elastic rules (${expectedNumberOfRules})`;
 
     cleanKibana();
     loginAndWaitForPageWithoutDateRange(DETECTIONS_URL);
@@ -110,10 +110,10 @@ describe('Deleting prebuilt rules', () => {
 
     cy.get(ELASTIC_RULES_BTN).should(
       'have.text',
-      `HyperSec rules (${expectedNumberOfRulesAfterDeletion})`
+      `Elastic rules (${expectedNumberOfRulesAfterDeletion})`
     );
     cy.get(RELOAD_PREBUILT_RULES_BTN).should('exist');
-    cy.get(RELOAD_PREBUILT_RULES_BTN).should('have.text', 'Install 1 HyperSec prebuilt rule ');
+    cy.get(RELOAD_PREBUILT_RULES_BTN).should('have.text', 'Install 1 Elastic prebuilt rule ');
 
     reloadDeletedRules();
 
@@ -124,7 +124,7 @@ describe('Deleting prebuilt rules', () => {
 
     cy.get(ELASTIC_RULES_BTN).should(
       'have.text',
-      `HyperSec rules (${expectedNumberOfRulesAfterRecovering})`
+      `Elastic rules (${expectedNumberOfRulesAfterRecovering})`
     );
   });
 
@@ -141,11 +141,11 @@ describe('Deleting prebuilt rules', () => {
     cy.get(RELOAD_PREBUILT_RULES_BTN).should('exist');
     cy.get(RELOAD_PREBUILT_RULES_BTN).should(
       'have.text',
-      `Install ${numberOfRulesToBeSelected} HyperSec prebuilt rules `
+      `Install ${numberOfRulesToBeSelected} Elastic prebuilt rules `
     );
     cy.get(ELASTIC_RULES_BTN).should(
       'have.text',
-      `HyperSec rules (${expectedNumberOfRulesAfterDeletion})`
+      `Elastic rules (${expectedNumberOfRulesAfterDeletion})`
     );
 
     reloadDeletedRules();
@@ -157,7 +157,7 @@ describe('Deleting prebuilt rules', () => {
 
     cy.get(ELASTIC_RULES_BTN).should(
       'have.text',
-      `HyperSec rules (${expectedNumberOfRulesAfterRecovering})`
+      `Elastic rules (${expectedNumberOfRulesAfterRecovering})`
     );
   });
 });

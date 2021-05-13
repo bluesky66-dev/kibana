@@ -14,7 +14,7 @@ describe('OverviewPageParsingErrorCallout', () => {
     expect(
       shallowWithIntl(
         <ParsingErrorCallout
-          error={{ message: 'Unable to convert to HyperSec query, invalid syntax.' }}
+          error={{ message: 'Unable to convert to Elasticsearch query, invalid syntax.' }}
         />
       )
     ).toMatchSnapshot();

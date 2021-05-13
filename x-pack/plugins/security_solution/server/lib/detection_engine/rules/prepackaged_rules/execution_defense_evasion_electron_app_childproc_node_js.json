@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies attempts to execute a child process from within the context of an Electron application using the child_process Node.js module. Adversaries may abuse this technique to inherit permissions from parent processes.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Execution via Electron Child Process Node.js Module",
   "query": "event.category:process and event.type:(start or process_started) and process.args:(\"-e\" and const*require*child_process*)",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "35330ba2-c859-4c98-8b7f-c19159ea0e58",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

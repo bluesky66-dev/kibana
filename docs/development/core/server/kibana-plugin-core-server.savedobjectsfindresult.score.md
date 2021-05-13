@@ -4,7 +4,7 @@
 
 ## SavedObjectsFindResult.score property
 
-The HyperSec `_score` of this result.
+The Elasticsearch `_score` of this result.
 
 <b>Signature:</b>
 

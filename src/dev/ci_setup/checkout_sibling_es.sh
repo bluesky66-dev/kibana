@@ -32,9 +32,9 @@ function checkout_sibling {
     }
 
     function pick_clone_target {
-      echo "To develop HyperSec Kibana features against a specific branch of ${project} and being able to"
+      echo "To develop Kibana features against a specific branch of ${project} and being able to"
       echo "test that feature also on CI, the CI is trying to find branches on ${project} with the same name as"
-      echo "the HyperSec Kibana branch (first on your fork and then upstream) before building from master."
+      echo "the Kibana branch (first on your fork and then upstream) before building from master."
       echo "picking which branch of ${project} to clone:"
       if [[ -n "$PR_AUTHOR" && -n "$PR_SOURCE_BRANCH" ]]; then
         cloneAuthor="$PR_AUTHOR"

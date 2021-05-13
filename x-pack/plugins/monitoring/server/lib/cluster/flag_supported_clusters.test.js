@@ -102,7 +102,7 @@ describe.skip('Flag Supported Clusters', () => {
         sinon.assert.calledWith(
           logStub,
           ['debug', 'monitoring', 'supported-clusters'],
-          'Detected all clusters in monitoring data have basic license. Checking for supported admin cluster UUID for HyperSec Kibana kibana-1234.'
+          'Detected all clusters in monitoring data have basic license. Checking for supported admin cluster UUID for Kibana kibana-1234.'
         );
         sinon.assert.calledWith(
           logStub,

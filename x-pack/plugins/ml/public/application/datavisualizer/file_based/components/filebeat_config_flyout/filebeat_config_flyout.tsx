@@ -138,7 +138,7 @@ const Contents: FC<{
         {username === null ? (
           <FormattedMessage
             id="xpack.ml.fileDatavisualizer.resultsLinks.fileBeatConfigBottomTextNoUsername"
-            defaultMessage="Where {esUrl} is the URL of HyperSec."
+            defaultMessage="Where {esUrl} is the URL of Elasticsearch."
             values={{
               esUrl: <EuiCode>{'<es_url>'}</EuiCode>,
             }}
@@ -146,7 +146,7 @@ const Contents: FC<{
         ) : (
           <FormattedMessage
             id="xpack.ml.fileDatavisualizer.resultsLinks.fileBeatConfigBottomText"
-            defaultMessage="Where {password} is the password of the {user} user, {esUrl} is the URL of HyperSec."
+            defaultMessage="Where {password} is the password of the {user} user, {esUrl} is the URL of Elasticsearch."
             values={{
               user: <EuiCode>{username}</EuiCode>,
               password: <EuiCode>{'<password>'}</EuiCode>,

@@ -98,7 +98,7 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
         'home.tutorials.common.filebeatInstructions.install.windowsTextPost',
         {
           defaultMessage:
-            'Modify the settings under {propertyName} in the {filebeatPath} file to point to your HyperSec installation.',
+            'Modify the settings under {propertyName} in the {filebeatPath} file to point to your Elasticsearch installation.',
           values: {
             propertyName: '`output.elasticsearch`',
             filebeatPath: '`C:\\Program Files\\Filebeat\\filebeat.yml`',
@@ -114,7 +114,7 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatInstructions.start.osxTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['./filebeat setup', './filebeat -e'],
     },
@@ -124,7 +124,7 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatInstructions.start.debTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo filebeat setup', 'sudo service filebeat start'],
     },
@@ -134,7 +134,7 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatInstructions.start.rpmTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo filebeat setup', 'sudo service filebeat start'],
     },
@@ -144,7 +144,7 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatInstructions.start.windowsTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['.\\filebeat.exe setup', 'Start-Service filebeat'],
     },
@@ -171,8 +171,8 @@ export const createFilebeatInstructions = (context?: TutorialContext) => ({
       ],
       textPost: i18n.translate('home.tutorials.common.filebeatInstructions.config.osxTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -201,8 +201,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.filebeatInstructions.config.debTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -231,8 +231,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.filebeatInstructions.config.rpmTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -263,8 +263,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         'home.tutorials.common.filebeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',
@@ -283,7 +283,7 @@ export const createFilebeatCloudInstructions = () => ({
         defaultMessage: 'Edit the configuration',
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatCloudInstructions.config.osxTextPre', {
-        defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+        defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
         values: {
           path: '`filebeat.yml`',
         },
@@ -296,7 +296,7 @@ export const createFilebeatCloudInstructions = () => ({
         defaultMessage: 'Edit the configuration',
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatCloudInstructions.config.debTextPre', {
-        defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+        defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
         values: {
           path: '`/etc/filebeat/filebeat.yml`',
         },
@@ -309,7 +309,7 @@ export const createFilebeatCloudInstructions = () => ({
         defaultMessage: 'Edit the configuration',
       }),
       textPre: i18n.translate('home.tutorials.common.filebeatCloudInstructions.config.rpmTextPre', {
-        defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+        defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
         values: {
           path: '`/etc/filebeat/filebeat.yml`',
         },
@@ -324,7 +324,7 @@ export const createFilebeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.filebeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
           values: {
             path: '`C:\\Program Files\\Filebeat\\filebeat.yml`',
           },

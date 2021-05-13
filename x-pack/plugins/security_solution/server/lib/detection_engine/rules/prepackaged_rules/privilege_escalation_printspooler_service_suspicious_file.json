@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Detects attempts to exploit privilege escalation vulnerabilities related to the Print Spooler service. For more information refer to the following CVE's - CVE-2020-1048, CVE-2020-1337 and CVE-2020-1300 and verify that the impacted system is patched.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Suspicious PrintSpooler Service Executable File Creation",
   "query": "event.category:file and not event.type:deletion and process.name:spoolsv.exe and file.extension:(exe or dll) and not file.path:(C\\:\\\\Windows\\\\System32\\\\spool\\\\* or C\\:\\\\Windows\\\\Temp\\\\* or C\\:\\\\Users\\\\*)",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "5bb4a95d-5a08-48eb-80db-4c3a63ec78a8",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

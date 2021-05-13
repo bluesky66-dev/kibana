@@ -17,7 +17,7 @@ export const createNewPackagePolicyMock = (): NewPackagePolicy => {
     output_id: '',
     package: {
       name: 'endpoint',
-      title: 'HyperSec Endpoint',
+      title: 'Elastic Endpoint',
       version: '0.9.0',
     },
     inputs: [],

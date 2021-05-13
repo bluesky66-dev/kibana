@@ -127,11 +127,11 @@ const deprecations: ConfigDeprecationProvider = () => [
     }
     if (es.ssl?.key !== undefined && es.ssl?.certificate === undefined) {
       log(
-        `Setting [${fromPath}.ssl.key] without [${fromPath}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.`
+        `Setting [${fromPath}.ssl.key] without [${fromPath}.ssl.certificate] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.`
       );
     } else if (es.ssl?.certificate !== undefined && es.ssl?.key === undefined) {
       log(
-        `Setting [${fromPath}.ssl.certificate] without [${fromPath}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to HyperSec.`
+        `Setting [${fromPath}.ssl.certificate] without [${fromPath}.ssl.key] is deprecated. This has no effect, you should use both settings to enable TLS client authentication to Elasticsearch.`
       );
     } else if (es.logQueries === true) {
       log(

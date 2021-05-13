@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the deletion of diagnostic settings in Azure, which send platform logs and metrics to different destinations. An adversary may delete diagnostic settings in an attempt to evade defenses.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-azure*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Azure Diagnostic Settings Deletion",
   "note": "The Azure Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:azure.activitylogs and azure.activitylogs.operation_name:\"MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE\" and event.outcome:(Success or success)",
@@ -23,7 +23,7 @@
   "rule_id": "5370d4cd-2bb3-4d71-abf5-1e1d0ff5a2de",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "Azure",
     "Continuous Monitoring",

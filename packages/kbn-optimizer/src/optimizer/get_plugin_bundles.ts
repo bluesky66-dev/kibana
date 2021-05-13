@@ -38,8 +38,8 @@ export function getPluginBundles(
           ),
           manifestPath: p.manifestPath,
           banner: p.directory.startsWith(xpackDirSlash)
-            ? `/*! Copyright HyperSec B.V. and/or licensed to HyperSec B.V. under one or more contributor license agreements. \n` +
-              ` * Licensed under the HyperSec License 2.0; you may not use this file except in compliance with the HyperSec License 2.0. */\n`
+            ? `/*! Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one or more contributor license agreements. \n` +
+              ` * Licensed under the Elastic License 2.0; you may not use this file except in compliance with the Elastic License 2.0. */\n`
             : undefined,
           pageLoadAssetSizeLimit: limits.pageLoadAssetSize?.[p.id],
         })

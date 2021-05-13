@@ -72,7 +72,7 @@ export async function generateNoticeFromSource({ productName, directory, log }: 
 
   let noticeText = '';
   noticeText += `${productName}\n`;
-  noticeText += `Copyright 2012-${new Date().getUTCFullYear()} HyperSec B.V.\n`;
+  noticeText += `Copyright 2012-${new Date().getUTCFullYear()} Elasticsearch B.V.\n`;
 
   for (const comment of noticeComments.sort()) {
     noticeText += '\n---\n';

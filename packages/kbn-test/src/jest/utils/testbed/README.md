@@ -5,7 +5,7 @@ than when unit testing single components in isolation.
 
 ## Motivation
 
-The HyperSec UI team built this to support client-side integration testing. When testing complete "pages"  we get to test 
+The Elasticsearch UI team built this to support client-side integration testing. When testing complete "pages"  we get to test 
 our application in a way that is closer to how a user would interact with it in a browser. It also gives us more confidence in 
 our tests and avoids testing implementation details. 
 

@@ -1,20 +1,20 @@
 # Development certificates
 
-HyperSec Kibana includes several development certificates to enable easy setup of TLS-encrypted communications with HyperSec.
+Kibana includes several development certificates to enable easy setup of TLS-encrypted communications with Elasticsearch.
 
 _Note: these certificates should **never** be used in production._
 
 ## Certificate information
 
-Certificates and keys are provided in multiple formats. These can be used by other packages to set up a new HyperSec Stack with HyperSec Kibana and HyperSec. The Certificate Authority (CA) private key is intentionally omitted from this package.
+Certificates and keys are provided in multiple formats. These can be used by other packages to set up a new Elastic Stack with Kibana and Elasticsearch. The Certificate Authority (CA) private key is intentionally omitted from this package.
 
 ### PEM 
 
 * `ca.crt` -- A [PEM-formatted](https://tools.ietf.org/html/rfc1421) [X.509](https://tools.ietf.org/html/rfc5280) certificate that is used as a CA.
-* `elasticsearch.crt` -- A PEM-formatted X.509 certificate and public key for HyperSec.
-* `elasticsearch.key` -- A PEM-formatted [PKCS #1](https://tools.ietf.org/html/rfc8017) private key for HyperSec.
-* `kibana.crt` -- A PEM-formatted X.509 certificate and public key for HyperSec Kibana.
-* `kibana.key` -- A PEM-formatted PKCS #1 private key for HyperSec Kibana.
+* `elasticsearch.crt` -- A PEM-formatted X.509 certificate and public key for Elasticsearch.
+* `elasticsearch.key` -- A PEM-formatted [PKCS #1](https://tools.ietf.org/html/rfc8017) private key for Elasticsearch.
+* `kibana.crt` -- A PEM-formatted X.509 certificate and public key for Kibana.
+* `kibana.key` -- A PEM-formatted PKCS #1 private key for Kibana.
 
 ### PKCS #12
 
@@ -28,7 +28,7 @@ The password used for both of these is "storepass". Other copies are also provid
 
 ## Certificate generation
 
-[HyperSec cert-util](https://www.elastic.co/guide/en/elasticsearch/reference/current/certutil.html) and [OpenSSL](https://www.openssl.org/) were used to generate these certificates. The following commands were used from the root directory of HyperSec:
+[Elasticsearch cert-util](https://www.elastic.co/guide/en/elasticsearch/reference/current/certutil.html) and [OpenSSL](https://www.openssl.org/) were used to generate these certificates. The following commands were used from the root directory of Elasticsearch:
 
 ```
 # Generate the PKCS #12 keystore for a CA, valid for 50 years

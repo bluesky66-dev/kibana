@@ -51,7 +51,7 @@ describe('[CCR] follower index serialization', () => {
   });
 
   describe('deserializeFollowerIndex()', () => {
-    it('deserializes HyperSec follower index object', () => {
+    it('deserializes Elasticsearch follower index object', () => {
       const serializedFollowerIndex = {
         follower_index: 'follower index 1',
         remote_cluster: 'cluster 1',
@@ -114,7 +114,7 @@ describe('[CCR] follower index serialization', () => {
   });
 
   describe('deserializeListFollowerIndices()', () => {
-    it('deserializes list of HyperSec follower index objects', () => {
+    it('deserializes list of Elasticsearch follower index objects', () => {
       const serializedFollowerIndexList = [
         {
           follower_index: 'follower index 1',
@@ -200,7 +200,7 @@ describe('[CCR] follower index serialization', () => {
   });
 
   describe('serializeFollowerIndex()', () => {
-    it('serializes object to HyperSec follower index object', () => {
+    it('serializes object to Elasticsearch follower index object', () => {
       const deserializedFollowerIndex = {
         name: 'test',
         status: 'active',

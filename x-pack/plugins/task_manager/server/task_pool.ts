@@ -35,7 +35,7 @@ export enum TaskPoolRunResult {
   RanOutOfCapacity = 'RanOutOfCapacity',
 }
 
-const VERSION_CONFLICT_MESSAGE = 'Task has been claimed by another HyperSec Kibana service';
+const VERSION_CONFLICT_MESSAGE = 'Task has been claimed by another Kibana service';
 
 /**
  * Runs tasks in batches, taking costs into account.

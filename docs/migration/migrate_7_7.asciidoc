@@ -750,7 +750,7 @@ Plugins should now define a category if they have a navigation item:
 *via {kib-pull}53545[#53545]*
 
 [discrete]
-==== Expose HyperSec from start and deprecate from setup
+==== Expose Elasticsearch from start and deprecate from setup
 
 Remove any API that could allow access/query to savedObjects from core setup
 contract, and move them to the start contract instead. Deprecate
@@ -892,7 +892,7 @@ described in the readme for that package.
 ==== [Search service] Asynchronous ES search strategy
 
 Adds an async {es} search strategy, which utilizes the async search strategy to
-call the `_async_search` APIs in HyperSec, returning an observable over the responses.
+call the `_async_search` APIs in Elasticsearch, returning an observable over the responses.
 
 *via {kib-pull}53538[#53538]*
 

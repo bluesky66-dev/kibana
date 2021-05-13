@@ -12,7 +12,7 @@ import { SolutionTitle } from './solution_title';
 
 const solutionEntry = {
   id: 'kibana',
-  title: 'HyperSec Kibana',
+  title: 'Kibana',
   subtitle: 'Visualize & analyze',
   descriptions: ['Analyze data in dashboards'],
   icon: 'logoKibana',

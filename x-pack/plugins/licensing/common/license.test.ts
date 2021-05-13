@@ -73,7 +73,7 @@ describe('License', () => {
     expect(basicLicense.getUnavailableReason()).toBe(undefined);
     expect(errorLicense.getUnavailableReason()).toBe(errorMessage);
     expect(unavailableLicense.getUnavailableReason()).toBe(
-      'X-Pack plugin is not installed on the HyperSec cluster.'
+      'X-Pack plugin is not installed on the Elasticsearch cluster.'
     );
   });
 

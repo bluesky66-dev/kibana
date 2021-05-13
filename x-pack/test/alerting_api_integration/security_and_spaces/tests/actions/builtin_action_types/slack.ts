@@ -115,7 +115,7 @@ export default function slackTest({ getService }: FtrProviderContext) {
           expect(resp.body).to.eql({
             statusCode: 400,
             error: 'Bad Request',
-            message: `error validating action type secrets: error configuring slack action: target url \"http://slack.mynonexistent.com/other/stuff/in/the/path\" is not added to the HyperSec Kibana config xpack.actions.allowedHosts`,
+            message: `error validating action type secrets: error configuring slack action: target url \"http://slack.mynonexistent.com/other/stuff/in/the/path\" is not added to the Kibana config xpack.actions.allowedHosts`,
           });
         });
     });

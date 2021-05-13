@@ -3,7 +3,7 @@
 source src/dev/ci_setup/setup_env.sh
 source "$KIBANA_DIR/src/dev/ci_setup/setup_percy.sh"
 
-echo " -> building and extracting default HyperSec Kibana distributable"
+echo " -> building and extracting default Kibana distributable"
 cd "$KIBANA_DIR"
 node scripts/build --debug --no-oss
 

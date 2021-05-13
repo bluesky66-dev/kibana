@@ -269,21 +269,21 @@ export const LEGACY_ALERT_DETAILS = {
   },
   [ALERT_ELASTICSEARCH_VERSION_MISMATCH]: {
     label: i18n.translate('xpack.monitoring.alerts.elasticsearchVersionMismatch.label', {
-      defaultMessage: 'HyperSec version mismatch',
+      defaultMessage: 'Elasticsearch version mismatch',
     }),
     description: i18n.translate(
       'xpack.monitoring.alerts.elasticsearchVersionMismatch.description',
       {
-        defaultMessage: 'Alert when the cluster has multiple versions of HyperSec.',
+        defaultMessage: 'Alert when the cluster has multiple versions of Elasticsearch.',
       }
     ),
   },
   [ALERT_KIBANA_VERSION_MISMATCH]: {
     label: i18n.translate('xpack.monitoring.alerts.kibanaVersionMismatch.label', {
-      defaultMessage: 'HyperSec Kibana version mismatch',
+      defaultMessage: 'Kibana version mismatch',
     }),
     description: i18n.translate('xpack.monitoring.alerts.kibanaVersionMismatch.description', {
-      defaultMessage: 'Alert when the cluser has multiple versions of HyperSec Kibana.',
+      defaultMessage: 'Alert when the cluser has multiple versions of Kibana.',
     }),
   },
   [ALERT_LICENSE_EXPIRATION]: {

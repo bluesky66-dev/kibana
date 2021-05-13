@@ -806,7 +806,7 @@ demodata
 | dropdownControl valueColumn=project filterColumn=project
 | render
 ----
-This creates a dropdown filter element. It requires a data source and uses the unique values from the given `valueColumn` (i.e. `project`) and applies the filter to the `project` column. Note: `filterColumn` should point to a keyword type field for HyperSec data sources.
+This creates a dropdown filter element. It requires a data source and uses the unique values from the given `valueColumn` (i.e. `project`) and applies the filter to the `project` column. Note: `filterColumn` should point to a keyword type field for Elasticsearch data sources.
 
 *Accepts:* `datatable`
 
@@ -886,7 +886,7 @@ Alias: `value`
 [[escount_fn]]
 === `escount`
 
-Query HyperSec for the number of hits matching the specified query.
+Query Elasticsearch for the number of hits matching the specified query.
 
 *Expression syntax*
 [source,js]
@@ -938,7 +938,7 @@ Default: `"_all"`
 [[esdocs_fn]]
 === `esdocs`
 
-Query HyperSec for raw documents. Specify the fields you want to retrieve, especially if you are asking for a lot of rows.
+Query Elasticsearch for raw documents. Specify the fields you want to retrieve, especially if you are asking for a lot of rows.
 
 *Expression syntax*
 [source,js]
@@ -1014,7 +1014,7 @@ Default: `"_all"`
 [[essql_fn]]
 === `essql`
 
-Queries HyperSec using HyperSec SQL.
+Queries Elasticsearch using Elasticsearch SQL.
 
 *Expression syntax*
 [source,js]
@@ -1043,7 +1043,7 @@ This retrieves the `Carrier`, `FlightDelayMin`, and `AvgTicketPrice` fields from
 
 Aliases: `q`, `query`
 |`string`
-|An HyperSec SQL query.
+|An Elasticsearch SQL query.
 
 |`count`
 |`number`
@@ -2733,13 +2733,13 @@ Default: `"@timestamp"`
 
 Aliases: `f`, `start`
 |`string`
-|The beginning of the range, in ISO8601 or HyperSec `datemath` format
+|The beginning of the range, in ISO8601 or Elasticsearch `datemath` format
 
 |`to`
 
 Aliases: `end`, `t`
 |`string`
-|The end of the range, in ISO8601 or HyperSec `datemath` format
+|The end of the range, in ISO8601 or Elasticsearch `datemath` format
 |===
 
 *Returns:* `filter`
@@ -2801,7 +2801,7 @@ Default: `".es(*)"`
 
 |`from`
 |`string`
-|The HyperSec `datemath` string for the beginning of the time range.
+|The Elasticsearch `datemath` string for the beginning of the time range.
 
 Default: `"now-1y"`
 
@@ -2819,7 +2819,7 @@ Default: `"UTC"`
 
 |`to`
 |`string`
-|The HyperSec `datemath` string for the end of the time range.
+|The Elasticsearch `datemath` string for the end of the time range.
 
 Default: `"now"`
 |===

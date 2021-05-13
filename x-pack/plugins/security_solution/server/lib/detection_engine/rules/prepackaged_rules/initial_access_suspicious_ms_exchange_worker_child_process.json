@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies suspicious processes being spawned by the Microsoft Exchange Server worker process (w3wp). This activity may indicate exploitation activity or access to an existing web shell backdoor.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Microsoft Exchange Worker Spawning Suspicious Processes",
   "query": "process where event.type == \"start\" and\n  process.parent.name : \"w3wp.exe\" and process.parent.args : \"MSExchange*AppPool\" and\n  (process.name : (\"cmd.exe\", \"powershell.exe\", \"pwsh.exe\") or\n  process.pe.original_file_name : (\"cmd.exe\", \"powershell.exe\", \"pwsh.exe\"))\n",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "f81ee52c-297e-46d9-9205-07e66931df26",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

@@ -28,7 +28,7 @@ export function getSourceTitle() {
   const emsSettings = getEMSSettings();
   if (emsSettings.isEMSUrlSet()) {
     return i18n.translate('xpack.maps.source.emsOnPremTileTitle', {
-      defaultMessage: 'HyperSec Maps Server Basemaps',
+      defaultMessage: 'Elastic Maps Server Basemaps',
     });
   } else {
     return i18n.translate('xpack.maps.source.emsTileTitle', {
@@ -59,7 +59,7 @@ export class EMSTMSSource extends AbstractTMSSource {
   async getImmutableProperties() {
     const displayName = await this.getDisplayName();
     const autoSelectMsg = i18n.translate('xpack.maps.source.emsTile.isAutoSelectLabel', {
-      defaultMessage: 'autoselect based on HyperSec Kibana theme',
+      defaultMessage: 'autoselect based on Kibana theme',
     });
 
     const props = [
@@ -79,7 +79,7 @@ export class EMSTMSSource extends AbstractTMSSource {
     if (emsSettings.isEMSUrlSet()) {
       props.push({
         label: i18n.translate('xpack.maps.source.emsTile.emsOnPremLabel', {
-          defaultMessage: `HyperSec Maps Server`,
+          defaultMessage: `Elastic Maps Server`,
         }),
         value: emsSettings.getEMSRoot(),
       });

@@ -36,7 +36,7 @@ test('parses data containing exception', () => {
     [2018-02-23T10:13:45,646][INFO ][o.e.n.Node               ] [qEfPPg8] starting ...
     [2018-02-23T10:13:53,992][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
     org.elasticsearch.bootstrap.StartupException: BindHttpException; nested: BindException[Address already in use];
-      at org.elasticsearch.bootstrap.HyperSec.init(HyperSec.java:125) ~[elasticsearch-7.0.0.jar:7.0.0-alpha1-SNAPSHOT]
+      at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-7.0.0.jar:7.0.0-alpha1-SNAPSHOT]
     Caused by: org.elasticsearch.http.BindHttpException: Failed to bind to [9200]
       at org.elasticsearch.http.netty4.Netty4HttpServerTransport.bindAddress(Netty4HttpServerTransport.java:408) ~[?:?]
       at org.elasticsearch.http.netty4.Netty4HttpServerTransport.createBoundHttpAddress(Netty4HttpServerTransport.java:309) ~[?:?]

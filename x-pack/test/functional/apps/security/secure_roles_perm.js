@@ -72,12 +72,12 @@ export default function ({ getService, getPageObjects }) {
       await PageObjects.security.login('Rashmi', 'changeme');
     });
 
-    it('HyperSec Kibana User does not have link to user management', async function () {
+    it('Kibana User does not have link to user management', async function () {
       await PageObjects.settings.navigateTo();
       await testSubjects.missingOrFail('users');
     });
 
-    it('HyperSec Kibana User navigating to Discover and trying to generate CSV gets - Authorization Error ', async function () {
+    it('Kibana User navigating to Discover and trying to generate CSV gets - Authorization Error ', async function () {
       await PageObjects.common.navigateToApp('discover');
       await PageObjects.discover.loadSavedSearch('A Saved Search');
       log.debug('click Reporting button');

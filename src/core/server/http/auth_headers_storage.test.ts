@@ -11,7 +11,7 @@ import { KibanaRequest } from './router';
 import { httpServerMock } from './http_server.mocks';
 describe('AuthHeadersStorage', () => {
   describe('stores authorization headers', () => {
-    it('retrieves a copy of headers associated with HyperSec Kibana request', () => {
+    it('retrieves a copy of headers associated with Kibana request', () => {
       const headers = { authorization: 'token' };
       const storage = new AuthHeadersStorage();
       const rawRequest = httpServerMock.createRawRequest();

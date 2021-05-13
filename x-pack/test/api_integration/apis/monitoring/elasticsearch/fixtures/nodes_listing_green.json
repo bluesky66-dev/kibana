@@ -21,7 +21,7 @@
       "node_cpu_utilization": {
         "metric": {
           "app": "elasticsearch",
-          "description": "Percentage of CPU usage for the HyperSec process.",
+          "description": "Percentage of CPU usage for the Elasticsearch process.",
           "field": "node_stats.process.cpu.percent",
           "format": "0,0.[00]",
           "hasCalculation": false,
@@ -59,7 +59,7 @@
       "node_jvm_mem_percent": {
         "metric": {
           "app": "elasticsearch",
-          "description": "Total heap used by HyperSec running in the JVM.",
+          "description": "Total heap used by Elasticsearch running in the JVM.",
           "field": "node_stats.jvm.mem.heap_used_percent",
           "format": "0,0.[00]",
           "hasCalculation": false,
@@ -110,7 +110,7 @@
       "node_cpu_utilization": {
         "metric": {
           "app": "elasticsearch",
-          "description": "Percentage of CPU usage for the HyperSec process.",
+          "description": "Percentage of CPU usage for the Elasticsearch process.",
           "field": "node_stats.process.cpu.percent",
           "format": "0,0.[00]",
           "hasCalculation": false,
@@ -148,7 +148,7 @@
       "node_jvm_mem_percent": {
         "metric": {
           "app": "elasticsearch",
-          "description": "Total heap used by HyperSec running in the JVM.",
+          "description": "Total heap used by Elasticsearch running in the JVM.",
           "field": "node_stats.jvm.mem.heap_used_percent",
           "format": "0,0.[00]",
           "hasCalculation": false,

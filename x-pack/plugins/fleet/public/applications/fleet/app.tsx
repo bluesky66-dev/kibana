@@ -138,7 +138,7 @@ export const WithPermissionsAndSetup: React.FC = memo(({ children }) => {
                   ) : (
                     <FormattedMessage
                       id="xpack.fleet.securityRequiredErrorMessage"
-                      defaultMessage="You must enable security in HyperSec Kibana and HyperSec to use Fleet."
+                      defaultMessage="You must enable security in Kibana and Elasticsearch to use Fleet."
                     />
                   )}
                 </p>

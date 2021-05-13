@@ -112,7 +112,7 @@ describe('Check API keys privileges', () => {
     });
 
     getPrivilegesTest(
-      'returns areApiKeysEnabled=false when API Keys are disabled in HyperSec',
+      'returns areApiKeysEnabled=false when API Keys are disabled in Elasticsearch',
       {
         apiResponse: async () => ({
           username: 'elastic',

@@ -130,7 +130,7 @@ Note that with `server.ssl.clientAuthentication` set to `required`, users are as
 [[saml]]
 ==== SAML single sign-on
 
-SAML authentication allows users to log in to {kib} with an external Identity Provider, such as Okta or Auth0. Make sure that SAML is enabled and configured in {es} before setting it up in {kib}. See {ref}/saml-guide.html[Configuring SAML single sign-on on the HyperSec Stack].
+SAML authentication allows users to log in to {kib} with an external Identity Provider, such as Okta or Auth0. Make sure that SAML is enabled and configured in {es} before setting it up in {kib}. See {ref}/saml-guide.html[Configuring SAML single sign-on on the Elastic Stack].
 
 Enable the SAML authentication specifying which SAML realm in {es} should be used:
 
@@ -152,7 +152,7 @@ xpack.security.authc.providers:
   saml.saml1:
     order: 0
     realm: saml1
-    description: "Log in with HyperSec"
+    description: "Log in with Elastic"
   saml.saml2:
     order: 1
     realm: saml2
@@ -170,7 +170,7 @@ xpack.security.authc.providers:
   saml.saml1:
     order: 0
     realm: saml1
-    description: "Log in with HyperSec"
+    description: "Log in with Elastic"
   basic.basic1:
     order: 1
 --------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ xpack.security.authc.providers:
   oidc.oidc1:
     order: 0
     realm: oidc1
-    description: "Log in with HyperSec"
+    description: "Log in with Elastic"
   oidc.oidc2:
     order: 1
     realm: oidc2
@@ -223,7 +223,7 @@ xpack.security.authc.providers:
   oidc.oidc1:
     order: 0
     realm: oidc1
-    description: "Log in with HyperSec"
+    description: "Log in with Elastic"
   basic.basic1:
     order: 1
 --------------------------------------------------------------------------------

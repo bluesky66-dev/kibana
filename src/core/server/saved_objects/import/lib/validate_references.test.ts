@@ -466,7 +466,7 @@ describe('validateReferences()', () => {
     expect(savedObjectsClient.bulkGet).not.toHaveBeenCalled();
   });
 
-  test(`doesn't return errors when references exist in HyperSec`, async () => {
+  test(`doesn't return errors when references exist in Elasticsearch`, async () => {
     savedObjectsClient.bulkGet.mockResolvedValue({
       saved_objects: [
         {

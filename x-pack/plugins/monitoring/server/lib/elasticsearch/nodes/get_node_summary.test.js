@@ -8,7 +8,7 @@
 import { handleResponse } from './get_node_summary';
 
 // TODO: tests were not running and are not up to date
-describe.skip('HyperSec Node Summary get_node_summary handleResponse', () => {
+describe.skip('Elasticsearch Node Summary get_node_summary handleResponse', () => {
   it('should return undefined fields in result for empty response', () => {
     const clusterState = {};
     const shardStats = {};

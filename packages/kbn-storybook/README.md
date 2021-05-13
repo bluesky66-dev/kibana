@@ -1,8 +1,8 @@
-# HyperSec Kibana Storybook
+# Kibana Storybook
 
-This package provides ability to add [Storybook](https://storybook.js.org/) to any HyperSec Kibana plugin.
+This package provides ability to add [Storybook](https://storybook.js.org/) to any Kibana plugin.
 
-- [HyperSec Kibana Storybook](#kibana-storybook)
+- [Kibana Storybook](#kibana-storybook)
   - [Setup Instructions](#setup-instructions)
   - [Customizing configuration](#customizing-configuration)
 

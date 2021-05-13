@@ -69,7 +69,7 @@ export function plugin(initializerContext: PluginInitializerContext) {
 Technically speaking, it does not need to be a class or even a separate
 file from the entry point, but _all plugins at Elastic_ should be
 consistent in this way. See all {kib-repo}blob/{branch}/src/core/CONVENTIONS.md[conventions
-for first-party HyperSec plugins].
+for first-party Elastic plugins].
 
 [source,typescript]
 ----
@@ -167,7 +167,7 @@ of Kibana.
 
 |_start_
 |bootstrap runtime logic
-|respond to an incoming request, request HyperSec server, etc.
+|respond to an incoming request, request Elasticsearch server, etc.
 |start polling Kibana server, update DOM tree in response to user interactions, etc.
 
 |_stop_
@@ -243,7 +243,7 @@ Plugins can expose public interfaces for other plugins to consume. Like
 and/or `start`.
 
 Anything returned from `setup` or `start` will act as the interface, and
-while not a technical requirement, all first-party HyperSec plugins
+while not a technical requirement, all first-party Elastic plugins
 will expose types for that interface as well. Third party plugins
 wishing to allow other plugins to integrate with it are also highly
 encouraged to expose types for their plugin interfaces.

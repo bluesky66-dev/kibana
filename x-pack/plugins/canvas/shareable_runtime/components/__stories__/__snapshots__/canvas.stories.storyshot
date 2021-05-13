@@ -1322,7 +1322,7 @@ exports[`Storyshots shareables/Canvas component 1`] = `
                   className="euiLink euiLink--primary"
                   href="https://www.elastic.co"
                   rel=""
-                  title="Powered by HyperSec.co"
+                  title="Powered by Elastic.co"
                 >
                   <span
                     data-euiicon-type="logoElastic"
@@ -1348,7 +1348,7 @@ exports[`Storyshots shareables/Canvas component 1`] = `
                     <div
                       className="eui-textTruncate"
                     >
-                      HyperSec{ON} - Austin from Clint Andrew Hall with a title that just goes and goes and goes
+                      Elastic{ON} - Austin from Clint Andrew Hall with a title that just goes and goes and goes
                     </div>
                   </div>
                 </div>
@@ -1410,7 +1410,7 @@ exports[`Storyshots shareables/Canvas component 1`] = `
                           <div
                             className="euiTextColor euiTextColor--ghost"
                           >
-                            Page
+                            Page 
                             1
                              of 28
                           </div>
@@ -2806,7 +2806,7 @@ exports[`Storyshots shareables/Canvas contextual: austin 1`] = `
                   className="euiLink euiLink--primary"
                   href="https://www.elastic.co"
                   rel=""
-                  title="Powered by HyperSec.co"
+                  title="Powered by Elastic.co"
                 >
                   <span
                     data-euiicon-type="logoElastic"
@@ -2832,7 +2832,7 @@ exports[`Storyshots shareables/Canvas contextual: austin 1`] = `
                     <div
                       className="eui-textTruncate"
                     >
-                      HyperSec{ON} - Austin from Clint Andrew Hall with a title that just goes and goes and goes
+                      Elastic{ON} - Austin from Clint Andrew Hall with a title that just goes and goes and goes
                     </div>
                   </div>
                 </div>
@@ -2894,7 +2894,7 @@ exports[`Storyshots shareables/Canvas contextual: austin 1`] = `
                           <div
                             className="euiTextColor euiTextColor--ghost"
                           >
-                            Page
+                            Page 
                             1
                              of 28
                           </div>
@@ -3106,7 +3106,7 @@ exports[`Storyshots shareables/Canvas contextual: hello 1`] = `
                   className="euiLink euiLink--primary"
                   href="https://www.elastic.co"
                   rel=""
-                  title="Powered by HyperSec.co"
+                  title="Powered by Elastic.co"
                 >
                   <span
                     data-euiicon-type="logoElastic"
@@ -3194,7 +3194,7 @@ exports[`Storyshots shareables/Canvas contextual: hello 1`] = `
                           <div
                             className="euiTextColor euiTextColor--ghost"
                           >
-                            Page
+                            Page 
                             1
                           </div>
                         </div>

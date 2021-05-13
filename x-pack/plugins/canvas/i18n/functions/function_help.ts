@@ -82,12 +82,12 @@ import { help as to } from './dict/to';
 import { help as urlparam } from './dict/urlparam';
 
 /**
- * This type defines an entry in the `FunctionHelpMap`.  It uses
- * an `ExpressionFunction` to infer its `Arguments` in order to strongly-type that
+ * This type defines an entry in the `FunctionHelpMap`.  It uses 
+ * an `ExpressionFunction` to infer its `Arguments` in order to strongly-type that 
  * entry.
- *
+ * 
  * For example:
- *
+ * 
 ```
    interface Arguments {
      bar: string;

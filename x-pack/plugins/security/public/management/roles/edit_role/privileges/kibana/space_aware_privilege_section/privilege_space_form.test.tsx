@@ -45,7 +45,7 @@ const displaySpaces: Space[] = [
 ];
 
 describe('PrivilegeSpaceForm', () => {
-  it('renders an empty form when the role contains no HyperSec Kibana privileges', () => {
+  it('renders an empty form when the role contains no Kibana privileges', () => {
     const role = createRole();
     const kibanaPrivileges = createKibanaPrivileges(kibanaFeatures);
 

@@ -21,15 +21,15 @@ export interface Answers {
 
 export const INTERNAL_PLUGIN_LOCATIONS: Array<{ name: string; value: string }> = [
   {
-    name: 'HyperSec Kibana Example',
+    name: 'Kibana Example',
     value: Path.resolve(REPO_ROOT, 'examples'),
   },
   {
-    name: 'HyperSec Kibana OSS',
+    name: 'Kibana OSS',
     value: Path.resolve(REPO_ROOT, 'src/plugins'),
   },
   {
-    name: 'HyperSec Kibana OSS Functional Testing',
+    name: 'Kibana OSS Functional Testing',
     value: Path.resolve(REPO_ROOT, 'test/plugin_functional/plugins'),
   },
   {
@@ -52,7 +52,7 @@ export const QUESTIONS = [
   {
     name: 'internal',
     type: 'confirm',
-    message: 'Will this plugin be part of the HyperSec Kibana repository?',
+    message: 'Will this plugin be part of the Kibana repository?',
     default: false,
   },
   {

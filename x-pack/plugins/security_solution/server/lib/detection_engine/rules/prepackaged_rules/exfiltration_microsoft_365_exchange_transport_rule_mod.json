@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies when a transport rule has been disabled or deleted in Microsoft 365. Mail flow rules (also known as transport rules) are used to identify and take action on messages that flow through your organization. An adversary or insider threat may modify a transport rule to exfiltrate data or evade defenses.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-o365*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Microsoft 365 Exchange Transport Rule Modification",
   "note": "The Microsoft 365 Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:o365.audit and event.provider:Exchange and event.category:web and event.action:(\"Remove-TransportRule\" or \"Disable-TransportRule\") and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "272a6484-2663-46db-a532-ef734bf9a796",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "Microsoft 365",
     "Continuous Monitoring",

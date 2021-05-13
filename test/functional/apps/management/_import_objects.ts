@@ -444,7 +444,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
         expect(selectedIdForMissingIndexPattern7).to.eql('f1e4c910-a2e6-11e7-bb30-233be9be6a87');
       });
 
-      it('should display an explicit error message when importing object from a higher HyperSec Kibana version', async () => {
+      it('should display an explicit error message when importing object from a higher Kibana version', async () => {
         await PageObjects.savedObjects.importFile(
           path.join(__dirname, 'exports', '_import_higher_version.ndjson')
         );
@@ -454,7 +454,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
         const errorText = await PageObjects.savedObjects.getImportErrorText();
 
         expect(errorText).to.contain(
-          `has property "visualization" which belongs to a more recent version of HyperSec Kibana [9.15.82]`
+          `has property "visualization" which belongs to a more recent version of Kibana [9.15.82]`
         );
       });
 

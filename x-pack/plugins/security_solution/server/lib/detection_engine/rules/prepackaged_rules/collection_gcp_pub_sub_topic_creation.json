@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the creation of a topic in Google Cloud Platform (GCP). In GCP, the publisher-subscriber relationship (Pub/Sub) is an asynchronous messaging service that decouples event-producing and event-processing services. A topic is used to forward messages from publishers to subscribers.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-gcp*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "GCP Pub/Sub Topic Creation",
   "note": "The GCP Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:(googlecloud.audit or gcp.audit) and event.action:google.pubsub.v*.Publisher.CreateTopic and event.outcome:success",
@@ -22,7 +22,7 @@
   "rule_id": "a10d3d9d-0f65-48f1-8b25-af175e2594f5",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "GCP",
     "Continuous Monitoring",

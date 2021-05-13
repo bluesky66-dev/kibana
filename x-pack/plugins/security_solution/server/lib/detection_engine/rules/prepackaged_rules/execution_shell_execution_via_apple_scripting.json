@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the execution of the shell process (sh) via scripting (JXA or AppleScript). Adversaries may use the doShellScript functionality in JXA or do shell script in AppleScript to execute system commands.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Shell Execution via Apple Scripting",
   "query": "sequence by host.id with maxspan=5s\n [process where event.type in (\"start\", \"process_started\", \"info\") and process.name == \"osascript\"] by process.pid\n [process where event.type in (\"start\", \"process_started\") and process.name == \"sh\" and process.args == \"-c\"] by process.ppid\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "d461fac0-43e8-49e2-85ea-3a58fe120b4f",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

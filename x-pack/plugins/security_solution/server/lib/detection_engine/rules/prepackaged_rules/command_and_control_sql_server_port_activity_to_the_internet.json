@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "This rule detects events that may describe database traffic (MS SQL, Oracle, MySQL, and Postgresql) across the Internet. Databases should almost never be directly exposed to the Internet, as they are frequently targeted by threat actors to gain initial access to network resources.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "SQL Traffic to the Internet",
   "query": "event.category:(network or network_traffic) and network.transport:tcp and (destination.port:(1433 or 1521 or 3306 or 5432) or event.dataset:zeek.mysql) and source.ip:( 10.0.0.0/8 or 172.16.0.0/12 or 192.168.0.0/16 ) and not destination.ip:( 10.0.0.0/8 or 127.0.0.0/8 or 169.254.0.0/16 or 172.16.0.0/12 or 192.168.0.0/16 or 224.0.0.0/4 or \"::1\" or \"FE80::/10\" or \"FF00::/8\" )",
   "risk_score": 47,
   "rule_id": "139c7458-566a-410c-a5cd-f80238d6a5cd",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Network",
     "Threat Detection",

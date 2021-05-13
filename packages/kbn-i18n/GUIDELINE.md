@@ -456,7 +456,7 @@ it('should render normally', async () => {
 
 6. Run tests.
 
-7. Run HyperSec Kibana with enabled pseudo-locale (either pass `--i18n.locale=en-xa` as a command-line argument or add it to the `kibana.yml`) and observe the text you've just localized.
+7. Run Kibana with enabled pseudo-locale (either pass `--i18n.locale=en-xa` as a command-line argument or add it to the `kibana.yml`) and observe the text you've just localized.
 
     If you did everything correctly, it should turn into something like this `Ĥéļļļô ŴŴôŕļļð!` assuming your text was `Hello World!`.
 

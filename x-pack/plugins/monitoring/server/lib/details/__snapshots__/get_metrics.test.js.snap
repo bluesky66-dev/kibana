@@ -1120,7 +1120,7 @@ Object {
       ],
       "metric": Object {
         "app": "kibana",
-        "description": "Maximum response time for client requests to the HyperSec Kibana instance.",
+        "description": "Maximum response time for client requests to the Kibana instance.",
         "field": "kibana_stats.response_times.max",
         "format": "0.[00]",
         "hasCalculation": false,
@@ -1496,7 +1496,7 @@ Object {
       ],
       "metric": Object {
         "app": "elasticsearch",
-        "description": "Percentage of CPU usage for the HyperSec process.",
+        "description": "Percentage of CPU usage for the Elasticsearch process.",
         "field": "node_stats.process.cpu.percent",
         "format": "0,0.[00]",
         "hasCalculation": false,

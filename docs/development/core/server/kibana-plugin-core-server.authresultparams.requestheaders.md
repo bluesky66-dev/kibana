@@ -4,7 +4,7 @@
 
 ## AuthResultParams.requestHeaders property
 
-Auth specific headers to attach to a request object. Used to perform a request to HyperSec on behalf of an authenticated user.
+Auth specific headers to attach to a request object. Used to perform a request to Elasticsearch on behalf of an authenticated user.
 
 <b>Signature:</b>
 

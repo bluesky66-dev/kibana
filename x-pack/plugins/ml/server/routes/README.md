@@ -1,6 +1,6 @@
-# ML HyperSec Kibana API routes
+# ML Kibana API routes
 
-This folder contains ML API routes in HyperSec Kibana.
+This folder contains ML API routes in Kibana.
 
 Each route handler requires [apiDoc](https://github.com/apidoc/apidoc) annotations in order 
 to generate documentation.

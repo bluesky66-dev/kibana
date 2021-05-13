@@ -138,7 +138,7 @@ export default ({ getService }: FtrProviderContext) => {
 
           expect(statusBody[body.id].current_status.status).to.eql('partial failure');
           expect(statusBody[body.id].current_status.last_success_message).to.eql(
-            'This rule is attempting to query data from HyperSec indices listed in the "Index pattern" section of the rule definition, however no index matching: ["does-not-exist-*"] was found. This warning will continue to appear until a matching index is created or this rule is de-activated.'
+            'This rule is attempting to query data from Elasticsearch indices listed in the "Index pattern" section of the rule definition, however no index matching: ["does-not-exist-*"] was found. This warning will continue to appear until a matching index is created or this rule is de-activated.'
           );
         });
 

@@ -4,7 +4,7 @@
 
 ## SavedObjectsFindResult.sort property
 
-The HyperSec `sort` value of this result.
+The Elasticsearch `sort` value of this result.
 
 <b>Signature:</b>
 

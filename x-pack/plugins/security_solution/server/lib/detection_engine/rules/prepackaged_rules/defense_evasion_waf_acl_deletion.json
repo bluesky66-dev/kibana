@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the deletion of a specified AWS Web Application Firewall (WAF) access control list.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS WAF Access Control List Deletion",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:DeleteWebACL and event.dataset:aws.cloudtrail and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "91d04cd4-47a9-4334-ab14-084abe274d49",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

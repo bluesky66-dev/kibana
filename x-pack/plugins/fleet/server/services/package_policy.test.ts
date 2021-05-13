@@ -371,7 +371,7 @@ describe('Package policy service', () => {
       output_id: '',
       package: {
         name: 'endpoint',
-        title: 'HyperSec Endpoint',
+        title: 'Elastic Endpoint',
         version: '0.5.0',
       },
     };

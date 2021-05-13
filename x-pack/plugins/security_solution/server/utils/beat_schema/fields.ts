@@ -3225,7 +3225,7 @@ export const fieldsBeat: BeatFields = {
   'service.name': {
     category: 'service',
     description:
-      'Name of the service data is collected from. The name of the service is normally user given. This allows for distributed services that run on multiple hosts to correlate the related instances based on the name. In the case of HyperSec the `service.name` could contain the cluster name. For Beats the `service.name` is by default a copy of the `service.type` field if no name is specified.',
+      'Name of the service data is collected from. The name of the service is normally user given. This allows for distributed services that run on multiple hosts to correlate the related instances based on the name. In the case of Elasticsearch the `service.name` could contain the cluster name. For Beats the `service.name` is by default a copy of the `service.type` field if no name is specified.',
     example: 'elasticsearch-metrics',
     name: 'service.name',
     type: 'keyword',
@@ -3233,7 +3233,7 @@ export const fieldsBeat: BeatFields = {
   'service.node.name': {
     category: 'service',
     description:
-      "Name of a service node. This allows for two nodes of the same service running on the same host to be differentiated. Therefore, `service.node.name` should typically be unique across nodes of a given service. In the case of HyperSec, the `service.node.name` could contain the unique node name within the HyperSec cluster. In cases where the service doesn't have the concept of a node name, the host name or container name can be used to distinguish running instances that make up this service. If those do not provide uniqueness (e.g. multiple instances of the service running on the same host) - the node name can be manually set.",
+      "Name of a service node. This allows for two nodes of the same service running on the same host to be differentiated. Therefore, `service.node.name` should typically be unique across nodes of a given service. In the case of Elasticsearch, the `service.node.name` could contain the unique node name within the Elasticsearch cluster. In cases where the service doesn't have the concept of a node name, the host name or container name can be used to distinguish running instances that make up this service. If those do not provide uniqueness (e.g. multiple instances of the service running on the same host) - the node name can be manually set.",
     example: 'instance-0000000016',
     name: 'service.node.name',
     type: 'keyword',
@@ -3247,7 +3247,7 @@ export const fieldsBeat: BeatFields = {
   'service.type': {
     category: 'service',
     description:
-      'The type of the service data is collected from. The type can be used to group and correlate logs and metrics from one service type. Example: If logs or metrics are collected from HyperSec, `service.type` would be `elasticsearch`.',
+      'The type of the service data is collected from. The type can be used to group and correlate logs and metrics from one service type. Example: If logs or metrics are collected from Elasticsearch, `service.type` would be `elasticsearch`.',
     example: 'elasticsearch',
     name: 'service.type',
     type: 'keyword',
@@ -6997,7 +6997,7 @@ export const fieldsBeat: BeatFields = {
   },
   'elasticsearch.component': {
     category: 'elasticsearch',
-    description: 'HyperSec component from where the log event originated',
+    description: 'Elasticsearch component from where the log event originated',
     example: 'o.e.c.m.MetaDataCreateIndexService',
     name: 'elasticsearch.component',
     type: 'keyword',
@@ -7972,13 +7972,13 @@ export const fieldsBeat: BeatFields = {
   },
   'kibana.log.tags': {
     category: 'kibana',
-    description: 'HyperSec Kibana logging tags. ',
+    description: 'Kibana logging tags. ',
     name: 'kibana.log.tags',
     type: 'keyword',
   },
   'kibana.log.state': {
     category: 'kibana',
-    description: 'Current state of HyperSec Kibana. ',
+    description: 'Current state of Kibana. ',
     name: 'kibana.log.state',
     type: 'keyword',
   },
@@ -9427,7 +9427,7 @@ export const fieldsBeat: BeatFields = {
   'aws.cloudtrail.user_identity.invoked_by': {
     category: 'aws',
     description:
-      'The name of the AWS service that made the request, such as Amazon EC2 Auto Scaling or AWS HyperSec Beanstalk.',
+      'The name of the AWS service that made the request, such as Amazon EC2 Auto Scaling or AWS Elastic Beanstalk.',
     name: 'aws.cloudtrail.user_identity.invoked_by',
     type: 'keyword',
   },

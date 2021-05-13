@@ -147,7 +147,7 @@ const rule: SanitizedAlert<RuleTypeParams> = {
 };
 
 export const getPatchRulesOptionsMock = (): PatchRulesOptions => ({
-  author: ['HyperSec'],
+  author: ['Elastic'],
   buildingBlockType: undefined,
   alertsClient: alertsClientMock.create(),
   savedObjectsClient: savedObjectsClientMock.create(),
@@ -159,7 +159,7 @@ export const getPatchRulesOptionsMock = (): PatchRulesOptions => ({
   from: 'now-6m',
   query: 'user.name: root or user.name: admin',
   language: 'kuery',
-  license: 'HyperSec License',
+  license: 'Elastic License',
   savedId: 'savedId-123',
   timelineId: 'timelineid-123',
   timelineTitle: 'timeline-title-123',
@@ -198,7 +198,7 @@ export const getPatchRulesOptionsMock = (): PatchRulesOptions => ({
 });
 
 export const getPatchMlRulesOptionsMock = (): PatchRulesOptions => ({
-  author: ['HyperSec'],
+  author: ['Elastic'],
   buildingBlockType: undefined,
   alertsClient: alertsClientMock.create(),
   savedObjectsClient: savedObjectsClientMock.create(),
@@ -210,7 +210,7 @@ export const getPatchMlRulesOptionsMock = (): PatchRulesOptions => ({
   from: 'now-6m',
   query: undefined,
   language: undefined,
-  license: 'HyperSec License',
+  license: 'Elastic License',
   savedId: 'savedId-123',
   timelineId: 'timelineid-123',
   timelineTitle: 'timeline-title-123',

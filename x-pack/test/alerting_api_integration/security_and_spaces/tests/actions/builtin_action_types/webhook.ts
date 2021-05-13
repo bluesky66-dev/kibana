@@ -286,7 +286,7 @@ export default function webhookTest({ getService }: FtrProviderContext) {
         .expect(400);
 
       expect(result.error).to.eql('Bad Request');
-      expect(result.message).to.match(/is not added to the HyperSec Kibana config/);
+      expect(result.message).to.match(/is not added to the Kibana config/);
     });
 
     it('should handle unreachable webhook targets', async () => {

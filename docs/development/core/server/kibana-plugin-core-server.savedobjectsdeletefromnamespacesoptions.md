@@ -15,5 +15,5 @@ export interface SavedObjectsDeleteFromNamespacesOptions extends SavedObjectsBas
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [refresh](./kibana-plugin-core-server.savedobjectsdeletefromnamespacesoptions.refresh.md) | <code>MutatingOperationRefreshSetting</code> | The HyperSec Refresh setting for this operation |
+|  [refresh](./kibana-plugin-core-server.savedobjectsdeletefromnamespacesoptions.refresh.md) | <code>MutatingOperationRefreshSetting</code> | The Elasticsearch Refresh setting for this operation |
 

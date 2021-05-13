@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the loading of a non Microsoft signed DLL that is missing on a default Windows install (phantom DLL) or one that can be loaded from a different location by a native Windows process. This may be abused to persist or elevate privileges via privileged file write vulnerabilities.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Suspicious DLL Loaded for Persistence or Privilege Escalation",
   "query": "library where dll.name :\n  (\n  \"wlbsctrl.dll\",\n  \"wbemcomn.dll\",\n  \"WptsExtensions.dll\",\n  \"Tsmsisrv.dll\",\n  \"TSVIPSrv.dll\",\n  \"Msfte.dll\",\n  \"wow64log.dll\",\n  \"WindowsCoreDeviceInfo.dll\",\n  \"Ualapi.dll\",\n  \"wlanhlp.dll\",\n  \"phoneinfo.dll\",\n  \"EdgeGdi.dll\",\n  \"cdpsgshims.dll\",\n  \"windowsperformancerecordercontrol.dll\",\n  \"diagtrack_win.dll\"\n  ) and \nnot (dll.code_signature.subject_name : \"Microsoft Windows\" and dll.code_signature.status : \"trusted\")\n",
   "references": [
@@ -25,7 +25,7 @@
   "rule_id": "bfeaf89b-a2a7-48a3-817f-e41829dc61ee",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

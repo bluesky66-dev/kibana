@@ -23,7 +23,7 @@ exports[`ChecklistFlyout renders 1`] = `
       </p>
       <p>
         <FormattedMessage
-          defaultMessage="Reindexing will continue in the background, but if HyperSec Kibana shuts down or restarts you will need to return to this page to resume reindexing."
+          defaultMessage="Reindexing will continue in the background, but if Kibana shuts down or restarts you will need to return to this page to resume reindexing."
           id="xpack.upgradeAssistant.checkupTab.reindexing.flyout.checklistStep.readonlyCallout.backgroundResumeDetail"
           values={Object {}}
         />

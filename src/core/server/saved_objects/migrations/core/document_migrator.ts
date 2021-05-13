@@ -267,7 +267,7 @@ function validateMigrationsMapObject(
     }
     if (Semver.gt(version, kibanaVersion)) {
       throw new Error(
-        `Invalid migration for type ${type}. Property '${version}' cannot be greater than the current HyperSec Kibana version '${kibanaVersion}'.`
+        `Invalid migration for type ${type}. Property '${version}' cannot be greater than the current Kibana version '${kibanaVersion}'.`
       );
     }
   }
@@ -326,7 +326,7 @@ function validateMigrationDefinition(
       );
     } else if (Semver.gt(convertToMultiNamespaceTypeVersion, kibanaVersion)) {
       throw new Error(
-        `Invalid convertToMultiNamespaceTypeVersion for type ${type}. Value '${convertToMultiNamespaceTypeVersion}' cannot be greater than the current HyperSec Kibana version '${kibanaVersion}'.`
+        `Invalid convertToMultiNamespaceTypeVersion for type ${type}. Value '${convertToMultiNamespaceTypeVersion}' cannot be greater than the current Kibana version '${kibanaVersion}'.`
       );
     } else if (Semver.patch(convertToMultiNamespaceTypeVersion)) {
       throw new Error(
@@ -469,7 +469,7 @@ function validateCoreMigrationVersion(doc: SavedObjectUnsanitizedDoc, kibanaVers
   if (doc.coreMigrationVersion && Semver.gt(docVersion, kibanaVersion)) {
     throw Boom.badData(
       `Document "${id}" has a "coreMigrationVersion" which belongs to a more recent version` +
-        ` of HyperSec Kibana [${docVersion}]. The current version is [${kibanaVersion}].`,
+        ` of Kibana [${docVersion}]. The current version is [${kibanaVersion}].`,
       doc
     );
   }
@@ -724,7 +724,7 @@ function nextUnmigratedProp(doc: SavedObjectUnsanitizedDoc, migrations: ActiveMi
     if (docVersion && (!latestMigrationVersion || Semver.gt(docVersion, latestMigrationVersion))) {
       throw Boom.badData(
         `Document "${doc.id}" has property "${p}" which belongs to a more recent` +
-          ` version of HyperSec Kibana [${docVersion}]. The last known version is [${latestMigrationVersion}]`,
+          ` version of Kibana [${docVersion}]. The last known version is [${latestMigrationVersion}]`,
         doc
       );
     }

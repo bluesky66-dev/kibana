@@ -11,7 +11,7 @@
       "field": "actingProcess.file.signer",
       "operator": "included",
       "type": "match",
-      "value": "HyperSec, N.V."
+      "value": "Elastic, N.V."
     },
     {
       "field": "file.signature",

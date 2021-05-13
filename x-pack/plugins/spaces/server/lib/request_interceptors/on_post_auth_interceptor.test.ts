@@ -179,13 +179,13 @@ describe.skip('onPostAuthInterceptor', () => {
     spacesServiceStart.createSpacesClient = jest.fn().mockReturnValue({
       getAll() {
         if (testOptions.simulateGetSpacesFailure) {
-          throw Boom.unauthorized('missing credendials', 'Protected HyperSec');
+          throw Boom.unauthorized('missing credendials', 'Protected Elasticsearch');
         }
         return Promise.resolve(availableSpaces.map(convertSavedObjectToSpace));
       },
       get(spaceId: string) {
         if (testOptions.simulateGetSingleSpaceFailure) {
-          throw Boom.unauthorized('missing credendials', 'Protected HyperSec');
+          throw Boom.unauthorized('missing credendials', 'Protected Elasticsearch');
         }
         const space = availableSpaces.find((s) => s.id === spaceId);
         if (!space) {
@@ -331,7 +331,7 @@ describe.skip('onPostAuthInterceptor', () => {
     expect(response.status).toEqual(401);
 
     expect(response.header).toMatchObject({
-      'www-authenticate': `Protected HyperSec error="missing credendials"`,
+      'www-authenticate': `Protected Elasticsearch error="missing credendials"`,
     });
 
     expect(response.body).toMatchInlineSnapshot(`
@@ -370,7 +370,7 @@ describe.skip('onPostAuthInterceptor', () => {
     expect(response.status).toEqual(401);
 
     expect(response.header).toMatchObject({
-      'www-authenticate': `Protected HyperSec error="missing credendials"`,
+      'www-authenticate': `Protected Elasticsearch error="missing credendials"`,
     });
 
     expect(response.body).toMatchInlineSnapshot(`
@@ -457,7 +457,7 @@ describe.skip('onPostAuthInterceptor', () => {
   });
 
   describe('with a single available space', () => {
-    it('it redirects to the "enter space" endpoint within the context of the single Space when navigating to HyperSec Kibana root', async () => {
+    it('it redirects to the "enter space" endpoint within the context of the single Space when navigating to Kibana root', async () => {
       const spaces = [
         {
           id: 'a-space',
@@ -482,7 +482,7 @@ describe.skip('onPostAuthInterceptor', () => {
       );
     });
 
-    it('it redirects to the "enter space" endpoint within the context of the Default Space when navigating to HyperSec Kibana root', async () => {
+    it('it redirects to the "enter space" endpoint within the context of the Default Space when navigating to Kibana root', async () => {
       // This is very similar to the test above, but this handles the condition where the only available space is the Default Space,
       // which does not have a URL Context. In this scenario, the end result is the same as the other test, but the final URL the user
       // is redirected to does not contain a space identifier (e.g., /s/foo)

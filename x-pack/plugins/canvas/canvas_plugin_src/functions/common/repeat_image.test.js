@@ -26,7 +26,7 @@ describe('repeatImage', () => {
         expect(result).toHaveProperty('image', elasticLogo);
       });
 
-      it('defaults to the HyperSec outline logo', () => {
+      it('defaults to the Elastic outline logo', () => {
         const result = fn(100000).value;
         expect(result).toHaveProperty('image', elasticOutline);
       });

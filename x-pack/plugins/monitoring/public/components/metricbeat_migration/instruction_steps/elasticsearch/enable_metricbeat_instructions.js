@@ -27,7 +27,7 @@ export function getElasticsearchInstructionsForEnablingMetricbeat(
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.elasticsearchInstructions.installMetricbeatTitle',
       {
-        defaultMessage: 'Install Metricbeat on the same server as HyperSec',
+        defaultMessage: 'Install Metricbeat on the same server as Elasticsearch',
       }
     ),
     children: (
@@ -48,7 +48,7 @@ export function getElasticsearchInstructionsForEnablingMetricbeat(
     title: i18n.translate(
       'xpack.monitoring.metricbeatMigration.elasticsearchInstructions.enableMetricbeatModuleTitle',
       {
-        defaultMessage: 'Enable and configure the HyperSec x-pack module in Metricbeat',
+        defaultMessage: 'Enable and configure the Elasticsearch x-pack module in Metricbeat',
       }
     ),
     children: (
@@ -72,7 +72,7 @@ export function getElasticsearchInstructionsForEnablingMetricbeat(
           <p>
             <FormattedMessage
               id="xpack.monitoring.metricbeatMigration.elasticsearchInstructions.enableMetricbeatModuleDescription"
-              defaultMessage="By default the module collects HyperSec metrics from {url}.
+              defaultMessage="By default the module collects Elasticsearch metrics from {url}.
               If the local server has a different address, add it to the hosts setting in {module}."
               values={{
                 module: <Monospace>modules.d/elasticsearch-xpack.yml</Monospace>,

@@ -7,7 +7,7 @@
 
 import { checkClusterSettings } from '.';
 
-describe('HyperSec Cluster Settings', () => {
+describe('Elasticsearch Cluster Settings', () => {
   const makeResponse = (property, response = {}) => {
     const result = {
       persistent: {},

@@ -20,12 +20,12 @@ const options = {
   esFrom: {
     arg: '<snapshot|source>',
     choices: ['snapshot', 'source'],
-    desc: 'Build HyperSec from source or run from snapshot.',
+    desc: 'Build Elasticsearch from source or run from snapshot.',
     defaultHelp: 'Default: $TEST_ES_FROM or snapshot',
   },
   'kibana-install-dir': {
     arg: '<dir>',
-    desc: 'Run HyperSec Kibana from existing install directory instead of from source.',
+    desc: 'Run Kibana from existing install directory instead of from source.',
   },
   bail: { desc: 'Stop the test run at the first failure.' },
   grep: {

@@ -82,11 +82,11 @@ describe('checkActionTypeEnabled', () => {
     expect(checkActionTypeEnabled(actionType)).toMatchInlineSnapshot(`
           Object {
             "isEnabled": false,
-            "message": "This connector is disabled by the HyperSec Kibana configuration.",
+            "message": "This connector is disabled by the Kibana configuration.",
             "messageCard": <EuiCard
               className="actCheckActionTypeEnabled__disabledActionWarningCard"
               description=""
-              title="This feature is disabled by the HyperSec Kibana configuration."
+              title="This feature is disabled by the Kibana configuration."
             />,
           }
       `);
@@ -142,11 +142,11 @@ describe('checkActionFormActionTypeEnabled', () => {
       .toMatchInlineSnapshot(`
           Object {
             "isEnabled": false,
-            "message": "This connector is disabled by the HyperSec Kibana configuration.",
+            "message": "This connector is disabled by the Kibana configuration.",
             "messageCard": <EuiCard
               className="actCheckActionTypeEnabled__disabledActionWarningCard"
               description=""
-              title="This feature is disabled by the HyperSec Kibana configuration."
+              title="This feature is disabled by the Kibana configuration."
             />,
           }
       `);

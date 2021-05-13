@@ -58,7 +58,7 @@ export default function ({ getPageObjects, getService }: FtrProviderContext) {
         expect(links.map((link) => link.text)).to.contain('Stack Management');
       });
 
-      it('should only render management entries controllable via HyperSec Kibana privileges', async () => {
+      it('should only render management entries controllable via Kibana privileges', async () => {
         await PageObjects.common.navigateToApp('management');
         const sections = await managementMenu.getSections();
         expect(sections).to.have.length(2);

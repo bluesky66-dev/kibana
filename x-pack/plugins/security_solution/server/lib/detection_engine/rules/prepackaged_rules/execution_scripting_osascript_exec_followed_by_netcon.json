@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Detects execution via the Apple script interpreter (osascript) followed by a network connection from the same process within a short time period. Adversaries may use malicious scripts for execution and command and control.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Apple Script Execution followed by Network Connection",
   "query": "sequence by host.id, process.entity_id with maxspan=30s\n [process where event.type == \"start\" and process.name == \"osascript\"]\n [network where event.type != \"end\" and process.name == \"osascript\" and destination.ip != \"::1\" and\n  not cidrmatch(destination.ip, \"10.0.0.0/8\",  \n                                \"172.16.0.0/12\", \n                                \"192.168.0.0/16\", \n                                \"127.0.0.0/8\", \n                                \"169.254.0.0/16\", \n                                \"224.0.0.0/4\", \n                                \"FE80::/10\", \n                                \"FF00::/8\")\n ]\n",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "47f76567-d58a-4fed-b32b-21f571e28910",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

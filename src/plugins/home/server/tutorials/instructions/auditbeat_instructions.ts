@@ -101,7 +101,7 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
         'home.tutorials.common.auditbeatInstructions.install.windowsTextPost',
         {
           defaultMessage:
-            'Modify the settings under {propertyName} in the {auditbeatPath} file to point to your HyperSec installation.',
+            'Modify the settings under {propertyName} in the {auditbeatPath} file to point to your Elasticsearch installation.',
           values: {
             propertyName: '`output.elasticsearch`',
             auditbeatPath: '`C:\\Program Files\\Auditbeat\\auditbeat.yml`',
@@ -117,7 +117,7 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.auditbeatInstructions.start.osxTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['./auditbeat setup', './auditbeat -e'],
     },
@@ -127,7 +127,7 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.auditbeatInstructions.start.debTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo auditbeat setup', 'sudo service auditbeat start'],
     },
@@ -137,7 +137,7 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.auditbeatInstructions.start.rpmTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['sudo auditbeat setup', 'sudo service auditbeat start'],
     },
@@ -147,7 +147,7 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
       }),
       textPre: i18n.translate('home.tutorials.common.auditbeatInstructions.start.windowsTextPre', {
         defaultMessage:
-          'The `setup` command loads the HyperSec Kibana dashboards. If the dashboards are already set up, omit this command.',
+          'The `setup` command loads the Kibana dashboards. If the dashboards are already set up, omit this command.',
       }),
       commands: ['.\\auditbeat.exe setup', 'Start-Service auditbeat'],
     },
@@ -174,8 +174,8 @@ export const createAuditbeatInstructions = (context?: TutorialContext) => ({
       ],
       textPost: i18n.translate('home.tutorials.common.auditbeatInstructions.config.osxTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -204,8 +204,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.auditbeatInstructions.config.debTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -234,8 +234,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
       ],
       textPost: i18n.translate('home.tutorials.common.auditbeatInstructions.config.rpmTextPost', {
         defaultMessage:
-          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+          'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
         values: {
           passwordTemplate: '`<password>`',
           esUrlTemplate: '`<es_url>`',
@@ -266,8 +266,8 @@ and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
         'home.tutorials.common.auditbeatInstructions.config.windowsTextPost',
         {
           defaultMessage:
-            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of HyperSec, \
-and {kibanaUrlTemplate} is the URL of HyperSec Kibana.',
+            'Where {passwordTemplate} is the password of the `elastic` user, {esUrlTemplate} is the URL of Elasticsearch, \
+and {kibanaUrlTemplate} is the URL of Kibana.',
           values: {
             passwordTemplate: '`<password>`',
             esUrlTemplate: '`<es_url>`',
@@ -288,7 +288,7 @@ export const createAuditbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.auditbeatCloudInstructions.config.osxTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
           values: {
             path: '`auditbeat.yml`',
           },
@@ -304,7 +304,7 @@ export const createAuditbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.auditbeatCloudInstructions.config.debTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
           values: {
             path: '`/etc/auditbeat/auditbeat.yml`',
           },
@@ -320,7 +320,7 @@ export const createAuditbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.auditbeatCloudInstructions.config.rpmTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
           values: {
             path: '`/etc/auditbeat/auditbeat.yml`',
           },
@@ -339,7 +339,7 @@ export const createAuditbeatCloudInstructions = () => ({
       textPre: i18n.translate(
         'home.tutorials.common.auditbeatCloudInstructions.config.windowsTextPre',
         {
-          defaultMessage: 'Modify {path} to set the connection information for HyperSec Cloud:',
+          defaultMessage: 'Modify {path} to set the connection information for Elastic Cloud:',
           values: {
             path: '`C:\\Program Files\\Auditbeat\\auditbeat.yml`',
           },

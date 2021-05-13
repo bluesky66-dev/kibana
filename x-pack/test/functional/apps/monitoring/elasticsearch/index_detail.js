@@ -14,7 +14,7 @@ export default function ({ getService, getPageObjects }) {
   const indicesList = getService('monitoringElasticsearchIndices');
   const indexDetail = getService('monitoringElasticsearchIndexDetail');
 
-  describe('HyperSec index detail', () => {
+  describe('Elasticsearch index detail', () => {
     afterEach(async () => {
       await PageObjects.monitoring.clickBreadcrumb('~breadcrumbEsIndices'); // return back for next test
       await indicesList.clearFilter();

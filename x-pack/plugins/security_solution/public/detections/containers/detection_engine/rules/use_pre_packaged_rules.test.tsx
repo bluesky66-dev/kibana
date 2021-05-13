@@ -308,7 +308,7 @@ describe('usePrePackagedRules', () => {
       });
       const wrapper = shallow(button as ReactElement);
       expect(wrapper.find('[data-test-subj="reloadPrebuiltRulesBtn"]').text()).toEqual(
-        'Install 1 HyperSec prebuilt rule and 1 HyperSec prebuilt timeline '
+        'Install 1 Elastic prebuilt rule and 1 Elastic prebuilt timeline '
       );
     });
   });
@@ -349,7 +349,7 @@ describe('usePrePackagedRules', () => {
       });
       const wrapper = shallow(button as ReactElement);
       expect(wrapper.find('[data-test-subj="reloadPrebuiltRulesBtn"]').text()).toEqual(
-        'Install 1 HyperSec prebuilt rule '
+        'Install 1 Elastic prebuilt rule '
       );
     });
   });
@@ -390,7 +390,7 @@ describe('usePrePackagedRules', () => {
       });
       const wrapper = shallow(button as ReactElement);
       expect(wrapper.find('[data-test-subj="reloadPrebuiltRulesBtn"]').text()).toEqual(
-        'Install 1 HyperSec prebuilt timeline '
+        'Install 1 Elastic prebuilt timeline '
       );
     });
   });

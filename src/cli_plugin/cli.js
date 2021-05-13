@@ -18,8 +18,8 @@ const program = new Command('bin/kibana-plugin');
 program
   .version(pkg.version)
   .description(
-    'The HyperSec Kibana plugin manager enables you to install and remove plugins that ' +
-      'provide additional functionality to HyperSec Kibana'
+    'The Kibana plugin manager enables you to install and remove plugins that ' +
+      'provide additional functionality to Kibana'
   );
 
 listCommand(program);

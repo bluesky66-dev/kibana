@@ -55,8 +55,8 @@ const supportedSchemas: SupportedSchema[] = [
 ## Schema Flow
 
 When a user clicks on the _analyze event_ icon in the Security Solution app, a request is made to `/entity` with the
-`_id` field from the document (the internal HyperSec ID for the document). The `/entity` API grabs the
-document from HyperSec and determines which predefined schema profile matches the document. To determine which
+`_id` field from the document (the internal Elasticsearch ID for the document). The `/entity` API grabs the
+document from Elasticsearch and determines which predefined schema profile matches the document. To determine which
 profile matches, the API uses the `constraints` array in the schema and tests that the document has the `value` for
 each of the `field`.
 

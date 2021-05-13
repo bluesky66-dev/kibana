@@ -28,7 +28,7 @@ describe('AnalyticsChart', () => {
     jest.clearAllMocks();
   });
 
-  it('renders an HyperSec line chart', () => {
+  it('renders an Elastic line chart', () => {
     const wrapper = shallow(
       <AnalyticsChart height={300} lines={[{ id: 'test', data: MOCK_DATA }]} />
     );

@@ -646,7 +646,7 @@ export class SavedObjectsRepository {
     }
 
     throw new Error(
-      `Unexpected HyperSec DELETE response: ${JSON.stringify({
+      `Unexpected Elasticsearch DELETE response: ${JSON.stringify({
         type,
         id,
         response: { body, statusCode },
@@ -1337,7 +1337,7 @@ export class SavedObjectsRepository {
       }
 
       throw new Error(
-        `Unexpected HyperSec DELETE response: ${JSON.stringify({
+        `Unexpected Elasticsearch DELETE response: ${JSON.stringify({
           type,
           id,
           response: { body, statusCode },

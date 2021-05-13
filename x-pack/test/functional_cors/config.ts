@@ -43,7 +43,7 @@ export default async function ({ readConfigFile }: FtrConfigProviderContext) {
     services: kibanaFunctionalConfig.get('services'),
     pageObjects,
     junit: {
-      reportName: 'HyperSec Kibana CORS with X-Pack Security',
+      reportName: 'Kibana CORS with X-Pack Security',
     },
 
     esTestCluster: kibanaFunctionalConfig.get('esTestCluster'),

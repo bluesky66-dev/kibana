@@ -90,13 +90,13 @@ test('HelloWorldContainer.addNewEmbeddable', async () => {
   const embeddable = await container.addNewEmbeddable<ContactCardEmbeddableInput>(
     CONTACT_CARD_EMBEDDABLE,
     {
-      firstName: 'HyperSec Kibana',
+      firstName: 'Kibana',
     }
   );
   expect(embeddable).toBeDefined();
 
   if (!isErrorEmbeddable(embeddable)) {
-    expect(embeddable.getInput().firstName).toBe('HyperSec Kibana');
+    expect(embeddable.getInput().firstName).toBe('Kibana');
   } else {
     expect(false).toBe(true);
   }

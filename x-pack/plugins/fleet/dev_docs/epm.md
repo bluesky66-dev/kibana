@@ -8,7 +8,7 @@ When upgrading a package between a bugfix or a minor version, no breaking change
 - Removal of existing dashboards
 - Installation of new dashboards
 - Write new ingest pipelines with the version
-- Write new HyperSec alias templates
+- Write new Elasticsearch alias templates
 - Trigger a rollover for all the affected indices
 
 The new ingest pipeline is expected to still work with the data coming from older policies. In most cases this means some of the fields can be missing. For this to work, each event must contain the version of policy / package it is coming from to make such a decision.
@@ -19,9 +19,9 @@ Each package lists its minimal required agent version. In case there are agents 
 
 # Generated assets
 
-When a package is installed or upgraded, certain HyperSec Kibana and HyperSec assets are generated from . These follow the naming conventions explained above (see "indexing strategy") and contain configuration for the HyperSec stack that makes ingesting and displaying data work with as little user interaction as possible.
+When a package is installed or upgraded, certain Kibana and Elasticsearch assets are generated from . These follow the naming conventions explained above (see "indexing strategy") and contain configuration for the Elastic stack that makes ingesting and displaying data work with as little user interaction as possible.
 
-## HyperSec Index Templates
+## Elasticsearch Index Templates
 
 ### Generation
 

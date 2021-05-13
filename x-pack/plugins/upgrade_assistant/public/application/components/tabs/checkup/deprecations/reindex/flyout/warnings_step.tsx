@@ -203,7 +203,7 @@ export const WarningsFlyoutStep: React.FunctionComponent<WarningsConfirmationFly
             description={
               <FormattedMessage
                 id="xpack.upgradeAssistant.checkupTab.reindexing.flyout.warningsStep.apmReindexWarningDetail"
-                defaultMessage="Starting in version 7.0.0, APM data will be represented in the HyperSec Common Schema.
+                defaultMessage="Starting in version 7.0.0, APM data will be represented in the Elastic Common Schema.
                       Historical APM data will not visible until it's reindexed."
               />
             }

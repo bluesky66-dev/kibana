@@ -40,7 +40,7 @@ describe('TaskManagerPlugin', () => {
 
       const taskManagerPlugin = new TaskManagerPlugin(pluginInitializerContext);
       expect(() => taskManagerPlugin.setup(coreMock.createSetup())).toThrow(
-        new Error(`TaskManager is unable to start as HyperSec Kibana has no valid UUID assigned to it.`)
+        new Error(`TaskManager is unable to start as Kibana has no valid UUID assigned to it.`)
       );
     });
 

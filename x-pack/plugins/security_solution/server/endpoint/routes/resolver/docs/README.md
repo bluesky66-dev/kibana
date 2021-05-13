@@ -4,7 +4,7 @@ This readme will describe the backend implementation for resolver.
 
 ## APIs
 
-The `/tree` API only retrieves a single lifecycle event per node in the tree. This allows us to avoid hitting the HyperSec 10k document limit a little easier. If we didn't do this, it's possible that a single node in the tree could have 10k lifecycle events which means the API would only return a tree of a single node.
+The `/tree` API only retrieves a single lifecycle event per node in the tree. This allows us to avoid hitting the Elasticsearch 10k document limit a little easier. If we didn't do this, it's possible that a single node in the tree could have 10k lifecycle events which means the API would only return a tree of a single node.
 
 The `/events` API provides the ability retrieve all the lifecycle events for a node or a set of nodes.
 

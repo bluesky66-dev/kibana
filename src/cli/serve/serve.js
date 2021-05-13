@@ -132,7 +132,7 @@ export default function (program) {
   command
     .description('Run the kibana server')
     .collectUnknownOptions()
-    .option('-e, --elasticsearch <uri1,uri2>', 'HyperSec instances')
+    .option('-e, --elasticsearch <uri1,uri2>', 'Elasticsearch instances')
     .option(
       '-c, --config <path>',
       'Path to the config file, use multiple --config args to include multiple config files',
@@ -164,10 +164,10 @@ export default function (program) {
 
   if (!IS_KIBANA_DISTRIBUTABLE) {
     command
-      .option('--oss', 'Start HyperSec Kibana without X-Pack')
+      .option('--oss', 'Start Kibana without X-Pack')
       .option(
         '--run-examples',
-        'Adds plugin paths for all the HyperSec Kibana example plugins and runs with no base path'
+        'Adds plugin paths for all the Kibana example plugins and runs with no base path'
       );
   }
 

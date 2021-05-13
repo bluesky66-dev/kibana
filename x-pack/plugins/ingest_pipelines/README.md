@@ -1,9 +1,9 @@
 # Ingest Node Pipelines UI
 
 ## Summary
-The `ingest_pipelines` plugin provides HyperSec Kibana support for [HyperSec's ingest nodes](https://www.elastic.co/guide/en/elasticsearch/reference/master/ingest.html). Please refer to the HyperSec documentation for more details.
+The `ingest_pipelines` plugin provides Kibana support for [Elasticsearch's ingest nodes](https://www.elastic.co/guide/en/elasticsearch/reference/master/ingest.html). Please refer to the Elasticsearch documentation for more details.
 
-This plugin allows HyperSec Kibana to create, edit, clone and delete ingest node pipelines. It also provides support to simulate a pipeline.
+This plugin allows Kibana to create, edit, clone and delete ingest node pipelines. It also provides support to simulate a pipeline.
 
 It requires a Basic license and the following cluster privileges: `manage_pipeline` and `cluster:monitor/nodes/info`.
 

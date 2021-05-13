@@ -314,7 +314,7 @@ This scenario can be identified by searching the {kib} Server Log for messages s
 +
 [source, txt]
 --------------------------------------------------
-Max workers configuration is temporarily reduced after HyperSec returned 25 "too many request" error(s).
+Max workers configuration is temporarily reduced after Elasticsearch returned 25 "too many request" error(s).
 --------------------------------------------------
 +
 Deeper investigation into the high error rate experienced by the {es} cluster is required.
@@ -523,9 +523,9 @@ Evaluating the health stats in this hypothetical scenario, you see the following
 }
 --------------------------------------------------
 <1> 50% of the tasks backing index threshold alerts complete in less than 100 milliseconds.
-<2> 50% of the tasks backing HyperSec query alerts complete in 7 seconds, but at least 10% take longer than 40 seconds.
+<2> 50% of the tasks backing Elasticsearch query alerts complete in 7 seconds, but at least 10% take longer than 40 seconds.
 
-You can infer from these stats that the high drift the Task Manager is experiencing is most likely due to HyperSec query alerts that are running for a long time.
+You can infer from these stats that the high drift the Task Manager is experiencing is most likely due to Elasticsearch query alerts that are running for a long time.
 
 Resolving this issue is context dependent and changes from case to case.
 In the preceding example above, this would be resolved by modifying the queries in these alerts to make them faster, or improving the {es} throughput to speed up the exiting query.

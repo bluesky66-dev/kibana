@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Detects when an administrator role is assigned to an Okta group. An adversary may attempt to assign administrator privileges to an Okta group in order to assign additional permissions to compromised user accounts and maintain access to their target organization.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-okta*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Administrator Privileges Assigned to an Okta Group",
   "note": "The Okta Fleet integration or Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:okta.system and event.action:group.privilege.grant",
@@ -24,7 +24,7 @@
   "rule_id": "b8075894-0b62-46e5-977c-31275da34419",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Identity",
     "Okta",
     "Continuous Monitoring",

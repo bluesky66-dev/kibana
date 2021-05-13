@@ -19,7 +19,7 @@ export const calculateStatus$ = (
   merge(
     of({
       level: ServiceStatusLevels.unavailable,
-      summary: `Waiting for HyperSec`,
+      summary: `Waiting for Elasticsearch`,
       meta: {
         warningNodes: [],
         incompatibleNodes: [],
@@ -39,7 +39,7 @@ export const calculateStatus$ = (
               summary:
                 // Message should always be present, but this is a safe fallback
                 message ??
-                `Some HyperSec nodes are not compatible with this version of HyperSec Kibana`,
+                `Some Elasticsearch nodes are not compatible with this version of Kibana`,
               meta: { warningNodes, incompatibleNodes },
             };
           } else if (warningNodes.length > 0) {
@@ -48,14 +48,14 @@ export const calculateStatus$ = (
               summary:
                 // Message should always be present, but this is a safe fallback
                 message ??
-                `Some HyperSec nodes are running different versions than this version of HyperSec Kibana`,
+                `Some Elasticsearch nodes are running different versions than this version of Kibana`,
               meta: { warningNodes, incompatibleNodes },
             };
           }
 
           return {
             level: ServiceStatusLevels.available,
-            summary: `HyperSec is available`,
+            summary: `Elasticsearch is available`,
             meta: {
               warningNodes: [],
               incompatibleNodes: [],

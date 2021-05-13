@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies suspicious child processes of frequently targeted Microsoft Office applications (Word, PowerPoint, and Excel). These child processes are often launched during exploitation of Office applications or by documents with malicious macros.",
   "from": "now-9m",
@@ -8,7 +8,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Suspicious macOS MS Office Child Process",
   "query": "process where event.type in (\"start\", \"process_started\") and\n process.parent.name:(\"Microsoft Word\", \"Microsoft PowerPoint\", \"Microsoft Excel\") and\n process.name:\n (\n   \"bash\", \n   \"dash\", \n   \"sh\", \n   \"tcsh\", \n   \"csh\", \n   \"zsh\", \n   \"ksh\", \n   \"fish\", \n   \"python*\", \n   \"perl*\", \n   \"php*\", \n   \"osascript\",\n   \"pwsh\", \n   \"curl\", \n   \"wget\", \n   \"cp\", \n   \"mv\", \n   \"base64\", \n   \"launchctl\"\n )\n",
   "references": [
@@ -18,7 +18,7 @@
   "rule_id": "66da12b1-ac83-40eb-814c-07ed1d82b7b9",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

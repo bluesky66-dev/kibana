@@ -15,7 +15,7 @@ about central management, see the related {beats} documentation:
 
 [NOTE]
 ====
-This feature requires an HyperSec license that includes {beats} central
+This feature requires an Elastic license that includes {beats} central
 management.
 
 Don't have a license? You can start a 30-day trial. Open the main menu, then

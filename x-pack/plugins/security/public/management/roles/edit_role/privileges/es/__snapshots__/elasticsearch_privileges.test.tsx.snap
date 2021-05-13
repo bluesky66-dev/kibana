@@ -3,7 +3,7 @@
 exports[`it renders without crashing 1`] = `
 <CollapsiblePanel
   iconType="logoElasticsearch"
-  title="HyperSec"
+  title="Elasticsearch"
 >
   <EuiDescribedFormGroup
     description={

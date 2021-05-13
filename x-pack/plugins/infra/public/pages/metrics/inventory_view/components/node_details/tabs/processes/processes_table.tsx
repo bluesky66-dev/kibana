@@ -218,7 +218,7 @@ const StyledTableBody = euiStyled(EuiTableBody)`
   & .euiTableCellContent {
     padding-top: 0;
     padding-bottom: 0;
-
+    
   }
 `;
 

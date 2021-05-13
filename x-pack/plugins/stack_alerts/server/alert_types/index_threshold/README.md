@@ -2,7 +2,7 @@
 
 directory in plugin: `server/alert_types/index_threshold`
 
-The index threshold alert type is designed to run an HyperSec query over indices,
+The index threshold alert type is designed to run an Elasticsearch query over indices,
 aggregating field values from documents, comparing them to threshold values,
 and scheduling actions to run when the thresholds are met.
 
@@ -91,7 +91,7 @@ scheduled against them independently).
 
 The time window is set to 5 seconds.  That means, every time the
 alert runs it's queries (every second, in the example above), it will run it's
-HyperSec query over the last 5 seconds.  Thus, the queries, over time, will overlap.
+Elasticsearch query over the last 5 seconds.  Thus, the queries, over time, will overlap.
 Sometimes that's what you want.  Other times, maybe you just want to do 
 sampling, running an alert every hour, with a 5 minute window.  Up to the you!
 
@@ -106,7 +106,7 @@ a customer could set the `message` param in the action to a much more
 complex message, using other context variables made available by the
 alert type.
 
-Here's the message you should see in the HyperSec Kibana console, if everything is
+Here's the message you should see in the Kibana console, if everything is
 working:
 
 ```

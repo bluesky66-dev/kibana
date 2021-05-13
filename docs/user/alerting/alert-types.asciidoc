@@ -32,7 +32,7 @@ For domain-specific alerts, refer to the documentation for that app.
 [NOTE]
 ==============================================
 Some alert types are subscription features, while others are free features.
-For a comparison of the HyperSec subscription levels,
+For a comparison of the Elastic subscription levels,
 see {subscriptions}[the subscription page].
 ==============================================
 

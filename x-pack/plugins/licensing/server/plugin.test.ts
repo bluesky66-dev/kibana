@@ -147,7 +147,7 @@ describe('licensing plugin', () => {
 
         const license = await license$.pipe(take(1)).toPromise();
         expect(license.isAvailable).toBe(false);
-        expect(license.error).toBe('X-Pack plugin is not installed on the HyperSec cluster.');
+        expect(license.error).toBe('X-Pack plugin is not installed on the Elasticsearch cluster.');
       });
 
       it('polling continues even if there are errors', async () => {
@@ -205,7 +205,7 @@ describe('licensing plugin', () => {
         expect(
           loggedMessages.some(([message]) =>
             message.startsWith(
-              'Imported license information from HyperSec:type: basic | status: active | expiry date:'
+              'Imported license information from Elasticsearch:type: basic | status: active | expiry date:'
             )
           )
         ).toBe(true);

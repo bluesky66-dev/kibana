@@ -5,7 +5,7 @@ exports[`JobsTableFilters renders correctly against snapshot 1`] = `
   data-test-subj="ml-popover-upgrade-contents"
 >
   <EuiPopoverTitle>
-    Upgrade to HyperSec Platinum
+    Upgrade to Elastic Platinum
   </EuiPopoverTitle>
   <EuiText
     size="s"

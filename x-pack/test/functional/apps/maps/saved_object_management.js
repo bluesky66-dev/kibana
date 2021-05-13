@@ -33,13 +33,13 @@ export default function ({ getPageObjects, getService }) {
         await security.testUser.restoreDefaults();
       });
 
-      it('should update global HyperSec Kibana time to value stored with map', async () => {
+      it('should update global Kibana time to value stored with map', async () => {
         const timeConfig = await PageObjects.timePicker.getTimeConfig();
         expect(timeConfig.start).to.equal('~ 17 minutes ago');
         expect(timeConfig.end).to.equal('now');
       });
 
-      it('should update global HyperSec Kibana refresh config to value stored with map', async () => {
+      it('should update global Kibana refresh config to value stored with map', async () => {
         const kibanaRefreshConfig = await PageObjects.timePicker.getRefreshConfig();
         expect(kibanaRefreshConfig.interval).to.equal('1');
         expect(kibanaRefreshConfig.units).to.equal('seconds');

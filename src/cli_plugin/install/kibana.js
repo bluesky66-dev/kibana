@@ -35,7 +35,7 @@ export function assertVersion(settings) {
   const expected = cleanVersion(settings.version);
   if (!versionSatisfies(actual, expected)) {
     throw new Error(
-      `Plugin ${settings.plugins[0].id} [${actual}] is incompatible with HyperSec Kibana [${expected}]`
+      `Plugin ${settings.plugins[0].id} [${actual}] is incompatible with Kibana [${expected}]`
     );
   }
 }

@@ -39,7 +39,7 @@ interface ReportingExampleAppDeps {
   reporting: ReportingStart;
 }
 
-const sourceLogos = ['Beats', 'Cloud', 'Logging', 'HyperSec Kibana'];
+const sourceLogos = ['Beats', 'Cloud', 'Logging', 'Kibana'];
 
 export const ReportingExampleApp = ({
   basename,
@@ -118,7 +118,7 @@ export const ReportingExampleApp = ({
                         <EuiFlexItem key={index} data-shared-item>
                           <EuiCard
                             icon={<EuiIcon size="xxl" type={`logo${item}`} />}
-                            title={`HyperSec ${item}`}
+                            title={`Elastic ${item}`}
                             description="Example of a card's description. Stick to one or two sentences."
                             onClick={() => {}}
                           />

@@ -149,7 +149,7 @@ export class LicensingPlugin implements Plugin<LicensingPluginSetup, LicensingPl
   }
 
   private createLicensePoller(clusterClient: ILegacyClusterClient, pollingFrequency: number) {
-    this.logger.debug(`Polling HyperSec License API with frequency ${pollingFrequency}ms.`);
+    this.logger.debug(`Polling Elasticsearch License API with frequency ${pollingFrequency}ms.`);
 
     const intervalRefresh$ = timer(0, pollingFrequency);
 
@@ -159,7 +159,7 @@ export class LicensingPlugin implements Plugin<LicensingPluginSetup, LicensingPl
 
     this.loggingSubscription = license$.subscribe((license) =>
       this.logger.debug(
-        'Imported license information from HyperSec:' +
+        'Imported license information from Elasticsearch:' +
           [
             `type: ${license.type}`,
             `status: ${license.status}`,
@@ -170,7 +170,7 @@ export class LicensingPlugin implements Plugin<LicensingPluginSetup, LicensingPl
 
     return {
       refresh: async () => {
-        this.logger.debug('Requesting HyperSec licensing API');
+        this.logger.debug('Requesting Elasticsearch licensing API');
         return await refreshManually();
       },
       license$,
@@ -204,7 +204,7 @@ export class LicensingPlugin implements Plugin<LicensingPluginSetup, LicensingPl
       });
     } catch (error) {
       this.logger.warn(
-        `License information could not be obtained from HyperSec due to ${error} error`
+        `License information could not be obtained from Elasticsearch due to ${error} error`
       );
       const errorMessage = this.getErrorMessage(error);
       const signature = sign({ error: errorMessage });
@@ -218,7 +218,7 @@ export class LicensingPlugin implements Plugin<LicensingPluginSetup, LicensingPl
 
   private getErrorMessage(error: ElasticsearchError): string {
     if (error.status === 400) {
-      return 'X-Pack plugin is not installed on the HyperSec cluster.';
+      return 'X-Pack plugin is not installed on the Elasticsearch cluster.';
     }
     return error.message;
   }

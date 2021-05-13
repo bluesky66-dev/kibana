@@ -70,7 +70,7 @@ describe('useRules', () => {
               created_at: '2020-02-14T19:49:28.178Z',
               created_by: 'elastic',
               description:
-                'HyperSec Endpoint detected Credential Dumping. Click the HyperSec Endpoint icon in the event.module column or the link in the rule.reference column in the External Alerts tab of the SIEM Detections page for additional information.',
+                'Elastic Endpoint detected Credential Dumping. Click the Elastic Endpoint icon in the event.module column or the link in the rule.reference column in the External Alerts tab of the SIEM Detections page for additional information.',
               enabled: false,
               false_positives: [],
               filters: [],
@@ -81,7 +81,7 @@ describe('useRules', () => {
               interval: '10m',
               language: 'kuery',
               max_signals: 100,
-              name: 'Credential Dumping - Detected - HyperSec Endpoint',
+              name: 'Credential Dumping - Detected - Elastic Endpoint',
               output_index: '.siem-signals-default',
               query:
                 'event.kind:alert and event.module:endgame and event.action:cred_theft_event and endgame.metadata.type:detection',
@@ -91,7 +91,7 @@ describe('useRules', () => {
               rule_id: '571afc56-5ed9-465d-a2a9-045f099f6e7e',
               severity: 'high',
               severity_mapping: [],
-              tags: ['HyperSec', 'Endpoint'],
+              tags: ['Elastic', 'Endpoint'],
               threat: [],
               throttle: null,
               to: 'now',
@@ -106,7 +106,7 @@ describe('useRules', () => {
               created_at: '2020-02-14T19:49:28.189Z',
               created_by: 'elastic',
               description:
-                'HyperSec Endpoint detected an Adversary Behavior. Click the HyperSec Endpoint icon in the event.module column or the link in the rule.reference column in the External Alerts tab of the SIEM Detections page for additional information.',
+                'Elastic Endpoint detected an Adversary Behavior. Click the Elastic Endpoint icon in the event.module column or the link in the rule.reference column in the External Alerts tab of the SIEM Detections page for additional information.',
               enabled: false,
               false_positives: [],
               filters: [],
@@ -117,7 +117,7 @@ describe('useRules', () => {
               interval: '10m',
               language: 'kuery',
               max_signals: 100,
-              name: 'Adversary Behavior - Detected - HyperSec Endpoint',
+              name: 'Adversary Behavior - Detected - Elastic Endpoint',
               output_index: '.siem-signals-default',
               query:
                 'event.kind:alert and event.module:endgame and event.action:rules_engine_event',
@@ -127,7 +127,7 @@ describe('useRules', () => {
               rule_id: '77a3c3df-8ec4-4da4-b758-878f551dee69',
               severity: 'medium',
               severity_mapping: [],
-              tags: ['HyperSec', 'Endpoint'],
+              tags: ['Elastic', 'Endpoint'],
               threat: [],
               throttle: null,
               to: 'now',

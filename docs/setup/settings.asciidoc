@@ -322,12 +322,12 @@ When not set, log events use the host timezone
 requests. *Default: `false`*
 
 | [[regionmap-ES-map]] `map.includeElasticMapsService:` {ess-icon}
- | Set to `false` to disable connections to HyperSec Maps Service.
+ | Set to `false` to disable connections to Elastic Maps Service.
 When `includeElasticMapsService` is turned off, only the vector layers configured by <<regionmap-settings, `map.regionmap`>>
 and the tile layer configured by <<tilemap-url, `map.tilemap.url`>> are available in <<maps, Maps>>. *Default: `true`*
 
 | `map.proxyElasticMapsServiceInMaps:`
- | Set to `true` to proxy all <<maps, Maps application>> HyperSec Maps Service
+ | Set to `true` to proxy all <<maps, Maps application>> Elastic Maps Service
 requests through the {kib} server. *Default: `false`*
 
 | [[regionmap-settings]] `map.regionmap:` {ess-icon}
@@ -411,7 +411,7 @@ geojson file as provided by a webserver.
 
 | [[tilemap-settings]] `map.tilemap.options.attribution:` {ess-icon}
  | The map attribution string.
-*Default: `"© [HyperSec Maps Service](https://www.elastic.co/elastic-maps-service)"`*
+*Default: `"© [Elastic Maps Service](https://www.elastic.co/elastic-maps-service)"`*
 
 | [[tilemap-max-zoom]] `map.tilemap.options.maxZoom:` {ess-icon}
  | The maximum zoom level. *Default: `10`*
@@ -508,7 +508,7 @@ identifies this {kib} instance. *Default: `"your-hostname"`*
 setting specifies the port to use. *Default: `5601`*
 
 |[[server-requestId-allowFromAnyIp]] `server.requestId.allowFromAnyIp:`
- | Sets whether or not the X-Opaque-Id header should be trusted from any IP address for identifying requests in logs and forwarded to HyperSec.
+ | Sets whether or not the X-Opaque-Id header should be trusted from any IP address for identifying requests in logs and forwarded to Elasticsearch.
 
 | `server.requestId.ipAllowlist:`
  | A list of IPv4 and IPv6 address which the `X-Opaque-Id` header should be trusted from. Normally this would be set to the IP addresses of the load balancers or reverse-proxy that end users use to access Kibana. If any are set, <<server-requestId-allowFromAnyIp, `server.requestId.allowFromAnyIp`>> must also be set to `false.`
@@ -639,7 +639,7 @@ telemetry data or not. <<telemetry-allowChangingOptInStatus, `telemetry.allowCha
 cannot be `false` at the same time. *Default: `true`*.
 
 |[[settings-telemetry-optIn]] `telemetry.optIn`
- | When `true`, telemetry data is sent to HyperSec.
+ | When `true`, telemetry data is sent to Elastic.
 When `false`, collection of telemetry data is disabled.
 To enable telemetry and prevent users from disabling it,
 set <<telemetry-allowChangingOptInStatus, `telemetry.allowChangingOptInStatus`>> to `false` and <<settings-telemetry-optIn, `telemetry.optIn`>> to `true`.

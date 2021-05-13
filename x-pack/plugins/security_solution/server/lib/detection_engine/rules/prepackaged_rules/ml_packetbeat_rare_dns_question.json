@@ -1,7 +1,7 @@
 {
   "anomaly_threshold": 50,
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "A machine learning job detected a rare and unusual DNS query that indicate network activity with unusual DNS domains. This can be due to initial access, persistence, command-and-control, or exfiltration activity. For example, when a user clicks on a link in a phishing email or opens a malicious document, a request may be sent to download and run a payload from an uncommon domain. When malware is already running, it may send requests to an uncommon DNS domain the malware uses for command-and-control communication.",
   "false_positives": [
@@ -9,7 +9,7 @@
   ],
   "from": "now-45m",
   "interval": "15m",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "machine_learning_job_id": "packetbeat_rare_dns_question",
   "name": "Unusual DNS Activity",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "746edc4c-c54c-49c6-97a1-651223819448",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Network",
     "Threat Detection",
     "ML"

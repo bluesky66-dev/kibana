@@ -56,7 +56,7 @@ type of `options`, which is a `string[]` used to populate select fields.
 The undocumented `map.manifestServiceUrl` setting in kibana.yml has been replaced
 by `map.emsTileApiUrl` and `map.emsFileApiUrl`. These settings configure the
 base URL for the tile basemap manifest and vector file manifests used in
-HyperSec Maps and the region map and coordinate map.visualizations.
+Elastic Maps and the region map and coordinate map.visualizations.
 
 [float]
 ==== Don't expose {es} client as Observable
@@ -957,14 +957,14 @@ The licensing plugin retrieves license data from {es} at regular configurable in
 
 - `license$: Observable<ILicense>` Provides a steam of license data ILicense.
 Plugin emits new value whenever it detects changes in license info.
-If the plugin cannot retrieve a license from **HyperSec**, it will emit `an empty license` object.
+If the plugin cannot retrieve a license from **Elasticsearch**, it will emit `an empty license` object.
 
 - `refresh: () => Promise<ILicense>` allows a plugin to enforce license retrieval.
 
 *Client-side API*
 
 The licensing plugin retrieves license data from licensing Kibana plugin
-and does not communicate with HyperSec directly.
+and does not communicate with Elasticsearch directly.
 
 - `license$: Observable<ILicense>` Provides a steam of license data ILicense.
 Plugin emits new value whenever it detects changes in license info. If the plugin cannot retrieve a

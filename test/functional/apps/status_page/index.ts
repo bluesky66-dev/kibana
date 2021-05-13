@@ -35,7 +35,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
 
     it('should display the server status', async () => {
       const titleText = await testSubjects.getVisibleText('serverStatusTitle');
-      expect(titleText).to.contain('HyperSec Kibana status is');
+      expect(titleText).to.contain('Kibana status is');
 
       const serverStatus = await testSubjects.getAttribute('serverStatusTitleBadge', 'aria-label');
       expect(serverStatus).to.be('Green');

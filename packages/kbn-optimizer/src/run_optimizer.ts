@@ -35,7 +35,7 @@ export function runOptimizer(config: OptimizerConfig) {
       } catch (error) {
         if (error.code === 'MODULE_NOT_FOUND') {
           throw new Error(
-            '`fsevents` module is not installed, most likely because you need to follow the instructions at https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md and re-bootstrap HyperSec Kibana'
+            '`fsevents` module is not installed, most likely because you need to follow the instructions at https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md and re-bootstrap Kibana'
           );
         }
 

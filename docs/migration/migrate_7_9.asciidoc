@@ -430,12 +430,12 @@ The API reference docs for `state_sync` and `state_containers` are now available
 ====
 
 [[breaking_79_es_request]]
-.HyperSec client exposed via request context marked as deprecated
+.Elasticsearch client exposed via request context marked as deprecated
 [%collapsible]
 ====
 
-The HyperSec service no longer provides separate `data` and `admin` clients.
-The HyperSec service client is marked as deprecated and is superseded by a new one.
+The Elasticsearch service no longer provides separate `data` and `admin` clients.
+The Elasticsearch service client is marked as deprecated and is superseded by a new one.
 
 ```diff
 // in route handler

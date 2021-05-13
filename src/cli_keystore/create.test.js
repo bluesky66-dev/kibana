@@ -32,7 +32,7 @@ import { create } from './create';
 import { Logger } from '../cli_plugin/lib/logger';
 import * as prompt from './utils/prompt';
 
-describe('HyperSec Kibana keystore', () => {
+describe('Kibana keystore', () => {
   describe('create', () => {
     const sandbox = sinon.createSandbox();
 
@@ -61,7 +61,7 @@ describe('HyperSec Kibana keystore', () => {
       await create(keystore);
 
       sinon.assert.calledOnce(Logger.prototype.log);
-      sinon.assert.calledWith(Logger.prototype.log, `Created HyperSec Kibana keystore in ${path}`);
+      sinon.assert.calledWith(Logger.prototype.log, `Created Kibana keystore in ${path}`);
     });
 
     it('prompts for overwrite', async () => {
@@ -73,7 +73,7 @@ describe('HyperSec Kibana keystore', () => {
       sinon.assert.calledOnce(prompt.confirm);
       const { args } = prompt.confirm.getCall(0);
 
-      expect(args[0]).toEqual('A HyperSec Kibana keystore already exists. Overwrite?');
+      expect(args[0]).toEqual('A Kibana keystore already exists. Overwrite?');
     });
 
     it('aborts if overwrite is denied', async () => {

@@ -25,7 +25,7 @@ export function runCli() {
       name: 'build',
       description: `
         Copies files from the source into a zip archive that can be distributed for
-        installation into production HyperSec Kibana installs. The archive includes the non-
+        installation into production Kibana installs. The archive includes the non-
         development npm dependencies and builds itself using raw files in the source
         directory so make sure they are clean/up to date. The resulting archive can
         be found at:
@@ -41,7 +41,7 @@ export function runCli() {
         },
         help: `
           --skip-archive        Don't create the zip file, just create the build/kibana directory
-          --kibana-version, -v  HyperSec Kibana version that the
+          --kibana-version, -v  Kibana version that the
         `,
       },
       async run({ log, flags }) {
@@ -58,7 +58,7 @@ export function runCli() {
         const pluginDir = await findKibanaJson(process.cwd());
         if (!pluginDir) {
           throw createFailError(
-            `Unable to find HyperSec Kibana Platform plugin in [${process.cwd()}] or any of its parent directories. Has it been migrated properly? Does it have a kibana.json file?`
+            `Unable to find Kibana Platform plugin in [${process.cwd()}] or any of its parent directories. Has it been migrated properly? Does it have a kibana.json file?`
           );
         }
 

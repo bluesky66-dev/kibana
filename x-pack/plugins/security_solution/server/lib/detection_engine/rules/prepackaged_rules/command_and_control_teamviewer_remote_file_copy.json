@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies an executable or script file remotely downloaded via a TeamViewer transfer session.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Remote File Copy via TeamViewer",
   "query": "event.category:file and event.type:creation and process.name:TeamViewer.exe and file.extension:(exe or dll or scr or com or bat or ps1 or vbs or vbe or js or wsh or hta)",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "b25a7df2-120a-4db2-bd3f-3e4b86b24bee",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

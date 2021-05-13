@@ -9,7 +9,7 @@ import { CreateRulesOptions } from './types';
 import { alertsClientMock } from '../../../../../alerts/server/mocks';
 
 export const getCreateRulesOptionsMock = (): CreateRulesOptions => ({
-  author: ['HyperSec'],
+  author: ['Elastic'],
   buildingBlockType: undefined,
   alertsClient: alertsClientMock.create(),
   anomalyThreshold: undefined,
@@ -20,7 +20,7 @@ export const getCreateRulesOptionsMock = (): CreateRulesOptions => ({
   from: 'now-6m',
   query: 'user.name: root or user.name: admin',
   language: 'kuery',
-  license: 'HyperSec License',
+  license: 'Elastic License',
   savedId: 'savedId-123',
   timelineId: 'timelineid-123',
   timelineTitle: 'timeline-title-123',
@@ -61,7 +61,7 @@ export const getCreateRulesOptionsMock = (): CreateRulesOptions => ({
 });
 
 export const getCreateMlRulesOptionsMock = (): CreateRulesOptions => ({
-  author: ['HyperSec'],
+  author: ['Elastic'],
   buildingBlockType: undefined,
   alertsClient: alertsClientMock.create(),
   anomalyThreshold: 55,
@@ -72,7 +72,7 @@ export const getCreateMlRulesOptionsMock = (): CreateRulesOptions => ({
   from: 'now-6m',
   query: undefined,
   language: undefined,
-  license: 'HyperSec License',
+  license: 'Elastic License',
   savedId: 'savedId-123',
   timelineId: 'timelineid-123',
   timelineTitle: 'timeline-title-123',

@@ -24,7 +24,7 @@ export default async function ({ readConfigFile }: FtrConfigProviderContext) {
     services,
 
     junit: {
-      reportName: 'HyperSec Kibana Visual Regression Tests',
+      reportName: 'Kibana Visual Regression Tests',
     },
   };
 }

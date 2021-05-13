@@ -13,7 +13,7 @@ export default function ({ getService, getPageObjects }) {
   const overview = getService('monitoringKibanaOverview');
   const kibanaClusterSummaryStatus = getService('monitoringKibanaSummaryStatus');
 
-  describe('HyperSec Kibana overview', () => {
+  describe('Kibana overview', () => {
     const { setup, tearDown } = getLifecycleMethods(getService, getPageObjects);
 
     before(async () => {
@@ -31,7 +31,7 @@ export default function ({ getService, getPageObjects }) {
       await tearDown();
     });
 
-    it('should have HyperSec Kibana Cluster Summary Status showing correct info', async () => {
+    it('should have Kibana Cluster Summary Status showing correct info', async () => {
       expect(await kibanaClusterSummaryStatus.getContent()).to.eql({
         instances: 'Instances\n1',
         memory: 'Memory\n219.6 MB / 1.4 GB',

@@ -16,7 +16,7 @@ function generator({ imageFlavor }: TemplateContext) {
   # ** THIS IS AN AUTO-GENERATED FILE **
   #
 
-  # Default HyperSec Kibana configuration for docker target
+  # Default Kibana configuration for docker target
   server.name: kibana
   server.host: "0"
   elasticsearch.hosts: [ "http://elasticsearch:9200" ]

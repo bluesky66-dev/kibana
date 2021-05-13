@@ -2,13 +2,13 @@ sequenceDiagram
   participant Agent
   participant Fleet API
   participant SavedObjects
-  participant HyperSec
+  participant Elasticsearch
 
   Agent->>Fleet API: enroll(enrollmentAPIKey)
 
   rect rgba(191, 223, 255, 0.2)
-    Note over Fleet API,HyperSec: Verify API Key
-    Fleet API->>HyperSec: GET /\_security/privileges
+    Note over Fleet API,Elasticsearch: Verify API Key
+    Fleet API->>Elasticsearch: GET /\_security/privileges
     Fleet API->>SavedObjects: getEnrollmentApiKey(apiKeyId)
   end
 

@@ -4,7 +4,7 @@
 
 ## ElasticsearchConfig.healthCheckDelay property
 
-The interval between health check requests Kibana sends to the HyperSec.
+The interval between health check requests Kibana sends to the Elasticsearch.
 
 <b>Signature:</b>
 

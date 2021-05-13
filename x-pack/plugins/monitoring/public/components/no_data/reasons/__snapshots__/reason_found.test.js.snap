@@ -25,13 +25,13 @@ Array [
     class="euiText euiText--medium"
   >
     <p>
-      We checked the cluster settings and found that
+      We checked the cluster settings and found that 
       <span>
         <code>
           xpack.monitoring.collection.interval
         </code>
       </span>
-       is set to
+       is set to 
       <span>
         <code>
           -1
@@ -100,19 +100,19 @@ Array [
     class="euiText euiText--medium eui-textLeft"
   >
     <p>
-      We checked the
+      We checked the 
       <span>
         <code>
           node001foo
         </code>
       </span>
-       settings for
+       settings for 
       <span>
         <code>
           xpack.monitoring.exporters
         </code>
       </span>
-      , and found the reason:
+      , and found the reason: 
       <span>
         <code>
           myMonitoringClusterExporter1
@@ -121,19 +121,19 @@ Array [
       .
     </p>
     <p>
-      Using monitoring exporters to ship the monitoring data to a remote monitoring cluster is highly recommended as it keeps the integrity of the monitoring data safe no matter what the state of the production cluster. However, as this instance of HyperSec Kibana could not find any monitoring data, there seems to be a problem with the
+      Using monitoring exporters to ship the monitoring data to a remote monitoring cluster is highly recommended as it keeps the integrity of the monitoring data safe no matter what the state of the production cluster. However, as this instance of Kibana could not find any monitoring data, there seems to be a problem with the 
       <span>
         <code>
           xpack.monitoring.exporters
         </code>
       </span>
-       configuration, or the
+       configuration, or the 
       <span>
         <code>
           xpack.monitoring.elasticsearch
         </code>
       </span>
-       settings in
+       settings in 
       <span>
         <code>
           kibana.yml
@@ -142,19 +142,19 @@ Array [
       .
     </p>
     <p>
-      Check that the intended exporters are enabled for sending statistics to the monitoring cluster, and that the monitoring cluster host matches the
+      Check that the intended exporters are enabled for sending statistics to the monitoring cluster, and that the monitoring cluster host matches the 
       <span>
         <code>
           xpack.monitoring.elasticsearch
         </code>
       </span>
-       setting in
+       setting in 
       <span>
         <code>
           kibana.yml
         </code>
       </span>
-       to see monitoring data in this instance of HyperSec Kibana.
+       to see monitoring data in this instance of Kibana.
     </p>
   </div>,
 ]
@@ -169,14 +169,14 @@ Array [
       class="euiText euiText--medium"
     >
       <p>
-        Configure monitoring through
+        Configure monitoring through 
         <a
           class="euiLink euiLink--primary"
           href="https://cloud.elastic.co/deployments"
           rel="noopener"
           target="_blank"
         >
-          HyperSec Service Console
+          Elasticsearch Service Console
           <span
             aria-label="External link"
             class="euiLink__externalIcon"
@@ -188,7 +188,7 @@ Array [
             (opens in a new tab or window)
           </span>
         </a>
-         Go to
+         Go to 
         <a
           class="euiLink euiLink--primary"
           href="https://cloud.elastic.co/deployments"
@@ -207,7 +207,7 @@ Array [
             (opens in a new tab or window)
           </span>
         </a>
-         section for a deployment to configure monitoring. For more information visit
+         section for a deployment to configure monitoring. For more information visit 
         <a
           class="euiLink euiLink--primary"
           href="https://www.elastic.co/guide/en/cloud/current/ec-enable-logging-and-monitoring.html"
@@ -236,7 +236,7 @@ Array [
     class="euiText euiText--medium eui-textLeft"
   >
     <p>
-      In HyperSec Cloud, your monitoring data is stored in your dedicated monitoring cluster.
+      In Elastic Cloud, your monitoring data is stored in your dedicated monitoring cluster.
     </p>
   </div>,
 ]
@@ -267,19 +267,19 @@ Array [
     class="euiText euiText--medium"
   >
     <p>
-      We checked the node001foo settings and found that
+      We checked the node001foo settings and found that 
       <span>
         <code>
           xpack.monitoring.enabled
         </code>
       </span>
-       is set to
+       is set to 
       <span>
         <code>
           false
         </code>
       </span>
-       set, which disables monitoring. Removing the
+       set, which disables monitoring. Removing the 
       <span>
         <code>
           xpack.monitoring.enabled: false

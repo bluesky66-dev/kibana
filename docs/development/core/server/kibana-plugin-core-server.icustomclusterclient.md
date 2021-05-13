@@ -16,5 +16,5 @@ export interface ICustomClusterClient extends IClusterClient
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [close](./kibana-plugin-core-server.icustomclusterclient.close.md) | <code>() =&gt; Promise&lt;void&gt;</code> | Closes the cluster client. After that client cannot be used and one should create a new client instance to be able to interact with HyperSec API. |
+|  [close](./kibana-plugin-core-server.icustomclusterclient.close.md) | <code>() =&gt; Promise&lt;void&gt;</code> | Closes the cluster client. After that client cannot be used and one should create a new client instance to be able to interact with Elasticsearch API. |
 

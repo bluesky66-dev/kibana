@@ -101,11 +101,11 @@ describe('query_es_sql', () => {
     api.mockRejectedValueOnce(new Error('generic es error'));
 
     expect(queryEsSQL(api, baseArgs)).rejects.toThrowErrorMatchingInlineSnapshot(
-      `"Couldn't parse HyperSec SQL query. You may need to add double quotes to names containing special characters. Check your query and try again. Error: parsing_exception"`
+      `"Couldn't parse Elasticsearch SQL query. You may need to add double quotes to names containing special characters. Check your query and try again. Error: parsing_exception"`
     );
 
     expect(queryEsSQL(api, baseArgs)).rejects.toThrowErrorMatchingInlineSnapshot(
-      `"Unexpected error from HyperSec: generic es error"`
+      `"Unexpected error from Elasticsearch: generic es error"`
     );
   });
 });

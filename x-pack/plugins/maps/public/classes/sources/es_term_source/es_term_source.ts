@@ -144,7 +144,7 @@ export class ESTermSource extends AbstractESAggSource implements ITermJoinSource
       searchSource,
       registerCancelCallback,
       requestDescription: i18n.translate('xpack.maps.source.esJoin.joinDescription', {
-        defaultMessage: `HyperSec terms aggregation request, left source: {leftSource}, right source: {rightSource}`,
+        defaultMessage: `Elasticsearch terms aggregation request, left source: {leftSource}, right source: {rightSource}`,
         values: {
           leftSource: `${leftSourceName}:${leftFieldName}`,
           rightSource: `${this._descriptor.indexPatternTitle}:${this._termField.getName()}`,

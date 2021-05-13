@@ -7,13 +7,13 @@
 ---
 > /*
 >  * This file is forked from the lodash project (https://lodash.com/),
->  * and may include modifications made by HyperSec B.V.
->  * HyperSec B.V. licenses this file to you under the MIT License.
+>  * and may include modifications made by Elasticsearch B.V.
+>  * Elasticsearch B.V. licenses this file to you under the MIT License.
 >  * See `packages/elastic-safer-lodash-set/LICENSE` for more information.
 >  */
->
+> 
 > /* eslint-disable */
->
+> 
 > var assignValue = require('lodash/_assignValue'),
 >     castPath = require('lodash/_castPath'),
 >     isFunction = require('lodash/isFunction'),
@@ -24,7 +24,7 @@
 >     if (key == 'prototype' && isFunction(nested)) {
 >       throw new Error('Illegal access of function prototype')
 >     }
->
+> 
 33c47
 <       var objValue = nested[key];
 ---

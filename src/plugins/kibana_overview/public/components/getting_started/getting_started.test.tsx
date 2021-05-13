@@ -54,7 +54,7 @@ const mockApps = [
   },
   {
     category: FeatureCatalogueCategory.DATA,
-    description: 'Explore geospatial data from HyperSec and the HyperSec Maps Service.',
+    description: 'Explore geospatial data from Elasticsearch and the Elastic Maps Service.',
     icon: 'gisApp',
     id: 'maps',
     order: 400,
@@ -79,7 +79,7 @@ const mockApps = [
   },
   {
     category: FeatureCatalogueCategory.DATA,
-    description: 'Surface and analyze relevant relationships in your HyperSec data.',
+    description: 'Surface and analyze relevant relationships in your Elasticsearch data.',
     icon: 'graphApp',
     id: 'graph',
     order: 600,

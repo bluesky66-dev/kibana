@@ -8,7 +8,7 @@
       "agent": {
         "id": "963b081e-60d1-482c-befd-a5815fa8290f",
         "version": "6.6.1",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -78,7 +78,7 @@
       "agent": {
         "id": "b3412d6f-b022-4448-8fee-21cc936ea86b",
         "version": "6.0.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -147,7 +147,7 @@
       "agent": {
         "id": "3838df35-a095-4af4-8fce-0b6d78793f2e",
         "version": "6.8.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -214,7 +214,7 @@
       "agent": {
         "id": "963b081e-60d1-482c-befd-a5815fa8290f",
         "version": "6.6.1",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -284,7 +284,7 @@
       "agent": {
         "id": "b3412d6f-b022-4448-8fee-21cc936ea86b",
         "version": "6.0.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -352,7 +352,7 @@
       "agent": {
         "id": "3838df35-a095-4af4-8fce-0b6d78793f2e",
         "version": "6.8.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -420,7 +420,7 @@
       "agent": {
         "id": "963b081e-60d1-482c-befd-a5815fa8290f",
         "version": "6.6.1",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -489,7 +489,7 @@
       "agent": {
         "id": "b3412d6f-b022-4448-8fee-21cc936ea86b",
         "version": "6.0.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {
@@ -557,7 +557,7 @@
       "agent": {
         "id": "3838df35-a095-4af4-8fce-0b6d78793f2e",
         "version": "6.8.0",
-        "name" : "HyperSec Endpoint"
+        "name" : "Elastic Endpoint"
       },
       "elastic": {
         "agent": {

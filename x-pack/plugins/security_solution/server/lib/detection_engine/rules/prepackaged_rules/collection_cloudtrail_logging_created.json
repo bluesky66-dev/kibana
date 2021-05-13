@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the creation of an AWS log trail that specifies the settings for delivery of log data.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS CloudTrail Log Created",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:CreateTrail and event.dataset:aws.cloudtrail and event.provider:cloudtrail.amazonaws.com and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "594e0cbf-86cc-45aa-9ff7-ff27db27d3ed",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

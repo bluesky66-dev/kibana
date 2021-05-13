@@ -1,11 +1,11 @@
 - Start Date: 2020-12-21
 - RFC PR: (leave this empty)
-- HyperSec Kibana Issue: (leave this empty)
+- Kibana Issue: (leave this empty)
 - [POC PR](https://github.com/elastic/kibana/pull/86232)
 
 # Goal
 
-Automatically generate API documentation for every plugin that exposes a public API within HyperSec Kibana in order to help HyperSec Kibana plugin developers 
+Automatically generate API documentation for every plugin that exposes a public API within Kibana in order to help Kibana plugin developers 
 find and understand the services available to them. Automatic generation ensures the APIs are _always_ up to date. The system will make it easy to find
 APIs that are lacking documentation.
 
@@ -411,7 +411,7 @@ the absence of the `required` badge. Is this obvious? What about class members/i
 ### REST API
 
 This RFC does not cover REST API documentation, though it worth considering where
-REST APIs registered by plugins should go in the docs. The docs team has a proposal for this but it is not inside the `HyperSec Kibana Developer Docs` mission.
+REST APIs registered by plugins should go in the docs. The docs team has a proposal for this but it is not inside the `Kibana Developer Docs` mission.
 
 ### Package APIs
 

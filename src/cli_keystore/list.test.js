@@ -29,7 +29,7 @@ import { Keystore } from '../cli//keystore';
 import { list } from './list';
 import { Logger } from '../cli_plugin/lib/logger';
 
-describe('HyperSec Kibana keystore', () => {
+describe('Kibana keystore', () => {
   describe('list', () => {
     const sandbox = sinon.createSandbox();
 
@@ -57,7 +57,7 @@ describe('HyperSec Kibana keystore', () => {
       sinon.assert.calledOnce(Logger.prototype.error);
       sinon.assert.calledWith(
         Logger.prototype.error,
-        "ERROR: HyperSec Kibana keystore not found. Use 'create' command to create one."
+        "ERROR: Kibana keystore not found. Use 'create' command to create one."
       );
     });
   });

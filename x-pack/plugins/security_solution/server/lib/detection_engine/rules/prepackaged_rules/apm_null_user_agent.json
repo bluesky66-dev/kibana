@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "A request to a web application server contained no identifying user agent string.",
   "false_positives": [
@@ -28,7 +28,7 @@
     "apm-*-transaction*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Web Application Suspicious Activity: No User Agent",
   "query": "url.path:*",
   "references": [
@@ -38,7 +38,7 @@
   "rule_id": "43303fd4-4839-4e48-b2b2-803ab060758d",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "APM"
   ],
   "timestamp_override": "event.ingested",

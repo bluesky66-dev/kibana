@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies a SolarWinds binary modifying the start type of a service to be disabled. An adversary may abuse this technique to manipulate relevant security services.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "SolarWinds Process Disabling Services via Registry",
   "query": "registry where registry.path : \"HKLM\\\\SYSTEM\\\\*ControlSet*\\\\Services\\\\*\\\\Start\" and registry.data.strings == \"4\" and\n process.name : (\n     \"SolarWinds.BusinessLayerHost*.exe\", \n     \"ConfigurationWizard*.exe\", \n     \"NetflowDatabaseMaintenance*.exe\", \n     \"NetFlowService*.exe\", \n     \"SolarWinds.Administration*.exe\", \n     \"SolarWinds.Collector.Service*.exe\" , \n     \"SolarwindsDiagnostics*.exe\")\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "b9960fef-82c6-4816-befa-44745030e917",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

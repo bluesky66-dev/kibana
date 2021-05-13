@@ -63,7 +63,7 @@ describe('url overflow detection', () => {
     expect(window.location.assign).not.toHaveBeenCalled();
     expect(toasts.addWarning).toHaveBeenCalledWith(
       expect.objectContaining({
-        title: 'The URL is big and HyperSec Kibana might stop working',
+        title: 'The URL is big and Kibana might stop working',
         text: expect.any(Function),
       })
     );
@@ -74,11 +74,11 @@ describe('url overflow detection', () => {
     const unmount = mountToast(element);
     expect(element).toMatchInlineSnapshot(`
       <div>
-        Either enable the
+        Either enable the 
         <code>
           state:storeInSessionStorage
         </code>
-         option in
+         option in 
         <a
           href="/test-123/app/management/kibana/settings"
         >

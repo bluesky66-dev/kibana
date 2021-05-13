@@ -4,7 +4,7 @@
 
 ## SavedObjectsAddToNamespacesOptions.refresh property
 
-The HyperSec Refresh setting for this operation
+The Elasticsearch Refresh setting for this operation
 
 <b>Signature:</b>
 

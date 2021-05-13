@@ -20,7 +20,7 @@ describe('Node Listing Metric Cell', () => {
           field: 'node_stats.process.cpu.percent',
           metricAgg: 'max',
           label: 'CPU Utilization',
-          description: 'Percentage of CPU usage for the HyperSec process.',
+          description: 'Percentage of CPU usage for the Elasticsearch process.',
           units: '%',
           format: '0,0.[00]',
           hasCalculation: false,

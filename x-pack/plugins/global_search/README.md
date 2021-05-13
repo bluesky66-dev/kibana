@@ -1,7 +1,7 @@
-# HyperSec Kibana GlobalSearch plugin
+# Kibana GlobalSearch plugin
 
 The GlobalSearch plugin provides an easy way to search for various objects, such as applications
-or dashboards from the HyperSec Kibana instance, from both server and client-side plugins
+or dashboards from the Kibana instance, from both server and client-side plugins
 
 ## Consuming the globalSearch API
 

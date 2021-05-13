@@ -5,12 +5,12 @@
 <titleabbrev>Accessibility</titleabbrev>
 ++++
 
-HyperSec is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience, and strive toward ensuring our tools are usable by everyone.
+Elastic is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience, and strive toward ensuring our tools are usable by everyone.
 
 [float]
 [[accessibility-measures]]
 == Measures to support accessibility
-HyperSec takes the following measures to ensure accessibility of Kibana:
+Elastic takes the following measures to ensure accessibility of Kibana:
 
 * Maintains and incorporates an https://elastic.github.io/eui/[accessible component library].
 * Provides continual accessibility training for our staff.
@@ -53,7 +53,7 @@ To see individual tickets, view our https://github.com/elastic/kibana/issues?q=i
 [float]
 [[accessibility-approach]]
 == Assessment approach
-HyperSec assesses the accessibility of Kibana with the following approaches:
+Elastic assesses the accessibility of Kibana with the following approaches:
 
 * *Self-evaluation*: Our employees are familiar with accessibility standards and review new designs and implemented features to confirm that they are accessible.
 * *External evaluation*: We engage external contractors to help us conduct an independent assessment and generate a formal VPAT. Please email accessibility@elastic.co if you’d like a copy.

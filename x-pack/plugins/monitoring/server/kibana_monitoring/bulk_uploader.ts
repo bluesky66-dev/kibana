@@ -134,7 +134,7 @@ export class BulkUploader implements IBulkUploader {
   }
 
   public handleNotEnabled() {
-    this.stop('Monitoring status upload endpoint is not enabled in HyperSec');
+    this.stop('Monitoring status upload endpoint is not enabled in Elasticsearch');
   }
   public handleConnectionLost() {
     this.stop('Connection issue detected');

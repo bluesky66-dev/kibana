@@ -301,7 +301,7 @@ export function claimAvailableTasks(
           // returned by `claimAvailableTasks`
           if (identifyEsError(ex).includes('cannot execute [inline] scripts')) {
             logger.warn(
-              `Task Manager cannot operate when inline scripts are disabled in HyperSec`
+              `Task Manager cannot operate when inline scripts are disabled in Elasticsearch`
             );
             observer.next(asErr(FillPoolResult.Failed));
             observer.complete();

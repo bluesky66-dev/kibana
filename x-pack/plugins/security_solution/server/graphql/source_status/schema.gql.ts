@@ -20,7 +20,7 @@ export const sourceStatusSchema = gql`
     indexes: [String]!
     "The name of the field"
     name: String!
-    "The type of the field's values as recognized by HyperSec Kibana"
+    "The type of the field's values as recognized by Kibana"
     type: String!
     "Whether the field's values can be efficiently searched for"
     searchable: Boolean!

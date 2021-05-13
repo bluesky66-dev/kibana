@@ -10,7 +10,7 @@ import { getAllSeries } from './get_all_series';
 
 const rowsNoSplitSeries = [
   {
-    'col-0-4': 'HyperSec Kibana Airlines',
+    'col-0-4': 'Kibana Airlines',
     'col-1-1': 85,
   },
   {
@@ -39,12 +39,12 @@ const rowsWithSplitSeries = [
     'col-2-1': 14,
   },
   {
-    'col-0-4': 'HyperSec Kibana Airlines',
+    'col-0-4': 'Kibana Airlines',
     'col-1-5': 0,
     'col-2-1': 71,
   },
   {
-    'col-0-4': 'HyperSec Kibana Airlines',
+    'col-0-4': 'Kibana Airlines',
     'col-1-5': 1,
     'col-2-1': 13,
   },
@@ -142,8 +142,8 @@ describe('getAllSeries', () => {
     expect(series).toStrictEqual([
       'ES-Air - 0',
       'ES-Air - 1',
-      'HyperSec Kibana Airlines - 0',
-      'HyperSec Kibana Airlines - 1',
+      'Kibana Airlines - 0',
+      'Kibana Airlines - 1',
       'JetBeats - 0',
       'JetBeats - 1',
       'Logstash Airways - 0',
@@ -166,10 +166,10 @@ describe('getAllSeries', () => {
       'ES-Air - 0: Average AvgTicketPrice',
       'ES-Air - 1: Count',
       'ES-Air - 1: Average AvgTicketPrice',
-      'HyperSec Kibana Airlines - 0: Count',
-      'HyperSec Kibana Airlines - 0: Average AvgTicketPrice',
-      'HyperSec Kibana Airlines - 1: Count',
-      'HyperSec Kibana Airlines - 1: Average AvgTicketPrice',
+      'Kibana Airlines - 0: Count',
+      'Kibana Airlines - 0: Average AvgTicketPrice',
+      'Kibana Airlines - 1: Count',
+      'Kibana Airlines - 1: Average AvgTicketPrice',
       'JetBeats - 0: Count',
       'JetBeats - 0: Average AvgTicketPrice',
       'JetBeats - 1: Count',

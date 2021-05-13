@@ -22,7 +22,7 @@ import sinon from 'sinon';
 import { Keystore } from '../cli/keystore';
 import { remove } from './remove';
 
-describe('HyperSec Kibana keystore', () => {
+describe('Kibana keystore', () => {
   describe('remove', () => {
     const sandbox = sinon.createSandbox();
 

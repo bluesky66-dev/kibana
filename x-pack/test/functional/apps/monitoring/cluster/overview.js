@@ -109,7 +109,7 @@ export default function ({ getService, getPageObjects }) {
       });
     });
 
-    describe('for Yellow cluster with Basic license and no HyperSec Kibana and Logstash', () => {
+    describe('for Yellow cluster with Basic license and no Kibana and Logstash', () => {
       const { setup, tearDown } = getLifecycleMethods(getService, getPageObjects);
 
       before(async () => {

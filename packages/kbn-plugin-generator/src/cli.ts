@@ -62,7 +62,7 @@ export function runCli() {
     {
       usage: 'node scripts/generate_plugin',
       description: `
-        Generate a fresh HyperSec Kibana plugin in the plugins/ directory
+        Generate a fresh Kibana plugin in the plugins/ directory
       `,
       flags: {
         string: ['name'],

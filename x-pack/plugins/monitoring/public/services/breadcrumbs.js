@@ -21,7 +21,7 @@ const createCrumb = (url, label, testSubj, ignoreGlobalState = false) => {
 function getElasticsearchBreadcrumbs(mainInstance) {
   const breadcrumbs = [];
   if (mainInstance.instance) {
-    breadcrumbs.push(createCrumb('#/elasticsearch', 'HyperSec'));
+    breadcrumbs.push(createCrumb('#/elasticsearch', 'Elasticsearch'));
     if (mainInstance.name === 'indices') {
       breadcrumbs.push(
         createCrumb(
@@ -61,7 +61,7 @@ function getElasticsearchBreadcrumbs(mainInstance) {
     breadcrumbs.push(createCrumb(null, mainInstance.instance));
   } else {
     // don't link to Overview when we're possibly on Overview or its sibling tabs
-    breadcrumbs.push(createCrumb(null, 'HyperSec'));
+    breadcrumbs.push(createCrumb(null, 'Elasticsearch'));
   }
   return breadcrumbs;
 }
@@ -70,7 +70,7 @@ function getElasticsearchBreadcrumbs(mainInstance) {
 function getKibanaBreadcrumbs(mainInstance) {
   const breadcrumbs = [];
   if (mainInstance.instance) {
-    breadcrumbs.push(createCrumb('#/kibana', 'HyperSec Kibana'));
+    breadcrumbs.push(createCrumb('#/kibana', 'Kibana'));
     breadcrumbs.push(
       createCrumb(
         '#/kibana/instances',
@@ -82,7 +82,7 @@ function getKibanaBreadcrumbs(mainInstance) {
     breadcrumbs.push(createCrumb(null, mainInstance.instance));
   } else {
     // don't link to Overview when we're possibly on Overview or its sibling tabs
-    breadcrumbs.push(createCrumb(null, 'HyperSec Kibana'));
+    breadcrumbs.push(createCrumb(null, 'Kibana'));
   }
   return breadcrumbs;
 }

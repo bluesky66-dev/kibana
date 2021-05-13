@@ -42,7 +42,7 @@ describe('injectActionParams', () => {
         },
         "kibanaFooterLink": Object {
           "path": "/app/management/insightsAndAlerting/triggersActions/alert/1",
-          "text": "View alert in HyperSec Kibana",
+          "text": "View alert in Kibana",
         },
       }
     `);

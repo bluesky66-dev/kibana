@@ -4,7 +4,7 @@ This guide explains how to set up
 * `docker` to run `nginx` serving a very simple web page
 * `metricbeat` to report metrics from `docker` and `nginx`
 
-This is helpful to test the following features in the HyperSec Kibana Metrics UI:
+This is helpful to test the following features in the Kibana Metrics UI:
 * waffle map and list overview
 * metrics detail page
 
@@ -157,7 +157,7 @@ If this data contains entries for `docker` and for `nginx`, the configuration is
 
 ## Metrics UI
 
-Now start HyperSec Kibana and navigate to the Metrics UI. You should see your containers in the `Docker` tab, and `nginx` metrics on the node detail page for each container.
+Now start Kibana and navigate to the Metrics UI. You should see your containers in the `Docker` tab, and `nginx` metrics on the node detail page for each container.
 
 ## Clean up
 

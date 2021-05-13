@@ -8,7 +8,7 @@ The search functionality abstraction provided by the `search` service of the
 `data` plugin is pretty powerful:
 
 - The execution of the request is delegated to a search strategy, which is
-    executed on the HyperSec Kibana server side.
+    executed on the Kibana server side.
 - Any plugin can register custom search strategies with custom parameters and
     response shapes.
 - Search requests can be cancelled via an `AbortSignal`.
@@ -89,7 +89,7 @@ been created. This uses RxJS's `switchMap()` operator under the hood. The hook
 also makes sure that all observables are unsubscribed from on unmount.
 
 A request can fail due to various reasons that include servers-side errors,
-HyperSec shard failures and network failures. The intention is to map all
+Elasticsearch shard failures and network failures. The intention is to map all
 of them to a common `SearchStrategyError` interface. While the
 `useLatestPartialDataSearchResponse()` hook does that for errors emitted
 natively by the response `Observable`, it's the responsibility of the

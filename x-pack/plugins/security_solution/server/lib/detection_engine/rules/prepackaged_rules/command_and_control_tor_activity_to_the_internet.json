@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "This rule detects network events that may indicate the use of Tor traffic to the Internet. Tor is a network protocol that sends traffic through a series of encrypted tunnels used to conceal a user's location and usage. Tor may be used by threat actors as an alternate communication pathway to conceal the actor's identity and avoid detection.",
   "false_positives": [
@@ -13,14 +13,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Tor Activity to the Internet",
   "query": "event.category:(network or network_traffic) and network.transport:tcp and destination.port:(9001 or 9030) and source.ip:(10.0.0.0/8 or 172.16.0.0/12 or 192.168.0.0/16) and  not destination.ip:(10.0.0.0/8 or 127.0.0.0/8 or 169.254.0.0/16 or 172.16.0.0/12 or 192.168.0.0/16 or 224.0.0.0/4 or \"::1\" or \"FE80::/10\" or \"FF00::/8\")",
   "risk_score": 47,
   "rule_id": "7d2c38d7-ede7-4bdf-b140-445906e6c540",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Network",
     "Threat Detection",

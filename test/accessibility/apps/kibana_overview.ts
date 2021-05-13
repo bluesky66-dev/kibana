@@ -12,7 +12,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const PageObjects = getPageObjects(['common', 'home']);
   const a11y = getService('a11y');
 
-  describe('HyperSec Kibana overview', () => {
+  describe('Kibana overview', () => {
     const esArchiver = getService('esArchiver');
 
     before(async () => {

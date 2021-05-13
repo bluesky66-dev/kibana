@@ -72,7 +72,7 @@ By integrating PagerDuty with alerts, you can:
 [[pagerduty-support]]
 ===== Support
 If you need help with this integration, get in touch with the {kib} team by visiting
-https://support.elastic.co[support.elastic.co] or by using the *Ask HyperSec* option in the {kib} Help menu.
+https://support.elastic.co[support.elastic.co] or by using the *Ask Elastic* option in the {kib} Help menu.
 You can also select the {kib} category at https://discuss.elastic.co/[discuss.elastic.co].
 
 [float]
@@ -91,11 +91,11 @@ Then, select the *Integrations* tab and click the *New Integration* button.
 * If you are creating a new service for your integration,
 go to
 https://support.pagerduty.com/docs/services-and-integrations#section-configuring-services-and-integrations[Configuring Services and Integrations]
-and follow the steps outlined in the *Create a New Service* section, selecting *HyperSec Alerts* as the *Integration Type* in step 4.
-Continue with the <<pagerduty-in-elastic, In HyperSec>> section once you have finished these steps.
+and follow the steps outlined in the *Create a New Service* section, selecting *Elastic Alerts* as the *Integration Type* in step 4.
+Continue with the <<pagerduty-in-elastic, In Elastic>> section once you have finished these steps.
 
-. Enter an *Integration Name* in the format HyperSec-service-name (for example, HyperSec-Alerting or Kibana-APM-Alerting)
-and select *HyperSec Alerts* from the *Integration Type* menu.
+. Enter an *Integration Name* in the format Elastic-service-name (for example, Elastic-Alerting or Kibana-APM-Alerting)
+and select *Elastic Alerts* from the *Integration Type* menu.
 . Click *Add Integration* to save your new integration.
 +
 You will be redirected to the *Integrations* tab for your service. An Integration Key is generated on this screen.
@@ -103,10 +103,10 @@ You will be redirected to the *Integrations* tab for your service. An Integratio
 [role="screenshot"]
 image::user/alerting/images/pagerduty-integration.png[PagerDuty Integrations tab]
 
-. Save this key, as you will use it when you configure the integration with HyperSec in the next section.
+. Save this key, as you will use it when you configure the integration with Elastic in the next section.
 
 [[pagerduty-in-elastic]]
-*In HyperSec*
+*In Elastic*
 
 . Create a PagerDuty Connector in Kibana.  You can:
 +

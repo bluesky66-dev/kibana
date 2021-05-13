@@ -23,9 +23,9 @@ export type TypeToString<T> = KnownTypeToString<T> | UnmappedTypeStrings;
  * the `type` key as a string literal type for it.
  */
 // prettier-ignore
-export type KnownTypeToString<T> =
-  T extends string ? 'string' :
-  T extends boolean ? 'boolean' :
+export type KnownTypeToString<T> = 
+  T extends string ? 'string' : 
+  T extends boolean ? 'boolean' : 
   T extends number ? 'number' :
   T extends null ? 'null' :
   T extends { type: string } ? T['type'] :

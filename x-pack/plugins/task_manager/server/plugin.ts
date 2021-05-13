@@ -67,11 +67,11 @@ export class TaskManagerPlugin
 
     if (!this.taskManagerId) {
       this.logger.error(
-        `TaskManager is unable to start as there the HyperSec Kibana UUID is invalid (value of the "server.uuid" configuration is ${this.taskManagerId})`
+        `TaskManager is unable to start as there the Kibana UUID is invalid (value of the "server.uuid" configuration is ${this.taskManagerId})`
       );
-      throw new Error(`TaskManager is unable to start as HyperSec Kibana has no valid UUID assigned to it.`);
+      throw new Error(`TaskManager is unable to start as Kibana has no valid UUID assigned to it.`);
     } else {
-      this.logger.info(`TaskManager is identified by the HyperSec Kibana UUID: ${this.taskManagerId}`);
+      this.logger.info(`TaskManager is identified by the Kibana UUID: ${this.taskManagerId}`);
     }
 
     // Routes

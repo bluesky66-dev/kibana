@@ -114,32 +114,32 @@ RUN groupadd --gid 1000 kibana && \
 
 LABEL org.label-schema.build-date="{{dockerBuildDate}}" \
   org.label-schema.license="{{license}}" \
-  org.label-schema.name="HyperSec Kibana" \
+  org.label-schema.name="Kibana" \
   org.label-schema.schema-version="1.0" \
   org.label-schema.url="https://www.elastic.co/products/kibana" \
   org.label-schema.usage="https://www.elastic.co/guide/en/kibana/reference/index.html" \
   org.label-schema.vcs-ref="{{revision}}" \
   org.label-schema.vcs-url="https://github.com/elastic/kibana" \
-  org.label-schema.vendor="HyperSec" \
+  org.label-schema.vendor="Elastic" \
   org.label-schema.version="{{version}}" \
   org.opencontainers.image.created="{{dockerBuildDate}}" \
   org.opencontainers.image.documentation="https://www.elastic.co/guide/en/kibana/reference/index.html" \
   org.opencontainers.image.licenses="{{license}}" \
   org.opencontainers.image.revision="{{revision}}" \
   org.opencontainers.image.source="https://github.com/elastic/kibana" \
-  org.opencontainers.image.title="HyperSec Kibana" \
+  org.opencontainers.image.title="Kibana" \
   org.opencontainers.image.url="https://www.elastic.co/products/kibana" \
-  org.opencontainers.image.vendor="HyperSec" \
+  org.opencontainers.image.vendor="Elastic" \
   org.opencontainers.image.version="{{version}}"
 
 {{#ubi}}
-LABEL name="HyperSec Kibana" \
+LABEL name="Kibana" \
   maintainer="infra@elastic.co" \
-  vendor="HyperSec" \
+  vendor="Elastic" \
   version="{{version}}" \
   release="1" \
-  summary="HyperSec Kibana" \
-  description="Your window into the HyperSec Stack."
+  summary="Kibana" \
+  description="Your window into the Elastic Stack."
 
 RUN mkdir /licenses && \
     cp LICENSE.txt /licenses/LICENSE

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the PowerShell process loading the Task Scheduler COM DLL followed by an outbound RPC network connection within a short time period. This may indicate lateral movement or remote discovery via scheduled tasks.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Outbound Scheduled Task Activity via PowerShell",
   "query": "sequence by host.id, process.entity_id with maxspan = 5s\n [library where dll.name : \"taskschd.dll\" and process.name : (\"powershell.exe\", \"pwsh.exe\")]\n [network where process.name : (\"powershell.exe\", \"pwsh.exe\") and destination.port == 135 and not destination.address in (\"127.0.0.1\", \"::1\")]\n",
   "references": [
@@ -23,7 +23,7 @@
   "rule_id": "5cd55388-a19c-47c7-8ec4-f41656c2fded",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

@@ -47,12 +47,12 @@ describe('creating index patterns from yaml fields', () => {
 
   const name = 'testField';
 
-  test('createIndexPatternFields function creates HyperSec Kibana index pattern fields and fieldFormatMap', () => {
+  test('createIndexPatternFields function creates Kibana index pattern fields and fieldFormatMap', () => {
     const indexPatternFields = createIndexPatternFields(fields);
     expect(indexPatternFields).toMatchSnapshot('createIndexPatternFields');
   });
 
-  test('createIndexPattern function creates HyperSec Kibana index pattern', () => {
+  test('createIndexPattern function creates Kibana index pattern', () => {
     const indexPattern = createIndexPattern('logs', fields);
     expect(indexPattern).toMatchSnapshot('createIndexPattern');
   });

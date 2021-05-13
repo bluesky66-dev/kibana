@@ -24,13 +24,13 @@ const mockFeatures = [
   },
   {
     category: FeatureCatalogueCategory.ADMIN,
-    description: 'Add and manage your fleet of HyperSec Agents and integrations.',
+    description: 'Add and manage your fleet of Elastic Agents and integrations.',
     showOnHomePage: true,
     icon: 'indexManagementApp',
     id: 'ingestManager',
     order: 510,
     path: '/app/ingestManager',
-    title: 'Add HyperSec Agent',
+    title: 'Add Elastic Agent',
   },
   {
     category: FeatureCatalogueCategory.DATA,

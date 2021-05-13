@@ -325,7 +325,7 @@ export class SearchEmbeddable
       defaultMessage: 'Data',
     });
     const description = i18n.translate('discover.embeddable.inspectorRequestDescription', {
-      defaultMessage: 'This request queries HyperSec to fetch the data for the search.',
+      defaultMessage: 'This request queries Elasticsearch to fetch the data for the search.',
     });
 
     const inspectorRequest = this.inspectorAdapters.requests!.start(title, {

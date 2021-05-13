@@ -69,7 +69,7 @@ exports[`CustomUrlEditor renders the editor for a dashboard type URL with a labe
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",
@@ -266,7 +266,7 @@ exports[`CustomUrlEditor renders the editor for a discover type URL with an enti
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",
@@ -500,7 +500,7 @@ exports[`CustomUrlEditor renders the editor for a discover type URL with valid t
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",
@@ -734,7 +734,7 @@ exports[`CustomUrlEditor renders the editor for a new dashboard type URL with no
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",
@@ -935,7 +935,7 @@ exports[`CustomUrlEditor renders the editor for other type of URL with duplicate
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",
@@ -1045,7 +1045,7 @@ exports[`CustomUrlEditor renders the editor for other type of URL with unique la
           Array [
             Object {
               "id": "KIBANA_DASHBOARD",
-              "label": "HyperSec Kibana dashboard",
+              "label": "Kibana dashboard",
             },
             Object {
               "id": "KIBANA_DISCOVER",

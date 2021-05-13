@@ -1,3 +1,3 @@
 # `cloud` plugin
 
-The `cloud` plugin adds cloud specific features to HyperSec Kibana.
+The `cloud` plugin adds cloud specific features to Kibana.

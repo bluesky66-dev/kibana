@@ -76,7 +76,7 @@ export class TokenAuthenticationProvider extends BaseAuthenticationProvider {
         }>({ body: { grant_type: 'password', username, password } })
       ).body;
 
-      this.logger.debug('Get token API request to HyperSec successful');
+      this.logger.debug('Get token API request to Elasticsearch successful');
       return AuthenticationResult.succeeded(
         this.authenticationInfoToAuthenticatedUser(authenticationInfo),
         {

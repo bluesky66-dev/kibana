@@ -25,7 +25,7 @@ const createConfig = (
 };
 
 describe('parseClientOptions', () => {
-  it('includes headers designing the HTTP request as originating from HyperSec Kibana by default', () => {
+  it('includes headers designing the HTTP request as originating from Kibana by default', () => {
     const config = createConfig({});
 
     expect(parseClientOptions(config, false)).toEqual(

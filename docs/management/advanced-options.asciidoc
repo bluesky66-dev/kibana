@@ -71,7 +71,7 @@ detected by the browser.
 [[datenanosformat]]`dateNanosFormat`::
 The format to use for displaying
 https://momentjs.com/docs/#/displaying/format/[pretty formatted dates] of
-{ref}/date_nanos.html[HyperSec date_nanos type].
+{ref}/date_nanos.html[Elasticsearch date_nanos type].
 
 [[defaultindex]]`defaultIndex`::
 The index to access if no index is set. The default is `null`.
@@ -163,7 +163,7 @@ Set this property to `true` to shorten long field names in visualizations. For
 example, show `f.b.baz` instead of `foo.bar.baz`.
 
 [[sort-options]]`sort:options`::
-Options for the HyperSec
+Options for the Elasticsearch
 {ref}/search-request-body.html#request-body-search-sort[sort] parameter.
 
 [[state-storeinsessionstorage]]`state:storeInSessionStorage`::
@@ -494,5 +494,5 @@ only production-ready visualizations are available to users.
 [[kibana-telemetry-settings]]
 ==== Usage data
 
-Helps improve the HyperSec Stack by providing usage statistics for
-basic features. This data will not be shared outside of HyperSec.
+Helps improve the Elastic Stack by providing usage statistics for
+basic features. This data will not be shared outside of Elastic.

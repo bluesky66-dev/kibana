@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies modifications to an environment variable using the built-in launchctl command. Adversaries may execute their own malicious payloads by hijacking certain environment variables to load arbitrary libraries or bypass certain restrictions.",
   "from": "now-9m",
@@ -9,7 +9,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Modification of Environment Variable via Launchctl",
   "query": "event.category:process and event.type:start and process.name:launchctl and process.args:(setenv and not (JAVA*_HOME or RUNTIME_JAVA_HOME or DBUS_LAUNCHD_SESSION_BUS_SOCKET or ANT_HOME))",
   "references": [
@@ -19,7 +19,7 @@
   "rule_id": "7453e19e-3dbf-4e4e-9ae0-33d6c6ed15e1",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

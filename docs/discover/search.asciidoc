@@ -17,7 +17,7 @@ language, based on the
 Lucene https://lucene.apache.org/core/2_9_4/queryparsersyntax.html[query syntax],
 you can switch to it from the KQL popup in the query bar. When you enable the
 legacy query language, you can use the full
-JSON-based {ref}/query-dsl.html[HyperSec Query DSL].
+JSON-based {ref}/query-dsl.html[Elasticsearch Query DSL].
 
 
 [float]

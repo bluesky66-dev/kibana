@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies when the built in macOS Installer program generates a network event after attempting to install a .pkg file. This activity has been observed being leveraged by malware.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "macOS Installer Spawns Network Event",
   "query": "sequence by process.entity_id with maxspan=1m\n  [ process where event.type == \"start\" and host.os.family == \"macos\" and \n      process.parent.executable in (\"/usr/sbin/installer\", \"/System/Library/CoreServices/Installer.app/Contents/MacOS/Installer\") ]\n  [ network where not cidrmatch(destination.ip,\n      \"192.168.0.0/16\",\n      \"10.0.0.0/8\",\n      \"172.16.0.0/12\",\n      \"224.0.0.0/8\",\n      \"127.0.0.0/8\",\n      \"169.254.0.0/16\",\n      \"::1\",\n      \"FE80::/10\",\n      \"FF00::/8\") ]\n",
   "references": [
@@ -21,7 +21,7 @@
   "rule_id": "99239e7d-b0d4-46e3-8609-acafcf99f68c",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "macOS",
     "Threat Detection",

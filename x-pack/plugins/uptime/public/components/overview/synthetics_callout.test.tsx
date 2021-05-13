@@ -88,7 +88,7 @@ describe('SyntheticsCallout', () => {
       <Fragment>
         <EuiCallOut
           iconType="beaker"
-          title="HyperSec Synthetics"
+          title="Elastic Synthetics"
         >
           <p>
             <FormattedMessage

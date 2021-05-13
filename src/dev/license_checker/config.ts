@@ -9,8 +9,8 @@
 // The following list applies to packages both
 // used as dependencies or dev dependencies
 export const LICENSE_WHITELIST = [
-  'HyperSec-License',
-  'SSPL-1.0 OR HyperSec License 2.0',
+  'Elastic-License',
+  'SSPL-1.0 OR Elastic License 2.0',
   '0BSD',
   '(BSD-2-Clause OR MIT OR Apache-2.0)',
   '(BSD-2-Clause OR MIT)',

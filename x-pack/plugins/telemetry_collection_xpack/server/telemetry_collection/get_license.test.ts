@@ -21,7 +21,7 @@ describe('getLicenseFromLocalOrMaster', () => {
     expect(esClient.license.get).toHaveBeenCalledTimes(1);
   });
 
-  test('returns the license it fetches from HyperSec', async () => {
+  test('returns the license it fetches from Elasticsearch', async () => {
     const esClient = elasticsearchServiceMock.createClusterClient().asInternalUser;
     // The local fetch succeeds
     esClient.license.get.mockResolvedValue({ body: { license: { type: 'basic' } } } as any);

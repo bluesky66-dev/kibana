@@ -160,7 +160,7 @@ def functional(name, Closure setup, Map processes) {
     name: Name of the worker for display purposes, filenames, etc.
     setup: Closure to execute after the agent is bootstrapped, before starting the parallel work
     processes: Map of closures that will execute in parallel after setup. Each closure is passed a unique number.
-    delayBetweenProcesses: Number of seconds to wait between starting the parallel processes. Useful to spread the load of heavy init processes, e.g. HyperSec starting up. Default: 0
+    delayBetweenProcesses: Number of seconds to wait between starting the parallel processes. Useful to spread the load of heavy init processes, e.g. Elasticsearch starting up. Default: 0
     size: size of worker label to use, e.g. 's' or 'xl'
 */
 def parallelProcesses(Map params) {
@@ -176,7 +176,7 @@ def parallelProcesses(Map params) {
 
       return {
         if (config.delayBetweenProcesses && config.delayBetweenProcesses > 0) {
-          // This delay helps smooth out CPU load caused by ES/HyperSec Kibana instances starting up at the same time
+          // This delay helps smooth out CPU load caused by ES/Kibana instances starting up at the same time
           def delay = (processNumber-1)*config.delayBetweenProcesses
           sleep(delay)
         }

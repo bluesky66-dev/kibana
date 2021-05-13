@@ -30,7 +30,7 @@ const config = ({
 } as unknown) as IUiSettingsClient;
 
 describe('getEsQueryConfig', () => {
-  test('should return the parameters of an HyperSec query config requested', () => {
+  test('should return the parameters of an Elasticsearch query config requested', () => {
     const result = getEsQueryConfig(config);
     const expected = {
       allowLeadingWildcards: {

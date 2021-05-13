@@ -27,7 +27,7 @@ IF EXIST "%CONFIG_DIR%\node.options" (
   )
 )
 
-TITLE HyperSec Kibana Keystore
+TITLE Kibana Keystore
 "%NODE%" "%DIR%\src\cli_keystore\dist" %*
 
 :finally

@@ -15,7 +15,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const appsMenu = getService('appsMenu');
   const esArchiver = getService('esArchiver');
 
-  describe('HyperSec Kibana browser back navigation should work', function describeIndexTests() {
+  describe('Kibana browser back navigation should work', function describeIndexTests() {
     before(async () => {
       await esArchiver.loadIfNeeded('discover');
       await esArchiver.loadIfNeeded('logstash_functional');

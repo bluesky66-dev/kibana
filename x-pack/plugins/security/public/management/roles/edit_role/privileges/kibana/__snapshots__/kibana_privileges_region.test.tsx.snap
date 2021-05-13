@@ -3,7 +3,7 @@
 exports[`<KibanaPrivileges> renders without crashing 1`] = `
 <CollapsiblePanel
   iconType="logoKibana"
-  title="HyperSec Kibana"
+  title="Kibana"
 >
   <SpaceAwarePrivilegeSection
     canCustomizeSubFeaturePrivileges={true}

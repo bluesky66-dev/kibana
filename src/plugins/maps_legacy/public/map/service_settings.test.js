@@ -282,7 +282,7 @@ describe('service_settings (FKA tile_map test)', function () {
     it('should load manifest (individual props)', async () => {
       const expected = {
         attribution:
-          '<a rel="noreferrer noopener" href="http://www.naturalearthdata.com/about/terms-of-use">Made with NaturalEarth</a> | <a rel="noreferrer noopener" href="https://www.elastic.co/elastic-maps-service">HyperSec Maps Service</a>',
+          '<a rel="noreferrer noopener" href="http://www.naturalearthdata.com/about/terms-of-use">Made with NaturalEarth</a> | <a rel="noreferrer noopener" href="https://www.elastic.co/elastic-maps-service">Elastic Maps Service</a>',
         format: 'geojson',
         fields: [
           { type: 'id', name: 'iso2', description: 'ISO 3166-1 alpha-2 code' },
@@ -328,7 +328,7 @@ describe('service_settings (FKA tile_map test)', function () {
         return layer.id === 'world_countries_with_compromised_attribution';
       });
       expect(fileLayer.attribution).toEqual(
-        '<a rel="noreferrer noopener" href="http://www.naturalearthdata.com/about/terms-of-use">&lt;div onclick=\'alert(1\')&gt;Made with NaturalEarth&lt;/div&gt;</a> | <a rel="noreferrer noopener">HyperSec Maps Service</a>'
+        '<a rel="noreferrer noopener" href="http://www.naturalearthdata.com/about/terms-of-use">&lt;div onclick=\'alert(1\')&gt;Made with NaturalEarth&lt;/div&gt;</a> | <a rel="noreferrer noopener">Elastic Maps Service</a>'
       );
     });
   });

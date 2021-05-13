@@ -4,14 +4,14 @@ exports[`LoginPage disabled form states renders as expected when a connection to
 <DisabledLoginForm
   message={
     <FormattedMessage
-      defaultMessage="See the HyperSec Kibana logs for details and try reloading the page."
+      defaultMessage="See the Kibana logs for details and try reloading the page."
       id="xpack.security.loginPage.esUnavailableMessage"
       values={Object {}}
     />
   }
   title={
     <FormattedMessage
-      defaultMessage="Cannot connect to the HyperSec cluster"
+      defaultMessage="Cannot connect to the Elasticsearch cluster"
       id="xpack.security.loginPage.esUnavailableTitle"
       values={Object {}}
     />
@@ -23,7 +23,7 @@ exports[`LoginPage disabled form states renders as expected when an unknown logi
 <DisabledLoginForm
   message={
     <FormattedMessage
-      defaultMessage="See the HyperSec Kibana logs for details and try reloading the page."
+      defaultMessage="See the Kibana logs for details and try reloading the page."
       id="xpack.security.loginPage.unknownLayoutMessage"
       values={Object {}}
     />
@@ -80,14 +80,14 @@ exports[`LoginPage disabled form states renders as expected when xpack is not av
 <DisabledLoginForm
   message={
     <FormattedMessage
-      defaultMessage="To use the full set of free features in this distribution of HyperSec Kibana, please update HyperSec to the default distribution."
+      defaultMessage="To use the full set of free features in this distribution of Kibana, please update Elasticsearch to the default distribution."
       id="xpack.security.loginPage.xpackUnavailableMessage"
       values={Object {}}
     />
   }
   title={
     <FormattedMessage
-      defaultMessage="Cannot connect to the HyperSec cluster currently configured for HyperSec Kibana."
+      defaultMessage="Cannot connect to the Elasticsearch cluster currently configured for Kibana."
       id="xpack.security.loginPage.xpackUnavailableTitle"
       values={Object {}}
     />
@@ -237,7 +237,7 @@ exports[`LoginPage page renders as expected 1`] = `
       >
         <h1>
           <FormattedMessage
-            defaultMessage="Welcome to HyperSec"
+            defaultMessage="Welcome to Elastic"
             id="xpack.security.loginPage.welcomeTitle"
             values={Object {}}
           />

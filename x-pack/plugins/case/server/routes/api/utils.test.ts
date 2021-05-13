@@ -50,7 +50,7 @@ describe('Utils', () => {
         connector,
         createdDate: '2020-04-09T09:43:51.778Z',
         email: 'elastic@elastic.co',
-        full_name: 'HyperSec',
+        full_name: 'Elastic',
         username: 'elastic',
       };
 
@@ -82,7 +82,7 @@ describe('Utils', () => {
           "created_at": "2020-04-09T09:43:51.778Z",
           "created_by": Object {
             "email": "elastic@elastic.co",
-            "full_name": "HyperSec",
+            "full_name": "Elastic",
             "username": "elastic",
           },
           "description": "A description",
@@ -226,7 +226,7 @@ describe('Utils', () => {
         type: CommentType.user as const,
         createdDate: '2020-04-09T09:43:51.778Z',
         email: 'elastic@elastic.co',
-        full_name: 'HyperSec',
+        full_name: 'Elastic',
         username: 'elastic',
         associationType: AssociationType.case,
       };
@@ -239,7 +239,7 @@ describe('Utils', () => {
           "created_at": "2020-04-09T09:43:51.778Z",
           "created_by": Object {
             "email": "elastic@elastic.co",
-            "full_name": "HyperSec",
+            "full_name": "Elastic",
             "username": "elastic",
           },
           "pushed_at": null,

@@ -13,7 +13,7 @@ import { Query } from '../../query/types';
 
 describe('build query', () => {
   describe('buildQueryFromLucene', () => {
-    test('should return the parameters of an HyperSec bool query', () => {
+    test('should return the parameters of an Elasticsearch bool query', () => {
       const result = buildQueryFromLucene([], {});
       const expected = {
         must: [],

@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-When using [Visual Studio Code](https://code.visualstudio.com/) with APM it's best to set up a [multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) and add the `x-pack/plugins/apm` directory, the `x-pack` directory, and the root of the HyperSec Kibana repository to the workspace. This makes it so you can navigate and search within APM and use the wider workspace roots when you need to widen your search.
+When using [Visual Studio Code](https://code.visualstudio.com/) with APM it's best to set up a [multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces) and add the `x-pack/plugins/apm` directory, the `x-pack` directory, and the root of the Kibana repository to the workspace. This makes it so you can navigate and search within APM and use the wider workspace roots when you need to widen your search.
 
 ## Using the Jest extension
 
@@ -14,7 +14,7 @@ Some of the benefits of using the extension over just running it in a terminal a
 • It can automatically update your snapshots when they change
 • Coverage mapping
 
-The extension doesn't really work well if you're trying to use it on all of HyperSec Kibana or all of X-Pack, but it works well if you configure it to run only on the files in APM.
+The extension doesn't really work well if you're trying to use it on all of Kibana or all of X-Pack, but it works well if you configure it to run only on the files in APM.
 
 If you have a workspace configured as described above you should have:
 
@@ -40,4 +40,4 @@ To make the [VSCode debugger](https://vscode.readthedocs.io/en/latest/editor/deb
 }
 ```
 
-(you'll want `runtimeVersion` to match what's in the HyperSec Kibana root .nvmrc. Depending on your setup, you might be able to remove this line.)
+(you'll want `runtimeVersion` to match what's in the Kibana root .nvmrc. Depending on your setup, you might be able to remove this line.)

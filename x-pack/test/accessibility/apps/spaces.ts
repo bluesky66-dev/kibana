@@ -18,13 +18,13 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const retry = getService('retry');
   const toasts = getService('toasts');
 
-  describe('HyperSec Kibana spaces page meets a11y validations', () => {
+  describe('Kibana spaces page meets a11y validations', () => {
     before(async () => {
       await esArchiver.load('empty_kibana');
       await PageObjects.common.navigateToApp('home');
     });
 
-    it('a11y test for manage spaces menu from top nav on HyperSec Kibana home', async () => {
+    it('a11y test for manage spaces menu from top nav on Kibana home', async () => {
       await testSubjects.click('space-avatar-default');
       await retry.waitFor(
         'Manage spaces option visible',

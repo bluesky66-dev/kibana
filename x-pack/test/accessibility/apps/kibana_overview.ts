@@ -11,7 +11,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const PageObjects = getPageObjects(['common', 'home']);
   const a11y = getService('a11y');
 
-  describe('HyperSec Kibana overview', () => {
+  describe('Kibana overview', () => {
     const esArchiver = getService('esArchiver');
 
     before(async () => {
@@ -23,7 +23,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
       await esArchiver.unload('empty_kibana');
     });
 
-    it('HyperSec Kibana overview', async () => {
+    it('Kibana overview', async () => {
       await a11y.testAppSnapshot();
     });
   });

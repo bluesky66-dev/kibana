@@ -125,7 +125,7 @@ describe('date_range params', () => {
       expect(params.time_zone).toBe('defaultTimeZone');
     });
 
-    test('should use the HyperSec Kibana time_zone if no parameter specified', () => {
+    test('should use the Kibana time_zone if no parameter specified', () => {
       aggTypesDependencies = {
         ...aggTypesDependencies,
         getConfig: () => 'kibanaTimeZone' as any,

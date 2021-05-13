@@ -6580,7 +6580,7 @@
               "<any>>"
             ],
             "description": [
-              "\nFetch this source from HyperSec, returning an observable over the response(s)"
+              "\nFetch this source from Elasticsearch, returning an observable over the response(s)"
             ],
             "children": [
               {

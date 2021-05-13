@@ -2,7 +2,7 @@
 
 exports[`OptInDetailsComponent renders as expected 1`] = `
 <EuiCallOut
-  title="Help us improve the HyperSec Stack"
+  title="Help us improve the Elastic Stack"
 >
   <FormattedMessage
     defaultMessage="To learn about how usage data helps us manage and improve our products and services, see our {privacyStatementLink}. To stop collection, {disableLink}."

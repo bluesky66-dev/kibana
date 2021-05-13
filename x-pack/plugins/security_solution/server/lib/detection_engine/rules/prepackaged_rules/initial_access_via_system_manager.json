@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the execution of commands and scripts via System Manager. Execution methods such as RunShellScript, RunPowerShellScript, and alike can be abused by an authenticated attacker to install a backdoor or to interact with a compromised instance via reverse-shell using system only commands.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS Execution via System Manager",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:aws.cloudtrail and event.provider:ssm.amazonaws.com and event.action:SendCommand and event.outcome:success",
@@ -24,7 +24,7 @@
   "rule_id": "37b211e8-4e2f-440f-86d8-06cc8f158cfa",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

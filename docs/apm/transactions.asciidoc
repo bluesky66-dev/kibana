@@ -2,7 +2,7 @@
 [[transactions]]
 === Transactions
 
-TIP: A {apm-overview-ref-v}/transactions.html[transaction] describes an event captured by an HyperSec APM agent instrumenting a service.
+TIP: A {apm-overview-ref-v}/transactions.html[transaction] describes an event captured by an Elastic APM agent instrumenting a service.
 APM agents automatically collect performance metrics on HTTP requests, database queries, and much more.
 
 [role="screenshot"]
@@ -150,8 +150,8 @@ Learn more about a trace sample in the *Metadata* tab:
 * URL
 * User - Requires additional configuration, but allows you to see which user experienced the current transaction.
 
-TIP: All of this data is stored in documents in HyperSec.
-This means you can select "Actions - View sample document" to see the actual HyperSec document under the discover tab.
+TIP: All of this data is stored in documents in Elasticsearch.
+This means you can select "Actions - View sample document" to see the actual Elasticsearch document under the discover tab.
 
 *Trace sample logs*
 

@@ -4,7 +4,7 @@
 
 Follow the [Functional Test Runner instructions](https://www.elastic.co/guide/en/kibana/current/development-functional-tests.html#_running_functional_tests).
 
-There are two suites available to run, a suite that requires a HyperSec Kibana instance without an `enterpriseSearch.host`
+There are two suites available to run, a suite that requires a Kibana instance without an `enterpriseSearch.host`
 configured, and one that does. The later also [requires a running Enterprise Search instance](#enterprise-search-requirement), and a Private API key
 from that instance set in an Environment variable.
 
@@ -35,7 +35,7 @@ cd script/stack_scripts
 
 Requirements for Enterprise Search:
 
-- Running on port 3002 against a separate HyperSec cluster.
-- HyperSec must have a platinum or greater level license (or trial).
+- Running on port 3002 against a separate Elasticsearch cluster.
+- Elasticsearch must have a platinum or greater level license (or trial).
 - Must have Standard or Native Auth configured with an `enterprise_search` user with password `changeme`.
 - There should be NO existing Engines or Meta Engines.

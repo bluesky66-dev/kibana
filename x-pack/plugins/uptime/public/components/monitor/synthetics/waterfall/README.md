@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The waterfall chart component aims to be agnostic in it's approach, so that a variety of consumers / solutions can use it. Some of HyperSec Chart's features are used in a non-standard way to facilitate this flexibility, this README aims to cover some of the things that might be less obvious, and also provides a high level overview of implementation.
+The waterfall chart component aims to be agnostic in it's approach, so that a variety of consumers / solutions can use it. Some of Elastic Chart's features are used in a non-standard way to facilitate this flexibility, this README aims to cover some of the things that might be less obvious, and also provides a high level overview of implementation.
 
 ## Requirements for usage
 
@@ -30,7 +30,7 @@ The custom tooltip component can use the context to access the full set of chart
 
 Some consumers might need colours, some might need iconography and so on. The waterfall chart doesn't make assumptions, and will render out the React content returned by `renderTooltipItem`.
 
-IMPORTANT: `renderTooltipItem` is provided via context and not as a direct prop due to the fact the custom tooltip component would usually only have access to the props provided directly to it from HyperSec Charts. 
+IMPORTANT: `renderTooltipItem` is provided via context and not as a direct prop due to the fact the custom tooltip component would usually only have access to the props provided directly to it from Elastic Charts. 
 
 ### Colours
 
@@ -48,7 +48,7 @@ The notion of `config` has been mentioned already. But this is a place that cons
 
 ### Sticky top axis
 
-By default there is no "sticky" axis functionality in HyperSec Charts, therefore a second chart is rendered, this contains a replica of the top axis, and renders one empty data point (as a chart can't only have an axis). This second chart is then positioned in such a way that it covers the top of the real axis, and remains fixed.
+By default there is no "sticky" axis functionality in Elastic Charts, therefore a second chart is rendered, this contains a replica of the top axis, and renders one empty data point (as a chart can't only have an axis). This second chart is then positioned in such a way that it covers the top of the real axis, and remains fixed.
 
 ## Data
 

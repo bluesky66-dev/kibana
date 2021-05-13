@@ -495,7 +495,7 @@ export const mockUserActions: Array<SavedObject<CaseUserActionAttributes>> = [
       action_at: '2021-02-03T17:41:03.771Z',
       action_by: {
         email: 'elastic@elastic.co',
-        full_name: 'HyperSec',
+        full_name: 'Elastic',
         username: 'elastic',
       },
       new_value:
@@ -514,7 +514,7 @@ export const mockUserActions: Array<SavedObject<CaseUserActionAttributes>> = [
       action_at: '2021-02-03T17:44:21.067Z',
       action_by: {
         email: 'elastic@elastic.co',
-        full_name: 'HyperSec',
+        full_name: 'Elastic',
         username: 'elastic',
       },
       new_value:

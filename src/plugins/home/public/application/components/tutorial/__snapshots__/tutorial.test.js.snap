@@ -82,7 +82,7 @@ exports[`isCloudEnabled is false should render ON_PREM instructions with instruc
                   Object {
                     "data-test-subj": "onCloudTutorial",
                     "id": "onPremElasticCloud",
-                    "label": "HyperSec Cloud",
+                    "label": "Elastic Cloud",
                   },
                 ]
               }

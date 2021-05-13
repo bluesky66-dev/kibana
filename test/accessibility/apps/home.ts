@@ -12,16 +12,16 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const PageObjects = getPageObjects(['common', 'home']);
   const a11y = getService('a11y');
 
-  describe('HyperSec Kibana Home', () => {
+  describe('Kibana Home', () => {
     before(async () => {
       await PageObjects.common.navigateToApp('home');
     });
 
-    it('HyperSec Kibana Home view', async () => {
+    it('Kibana Home view', async () => {
       await a11y.testAppSnapshot();
     });
 
-    it('Add HyperSec Kibana sample data page', async () => {
+    it('Add Kibana sample data page', async () => {
       await PageObjects.common.navigateToUrl('home', '/tutorial_directory/sampleData', {
         useActualUrl: true,
       });

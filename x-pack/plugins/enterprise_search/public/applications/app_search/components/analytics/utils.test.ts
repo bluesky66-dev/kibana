@@ -8,7 +8,7 @@
 import { convertToChartData, convertTagsToSelectOptions } from './utils';
 
 describe('convertToChartData', () => {
-  it('converts server-side analytics data into an array of objects that HyperSec Charts can consume', () => {
+  it('converts server-side analytics data into an array of objects that Elastic Charts can consume', () => {
     expect(
       convertToChartData({
         startDate: '1970-01-01',

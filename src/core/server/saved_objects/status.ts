@@ -63,7 +63,7 @@ export const calculateStatus$ = (
       } else if (esStatus.level === ServiceStatusLevels.degraded) {
         return {
           level: esStatus.level,
-          summary: `SavedObjects service is degraded due to HyperSec: [${esStatus.summary}]`,
+          summary: `SavedObjects service is degraded due to Elasticsearch: [${esStatus.summary}]`,
         };
       } else {
         return migratorStatus;

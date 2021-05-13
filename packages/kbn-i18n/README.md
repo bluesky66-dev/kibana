@@ -1,9 +1,9 @@
 # I18n
 
-HyperSec Kibana relies on several UI frameworks (ReactJS and AngularJS) and
+Kibana relies on several UI frameworks (ReactJS and AngularJS) and
 requires localization in different environments (browser and NodeJS).
 Internationalization engine is framework agnostic and consumable in
-all parts of HyperSec Kibana (ReactJS, AngularJS and NodeJS). In order to simplify
+all parts of Kibana (ReactJS, AngularJS and NodeJS). In order to simplify
 internationalization in UI frameworks, the additional abstractions are
 built around the I18n engine: `react-intl` for React and custom
 components for AngularJS. [React-intl](https://github.com/yahoo/react-intl)
@@ -21,7 +21,7 @@ are used in order to simplify message location search. For example, if
 we are going to translate the title of `/management/sections/objects/_objects.html`
 file, we should use message path like this: `'management.objects.objectsTitle'`.
 
-Each HyperSec Kibana plugin has a separate folder with translation files located at
+Each Kibana plugin has a separate folder with translation files located at
 ```
 {path/to/plugin}/translations/{locale}.json
 ```
@@ -439,6 +439,6 @@ In order to translate attributes in AngularJS we should use `i18nFilter`:
 
 In order to simplify localization process, some additional tools were implemented:
 - tool for verifying all translations have translatable strings and extracting default messages from templates
-- tool for verifying translation files and integrating them to HyperSec Kibana
+- tool for verifying translation files and integrating them to Kibana
 
 [I18n tools documentation](../../src/dev/i18n/README.md)

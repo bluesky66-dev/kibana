@@ -3,7 +3,7 @@
   "logs": [{
     "timestamp": 1552669641089,
     "component": "o.e.n.Node",
-    "node": "HyperSec-MBP.local",
+    "node": "Elastic-MBP.local",
     "index": ".monitoring-es",
     "level": "INFO",
     "type": "server",

@@ -1,7 +1,7 @@
 This document is part of the original drafts for ingest management documentation in `docs/ingest_manager` and may be outdated.
 Overall documentation of Ingest Management is now maintained in the `elastic/stack-docs` repository.
 
-# HyperSec Package Manager API
+# Elastic Package Manager API
 
 The Package Manager offers an API. Here an example on how they can be used.
 

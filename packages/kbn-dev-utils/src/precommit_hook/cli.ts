@@ -24,19 +24,19 @@ run(
     try {
       if (!(await isCorrectGitVersionInstalled())) {
         throw createFailError(
-          `We could not detect a git version in the required range. Please install a git version >= 2.5. Skipping HyperSec Kibana pre-commit git hook installation.`
+          `We could not detect a git version in the required range. Please install a git version >= 2.5. Skipping Kibana pre-commit git hook installation.`
         );
       }
 
       const gitDir = await getGitDir();
       const installPath = Path.resolve(REPO_ROOT, gitDir, 'hooks/pre-commit');
 
-      log.info(`Registering HyperSec Kibana pre-commit git hook...`);
+      log.info(`Registering Kibana pre-commit git hook...`);
       await writeFileAsync(installPath, SCRIPT_SOURCE);
       await chmodAsync(installPath, 0o755);
-      log.success(`HyperSec Kibana pre-commit git hook was installed successfully.`);
+      log.success(`Kibana pre-commit git hook was installed successfully.`);
     } catch (e) {
-      log.error(`HyperSec Kibana pre-commit git hook was not installed as an error occur.`);
+      log.error(`Kibana pre-commit git hook was not installed as an error occur.`);
       throw e;
     }
   },

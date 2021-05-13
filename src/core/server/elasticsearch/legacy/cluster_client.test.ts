@@ -182,7 +182,7 @@ describe('#callAsInternalUser', () => {
     await expect(promise).rejects.toThrowErrorMatchingInlineSnapshot(`"Request was aborted"`);
   });
 
-  test('does not override WWW-Authenticate if returned by HyperSec', async () => {
+  test('does not override WWW-Authenticate if returned by Elasticsearch', async () => {
     const mockAuthenticationError = new (errors.AuthenticationException as any)(
       'Authentication Exception',
       { statusCode: 401 }
@@ -238,7 +238,7 @@ describe('#asScoped', () => {
     jest.clearAllMocks();
   });
 
-  test('creates additional HyperSec client only once', () => {
+  test('creates additional Elasticsearch client only once', () => {
     const firstScopedClusterClient = clusterClient.asScoped(
       httpServerMock.createRawRequest({ headers: { one: '1' } })
     );
@@ -466,14 +466,14 @@ describe('#close', () => {
     );
   });
 
-  test('closes underlying HyperSec client', () => {
+  test('closes underlying Elasticsearch client', () => {
     expect(mockEsClientInstance.close).not.toHaveBeenCalled();
 
     clusterClient.close();
     expect(mockEsClientInstance.close).toHaveBeenCalledTimes(1);
   });
 
-  test('closes both internal and scoped underlying HyperSec clients', () => {
+  test('closes both internal and scoped underlying Elasticsearch clients', () => {
     clusterClient.asScoped(httpServerMock.createRawRequest({ headers: { one: '1' } }));
 
     expect(mockEsClientInstance.close).not.toHaveBeenCalled();

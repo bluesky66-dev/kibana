@@ -27,7 +27,7 @@ export const sampleRuleAlertParams = (
   maxSignals?: number | undefined,
   riskScore?: number | undefined
 ): RuleTypeParams => ({
-  author: ['HyperSec'],
+  author: ['Elastic'],
   buildingBlockType: 'default',
   ruleId: 'rule-1',
   description: 'Detecting root and admin users',
@@ -42,7 +42,7 @@ export const sampleRuleAlertParams = (
   severityMapping: [],
   query: 'user.name: root or user.name: admin',
   language: 'kuery',
-  license: 'HyperSec License',
+  license: 'Elastic License',
   outputIndex: '.siem-signals',
   references: ['http://google.com'],
   riskScore: riskScore ? riskScore : 50,
@@ -99,7 +99,7 @@ export const sampleRuleSO = (): SavedObject<RuleAlertAttributes> => {
 export const expectedRule = (): RulesSchema => {
   return {
     actions: [],
-    author: ['HyperSec'],
+    author: ['Elastic'],
     building_block_type: 'default',
     id: '04128c15-0d1b-4716-a4c5-46997ac7f3bd',
     rule_id: 'rule-1',
@@ -114,7 +114,7 @@ export const expectedRule = (): RulesSchema => {
     index: ['auditbeat-*', 'filebeat-*', 'packetbeat-*', 'winlogbeat-*'],
     interval: '5m',
     language: 'kuery',
-    license: 'HyperSec License',
+    license: 'Elastic License',
     name: 'rule-name',
     query: 'user.name: root or user.name: admin',
     references: ['http://google.com'],

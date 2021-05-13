@@ -172,7 +172,7 @@ describe('doesIlmPolicyExist', () => {
     });
   });
 
-  test('should return false when 404 error is returned by HyperSec', async () => {
+  test('should return false when 404 error is returned by Elasticsearch', async () => {
     clusterClient.transport.request.mockRejectedValue(notFoundError);
     await expect(clusterClientAdapter.doesIlmPolicyExist('foo')).resolves.toEqual(false);
   });

@@ -39,7 +39,7 @@ const TestConsumer = () => {
   return <div>{services.foo}</div>;
 };
 
-test('useKibana() hook retrieves HyperSec Kibana context', () => {
+test('useKibana() hook retrieves Kibana context', () => {
   const core = coreMock.createStart();
   (core as any).foo = 'bar';
   ReactDOM.render(

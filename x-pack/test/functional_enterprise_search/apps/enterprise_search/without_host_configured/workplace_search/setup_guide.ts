@@ -32,7 +32,7 @@ export default function enterpriseSearchSetupGuideTests({
           expect(currentUrl).to.contain('/workplace_search/setup_guide');
 
           const documentTitle = await browser.getTitle();
-          expect(documentTitle).to.contain('Setup Guide - Workplace Search - HyperSec');
+          expect(documentTitle).to.contain('Setup Guide - Workplace Search - Elastic');
         });
       });
     });

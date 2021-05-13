@@ -14,7 +14,7 @@ export function getEmsUnavailableMessage(): string {
   if (!emsSettings.isIncludeElasticMapsService()) {
     return i18n.translate('xpack.maps.source.ems.disabledDescription', {
       defaultMessage:
-        'Access to HyperSec Maps Service has been disabled. Ask your system administrator to set "map.includeElasticMapsService" in kibana.yml.',
+        'Access to Elastic Maps Service has been disabled. Ask your system administrator to set "map.includeElasticMapsService" in kibana.yml.',
     });
   }
 
@@ -22,7 +22,7 @@ export function getEmsUnavailableMessage(): string {
     if (!emsSettings.hasOnPremLicense()) {
       return i18n.translate('xpack.maps.source.ems.noOnPremLicenseDescription', {
         defaultMessage:
-          'An enterprise license is required to connect to local HyperSec Maps Server installations.',
+          'An enterprise license is required to connect to local Elastic Maps Server installations.',
       });
     } else {
       return i18n.translate('xpack.maps.source.ems.noOnPremConnectionDescription', {
@@ -37,6 +37,6 @@ export function getEmsUnavailableMessage(): string {
   // Not sure why.
   return i18n.translate('xpack.maps.source.ems.noAccessDescription', {
     defaultMessage:
-      'HyperSec Kibana is unable to access HyperSec Maps Service. Contact your system administrator.',
+      'Kibana is unable to access Elastic Maps Service. Contact your system administrator.',
   });
 }

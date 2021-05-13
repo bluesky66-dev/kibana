@@ -1,7 +1,7 @@
-# HyperSec Kibana Security Plugin
+# Kibana Security Plugin
 
 See [Configuring security in
-HyperSec Kibana](https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html).
+Kibana](https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html).
 
 ## Audit logging
 
@@ -30,41 +30,41 @@ security by capturing who performed an action, what action was performed and
 when it occurred. It is not the purpose of an audit log to aid with debugging
 the system or provide usage statistics.
 
-**HyperSec Kibana guidelines:**
+**Kibana guidelines:**
 
-Each API call to HyperSec Kibana will result in a record in the audit log that captures
+Each API call to Kibana will result in a record in the audit log that captures
 general information about the request (`http_request` event).
 
 In addition to that, any operation that is performed on a resource owned by
-HyperSec Kibana (e.g. saved objects) and that falls in the following categories, should
+Kibana (e.g. saved objects) and that falls in the following categories, should
 be included in the audit log:
 
 - System access (incl. failed attempts due to authentication errors)
 - Data reads (incl. failed attempts due to authorisation errors)
 - Data writes (incl. failed attempts due to authorisation errors)
 
-If HyperSec Kibana does not own the resource (e.g. when running queries against user
-indices), then auditing responsibilities are deferred to HyperSec and no
+If Kibana does not own the resource (e.g. when running queries against user
+indices), then auditing responsibilities are deferred to Elasticsearch and no
 additional events will be logged.
 
 **Examples:**
 
-For a list of audit events that HyperSec Kibana currently logs see:
+For a list of audit events that Kibana currently logs see:
 `docs/user/security/audit-logging.asciidoc`
 
 ### When should an event be logged?
 
-Due to the asynchronous nature of most operations in HyperSec Kibana, there is an
+Due to the asynchronous nature of most operations in Kibana, there is an
 inherent tradeoff between the following logging approaches:
 
 - Logging the **intention** before performing an operation, leading to false
   positives if the operation fails downstream.
 - Logging the **outcome** after completing an operation, leading to missing
-  records if HyperSec Kibana crashes before the response is received.
+  records if Kibana crashes before the response is received.
 - Logging **both**, intention and outcome, leading to unnecessary duplication
   and noisy/difficult to analyse logs.
 
-**HyperSec Kibana guidelines:**
+**Kibana guidelines:**
 
 - **Write operations** should be logged immediately after all authorisation
   checks have passed, but before the response is received (logging the
@@ -78,7 +78,7 @@ inherent tradeoff between the following logging approaches:
 
 ### Can an action trigger multiple events?
 
-- A request to HyperSec Kibana can perform a combination of different operations, each of
+- A request to Kibana can perform a combination of different operations, each of
   which should be captured as separate events.
 - Operations that are performed on multiple resources (**bulk operations**)
   should be logged as separate events, one for each resource.

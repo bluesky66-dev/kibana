@@ -90,7 +90,7 @@ describe('Monitoring Breadcrumbs Service', () => {
     expect(controller.breadcrumbs).to.eql([
       { url: '#/home', label: 'Clusters', testSubj: 'breadcrumbClusters', ignoreGlobalState: true },
       { url: '#/overview', label: 'test-cluster-foo', ignoreGlobalState: false },
-      { url: '#/elasticsearch', label: 'HyperSec', ignoreGlobalState: false },
+      { url: '#/elasticsearch', label: 'Elasticsearch', ignoreGlobalState: false },
       {
         url: '#/elasticsearch/nodes',
         label: 'Nodes',
@@ -101,7 +101,7 @@ describe('Monitoring Breadcrumbs Service', () => {
     ]);
   });
 
-  it('in HyperSec Kibana Overview', () => {
+  it('in Kibana Overview', () => {
     const controller = new MonitoringMainController();
     controller.setup({
       clusterName: 'test-cluster-foo',
@@ -115,7 +115,7 @@ describe('Monitoring Breadcrumbs Service', () => {
     expect(controller.breadcrumbs).to.eql([
       { url: '#/home', label: 'Clusters', testSubj: 'breadcrumbClusters', ignoreGlobalState: true },
       { url: '#/overview', label: 'test-cluster-foo', ignoreGlobalState: false },
-      { url: null, label: 'HyperSec Kibana', ignoreGlobalState: false },
+      { url: null, label: 'Kibana', ignoreGlobalState: false },
     ]);
   });
 

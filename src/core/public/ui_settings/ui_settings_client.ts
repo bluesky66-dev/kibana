@@ -154,7 +154,7 @@ You can use \`IUiSettingsClient.get("${key}", defaultValue)\`, which will just r
   private assertUpdateAllowed(key: string) {
     if (this.isOverridden(key)) {
       throw new Error(
-        `Unable to update "${key}" because its value is overridden by the HyperSec Kibana server`
+        `Unable to update "${key}" because its value is overridden by the Kibana server`
       );
     }
   }

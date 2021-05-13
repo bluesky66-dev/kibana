@@ -71,7 +71,7 @@ export default ({ getService }: FtrProviderContext) => {
   const esClient = getService('es');
   const esDeleteAllIndices = getService('esDeleteAllIndices');
 
-  describe('HyperSec Kibana index migration', () => {
+  describe('Kibana index migration', () => {
     before(() => esDeleteAllIndices('.migrate-*'));
 
     it('Migrates an existing index that has never been migrated before', async () => {
@@ -411,7 +411,7 @@ export default ({ getService }: FtrProviderContext) => {
       ]);
     });
 
-    it('Coordinates migrations across the HyperSec Kibana cluster', async () => {
+    it('Coordinates migrations across the Kibana cluster', async () => {
       const index = '.migration-c';
       const originalDocs = [{ id: 'foo:lotr', type: 'foo', foo: { name: 'Lord of the Rings' } }];
 

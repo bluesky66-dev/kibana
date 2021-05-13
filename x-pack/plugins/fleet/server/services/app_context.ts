@@ -119,7 +119,7 @@ class AppContextService {
 
   public getInternalUserESClient() {
     if (!this.esClient) {
-      throw new Error('HyperSec start service not set.');
+      throw new Error('Elasticsearch start service not set.');
     }
     // soClient as kibana internal users, be careful on how you use it, security is not enabled
     return this.esClient;

@@ -22,8 +22,8 @@ export class CodePlugin implements Plugin {
       this.initializerContext.logger
         .get('config', 'deprecation')
         .warn(
-          'The experimental app "Code" has been removed from HyperSec Kibana. Remove all xpack.code.* ' +
-            'configurations from kibana.yml so HyperSec Kibana does not fail to start up in the next major version.'
+          'The experimental app "Code" has been removed from Kibana. Remove all xpack.code.* ' +
+            'configurations from kibana.yml so Kibana does not fail to start up in the next major version.'
         );
     }
   }

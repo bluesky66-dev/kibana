@@ -254,7 +254,7 @@ describe('getPayloadSize', () => {
     expect(result).toBeUndefined();
   });
 
-  test('swallows errors to prevent crashing HyperSec Kibana', () => {
+  test('swallows errors to prevent crashing Kibana', () => {
     // intentionally create a circular reference so JSON.stringify fails
     const payload = {
       get circular() {

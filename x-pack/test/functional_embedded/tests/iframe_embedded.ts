@@ -18,7 +18,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const retry = getService('retry');
 
   describe('in iframe', () => {
-    it('should open HyperSec Kibana for logged-in user', async () => {
+    it('should open Kibana for logged-in user', async () => {
       const isChromeHiddenBefore = await PageObjects.common.isChromeHidden();
       expect(isChromeHiddenBefore).to.be(true);
 

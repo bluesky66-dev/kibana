@@ -105,7 +105,7 @@ describe('config schema', () => {
 });
 
 describe('createConfig()', () => {
-  it('should wrap in HyperSec config', async () => {
+  it('should wrap in Elasticsearch config', async () => {
     const config = createConfig(
       configSchema.validate({
         ui: {

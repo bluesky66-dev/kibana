@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies abuse of the Windows Update Auto Update Client (wuauclt.exe) to load an arbitrary DLL. This behavior is used as a defense evasion technique to blend-in malicious activity with legitimate Windows software.",
   "from": "now-9m",
@@ -10,7 +10,7 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "ImageLoad via Windows Update Auto Update Client",
   "query": "process where event.type in (\"start\", \"process_started\") and\n  (process.pe.original_file_name == \"wuauclt.exe\" or process.name : \"wuauclt.exe\") and\n   /* necessary windows update client args to load a dll */\n   process.args : \"/RunHandlerComServer\" and process.args : \"/UpdateDeploymentProvider\" and\n   /* common paths writeable by a standard user where the target DLL can be placed */\n   process.args : (\"C:\\\\Users\\\\*.dll\", \"C:\\\\ProgramData\\\\*.dll\", \"C:\\\\Windows\\\\Temp\\\\*.dll\", \"C:\\\\Windows\\\\Tasks\\\\*.dll\")\n",
   "references": [
@@ -20,7 +20,7 @@
   "rule_id": "edf8ee23-5ea7-4123-ba19-56b41e424ae3",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

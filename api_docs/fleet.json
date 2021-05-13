@@ -4335,7 +4335,7 @@
         "type": "Interface",
         "label": "FleetServerAgent",
         "description": [
-          "\nAn HyperSec Agent that has enrolled into Fleet"
+          "\nAn Elastic Agent that has enrolled into Fleet"
         ],
         "tags": [],
         "children": [
@@ -4416,7 +4416,7 @@
             "type": "string",
             "label": "enrolled_at",
             "description": [
-              "\nDate/time the HyperSec Agent enrolled"
+              "\nDate/time the Elastic Agent enrolled"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4430,7 +4430,7 @@
             "type": "string",
             "label": "unenrolled_at",
             "description": [
-              "\nDate/time the HyperSec Agent unenrolled"
+              "\nDate/time the Elastic Agent unenrolled"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4447,7 +4447,7 @@
             "type": "string",
             "label": "unenrollment_started_at",
             "description": [
-              "\nDate/time the HyperSec Agent unenrolled started"
+              "\nDate/time the Elastic Agent unenrolled started"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4464,7 +4464,7 @@
             "type": "CompoundType",
             "label": "upgraded_at",
             "description": [
-              "\nDate/time the HyperSec Agent was last upgraded"
+              "\nDate/time the Elastic Agent was last upgraded"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4481,7 +4481,7 @@
             "type": "CompoundType",
             "label": "upgrade_started_at",
             "description": [
-              "\nDate/time the HyperSec Agent started the current upgrade"
+              "\nDate/time the Elastic Agent started the current upgrade"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4498,7 +4498,7 @@
             "type": "string",
             "label": "access_api_key_id",
             "description": [
-              "\nID of the API key the HyperSec Agent must used to contact Fleet Server"
+              "\nID of the API key the Elastic Agent must used to contact Fleet Server"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4537,7 +4537,7 @@
             "type": "Object",
             "label": "user_provided_metadata",
             "description": [
-              "\nUser provided metadata information for the HyperSec Agent"
+              "\nUser provided metadata information for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4560,7 +4560,7 @@
             "type": "Object",
             "label": "local_metadata",
             "description": [
-              "\nLocal metadata information for the HyperSec Agent"
+              "\nLocal metadata information for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4583,7 +4583,7 @@
             "type": "string",
             "label": "policy_id",
             "description": [
-              "\nThe policy ID for the HyperSec Agent"
+              "\nThe policy ID for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4600,7 +4600,7 @@
             "type": "CompoundType",
             "label": "policy_revision_idx",
             "description": [
-              "\nThe current policy revision_idx for the HyperSec Agent"
+              "\nThe current policy revision_idx for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4617,7 +4617,7 @@
             "type": "number",
             "label": "policy_coordinator_idx",
             "description": [
-              "\nThe current policy coordinator for the HyperSec Agent"
+              "\nThe current policy coordinator for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4634,7 +4634,7 @@
             "type": "string",
             "label": "last_updated",
             "description": [
-              "\nDate/time the HyperSec Agent was last updated"
+              "\nDate/time the Elastic Agent was last updated"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4651,7 +4651,7 @@
             "type": "string",
             "label": "last_checkin",
             "description": [
-              "\nDate/time the HyperSec Agent checked in last time"
+              "\nDate/time the Elastic Agent checked in last time"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4685,7 +4685,7 @@
             "type": "string",
             "label": "default_api_key_id",
             "description": [
-              "\nID of the API key the HyperSec Agent uses to authenticate with elasticsearch"
+              "\nID of the API key the Elastic Agent uses to authenticate with elasticsearch"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4702,7 +4702,7 @@
             "type": "string",
             "label": "default_api_key",
             "description": [
-              "\nAPI key the HyperSec Agent uses to authenticate with elasticsearch"
+              "\nAPI key the Elastic Agent uses to authenticate with elasticsearch"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4719,7 +4719,7 @@
             "type": "string",
             "label": "updated_at",
             "description": [
-              "\nDate/time the HyperSec Agent was last updated"
+              "\nDate/time the Elastic Agent was last updated"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4753,7 +4753,7 @@
             "type": "number",
             "label": "action_seq_no",
             "description": [
-              "\nThe last acknowledged action sequence number for the HyperSec Agent"
+              "\nThe last acknowledged action sequence number for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4777,7 +4777,7 @@
         "type": "Interface",
         "label": "FleetServerAgentMetadata",
         "description": [
-          "\nAn HyperSec Agent metadata"
+          "\nAn Elastic Agent metadata"
         ],
         "tags": [],
         "children": [
@@ -4787,7 +4787,7 @@
             "type": "string",
             "label": "id",
             "description": [
-              "\nThe unique identifier for the HyperSec Agent"
+              "\nThe unique identifier for the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4801,7 +4801,7 @@
             "type": "string",
             "label": "version",
             "description": [
-              "\nThe version of the HyperSec Agent"
+              "\nThe version of the Elastic Agent"
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -4837,7 +4837,7 @@
         "type": "Interface",
         "label": "FleetServerAgentAction",
         "description": [
-          "\nAn HyperSec Agent action"
+          "\nAn Elastic Agent action"
         ],
         "tags": [],
         "children": [
@@ -4881,7 +4881,7 @@
             "type": "string",
             "label": "action_id",
             "description": [
-              "\nThe unique identifier for the HyperSec Agent action. There could be multiple documents with the same action_id if the action is split into two separate documents."
+              "\nThe unique identifier for the Elastic Agent action. There could be multiple documents with the same action_id if the action is split into two separate documents."
             ],
             "source": {
               "path": "x-pack/plugins/fleet/common/types/models/agent.ts",
@@ -5662,7 +5662,7 @@
         "type": "Interface",
         "label": "FleetServerPolicy",
         "description": [
-          "\nA policy that an HyperSec Agent is attached to"
+          "\nA policy that an Elastic Agent is attached to"
         ],
         "tags": [],
         "children": [
@@ -8691,7 +8691,7 @@
         "type": "Interface",
         "label": "FleetServerEnrollmentAPIKey",
         "description": [
-          "\nAn HyperSec Agent enrollment API key"
+          "\nAn Elastic Agent enrollment API key"
         ],
         "tags": [],
         "children": [
@@ -13559,7 +13559,7 @@
           "link": "https://github.com/elastic/kibana/tree/masterx-pack/plugins/fleet/common/types/models/output.ts#L11"
         },
         "signature": [
-          "{ readonly HyperSec: \"elasticsearch\"; }"
+          "{ readonly Elasticsearch: \"elasticsearch\"; }"
         ],
         "initialIsOpen": false
       },
@@ -15754,7 +15754,7 @@
           "link": "https://github.com/elastic/kibana/tree/masterx-pack/plugins/fleet/common/constants/output.ts#L12"
         },
         "signature": [
-          "{ readonly HyperSec: \"elasticsearch\"; }"
+          "{ readonly Elasticsearch: \"elasticsearch\"; }"
         ],
         "initialIsOpen": false
       },

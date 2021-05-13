@@ -18,7 +18,7 @@ export async function generate(encryptionConfig, command) {
     logger.log('No keys to write.  Use the --force flag to generate new keys.');
   } else {
     if (!command.quiet) {
-      logger.log('## HyperSec Kibana Encryption Key Generation Utility\n');
+      logger.log('## Kibana Encryption Key Generation Utility\n');
       logger.log(
         `The 'generate' command guides you through the process of setting encryption keys for:\n`
       );
@@ -26,7 +26,7 @@ export async function generate(encryptionConfig, command) {
       logger.log(
         'Already defined settings are ignored and can be regenerated using the --force flag.  Check the documentation links for instructions on how to rotate encryption keys.'
       );
-      logger.log('Definitions should be set in the kibana.yml used configure HyperSec Kibana.\n');
+      logger.log('Definitions should be set in the kibana.yml used configure Kibana.\n');
     }
     if (command.interactive) {
       await interactive(keys, encryptionConfig.docs({ comment: true }), logger);

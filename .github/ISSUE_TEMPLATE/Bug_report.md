@@ -6,7 +6,7 @@ about: Things break. Help us identify those things so we can fix them!
 
 **Kibana version:**
 
-**HyperSec version:**
+**Elasticsearch version:**
 
 **Server OS version:**
 

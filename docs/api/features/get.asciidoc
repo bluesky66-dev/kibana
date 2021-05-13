@@ -211,6 +211,6 @@ The API returns the following:
         ]
       }
     },
-    "privilegesTooltip": "User should also be granted the appropriate HyperSec cluster and index privileges"
+    "privilegesTooltip": "User should also be granted the appropriate Elasticsearch cluster and index privileges"
   },
 --------------------------------------------------

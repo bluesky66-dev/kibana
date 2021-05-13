@@ -27,7 +27,7 @@ exports[`Flyout apm part one should render normally 1`] = `
         hasChildLabel={true}
         hasEmptyLabelSpace={false}
         helpText="Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these HyperSec servers."
+                The running Metricbeat instance must be able to communicate with these Elasticsearch servers."
         label="URL of monitoring cluster"
         labelType="label"
       >
@@ -213,7 +213,7 @@ exports[`Flyout apm part two should show instructions to migrate to metricbeat 1
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -280,7 +280,7 @@ exports[`Flyout apm part two should show instructions to migrate to metricbeat 1
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -360,7 +360,7 @@ exports[`Flyout beats part one should render normally 1`] = `
         hasChildLabel={true}
         hasEmptyLabelSpace={false}
         helpText="Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these HyperSec servers."
+                The running Metricbeat instance must be able to communicate with these Elasticsearch servers."
         label="URL of monitoring cluster"
         labelType="label"
       >
@@ -587,7 +587,7 @@ exports[`Flyout beats part two should show instructions to migrate to metricbeat
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -654,7 +654,7 @@ exports[`Flyout beats part two should show instructions to migrate to metricbeat
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -721,7 +721,7 @@ exports[`Flyout elasticsearch part one should render normally 1`] = `
       <h2
         id="flyoutTitle"
       >
-        Monitor \`HyperSec\` node with Metricbeat
+        Monitor \`Elasticsearch\` node with Metricbeat
       </h2>
     </EuiTitle>
   </EuiFlyoutHeader>
@@ -734,7 +734,7 @@ exports[`Flyout elasticsearch part one should render normally 1`] = `
         hasChildLabel={true}
         hasEmptyLabelSpace={false}
         helpText="Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these HyperSec servers."
+                The running Metricbeat instance must be able to communicate with these Elasticsearch servers."
         label="URL of monitoring cluster"
         labelType="label"
       >
@@ -796,7 +796,7 @@ exports[`Flyout elasticsearch part two should show instructions to disable inter
             <EuiText>
               <p>
                 <FormattedMessage
-                  defaultMessage="Disable self monitoring of HyperSec monitoring metrics. Set {monospace} to false on each server in the production cluster."
+                  defaultMessage="Disable self monitoring of Elasticsearch monitoring metrics. Set {monospace} to false on each server in the production cluster."
                   id="xpack.monitoring.metricbeatMigration.elasticsearchInstructions.disableInternalCollectionDescription"
                   values={
                     Object {
@@ -821,10 +821,10 @@ exports[`Flyout elasticsearch part two should show instructions to disable inter
     "xpack.monitoring.elasticsearch.collection.enabled": false
   }
 }
-
+          
             </EuiCodeBlock>
           </React.Fragment>,
-          "title": "Disable self monitoring of HyperSec monitoring metrics",
+          "title": "Disable self monitoring of Elasticsearch monitoring metrics",
         },
         Object {
           "children": <EuiCallOut
@@ -868,7 +868,7 @@ exports[`Flyout elasticsearch part two should show instructions to migrate to me
               </EuiLink>
             </p>
           </EuiText>,
-          "title": "Install Metricbeat on the same server as HyperSec",
+          "title": "Install Metricbeat on the same server as Elasticsearch",
         },
         Object {
           "children": <React.Fragment>
@@ -892,7 +892,7 @@ exports[`Flyout elasticsearch part two should show instructions to migrate to me
             <EuiText>
               <p>
                 <FormattedMessage
-                  defaultMessage="By default the module collects HyperSec metrics from {url}. If the local server has a different address, add it to the hosts setting in {module}."
+                  defaultMessage="By default the module collects Elasticsearch metrics from {url}. If the local server has a different address, add it to the hosts setting in {module}."
                   id="xpack.monitoring.metricbeatMigration.elasticsearchInstructions.enableMetricbeatModuleDescription"
                   values={
                     Object {
@@ -922,7 +922,7 @@ exports[`Flyout elasticsearch part two should show instructions to migrate to me
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -942,7 +942,7 @@ exports[`Flyout elasticsearch part two should show instructions to migrate to me
               />
             </React.Fragment>
           </React.Fragment>,
-          "title": "Enable and configure the HyperSec x-pack module in Metricbeat",
+          "title": "Enable and configure the Elasticsearch x-pack module in Metricbeat",
         },
         Object {
           "children": <React.Fragment>
@@ -989,7 +989,7 @@ exports[`Flyout elasticsearch part two should show instructions to migrate to me
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -1056,7 +1056,7 @@ exports[`Flyout kibana part one should render normally 1`] = `
       <h2
         id="flyoutTitle"
       >
-        Monitor \`HyperSec Kibana\` instance with Metricbeat
+        Monitor \`Kibana\` instance with Metricbeat
       </h2>
     </EuiTitle>
   </EuiFlyoutHeader>
@@ -1069,7 +1069,7 @@ exports[`Flyout kibana part one should render normally 1`] = `
         hasChildLabel={true}
         hasEmptyLabelSpace={false}
         helpText="Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these HyperSec servers."
+                The running Metricbeat instance must be able to communicate with these Elasticsearch servers."
         label="URL of monitoring cluster"
         labelType="label"
       >
@@ -1174,7 +1174,7 @@ exports[`Flyout kibana part two should show instructions to disable internal col
               </p>
             </EuiText>
           </React.Fragment>,
-          "title": "Disable self monitoring of HyperSec Kibana monitoring metrics",
+          "title": "Disable self monitoring of Kibana monitoring metrics",
         },
         Object {
           "children": <EuiCallOut
@@ -1218,7 +1218,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
               </EuiLink>
             </p>
           </EuiText>,
-          "title": "Install Metricbeat on the same server as HyperSec Kibana",
+          "title": "Install Metricbeat on the same server as Kibana",
         },
         Object {
           "children": <React.Fragment>
@@ -1234,7 +1234,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
             <EuiText>
               <p>
                 <FormattedMessage
-                  defaultMessage="By default the module will collect HyperSec Kibana monitoring metrics from http://localhost:5601. If the local HyperSec Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
+                  defaultMessage="By default the module will collect Kibana monitoring metrics from http://localhost:5601. If the local Kibana instance has a different address, you must specify it via the {hosts} setting in the {file} file."
                   id="xpack.monitoring.metricbeatMigration.kibanaInstructions.enableMetricbeatModuleDescription"
                   values={
                     Object {
@@ -1264,7 +1264,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -1284,7 +1284,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
               />
             </React.Fragment>
           </React.Fragment>,
-          "title": "Enable and configure the HyperSec Kibana x-pack module in Metricbeat",
+          "title": "Enable and configure the Kibana x-pack module in Metricbeat",
         },
         Object {
           "children": <React.Fragment>
@@ -1331,7 +1331,7 @@ exports[`Flyout kibana part two should show instructions to migrate to metricbea
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -1411,7 +1411,7 @@ exports[`Flyout logstash part one should render normally 1`] = `
         hasChildLabel={true}
         hasEmptyLabelSpace={false}
         helpText="Typically a single URL. If multiple URLs, separate with a comma.
-                The running Metricbeat instance must be able to communicate with these HyperSec servers."
+                The running Metricbeat instance must be able to communicate with these Elasticsearch servers."
         label="URL of monitoring cluster"
         labelType="label"
       >
@@ -1597,7 +1597,7 @@ exports[`Flyout logstash part two should show instructions to migrate to metricb
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               target="_blank"
                             >
@@ -1663,7 +1663,7 @@ exports[`Flyout logstash part two should show instructions to migrate to metricb
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               target="_blank"
                             >
@@ -1907,7 +1907,7 @@ exports[`Flyout should render the beat type for beats for the enabling metricbea
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -1974,7 +1974,7 @@ exports[`Flyout should render the beat type for beats for the enabling metricbea
                       values={
                         Object {
                           "link": <React.Fragment>
-
+                             
                             <EuiLink
                               href="jest-metadata-mock-url"
                               target="_blank"
@@ -2027,7 +2027,7 @@ exports[`Flyout should render the beat type for beats for the enabling metricbea
 </EuiFlyoutBody>
 `;
 
-exports[`Flyout should show a restart warning for restarting the primary HyperSec Kibana 1`] = `
+exports[`Flyout should show a restart warning for restarting the primary Kibana 1`] = `
 <EuiFlyoutBody>
   <EuiSteps
     steps={
@@ -2086,7 +2086,7 @@ exports[`Flyout should show a restart warning for restarting the primary HyperSe
               <EuiCallOut
                 color="warning"
                 iconType="help"
-                title="This step requires you to restart the HyperSec Kibana server"
+                title="This step requires you to restart the Kibana server"
               >
                 <EuiText>
                   <p>
@@ -2100,7 +2100,7 @@ exports[`Flyout should show a restart warning for restarting the primary HyperSe
               </EuiCallOut>
             </React.Fragment>
           </React.Fragment>,
-          "title": "Disable self monitoring of HyperSec Kibana monitoring metrics",
+          "title": "Disable self monitoring of Kibana monitoring metrics",
         },
         Object {
           "children": <EuiCallOut

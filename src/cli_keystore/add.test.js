@@ -33,7 +33,7 @@ import { add } from './add';
 import { Logger } from '../cli_plugin/lib/logger';
 import * as prompt from './utils/prompt';
 
-describe('HyperSec Kibana keystore', () => {
+describe('Kibana keystore', () => {
   describe('add', () => {
     const sandbox = sinon.createSandbox();
 
@@ -51,7 +51,7 @@ describe('HyperSec Kibana keystore', () => {
 
     it('returns an error for a nonexistent keystore', async () => {
       const keystore = new Keystore('/data/nonexistent.keystore');
-      const message = "ERROR: HyperSec Kibana keystore not found. Use 'create' command to create one.";
+      const message = "ERROR: Kibana keystore not found. Use 'create' command to create one.";
 
       await add(keystore, 'foo');
 

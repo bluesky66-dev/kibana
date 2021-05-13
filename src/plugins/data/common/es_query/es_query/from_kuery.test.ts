@@ -18,7 +18,7 @@ describe('build query', () => {
   } as unknown) as IIndexPattern;
 
   describe('buildQueryFromKuery', () => {
-    test('should return the parameters of an HyperSec bool query', () => {
+    test('should return the parameters of an Elasticsearch bool query', () => {
       const result = buildQueryFromKuery(undefined, [], true);
       const expected = {
         must: [],

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "This rule detects the Active Directory query tool, AdFind.exe. AdFind has legitimate purposes, but it is frequently leveraged by threat actors to perform post-exploitation Active Directory reconnaissance. The AdFind tool has been observed in Trickbot, Ryuk, Maze, and FIN6 campaigns. For Winlogbeat, this rule requires Sysmon.",
   "from": "now-9m",
@@ -10,9 +10,9 @@
     "logs-windows.*"
   ],
   "language": "eql",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AdFind Command Activity",
-  "note": "`AdFind.exe` is a legitimate domain query tool. Rule alerts should be investigated to identify if the user has a role that would explain using this tool and that it is being run from an expected directory and endpoint. Leverage the exception workflow in the HyperSec Kibana Security App or HyperSec API to tune this rule to your environment.",
+  "note": "`AdFind.exe` is a legitimate domain query tool. Rule alerts should be investigated to identify if the user has a role that would explain using this tool and that it is being run from an expected directory and endpoint. Leverage the exception workflow in the Kibana Security App or Elasticsearch API to tune this rule to your environment.",
   "query": "process where event.type in (\"start\", \"process_started\") and \n  (process.name : \"AdFind.exe\" or process.pe.original_file_name == \"AdFind.exe\") and \n  process.args : (\"objectcategory=computer\", \"(objectcategory=computer)\", \n                  \"objectcategory=person\", \"(objectcategory=person)\",\n                  \"objectcategory=subnet\", \"(objectcategory=subnet)\",\n                  \"objectcategory=group\", \"(objectcategory=group)\", \n                  \"objectcategory=organizationalunit\", \"(objectcategory=organizationalunit)\",\n                  \"objectcategory=attributeschema\", \"(objectcategory=attributeschema)\",\n                  \"domainlist\", \"dcmodes\", \"adinfo\", \"dclist\", \"computers_pwnotreqd\", \"trustdmp\")\n",
   "references": [
     "http://www.joeware.net/freetools/tools/adfind/",
@@ -26,7 +26,7 @@
   "rule_id": "eda499b8-a073-4e35-9733-22ec71f57f3a",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

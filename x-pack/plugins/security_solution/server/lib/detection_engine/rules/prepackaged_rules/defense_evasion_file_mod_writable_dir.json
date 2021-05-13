@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies file permission modifications in common writable directories by a non-root user. Adversaries often drop files or payloads into a writable directory and change permissions prior to execution.",
   "false_positives": [
@@ -12,14 +12,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "File Permission Modification in Writable Directory",
   "query": "event.category:process and event.type:(start or process_started) and process.name:(chmod or chown or chattr or chgrp) and process.working_directory:(/tmp or /var/tmp or /dev/shm) and not user.name:root",
   "risk_score": 21,
   "rule_id": "9f9a2a82-93a8-4b1a-8778-1780895626d4",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

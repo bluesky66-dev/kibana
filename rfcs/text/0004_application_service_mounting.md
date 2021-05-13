@@ -1,6 +1,6 @@
 - Start Date: 2019-05-10
 - RFC PR: (leave this empty)
-- HyperSec Kibana Issue: (leave this empty)
+- Kibana Issue: (leave this empty)
 
 # Summary
 
@@ -181,8 +181,8 @@ Plugins can also register additional context attributes via the
 
 ## Routing
 
-The ApplicationService will serve as the global frontend router for HyperSec Kibana,
-enabling HyperSec Kibana to be a 100% single page application. However, the router will
+The ApplicationService will serve as the global frontend router for Kibana,
+enabling Kibana to be a 100% single page application. However, the router will
 only manage top-level routes. Applications themselves will need to implement
 their own routing as subroutes of the top-level route.
 
@@ -215,7 +215,7 @@ starting a full-page refresh rather than a mounting cycle.
 
 Here is a complete example that demonstrates rendering a React application with
 a full-featured router and code-splitting. Note that using React or any other
-3rd party tools featured here is not required to build a HyperSec Kibana Application.
+3rd party tools featured here is not required to build a Kibana Application.
 
 ```tsx
 // my_plugin/public/application.tsx
@@ -287,7 +287,7 @@ have a bundle for.
 
 - Implementing this will be significant work and requires migrating legacy code
   from `ui/chrome`
-- Making HyperSec Kibana a single page application may lead to problems if applications
+- Making Kibana a single page application may lead to problems if applications
   do not clean themselves up properly when unmounted
 - Application `mount` functions will have access to *setup* via the closure. We
   may want to lock down these APIs from being used after *setup* to encourage
@@ -313,14 +313,14 @@ over to the new platform.
 
 # How we teach this
 
-Introducing this service makes applications a first-class feature of the HyperSec Kibana
+Introducing this service makes applications a first-class feature of the Kibana
 platform. Right now, plugins manage their own routes and can export "navlinks"
 that get rendered in the navigation UI, however there is a not a self-contained
 concept like an application to encapsulate these related responsibilities. It
 will need to be emphasized that plugins can register zero, one, or multiple
 applications.
 
-Most new and existing HyperSec Kibana developers will need to understand how the
+Most new and existing Kibana developers will need to understand how the
 ApplicationService works and how multiple apps run in a single page application.
 This should be accomplished through thorough documentation in the
 ApplicationService's API implementation as well as in general plugin development

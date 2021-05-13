@@ -1,20 +1,20 @@
-# HyperSec Kibana Plugin Generator
+# Kibana Plugin Generator
 
-This package can be used to generate a HyperSec Kibana plugin from the HyperSec Kibana repo.
+This package can be used to generate a Kibana plugin from the Kibana repo.
 
 ## Setup
 
-Before you can use this plugin generator you must setup your [HyperSec Kibana development environment](../../CONTRIBUTING.md#development-environment-setup). If you can successfully run `yarn kbn bootstrap` then you are ready to generate plugins!
+Before you can use this plugin generator you must setup your [Kibana development environment](../../CONTRIBUTING.md#development-environment-setup). If you can successfully run `yarn kbn bootstrap` then you are ready to generate plugins!
 
 ## Compatibility
 
-The plugin generator became a part of the HyperSec Kibana project as of HyperSec Kibana 6.3. If you are targeting versions **before HyperSec Kibana 6.3** then use the [HyperSec Kibana plugin sao template](https://github.com/elastic/template-kibana-plugin).
+The plugin generator became a part of the Kibana project as of Kibana 6.3. If you are targeting versions **before Kibana 6.3** then use the [Kibana plugin sao template](https://github.com/elastic/template-kibana-plugin).
 
-If you are targeting **HyperSec Kibana 6.3 or greater** then checkout the corresponding HyperSec Kibana branch and run the plugin generator.
+If you are targeting **Kibana 6.3 or greater** then checkout the corresponding Kibana branch and run the plugin generator.
 
 ## Quick Start
 
-To target the current development version of HyperSec Kibana just use the default  `master` branch.
+To target the current development version of Kibana just use the default  `master` branch.
 
 ```sh
 node scripts/generate_plugin --name my_plugin_name -y
@@ -38,9 +38,9 @@ node scripts/generate_plugin --help
 
 ## Updating
 
-Since the Plugin Generator is now a part of the HyperSec Kibana repo, when you update your local checkout of the HyperSec Kibana repository and `bootstrap` everything should be up to date!
+Since the Plugin Generator is now a part of the Kibana repo, when you update your local checkout of the Kibana repository and `bootstrap` everything should be up to date!
 
-> ***NOTE:*** These commands should be run from the HyperSec Kibana repo, and `upstream` is our convention for the git remote that references https://github.com/elastic/kibana.git, unless you added this remote you might need to use `origin`.
+> ***NOTE:*** These commands should be run from the Kibana repo, and `upstream` is our convention for the git remote that references https://github.com/elastic/kibana.git, unless you added this remote you might need to use `origin`.
 
 ```sh
 git pull upstream master
@@ -49,13 +49,13 @@ yarn kbn bootstrap
 
 ## Plugin Development Scripts
 
-Generated plugins receive a handful of scripts that can be used during development. Those scripts are detailed in the [README.md](template/README.md) file in each newly generated plugin, and expose the scripts provided by the [HyperSec Kibana plugin helpers](../kbn-plugin-helpers), but here is a quick reference in case you need it:
+Generated plugins receive a handful of scripts that can be used during development. Those scripts are detailed in the [README.md](template/README.md) file in each newly generated plugin, and expose the scripts provided by the [Kibana plugin helpers](../kbn-plugin-helpers), but here is a quick reference in case you need it:
 
 > ***NOTE:*** The following scripts should be run from the generated plugin.
 
   - `yarn kbn bootstrap`
 
-    Install dependencies and crosslink HyperSec Kibana and all projects/plugins.
+    Install dependencies and crosslink Kibana and all projects/plugins.
 
     > ***IMPORTANT:*** Use this script instead of `yarn` to install dependencies when switching branches, and re-run it whenever your dependencies change.
 
@@ -64,7 +64,7 @@ Generated plugins receive a handful of scripts that can be used during developme
     Build a distributable archive of your plugin.
 
 
-To start kibana run the following command from HyperSec Kibana root.
+To start kibana run the following command from Kibana root.
 
   - `yarn start`
 

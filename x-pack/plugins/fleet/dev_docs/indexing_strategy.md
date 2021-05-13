@@ -9,7 +9,7 @@ Ingest Management enforces an indexing strategy to allow the system to automatic
 {data_stream.type}-{data_stream.dataset}-{data_stream.namespace}
 ```
 
-The `{data_stream.type}` can be `logs` or `metrics`. The `{data_stream.namespace}` is the part where the user can use free form. The only two requirement are that it has only characters allowed in an HyperSec index name and does NOT contain a `-`. The `data_stream` is defined by the data that is indexed. The same requirements as for the namespace apply. It is expected that the fields for type, dataset, and namespace are part of each event and are constant keywords. If there is a dataset or a namespace with a `-` inside, it is recommended to replace it either by a `.` or a `_`.
+The `{data_stream.type}` can be `logs` or `metrics`. The `{data_stream.namespace}` is the part where the user can use free form. The only two requirement are that it has only characters allowed in an Elasticsearch index name and does NOT contain a `-`. The `data_stream` is defined by the data that is indexed. The same requirements as for the namespace apply. It is expected that the fields for type, dataset, and namespace are part of each event and are constant keywords. If there is a dataset or a namespace with a `-` inside, it is recommended to replace it either by a `.` or a `_`.
 
 Note: More `{data_stream.type}`s might be added in the future like `traces`.
 
@@ -54,7 +54,7 @@ The pattern used inside the index template is `{type}-{dataset}-*` to match all 
 
 ## Defaults
 
-If the HyperSec Agent is used to ingest data and only the type is specified, `default` for the namespace is used and `generic` for the dataset.
+If the Elastic Agent is used to ingest data and only the type is specified, `default` for the namespace is used and `generic` for the dataset.
 
 ## Data filtering
 

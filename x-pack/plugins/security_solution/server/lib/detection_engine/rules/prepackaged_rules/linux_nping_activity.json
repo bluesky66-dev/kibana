@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Nping ran on a Linux host. Nping is part of the Nmap tool suite and has the ability to construct raw packets for a wide variety of security testing applications, including denial of service testing.",
   "false_positives": [
@@ -12,7 +12,7 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Nping Process Activity",
   "query": "event.category:process and event.type:(start or process_started) and process.name:nping",
   "references": [
@@ -22,7 +22,7 @@
   "rule_id": "0d69150b-96f8-467c-a86d-a67a3378ce77",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection"

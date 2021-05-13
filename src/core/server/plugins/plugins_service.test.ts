@@ -151,7 +151,7 @@ describe('PluginsService', () => {
       `);
     });
 
-    it('throws if plugin required HyperSec Kibana version is incompatible with the current version', async () => {
+    it('throws if plugin required Kibana version is incompatible with the current version', async () => {
       mockDiscover.mockReturnValue({
         error$: from([
           PluginDiscoveryError.incompatibleVersion('path-3', new Error('Incompatible version')),

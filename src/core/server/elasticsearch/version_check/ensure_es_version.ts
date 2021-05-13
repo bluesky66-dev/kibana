@@ -132,7 +132,7 @@ export const pollEsNodesVersion = ({
   ignoreVersionMismatch,
   esVersionCheckInterval: healthCheckInterval,
 }: PollEsNodesVersionOptions): Observable<NodesVersionCompatibility> => {
-  log.debug('Checking HyperSec version');
+  log.debug('Checking Elasticsearch version');
   return timer(0, healthCheckInterval).pipe(
     exhaustMap(() => {
       return from(

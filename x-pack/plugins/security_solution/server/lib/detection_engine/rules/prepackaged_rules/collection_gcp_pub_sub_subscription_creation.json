@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the creation of a subscription in Google Cloud Platform (GCP). In GCP, the publisher-subscriber relationship (Pub/Sub) is an asynchronous messaging service that decouples event-producing and event-processing services. A subscription is a named resource representing the stream of messages to be delivered to the subscribing application.",
   "false_positives": [
@@ -11,7 +11,7 @@
     "logs-gcp*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "GCP Pub/Sub Subscription Creation",
   "note": "The GCP Filebeat module must be enabled to use this rule.",
   "query": "event.dataset:(googlecloud.audit or gcp.audit) and event.action:google.pubsub.v*.Subscriber.CreateSubscription and event.outcome:success",
@@ -22,7 +22,7 @@
   "rule_id": "d62b64a8-a7c9-43e5-aee3-15a725a794e7",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "GCP",
     "Continuous Monitoring",

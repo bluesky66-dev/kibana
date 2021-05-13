@@ -16,5 +16,5 @@ export interface FakeRequest
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [headers](./kibana-plugin-core-server.fakerequest.headers.md) | <code>Headers</code> | Headers used for authentication against HyperSec |
+|  [headers](./kibana-plugin-core-server.fakerequest.headers.md) | <code>Headers</code> | Headers used for authentication against Elasticsearch |
 

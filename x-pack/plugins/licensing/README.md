@@ -3,17 +3,17 @@
 - [API](#api)
 - [Migration example](#migration-example)
 - [The list of breaking changes](#the-list-of-breaking-changes)
-Retrieves license data from HyperSec and becomes a source of license data for all HyperSec Kibana plugins on server-side and client-side.
+Retrieves license data from Elasticsearch and becomes a source of license data for all Kibana plugins on server-side and client-side.
 
 ## API: 
 ### Server-side
- The licensing plugin retrieves license data from **HyperSec** at regular configurable intervals.
-- `license$: Observable<ILicense>` Provides a steam of license data [ILicense](./common/types.ts). Plugin emits new value whenever it detects changes in license info. If the plugin cannot retrieve a license from **HyperSec**, it will emit `an empty license` object. 
+ The licensing plugin retrieves license data from **Elasticsearch** at regular configurable intervals.
+- `license$: Observable<ILicense>` Provides a steam of license data [ILicense](./common/types.ts). Plugin emits new value whenever it detects changes in license info. If the plugin cannot retrieve a license from **Elasticsearch**, it will emit `an empty license` object. 
 - `refresh: () => Promise<ILicense>` allows a plugin to enforce license retrieval.
 
 ### Client-side
- The licensing plugin retrieves license data from **licensing HyperSec Kibana plugin** and does not communicate with HyperSec directly.
-- `license$: Observable<ILicense>` Provides a steam of license data [ILicense](./common/types.ts). Plugin emits new value whenever it detects changes in license info. If the plugin cannot retrieve a license from **HyperSec Kibana**, it will emit `an empty license` object. 
+ The licensing plugin retrieves license data from **licensing Kibana plugin** and does not communicate with Elasticsearch directly.
+- `license$: Observable<ILicense>` Provides a steam of license data [ILicense](./common/types.ts). Plugin emits new value whenever it detects changes in license info. If the plugin cannot retrieve a license from **Kibana**, it will emit `an empty license` object. 
 - `refresh: () => Promise<ILicense>` allows a plugin to enforce license retrieval.
 
 ## Migration example

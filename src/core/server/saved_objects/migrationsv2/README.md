@@ -25,11 +25,11 @@ We have the following potential legacy indices:
    using Saved Objects in v7.4 https://github.com/elastic/kibana/pull/39829)
 
 Test plan:
-1. Ensure that the different versions of HyperSec Kibana listed above can successfully
+1. Ensure that the different versions of Kibana listed above can successfully
    upgrade to 7.11.
-2. Ensure that multiple HyperSec Kibana nodes can migrate a legacy index in parallel
+2. Ensure that multiple Kibana nodes can migrate a legacy index in parallel
    (choose a representative legacy version to test with e.g. v6.4). Add a lot
-   of Saved Objects to HyperSec Kibana to increase the time it takes for a migration to
+   of Saved Objects to Kibana to increase the time it takes for a migration to
    complete which will make it easier to introduce failures.
    1. If all instances are started in parallel the upgrade should succeed
    2. If nodes are randomly restarted shortly after they start participating
@@ -41,7 +41,7 @@ Test plan:
         3. If an instance starts a saved object migration, wait X ms before
            killing the process and restarting the migration.
         4. Keep decreasing X until migrations are barely able to complete.
-        5. If a migration fails with a fatal error, start a HyperSec Kibana that doesn't
+        5. If a migration fails with a fatal error, start a Kibana that doesn't
            get restarted. Given enough time, it should always be able to
            successfully complete the migration.
 
@@ -55,43 +55,43 @@ For a successful migration the following behaviour should be observed:
     aliases should point to the `.kibana_7.11.0_001` index.
 
 ### 2. Plugins enabled/disabled
-HyperSec Kibana plugins can be disabled/enabled at any point in time. We need to ensure
+Kibana plugins can be disabled/enabled at any point in time. We need to ensure
 that Saved Object documents are migrated for all the possible sequences of
 enabling, disabling, before or after a version upgrade.
 
 #### Test scenario 1 (enable a plugin after migration):
-1. Start an old version of HyperSec Kibana (< 7.11)
+1. Start an old version of Kibana (< 7.11)
 2. Create a document that we know will be migrated in a later version (i.e.
    create a `dashboard`)
 3. Disable the plugin to which the document belongs (i.e `dashboard` plugin)
-4. Upgrade HyperSec Kibana to v7.11 making sure the plugin in step (3) is still disabled.
+4. Upgrade Kibana to v7.11 making sure the plugin in step (3) is still disabled.
 5. Enable the plugin from step (3)
-6. Restart HyperSec Kibana
+6. Restart Kibana
 7. Ensure that the document from step (2) has been migrated
    (`migrationVersion` contains 7.11.0)
 
 #### Test scenario 2 (disable a plugin after migration):
-1. Start an old version of HyperSec Kibana (< 7.11)
+1. Start an old version of Kibana (< 7.11)
 2. Create a document that we know will be migrated in a later version (i.e.
    create a `dashboard`)
-3. Upgrade HyperSec Kibana to v7.11 making sure the plugin in step (3) is enabled.
+3. Upgrade Kibana to v7.11 making sure the plugin in step (3) is enabled.
 4. Disable the plugin to which the document belongs (i.e `dashboard` plugin)
-6. Restart HyperSec Kibana
-7. Ensure that HyperSec Kibana logs a warning, but continues to start even though there
+6. Restart Kibana
+7. Ensure that Kibana logs a warning, but continues to start even though there
    are saved object documents which don't belong to an enable plugin
 
 #### Test scenario 2 (multiple instances, enable a plugin after migration):
 Follow the steps from 'Test scenario 1', but perform the migration with
-multiple instances of HyperSec Kibana
+multiple instances of Kibana
 
 #### Test scenario 3 (multiple instances, mixed plugin enabled configs):
 We don't support this upgrade scenario, but it's worth making sure we don't
 have data loss when there's a user error.
-1. Start an old version of HyperSec Kibana (< 7.11)
+1. Start an old version of Kibana (< 7.11)
 2. Create a document that we know will be migrated in a later version (i.e.
    create a `dashboard`)
 3. Disable the plugin to which the document belongs (i.e `dashboard` plugin)
-4. Upgrade HyperSec Kibana to v7.11 using multiple instances of HyperSec Kibana. The plugin from
+4. Upgrade Kibana to v7.11 using multiple instances of Kibana. The plugin from
    step (3) should be enabled on half of the instances and disabled on the
    other half.
 5. Ensure that the document from step (2) has been migrated

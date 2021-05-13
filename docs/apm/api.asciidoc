@@ -19,15 +19,15 @@ Some APM app features are provided via a REST API:
 // The following content is reused throughout the API docs
 // tag::using-the-APIs[]
 Interact with APM APIs using cURL or another API tool.
-All APM APIs are Kibana APIs, not HyperSec APIs;
+All APM APIs are Kibana APIs, not Elasticsearch APIs;
 because of this, the Kibana dev tools console cannot be used to interact with APM APIs.
 
 For all APM APIs, you must use a request header.
 Supported headers are `Authorization`, `kbn-xsrf`, and `Content-Type`.
 
 `Authorization: ApiKey {credentials}`::
-Kibana supports token-based authentication with the HyperSec API key service.
-The API key returned by the  {ref}/security-api-create-api-key.html[HyperSec create API key API]
+Kibana supports token-based authentication with the Elasticsearch API key service.
+The API key returned by the  {ref}/security-api-create-api-key.html[Elasticsearch create API key API]
 can be used by sending a request with an `Authorization` header that has a value of `ApiKey` followed by the `{credentials}`,
 where `{credentials}` is the base64 encoding of `id` and `api_key` joined by a colon.
 +

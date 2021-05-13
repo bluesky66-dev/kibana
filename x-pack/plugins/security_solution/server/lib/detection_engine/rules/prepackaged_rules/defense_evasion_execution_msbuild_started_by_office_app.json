@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "An instance of MSBuild, the Microsoft Build Engine, was started by Excel or Word. This is unusual behavior for the Build Engine and could have been caused by an Excel or Word document executing a malicious script payload.",
   "false_positives": [
@@ -13,7 +13,7 @@
     "logs-windows.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Microsoft Build Engine Started by an Office Application",
   "query": "event.category:process and event.type:(start or process_started) and process.name:MSBuild.exe and process.parent.name:(eqnedt32.exe or excel.exe or fltldr.exe or msaccess.exe or mspub.exe or outlook.exe or powerpnt.exe or winword.exe)",
   "references": [
@@ -23,7 +23,7 @@
   "rule_id": "c5dc3223-13a2-44a2-946c-e9dc0aa0449c",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Windows",
     "Threat Detection",

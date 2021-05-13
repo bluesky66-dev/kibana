@@ -46,7 +46,7 @@ export async function runDockerGenerator(
   if (build.isOss()) imageFlavor += '-oss';
 
   // General docker var config
-  const license = build.isOss() ? 'ASL 2.0' : 'HyperSec License';
+  const license = build.isOss() ? 'ASL 2.0' : 'Elastic License';
   const imageTag = 'docker.elastic.co/kibana/kibana';
   const version = config.getBuildVersion();
   const artifactArchitecture = flags.architecture === 'aarch64' ? 'aarch64' : 'x86_64';
@@ -96,7 +96,7 @@ export async function runDockerGenerator(
   } catch (e) {
     if (e && e.code === 'ENOENT' && e.syscall === 'access') {
       throw new Error(
-        `HyperSec Kibana linux target (${artifactTarball}) is needed in order to build ${''}the docker image. None was found at ${artifactsDir}`
+        `Kibana linux target (${artifactTarball}) is needed in order to build ${''}the docker image. None was found at ${artifactsDir}`
       );
     }
   }

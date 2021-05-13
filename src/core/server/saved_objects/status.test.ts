@@ -116,7 +116,7 @@ describe('calculateStatus$', () => {
           .toPromise()
       ).resolves.toEqual({
         level: ServiceStatusLevels.degraded,
-        summary: 'SavedObjects service is degraded due to HyperSec: [xxx]',
+        summary: 'SavedObjects service is degraded due to Elasticsearch: [xxx]',
       });
     });
   });

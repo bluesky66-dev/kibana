@@ -2,30 +2,30 @@
 
 exports[`SearchBar correctly filters and sorts results 1`] = `
 Array [
-  "Canvas • HyperSec Kibana",
-  "Discover • HyperSec Kibana",
-  "Graph • HyperSec Kibana",
+  "Canvas • Kibana",
+  "Discover • Kibana",
+  "Graph • Kibana",
 ]
 `;
 
 exports[`SearchBar correctly filters and sorts results 2`] = `
 Array [
-  "Discover • HyperSec Kibana",
+  "Discover • Kibana",
   "My Dashboard • Test",
 ]
 `;
 
 exports[`SearchBar only display results from the last search 1`] = `
 Array [
-  "Visualize • HyperSec Kibana",
-  "Map • HyperSec Kibana",
+  "Visualize • Kibana",
+  "Map • Kibana",
 ]
 `;
 
 exports[`SearchBar only display results from the last search 2`] = `
 Array [
-  "Visualize • HyperSec Kibana",
-  "Map • HyperSec Kibana",
+  "Visualize • Kibana",
+  "Map • Kibana",
 ]
 `;
 
@@ -33,11 +33,11 @@ exports[`SearchBar supports keyboard shortcuts 1`] = `
 <input
   aria-activedescendant=""
   aria-haspopup="listbox"
-  aria-label="Search HyperSec"
+  aria-label="Search Elastic"
   autocomplete="off"
   class="euiFieldSearch euiFieldSearch--fullWidth euiFieldSearch--compressed euiSelectableSearch euiSelectableTemplateSitewide__search kbnSearchBar"
   data-test-subj="nav-search-input"
-  placeholder="Search HyperSec"
+  placeholder="Search Elastic"
   type="search"
   value=""
 />

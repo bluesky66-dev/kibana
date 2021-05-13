@@ -24,7 +24,7 @@ describe('RulesTableFilters', () => {
       );
 
       expect(wrapper.find('[data-test-subj="showElasticRulesFilterButton"]').at(0).text()).toEqual(
-        'HyperSec rules'
+        'Elastic rules'
       );
       expect(wrapper.find('[data-test-subj="showCustomRulesFilterButton"]').at(0).text()).toEqual(
         'Custom rules'
@@ -44,7 +44,7 @@ describe('RulesTableFilters', () => {
       );
 
       expect(wrapper.find('[data-test-subj="showElasticRulesFilterButton"]').at(0).text()).toEqual(
-        'HyperSec rules (9)'
+        'Elastic rules (9)'
       );
       expect(wrapper.find('[data-test-subj="showCustomRulesFilterButton"]').at(0).text()).toEqual(
         'Custom rules (10)'

@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies an update to an AWS log trail setting that specifies the delivery of log files.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS CloudTrail Log Updated",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:UpdateTrail and event.dataset:aws.cloudtrail and event.provider:cloudtrail.amazonaws.com and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "3e002465-876f-4f04-b016-84ef48ce7e5d",
   "severity": "low",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

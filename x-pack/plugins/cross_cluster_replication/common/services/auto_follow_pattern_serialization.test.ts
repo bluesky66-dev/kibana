@@ -15,7 +15,7 @@ import {
 
 describe('[CCR] auto-follow_serialization', () => {
   describe('deserializeAutoFollowPattern()', () => {
-    it('should deserialize HyperSec object', () => {
+    it('should deserialize Elasticsearch object', () => {
       const expected = {
         name: 'some-name',
         active: true,
@@ -39,7 +39,7 @@ describe('[CCR] auto-follow_serialization', () => {
   });
 
   describe('deserializeListAutoFollowPatterns()', () => {
-    it('should deserialize list of HyperSec objects', () => {
+    it('should deserialize list of Elasticsearch objects', () => {
       const name1 = 'foo1';
       const name2 = 'foo2';
 
@@ -86,7 +86,7 @@ describe('[CCR] auto-follow_serialization', () => {
   });
 
   describe('serializeAutoFollowPattern()', () => {
-    it('should serialize object to HyperSec object', () => {
+    it('should serialize object to Elasticsearch object', () => {
       const expected = {
         remote_cluster: 'foo',
         leader_index_patterns: ['bar-*'],

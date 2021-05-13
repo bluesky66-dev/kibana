@@ -222,12 +222,12 @@ export class MonitoringPlugin
         });
       } else {
         kibanaMonitoringLog.warn(
-          'Internal collection for HyperSec Kibana monitoring is disabled due to missing license information.'
+          'Internal collection for Kibana monitoring is disabled due to missing license information.'
         );
       }
     } else {
       kibanaMonitoringLog.info(
-        'Internal collection for HyperSec Kibana monitoring is disabled per configuration.'
+        'Internal collection for Kibana monitoring is disabled per configuration.'
       );
     }
   }

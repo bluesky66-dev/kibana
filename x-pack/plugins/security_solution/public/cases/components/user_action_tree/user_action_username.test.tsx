@@ -11,7 +11,7 @@ import { UserActionUsername } from './user_action_username';
 
 const props = {
   username: 'elastic',
-  fullName: 'HyperSec',
+  fullName: 'Elastic',
 };
 
 describe('UserActionUsername ', () => {
@@ -41,7 +41,7 @@ describe('UserActionUsername ', () => {
     jest.runAllTimers();
 
     wrapper.update();
-    expect(wrapper.find('.euiToolTipPopover').text()).toBe('HyperSec');
+    expect(wrapper.find('.euiToolTipPopover').text()).toBe('Elastic');
 
     // Clearing all mocks will also reset fake timers.
     jest.clearAllMocks();

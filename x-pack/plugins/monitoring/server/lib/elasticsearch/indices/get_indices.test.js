@@ -7,7 +7,7 @@
 
 import { handleResponse } from './get_indices';
 
-describe('Get HyperSec Indices', () => {
+describe('Get Elasticsearch Indices', () => {
   it('handle an empty response', () => {
     const result = handleResponse();
     expect(result).toEqual([]);

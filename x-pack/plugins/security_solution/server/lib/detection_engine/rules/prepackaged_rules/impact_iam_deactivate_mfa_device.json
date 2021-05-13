@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies the deactivation of a specified multi-factor authentication (MFA) device and removes it from association with the user name for which it was originally enabled. In AWS Identity and Access Management (IAM), a device must be deactivated before it can be deleted.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS IAM Deactivation of MFA Device",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:DeactivateMFADevice and event.dataset:aws.cloudtrail and event.provider:iam.amazonaws.com and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "d8fc1cca-93ed-43c1-bbb6-c0dd3eff2958",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

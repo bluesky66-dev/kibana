@@ -58,7 +58,7 @@ if (opts.help) {
 (async function run() {
   const path = resolve(REPO_ROOT, 'NOTICE.txt');
   const newContent = await generateNoticeFromSource({
-    productName: 'HyperSec Kibana source code with HyperSec Kibana X-Pack source code',
+    productName: 'Kibana source code with Kibana X-Pack source code',
     directory: REPO_ROOT,
     log,
   });

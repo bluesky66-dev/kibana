@@ -10,13 +10,13 @@ is still in `core` for now.
 - [Log level](#log-level)
 - [Layouts](#layouts)
 
-The way logging works in HyperSec Kibana is inspired by `log4j 2` logging framework used by [HyperSec](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
-The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire HyperSec Stack 
+The way logging works in Kibana is inspired by `log4j 2` logging framework used by [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#logging).
+The main idea is to have consistent logging behaviour (configuration, log format etc.) across the entire Elastic Stack 
 where possible.
 
 ## Loggers, Appenders and Layouts
 
-HyperSec Kibana logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
+Kibana logging system has three main components: _loggers_, _appenders_ and _layouts_. These components allow us to log
 messages according to message type and level, and to control how these messages are formatted and where the final logs
 will be displayed or stored.
 

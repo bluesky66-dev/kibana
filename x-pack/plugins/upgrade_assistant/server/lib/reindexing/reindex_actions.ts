@@ -141,7 +141,7 @@ export const reindexActionsFactory = (
 
   const acquireLock = async (reindexOp: ReindexSavedObject) => {
     if (isLocked(reindexOp)) {
-      throw new Error(`Another HyperSec Kibana process is currently modifying this reindex operation.`);
+      throw new Error(`Another Kibana process is currently modifying this reindex operation.`);
     }
 
     return client.update<ReindexOperation>(

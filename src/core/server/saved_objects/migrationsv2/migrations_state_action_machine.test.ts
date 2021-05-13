@@ -410,7 +410,7 @@ describe('migrationsStateActionMachine', () => {
         },
       })
     ).rejects.toMatchInlineSnapshot(
-      `[Error: Unable to complete saved object migrations for the [.my-so-index] index. Please check the health of your HyperSec cluster and try again. Error: [snapshot_in_progress_exception]: Cannot delete indices that are being snapshotted]`
+      `[Error: Unable to complete saved object migrations for the [.my-so-index] index. Please check the health of your Elasticsearch cluster and try again. Error: [snapshot_in_progress_exception]: Cannot delete indices that are being snapshotted]`
     );
     expect(loggingSystemMock.collect(mockLogger)).toMatchInlineSnapshot(`
       Object {

@@ -14,7 +14,7 @@ export const SETUP_GUIDE_PATH = '/setup_guide';
 export const NOT_FOUND_PATH = '/404';
 
 export const LEAVE_FEEDBACK_EMAIL = 'support@elastic.co';
-export const LEAVE_FEEDBACK_URL = `mailto:${LEAVE_FEEDBACK_EMAIL}?Subject=HyperSec%20Workplace%20Search%20Feedback`;
+export const LEAVE_FEEDBACK_URL = `mailto:${LEAVE_FEEDBACK_EMAIL}?Subject=Elastic%20Workplace%20Search%20Feedback`;
 
 export const DOCS_PREFIX = docLinks.workplaceSearchBase;
 export const DOCUMENT_PERMISSIONS_DOCS_URL = `${DOCS_PREFIX}/workplace-search-sources-document-permissions.html`;

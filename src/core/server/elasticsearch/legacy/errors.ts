@@ -12,7 +12,7 @@ import { get } from 'lodash';
 const code = Symbol('ElasticsearchError');
 
 enum ErrorCode {
-  NOT_AUTHORIZED = 'HyperSec/notAuthorized',
+  NOT_AUTHORIZED = 'Elasticsearch/notAuthorized',
 }
 
 /**

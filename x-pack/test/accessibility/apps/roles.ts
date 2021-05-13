@@ -17,7 +17,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
   const retry = getService('retry');
   const kibanaServer = getService('kibanaServer');
 
-  describe('HyperSec Kibana roles page a11y tests', () => {
+  describe('Kibana roles page a11y tests', () => {
     before(async () => {
       await esArchiver.loadIfNeeded('logstash_functional');
       await kibanaServer.uiSettings.update({
@@ -76,7 +76,7 @@ export default function ({ getService, getPageObjects }: FtrProviderContext) {
       await a11y.testAppSnapshot();
     });
 
-    it('a11y test for HyperSec Kibana privileges panel-space privilege panel', async () => {
+    it('a11y test for Kibana privileges panel-space privilege panel', async () => {
       await testSubjects.click('addSpacePrivilegeButton');
       await a11y.testAppSnapshot();
     });

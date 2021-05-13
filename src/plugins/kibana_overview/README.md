@@ -1,6 +1,6 @@
 # kibana-overview
 
-> An overview page highlighting HyperSec Kibana apps
+> An overview page highlighting Kibana apps
 
 ---
 

@@ -139,7 +139,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
                   isLoading={false}
                   onClick={[Function]}
                 >
-                  Load HyperSec Kibana objects
+                  Load Kibana objects
                 </EuiButton>
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -154,7 +154,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
           </React.Fragment>,
           "key": "installStep",
           "status": "incomplete",
-          "title": "Load HyperSec Kibana objects",
+          "title": "Load Kibana objects",
         },
       ]
     }
@@ -167,7 +167,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
         key="installStep"
         status="incomplete"
         step={1}
-        title="Load HyperSec Kibana objects"
+        title="Load Kibana objects"
       >
         <div
           className="euiStep"
@@ -207,7 +207,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
               <p
                 className="euiTitle euiTitle--small euiStep__title"
               >
-                Load HyperSec Kibana objects
+                Load Kibana objects
               </p>
             </EuiTitle>
           </div>
@@ -285,7 +285,7 @@ exports[`bulkCreate should display error message when bulkCreate request fails 1
                               <span
                                 className="euiButton__text"
                               >
-                                Load HyperSec Kibana objects
+                                Load Kibana objects
                               </span>
                             </span>
                           </EuiButtonContent>
@@ -470,7 +470,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
                   isLoading={false}
                   onClick={[Function]}
                 >
-                  Load HyperSec Kibana objects
+                  Load Kibana objects
                 </EuiButton>
               </EuiFlexItem>
             </EuiFlexGroup>
@@ -485,7 +485,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
           </React.Fragment>,
           "key": "installStep",
           "status": "complete",
-          "title": "Load HyperSec Kibana objects",
+          "title": "Load Kibana objects",
         },
       ]
     }
@@ -498,7 +498,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
         key="installStep"
         status="complete"
         step={1}
-        title="Load HyperSec Kibana objects"
+        title="Load Kibana objects"
       >
         <div
           className="euiStep"
@@ -538,7 +538,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
               <p
                 className="euiTitle euiTitle--small euiStep__title"
               >
-                Load HyperSec Kibana objects
+                Load Kibana objects
               </p>
             </EuiTitle>
           </div>
@@ -616,7 +616,7 @@ exports[`bulkCreate should display success message when bulkCreate is successful
                               <span
                                 className="euiButton__text"
                               >
-                                Load HyperSec Kibana objects
+                                Load Kibana objects
                               </span>
                             </span>
                           </EuiButtonContent>
@@ -687,7 +687,7 @@ exports[`renders 1`] = `
                 isLoading={false}
                 onClick={[Function]}
               >
-                Load HyperSec Kibana objects
+                Load Kibana objects
               </EuiButton>
             </EuiFlexItem>
           </EuiFlexGroup>
@@ -697,7 +697,7 @@ exports[`renders 1`] = `
         </React.Fragment>,
         "key": "installStep",
         "status": "incomplete",
-        "title": "Load HyperSec Kibana objects",
+        "title": "Load Kibana objects",
       },
     ]
   }

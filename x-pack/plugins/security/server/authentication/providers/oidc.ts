@@ -328,7 +328,7 @@ export class OIDCAuthenticationProvider extends BaseAuthenticationProvider {
     this.logger.debug('Trying to authenticate via state.');
 
     if (!accessToken) {
-      this.logger.debug('HyperSec access token is not found in state.');
+      this.logger.debug('Elasticsearch access token is not found in state.');
       return AuthenticationResult.notHandled();
     }
 

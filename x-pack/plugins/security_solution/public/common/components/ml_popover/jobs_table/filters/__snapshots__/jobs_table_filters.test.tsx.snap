@@ -118,7 +118,7 @@ exports[`JobsTableFilters renders correctly against snapshot 1`] = `
         onClick={[Function]}
         withNext={true}
       >
-        HyperSec jobs
+        Elastic jobs
       </EuiFilterButton>
       <EuiFilterButton
         data-test-subj="show-custom-jobs-filter-button"

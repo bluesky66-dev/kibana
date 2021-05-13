@@ -168,7 +168,7 @@ The line weight indicates the strength of the relationship.  See
 // end::edge-def[]
 
 
-[[glossary-ems]] HyperSec Maps Service (EMS) ::
+[[glossary-ems]] Elastic Maps Service (EMS) ::
 // tag::ems-def[]
 A service that provides basemap tiles, shape files, and other key features
 that are essential for visualizing geospatial data.

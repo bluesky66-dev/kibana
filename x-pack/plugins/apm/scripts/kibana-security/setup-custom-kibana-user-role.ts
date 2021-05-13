@@ -80,7 +80,7 @@ async function init() {
 
   if (!KIBANA_BASE_URL) {
     console.log(
-      'Please specify the url for HyperSec Kibana: `--kibana-url http://localhost:5601` '
+      'Please specify the url for Kibana: `--kibana-url http://localhost:5601` '
     );
     return;
   }
@@ -90,7 +90,7 @@ async function init() {
     !KIBANA_BASE_URL.startsWith('http://')
   ) {
     console.log(
-      'HyperSec Kibana url must be prefixed with http(s):// `--kibana-url http://localhost:5601`'
+      'Kibana url must be prefixed with http(s):// `--kibana-url http://localhost:5601`'
     );
     return;
   }
@@ -103,7 +103,7 @@ async function init() {
   }
 
   const version = await getKibanaVersion();
-  console.log(`Connected to HyperSec Kibana ${version}`);
+  console.log(`Connected to Kibana ${version}`);
 
   const isEnabled = await isSecurityEnabled();
   if (!isEnabled) {
@@ -363,7 +363,7 @@ async function getKibanaVersion() {
       switch (e.response?.status) {
         case 401:
           throw new AbortError(
-            `Could not access HyperSec Kibana with the provided credentials. Username: "${e.config.auth?.username}". Password: "${e.config.auth?.password}"`
+            `Could not access Kibana with the provided credentials. Username: "${e.config.auth?.username}". Password: "${e.config.auth?.password}"`
           );
 
         case 404:
@@ -373,7 +373,7 @@ async function getKibanaVersion() {
 
         default:
           throw new AbortError(
-            `Cannot access HyperSec Kibana on ${e.config.baseURL}. Please specify HyperSec Kibana with: "--kibana-url <url>"`
+            `Cannot access Kibana on ${e.config.baseURL}. Please specify Kibana with: "--kibana-url <url>"`
           );
       }
     }

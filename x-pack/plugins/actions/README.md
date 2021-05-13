@@ -1,6 +1,6 @@
-# HyperSec Kibana Actions
+# Kibana Actions
 
-The HyperSec Kibana actions plugin provides a framework to create executable actions. You can:
+The Kibana actions plugin provides a framework to create executable actions. You can:
 
 - Register an action type and associate a JavaScript function to run when actions
   are executed.
@@ -14,10 +14,10 @@ The HyperSec Kibana actions plugin provides a framework to create executable act
 
 Table of Contents
 
-- [HyperSec Kibana Actions](#kibana-actions)
+- [Kibana Actions](#kibana-actions)
   - [Terminology](#terminology)
   - [Usage](#usage)
-  - [HyperSec Kibana Actions Configuration](#kibana-actions-configuration)
+  - [Kibana Actions Configuration](#kibana-actions-configuration)
     - [Configuration Options](#configuration-options)
       - [Adding Built-in Action Types to allowedHosts](#adding-built-in-action-types-to-allowedhosts)
     - [Configuration Utilities](#configuration-utilities)
@@ -76,7 +76,7 @@ action types.
 2. Create an action by using the [RESTful API](#restful-api).
 3. Use alerts to execute actions or execute manually (see [Firing actions](#firing-actions)).
 
-## HyperSec Kibana Actions Configuration
+## Kibana Actions Configuration
 
 Implemented under the [Actions Config](./server/actions_config.ts).
 
@@ -86,7 +86,7 @@ Built-In-Actions are configured using the _xpack.actions_ namespace under _kiban
 
 #### **allowedHosts** configuration
 
-- You can use the string "*" in the **allowedHosts** configuration in place of a specific hostname to enable HyperSec Kibana to target any URL, but keep in mind the potential to use such a feature to execute [SSRF](https://www.owasp.org/index.php/Server_Side_Request_Forgery) attacks from your server.
+- You can use the string "*" in the **allowedHosts** configuration in place of a specific hostname to enable Kibana to target any URL, but keep in mind the potential to use such a feature to execute [SSRF](https://www.owasp.org/index.php/Server_Side_Request_Forgery) attacks from your server.
 
 - The **allowedHosts** configuration applies to built-in action types (such as Slack and PagerDuty). While the _PagerDuty Action Type_ has been configured to support the service's Events API (at _https://events.pagerduty.com/v2/enqueue_, which you can read about in [Pagerduty's documentation](https://v2.developer.pagerduty.com/docs/events-api-v2)), the PagerDuty domain must still be included in the allowedHosts configuration before the action can be used.
 
@@ -139,7 +139,7 @@ This is the primary function for an action type. Whenever the action needs to ex
 | config                                  | The action configuration. If you would like to validate the config before being passed to the executor, define `validate.config` within the action type.                                                              |
 | secrets                                  | The decrypted secrets object given to an action. This comes from the action saved object that is partially or fully encrypted within the data store. If you would like to validate the secrets object before being passed to the executor, define `validate.secrets` within the action type.                                                              |
 | params                                  | Parameters for the execution. These will be given at execution time by either an alert or manually provided when calling the plugin provided execute function.                                                                                                                                                                                  |
-| services.callCluster(path, opts)        | Use this to do HyperSec queries on the cluster HyperSec Kibana connects to. This function is the same as any other `callCluster` in HyperSec Kibana but runs in the context of the user who is calling the action when security is enabled.                                                                                                                  |
+| services.callCluster(path, opts)        | Use this to do Elasticsearch queries on the cluster Kibana connects to. This function is the same as any other `callCluster` in Kibana but runs in the context of the user who is calling the action when security is enabled.                                                                                                                  |
 | services.getLegacyScopedClusterClient   | This function returns an instance of the LegacyScopedClusterClient scoped to the user who is calling the action when security is enabled.                                                                                                                                                                                                       |
 | services.savedObjectsClient             | This is an instance of the saved objects client. This provides the ability to do CRUD on any saved objects within the same space the alert lives in.<br><br>The scope of the saved objects client is tied to the user in context calling the execute API or the API key provided to the execute plugin function (only when security isenabled). |
 | services.log(tags, [data], [timestamp]) | Use this to create server logs. (This is the same function as server.log) 
@@ -182,7 +182,7 @@ The following table describes the properties of the `options` object.
 | id       | The id of the action you want to execute.                                                              | string           |
 | params   | The `params` value to give the action type executor.                                                   | object           |
 | spaceId  | The space id the action is within.                                                                     | string           |
-| apiKey   | The HyperSec API key to use for context. (Note: only required and used when security is enabled). | string           |
+| apiKey   | The Elasticsearch API key to use for context. (Note: only required and used when security is enabled). | string           |
 | source   | The source of the execution, either an HTTP request or a reference to a Saved Object.                  | object, optional |
 
 #### Example
@@ -240,7 +240,7 @@ const result = await actionsClient.execute({
 
 # Built-in Action Types
 
-HyperSec Kibana ships with a set of built-in action types. See [Actions and connector types Documentation](https://www.elastic.co/guide/en/kibana/master/action-types.html).
+Kibana ships with a set of built-in action types. See [Actions and connector types Documentation](https://www.elastic.co/guide/en/kibana/master/action-types.html).
 
 In addition to the documented configurations, several built in action type offer additional `params` configurations.
 
@@ -428,7 +428,7 @@ Currently actions are licensed as "basic" if the action only interacts with the 
 
 ## plugin location
 
-Currently actions that are licensed as "basic" **MUST** be implemented in the actions plugin, other actions can be implemented in any other plugin that pre-reqs the actions plugin. If the new action is generic across the stack, it probably belongs in the actions plugin, but if your action is very specific to a plugin/solution, it might be easiest to implement it in the plugin/solution. Keep in mind that if HyperSec Kibana is run without the plugin being enabled, any actions defined in that plugin will not run, nor will those actions be available via APIs or UI.
+Currently actions that are licensed as "basic" **MUST** be implemented in the actions plugin, other actions can be implemented in any other plugin that pre-reqs the actions plugin. If the new action is generic across the stack, it probably belongs in the actions plugin, but if your action is very specific to a plugin/solution, it might be easiest to implement it in the plugin/solution. Keep in mind that if Kibana is run without the plugin being enabled, any actions defined in that plugin will not run, nor will those actions be available via APIs or UI.
 
 Actions that take URLs or hostnames should check that those values are allowed. The allowed host list utilities are currently internal to the actions plugin, and so such actions will need to be implemented in the actions plugin. Longer-term, we will expose these utilities so they can be used by alerts implemented in other plugins; see [issue #64659](https://github.com/elastic/kibana/issues/64659).
 
@@ -452,4 +452,4 @@ Instead of `schema.maybe()`, use `schema.nullable()`, which is the same as `sche
 
 ## user interface
 
-To make this action usable in the HyperSec Kibana UI, you will need to provide all the UI editing aspects of the action. The existing action type user interfaces are defined in [`x-pack/plugins/triggers_actions_ui/public/application/components/builtin_action_types`](../triggers_actions_ui/public/application/components/builtin_action_types). For more information, see the [UI documentation](../triggers_actions_ui/README.md#create-and-register-new-action-type-ui).
+To make this action usable in the Kibana UI, you will need to provide all the UI editing aspects of the action. The existing action type user interfaces are defined in [`x-pack/plugins/triggers_actions_ui/public/application/components/builtin_action_types`](../triggers_actions_ui/public/application/components/builtin_action_types). For more information, see the [UI documentation](../triggers_actions_ui/README.md#create-and-register-new-action-type-ui).

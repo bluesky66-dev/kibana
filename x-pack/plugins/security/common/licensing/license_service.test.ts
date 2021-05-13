@@ -139,7 +139,7 @@ describe('license features', function () {
     expect(getFeatureSpy).toHaveBeenCalledWith('security');
   });
 
-  it('should not show login page or other security elements if security is disabled in HyperSec.', () => {
+  it('should not show login page or other security elements if security is disabled in Elasticsearch.', () => {
     const mockRawLicense = licenseMock.createLicense({
       features: { security: { isEnabled: false, isAvailable: true } },
     });

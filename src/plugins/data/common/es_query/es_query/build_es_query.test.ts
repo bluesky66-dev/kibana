@@ -21,7 +21,7 @@ describe('build query', () => {
   } as unknown) as IIndexPattern;
 
   describe('buildEsQuery', () => {
-    it('should return the parameters of an HyperSec bool query', () => {
+    it('should return the parameters of an Elasticsearch bool query', () => {
       const result = buildEsQuery(indexPattern, [], []);
       const expected = {
         bool: {

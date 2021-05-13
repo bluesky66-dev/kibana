@@ -18,7 +18,7 @@ import { SearchError } from './types';
 export class RequestFailure extends KbnError {
   public resp?: SearchResponse<any>;
   constructor(err: SearchError | null = null, resp?: SearchResponse<any>) {
-    super(`Request to HyperSec failed: ${JSON.stringify(resp || err?.message)}`);
+    super(`Request to Elasticsearch failed: ${JSON.stringify(resp || err?.message)}`);
 
     this.resp = resp;
   }

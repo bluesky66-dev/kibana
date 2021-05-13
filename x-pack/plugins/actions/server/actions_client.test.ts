@@ -460,7 +460,7 @@ describe('create()', () => {
         },
       })
     ).rejects.toThrowErrorMatchingInlineSnapshot(
-      `"action type \\"my-action-type\\" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes"`
+      `"action type \\"my-action-type\\" is not enabled in the Kibana config xpack.actions.enabledActionTypes"`
     );
   });
 

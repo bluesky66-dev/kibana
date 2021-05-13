@@ -14,7 +14,7 @@ import { create } from '@storybook/theming';
 addons.setConfig({
   theme: create({
     base: 'light',
-    brandTitle: 'HyperSec Kibana Storybook',
+    brandTitle: 'Kibana Storybook',
     brandUrl: 'https://github.com/elastic/kibana/tree/master/packages/kbn-storybook',
   }),
   showPanel: false,

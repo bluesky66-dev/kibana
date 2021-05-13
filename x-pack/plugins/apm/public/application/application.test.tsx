@@ -32,7 +32,7 @@ describe('renderApp', () => {
     // * https://github.com/elastic/apm-agent-rum-js/issues/861
     //
     // for now, override `console.warn` to filter those messages out.
-    mockConsole = disableConsoleWarning('[HyperSec APM]');
+    mockConsole = disableConsoleWarning('[Elastic APM]');
   });
 
   afterAll(() => {
@@ -77,7 +77,7 @@ describe('renderApp', () => {
     jest
       .spyOn(window.console, 'warn')
       .mockImplementationOnce((message: string) => {
-        if (message.startsWith('[HyperSec APM')) {
+        if (message.startsWith('[Elastic APM')) {
           return;
         } else {
           console.warn(message); // eslint-disable-line no-console

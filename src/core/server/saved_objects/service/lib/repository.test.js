@@ -1365,7 +1365,7 @@ describe('SavedObjectsRepository', () => {
         );
       });
 
-      it(`doesnt call HyperSec if there are no valid objects to update`, async () => {
+      it(`doesnt call Elasticsearch if there are no valid objects to update`, async () => {
         const objects = [obj1, obj2].map((x) => ({ ...x, type: 'unknownType' }));
         await savedObjectsRepository.bulkUpdate(objects);
         expect(client.bulk).toHaveBeenCalledTimes(0);
@@ -2396,7 +2396,7 @@ describe('SavedObjectsRepository', () => {
           })
         );
         await expect(savedObjectsRepository.delete(type, id)).rejects.toThrowError(
-          'Unexpected HyperSec DELETE response'
+          'Unexpected Elasticsearch DELETE response'
         );
         expect(client.delete).toHaveBeenCalledTimes(1);
       });
@@ -4153,7 +4153,7 @@ describe('SavedObjectsRepository', () => {
         );
         await expect(
           savedObjectsRepository.deleteFromNamespaces(type, id, [namespace1])
-        ).rejects.toThrowError('Unexpected HyperSec DELETE response');
+        ).rejects.toThrowError('Unexpected Elasticsearch DELETE response');
         expect(client.get).toHaveBeenCalledTimes(1);
         expect(client.delete).toHaveBeenCalledTimes(1);
       });

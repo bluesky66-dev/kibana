@@ -1,4 +1,4 @@
-# HyperSec Kibana task manager
+# Kibana task manager
 
 The task manager is a generic system for running background tasks.
 Documentation: https://www.elastic.co/guide/en/kibana/master/task-manager-production-considerations.html
@@ -10,7 +10,7 @@ It supports:
 - Recovery of stalled tasks / timeouts
 - Tracking task state across multiple runs
 - Configuring the run-parameters for specific tasks
-- Basic coordination to prevent the same task instance from running on more than one HyperSec Kibana system at a time
+- Basic coordination to prevent the same task instance from running on more than one Kibana system at a time
 
 ## Implementation details
 
@@ -45,12 +45,12 @@ The task_manager can be configured via `taskManager` config options (e.g. `taskM
 - `poll_interval` - How often the background worker should check the task_manager index for more work
 - `max_poll_inactivity_cycles` - How many poll intervals is work allowed to block polling for before it's timed out. This does not include task execution, as task execution does not block the polling, but rather includes work needed to manage Task Manager's state.
 - `index` - **deprecated** The name of the index that the task_manager will use. This is deprecated, and will be removed starting in 8.0
-- `max_workers` - The maximum number of tasks a HyperSec Kibana will run concurrently (defaults to 10)
+- `max_workers` - The maximum number of tasks a Kibana will run concurrently (defaults to 10)
 - `version_conflict_threshold` - The threshold percentage for workers experiencing version conflicts for shifting the polling interval
 - `credentials` - Encrypted user credentials. All tasks will run in the security context of this user. See [this issue](https://github.com/elastic/dev/issues/1045) for a discussion on task scheduler security.
 - `override_num_workers`: An object of `taskType: number` that overrides the `num_workers` for tasks
   - For example: `task_manager.override_num_workers.reporting: 2` would override the number of workers occupied by tasks of type `reporting`
-  - This allows sysadmins to tweak the operational performance of HyperSec Kibana, allowing more or fewer tasks of a specific type to run simultaneously
+  - This allows sysadmins to tweak the operational performance of Kibana, allowing more or fewer tasks of a specific type to run simultaneously
 - `monitored_aggregated_stats_refresh_rate` - Dictates how often we refresh the "Cold" metrics. Learn More: [./MONITORING](./MONITORING.MD)
 - `monitored_stats_running_average_window`- Dictates the size of the window used to calculate the running average of various "Hot" stats. Learn More: [./MONITORING](./MONITORING.MD)
 - `monitored_stats_required_freshness` - Dictates the _required freshness_ of critical "Hot" stats. Learn More: [./MONITORING](./MONITORING.MD)
@@ -120,7 +120,7 @@ export class Plugin {
 }
 ```
 
-When HyperSec Kibana attempts to claim and run a task instance, it looks its definition up, and executes its createTaskRunner's method, passing it a run context which looks like this:
+When Kibana attempts to claim and run a task instance, it looks its definition up, and executes its createTaskRunner's method, passing it a run context which looks like this:
 
 ```js
 {
@@ -182,7 +182,7 @@ Other return values will result in a warning, but the system should continue to 
 
 ### Task retries when the Task Runner fails
 If a task runner throws an error, task manager will try to rerun the task shortly after (up to the task definition's `maxAttempts`).
-Normal tasks will wait a default amount of 5m before trying again and every subsequent attempt will add an additonal 5m cool off period to avoid a stampeding herd of failed tasks from storming HyperSec.
+Normal tasks will wait a default amount of 5m before trying again and every subsequent attempt will add an additonal 5m cool off period to avoid a stampeding herd of failed tasks from storming Elasticsearch.
 
 Recurring tasks will also get retried, but instead of using the 5m interval for the retry, they will be retried on their next scheduled run.
 
@@ -215,7 +215,7 @@ For example:
 
 ## Task instances
 
-The task_manager module will store scheduled task instances in an index. This allows for recovery of failed tasks, coordination across HyperSec Kibana clusters, persistence across HyperSec Kibana reboots, etc.
+The task_manager module will store scheduled task instances in an index. This allows for recovery of failed tasks, coordination across Kibana clusters, persistence across Kibana reboots, etc.
 
 The data stored for a task instance looks something like this:
 
@@ -287,12 +287,12 @@ The data stored for a task instance looks something like this:
 
 ## Programmatic access
 
-The task manager mixin exposes a taskManager object on the HyperSec Kibana server which plugins can use to manage scheduled tasks. Each method takes an optional `scope` argument and ensures that only tasks with the specified scope(s) will be affected.
+The task manager mixin exposes a taskManager object on the Kibana server which plugins can use to manage scheduled tasks. Each method takes an optional `scope` argument and ensures that only tasks with the specified scope(s) will be affected.
 
 ### Overview
-Interaction with the TaskManager Plugin is done via the HyperSec Kibana Platform Plugin system.
+Interaction with the TaskManager Plugin is done via the Kibana Platform Plugin system.
 When developing your Plugin, you're asked to define a `setup` method and a `start` method.
-These methods are handed HyperSec Kibana's Plugin APIs for these two stages, which means you'll have access to the following apis in these two stages:
+These methods are handed Kibana's Plugin APIs for these two stages, which means you'll have access to the following apis in these two stages:
 
 #### Setup
 The _Setup_ Plugin api includes methods which configure Task Manager to support your Plugin's requirements, such as defining custom Middleware and Task Definitions.
@@ -416,7 +416,7 @@ export class Plugin {
 
 #### more options
 
-More custom access to the tasks can be done directly via HyperSec, though that won't be officially supported, as we can change the document structure at any time.
+More custom access to the tasks can be done directly via Elasticsearch, though that won't be officially supported, as we can change the document structure at any time.
 
 ## Middleware
 

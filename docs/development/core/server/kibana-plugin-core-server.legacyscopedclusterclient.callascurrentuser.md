@@ -22,7 +22,7 @@ callAsCurrentUser(endpoint: string, clientParams?: Record<string, any>, options?
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  endpoint | <code>string</code> | String descriptor of the endpoint e.g. <code>cluster.getSettings</code> or <code>ping</code>. |
-|  clientParams | <code>Record&lt;string, any&gt;</code> | A dictionary of parameters that will be passed directly to the HyperSec JS client. |
+|  clientParams | <code>Record&lt;string, any&gt;</code> | A dictionary of parameters that will be passed directly to the Elasticsearch JS client. |
 |  options | <code>LegacyCallAPIOptions</code> | Options that affect the way we call the API and process the result. |
 
 <b>Returns:</b>

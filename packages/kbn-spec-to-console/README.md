@@ -1,11 +1,11 @@
-A mini utility to convert [HyperSec's REST spec](https://github.com/elastic/elasticsearch/blob/master/rest-api-spec) to Console's (HyperSec Kibana) autocomplete format.
+A mini utility to convert [Elasticsearch's REST spec](https://github.com/elastic/elasticsearch/blob/master/rest-api-spec) to Console's (Kibana) autocomplete format.
 
 
 It is used to semi-manually update Console's autocompletion rules.
 
 ### Retrieving the spec
 
-If you don't have a copy of the HyperSec repo on your machine, follow these steps to clone only the rest API specs
+If you don't have a copy of the Elasticsearch repo on your machine, follow these steps to clone only the rest API specs
 
 ```
 mkdir es-spec && cd es-spec
@@ -19,7 +19,7 @@ git pull --depth=1 origin master
 ### Usage
 
 You need to run the command twice: once for the **OSS** specs and once for the **X-Pack** specs  
-At the root of the HyperSec Kibana repository, run the following commands:
+At the root of the Kibana repository, run the following commands:
 
 ```sh
 # OSS

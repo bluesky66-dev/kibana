@@ -169,7 +169,7 @@ export async function migrationStateActionMachine({
       throw new Error(
         `Unable to complete saved object migrations for the [${
           initialState.indexPrefix
-        }] index. Please check the health of your HyperSec cluster and try again. Error: [${
+        }] index. Please check the health of your Elasticsearch cluster and try again. Error: [${
           e.body?.error?.type
         }]: ${e.body?.error?.reason ?? e.message}`
       );

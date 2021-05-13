@@ -5,7 +5,7 @@
 <titleabbrev>Legacy collection methods</titleabbrev>
 ++++
 
-If you enable the HyperSec {monitor-features} in your cluster, you can
+If you enable the Elastic {monitor-features} in your cluster, you can
 optionally collect metrics about {kib}.
 
 [IMPORTANT]

@@ -14,7 +14,7 @@ import {
 } from './get_kibana_stats';
 import { SearchResponse } from 'elasticsearch';
 
-describe('Get HyperSec Kibana Stats', () => {
+describe('Get Kibana Stats', () => {
   describe('Make a map of usage stats for each cluster', () => {
     test('passes through if there are no kibana instances', () => {
       const rawStats = {} as SearchResponse<KibanaUsageStats>;
@@ -570,7 +570,7 @@ describe('Get HyperSec Kibana Stats', () => {
     });
   });
 
-  describe('Rolls up stats when there are multiple HyperSec Kibana indices for a cluster', () => {
+  describe('Rolls up stats when there are multiple Kibana indices for a cluster', () => {
     test('by combining the `total` fields where previous was 0', () => {
       const rollUp = { my_field: { total: 0 } } as any;
       const addOn = { my_field: { total: 1 } };

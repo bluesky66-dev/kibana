@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Identifies suspending the recording of AWS API calls and log file delivery for the specified trail. An adversary may suspend trails in an attempt to evade defenses.",
   "false_positives": [
@@ -13,7 +13,7 @@
   ],
   "interval": "10m",
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "AWS CloudTrail Log Suspended",
   "note": "The AWS Filebeat module must be enabled to use this rule.",
   "query": "event.action:StopLogging and event.dataset:aws.cloudtrail and event.provider:cloudtrail.amazonaws.com and event.outcome:success",
@@ -25,7 +25,7 @@
   "rule_id": "1aa8fa52-44a7-4dae-b058-f3333b91c8d7",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Cloud",
     "AWS",
     "Continuous Monitoring",

@@ -63,9 +63,9 @@ export async function createQueueFactory(
     await createWorker(queue);
   } else {
     logger.info(
-      'xpack.reporting.queue.pollEnabled is set to false. This HyperSec Kibana instance ' +
+      'xpack.reporting.queue.pollEnabled is set to false. This Kibana instance ' +
         'will not poll for idle jobs to claim and execute. Make sure another ' +
-        'HyperSec Kibana instance with polling enabled is running in this cluster so ' +
+        'Kibana instance with polling enabled is running in this cluster so ' +
         'reporting jobs can complete.',
       ['create_queue']
     );

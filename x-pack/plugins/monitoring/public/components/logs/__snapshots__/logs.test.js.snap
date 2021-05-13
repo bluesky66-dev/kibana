@@ -205,7 +205,7 @@ exports[`Logs should render normally 1`] = `
         Object {
           "component": "o.e.c.r.a.DiskThresholdMonitor",
           "level": "WARN",
-          "message": "high disk watermark [90%] exceeded on [-pH5RhfsRl6FDeTPwD5vEw][HyperSec-MBP.local][/Users/chris/Development/repos/kibana/.es/8.0.0/data/nodes/0] free: 29.5gb[6.3%], shards will be relocated away from this node",
+          "message": "high disk watermark [90%] exceeded on [-pH5RhfsRl6FDeTPwD5vEw][Elastic-MBP.local][/Users/chris/Development/repos/kibana/.es/8.0.0/data/nodes/0] free: 29.5gb[6.3%], shards will be relocated away from this node",
           "node": "foobar2",
           "timestamp": "2019-03-18T12:49:24.414Z",
           "type": "server",
@@ -237,7 +237,7 @@ exports[`Logs should render normally 1`] = `
         Object {
           "component": "o.e.c.r.a.DiskThresholdMonitor",
           "level": "WARN",
-          "message": "high disk watermark [90%] exceeded on [-pH5RhfsRl6FDeTPwD5vEw][HyperSec-MBP.local][/Users/chris/Development/repos/kibana/.es/8.0.0/data/nodes/0] free: 29.3gb[6.2%], shards will be relocated away from this node",
+          "message": "high disk watermark [90%] exceeded on [-pH5RhfsRl6FDeTPwD5vEw][Elastic-MBP.local][/Users/chris/Development/repos/kibana/.es/8.0.0/data/nodes/0] free: 29.3gb[6.2%], shards will be relocated away from this node",
           "node": "foobar",
           "timestamp": "2019-03-18T12:48:59.409Z",
           "type": "server",

@@ -5,7 +5,7 @@ info:
   contact:
     name: Ingest Team
   license:
-    name: HyperSec
+    name: Elastic
 servers:
   - url: 'http://localhost:5601/api/fleet'
     description: local

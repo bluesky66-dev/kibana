@@ -41,7 +41,7 @@ export default function ({ getService }: FtrProviderContext) {
         {
           observer: {},
           monitor: {
-            name: 'HyperSec',
+            name: 'Elastic',
           },
         },
         'up'
@@ -72,7 +72,7 @@ export default function ({ getService }: FtrProviderContext) {
         {
           observer,
           monitor: {
-            name: 'HyperSec',
+            name: 'Elastic',
           },
         },
         'down'

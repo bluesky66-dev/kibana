@@ -124,6 +124,6 @@ From this page, you can create, edit, disable, mute, and delete alerts, and crea
 
 See {kibana-ref}/alerting-getting-started.html[alerting and actions] for more information.
 
-NOTE: If you are using an **on-premise** HyperSec Stack deployment with security,
-communication between HyperSec and Kibana must have TLS configured.
+NOTE: If you are using an **on-premise** Elastic Stack deployment with security,
+communication between Elasticsearch and Kibana must have TLS configured.
 More information is in the alerting {kibana-ref}/alerting-getting-started.html#alerting-setup-prerequisites[prerequisites].

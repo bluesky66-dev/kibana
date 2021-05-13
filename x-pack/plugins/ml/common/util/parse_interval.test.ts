@@ -33,7 +33,7 @@ describe('ML parse interval util', () => {
     expect(parseInterval('1.5h')).toBe(null);
   });
 
-  test('should correctly check for whether the interval units are valid HyperSec time units', () => {
+  test('should correctly check for whether the interval units are valid Elasticsearch time units', () => {
     expect(parseInterval('100s', true)!.as('s')).toBe(100);
     expect(parseInterval('5m', true)!.as('m')).toBe(5);
     expect(parseInterval('24h', true)!.as('h')).toBe(24);

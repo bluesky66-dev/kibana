@@ -24,7 +24,7 @@ import {
 import { getFieldType, getLegendText, getXScaleType, useColumnChart } from './use_column_chart';
 
 describe('getFieldType()', () => {
-  it('should return the HyperSec Kibana field type for a given EUI data grid schema', () => {
+  it('should return the Kibana field type for a given EUI data grid schema', () => {
     expect(getFieldType('text')).toBe('string');
     expect(getFieldType('datetime')).toBe('date');
     expect(getFieldType('numeric')).toBe('number');
@@ -35,7 +35,7 @@ describe('getFieldType()', () => {
 });
 
 describe('getXScaleType()', () => {
-  it('should return the corresponding x axis scale type for a HyperSec Kibana field type', () => {
+  it('should return the corresponding x axis scale type for a Kibana field type', () => {
     expect(getXScaleType(KBN_FIELD_TYPES.BOOLEAN)).toBe('ordinal');
     expect(getXScaleType(KBN_FIELD_TYPES.IP)).toBe('ordinal');
     expect(getXScaleType(KBN_FIELD_TYPES.STRING)).toBe('ordinal');

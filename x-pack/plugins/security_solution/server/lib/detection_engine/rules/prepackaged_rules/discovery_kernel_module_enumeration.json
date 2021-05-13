@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Loadable Kernel Modules (or LKMs) are pieces of code that can be loaded and unloaded into the kernel upon demand. They extend the functionality of the kernel without the need to reboot the system. This identifies attempts to enumerate information about a kernel module.",
   "false_positives": [
@@ -12,14 +12,14 @@
     "logs-endpoint.events.*"
   ],
   "language": "kuery",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Enumeration of Kernel Modules",
   "query": "event.category:process and event.type:(start or process_started) and process.args:(kmod and list and sudo or sudo and (depmod or lsmod or modinfo))",
   "risk_score": 47,
   "rule_id": "2d8043ed-5bda-4caf-801c-c1feb7410504",
   "severity": "medium",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Host",
     "Linux",
     "Threat Detection",

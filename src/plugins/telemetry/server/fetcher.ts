@@ -223,7 +223,7 @@ export class FetcherTask {
     await fetch(url, {
       method: 'post',
       body: cluster,
-      headers: { 'X-HyperSec-Stack-Version': this.currentKibanaVersion },
+      headers: { 'X-Elastic-Stack-Version': this.currentKibanaVersion },
     });
   }
 }

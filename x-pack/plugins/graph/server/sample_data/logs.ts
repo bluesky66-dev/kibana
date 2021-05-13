@@ -431,7 +431,7 @@ export function registerLogsSampleData(sampleDataRegistry: SampleDataRegistrySet
       id: 'e2141080-32fa-11ea-bbe4-818d9c786051',
       version: '2',
       attributes: {
-        title: 'HyperSec Kibana Sample Data - Data Logs',
+        title: 'Kibana Sample Data - Data Logs',
         description:
           'This is a sample graph based on the data logs index, which shows agents, extensions, source geography of the log, and response codes.  The graph has 200 and 404 response codes blocked, as they have low cardinality.',
         numLinks: 61,

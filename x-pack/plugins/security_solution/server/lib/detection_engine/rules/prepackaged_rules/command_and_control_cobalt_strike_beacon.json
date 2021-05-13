@@ -1,6 +1,6 @@
 {
   "author": [
-    "HyperSec"
+    "Elastic"
   ],
   "description": "Cobalt Strike is a threat emulation platform commonly modified and used by adversaries to conduct network attack and exploitation campaigns. This rule detects a network activity algorithm leveraged by Cobalt Strike implant beacons for command and control.",
   "false_positives": [
@@ -10,7 +10,7 @@
     "packetbeat-*"
   ],
   "language": "lucene",
-  "license": "HyperSec License v2",
+  "license": "Elastic License v2",
   "name": "Cobalt Strike Command and Control Beacon",
   "note": "This activity has been observed in FIN7 campaigns.",
   "query": "event.category:(network OR network_traffic) AND type:(tls OR http) AND network.transport:tcp AND destination.domain:/[a-z]{3}.stage.[0-9]{8}\\..*/",
@@ -22,7 +22,7 @@
   "rule_id": "cf53f532-9cc9-445a-9ae7-fced307ec53c",
   "severity": "high",
   "tags": [
-    "HyperSec",
+    "Elastic",
     "Network",
     "Threat Detection",
     "Command and Control"

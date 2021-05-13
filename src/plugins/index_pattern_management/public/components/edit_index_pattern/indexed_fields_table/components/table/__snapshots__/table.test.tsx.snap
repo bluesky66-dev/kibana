@@ -17,7 +17,7 @@ exports[`Table should render conflicting type 1`] = `
 
 exports[`Table should render normal field name 1`] = `
 <span>
-  HyperSec
+  Elastic
 </span>
 `;
 
@@ -97,11 +97,11 @@ exports[`Table should render normally 1`] = `
   items={
     Array [
       Object {
-        "displayName": "HyperSec",
+        "displayName": "Elastic",
         "excluded": false,
         "format": "",
         "info": Array [],
-        "name": "HyperSec",
+        "name": "Elastic",
         "searchable": true,
         "type": "name",
       },

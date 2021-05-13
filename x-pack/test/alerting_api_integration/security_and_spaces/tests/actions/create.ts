@@ -215,7 +215,7 @@ export default function createActionTests({ getService }: FtrProviderContext) {
                 statusCode: 403,
                 error: 'Forbidden',
                 message:
-                  'action type "test.not-enabled" is not enabled in the HyperSec Kibana config xpack.actions.enabledActionTypes',
+                  'action type "test.not-enabled" is not enabled in the Kibana config xpack.actions.enabledActionTypes',
               });
               break;
             default:
